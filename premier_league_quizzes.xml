@@ -1,0 +1,33 @@
+// Adaugă la începutul fișierului PremierLeague.js
+let quizzes = [];
+
+// Funcție pentru încărcarea XML-ului
+function loadQuizzes() {
+    fetch('data/premier_league_quizzes.xml')
+        .then(response => response.text())
+        .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
+        .then(data => {
+            const quizNodes = data.querySelectorAll('quiz');
+            quizNodes.forEach(quizNode => {
+                const team = quizNode.getAttribute('team');
+                const questions = [];
+                
+                quizNode.querySelectorAll('question').forEach(qNode => {
+                    questions.push({
+                        id: qNode.getAttribute('id'),
+                        text: qNode.querySelector('text').textContent,
+                        answer: qNode.querySelector('answer').textContent,
+                        image: qNode.querySelector('image').textContent,
+                        hint: qNode.querySelector('hint').textContent
+                    });
+                });
+                
+                quizzes.push({ team, questions });
+            });
+            console.log('Întrebări încărcate:', quizzes);
+        })
+        .catch(error => console.error('Eroare la încărcarea XML:', error));
+}
+
+// Apelăm funcția la încărcarea paginii
+document.addEventListener('DOMContentLoaded', loadQuizzes);
