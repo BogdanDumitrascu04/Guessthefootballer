@@ -1,3 +1,408 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 100%);
+    margin: 0;
+    padding-top: 50px; /* Ajustează această valoare în funcție de înălțimea header-ului */
+    box-sizing: border-box;
+    width: 100%;
+    overflow-y: auto; /* Permite derularea verticală */
+    position: relative; 
+    color: #f7f7f7;
+}
+.cookie-consent {
+    position: fixed;
+    bottom: 0; /* Aliniază la partea de jos */
+    left: 0;
+    right: 0;
+    background-color: rgba(50, 50, 50, 0.95); /* Fundal mai întunecat pentru contrast */
+    color: #fff; /* Text deschis pentru lizibilitate */
+    padding: 1rem; /* Spațiere responsivă */
+    border-top: 3px solid #f1c40f; /* Linie de accent pentru vizibilitate */
+    display: flex;
+    flex-direction: row; /* Aliniază elementele orizontal */
+    align-items: center;
+    justify-content: space-between; /* Distribuie spațiul între elemente */
+    z-index: 10000; /* Asigură că este deasupra altor elemente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adaugă o umbră pentru profunzime */
+}
+
+.cookie-consent p {
+    margin: 0; /* Elimină marginile */
+    flex: 1; /* Ocupă spațiul rămas */
+    text-align: left; /* Aliniază textul la stânga */
+}
+
+.cookie-button-container {
+    display: flex;
+    gap: 10px; /* Adaugă spațiu între butoane */
+}
+
+.cookie-button {
+    padding: 10px 20px; /* Mărește butoanele */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Mărește dimensiunea fontului */
+    transition: background-color 0.3s ease; /* Adaugă o tranziție pentru hover */
+}
+
+.cookie-button:hover {
+    background-color: #0056b3; /* Schimbă culoarea la hover */
+}
+
+.cookie-link {
+    color: #f1c40f; /* Schimbă culoarea link-ului */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cookie-link:hover {
+    text-decoration: underline; /* Subliniere la hover */
+}
+.header {
+    color: #fff;
+    background-image: url('images/leagues/PremierLeague/Logo/1.jpg');
+    height: 60px;
+    position: fixed;
+    width: 99%; /* Ajustează la 100% pentru a ocupa toată lățimea */
+    top: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    opacity: 90%;
+    z-index: 1000; /* Asigură-te că header-ul rămâne deasupra altor elemente */
+}
+.header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+#infoButton, #menuButton {
+    margin-left: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+}
+
+#mainHeader {
+    font-size: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 10px; /* Ajustează pentru a centra mai bine titlul */
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    background-image: url('images/leagues/PremierLeague/Logo/1.jpg');
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    width: 100%;
+    height: 40vh;
+    position: fixed;
+    top: 75px;
+    right: 0;
+    font-size: 1.5rem;
+    display: none;
+    transition: opacity 0.3s ease, height 0.3s ease;
+    
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar ul.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.navbar ul.menu li {
+    display: inline;
+}
+
+.navbar ul.menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#menuContent {
+    background-image: url('images/leagues/PremierLeague/Logo/1.jpg');
+    box-shadow: 0 4px 15px rgba(4, 53, 30, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 40vh;
+    top: 0;
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+
+#menuContent a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#menuContent a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+.show {
+    display: block;
+}
+#infoContent {
+    position: fixed;
+    top: 30%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-image: url('images/leagues/PremierLeague/Logo/1.jpg');
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+    text-align: left;
+    border-radius: 10px;
+    opacity: 80%;
+}
+#infoContent.show {
+    display: block;
+}
+#closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+#logo {
+    height: 90px; /* Ajustează dimensiunea după cum este necesar */
+    width: auto;
+    max-width: 100px; /* Lățime maximă pentru logo */
+    height: auto; /* Înălțime automată pentru a menține proporțiile */
+    display: block; /* Afișare ca bloc pentru a centra */
+    
+}
+.content {
+    background: url('images/leagues/PremierLeague/Logo/1.jpg');
+    height: 520px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    font-size: 2em;
+    transition: margin-top 1s ease;
+}
+.Teams {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px; /* Spațiu mai mic între elemente */
+}
+
+.Teams > div {
+    border: 1px solid #ccc; /* Stil pentru bordură (opțional) */
+    padding: 5px; /* Spațiu intern mai mic */
+    font-size: 0.8em; /* Dimensiune mai mică a textului */
+}
+
+.Teams img {
+    width: auto; /* Lățimea imaginii */
+    height: 55px; /* Înălțimea automată pentru a păstra proporțiile */
+}
+
+#startButton {
+    display: block;
+    margin: 20px auto; /* Afișează butonul în centru sub tabel */
+    padding: 20px 30px;
+    font-size: 20px;
+    background-image: url('images/leagues/PremierLeague/Logo/1.jpg');
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+}
+
+#startButton:hover {
+    background-color: #0056b3;
+}
+/* Smartphones (portrait and landscape) */
+@media only screen and (max-width: 600px) {
+    .header {
+        height: 40px; /* Reduce the height for mobile */
+        padding: 5px 10px; /* Smaller padding to fit the screen */
+        flex-direction: row; /* Ensures header elements are in a row */
+        justify-content: space-between; /* Space out header elements */
+        align-items: center; /* Center align items vertically */
+        box-shadow: none; /* Remove box-shadow to save space */
+    }
+
+    #mainHeader {
+        font-size: 1rem; /* Smaller font size for the title */
+        margin: 0; /* Remove additional margin */
+        padding: 5px; /* Reduced padding */
+        text-align: left; /* Align text to the left for better use of space */
+        background-image: none; /* Remove background image for simplicity */
+    }
+
+    .header-buttons {
+        display: flex;
+        flex-direction: row; /* Stack buttons horizontally */
+        align-items: center; /* Center vertically */
+    }
+
+    #infoButton, #menuButton {
+        margin-left: 5px; /* Smaller margin between buttons */
+        font-size: 1.2rem; /* Reduce the font size for icons/buttons */
+        padding: 5px; /* Add padding to make it touch-friendly */
+    }
+
+    #logo {
+        max-width: 30px; /* Reduce logo size */
+        height: auto; /* Keep aspect ratio */
+    }
+
+    .navbar {
+        top: 40px; /* Adjust top position to match new header height */
+        font-size: 0.9rem; /* Smaller font size for navbar items */
+    }
+    #menuContent{
+        height: auto;
+    }
+
+    .Teams {
+        grid-template-columns: repeat(2, 1fr); /* Fewer columns */
+        grid-gap: 2px;
+    }
+
+    .Teams > div {
+        font-size: 0.7em; /* Smaller text */
+        padding: 2px; /* Smaller padding */
+    }
+
+    .content {
+        margin-left: 5%;
+        margin-right: 5%;
+        height: auto;
+        font-size: 1.5em; /* Smaller text */
+        padding: 10px; /* Reduced padding */
+    }
+    
+    #infoContent {
+        width: 200px; /* Smaller width */
+        padding: 10px; /* Reduced padding */
+    }
+
+    #logo {
+        max-width: 50px; /* Smaller logo size */
+        height: auto;
+    }
+
+    #startButton {
+        padding: 10px 20px; /* Smaller padding */
+        font-size: 14px; /* Smaller text */
+    }
+}
+
+/* Tablets (portrait and landscape) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .header {
+        height: 55px;
+        padding: 15px;
+    }
+
+    #mainHeader {
+        font-size: 1.5rem;
+    }
+
+    .navbar {
+        font-size: 1.2rem;
+    }
+
+    .Teams {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3px;
+    }
+
+    .content {
+        margin-left: 10%;
+        margin-right: 10%;
+        height: auto;
+        font-size: 1.8em;
+    }
+
+    #infoContent {
+        width: 250px;
+    }
+
+    #logo {
+        max-width: 70px;
+    }
+
+    #startButton {
+        padding: 15px 25px;
+        font-size: 16px;
+    }
+}
+
+/* Desktops and larger screens */
+@media only screen and (min-width: 1025px) {
+    .header {
+        height: 60px;
+        padding: 20px;
+    }
+
+    #mainHeader {
+        font-size: 2rem;
+    }
+
+    .navbar {
+        font-size: 1.5rem;
+    }
+
+    .Teams {
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 5px;
+    }
+
+    .content {
+        margin-left: 20%;
+        margin-right: 20%;
+        height: 560px;
+    }
+
+    #infoContent {
+        width: 300px;
+    }
+
+    #logo {
+        max-width: 100px;
+    }
+
+    #startButton {
+        padding: 20px 30px;
+        font-size: 20px;
+    }
+}
+
 /* Add these to your existing CSS */
 .Teams {
     display: grid;
