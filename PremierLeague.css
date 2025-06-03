@@ -63,7 +63,7 @@ body {
 }
 .header {
     color: #fff;
-    background-image: url('/images/leagues/PremierLeague/Arsenal/Calafiori.png');
+    background-image: url('images/leagues/PremierLeague/Logo/1.jpg');
     height: 60px;
     position: fixed;
     width: 99%; /* Ajustează la 100% pentru a ocupa toată lățimea */
