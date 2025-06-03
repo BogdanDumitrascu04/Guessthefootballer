@@ -45,5 +45,5 @@ closeButton.addEventListener('click', () => {
 
 adjustContentPosition();
 document.getElementById('startButton').onclick = function (){
-    window.location.assign("/PremierLigueGame.html");
+    window.location.assign("PremierLigueGame.html");
  };
