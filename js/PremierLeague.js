@@ -47,3 +47,22 @@ adjustContentPosition();
 document.getElementById('startButton').onclick = function (){
     window.location.assign("PremierLigueGame.html");
  };
+document.addEventListener('DOMContentLoaded', function () {
+    const arsenal = document.querySelector('.Arsenal');
+
+    arsenal.addEventListener('click', function () {
+        const raspuns = prompt("Cine este căpitanul echipei Arsenal?");
+        
+        if (raspuns) {
+            if (raspuns.toLowerCase().includes("odegaard")) {
+                alert("Corect! Martin Ødegaard este căpitanul.");
+                // Poți face redirect aici dacă vrei
+                // window.location.href = "ArsenalGame.html";
+            } else {
+                alert("Răspuns greșit. Încearcă din nou!");
+            }
+        } else {
+            alert("Nu ai introdus niciun răspuns.");
+        }
+    });
+});
