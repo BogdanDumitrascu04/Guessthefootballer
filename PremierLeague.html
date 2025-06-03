@@ -1,9 +1,57 @@
+acesta este codul html 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/PremierLeague.css">
+    <link rel="stylesheet" href="index.css">
+ codul js
+const menuButton = document.getElementById('menuButton');
+const navbar = document.getElementById('navbar');
+const infoButton = document.getElementById('infoButton');
+const infoContent = document.getElementById('infoContent');
+const closeButton = document.getElementById('closeButton');
+const content = document.querySelector('.content');
+
+// Function to adjust margin-top of the content
+function adjustContentPosition() {
+    const headerHeight = document.querySelector('.header').offsetHeight;
+    let navbarHeight = 0;
+    let infoContentHeight = 0;
+
+    if (navbar.classList.contains('show')) {
+        navbarHeight = navbar.offsetHeight;
+    }
+
+    if (infoContent.classList.contains('show')) {
+        infoContentHeight = infoContent.offsetHeight;
+    }
+
+    content.style.marginTop = `${headerHeight + navbarHeight + infoContentHeight + 20}px`;
+}
+
+window.addEventListener('resize', adjustContentPosition);
+document.addEventListener('DOMContentLoaded', adjustContentPosition);
+
+// Event listeners for navbar menu
+menuButton.addEventListener('click', () => {
+    navbar.classList.toggle('show');
+    infoContent.classList.remove('show');
+    adjustContentPosition();
+});
+infoButton.addEventListener('click', () => {
+    infoContent.classList.toggle('show');
+    navbar.classList.remove('show');
+    adjustContentPosition();
+});
+
+
+closeButton.addEventListener('click', () => {
+    infoContent.classList.remove('show');
+    adjustContentPosition();
+});
+
+ 
     <title>Body's game</title>
 </head>
 <body>
@@ -11,7 +59,7 @@
         <img src="images/Header/fotbal.png" alt="Bogdy's Game Logo" id="logo">
         <div id="mainHeader">Guess the fotballer</div>
         <div id="infoButton">ⓘ</div>
-        <div id="infoContent" class="hidden">
+        <div id="infoContent" class="hidden">   
             <button id="closeButton">X</button>
             <h2>How to Play</h2>
             <p>1. Select a league.</p>
@@ -31,37 +79,45 @@
         </ul>
     </div>
    <div class="content">
-    <h2>Premier League</h2>
-    <div class="Teams">
-        <div class="Arsenal">Arsenal <br> <img src="images/leagues/PremierLeague/Arsenal/Logo/Arsenal.png"></div>
-        <div class="AstonVilla">Aston Villa<br> <img src="images/leagues/PremierLeague/AstonVilla/Logo/AstonVilla.png"></div>
-        <div class="Bournemouth">Bournemouth <br><img src="images/leagues/PremierLeague/Bournemouth/Logo/Bournemouth.png"></div>
-        <div class="Brentford">Brentford F.C<br><img src="images/leagues/PremierLeague/Brentford/Logo/Brentford.png"></div>
-        <div class="Brighton">Brighton<br> <img src="images/leagues/PremierLeague/Brighton/Logo/Brighton.png"></div>
-        <div class="Chelsea">Chelsea<br> <img src="images/leagues/PremierLeague/Chelsea/Logo/Chelsea.png"></div>
-        <div class="CrystalPalace">Crystal Palace<br> <img src="images/leagues/PremierLeague/CrystalPalace/Logo/CrystalPalace.png"></div>
-        <div class="Everton">Everton<br> <img src="images/leagues/PremierLeague/Everton/Logo/Everton.png"></div>
-        <div class="Fulham">Fulham <br><img src="images/leagues/PremierLeague/Fulham/Logo/Fulham.png"></div>
-        <div class="Ipswich">Ipswich<br> <img src="images/leagues/PremierLeague/Ipswich/Logo/Ipswich.png"></div>
-        <div class="LeicesterCity">Leicester City<br> <img src="images/leagues/PremierLeague/AstonVilla/Logo/AstonVilla.png"></div>
-        <div class="Liverpool">Liverpool<br> <img src="images/leagues/PremierLeague/Liverpool/Logo/Liverpool.png"></div>
-        <div class="ManchesterCity">Man.City <br><img src="images/leagues/PremierLeague/ManchesterCity/Logo/ManchesterCity.png"></div>
-        <div class="ManchesterUnited">Man.United <br> <img src="images/leagues/PremierLeague/ManchesterUnited/Logo/ManchesterUnited.png"></div>
-        <div class="Newcastle">Newcastle <br><img src="images/leagues/PremierLeague/Newcastle/Logo/Newcastle.png"></div>
-        <div class="Nottingham">Nottingham <br><img src="images/leagues/PremierLeague/Nottingham/Logo/Nottingham.png"></div>
-        <div class="Southampton">Southampton <br><img src="images/leagues/PremierLeague/Southampton/Logo/Southampton.png"></div>
-        <div class="Tottenham">Tottenham <br><img src="images/leagues/PremierLeague/Tottenham/Logo/Tottenham.png"></div>
-        <div class="WestHam">West Ham <br><img src="images/leagues/PremierLeague/WestHam/Logo/WestHam.png"></div>
-        <div class="Wolves">Wolves<br> <img src="images/leagues/PremierLeague/Wolves/Logo/Wolves.png"></div>
-    </div>
-
+    <h2>Select your league</h2>
+    <ul id="leagues">
+        <li>
+            <a href="PremierLeague.html">
+                Premier League <img src="images/leagues/PremierLeague/Logo/Premier League.png.png" alt="Premier League">
+            </a>
+        </li>
+        <li>
+            <a href="LaLiga.html">
+                LaLiga  <img src="images/leagues/LaLiga/Logo/1.png" >
+            </a>
+        </li>
+        <li>
+            <a href="Bundesliga.html">
+                Bundesliga <img src="images/leagues/Bundesliga/Logo/1.png">
+            </a>
+        </li>
+        <li>
+            <a href="SerieA.html">
+                Serie A<img src="images/leagues/SerieA/Logo/SerieA.png">
+            </a>
+        </li>
+        <li>
+            <a href="Ligue1.html">
+                Ligue 1 <img src="images/leagues/Ligue1/Logo/Ligue1.png">
+            </a>
+        </li>
+        <li>
+            <a href="Icons.html">
+                Icons <img src="images/leagues/Icons/Logo/Icons.jpg">
+            </a>
+        </li>
+    </ul>
 </div>
 
 
     </div>
-    <button id="startButton">START</button>
-    <script src="js/PremierLeague.js"></script>
     <div id="cookie-banner-placeholder"></div>
+    <script src="index.js"></script>
     <script src="js/cookie-banner.js"></script>
    
     <script>
@@ -85,6 +141,6 @@
 });
     </script>
 </body>
-</html> 
+</html>
 
 
