@@ -63,7 +63,7 @@ body {
 }
 .header {
     color: #fff;
-    background-image: url('images/leagues/PremierLeague/Logo/1.jpg');
+    background-image: url('/images/leagues/PremierLeague/Arsenal/Calafiori.png');
     height: 60px;
     position: fixed;
     width: 99%; /* Ajustează la 100% pentru a ocupa toată lățimea */
@@ -285,7 +285,7 @@ body {
         font-size: 0.9rem; /* Smaller font size for navbar items */
     }
     #menuContent{
-        height: auto;
+        height: 25vh;
     }
 
     .Teams {
@@ -401,53 +401,4 @@ body {
         padding: 20px 30px;
         font-size: 20px;
     }
-}
-
-/* Add these to your existing CSS */
-.Teams {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 10px;
-    margin-bottom: 20px;
-}
-
-.team-item {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.2s;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 5px;
-}
-
-.team-item:hover {
-    transform: scale(1.05);
-}
-
-.team-item img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-}
-
-#startButton {
-    display: block;
-    margin: 20px auto;
-    padding: 15px 30px;
-    font-size: 18px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#startButton:hover {
-    background-color: #45a049;
-}
-
-#quizContainer {
-    display: none;
-    /* Add your quiz container styles here */
 }
