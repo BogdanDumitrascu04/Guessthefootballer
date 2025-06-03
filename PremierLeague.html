@@ -85,21 +85,106 @@
         });
 });
         document.addEventListener('DOMContentLoaded', function () {
-    const arsenal = document.querySelector('.Arsenal');
+    const intrebariEchipe = {
+        'Arsenal': {
+            intrebare: 'Cine este căpitanul echipei Arsenal?',
+            raspuns: 'odegaard'
+        },
+        'AstonVilla': {
+            intrebare: 'Care este porecla echipei Aston Villa?',
+            raspuns: 'the villains'
+        },
+        'Bournemouth': {
+            intrebare: 'Ce culori predomină pe echipamentul lui Bournemouth?',
+            raspuns: 'rosu si negru'
+        },
+        'Brentford': {
+            intrebare: 'Cum este poreclit Brentford FC?',
+            raspuns: 'the bees'
+        },
+        'Brighton': {
+            intrebare: 'Care este porecla echipei Brighton?',
+            raspuns: 'the seagulls'
+        },
+        'Chelsea': {
+            intrebare: 'Pe ce stadion joacă Chelsea?',
+            raspuns: 'stamford bridge'
+        },
+        'CrystalPalace': {
+            intrebare: 'Ce pasăre apare pe sigla Crystal Palace?',
+            raspuns: 'vultur'
+        },
+        'Everton': {
+            intrebare: 'În ce oraș se află echipa Everton?',
+            raspuns: 'liverpool'
+        },
+        'Fulham': {
+            intrebare: 'Care este stadionul celor de la Fulham?',
+            raspuns: 'craven cottage'
+        },
+        'Ipswich': {
+            intrebare: 'În ce an a fost fondat clubul Ipswich Town?',
+            raspuns: '1878'
+        },
+        'LeicesterCity': {
+            intrebare: 'Ce animal apare pe sigla echipei Leicester?',
+            raspuns: 'vulpe'
+        },
+        'Liverpool': {
+            intrebare: 'Cine este antrenorul principal al lui Liverpool (până în 2024)?',
+            raspuns: 'jurgen klopp'
+        },
+        'ManchesterCity': {
+            intrebare: 'Cine este căpitanul echipei Manchester City?',
+            raspuns: 'kyle walker'
+        },
+        'ManchesterUnited': {
+            intrebare: 'Care este stadionul lui Manchester United?',
+            raspuns: 'old trafford'
+        },
+        'Newcastle': {
+            intrebare: 'Cum se numește stadionul lui Newcastle?',
+            raspuns: 'st james park'
+        },
+        'Nottingham': {
+            intrebare: 'Ce culoare predomină în sigla echipei Nottingham?',
+            raspuns: 'rosu'
+        },
+        'Southampton': {
+            intrebare: 'Care este porecla echipei Southampton?',
+            raspuns: 'the saints'
+        },
+        'Tottenham': {
+            intrebare: 'Ce pasăre este pe sigla echipei Tottenham?',
+            raspuns: 'cocos'
+        },
+        'WestHam': {
+            intrebare: 'Ce unelte apar pe sigla celor de la West Ham?',
+            raspuns: 'ciocane'
+        },
+        'Wolves': {
+            intrebare: 'Ce animal este reprezentat în logo-ul echipei Wolves?',
+            raspuns: 'lup'
+        }
+    };
 
-    arsenal.addEventListener('click', function () {
-        const raspuns = prompt("Cine este căpitanul echipei Arsenal?");
-        
-        if (raspuns) {
-            if (raspuns.toLowerCase().includes("odegaard")) {
-                alert("Corect! Martin Ødegaard este căpitanul.");
-                // Poți face redirect aici dacă vrei
-                // window.location.href = "ArsenalGame.html";
-            } else {
-                alert("Răspuns greșit. Încearcă din nou!");
-            }
-        } else {
-            alert("Nu ai introdus niciun răspuns.");
+    Object.keys(intrebariEchipe).forEach(function (echipa) {
+        const element = document.querySelector('.' + echipa);
+        if (element) {
+            element.addEventListener('click', function () {
+                const intrebare = intrebariEchipe[echipa].intrebare;
+                const raspunsCorect = intrebariEchipe[echipa].raspuns.toLowerCase();
+                const raspunsUser = prompt(intrebare);
+                if (raspunsUser) {
+                    if (raspunsUser.toLowerCase().includes(raspunsCorect)) {
+                        alert("Corect! Bravo!");
+                    } else {
+                        alert("Răspuns greșit. Răspunsul corect era: " + raspunsCorect);
+                    }
+                } else {
+                    alert("Nu ai introdus niciun răspuns.");
+                }
+            });
         }
     });
 });
