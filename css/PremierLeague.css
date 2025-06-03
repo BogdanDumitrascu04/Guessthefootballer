@@ -63,7 +63,7 @@ body {
 }
 .header {
     color: #fff;
-    background-image: url("/images/1.jpg");
+    background-image: url('/images/leagues/PremierLeague/Arsenal/Calafiori.png');
     height: 60px;
     position: fixed;
     width: 99%; /* Ajustează la 100% pentru a ocupa toată lățimea */
@@ -98,7 +98,7 @@ body {
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     padding: 10px;
-    background-image: url('/images/leagues/PremierLeague/Logo/1.jpg');
+    background-image: url('images/leagues/PremierLeague/Logo/1.jpg');
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -137,7 +137,7 @@ body {
 }
 
 #menuContent {
-    background-image: url('/images/leagues/PremierLeague/Logo/1.jpg');
+    background-image: url('images/leagues/PremierLeague/Logo/1.jpg');
     box-shadow: 0 4px 15px rgba(4, 53, 30, 0.2);
     border-radius: 10px;
     overflow: hidden;
@@ -173,7 +173,7 @@ body {
     width: 300px;
     padding: 20px;
     border: 1px solid #ccc;
-    background-image: url('/images/leagues/PremierLeague/Logo/1.jpg');
+    background-image: url('images/leagues/PremierLeague/Logo/1.jpg');
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     display: none;
@@ -202,7 +202,7 @@ body {
     
 }
 .content {
-    background: url("images/1.jpg");
+    background: url('images/leagues/PremierLeague/Logo/1.jpg');
     height: 520px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -235,7 +235,7 @@ body {
     margin: 20px auto; /* Afișează butonul în centru sub tabel */
     padding: 20px 30px;
     font-size: 20px;
-    background-image: url('/images/leagues/PremierLeague/Logo/1.jpg');
+    background-image: url('images/leagues/PremierLeague/Logo/1.jpg');
     color: #FFF;
     border: none;
     cursor: pointer;
