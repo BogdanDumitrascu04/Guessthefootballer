@@ -26,7 +26,7 @@ Built entirely with **vanilla JavaScript, HTML and CSS** — no frameworks, no b
 - **Autocomplete search** with player photos and club logos
 - **Progressive hint system** (club → age)
 - **4 languages** — English, Spanish, French and Romanian, switchable live from the header
-- **460+ hand-curated players** with photos and club badges
+- **650+ hand-curated players** with photos and club badges
 - **Cookie consent banner** and privacy policy page
 - **Fully static** — plain HTML/CSS/JS, runs on any static file server
 
@@ -36,7 +36,7 @@ Built entirely with **vanilla JavaScript, HTML and CSS** — no frameworks, no b
 |------|--------|
 | Premier League | ✅ Playable — 275 players, all 20 clubs |
 | La Liga | ✅ Playable — 191 players |
-| Bundesliga | 🚧 In progress |
+| Bundesliga | ✅ Playable — 203 players, all 18 clubs |
 | Serie A | 🚧 Planned |
 | Ligue 1 | 🚧 Planned |
 | Icons (legends) | 🚧 Planned |
