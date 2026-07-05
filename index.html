@@ -4,93 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Body's game</title>
+    <title>Bogdy's Games</title>
 </head>
 <body>
     <div class="header">
-        <img src="images/Header/fotbal.png" alt="Bogdy's Game Logo" id="logo">
-        <div id="mainHeader">Guess the fotballer</div>
-        <div id="infoButton">ⓘ</div>
-        <div id="infoContent" class="hidden">   
-            <button id="closeButton">X</button>
-            <h2>How to Play</h2>
-            <p>1. Select a league.</p>
-            <p>2. Guess the footballer based on the clues provided.</p>
-            <p>3. Enjoy the game!</p>
+        <img src="images/Header/fotbal.png" alt="Bogdy's Games logo" id="logo">
+        <div id="mainHeader">Bogdy's Games</div>
+    </div>
+
+    <div class="content hub-content">
+        <h2>Pick a game</h2>
+        <div class="games-grid">
+            <a class="game-card" href="games/guess-the-footballer/index.html">
+                <img src="images/Header/fotbal.png" alt="Guess the Footballer">
+                <h3>Guess the Footballer</h3>
+                <p>A Wordle-style deduction game: pick a league, a season and a difficulty,
+                   then find the hidden player in 10 guesses using attribute clues.</p>
+                <span class="game-tag">3 leagues · 669 players · EN / ES / FR / RO</span>
+            </a>
+            <div class="game-card coming-soon">
+                <h3>More games coming soon</h3>
+                <p>New football games will land here.</p>
+            </div>
         </div>
-        <button id="menuButton">&#9776;</button> 
     </div>
-    <div class="navbar hidden" id="navbar">
-        <ul id="menuContent">
-            <li><a href="PremierLeague.html">Premier League</a></li>
-            <li><a href="LaLiga.html">LaLiga</a></li>
-            <li><a href="Bundesliga.html">Bundesliga</a></li>
-            <li><a href="SerieA.html">Serie A</a></li>
-            <li><a href="Ligue1.html">Ligue 1</a></li>
-            <li><a href="Icons.html">Icons</a></li>
-        </ul>
-    </div>
-   <div class="content">
-    <h2>Select your league</h2>
-    <ul id="leagues">
-        <li>
-            <a href="PremierLeague.html">
-                Premier League <img src="images/leagues/PremierLeague/Logo/Premier League.png.png" alt="Premier League">
-            </a>
-        </li>
-        <li>
-            <a href="LaLiga.html">
-                LaLiga  <img src="images/leagues/LaLiga/Logo/1.png" >
-            </a>
-        </li>
-        <li>
-            <a href="Bundesliga.html">
-                Bundesliga <img src="images/leagues/Bundesliga/Logo/1.png">
-            </a>
-        </li>
-        <li>
-            <a href="SerieA.html">
-                Serie A<img src="images/leagues/SerieA/Logo/SerieA.png">
-            </a>
-        </li>
-        <li>
-            <a href="Ligue1.html">
-                Ligue 1 <img src="images/leagues/Ligue1/Logo/Ligue1.png">
-            </a>
-        </li>
-        <li>
-            <a href="Icons.html">
-                Icons <img src="images/leagues/Icons/Logo/Icons.jpg">
-            </a>
-        </li>
-    </ul>
-</div>
 
+    <footer class="hub-footer">
+        <a href="privacy-policy.html">Privacy policy</a> ·
+        <a href="https://github.com/BogdanDumitrascu04/Guessthefootballer">GitHub</a>
+    </footer>
 
-    </div>
     <div id="cookie-banner-placeholder"></div>
-    <script src="index.js"></script>
     <script src="js/cookie-banner.js"></script>
-   
     <script>
-       document.addEventListener('DOMContentLoaded', function () {
-    fetch('cookie-banner.html')
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById('cookie-banner-placeholder').innerHTML = html;
-            console.log('Cookie banner HTML loaded successfully.'); // Mesaj de test
-            
-            // Inițializează scriptul pentru notificarea de cookie-uri după încărcarea HTML-ului
-            if (typeof initCookieConsent === 'function') {
-                initCookieConsent(); // Apelul corect al funcției
-            } else {
-                console.error('initCookieConsent function is not defined.');
-            }
-        })
-        .catch(error => {
-            console.error('Error loading cookie banner HTML:', error);
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('cookie-banner.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('cookie-banner-placeholder').innerHTML = html;
+                    if (typeof initCookieConsent === 'function') initCookieConsent();
+                })
+                .catch(error => console.error('Error loading cookie banner HTML:', error));
         });
-});
     </script>
 </body>
 </html>

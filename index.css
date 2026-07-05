@@ -500,3 +500,109 @@ body {
         max-width: 40%;
     }
 }
+
+/* --- platform hub -------------------------------------------------------- */
+.hub-content {
+    margin: 130px auto 40px auto;
+    width: 90%;
+    max-width: 900px;
+    height: auto;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.hub-content h2 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.games-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.game-card {
+    background: rgba(20, 20, 40, 0.85);
+    border-radius: 15px;
+    padding: 25px;
+    width: 320px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a.game-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+.game-card img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.game-card h3 {
+    margin: 5px 0 10px 0;
+    font-size: 1.4rem;
+}
+
+.game-card p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    opacity: 0.9;
+}
+
+.game-tag {
+    margin-top: auto;
+    padding: 6px 14px;
+    background: linear-gradient(90deg, #ff0000, #ff5500);
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.game-card.coming-soon {
+    opacity: 0.55;
+    border: 2px dashed rgba(255, 255, 255, 0.4);
+    background: rgba(20, 20, 40, 0.5);
+    justify-content: center;
+}
+
+.hub-footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+.hub-footer a {
+    color: #f1c40f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hub-footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+    .game-card {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .hub-content {
+        padding: 15px;
+        width: 95%;
+    }
+}
