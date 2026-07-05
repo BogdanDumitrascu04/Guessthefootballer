@@ -1,5 +1,9 @@
 # ⚽ Guess the Footballer
 
+[![Play it live](https://img.shields.io/badge/▶_Play_it_live-2ea44f?style=for-the-badge)](https://bogdandumitrascu04.github.io/Guessthefootballer/)
+
+**🎮 Play now: [bogdandumitrascu04.github.io/Guessthefootballer](https://bogdandumitrascu04.github.io/Guessthefootballer/)** — no install needed.
+
 A browser-based football guessing game inspired by Wordle-style deduction games. Pick a league, then identify the hidden footballer in at most 10 attempts — after every guess the game compares your player's attributes with the target's and tells you how close you are.
 
 Built entirely with **vanilla JavaScript, HTML and CSS** — no frameworks, no build step.
@@ -45,7 +49,7 @@ Built entirely with **vanilla JavaScript, HTML and CSS** — no frameworks, no b
 
 ## Run it locally
 
-The game is a static site, but it must be served over HTTP (some pages use absolute asset paths and `fetch()` for the cookie banner), so opening `index.html` directly from disk won't work.
+You can [play it online](https://bogdandumitrascu04.github.io/Guessthefootballer/) without installing anything. To run it locally: the game is a static site, but it must be served over HTTP (the cookie banner is loaded with `fetch()`), so opening `index.html` directly from disk won't work.
 
 ```bash
 git clone https://github.com/BogdanDumitrascu04/Guessthefootballer.git
