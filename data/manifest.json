@@ -22,6 +22,20 @@
       "logo": "images/leagues/Bundesliga/Logo/bundesliga.jpg",
       "background": "images/leagues/Bundesliga/Logo/1.jpg",
       "seasons": ["2024-25"]
+    },
+    {
+      "id": "serie-a",
+      "name": "Serie A",
+      "logo": "images/leagues/SerieA/Logo/SerieA.png",
+      "background": "images/leagues/SerieA/Logo/1.png",
+      "seasons": ["2024-25"]
+    },
+    {
+      "id": "ligue-1",
+      "name": "Ligue 1",
+      "logo": "images/leagues/Ligue1/Logo/Ligue1.png",
+      "background": "images/leagues/Ligue1/Logo/1.jpg",
+      "seasons": ["2024-25"]
     }
   ]
 }

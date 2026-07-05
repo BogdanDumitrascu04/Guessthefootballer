@@ -1,0 +1,2949 @@
+{
+  "id": "serie-a",
+  "name": "Serie A",
+  "season": "2024-25",
+  "teams": {
+    "Inter": "images/leagues/SerieA/Inter/Logo/Inter.png",
+    "AC Milan": "images/leagues/SerieA/Milan/Logo/Milan.png",
+    "Juventus": "images/leagues/SerieA/Juventus/Logo/Juventus.png",
+    "Napoli": "images/leagues/SerieA/Napoli/Logo/Napoli.png",
+    "AS Roma": "images/leagues/SerieA/Roma/Logo/Roma.png",
+    "Atalanta": "images/leagues/SerieA/Atalanta/Logo/Atalanta.png",
+    "Lazio": "images/leagues/SerieA/Lazio/Logo/Lazio.png",
+    "Fiorentina": "images/leagues/SerieA/Fiorentina/Logo/Fiorentina.png",
+    "Bologna": "images/leagues/SerieA/Bologna/Logo/Bologna.png",
+    "Torino": "images/leagues/SerieA/Torino/Logo/Torino.png",
+    "Udinese": "images/leagues/SerieA/Udinese/Logo/Udinese.png",
+    "Genoa": "images/leagues/SerieA/Genoa/Logo/Genoa.png",
+    "Monza": "images/leagues/SerieA/Monza/Logo/Monza.png",
+    "Como": "images/leagues/SerieA/Como/Logo/Como.png",
+    "Empoli": "images/leagues/SerieA/Empoli/Logo/Empoli.png",
+    "Cagliari": "images/leagues/SerieA/Cagliari/Logo/Cagliari.png",
+    "Hellas Verona": "images/leagues/SerieA/Verona/Logo/Verona.png",
+    "Lecce": "images/leagues/SerieA/Lecce/Logo/Lecce.png",
+    "Parma": "images/leagues/SerieA/Parma/Logo/Parma.png",
+    "Venezia": "images/leagues/SerieA/Venezia/Logo/Venezia.png"
+  },
+  "players": [
+    {
+      "name": "Yann Sommer",
+      "team": "Inter",
+      "position": "Goalkeeper",
+      "age": 35,
+      "number": 1,
+      "nationality": "Switzerland",
+      "photo": "images/leagues/SerieA/Inter/Logo/Inter.png",
+      "tier": 2
+    },
+    {
+      "name": "Alessandro Bastoni",
+      "team": "Inter",
+      "position": "Defender",
+      "age": 25,
+      "number": 95,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Inter/Logo/Inter.png",
+      "tier": 1
+    },
+    {
+      "name": "Francesco Acerbi",
+      "team": "Inter",
+      "position": "Defender",
+      "age": 36,
+      "number": 15,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Inter/Logo/Inter.png",
+      "tier": 2
+    },
+    {
+      "name": "Benjamin Pavard",
+      "team": "Inter",
+      "position": "Defender",
+      "age": 28,
+      "number": 28,
+      "nationality": "France",
+      "photo": "images/leagues/SerieA/Inter/Logo/Inter.png",
+      "tier": 1
+    },
+    {
+      "name": "Denzel Dumfries",
+      "team": "Inter",
+      "position": "Defender",
+      "age": 28,
+      "number": 2,
+      "nationality": "Netherlands",
+      "photo": "images/leagues/SerieA/Inter/Logo/Inter.png",
+      "tier": 2
+    },
+    {
+      "name": "Federico Dimarco",
+      "team": "Inter",
+      "position": "Defender",
+      "age": 27,
+      "number": 32,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Inter/Logo/Inter.png",
+      "tier": 1
+    },
+    {
+      "name": "Matteo Darmian",
+      "team": "Inter",
+      "position": "Defender",
+      "age": 34,
+      "number": 36,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Inter/Logo/Inter.png",
+      "tier": 3
+    },
+    {
+      "name": "Yann Bisseck",
+      "team": "Inter",
+      "position": "Defender",
+      "age": 24,
+      "number": 31,
+      "nationality": "Germany",
+      "photo": "images/leagues/SerieA/Inter/Logo/Inter.png",
+      "tier": 3
+    },
+    {
+      "name": "Nicolo Barella",
+      "team": "Inter",
+      "position": "Midfielder",
+      "age": 27,
+      "number": 23,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Inter/Logo/Inter.png",
+      "tier": 1
+    },
+    {
+      "name": "Hakan Calhanoglu",
+      "team": "Inter",
+      "position": "Midfielder",
+      "age": 30,
+      "number": 20,
+      "nationality": "Turkey",
+      "photo": "images/leagues/SerieA/Inter/Logo/Inter.png",
+      "tier": 1
+    },
+    {
+      "name": "Henrikh Mkhitaryan",
+      "team": "Inter",
+      "position": "Midfielder",
+      "age": 35,
+      "number": 22,
+      "nationality": "Armenia",
+      "photo": "images/leagues/SerieA/Inter/Logo/Inter.png",
+      "tier": 1
+    },
+    {
+      "name": "Davide Frattesi",
+      "team": "Inter",
+      "position": "Midfielder",
+      "age": 25,
+      "number": 16,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Inter/Logo/Inter.png",
+      "tier": 2
+    },
+    {
+      "name": "Piotr Zielinski",
+      "team": "Inter",
+      "position": "Midfielder",
+      "age": 30,
+      "number": 7,
+      "nationality": "Poland",
+      "photo": "images/leagues/SerieA/Inter/Logo/Inter.png",
+      "tier": 1
+    },
+    {
+      "name": "Lautaro Martinez",
+      "team": "Inter",
+      "position": "Forward",
+      "age": 27,
+      "number": 10,
+      "nationality": "Argentina",
+      "photo": "images/leagues/SerieA/Inter/Logo/Inter.png",
+      "tier": 1
+    },
+    {
+      "name": "Marcus Thuram",
+      "team": "Inter",
+      "position": "Forward",
+      "age": 27,
+      "number": 9,
+      "nationality": "France",
+      "photo": "images/leagues/SerieA/Inter/Logo/Inter.png",
+      "tier": 1
+    },
+    {
+      "name": "Marko Arnautovic",
+      "team": "Inter",
+      "position": "Forward",
+      "age": 35,
+      "number": 8,
+      "nationality": "Austria",
+      "photo": "images/leagues/SerieA/Inter/Logo/Inter.png",
+      "tier": 2
+    },
+    {
+      "name": "Mehdi Taremi",
+      "team": "Inter",
+      "position": "Forward",
+      "age": 32,
+      "number": 99,
+      "nationality": "Iran",
+      "photo": "images/leagues/SerieA/Inter/Logo/Inter.png",
+      "tier": 2
+    },
+    {
+      "name": "Mike Maignan",
+      "team": "AC Milan",
+      "position": "Goalkeeper",
+      "age": 29,
+      "number": 16,
+      "nationality": "France",
+      "photo": "images/leagues/SerieA/Milan/Logo/Milan.png",
+      "tier": 1
+    },
+    {
+      "name": "Theo Hernandez",
+      "team": "AC Milan",
+      "position": "Defender",
+      "age": 27,
+      "number": 19,
+      "nationality": "France",
+      "photo": "images/leagues/SerieA/Milan/Logo/Milan.png",
+      "tier": 1
+    },
+    {
+      "name": "Fikayo Tomori",
+      "team": "AC Milan",
+      "position": "Defender",
+      "age": 26,
+      "number": 23,
+      "nationality": "England",
+      "photo": "images/leagues/SerieA/Milan/Logo/Milan.png",
+      "tier": 2
+    },
+    {
+      "name": "Matteo Gabbia",
+      "team": "AC Milan",
+      "position": "Defender",
+      "age": 25,
+      "number": 46,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Milan/Logo/Milan.png",
+      "tier": 3
+    },
+    {
+      "name": "Davide Calabria",
+      "team": "AC Milan",
+      "position": "Defender",
+      "age": 28,
+      "number": 2,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Milan/Logo/Milan.png",
+      "tier": 2
+    },
+    {
+      "name": "Emerson Royal",
+      "team": "AC Milan",
+      "position": "Defender",
+      "age": 25,
+      "number": 22,
+      "nationality": "Brazil",
+      "photo": "images/leagues/SerieA/Milan/Logo/Milan.png",
+      "tier": 2
+    },
+    {
+      "name": "Strahinja Pavlovic",
+      "team": "AC Milan",
+      "position": "Defender",
+      "age": 23,
+      "number": 31,
+      "nationality": "Serbia",
+      "photo": "images/leagues/SerieA/Milan/Logo/Milan.png",
+      "tier": 2
+    },
+    {
+      "name": "Youssouf Fofana",
+      "team": "AC Milan",
+      "position": "Midfielder",
+      "age": 25,
+      "number": 29,
+      "nationality": "France",
+      "photo": "images/leagues/SerieA/Milan/Logo/Milan.png",
+      "tier": 2
+    },
+    {
+      "name": "Tijjani Reijnders",
+      "team": "AC Milan",
+      "position": "Midfielder",
+      "age": 26,
+      "number": 14,
+      "nationality": "Netherlands",
+      "photo": "images/leagues/SerieA/Milan/Logo/Milan.png",
+      "tier": 1
+    },
+    {
+      "name": "Ruben Loftus-Cheek",
+      "team": "AC Milan",
+      "position": "Midfielder",
+      "age": 28,
+      "number": 8,
+      "nationality": "England",
+      "photo": "images/leagues/SerieA/Milan/Logo/Milan.png",
+      "tier": 2
+    },
+    {
+      "name": "Yunus Musah",
+      "team": "AC Milan",
+      "position": "Midfielder",
+      "age": 22,
+      "number": 80,
+      "nationality": "USA",
+      "photo": "images/leagues/SerieA/Milan/Logo/Milan.png",
+      "tier": 2
+    },
+    {
+      "name": "Christian Pulisic",
+      "team": "AC Milan",
+      "position": "Forward",
+      "age": 26,
+      "number": 11,
+      "nationality": "USA",
+      "photo": "images/leagues/SerieA/Milan/Logo/Milan.png",
+      "tier": 1
+    },
+    {
+      "name": "Rafael Leao",
+      "team": "AC Milan",
+      "position": "Forward",
+      "age": 25,
+      "number": 10,
+      "nationality": "Portugal",
+      "photo": "images/leagues/SerieA/Milan/Logo/Milan.png",
+      "tier": 1
+    },
+    {
+      "name": "Alvaro Morata",
+      "team": "AC Milan",
+      "position": "Forward",
+      "age": 32,
+      "number": 7,
+      "nationality": "Spain",
+      "photo": "images/leagues/SerieA/Milan/Logo/Milan.png",
+      "tier": 1
+    },
+    {
+      "name": "Tammy Abraham",
+      "team": "AC Milan",
+      "position": "Forward",
+      "age": 27,
+      "number": 90,
+      "nationality": "England",
+      "photo": "images/leagues/SerieA/Milan/Logo/Milan.png",
+      "tier": 2
+    },
+    {
+      "name": "Samuel Chukwueze",
+      "team": "AC Milan",
+      "position": "Forward",
+      "age": 25,
+      "number": 21,
+      "nationality": "Nigeria",
+      "photo": "images/leagues/SerieA/Milan/Logo/Milan.png",
+      "tier": 2
+    },
+    {
+      "name": "Michele Di Gregorio",
+      "team": "Juventus",
+      "position": "Goalkeeper",
+      "age": 27,
+      "number": 29,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Juventus/Logo/Juventus.png",
+      "tier": 2
+    },
+    {
+      "name": "Gleison Bremer",
+      "team": "Juventus",
+      "position": "Defender",
+      "age": 27,
+      "number": 3,
+      "nationality": "Brazil",
+      "photo": "images/leagues/SerieA/Juventus/Logo/Juventus.png",
+      "tier": 1
+    },
+    {
+      "name": "Federico Gatti",
+      "team": "Juventus",
+      "position": "Defender",
+      "age": 26,
+      "number": 4,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Juventus/Logo/Juventus.png",
+      "tier": 2
+    },
+    {
+      "name": "Pierre Kalulu",
+      "team": "Juventus",
+      "position": "Defender",
+      "age": 24,
+      "number": 15,
+      "nationality": "France",
+      "photo": "images/leagues/SerieA/Juventus/Logo/Juventus.png",
+      "tier": 2
+    },
+    {
+      "name": "Andrea Cambiaso",
+      "team": "Juventus",
+      "position": "Defender",
+      "age": 24,
+      "number": 27,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Juventus/Logo/Juventus.png",
+      "tier": 2
+    },
+    {
+      "name": "Nicolo Savona",
+      "team": "Juventus",
+      "position": "Defender",
+      "age": 21,
+      "number": 37,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Juventus/Logo/Juventus.png",
+      "tier": 3
+    },
+    {
+      "name": "Manuel Locatelli",
+      "team": "Juventus",
+      "position": "Midfielder",
+      "age": 26,
+      "number": 5,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Juventus/Logo/Juventus.png",
+      "tier": 2
+    },
+    {
+      "name": "Khephren Thuram",
+      "team": "Juventus",
+      "position": "Midfielder",
+      "age": 23,
+      "number": 19,
+      "nationality": "France",
+      "photo": "images/leagues/SerieA/Juventus/Logo/Juventus.png",
+      "tier": 2
+    },
+    {
+      "name": "Teun Koopmeiners",
+      "team": "Juventus",
+      "position": "Midfielder",
+      "age": 26,
+      "number": 8,
+      "nationality": "Netherlands",
+      "photo": "images/leagues/SerieA/Juventus/Logo/Juventus.png",
+      "tier": 1
+    },
+    {
+      "name": "Nicolo Fagioli",
+      "team": "Juventus",
+      "position": "Midfielder",
+      "age": 23,
+      "number": 21,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Juventus/Logo/Juventus.png",
+      "tier": 2
+    },
+    {
+      "name": "Weston McKennie",
+      "team": "Juventus",
+      "position": "Midfielder",
+      "age": 26,
+      "number": 16,
+      "nationality": "USA",
+      "photo": "images/leagues/SerieA/Juventus/Logo/Juventus.png",
+      "tier": 2
+    },
+    {
+      "name": "Douglas Luiz",
+      "team": "Juventus",
+      "position": "Midfielder",
+      "age": 26,
+      "number": 26,
+      "nationality": "Brazil",
+      "photo": "images/leagues/SerieA/Juventus/Logo/Juventus.png",
+      "tier": 2
+    },
+    {
+      "name": "Kenan Yildiz",
+      "team": "Juventus",
+      "position": "Forward",
+      "age": 19,
+      "number": 10,
+      "nationality": "Turkey",
+      "photo": "images/leagues/SerieA/Juventus/Logo/Juventus.png",
+      "tier": 1
+    },
+    {
+      "name": "Dusan Vlahovic",
+      "team": "Juventus",
+      "position": "Forward",
+      "age": 24,
+      "number": 9,
+      "nationality": "Serbia",
+      "photo": "images/leagues/SerieA/Juventus/Logo/Juventus.png",
+      "tier": 1
+    },
+    {
+      "name": "Nico Gonzalez",
+      "team": "Juventus",
+      "position": "Forward",
+      "age": 26,
+      "number": 11,
+      "nationality": "Argentina",
+      "photo": "images/leagues/SerieA/Juventus/Logo/Juventus.png",
+      "tier": 2
+    },
+    {
+      "name": "Francisco Conceicao",
+      "team": "Juventus",
+      "position": "Forward",
+      "age": 21,
+      "number": 7,
+      "nationality": "Portugal",
+      "photo": "images/leagues/SerieA/Juventus/Logo/Juventus.png",
+      "tier": 2
+    },
+    {
+      "name": "Timothy Weah",
+      "team": "Juventus",
+      "position": "Forward",
+      "age": 24,
+      "number": 22,
+      "nationality": "USA",
+      "photo": "images/leagues/SerieA/Juventus/Logo/Juventus.png",
+      "tier": 2
+    },
+    {
+      "name": "Alex Meret",
+      "team": "Napoli",
+      "position": "Goalkeeper",
+      "age": 27,
+      "number": 1,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Napoli/Logo/Napoli.png",
+      "tier": 2
+    },
+    {
+      "name": "Giovanni Di Lorenzo",
+      "team": "Napoli",
+      "position": "Defender",
+      "age": 31,
+      "number": 22,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Napoli/Logo/Napoli.png",
+      "tier": 1
+    },
+    {
+      "name": "Amir Rrahmani",
+      "team": "Napoli",
+      "position": "Defender",
+      "age": 30,
+      "number": 13,
+      "nationality": "Kosovo",
+      "photo": "images/leagues/SerieA/Napoli/Logo/Napoli.png",
+      "tier": 2
+    },
+    {
+      "name": "Alessandro Buongiorno",
+      "team": "Napoli",
+      "position": "Defender",
+      "age": 25,
+      "number": 4,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Napoli/Logo/Napoli.png",
+      "tier": 2
+    },
+    {
+      "name": "Mathias Olivera",
+      "team": "Napoli",
+      "position": "Defender",
+      "age": 27,
+      "number": 17,
+      "nationality": "Uruguay",
+      "photo": "images/leagues/SerieA/Napoli/Logo/Napoli.png",
+      "tier": 2
+    },
+    {
+      "name": "Pasquale Mazzocchi",
+      "team": "Napoli",
+      "position": "Defender",
+      "age": 29,
+      "number": 30,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Napoli/Logo/Napoli.png",
+      "tier": 3
+    },
+    {
+      "name": "Stanislav Lobotka",
+      "team": "Napoli",
+      "position": "Midfielder",
+      "age": 29,
+      "number": 68,
+      "nationality": "Slovakia",
+      "photo": "images/leagues/SerieA/Napoli/Logo/Napoli.png",
+      "tier": 1
+    },
+    {
+      "name": "Andre-Frank Zambo Anguissa",
+      "team": "Napoli",
+      "position": "Midfielder",
+      "age": 29,
+      "number": 99,
+      "nationality": "Cameroon",
+      "photo": "images/leagues/SerieA/Napoli/Logo/Napoli.png",
+      "tier": 2
+    },
+    {
+      "name": "Scott McTominay",
+      "team": "Napoli",
+      "position": "Midfielder",
+      "age": 28,
+      "number": 8,
+      "nationality": "Scotland",
+      "photo": "images/leagues/SerieA/Napoli/Logo/Napoli.png",
+      "tier": 1
+    },
+    {
+      "name": "Billy Gilmour",
+      "team": "Napoli",
+      "position": "Midfielder",
+      "age": 23,
+      "number": 6,
+      "nationality": "Scotland",
+      "photo": "images/leagues/SerieA/Napoli/Logo/Napoli.png",
+      "tier": 2
+    },
+    {
+      "name": "Matteo Politano",
+      "team": "Napoli",
+      "position": "Forward",
+      "age": 31,
+      "number": 21,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Napoli/Logo/Napoli.png",
+      "tier": 2
+    },
+    {
+      "name": "Khvicha Kvaratskhelia",
+      "team": "Napoli",
+      "position": "Forward",
+      "age": 23,
+      "number": 77,
+      "nationality": "Georgia",
+      "photo": "images/leagues/SerieA/Napoli/Logo/Napoli.png",
+      "tier": 1
+    },
+    {
+      "name": "Romelu Lukaku",
+      "team": "Napoli",
+      "position": "Forward",
+      "age": 31,
+      "number": 11,
+      "nationality": "Belgium",
+      "photo": "images/leagues/SerieA/Napoli/Logo/Napoli.png",
+      "tier": 1
+    },
+    {
+      "name": "Giovanni Simeone",
+      "team": "Napoli",
+      "position": "Forward",
+      "age": 29,
+      "number": 18,
+      "nationality": "Argentina",
+      "photo": "images/leagues/SerieA/Napoli/Logo/Napoli.png",
+      "tier": 2
+    },
+    {
+      "name": "Giacomo Raspadori",
+      "team": "Napoli",
+      "position": "Forward",
+      "age": 24,
+      "number": 81,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Napoli/Logo/Napoli.png",
+      "tier": 2
+    },
+    {
+      "name": "David Neres",
+      "team": "Napoli",
+      "position": "Forward",
+      "age": 27,
+      "number": 7,
+      "nationality": "Brazil",
+      "photo": "images/leagues/SerieA/Napoli/Logo/Napoli.png",
+      "tier": 2
+    },
+    {
+      "name": "Mile Svilar",
+      "team": "AS Roma",
+      "position": "Goalkeeper",
+      "age": 25,
+      "number": 99,
+      "nationality": "Belgium",
+      "photo": "images/leagues/SerieA/Roma/Logo/Roma.png",
+      "tier": 2
+    },
+    {
+      "name": "Gianluca Mancini",
+      "team": "AS Roma",
+      "position": "Defender",
+      "age": 28,
+      "number": 23,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Roma/Logo/Roma.png",
+      "tier": 2
+    },
+    {
+      "name": "Evan Ndicka",
+      "team": "AS Roma",
+      "position": "Defender",
+      "age": 25,
+      "number": 5,
+      "nationality": "Ivory Coast",
+      "photo": "images/leagues/SerieA/Roma/Logo/Roma.png",
+      "tier": 2
+    },
+    {
+      "name": "Angelino",
+      "team": "AS Roma",
+      "position": "Defender",
+      "age": 27,
+      "number": 69,
+      "nationality": "Spain",
+      "photo": "images/leagues/SerieA/Roma/Logo/Roma.png",
+      "tier": 2
+    },
+    {
+      "name": "Zeki Celik",
+      "team": "AS Roma",
+      "position": "Defender",
+      "age": 27,
+      "number": 19,
+      "nationality": "Turkey",
+      "photo": "images/leagues/SerieA/Roma/Logo/Roma.png",
+      "tier": 3
+    },
+    {
+      "name": "Mats Hummels",
+      "team": "AS Roma",
+      "position": "Defender",
+      "age": 35,
+      "number": 15,
+      "nationality": "Germany",
+      "photo": "images/leagues/SerieA/Roma/Logo/Roma.png",
+      "tier": 1
+    },
+    {
+      "name": "Bryan Cristante",
+      "team": "AS Roma",
+      "position": "Midfielder",
+      "age": 29,
+      "number": 4,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Roma/Logo/Roma.png",
+      "tier": 2
+    },
+    {
+      "name": "Leandro Paredes",
+      "team": "AS Roma",
+      "position": "Midfielder",
+      "age": 30,
+      "number": 16,
+      "nationality": "Argentina",
+      "photo": "images/leagues/SerieA/Roma/Logo/Roma.png",
+      "tier": 2
+    },
+    {
+      "name": "Lorenzo Pellegrini",
+      "team": "AS Roma",
+      "position": "Midfielder",
+      "age": 28,
+      "number": 7,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Roma/Logo/Roma.png",
+      "tier": 1
+    },
+    {
+      "name": "Manu Kone",
+      "team": "AS Roma",
+      "position": "Midfielder",
+      "age": 23,
+      "number": 17,
+      "nationality": "France",
+      "photo": "images/leagues/SerieA/Roma/Logo/Roma.png",
+      "tier": 2
+    },
+    {
+      "name": "Niccolo Pisilli",
+      "team": "AS Roma",
+      "position": "Midfielder",
+      "age": 20,
+      "number": 61,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Roma/Logo/Roma.png",
+      "tier": 3
+    },
+    {
+      "name": "Paulo Dybala",
+      "team": "AS Roma",
+      "position": "Forward",
+      "age": 31,
+      "number": 21,
+      "nationality": "Argentina",
+      "photo": "images/leagues/SerieA/Roma/Logo/Roma.png",
+      "tier": 1
+    },
+    {
+      "name": "Matias Soule",
+      "team": "AS Roma",
+      "position": "Forward",
+      "age": 21,
+      "number": 18,
+      "nationality": "Argentina",
+      "photo": "images/leagues/SerieA/Roma/Logo/Roma.png",
+      "tier": 2
+    },
+    {
+      "name": "Artem Dovbyk",
+      "team": "AS Roma",
+      "position": "Forward",
+      "age": 27,
+      "number": 11,
+      "nationality": "Ukraine",
+      "photo": "images/leagues/SerieA/Roma/Logo/Roma.png",
+      "tier": 2
+    },
+    {
+      "name": "Stephan El Shaarawy",
+      "team": "AS Roma",
+      "position": "Forward",
+      "age": 32,
+      "number": 92,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Roma/Logo/Roma.png",
+      "tier": 2
+    },
+    {
+      "name": "Tommaso Baldanzi",
+      "team": "AS Roma",
+      "position": "Forward",
+      "age": 21,
+      "number": 35,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Roma/Logo/Roma.png",
+      "tier": 3
+    },
+    {
+      "name": "Marco Carnesecchi",
+      "team": "Atalanta",
+      "position": "Goalkeeper",
+      "age": 24,
+      "number": 29,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Atalanta/Logo/Atalanta.png",
+      "tier": 2
+    },
+    {
+      "name": "Isak Hien",
+      "team": "Atalanta",
+      "position": "Defender",
+      "age": 25,
+      "number": 4,
+      "nationality": "Sweden",
+      "photo": "images/leagues/SerieA/Atalanta/Logo/Atalanta.png",
+      "tier": 2
+    },
+    {
+      "name": "Sead Kolasinac",
+      "team": "Atalanta",
+      "position": "Defender",
+      "age": 31,
+      "number": 23,
+      "nationality": "Bosnia and Herzegovina",
+      "photo": "images/leagues/SerieA/Atalanta/Logo/Atalanta.png",
+      "tier": 2
+    },
+    {
+      "name": "Berat Djimsiti",
+      "team": "Atalanta",
+      "position": "Defender",
+      "age": 31,
+      "number": 19,
+      "nationality": "Albania",
+      "photo": "images/leagues/SerieA/Atalanta/Logo/Atalanta.png",
+      "tier": 3
+    },
+    {
+      "name": "Davide Zappacosta",
+      "team": "Atalanta",
+      "position": "Defender",
+      "age": 32,
+      "number": 77,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Atalanta/Logo/Atalanta.png",
+      "tier": 2
+    },
+    {
+      "name": "Raoul Bellanova",
+      "team": "Atalanta",
+      "position": "Defender",
+      "age": 24,
+      "number": 16,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Atalanta/Logo/Atalanta.png",
+      "tier": 2
+    },
+    {
+      "name": "Matteo Ruggeri",
+      "team": "Atalanta",
+      "position": "Defender",
+      "age": 22,
+      "number": 22,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Atalanta/Logo/Atalanta.png",
+      "tier": 3
+    },
+    {
+      "name": "Marten de Roon",
+      "team": "Atalanta",
+      "position": "Midfielder",
+      "age": 33,
+      "number": 15,
+      "nationality": "Netherlands",
+      "photo": "images/leagues/SerieA/Atalanta/Logo/Atalanta.png",
+      "tier": 2
+    },
+    {
+      "name": "Ederson",
+      "team": "Atalanta",
+      "position": "Midfielder",
+      "age": 25,
+      "number": 13,
+      "nationality": "Brazil",
+      "photo": "images/leagues/SerieA/Atalanta/Logo/Atalanta.png",
+      "tier": 1
+    },
+    {
+      "name": "Mario Pasalic",
+      "team": "Atalanta",
+      "position": "Midfielder",
+      "age": 29,
+      "number": 8,
+      "nationality": "Croatia",
+      "photo": "images/leagues/SerieA/Atalanta/Logo/Atalanta.png",
+      "tier": 2
+    },
+    {
+      "name": "Lazar Samardzic",
+      "team": "Atalanta",
+      "position": "Midfielder",
+      "age": 22,
+      "number": 24,
+      "nationality": "Serbia",
+      "photo": "images/leagues/SerieA/Atalanta/Logo/Atalanta.png",
+      "tier": 2
+    },
+    {
+      "name": "Marco Brescianini",
+      "team": "Atalanta",
+      "position": "Midfielder",
+      "age": 24,
+      "number": 44,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Atalanta/Logo/Atalanta.png",
+      "tier": 3
+    },
+    {
+      "name": "Ademola Lookman",
+      "team": "Atalanta",
+      "position": "Forward",
+      "age": 27,
+      "number": 11,
+      "nationality": "Nigeria",
+      "photo": "images/leagues/SerieA/Atalanta/Logo/Atalanta.png",
+      "tier": 1
+    },
+    {
+      "name": "Mateo Retegui",
+      "team": "Atalanta",
+      "position": "Forward",
+      "age": 25,
+      "number": 32,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Atalanta/Logo/Atalanta.png",
+      "tier": 1
+    },
+    {
+      "name": "Charles De Ketelaere",
+      "team": "Atalanta",
+      "position": "Forward",
+      "age": 23,
+      "number": 17,
+      "nationality": "Belgium",
+      "photo": "images/leagues/SerieA/Atalanta/Logo/Atalanta.png",
+      "tier": 1
+    },
+    {
+      "name": "Nicolo Zaniolo",
+      "team": "Atalanta",
+      "position": "Forward",
+      "age": 25,
+      "number": 10,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Atalanta/Logo/Atalanta.png",
+      "tier": 2
+    },
+    {
+      "name": "Ivan Provedel",
+      "team": "Lazio",
+      "position": "Goalkeeper",
+      "age": 30,
+      "number": 94,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Lazio/Logo/Lazio.png",
+      "tier": 2
+    },
+    {
+      "name": "Alessio Romagnoli",
+      "team": "Lazio",
+      "position": "Defender",
+      "age": 29,
+      "number": 13,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Lazio/Logo/Lazio.png",
+      "tier": 2
+    },
+    {
+      "name": "Mario Gila",
+      "team": "Lazio",
+      "position": "Defender",
+      "age": 24,
+      "number": 34,
+      "nationality": "Spain",
+      "photo": "images/leagues/SerieA/Lazio/Logo/Lazio.png",
+      "tier": 3
+    },
+    {
+      "name": "Nuno Tavares",
+      "team": "Lazio",
+      "position": "Defender",
+      "age": 24,
+      "number": 30,
+      "nationality": "Portugal",
+      "photo": "images/leagues/SerieA/Lazio/Logo/Lazio.png",
+      "tier": 2
+    },
+    {
+      "name": "Adam Marusic",
+      "team": "Lazio",
+      "position": "Defender",
+      "age": 32,
+      "number": 77,
+      "nationality": "Montenegro",
+      "photo": "images/leagues/SerieA/Lazio/Logo/Lazio.png",
+      "tier": 2
+    },
+    {
+      "name": "Manuel Lazzari",
+      "team": "Lazio",
+      "position": "Defender",
+      "age": 30,
+      "number": 29,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Lazio/Logo/Lazio.png",
+      "tier": 3
+    },
+    {
+      "name": "Matteo Guendouzi",
+      "team": "Lazio",
+      "position": "Midfielder",
+      "age": 25,
+      "number": 8,
+      "nationality": "France",
+      "photo": "images/leagues/SerieA/Lazio/Logo/Lazio.png",
+      "tier": 2
+    },
+    {
+      "name": "Nicolo Rovella",
+      "team": "Lazio",
+      "position": "Midfielder",
+      "age": 22,
+      "number": 6,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Lazio/Logo/Lazio.png",
+      "tier": 2
+    },
+    {
+      "name": "Matias Vecino",
+      "team": "Lazio",
+      "position": "Midfielder",
+      "age": 33,
+      "number": 5,
+      "nationality": "Uruguay",
+      "photo": "images/leagues/SerieA/Lazio/Logo/Lazio.png",
+      "tier": 3
+    },
+    {
+      "name": "Fisayo Dele-Bashiru",
+      "team": "Lazio",
+      "position": "Midfielder",
+      "age": 23,
+      "number": 7,
+      "nationality": "Nigeria",
+      "photo": "images/leagues/SerieA/Lazio/Logo/Lazio.png",
+      "tier": 3
+    },
+    {
+      "name": "Gustav Isaksen",
+      "team": "Lazio",
+      "position": "Forward",
+      "age": 23,
+      "number": 18,
+      "nationality": "Denmark",
+      "photo": "images/leagues/SerieA/Lazio/Logo/Lazio.png",
+      "tier": 2
+    },
+    {
+      "name": "Mattia Zaccagni",
+      "team": "Lazio",
+      "position": "Forward",
+      "age": 29,
+      "number": 10,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Lazio/Logo/Lazio.png",
+      "tier": 1
+    },
+    {
+      "name": "Valentin Castellanos",
+      "team": "Lazio",
+      "position": "Forward",
+      "age": 26,
+      "number": 11,
+      "nationality": "Argentina",
+      "photo": "images/leagues/SerieA/Lazio/Logo/Lazio.png",
+      "tier": 2
+    },
+    {
+      "name": "Boulaye Dia",
+      "team": "Lazio",
+      "position": "Forward",
+      "age": 28,
+      "number": 19,
+      "nationality": "Senegal",
+      "photo": "images/leagues/SerieA/Lazio/Logo/Lazio.png",
+      "tier": 2
+    },
+    {
+      "name": "Pedro",
+      "team": "Lazio",
+      "position": "Forward",
+      "age": 37,
+      "number": 9,
+      "nationality": "Spain",
+      "photo": "images/leagues/SerieA/Lazio/Logo/Lazio.png",
+      "tier": 1
+    },
+    {
+      "name": "Tijjani Noslin",
+      "team": "Lazio",
+      "position": "Forward",
+      "age": 25,
+      "number": 14,
+      "nationality": "Netherlands",
+      "photo": "images/leagues/SerieA/Lazio/Logo/Lazio.png",
+      "tier": 3
+    },
+    {
+      "name": "David De Gea",
+      "team": "Fiorentina",
+      "position": "Goalkeeper",
+      "age": 34,
+      "number": 43,
+      "nationality": "Spain",
+      "photo": "images/leagues/SerieA/Fiorentina/Logo/Fiorentina.png",
+      "tier": 1
+    },
+    {
+      "name": "Luca Ranieri",
+      "team": "Fiorentina",
+      "position": "Defender",
+      "age": 25,
+      "number": 6,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Fiorentina/Logo/Fiorentina.png",
+      "tier": 2
+    },
+    {
+      "name": "Pietro Comuzzo",
+      "team": "Fiorentina",
+      "position": "Defender",
+      "age": 19,
+      "number": 15,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Fiorentina/Logo/Fiorentina.png",
+      "tier": 3
+    },
+    {
+      "name": "Dodo",
+      "team": "Fiorentina",
+      "position": "Defender",
+      "age": 26,
+      "number": 2,
+      "nationality": "Brazil",
+      "photo": "images/leagues/SerieA/Fiorentina/Logo/Fiorentina.png",
+      "tier": 2
+    },
+    {
+      "name": "Robin Gosens",
+      "team": "Fiorentina",
+      "position": "Defender",
+      "age": 30,
+      "number": 21,
+      "nationality": "Germany",
+      "photo": "images/leagues/SerieA/Fiorentina/Logo/Fiorentina.png",
+      "tier": 2
+    },
+    {
+      "name": "Marin Pongracic",
+      "team": "Fiorentina",
+      "position": "Defender",
+      "age": 27,
+      "number": 5,
+      "nationality": "Croatia",
+      "photo": "images/leagues/SerieA/Fiorentina/Logo/Fiorentina.png",
+      "tier": 3
+    },
+    {
+      "name": "Yacine Adli",
+      "team": "Fiorentina",
+      "position": "Midfielder",
+      "age": 24,
+      "number": 29,
+      "nationality": "France",
+      "photo": "images/leagues/SerieA/Fiorentina/Logo/Fiorentina.png",
+      "tier": 2
+    },
+    {
+      "name": "Danilo Cataldi",
+      "team": "Fiorentina",
+      "position": "Midfielder",
+      "age": 30,
+      "number": 32,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Fiorentina/Logo/Fiorentina.png",
+      "tier": 3
+    },
+    {
+      "name": "Rolando Mandragora",
+      "team": "Fiorentina",
+      "position": "Midfielder",
+      "age": 27,
+      "number": 8,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Fiorentina/Logo/Fiorentina.png",
+      "tier": 3
+    },
+    {
+      "name": "Edoardo Bove",
+      "team": "Fiorentina",
+      "position": "Midfielder",
+      "age": 22,
+      "number": 4,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Fiorentina/Logo/Fiorentina.png",
+      "tier": 2
+    },
+    {
+      "name": "Andrea Colpani",
+      "team": "Fiorentina",
+      "position": "Forward",
+      "age": 25,
+      "number": 16,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Fiorentina/Logo/Fiorentina.png",
+      "tier": 2
+    },
+    {
+      "name": "Albert Gudmundsson",
+      "team": "Fiorentina",
+      "position": "Forward",
+      "age": 27,
+      "number": 10,
+      "nationality": "Iceland",
+      "photo": "images/leagues/SerieA/Fiorentina/Logo/Fiorentina.png",
+      "tier": 2
+    },
+    {
+      "name": "Moise Kean",
+      "team": "Fiorentina",
+      "position": "Forward",
+      "age": 24,
+      "number": 20,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Fiorentina/Logo/Fiorentina.png",
+      "tier": 1
+    },
+    {
+      "name": "Lucas Beltran",
+      "team": "Fiorentina",
+      "position": "Forward",
+      "age": 23,
+      "number": 9,
+      "nationality": "Argentina",
+      "photo": "images/leagues/SerieA/Fiorentina/Logo/Fiorentina.png",
+      "tier": 2
+    },
+    {
+      "name": "Riccardo Sottil",
+      "team": "Fiorentina",
+      "position": "Forward",
+      "age": 25,
+      "number": 7,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Fiorentina/Logo/Fiorentina.png",
+      "tier": 3
+    },
+    {
+      "name": "Jonathan Ikone",
+      "team": "Fiorentina",
+      "position": "Forward",
+      "age": 26,
+      "number": 11,
+      "nationality": "France",
+      "photo": "images/leagues/SerieA/Fiorentina/Logo/Fiorentina.png",
+      "tier": 2
+    },
+    {
+      "name": "Lukasz Skorupski",
+      "team": "Bologna",
+      "position": "Goalkeeper",
+      "age": 33,
+      "number": 28,
+      "nationality": "Poland",
+      "photo": "images/leagues/SerieA/Bologna/Logo/Bologna.png",
+      "tier": 2
+    },
+    {
+      "name": "Sam Beukema",
+      "team": "Bologna",
+      "position": "Defender",
+      "age": 26,
+      "number": 31,
+      "nationality": "Netherlands",
+      "photo": "images/leagues/SerieA/Bologna/Logo/Bologna.png",
+      "tier": 2
+    },
+    {
+      "name": "Jhon Lucumi",
+      "team": "Bologna",
+      "position": "Defender",
+      "age": 26,
+      "number": 26,
+      "nationality": "Colombia",
+      "photo": "images/leagues/SerieA/Bologna/Logo/Bologna.png",
+      "tier": 2
+    },
+    {
+      "name": "Stefan Posch",
+      "team": "Bologna",
+      "position": "Defender",
+      "age": 27,
+      "number": 3,
+      "nationality": "Austria",
+      "photo": "images/leagues/SerieA/Bologna/Logo/Bologna.png",
+      "tier": 3
+    },
+    {
+      "name": "Charalampos Lykogiannis",
+      "team": "Bologna",
+      "position": "Defender",
+      "age": 31,
+      "number": 22,
+      "nationality": "Greece",
+      "photo": "images/leagues/SerieA/Bologna/Logo/Bologna.png",
+      "tier": 3
+    },
+    {
+      "name": "Emil Holm",
+      "team": "Bologna",
+      "position": "Defender",
+      "age": 24,
+      "number": 2,
+      "nationality": "Sweden",
+      "photo": "images/leagues/SerieA/Bologna/Logo/Bologna.png",
+      "tier": 3
+    },
+    {
+      "name": "Juan Miranda",
+      "team": "Bologna",
+      "position": "Defender",
+      "age": 24,
+      "number": 33,
+      "nationality": "Spain",
+      "photo": "images/leagues/SerieA/Bologna/Logo/Bologna.png",
+      "tier": 3
+    },
+    {
+      "name": "Remo Freuler",
+      "team": "Bologna",
+      "position": "Midfielder",
+      "age": 32,
+      "number": 8,
+      "nationality": "Switzerland",
+      "photo": "images/leagues/SerieA/Bologna/Logo/Bologna.png",
+      "tier": 2
+    },
+    {
+      "name": "Michel Aebischer",
+      "team": "Bologna",
+      "position": "Midfielder",
+      "age": 28,
+      "number": 20,
+      "nationality": "Switzerland",
+      "photo": "images/leagues/SerieA/Bologna/Logo/Bologna.png",
+      "tier": 3
+    },
+    {
+      "name": "Lewis Ferguson",
+      "team": "Bologna",
+      "position": "Midfielder",
+      "age": 25,
+      "number": 19,
+      "nationality": "Scotland",
+      "photo": "images/leagues/SerieA/Bologna/Logo/Bologna.png",
+      "tier": 2
+    },
+    {
+      "name": "Giovanni Fabbian",
+      "team": "Bologna",
+      "position": "Midfielder",
+      "age": 21,
+      "number": 80,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Bologna/Logo/Bologna.png",
+      "tier": 3
+    },
+    {
+      "name": "Dan Ndoye",
+      "team": "Bologna",
+      "position": "Forward",
+      "age": 24,
+      "number": 11,
+      "nationality": "Switzerland",
+      "photo": "images/leagues/SerieA/Bologna/Logo/Bologna.png",
+      "tier": 2
+    },
+    {
+      "name": "Riccardo Orsolini",
+      "team": "Bologna",
+      "position": "Forward",
+      "age": 27,
+      "number": 7,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Bologna/Logo/Bologna.png",
+      "tier": 1
+    },
+    {
+      "name": "Santiago Castro",
+      "team": "Bologna",
+      "position": "Forward",
+      "age": 20,
+      "number": 9,
+      "nationality": "Argentina",
+      "photo": "images/leagues/SerieA/Bologna/Logo/Bologna.png",
+      "tier": 2
+    },
+    {
+      "name": "Jens Odgaard",
+      "team": "Bologna",
+      "position": "Forward",
+      "age": 25,
+      "number": 21,
+      "nationality": "Denmark",
+      "photo": "images/leagues/SerieA/Bologna/Logo/Bologna.png",
+      "tier": 3
+    },
+    {
+      "name": "Vanja Milinkovic-Savic",
+      "team": "Torino",
+      "position": "Goalkeeper",
+      "age": 27,
+      "number": 32,
+      "nationality": "Serbia",
+      "photo": "images/leagues/SerieA/Torino/Logo/Torino.png",
+      "tier": 2
+    },
+    {
+      "name": "Saul Coco",
+      "team": "Torino",
+      "position": "Defender",
+      "age": 25,
+      "number": 23,
+      "nationality": "Equatorial Guinea",
+      "photo": "images/leagues/SerieA/Torino/Logo/Torino.png",
+      "tier": 3
+    },
+    {
+      "name": "Guillermo Maripan",
+      "team": "Torino",
+      "position": "Defender",
+      "age": 30,
+      "number": 13,
+      "nationality": "Chile",
+      "photo": "images/leagues/SerieA/Torino/Logo/Torino.png",
+      "tier": 2
+    },
+    {
+      "name": "Adam Masina",
+      "team": "Torino",
+      "position": "Defender",
+      "age": 30,
+      "number": 5,
+      "nationality": "Morocco",
+      "photo": "images/leagues/SerieA/Torino/Logo/Torino.png",
+      "tier": 3
+    },
+    {
+      "name": "Mergim Vojvoda",
+      "team": "Torino",
+      "position": "Defender",
+      "age": 29,
+      "number": 27,
+      "nationality": "Kosovo",
+      "photo": "images/leagues/SerieA/Torino/Logo/Torino.png",
+      "tier": 3
+    },
+    {
+      "name": "Valentino Lazaro",
+      "team": "Torino",
+      "position": "Defender",
+      "age": 28,
+      "number": 20,
+      "nationality": "Austria",
+      "photo": "images/leagues/SerieA/Torino/Logo/Torino.png",
+      "tier": 3
+    },
+    {
+      "name": "Samuele Ricci",
+      "team": "Torino",
+      "position": "Midfielder",
+      "age": 23,
+      "number": 28,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Torino/Logo/Torino.png",
+      "tier": 2
+    },
+    {
+      "name": "Ivan Ilic",
+      "team": "Torino",
+      "position": "Midfielder",
+      "age": 23,
+      "number": 8,
+      "nationality": "Serbia",
+      "photo": "images/leagues/SerieA/Torino/Logo/Torino.png",
+      "tier": 2
+    },
+    {
+      "name": "Karol Linetty",
+      "team": "Torino",
+      "position": "Midfielder",
+      "age": 29,
+      "number": 77,
+      "nationality": "Poland",
+      "photo": "images/leagues/SerieA/Torino/Logo/Torino.png",
+      "tier": 3
+    },
+    {
+      "name": "Nikola Vlasic",
+      "team": "Torino",
+      "position": "Midfielder",
+      "age": 27,
+      "number": 10,
+      "nationality": "Croatia",
+      "photo": "images/leagues/SerieA/Torino/Logo/Torino.png",
+      "tier": 2
+    },
+    {
+      "name": "Che Adams",
+      "team": "Torino",
+      "position": "Forward",
+      "age": 28,
+      "number": 18,
+      "nationality": "Scotland",
+      "photo": "images/leagues/SerieA/Torino/Logo/Torino.png",
+      "tier": 2
+    },
+    {
+      "name": "Duvan Zapata",
+      "team": "Torino",
+      "position": "Forward",
+      "age": 33,
+      "number": 91,
+      "nationality": "Colombia",
+      "photo": "images/leagues/SerieA/Torino/Logo/Torino.png",
+      "tier": 1
+    },
+    {
+      "name": "Antonio Sanabria",
+      "team": "Torino",
+      "position": "Forward",
+      "age": 28,
+      "number": 9,
+      "nationality": "Paraguay",
+      "photo": "images/leagues/SerieA/Torino/Logo/Torino.png",
+      "tier": 2
+    },
+    {
+      "name": "Yann Karamoh",
+      "team": "Torino",
+      "position": "Forward",
+      "age": 26,
+      "number": 7,
+      "nationality": "France",
+      "photo": "images/leagues/SerieA/Torino/Logo/Torino.png",
+      "tier": 3
+    },
+    {
+      "name": "Maduka Okoye",
+      "team": "Udinese",
+      "position": "Goalkeeper",
+      "age": 25,
+      "number": 40,
+      "nationality": "Nigeria",
+      "photo": "images/leagues/SerieA/Udinese/Logo/Udinese.png",
+      "tier": 2
+    },
+    {
+      "name": "Jaka Bijol",
+      "team": "Udinese",
+      "position": "Defender",
+      "age": 25,
+      "number": 29,
+      "nationality": "Slovenia",
+      "photo": "images/leagues/SerieA/Udinese/Logo/Udinese.png",
+      "tier": 2
+    },
+    {
+      "name": "Thomas Kristensen",
+      "team": "Udinese",
+      "position": "Defender",
+      "age": 22,
+      "number": 31,
+      "nationality": "Denmark",
+      "photo": "images/leagues/SerieA/Udinese/Logo/Udinese.png",
+      "tier": 3
+    },
+    {
+      "name": "Christian Kabasele",
+      "team": "Udinese",
+      "position": "Defender",
+      "age": 33,
+      "number": 27,
+      "nationality": "Belgium",
+      "photo": "images/leagues/SerieA/Udinese/Logo/Udinese.png",
+      "tier": 3
+    },
+    {
+      "name": "Jordan Zemura",
+      "team": "Udinese",
+      "position": "Defender",
+      "age": 25,
+      "number": 33,
+      "nationality": "Zimbabwe",
+      "photo": "images/leagues/SerieA/Udinese/Logo/Udinese.png",
+      "tier": 3
+    },
+    {
+      "name": "Jesper Karlstrom",
+      "team": "Udinese",
+      "position": "Midfielder",
+      "age": 29,
+      "number": 6,
+      "nationality": "Sweden",
+      "photo": "images/leagues/SerieA/Udinese/Logo/Udinese.png",
+      "tier": 3
+    },
+    {
+      "name": "Sandi Lovric",
+      "team": "Udinese",
+      "position": "Midfielder",
+      "age": 26,
+      "number": 4,
+      "nationality": "Slovenia",
+      "photo": "images/leagues/SerieA/Udinese/Logo/Udinese.png",
+      "tier": 2
+    },
+    {
+      "name": "Martin Payero",
+      "team": "Udinese",
+      "position": "Midfielder",
+      "age": 26,
+      "number": 10,
+      "nationality": "Argentina",
+      "photo": "images/leagues/SerieA/Udinese/Logo/Udinese.png",
+      "tier": 3
+    },
+    {
+      "name": "Jurgen Ekkelenkamp",
+      "team": "Udinese",
+      "position": "Midfielder",
+      "age": 24,
+      "number": 16,
+      "nationality": "Netherlands",
+      "photo": "images/leagues/SerieA/Udinese/Logo/Udinese.png",
+      "tier": 3
+    },
+    {
+      "name": "Florian Thauvin",
+      "team": "Udinese",
+      "position": "Forward",
+      "age": 31,
+      "number": 26,
+      "nationality": "France",
+      "photo": "images/leagues/SerieA/Udinese/Logo/Udinese.png",
+      "tier": 1
+    },
+    {
+      "name": "Lorenzo Lucca",
+      "team": "Udinese",
+      "position": "Forward",
+      "age": 24,
+      "number": 17,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Udinese/Logo/Udinese.png",
+      "tier": 2
+    },
+    {
+      "name": "Keinan Davis",
+      "team": "Udinese",
+      "position": "Forward",
+      "age": 26,
+      "number": 9,
+      "nationality": "England",
+      "photo": "images/leagues/SerieA/Udinese/Logo/Udinese.png",
+      "tier": 2
+    },
+    {
+      "name": "Brenner",
+      "team": "Udinese",
+      "position": "Forward",
+      "age": 24,
+      "number": 23,
+      "nationality": "Brazil",
+      "photo": "images/leagues/SerieA/Udinese/Logo/Udinese.png",
+      "tier": 3
+    },
+    {
+      "name": "Nicola Leali",
+      "team": "Genoa",
+      "position": "Goalkeeper",
+      "age": 31,
+      "number": 1,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Genoa/Logo/Genoa.png",
+      "tier": 3
+    },
+    {
+      "name": "Koni De Winter",
+      "team": "Genoa",
+      "position": "Defender",
+      "age": 22,
+      "number": 4,
+      "nationality": "Belgium",
+      "photo": "images/leagues/SerieA/Genoa/Logo/Genoa.png",
+      "tier": 2
+    },
+    {
+      "name": "Mattia Bani",
+      "team": "Genoa",
+      "position": "Defender",
+      "age": 30,
+      "number": 13,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Genoa/Logo/Genoa.png",
+      "tier": 3
+    },
+    {
+      "name": "Johan Vasquez",
+      "team": "Genoa",
+      "position": "Defender",
+      "age": 26,
+      "number": 22,
+      "nationality": "Mexico",
+      "photo": "images/leagues/SerieA/Genoa/Logo/Genoa.png",
+      "tier": 2
+    },
+    {
+      "name": "Stefano Sabelli",
+      "team": "Genoa",
+      "position": "Defender",
+      "age": 31,
+      "number": 20,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Genoa/Logo/Genoa.png",
+      "tier": 3
+    },
+    {
+      "name": "Aaron Martin",
+      "team": "Genoa",
+      "position": "Defender",
+      "age": 27,
+      "number": 3,
+      "nationality": "Spain",
+      "photo": "images/leagues/SerieA/Genoa/Logo/Genoa.png",
+      "tier": 3
+    },
+    {
+      "name": "Morten Frendrup",
+      "team": "Genoa",
+      "position": "Midfielder",
+      "age": 23,
+      "number": 32,
+      "nationality": "Denmark",
+      "photo": "images/leagues/SerieA/Genoa/Logo/Genoa.png",
+      "tier": 2
+    },
+    {
+      "name": "Milan Badelj",
+      "team": "Genoa",
+      "position": "Midfielder",
+      "age": 35,
+      "number": 47,
+      "nationality": "Croatia",
+      "photo": "images/leagues/SerieA/Genoa/Logo/Genoa.png",
+      "tier": 2
+    },
+    {
+      "name": "Morten Thorsby",
+      "team": "Genoa",
+      "position": "Midfielder",
+      "age": 28,
+      "number": 2,
+      "nationality": "Norway",
+      "photo": "images/leagues/SerieA/Genoa/Logo/Genoa.png",
+      "tier": 3
+    },
+    {
+      "name": "Ruslan Malinovskyi",
+      "team": "Genoa",
+      "position": "Midfielder",
+      "age": 31,
+      "number": 17,
+      "nationality": "Ukraine",
+      "photo": "images/leagues/SerieA/Genoa/Logo/Genoa.png",
+      "tier": 2
+    },
+    {
+      "name": "Fabio Miretti",
+      "team": "Genoa",
+      "position": "Midfielder",
+      "age": 21,
+      "number": 14,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Genoa/Logo/Genoa.png",
+      "tier": 2
+    },
+    {
+      "name": "Mario Balotelli",
+      "team": "Genoa",
+      "position": "Forward",
+      "age": 34,
+      "number": 45,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Genoa/Logo/Genoa.png",
+      "tier": 1
+    },
+    {
+      "name": "Andrea Pinamonti",
+      "team": "Genoa",
+      "position": "Forward",
+      "age": 25,
+      "number": 19,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Genoa/Logo/Genoa.png",
+      "tier": 2
+    },
+    {
+      "name": "Vitinha",
+      "team": "Genoa",
+      "position": "Forward",
+      "age": 24,
+      "number": 9,
+      "nationality": "Portugal",
+      "photo": "images/leagues/SerieA/Genoa/Logo/Genoa.png",
+      "tier": 3
+    },
+    {
+      "name": "Junior Messias",
+      "team": "Genoa",
+      "position": "Forward",
+      "age": 33,
+      "number": 10,
+      "nationality": "Brazil",
+      "photo": "images/leagues/SerieA/Genoa/Logo/Genoa.png",
+      "tier": 3
+    },
+    {
+      "name": "Stefano Turati",
+      "team": "Monza",
+      "position": "Goalkeeper",
+      "age": 23,
+      "number": 1,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Monza/Logo/Monza.png",
+      "tier": 3
+    },
+    {
+      "name": "Armando Izzo",
+      "team": "Monza",
+      "position": "Defender",
+      "age": 32,
+      "number": 4,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Monza/Logo/Monza.png",
+      "tier": 3
+    },
+    {
+      "name": "Pablo Mari",
+      "team": "Monza",
+      "position": "Defender",
+      "age": 31,
+      "number": 3,
+      "nationality": "Spain",
+      "photo": "images/leagues/SerieA/Monza/Logo/Monza.png",
+      "tier": 2
+    },
+    {
+      "name": "Luca Caldirola",
+      "team": "Monza",
+      "position": "Defender",
+      "age": 33,
+      "number": 5,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Monza/Logo/Monza.png",
+      "tier": 3
+    },
+    {
+      "name": "Georgios Kyriakopoulos",
+      "team": "Monza",
+      "position": "Defender",
+      "age": 28,
+      "number": 77,
+      "nationality": "Greece",
+      "photo": "images/leagues/SerieA/Monza/Logo/Monza.png",
+      "tier": 3
+    },
+    {
+      "name": "Alessandro Bianco",
+      "team": "Monza",
+      "position": "Midfielder",
+      "age": 22,
+      "number": 28,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Monza/Logo/Monza.png",
+      "tier": 3
+    },
+    {
+      "name": "Matteo Pessina",
+      "team": "Monza",
+      "position": "Midfielder",
+      "age": 27,
+      "number": 32,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Monza/Logo/Monza.png",
+      "tier": 2
+    },
+    {
+      "name": "Warren Bondo",
+      "team": "Monza",
+      "position": "Midfielder",
+      "age": 21,
+      "number": 38,
+      "nationality": "France",
+      "photo": "images/leagues/SerieA/Monza/Logo/Monza.png",
+      "tier": 3
+    },
+    {
+      "name": "Daniel Maldini",
+      "team": "Monza",
+      "position": "Forward",
+      "age": 23,
+      "number": 11,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Monza/Logo/Monza.png",
+      "tier": 2
+    },
+    {
+      "name": "Milan Djuric",
+      "team": "Monza",
+      "position": "Forward",
+      "age": 34,
+      "number": 9,
+      "nationality": "Bosnia and Herzegovina",
+      "photo": "images/leagues/SerieA/Monza/Logo/Monza.png",
+      "tier": 2
+    },
+    {
+      "name": "Gianluca Caprari",
+      "team": "Monza",
+      "position": "Forward",
+      "age": 31,
+      "number": 10,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Monza/Logo/Monza.png",
+      "tier": 2
+    },
+    {
+      "name": "Dany Mota",
+      "team": "Monza",
+      "position": "Forward",
+      "age": 26,
+      "number": 47,
+      "nationality": "Portugal",
+      "photo": "images/leagues/SerieA/Monza/Logo/Monza.png",
+      "tier": 3
+    },
+    {
+      "name": "Pepe Reina",
+      "team": "Como",
+      "position": "Goalkeeper",
+      "age": 42,
+      "number": 25,
+      "nationality": "Spain",
+      "photo": "images/leagues/SerieA/Como/Logo/Como.png",
+      "tier": 1
+    },
+    {
+      "name": "Alberto Dossena",
+      "team": "Como",
+      "position": "Defender",
+      "age": 26,
+      "number": 33,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Como/Logo/Como.png",
+      "tier": 3
+    },
+    {
+      "name": "Marc-Oliver Kempf",
+      "team": "Como",
+      "position": "Defender",
+      "age": 29,
+      "number": 4,
+      "nationality": "Germany",
+      "photo": "images/leagues/SerieA/Como/Logo/Como.png",
+      "tier": 3
+    },
+    {
+      "name": "Edoardo Goldaniga",
+      "team": "Como",
+      "position": "Defender",
+      "age": 31,
+      "number": 5,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Como/Logo/Como.png",
+      "tier": 3
+    },
+    {
+      "name": "Alberto Moreno",
+      "team": "Como",
+      "position": "Defender",
+      "age": 32,
+      "number": 18,
+      "nationality": "Spain",
+      "photo": "images/leagues/SerieA/Como/Logo/Como.png",
+      "tier": 2
+    },
+    {
+      "name": "Maximo Perrone",
+      "team": "Como",
+      "position": "Midfielder",
+      "age": 21,
+      "number": 23,
+      "nationality": "Argentina",
+      "photo": "images/leagues/SerieA/Como/Logo/Como.png",
+      "tier": 2
+    },
+    {
+      "name": "Sergi Roberto",
+      "team": "Como",
+      "position": "Midfielder",
+      "age": 32,
+      "number": 20,
+      "nationality": "Spain",
+      "photo": "images/leagues/SerieA/Como/Logo/Como.png",
+      "tier": 1
+    },
+    {
+      "name": "Nico Paz",
+      "team": "Como",
+      "position": "Midfielder",
+      "age": 20,
+      "number": 79,
+      "nationality": "Argentina",
+      "photo": "images/leagues/SerieA/Como/Logo/Como.png",
+      "tier": 1
+    },
+    {
+      "name": "Gabriel Strefezza",
+      "team": "Como",
+      "position": "Forward",
+      "age": 27,
+      "number": 7,
+      "nationality": "Brazil",
+      "photo": "images/leagues/SerieA/Como/Logo/Como.png",
+      "tier": 2
+    },
+    {
+      "name": "Patrick Cutrone",
+      "team": "Como",
+      "position": "Forward",
+      "age": 26,
+      "number": 10,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Como/Logo/Como.png",
+      "tier": 2
+    },
+    {
+      "name": "Andrea Belotti",
+      "team": "Como",
+      "position": "Forward",
+      "age": 30,
+      "number": 9,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Como/Logo/Como.png",
+      "tier": 2
+    },
+    {
+      "name": "Alieu Fadera",
+      "team": "Como",
+      "position": "Forward",
+      "age": 23,
+      "number": 11,
+      "nationality": "Gambia",
+      "photo": "images/leagues/SerieA/Como/Logo/Como.png",
+      "tier": 3
+    },
+    {
+      "name": "Devis Vasquez",
+      "team": "Empoli",
+      "position": "Goalkeeper",
+      "age": 26,
+      "number": 22,
+      "nationality": "Colombia",
+      "photo": "images/leagues/SerieA/Empoli/Logo/Empoli.png",
+      "tier": 3
+    },
+    {
+      "name": "Ardian Ismajli",
+      "team": "Empoli",
+      "position": "Defender",
+      "age": 28,
+      "number": 34,
+      "nationality": "Albania",
+      "photo": "images/leagues/SerieA/Empoli/Logo/Empoli.png",
+      "tier": 3
+    },
+    {
+      "name": "Mattia Viti",
+      "team": "Empoli",
+      "position": "Defender",
+      "age": 22,
+      "number": 3,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Empoli/Logo/Empoli.png",
+      "tier": 3
+    },
+    {
+      "name": "Saba Goglichidze",
+      "team": "Empoli",
+      "position": "Defender",
+      "age": 20,
+      "number": 23,
+      "nationality": "Georgia",
+      "photo": "images/leagues/SerieA/Empoli/Logo/Empoli.png",
+      "tier": 3
+    },
+    {
+      "name": "Emmanuel Gyasi",
+      "team": "Empoli",
+      "position": "Forward",
+      "age": 30,
+      "number": 11,
+      "nationality": "Ghana",
+      "photo": "images/leagues/SerieA/Empoli/Logo/Empoli.png",
+      "tier": 3
+    },
+    {
+      "name": "Alberto Grassi",
+      "team": "Empoli",
+      "position": "Midfielder",
+      "age": 29,
+      "number": 5,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Empoli/Logo/Empoli.png",
+      "tier": 3
+    },
+    {
+      "name": "Liam Henderson",
+      "team": "Empoli",
+      "position": "Midfielder",
+      "age": 28,
+      "number": 8,
+      "nationality": "Scotland",
+      "photo": "images/leagues/SerieA/Empoli/Logo/Empoli.png",
+      "tier": 3
+    },
+    {
+      "name": "Jacopo Fazzini",
+      "team": "Empoli",
+      "position": "Midfielder",
+      "age": 21,
+      "number": 10,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Empoli/Logo/Empoli.png",
+      "tier": 2
+    },
+    {
+      "name": "Youssef Maleh",
+      "team": "Empoli",
+      "position": "Midfielder",
+      "age": 26,
+      "number": 20,
+      "nationality": "Morocco",
+      "photo": "images/leagues/SerieA/Empoli/Logo/Empoli.png",
+      "tier": 3
+    },
+    {
+      "name": "Tino Anjorin",
+      "team": "Empoli",
+      "position": "Midfielder",
+      "age": 23,
+      "number": 21,
+      "nationality": "England",
+      "photo": "images/leagues/SerieA/Empoli/Logo/Empoli.png",
+      "tier": 3
+    },
+    {
+      "name": "Lorenzo Colombo",
+      "team": "Empoli",
+      "position": "Forward",
+      "age": 22,
+      "number": 9,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Empoli/Logo/Empoli.png",
+      "tier": 2
+    },
+    {
+      "name": "Sebastiano Esposito",
+      "team": "Empoli",
+      "position": "Forward",
+      "age": 22,
+      "number": 99,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Empoli/Logo/Empoli.png",
+      "tier": 2
+    },
+    {
+      "name": "Ola Solbakken",
+      "team": "Empoli",
+      "position": "Forward",
+      "age": 26,
+      "number": 14,
+      "nationality": "Norway",
+      "photo": "images/leagues/SerieA/Empoli/Logo/Empoli.png",
+      "tier": 3
+    },
+    {
+      "name": "Pietro Pellegri",
+      "team": "Empoli",
+      "position": "Forward",
+      "age": 23,
+      "number": 19,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Empoli/Logo/Empoli.png",
+      "tier": 3
+    },
+    {
+      "name": "Simone Scuffet",
+      "team": "Cagliari",
+      "position": "Goalkeeper",
+      "age": 28,
+      "number": 22,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Cagliari/Logo/Cagliari.png",
+      "tier": 3
+    },
+    {
+      "name": "Yerry Mina",
+      "team": "Cagliari",
+      "position": "Defender",
+      "age": 30,
+      "number": 26,
+      "nationality": "Colombia",
+      "photo": "images/leagues/SerieA/Cagliari/Logo/Cagliari.png",
+      "tier": 2
+    },
+    {
+      "name": "Sebastiano Luperto",
+      "team": "Cagliari",
+      "position": "Defender",
+      "age": 28,
+      "number": 6,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Cagliari/Logo/Cagliari.png",
+      "tier": 3
+    },
+    {
+      "name": "Gabriele Zappa",
+      "team": "Cagliari",
+      "position": "Defender",
+      "age": 25,
+      "number": 28,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Cagliari/Logo/Cagliari.png",
+      "tier": 3
+    },
+    {
+      "name": "Tommaso Augello",
+      "team": "Cagliari",
+      "position": "Defender",
+      "age": 30,
+      "number": 27,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Cagliari/Logo/Cagliari.png",
+      "tier": 3
+    },
+    {
+      "name": "Antoine Makoumbou",
+      "team": "Cagliari",
+      "position": "Midfielder",
+      "age": 26,
+      "number": 29,
+      "nationality": "Congo",
+      "photo": "images/leagues/SerieA/Cagliari/Logo/Cagliari.png",
+      "tier": 3
+    },
+    {
+      "name": "Michel Adopo",
+      "team": "Cagliari",
+      "position": "Midfielder",
+      "age": 24,
+      "number": 8,
+      "nationality": "Ivory Coast",
+      "photo": "images/leagues/SerieA/Cagliari/Logo/Cagliari.png",
+      "tier": 3
+    },
+    {
+      "name": "Razvan Marin",
+      "team": "Cagliari",
+      "position": "Midfielder",
+      "age": 28,
+      "number": 18,
+      "nationality": "Romania",
+      "photo": "images/leagues/SerieA/Cagliari/Logo/Cagliari.png",
+      "tier": 2
+    },
+    {
+      "name": "Alessandro Deiola",
+      "team": "Cagliari",
+      "position": "Midfielder",
+      "age": 29,
+      "number": 14,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Cagliari/Logo/Cagliari.png",
+      "tier": 3
+    },
+    {
+      "name": "Nicolas Viola",
+      "team": "Cagliari",
+      "position": "Midfielder",
+      "age": 35,
+      "number": 10,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Cagliari/Logo/Cagliari.png",
+      "tier": 3
+    },
+    {
+      "name": "Gianluca Gaetano",
+      "team": "Cagliari",
+      "position": "Midfielder",
+      "age": 24,
+      "number": 70,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Cagliari/Logo/Cagliari.png",
+      "tier": 2
+    },
+    {
+      "name": "Roberto Piccoli",
+      "team": "Cagliari",
+      "position": "Forward",
+      "age": 23,
+      "number": 91,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Cagliari/Logo/Cagliari.png",
+      "tier": 2
+    },
+    {
+      "name": "Zito Luvumbo",
+      "team": "Cagliari",
+      "position": "Forward",
+      "age": 22,
+      "number": 77,
+      "nationality": "Angola",
+      "photo": "images/leagues/SerieA/Cagliari/Logo/Cagliari.png",
+      "tier": 2
+    },
+    {
+      "name": "Gianluca Lapadula",
+      "team": "Cagliari",
+      "position": "Forward",
+      "age": 34,
+      "number": 9,
+      "nationality": "Peru",
+      "photo": "images/leagues/SerieA/Cagliari/Logo/Cagliari.png",
+      "tier": 2
+    },
+    {
+      "name": "Lorenzo Montipo",
+      "team": "Hellas Verona",
+      "position": "Goalkeeper",
+      "age": 28,
+      "number": 1,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Verona/Logo/Verona.png",
+      "tier": 2
+    },
+    {
+      "name": "Diego Coppola",
+      "team": "Hellas Verona",
+      "position": "Defender",
+      "age": 21,
+      "number": 42,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Verona/Logo/Verona.png",
+      "tier": 2
+    },
+    {
+      "name": "Pawel Dawidowicz",
+      "team": "Hellas Verona",
+      "position": "Defender",
+      "age": 29,
+      "number": 27,
+      "nationality": "Poland",
+      "photo": "images/leagues/SerieA/Verona/Logo/Verona.png",
+      "tier": 3
+    },
+    {
+      "name": "Martin Frese",
+      "team": "Hellas Verona",
+      "position": "Defender",
+      "age": 26,
+      "number": 17,
+      "nationality": "Denmark",
+      "photo": "images/leagues/SerieA/Verona/Logo/Verona.png",
+      "tier": 3
+    },
+    {
+      "name": "Jackson Tchatchoua",
+      "team": "Hellas Verona",
+      "position": "Defender",
+      "age": 23,
+      "number": 38,
+      "nationality": "Cameroon",
+      "photo": "images/leagues/SerieA/Verona/Logo/Verona.png",
+      "tier": 3
+    },
+    {
+      "name": "Reda Belahyane",
+      "team": "Hellas Verona",
+      "position": "Midfielder",
+      "age": 20,
+      "number": 24,
+      "nationality": "Morocco",
+      "photo": "images/leagues/SerieA/Verona/Logo/Verona.png",
+      "tier": 3
+    },
+    {
+      "name": "Ondrej Duda",
+      "team": "Hellas Verona",
+      "position": "Midfielder",
+      "age": 29,
+      "number": 25,
+      "nationality": "Slovakia",
+      "photo": "images/leagues/SerieA/Verona/Logo/Verona.png",
+      "tier": 2
+    },
+    {
+      "name": "Suat Serdar",
+      "team": "Hellas Verona",
+      "position": "Midfielder",
+      "age": 27,
+      "number": 8,
+      "nationality": "Germany",
+      "photo": "images/leagues/SerieA/Verona/Logo/Verona.png",
+      "tier": 2
+    },
+    {
+      "name": "Abdou Harroui",
+      "team": "Hellas Verona",
+      "position": "Midfielder",
+      "age": 26,
+      "number": 16,
+      "nationality": "Morocco",
+      "photo": "images/leagues/SerieA/Verona/Logo/Verona.png",
+      "tier": 3
+    },
+    {
+      "name": "Tomas Suslov",
+      "team": "Hellas Verona",
+      "position": "Midfielder",
+      "age": 22,
+      "number": 31,
+      "nationality": "Slovakia",
+      "photo": "images/leagues/SerieA/Verona/Logo/Verona.png",
+      "tier": 2
+    },
+    {
+      "name": "Darko Lazovic",
+      "team": "Hellas Verona",
+      "position": "Forward",
+      "age": 34,
+      "number": 10,
+      "nationality": "Serbia",
+      "photo": "images/leagues/SerieA/Verona/Logo/Verona.png",
+      "tier": 2
+    },
+    {
+      "name": "Casper Tengstedt",
+      "team": "Hellas Verona",
+      "position": "Forward",
+      "age": 24,
+      "number": 9,
+      "nationality": "Denmark",
+      "photo": "images/leagues/SerieA/Verona/Logo/Verona.png",
+      "tier": 3
+    },
+    {
+      "name": "Amin Sarr",
+      "team": "Hellas Verona",
+      "position": "Forward",
+      "age": 23,
+      "number": 23,
+      "nationality": "Senegal",
+      "photo": "images/leagues/SerieA/Verona/Logo/Verona.png",
+      "tier": 3
+    },
+    {
+      "name": "Juan Mosquera",
+      "team": "Hellas Verona",
+      "position": "Forward",
+      "age": 20,
+      "number": 30,
+      "nationality": "Colombia",
+      "photo": "images/leagues/SerieA/Verona/Logo/Verona.png",
+      "tier": 3
+    },
+    {
+      "name": "Wladimiro Falcone",
+      "team": "Lecce",
+      "position": "Goalkeeper",
+      "age": 29,
+      "number": 30,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Lecce/Logo/Lecce.png",
+      "tier": 2
+    },
+    {
+      "name": "Federico Baschirotto",
+      "team": "Lecce",
+      "position": "Defender",
+      "age": 28,
+      "number": 6,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Lecce/Logo/Lecce.png",
+      "tier": 2
+    },
+    {
+      "name": "Kialonda Gaspar",
+      "team": "Lecce",
+      "position": "Defender",
+      "age": 26,
+      "number": 4,
+      "nationality": "Angola",
+      "photo": "images/leagues/SerieA/Lecce/Logo/Lecce.png",
+      "tier": 3
+    },
+    {
+      "name": "Antonino Gallo",
+      "team": "Lecce",
+      "position": "Defender",
+      "age": 24,
+      "number": 25,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Lecce/Logo/Lecce.png",
+      "tier": 3
+    },
+    {
+      "name": "Frederic Guilbert",
+      "team": "Lecce",
+      "position": "Defender",
+      "age": 30,
+      "number": 12,
+      "nationality": "France",
+      "photo": "images/leagues/SerieA/Lecce/Logo/Lecce.png",
+      "tier": 3
+    },
+    {
+      "name": "Patrick Dorgu",
+      "team": "Lecce",
+      "position": "Defender",
+      "age": 20,
+      "number": 13,
+      "nationality": "Denmark",
+      "photo": "images/leagues/SerieA/Lecce/Logo/Lecce.png",
+      "tier": 2
+    },
+    {
+      "name": "Lassana Coulibaly",
+      "team": "Lecce",
+      "position": "Midfielder",
+      "age": 28,
+      "number": 29,
+      "nationality": "Mali",
+      "photo": "images/leagues/SerieA/Lecce/Logo/Lecce.png",
+      "tier": 3
+    },
+    {
+      "name": "Ylber Ramadani",
+      "team": "Lecce",
+      "position": "Midfielder",
+      "age": 28,
+      "number": 20,
+      "nationality": "Albania",
+      "photo": "images/leagues/SerieA/Lecce/Logo/Lecce.png",
+      "tier": 2
+    },
+    {
+      "name": "Hamza Rafia",
+      "team": "Lecce",
+      "position": "Midfielder",
+      "age": 25,
+      "number": 8,
+      "nationality": "Tunisia",
+      "photo": "images/leagues/SerieA/Lecce/Logo/Lecce.png",
+      "tier": 3
+    },
+    {
+      "name": "Santiago Pierotti",
+      "team": "Lecce",
+      "position": "Forward",
+      "age": 23,
+      "number": 50,
+      "nationality": "Argentina",
+      "photo": "images/leagues/SerieA/Lecce/Logo/Lecce.png",
+      "tier": 3
+    },
+    {
+      "name": "Nikola Krstovic",
+      "team": "Lecce",
+      "position": "Forward",
+      "age": 24,
+      "number": 9,
+      "nationality": "Montenegro",
+      "photo": "images/leagues/SerieA/Lecce/Logo/Lecce.png",
+      "tier": 2
+    },
+    {
+      "name": "Lameck Banda",
+      "team": "Lecce",
+      "position": "Forward",
+      "age": 24,
+      "number": 22,
+      "nationality": "Zambia",
+      "photo": "images/leagues/SerieA/Lecce/Logo/Lecce.png",
+      "tier": 2
+    },
+    {
+      "name": "Tete Morente",
+      "team": "Lecce",
+      "position": "Forward",
+      "age": 28,
+      "number": 7,
+      "nationality": "Spain",
+      "photo": "images/leagues/SerieA/Lecce/Logo/Lecce.png",
+      "tier": 3
+    },
+    {
+      "name": "Zion Suzuki",
+      "team": "Parma",
+      "position": "Goalkeeper",
+      "age": 22,
+      "number": 31,
+      "nationality": "Japan",
+      "photo": "images/leagues/SerieA/Parma/Logo/Parma.png",
+      "tier": 2
+    },
+    {
+      "name": "Botond Balogh",
+      "team": "Parma",
+      "position": "Defender",
+      "age": 22,
+      "number": 4,
+      "nationality": "Hungary",
+      "photo": "images/leagues/SerieA/Parma/Logo/Parma.png",
+      "tier": 3
+    },
+    {
+      "name": "Enrico Delprato",
+      "team": "Parma",
+      "position": "Defender",
+      "age": 25,
+      "number": 15,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Parma/Logo/Parma.png",
+      "tier": 3
+    },
+    {
+      "name": "Emanuele Valeri",
+      "team": "Parma",
+      "position": "Defender",
+      "age": 26,
+      "number": 14,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Parma/Logo/Parma.png",
+      "tier": 3
+    },
+    {
+      "name": "Woyo Coulibaly",
+      "team": "Parma",
+      "position": "Defender",
+      "age": 25,
+      "number": 40,
+      "nationality": "France",
+      "photo": "images/leagues/SerieA/Parma/Logo/Parma.png",
+      "tier": 3
+    },
+    {
+      "name": "Adrian Bernabe",
+      "team": "Parma",
+      "position": "Midfielder",
+      "age": 23,
+      "number": 10,
+      "nationality": "Spain",
+      "photo": "images/leagues/SerieA/Parma/Logo/Parma.png",
+      "tier": 2
+    },
+    {
+      "name": "Simon Sohm",
+      "team": "Parma",
+      "position": "Midfielder",
+      "age": 23,
+      "number": 16,
+      "nationality": "Switzerland",
+      "photo": "images/leagues/SerieA/Parma/Logo/Parma.png",
+      "tier": 3
+    },
+    {
+      "name": "Nahuel Estevez",
+      "team": "Parma",
+      "position": "Midfielder",
+      "age": 29,
+      "number": 18,
+      "nationality": "Argentina",
+      "photo": "images/leagues/SerieA/Parma/Logo/Parma.png",
+      "tier": 3
+    },
+    {
+      "name": "Dennis Man",
+      "team": "Parma",
+      "position": "Forward",
+      "age": 26,
+      "number": 98,
+      "nationality": "Romania",
+      "photo": "images/leagues/SerieA/Parma/Logo/Parma.png",
+      "tier": 2
+    },
+    {
+      "name": "Valentin Mihaila",
+      "team": "Parma",
+      "position": "Forward",
+      "age": 24,
+      "number": 28,
+      "nationality": "Romania",
+      "photo": "images/leagues/SerieA/Parma/Logo/Parma.png",
+      "tier": 2
+    },
+    {
+      "name": "Ange-Yoan Bonny",
+      "team": "Parma",
+      "position": "Forward",
+      "age": 21,
+      "number": 13,
+      "nationality": "France",
+      "photo": "images/leagues/SerieA/Parma/Logo/Parma.png",
+      "tier": 2
+    },
+    {
+      "name": "Matteo Cancellieri",
+      "team": "Parma",
+      "position": "Forward",
+      "age": 22,
+      "number": 22,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Parma/Logo/Parma.png",
+      "tier": 3
+    },
+    {
+      "name": "Pontus Almqvist",
+      "team": "Parma",
+      "position": "Forward",
+      "age": 25,
+      "number": 11,
+      "nationality": "Sweden",
+      "photo": "images/leagues/SerieA/Parma/Logo/Parma.png",
+      "tier": 3
+    },
+    {
+      "name": "Filip Stankovic",
+      "team": "Venezia",
+      "position": "Goalkeeper",
+      "age": 22,
+      "number": 1,
+      "nationality": "Serbia",
+      "photo": "images/leagues/SerieA/Venezia/Logo/Venezia.png",
+      "tier": 3
+    },
+    {
+      "name": "Jay Idzes",
+      "team": "Venezia",
+      "position": "Defender",
+      "age": 24,
+      "number": 4,
+      "nationality": "Indonesia",
+      "photo": "images/leagues/SerieA/Venezia/Logo/Venezia.png",
+      "tier": 3
+    },
+    {
+      "name": "Michael Svoboda",
+      "team": "Venezia",
+      "position": "Defender",
+      "age": 25,
+      "number": 5,
+      "nationality": "Austria",
+      "photo": "images/leagues/SerieA/Venezia/Logo/Venezia.png",
+      "tier": 3
+    },
+    {
+      "name": "Antonio Candela",
+      "team": "Venezia",
+      "position": "Defender",
+      "age": 24,
+      "number": 27,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Venezia/Logo/Venezia.png",
+      "tier": 3
+    },
+    {
+      "name": "Francesco Zampano",
+      "team": "Venezia",
+      "position": "Defender",
+      "age": 30,
+      "number": 3,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Venezia/Logo/Venezia.png",
+      "tier": 3
+    },
+    {
+      "name": "Ridgeciano Haps",
+      "team": "Venezia",
+      "position": "Defender",
+      "age": 31,
+      "number": 7,
+      "nationality": "Suriname",
+      "photo": "images/leagues/SerieA/Venezia/Logo/Venezia.png",
+      "tier": 3
+    },
+    {
+      "name": "Hans Nicolussi Caviglia",
+      "team": "Venezia",
+      "position": "Midfielder",
+      "age": 24,
+      "number": 14,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Venezia/Logo/Venezia.png",
+      "tier": 2
+    },
+    {
+      "name": "Gianluca Busio",
+      "team": "Venezia",
+      "position": "Midfielder",
+      "age": 22,
+      "number": 6,
+      "nationality": "USA",
+      "photo": "images/leagues/SerieA/Venezia/Logo/Venezia.png",
+      "tier": 2
+    },
+    {
+      "name": "Alfred Duncan",
+      "team": "Venezia",
+      "position": "Midfielder",
+      "age": 31,
+      "number": 32,
+      "nationality": "Ghana",
+      "photo": "images/leagues/SerieA/Venezia/Logo/Venezia.png",
+      "tier": 3
+    },
+    {
+      "name": "Mikael Ellertsson",
+      "team": "Venezia",
+      "position": "Midfielder",
+      "age": 22,
+      "number": 17,
+      "nationality": "Iceland",
+      "photo": "images/leagues/SerieA/Venezia/Logo/Venezia.png",
+      "tier": 3
+    },
+    {
+      "name": "Gaetano Oristanio",
+      "team": "Venezia",
+      "position": "Forward",
+      "age": 22,
+      "number": 10,
+      "nationality": "Italy",
+      "photo": "images/leagues/SerieA/Venezia/Logo/Venezia.png",
+      "tier": 2
+    },
+    {
+      "name": "Joel Pohjanpalo",
+      "team": "Venezia",
+      "position": "Forward",
+      "age": 30,
+      "number": 20,
+      "nationality": "Finland",
+      "photo": "images/leagues/SerieA/Venezia/Logo/Venezia.png",
+      "tier": 2
+    },
+    {
+      "name": "Christian Gytkjaer",
+      "team": "Venezia",
+      "position": "Forward",
+      "age": 34,
+      "number": 23,
+      "nationality": "Denmark",
+      "photo": "images/leagues/SerieA/Venezia/Logo/Venezia.png",
+      "tier": 3
+    }
+  ]
+}

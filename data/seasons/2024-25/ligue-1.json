@@ -1,0 +1,2277 @@
+{
+  "id": "ligue-1",
+  "name": "Ligue 1",
+  "season": "2024-25",
+  "teams": {
+    "Paris Saint-Germain": "images/leagues/Ligue1/PSG/Logo/PSG.png",
+    "Olympique Marseille": "images/leagues/Ligue1/OM/Logo/OM.png",
+    "AS Monaco": "images/leagues/Ligue1/Monaco/Logo/Monaco.png",
+    "Lille OSC": "images/leagues/Ligue1/Lille/Logo/Lille.png",
+    "Olympique Lyonnais": "images/leagues/Ligue1/OL/Logo/OL.png",
+    "RC Lens": "images/leagues/Ligue1/Lens/Logo/Lens.png",
+    "Stade Rennais": "images/leagues/Ligue1/Rennes/Logo/Rennes.png",
+    "OGC Nice": "images/leagues/Ligue1/Nice/Logo/Nice.png",
+    "Stade Brestois": "images/leagues/Ligue1/Brest/Logo/Brest.png",
+    "RC Strasbourg": "images/leagues/Ligue1/Strasbourg/Logo/Strasbourg.png",
+    "FC Nantes": "images/leagues/Ligue1/Nantes/Logo/Nantes.png",
+    "Stade de Reims": "images/leagues/Ligue1/Reims/Logo/Reims.png",
+    "Toulouse FC": "images/leagues/Ligue1/Toulose/Logo/Toulouse.png",
+    "Montpellier HSC": "images/leagues/Ligue1/Montpellier/Logo/Montpellier.png",
+    "Le Havre AC": "images/leagues/Ligue1/LeHavre/Logo/LeHavre.png",
+    "Angers SCO": "images/leagues/Ligue1/Angers/Logo/Angers.png",
+    "AJ Auxerre": "images/leagues/Ligue1/Auxerre/Logo/Auxerre.png",
+    "AS Saint-Etienne": "images/leagues/Ligue1/StEtienne/Logo/StEtienne.png"
+  },
+  "players": [
+    {
+      "name": "Gianluigi Donnarumma",
+      "team": "Paris Saint-Germain",
+      "position": "Goalkeeper",
+      "age": 25,
+      "number": 99,
+      "nationality": "Italy",
+      "photo": "images/leagues/Ligue1/PSG/Logo/PSG.png",
+      "tier": 1
+    },
+    {
+      "name": "Marquinhos",
+      "team": "Paris Saint-Germain",
+      "position": "Defender",
+      "age": 30,
+      "number": 5,
+      "nationality": "Brazil",
+      "photo": "images/leagues/Ligue1/PSG/Logo/PSG.png",
+      "tier": 1
+    },
+    {
+      "name": "Willian Pacho",
+      "team": "Paris Saint-Germain",
+      "position": "Defender",
+      "age": 23,
+      "number": 51,
+      "nationality": "Ecuador",
+      "photo": "images/leagues/Ligue1/PSG/Logo/PSG.png",
+      "tier": 2
+    },
+    {
+      "name": "Achraf Hakimi",
+      "team": "Paris Saint-Germain",
+      "position": "Defender",
+      "age": 26,
+      "number": 2,
+      "nationality": "Morocco",
+      "photo": "images/leagues/Ligue1/PSG/Logo/PSG.png",
+      "tier": 1
+    },
+    {
+      "name": "Nuno Mendes",
+      "team": "Paris Saint-Germain",
+      "position": "Defender",
+      "age": 22,
+      "number": 25,
+      "nationality": "Portugal",
+      "photo": "images/leagues/Ligue1/PSG/Logo/PSG.png",
+      "tier": 1
+    },
+    {
+      "name": "Lucas Beraldo",
+      "team": "Paris Saint-Germain",
+      "position": "Defender",
+      "age": 21,
+      "number": 35,
+      "nationality": "Brazil",
+      "photo": "images/leagues/Ligue1/PSG/Logo/PSG.png",
+      "tier": 3
+    },
+    {
+      "name": "Vitinha",
+      "team": "Paris Saint-Germain",
+      "position": "Midfielder",
+      "age": 24,
+      "number": 17,
+      "nationality": "Portugal",
+      "photo": "images/leagues/Ligue1/PSG/Logo/PSG.png",
+      "tier": 1
+    },
+    {
+      "name": "Warren Zaire-Emery",
+      "team": "Paris Saint-Germain",
+      "position": "Midfielder",
+      "age": 18,
+      "number": 33,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/PSG/Logo/PSG.png",
+      "tier": 1
+    },
+    {
+      "name": "Joao Neves",
+      "team": "Paris Saint-Germain",
+      "position": "Midfielder",
+      "age": 20,
+      "number": 87,
+      "nationality": "Portugal",
+      "photo": "images/leagues/Ligue1/PSG/Logo/PSG.png",
+      "tier": 1
+    },
+    {
+      "name": "Fabian Ruiz",
+      "team": "Paris Saint-Germain",
+      "position": "Midfielder",
+      "age": 28,
+      "number": 8,
+      "nationality": "Spain",
+      "photo": "images/leagues/Ligue1/PSG/Logo/PSG.png",
+      "tier": 2
+    },
+    {
+      "name": "Lee Kang-in",
+      "team": "Paris Saint-Germain",
+      "position": "Midfielder",
+      "age": 23,
+      "number": 19,
+      "nationality": "South Korea",
+      "photo": "images/leagues/Ligue1/PSG/Logo/PSG.png",
+      "tier": 2
+    },
+    {
+      "name": "Ousmane Dembele",
+      "team": "Paris Saint-Germain",
+      "position": "Forward",
+      "age": 27,
+      "number": 10,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/PSG/Logo/PSG.png",
+      "tier": 1
+    },
+    {
+      "name": "Bradley Barcola",
+      "team": "Paris Saint-Germain",
+      "position": "Forward",
+      "age": 22,
+      "number": 29,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/PSG/Logo/PSG.png",
+      "tier": 1
+    },
+    {
+      "name": "Goncalo Ramos",
+      "team": "Paris Saint-Germain",
+      "position": "Forward",
+      "age": 23,
+      "number": 9,
+      "nationality": "Portugal",
+      "photo": "images/leagues/Ligue1/PSG/Logo/PSG.png",
+      "tier": 2
+    },
+    {
+      "name": "Desire Doue",
+      "team": "Paris Saint-Germain",
+      "position": "Forward",
+      "age": 19,
+      "number": 14,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/PSG/Logo/PSG.png",
+      "tier": 2
+    },
+    {
+      "name": "Marco Asensio",
+      "team": "Paris Saint-Germain",
+      "position": "Forward",
+      "age": 28,
+      "number": 11,
+      "nationality": "Spain",
+      "photo": "images/leagues/Ligue1/PSG/Logo/PSG.png",
+      "tier": 1
+    },
+    {
+      "name": "Geronimo Rulli",
+      "team": "Olympique Marseille",
+      "position": "Goalkeeper",
+      "age": 32,
+      "number": 1,
+      "nationality": "Argentina",
+      "photo": "images/leagues/Ligue1/OM/Logo/OM.png",
+      "tier": 2
+    },
+    {
+      "name": "Leonardo Balerdi",
+      "team": "Olympique Marseille",
+      "position": "Defender",
+      "age": 25,
+      "number": 5,
+      "nationality": "Argentina",
+      "photo": "images/leagues/Ligue1/OM/Logo/OM.png",
+      "tier": 2
+    },
+    {
+      "name": "Amir Murillo",
+      "team": "Olympique Marseille",
+      "position": "Defender",
+      "age": 28,
+      "number": 62,
+      "nationality": "Panama",
+      "photo": "images/leagues/Ligue1/OM/Logo/OM.png",
+      "tier": 3
+    },
+    {
+      "name": "Derek Cornelius",
+      "team": "Olympique Marseille",
+      "position": "Defender",
+      "age": 27,
+      "number": 13,
+      "nationality": "Canada",
+      "photo": "images/leagues/Ligue1/OM/Logo/OM.png",
+      "tier": 3
+    },
+    {
+      "name": "Quentin Merlin",
+      "team": "Olympique Marseille",
+      "position": "Defender",
+      "age": 22,
+      "number": 3,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/OM/Logo/OM.png",
+      "tier": 3
+    },
+    {
+      "name": "Pierre-Emile Hojbjerg",
+      "team": "Olympique Marseille",
+      "position": "Midfielder",
+      "age": 29,
+      "number": 23,
+      "nationality": "Denmark",
+      "photo": "images/leagues/Ligue1/OM/Logo/OM.png",
+      "tier": 1
+    },
+    {
+      "name": "Valentin Rongier",
+      "team": "Olympique Marseille",
+      "position": "Midfielder",
+      "age": 30,
+      "number": 21,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/OM/Logo/OM.png",
+      "tier": 2
+    },
+    {
+      "name": "Adrien Rabiot",
+      "team": "Olympique Marseille",
+      "position": "Midfielder",
+      "age": 29,
+      "number": 25,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/OM/Logo/OM.png",
+      "tier": 1
+    },
+    {
+      "name": "Geoffrey Kondogbia",
+      "team": "Olympique Marseille",
+      "position": "Midfielder",
+      "age": 31,
+      "number": 19,
+      "nationality": "Central African Republic",
+      "photo": "images/leagues/Ligue1/OM/Logo/OM.png",
+      "tier": 2
+    },
+    {
+      "name": "Amine Harit",
+      "team": "Olympique Marseille",
+      "position": "Midfielder",
+      "age": 27,
+      "number": 11,
+      "nationality": "Morocco",
+      "photo": "images/leagues/Ligue1/OM/Logo/OM.png",
+      "tier": 2
+    },
+    {
+      "name": "Mason Greenwood",
+      "team": "Olympique Marseille",
+      "position": "Forward",
+      "age": 23,
+      "number": 10,
+      "nationality": "England",
+      "photo": "images/leagues/Ligue1/OM/Logo/OM.png",
+      "tier": 1
+    },
+    {
+      "name": "Luis Henrique",
+      "team": "Olympique Marseille",
+      "position": "Forward",
+      "age": 23,
+      "number": 22,
+      "nationality": "Brazil",
+      "photo": "images/leagues/Ligue1/OM/Logo/OM.png",
+      "tier": 2
+    },
+    {
+      "name": "Elye Wahi",
+      "team": "Olympique Marseille",
+      "position": "Forward",
+      "age": 21,
+      "number": 9,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/OM/Logo/OM.png",
+      "tier": 2
+    },
+    {
+      "name": "Radoslaw Majecki",
+      "team": "AS Monaco",
+      "position": "Goalkeeper",
+      "age": 25,
+      "number": 1,
+      "nationality": "Poland",
+      "photo": "images/leagues/Ligue1/Monaco/Logo/Monaco.png",
+      "tier": 3
+    },
+    {
+      "name": "Vanderson",
+      "team": "AS Monaco",
+      "position": "Defender",
+      "age": 23,
+      "number": 26,
+      "nationality": "Brazil",
+      "photo": "images/leagues/Ligue1/Monaco/Logo/Monaco.png",
+      "tier": 2
+    },
+    {
+      "name": "Wilfried Singo",
+      "team": "AS Monaco",
+      "position": "Defender",
+      "age": 24,
+      "number": 22,
+      "nationality": "Ivory Coast",
+      "photo": "images/leagues/Ligue1/Monaco/Logo/Monaco.png",
+      "tier": 2
+    },
+    {
+      "name": "Thilo Kehrer",
+      "team": "AS Monaco",
+      "position": "Defender",
+      "age": 28,
+      "number": 5,
+      "nationality": "Germany",
+      "photo": "images/leagues/Ligue1/Monaco/Logo/Monaco.png",
+      "tier": 2
+    },
+    {
+      "name": "Caio Henrique",
+      "team": "AS Monaco",
+      "position": "Defender",
+      "age": 27,
+      "number": 12,
+      "nationality": "Brazil",
+      "photo": "images/leagues/Ligue1/Monaco/Logo/Monaco.png",
+      "tier": 2
+    },
+    {
+      "name": "Mohammed Salisu",
+      "team": "AS Monaco",
+      "position": "Defender",
+      "age": 25,
+      "number": 4,
+      "nationality": "Ghana",
+      "photo": "images/leagues/Ligue1/Monaco/Logo/Monaco.png",
+      "tier": 3
+    },
+    {
+      "name": "Denis Zakaria",
+      "team": "AS Monaco",
+      "position": "Midfielder",
+      "age": 28,
+      "number": 6,
+      "nationality": "Switzerland",
+      "photo": "images/leagues/Ligue1/Monaco/Logo/Monaco.png",
+      "tier": 2
+    },
+    {
+      "name": "Aleksandr Golovin",
+      "team": "AS Monaco",
+      "position": "Midfielder",
+      "age": 28,
+      "number": 17,
+      "nationality": "Russia",
+      "photo": "images/leagues/Ligue1/Monaco/Logo/Monaco.png",
+      "tier": 1
+    },
+    {
+      "name": "Takumi Minamino",
+      "team": "AS Monaco",
+      "position": "Midfielder",
+      "age": 29,
+      "number": 18,
+      "nationality": "Japan",
+      "photo": "images/leagues/Ligue1/Monaco/Logo/Monaco.png",
+      "tier": 2
+    },
+    {
+      "name": "Maghnes Akliouche",
+      "team": "AS Monaco",
+      "position": "Forward",
+      "age": 22,
+      "number": 11,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Monaco/Logo/Monaco.png",
+      "tier": 2
+    },
+    {
+      "name": "Eliesse Ben Seghir",
+      "team": "AS Monaco",
+      "position": "Forward",
+      "age": 19,
+      "number": 27,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Monaco/Logo/Monaco.png",
+      "tier": 2
+    },
+    {
+      "name": "Folarin Balogun",
+      "team": "AS Monaco",
+      "position": "Forward",
+      "age": 23,
+      "number": 29,
+      "nationality": "USA",
+      "photo": "images/leagues/Ligue1/Monaco/Logo/Monaco.png",
+      "tier": 2
+    },
+    {
+      "name": "Breel Embolo",
+      "team": "AS Monaco",
+      "position": "Forward",
+      "age": 27,
+      "number": 36,
+      "nationality": "Switzerland",
+      "photo": "images/leagues/Ligue1/Monaco/Logo/Monaco.png",
+      "tier": 2
+    },
+    {
+      "name": "George Ilenikhena",
+      "team": "AS Monaco",
+      "position": "Forward",
+      "age": 18,
+      "number": 14,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Monaco/Logo/Monaco.png",
+      "tier": 3
+    },
+    {
+      "name": "Lucas Chevalier",
+      "team": "Lille OSC",
+      "position": "Goalkeeper",
+      "age": 23,
+      "number": 30,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Lille/Logo/Lille.png",
+      "tier": 2
+    },
+    {
+      "name": "Bafode Diakite",
+      "team": "Lille OSC",
+      "position": "Defender",
+      "age": 25,
+      "number": 2,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Lille/Logo/Lille.png",
+      "tier": 2
+    },
+    {
+      "name": "Alexsandro",
+      "team": "Lille OSC",
+      "position": "Defender",
+      "age": 25,
+      "number": 4,
+      "nationality": "Brazil",
+      "photo": "images/leagues/Ligue1/Lille/Logo/Lille.png",
+      "tier": 2
+    },
+    {
+      "name": "Gabriel Gudmundsson",
+      "team": "Lille OSC",
+      "position": "Defender",
+      "age": 27,
+      "number": 3,
+      "nationality": "Iceland",
+      "photo": "images/leagues/Ligue1/Lille/Logo/Lille.png",
+      "tier": 3
+    },
+    {
+      "name": "Thomas Meunier",
+      "team": "Lille OSC",
+      "position": "Defender",
+      "age": 33,
+      "number": 12,
+      "nationality": "Belgium",
+      "photo": "images/leagues/Ligue1/Lille/Logo/Lille.png",
+      "tier": 2
+    },
+    {
+      "name": "Mitchel Bakker",
+      "team": "Lille OSC",
+      "position": "Defender",
+      "age": 24,
+      "number": 14,
+      "nationality": "Netherlands",
+      "photo": "images/leagues/Ligue1/Lille/Logo/Lille.png",
+      "tier": 3
+    },
+    {
+      "name": "Nabil Bentaleb",
+      "team": "Lille OSC",
+      "position": "Midfielder",
+      "age": 30,
+      "number": 13,
+      "nationality": "Algeria",
+      "photo": "images/leagues/Ligue1/Lille/Logo/Lille.png",
+      "tier": 2
+    },
+    {
+      "name": "Benjamin Andre",
+      "team": "Lille OSC",
+      "position": "Midfielder",
+      "age": 34,
+      "number": 7,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Lille/Logo/Lille.png",
+      "tier": 2
+    },
+    {
+      "name": "Remy Cabella",
+      "team": "Lille OSC",
+      "position": "Midfielder",
+      "age": 34,
+      "number": 10,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Lille/Logo/Lille.png",
+      "tier": 2
+    },
+    {
+      "name": "Hakon Haraldsson",
+      "team": "Lille OSC",
+      "position": "Midfielder",
+      "age": 21,
+      "number": 8,
+      "nationality": "Iceland",
+      "photo": "images/leagues/Ligue1/Lille/Logo/Lille.png",
+      "tier": 2
+    },
+    {
+      "name": "Edon Zhegrova",
+      "team": "Lille OSC",
+      "position": "Forward",
+      "age": 25,
+      "number": 21,
+      "nationality": "Kosovo",
+      "photo": "images/leagues/Ligue1/Lille/Logo/Lille.png",
+      "tier": 2
+    },
+    {
+      "name": "Jonathan David",
+      "team": "Lille OSC",
+      "position": "Forward",
+      "age": 24,
+      "number": 9,
+      "nationality": "Canada",
+      "photo": "images/leagues/Ligue1/Lille/Logo/Lille.png",
+      "tier": 1
+    },
+    {
+      "name": "Matias Fernandez-Pardo",
+      "team": "Lille OSC",
+      "position": "Forward",
+      "age": 19,
+      "number": 29,
+      "nationality": "Belgium",
+      "photo": "images/leagues/Ligue1/Lille/Logo/Lille.png",
+      "tier": 3
+    },
+    {
+      "name": "Lucas Perri",
+      "team": "Olympique Lyonnais",
+      "position": "Goalkeeper",
+      "age": 24,
+      "number": 40,
+      "nationality": "Brazil",
+      "photo": "images/leagues/Ligue1/OL/Logo/OL.png",
+      "tier": 2
+    },
+    {
+      "name": "Moussa Niakhate",
+      "team": "Olympique Lyonnais",
+      "position": "Defender",
+      "age": 28,
+      "number": 19,
+      "nationality": "Senegal",
+      "photo": "images/leagues/Ligue1/OL/Logo/OL.png",
+      "tier": 2
+    },
+    {
+      "name": "Duje Caleta-Car",
+      "team": "Olympique Lyonnais",
+      "position": "Defender",
+      "age": 28,
+      "number": 55,
+      "nationality": "Croatia",
+      "photo": "images/leagues/Ligue1/OL/Logo/OL.png",
+      "tier": 2
+    },
+    {
+      "name": "Nicolas Tagliafico",
+      "team": "Olympique Lyonnais",
+      "position": "Defender",
+      "age": 32,
+      "number": 3,
+      "nationality": "Argentina",
+      "photo": "images/leagues/Ligue1/OL/Logo/OL.png",
+      "tier": 2
+    },
+    {
+      "name": "Ainsley Maitland-Niles",
+      "team": "Olympique Lyonnais",
+      "position": "Defender",
+      "age": 27,
+      "number": 15,
+      "nationality": "England",
+      "photo": "images/leagues/Ligue1/OL/Logo/OL.png",
+      "tier": 3
+    },
+    {
+      "name": "Corentin Tolisso",
+      "team": "Olympique Lyonnais",
+      "position": "Midfielder",
+      "age": 30,
+      "number": 8,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/OL/Logo/OL.png",
+      "tier": 1
+    },
+    {
+      "name": "Nemanja Matic",
+      "team": "Olympique Lyonnais",
+      "position": "Midfielder",
+      "age": 36,
+      "number": 29,
+      "nationality": "Serbia",
+      "photo": "images/leagues/Ligue1/OL/Logo/OL.png",
+      "tier": 1
+    },
+    {
+      "name": "Jordan Veretout",
+      "team": "Olympique Lyonnais",
+      "position": "Midfielder",
+      "age": 31,
+      "number": 24,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/OL/Logo/OL.png",
+      "tier": 2
+    },
+    {
+      "name": "Thiago Almada",
+      "team": "Olympique Lyonnais",
+      "position": "Midfielder",
+      "age": 23,
+      "number": 17,
+      "nationality": "Argentina",
+      "photo": "images/leagues/Ligue1/OL/Logo/OL.png",
+      "tier": 2
+    },
+    {
+      "name": "Rayan Cherki",
+      "team": "Olympique Lyonnais",
+      "position": "Forward",
+      "age": 21,
+      "number": 18,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/OL/Logo/OL.png",
+      "tier": 1
+    },
+    {
+      "name": "Alexandre Lacazette",
+      "team": "Olympique Lyonnais",
+      "position": "Forward",
+      "age": 33,
+      "number": 10,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/OL/Logo/OL.png",
+      "tier": 1
+    },
+    {
+      "name": "Georges Mikautadze",
+      "team": "Olympique Lyonnais",
+      "position": "Forward",
+      "age": 24,
+      "number": 69,
+      "nationality": "Georgia",
+      "photo": "images/leagues/Ligue1/OL/Logo/OL.png",
+      "tier": 2
+    },
+    {
+      "name": "Malick Fofana",
+      "team": "Olympique Lyonnais",
+      "position": "Forward",
+      "age": 19,
+      "number": 11,
+      "nationality": "Belgium",
+      "photo": "images/leagues/Ligue1/OL/Logo/OL.png",
+      "tier": 2
+    },
+    {
+      "name": "Said Benrahma",
+      "team": "Olympique Lyonnais",
+      "position": "Forward",
+      "age": 29,
+      "number": 7,
+      "nationality": "Algeria",
+      "photo": "images/leagues/Ligue1/OL/Logo/OL.png",
+      "tier": 2
+    },
+    {
+      "name": "Brice Samba",
+      "team": "RC Lens",
+      "position": "Goalkeeper",
+      "age": 30,
+      "number": 30,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Lens/Logo/Lens.png",
+      "tier": 1
+    },
+    {
+      "name": "Kevin Danso",
+      "team": "RC Lens",
+      "position": "Defender",
+      "age": 26,
+      "number": 4,
+      "nationality": "Austria",
+      "photo": "images/leagues/Ligue1/Lens/Logo/Lens.png",
+      "tier": 2
+    },
+    {
+      "name": "Facundo Medina",
+      "team": "RC Lens",
+      "position": "Defender",
+      "age": 25,
+      "number": 16,
+      "nationality": "Argentina",
+      "photo": "images/leagues/Ligue1/Lens/Logo/Lens.png",
+      "tier": 2
+    },
+    {
+      "name": "Jonathan Gradit",
+      "team": "RC Lens",
+      "position": "Defender",
+      "age": 32,
+      "number": 24,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Lens/Logo/Lens.png",
+      "tier": 3
+    },
+    {
+      "name": "Przemyslaw Frankowski",
+      "team": "RC Lens",
+      "position": "Defender",
+      "age": 29,
+      "number": 29,
+      "nationality": "Poland",
+      "photo": "images/leagues/Ligue1/Lens/Logo/Lens.png",
+      "tier": 2
+    },
+    {
+      "name": "Deiver Machado",
+      "team": "RC Lens",
+      "position": "Defender",
+      "age": 31,
+      "number": 34,
+      "nationality": "Colombia",
+      "photo": "images/leagues/Ligue1/Lens/Logo/Lens.png",
+      "tier": 3
+    },
+    {
+      "name": "Andy Diouf",
+      "team": "RC Lens",
+      "position": "Midfielder",
+      "age": 21,
+      "number": 18,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Lens/Logo/Lens.png",
+      "tier": 2
+    },
+    {
+      "name": "Adrien Thomasson",
+      "team": "RC Lens",
+      "position": "Midfielder",
+      "age": 31,
+      "number": 22,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Lens/Logo/Lens.png",
+      "tier": 2
+    },
+    {
+      "name": "Neil El Aynaoui",
+      "team": "RC Lens",
+      "position": "Midfielder",
+      "age": 23,
+      "number": 8,
+      "nationality": "Morocco",
+      "photo": "images/leagues/Ligue1/Lens/Logo/Lens.png",
+      "tier": 2
+    },
+    {
+      "name": "Florian Sotoca",
+      "team": "RC Lens",
+      "position": "Forward",
+      "age": 34,
+      "number": 7,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Lens/Logo/Lens.png",
+      "tier": 2
+    },
+    {
+      "name": "Wesley Said",
+      "team": "RC Lens",
+      "position": "Forward",
+      "age": 29,
+      "number": 11,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Lens/Logo/Lens.png",
+      "tier": 3
+    },
+    {
+      "name": "M'Bala Nzola",
+      "team": "RC Lens",
+      "position": "Forward",
+      "age": 28,
+      "number": 26,
+      "nationality": "Angola",
+      "photo": "images/leagues/Ligue1/Lens/Logo/Lens.png",
+      "tier": 3
+    },
+    {
+      "name": "Angelo Fulgini",
+      "team": "RC Lens",
+      "position": "Forward",
+      "age": 28,
+      "number": 10,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Lens/Logo/Lens.png",
+      "tier": 3
+    },
+    {
+      "name": "Steve Mandanda",
+      "team": "Stade Rennais",
+      "position": "Goalkeeper",
+      "age": 39,
+      "number": 30,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Rennes/Logo/Rennes.png",
+      "tier": 1
+    },
+    {
+      "name": "Leo Ostigard",
+      "team": "Stade Rennais",
+      "position": "Defender",
+      "age": 25,
+      "number": 14,
+      "nationality": "Norway",
+      "photo": "images/leagues/Ligue1/Rennes/Logo/Rennes.png",
+      "tier": 3
+    },
+    {
+      "name": "Christopher Wooh",
+      "team": "Stade Rennais",
+      "position": "Defender",
+      "age": 23,
+      "number": 22,
+      "nationality": "Cameroon",
+      "photo": "images/leagues/Ligue1/Rennes/Logo/Rennes.png",
+      "tier": 3
+    },
+    {
+      "name": "Adrien Truffert",
+      "team": "Stade Rennais",
+      "position": "Defender",
+      "age": 23,
+      "number": 3,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Rennes/Logo/Rennes.png",
+      "tier": 2
+    },
+    {
+      "name": "Hans Hateboer",
+      "team": "Stade Rennais",
+      "position": "Defender",
+      "age": 30,
+      "number": 20,
+      "nationality": "Netherlands",
+      "photo": "images/leagues/Ligue1/Rennes/Logo/Rennes.png",
+      "tier": 3
+    },
+    {
+      "name": "Alidu Seidu",
+      "team": "Stade Rennais",
+      "position": "Defender",
+      "age": 24,
+      "number": 2,
+      "nationality": "Ghana",
+      "photo": "images/leagues/Ligue1/Rennes/Logo/Rennes.png",
+      "tier": 3
+    },
+    {
+      "name": "Lorenz Assignon",
+      "team": "Stade Rennais",
+      "position": "Defender",
+      "age": 24,
+      "number": 27,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Rennes/Logo/Rennes.png",
+      "tier": 3
+    },
+    {
+      "name": "Azor Matusiwa",
+      "team": "Stade Rennais",
+      "position": "Midfielder",
+      "age": 26,
+      "number": 8,
+      "nationality": "Netherlands",
+      "photo": "images/leagues/Ligue1/Rennes/Logo/Rennes.png",
+      "tier": 3
+    },
+    {
+      "name": "Baptiste Santamaria",
+      "team": "Stade Rennais",
+      "position": "Midfielder",
+      "age": 29,
+      "number": 6,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Rennes/Logo/Rennes.png",
+      "tier": 3
+    },
+    {
+      "name": "Ludovic Blas",
+      "team": "Stade Rennais",
+      "position": "Midfielder",
+      "age": 27,
+      "number": 10,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Rennes/Logo/Rennes.png",
+      "tier": 2
+    },
+    {
+      "name": "Albert Gronbaek",
+      "team": "Stade Rennais",
+      "position": "Midfielder",
+      "age": 23,
+      "number": 23,
+      "nationality": "Denmark",
+      "photo": "images/leagues/Ligue1/Rennes/Logo/Rennes.png",
+      "tier": 3
+    },
+    {
+      "name": "Arnaud Kalimuendo",
+      "team": "Stade Rennais",
+      "position": "Forward",
+      "age": 22,
+      "number": 9,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Rennes/Logo/Rennes.png",
+      "tier": 2
+    },
+    {
+      "name": "Amine Gouiri",
+      "team": "Stade Rennais",
+      "position": "Forward",
+      "age": 24,
+      "number": 19,
+      "nationality": "Algeria",
+      "photo": "images/leagues/Ligue1/Rennes/Logo/Rennes.png",
+      "tier": 2
+    },
+    {
+      "name": "Henrik Meister",
+      "team": "Stade Rennais",
+      "position": "Forward",
+      "age": 21,
+      "number": 11,
+      "nationality": "Denmark",
+      "photo": "images/leagues/Ligue1/Rennes/Logo/Rennes.png",
+      "tier": 3
+    },
+    {
+      "name": "Marcin Bulka",
+      "team": "OGC Nice",
+      "position": "Goalkeeper",
+      "age": 25,
+      "number": 1,
+      "nationality": "Poland",
+      "photo": "images/leagues/Ligue1/Nice/Logo/Nice.png",
+      "tier": 2
+    },
+    {
+      "name": "Dante",
+      "team": "OGC Nice",
+      "position": "Defender",
+      "age": 41,
+      "number": 4,
+      "nationality": "Brazil",
+      "photo": "images/leagues/Ligue1/Nice/Logo/Nice.png",
+      "tier": 1
+    },
+    {
+      "name": "Moise Bombito",
+      "team": "OGC Nice",
+      "position": "Defender",
+      "age": 24,
+      "number": 5,
+      "nationality": "Canada",
+      "photo": "images/leagues/Ligue1/Nice/Logo/Nice.png",
+      "tier": 3
+    },
+    {
+      "name": "Ali Abdi",
+      "team": "OGC Nice",
+      "position": "Defender",
+      "age": 23,
+      "number": 34,
+      "nationality": "Tunisia",
+      "photo": "images/leagues/Ligue1/Nice/Logo/Nice.png",
+      "tier": 3
+    },
+    {
+      "name": "Jonathan Clauss",
+      "team": "OGC Nice",
+      "position": "Defender",
+      "age": 32,
+      "number": 26,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Nice/Logo/Nice.png",
+      "tier": 2
+    },
+    {
+      "name": "Melvin Bard",
+      "team": "OGC Nice",
+      "position": "Defender",
+      "age": 24,
+      "number": 3,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Nice/Logo/Nice.png",
+      "tier": 3
+    },
+    {
+      "name": "Youssouf Ndayishimiye",
+      "team": "OGC Nice",
+      "position": "Midfielder",
+      "age": 26,
+      "number": 40,
+      "nationality": "Burundi",
+      "photo": "images/leagues/Ligue1/Nice/Logo/Nice.png",
+      "tier": 3
+    },
+    {
+      "name": "Pablo Rosario",
+      "team": "OGC Nice",
+      "position": "Midfielder",
+      "age": 27,
+      "number": 15,
+      "nationality": "Netherlands",
+      "photo": "images/leagues/Ligue1/Nice/Logo/Nice.png",
+      "tier": 3
+    },
+    {
+      "name": "Hicham Boudaoui",
+      "team": "OGC Nice",
+      "position": "Midfielder",
+      "age": 25,
+      "number": 14,
+      "nationality": "Algeria",
+      "photo": "images/leagues/Ligue1/Nice/Logo/Nice.png",
+      "tier": 3
+    },
+    {
+      "name": "Morgan Sanson",
+      "team": "OGC Nice",
+      "position": "Midfielder",
+      "age": 30,
+      "number": 28,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Nice/Logo/Nice.png",
+      "tier": 3
+    },
+    {
+      "name": "Gaetan Laborde",
+      "team": "OGC Nice",
+      "position": "Forward",
+      "age": 30,
+      "number": 7,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Nice/Logo/Nice.png",
+      "tier": 2
+    },
+    {
+      "name": "Evann Guessand",
+      "team": "OGC Nice",
+      "position": "Forward",
+      "age": 23,
+      "number": 9,
+      "nationality": "Ivory Coast",
+      "photo": "images/leagues/Ligue1/Nice/Logo/Nice.png",
+      "tier": 2
+    },
+    {
+      "name": "Terem Moffi",
+      "team": "OGC Nice",
+      "position": "Forward",
+      "age": 25,
+      "number": 19,
+      "nationality": "Nigeria",
+      "photo": "images/leagues/Ligue1/Nice/Logo/Nice.png",
+      "tier": 2
+    },
+    {
+      "name": "Mohamed-Ali Cho",
+      "team": "OGC Nice",
+      "position": "Forward",
+      "age": 20,
+      "number": 10,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Nice/Logo/Nice.png",
+      "tier": 3
+    },
+    {
+      "name": "Marco Bizot",
+      "team": "Stade Brestois",
+      "position": "Goalkeeper",
+      "age": 33,
+      "number": 1,
+      "nationality": "Netherlands",
+      "photo": "images/leagues/Ligue1/Brest/Logo/Brest.png",
+      "tier": 2
+    },
+    {
+      "name": "Brendan Chardonnet",
+      "team": "Stade Brestois",
+      "position": "Defender",
+      "age": 30,
+      "number": 29,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Brest/Logo/Brest.png",
+      "tier": 3
+    },
+    {
+      "name": "Kenny Lala",
+      "team": "Stade Brestois",
+      "position": "Defender",
+      "age": 33,
+      "number": 24,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Brest/Logo/Brest.png",
+      "tier": 3
+    },
+    {
+      "name": "Bradley Locko",
+      "team": "Stade Brestois",
+      "position": "Defender",
+      "age": 22,
+      "number": 14,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Brest/Logo/Brest.png",
+      "tier": 3
+    },
+    {
+      "name": "Julien Le Cardinal",
+      "team": "Stade Brestois",
+      "position": "Defender",
+      "age": 27,
+      "number": 4,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Brest/Logo/Brest.png",
+      "tier": 3
+    },
+    {
+      "name": "Hugo Magnetti",
+      "team": "Stade Brestois",
+      "position": "Midfielder",
+      "age": 26,
+      "number": 21,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Brest/Logo/Brest.png",
+      "tier": 3
+    },
+    {
+      "name": "Pierre Lees-Melou",
+      "team": "Stade Brestois",
+      "position": "Midfielder",
+      "age": 31,
+      "number": 15,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Brest/Logo/Brest.png",
+      "tier": 2
+    },
+    {
+      "name": "Romain Del Castillo",
+      "team": "Stade Brestois",
+      "position": "Forward",
+      "age": 28,
+      "number": 10,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Brest/Logo/Brest.png",
+      "tier": 2
+    },
+    {
+      "name": "Abdallah Sima",
+      "team": "Stade Brestois",
+      "position": "Forward",
+      "age": 23,
+      "number": 11,
+      "nationality": "Senegal",
+      "photo": "images/leagues/Ligue1/Brest/Logo/Brest.png",
+      "tier": 2
+    },
+    {
+      "name": "Ludovic Ajorque",
+      "team": "Stade Brestois",
+      "position": "Forward",
+      "age": 30,
+      "number": 9,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Brest/Logo/Brest.png",
+      "tier": 2
+    },
+    {
+      "name": "Djordje Petrovic",
+      "team": "RC Strasbourg",
+      "position": "Goalkeeper",
+      "age": 25,
+      "number": 1,
+      "nationality": "Serbia",
+      "photo": "images/leagues/Ligue1/Strasbourg/Logo/Strasbourg.png",
+      "tier": 2
+    },
+    {
+      "name": "Guela Doue",
+      "team": "RC Strasbourg",
+      "position": "Defender",
+      "age": 22,
+      "number": 64,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Strasbourg/Logo/Strasbourg.png",
+      "tier": 3
+    },
+    {
+      "name": "Frederik Hogsberg",
+      "team": "RC Strasbourg",
+      "position": "Defender",
+      "age": 20,
+      "number": 5,
+      "nationality": "Denmark",
+      "photo": "images/leagues/Ligue1/Strasbourg/Logo/Strasbourg.png",
+      "tier": 3
+    },
+    {
+      "name": "Andrew Omobamidele",
+      "team": "RC Strasbourg",
+      "position": "Defender",
+      "age": 22,
+      "number": 6,
+      "nationality": "Ireland",
+      "photo": "images/leagues/Ligue1/Strasbourg/Logo/Strasbourg.png",
+      "tier": 3
+    },
+    {
+      "name": "Andrey Santos",
+      "team": "RC Strasbourg",
+      "position": "Midfielder",
+      "age": 20,
+      "number": 8,
+      "nationality": "Brazil",
+      "photo": "images/leagues/Ligue1/Strasbourg/Logo/Strasbourg.png",
+      "tier": 2
+    },
+    {
+      "name": "Dilane Bakwa",
+      "team": "RC Strasbourg",
+      "position": "Forward",
+      "age": 22,
+      "number": 12,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Strasbourg/Logo/Strasbourg.png",
+      "tier": 2
+    },
+    {
+      "name": "Emanuel Emegha",
+      "team": "RC Strasbourg",
+      "position": "Forward",
+      "age": 21,
+      "number": 10,
+      "nationality": "Netherlands",
+      "photo": "images/leagues/Ligue1/Strasbourg/Logo/Strasbourg.png",
+      "tier": 2
+    },
+    {
+      "name": "Sekou Mara",
+      "team": "RC Strasbourg",
+      "position": "Forward",
+      "age": 22,
+      "number": 29,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Strasbourg/Logo/Strasbourg.png",
+      "tier": 3
+    },
+    {
+      "name": "Felix Lemarechal",
+      "team": "RC Strasbourg",
+      "position": "Midfielder",
+      "age": 21,
+      "number": 14,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Strasbourg/Logo/Strasbourg.png",
+      "tier": 3
+    },
+    {
+      "name": "Sebastian Nanasi",
+      "team": "RC Strasbourg",
+      "position": "Forward",
+      "age": 22,
+      "number": 26,
+      "nationality": "Sweden",
+      "photo": "images/leagues/Ligue1/Strasbourg/Logo/Strasbourg.png",
+      "tier": 2
+    },
+    {
+      "name": "Alban Lafont",
+      "team": "FC Nantes",
+      "position": "Goalkeeper",
+      "age": 25,
+      "number": 1,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Nantes/Logo/Nantes.png",
+      "tier": 2
+    },
+    {
+      "name": "Nicolas Pallois",
+      "team": "FC Nantes",
+      "position": "Defender",
+      "age": 37,
+      "number": 4,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Nantes/Logo/Nantes.png",
+      "tier": 3
+    },
+    {
+      "name": "Jean-Charles Castelletto",
+      "team": "FC Nantes",
+      "position": "Defender",
+      "age": 30,
+      "number": 19,
+      "nationality": "Cameroon",
+      "photo": "images/leagues/Ligue1/Nantes/Logo/Nantes.png",
+      "tier": 3
+    },
+    {
+      "name": "Nathan Zeze",
+      "team": "FC Nantes",
+      "position": "Defender",
+      "age": 20,
+      "number": 3,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Nantes/Logo/Nantes.png",
+      "tier": 2
+    },
+    {
+      "name": "Jean-Kevin Duverne",
+      "team": "FC Nantes",
+      "position": "Defender",
+      "age": 27,
+      "number": 2,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Nantes/Logo/Nantes.png",
+      "tier": 3
+    },
+    {
+      "name": "Nicolas Cozza",
+      "team": "FC Nantes",
+      "position": "Defender",
+      "age": 26,
+      "number": 14,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Nantes/Logo/Nantes.png",
+      "tier": 3
+    },
+    {
+      "name": "Pedro Chirivella",
+      "team": "FC Nantes",
+      "position": "Midfielder",
+      "age": 27,
+      "number": 5,
+      "nationality": "Spain",
+      "photo": "images/leagues/Ligue1/Nantes/Logo/Nantes.png",
+      "tier": 2
+    },
+    {
+      "name": "Douglas Augusto",
+      "team": "FC Nantes",
+      "position": "Midfielder",
+      "age": 27,
+      "number": 23,
+      "nationality": "Brazil",
+      "photo": "images/leagues/Ligue1/Nantes/Logo/Nantes.png",
+      "tier": 3
+    },
+    {
+      "name": "Johann Lepenant",
+      "team": "FC Nantes",
+      "position": "Midfielder",
+      "age": 22,
+      "number": 28,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Nantes/Logo/Nantes.png",
+      "tier": 3
+    },
+    {
+      "name": "Florent Mollet",
+      "team": "FC Nantes",
+      "position": "Midfielder",
+      "age": 33,
+      "number": 10,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Nantes/Logo/Nantes.png",
+      "tier": 2
+    },
+    {
+      "name": "Moses Simon",
+      "team": "FC Nantes",
+      "position": "Forward",
+      "age": 29,
+      "number": 7,
+      "nationality": "Nigeria",
+      "photo": "images/leagues/Ligue1/Nantes/Logo/Nantes.png",
+      "tier": 2
+    },
+    {
+      "name": "Matthis Abline",
+      "team": "FC Nantes",
+      "position": "Forward",
+      "age": 21,
+      "number": 9,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Nantes/Logo/Nantes.png",
+      "tier": 2
+    },
+    {
+      "name": "Sorba Thomas",
+      "team": "FC Nantes",
+      "position": "Forward",
+      "age": 25,
+      "number": 21,
+      "nationality": "Wales",
+      "photo": "images/leagues/Ligue1/Nantes/Logo/Nantes.png",
+      "tier": 3
+    },
+    {
+      "name": "Yehvann Diouf",
+      "team": "Stade de Reims",
+      "position": "Goalkeeper",
+      "age": 25,
+      "number": 16,
+      "nationality": "Senegal",
+      "photo": "images/leagues/Ligue1/Reims/Logo/Reims.png",
+      "tier": 2
+    },
+    {
+      "name": "Emmanuel Agbadou",
+      "team": "Stade de Reims",
+      "position": "Defender",
+      "age": 27,
+      "number": 24,
+      "nationality": "Ivory Coast",
+      "photo": "images/leagues/Ligue1/Reims/Logo/Reims.png",
+      "tier": 2
+    },
+    {
+      "name": "Joseph Okumu",
+      "team": "Stade de Reims",
+      "position": "Defender",
+      "age": 27,
+      "number": 4,
+      "nationality": "Kenya",
+      "photo": "images/leagues/Ligue1/Reims/Logo/Reims.png",
+      "tier": 3
+    },
+    {
+      "name": "Thomas Foket",
+      "team": "Stade de Reims",
+      "position": "Defender",
+      "age": 30,
+      "number": 38,
+      "nationality": "Belgium",
+      "photo": "images/leagues/Ligue1/Reims/Logo/Reims.png",
+      "tier": 3
+    },
+    {
+      "name": "Sergio Akieme",
+      "team": "Stade de Reims",
+      "position": "Defender",
+      "age": 27,
+      "number": 3,
+      "nationality": "Equatorial Guinea",
+      "photo": "images/leagues/Ligue1/Reims/Logo/Reims.png",
+      "tier": 3
+    },
+    {
+      "name": "Cedric Kipre",
+      "team": "Stade de Reims",
+      "position": "Defender",
+      "age": 28,
+      "number": 40,
+      "nationality": "Ivory Coast",
+      "photo": "images/leagues/Ligue1/Reims/Logo/Reims.png",
+      "tier": 3
+    },
+    {
+      "name": "Marshall Munetsi",
+      "team": "Stade de Reims",
+      "position": "Midfielder",
+      "age": 28,
+      "number": 28,
+      "nationality": "Zimbabwe",
+      "photo": "images/leagues/Ligue1/Reims/Logo/Reims.png",
+      "tier": 2
+    },
+    {
+      "name": "Teddy Teuma",
+      "team": "Stade de Reims",
+      "position": "Midfielder",
+      "age": 31,
+      "number": 10,
+      "nationality": "Malta",
+      "photo": "images/leagues/Ligue1/Reims/Logo/Reims.png",
+      "tier": 2
+    },
+    {
+      "name": "Junya Ito",
+      "team": "Stade de Reims",
+      "position": "Forward",
+      "age": 31,
+      "number": 7,
+      "nationality": "Japan",
+      "photo": "images/leagues/Ligue1/Reims/Logo/Reims.png",
+      "tier": 2
+    },
+    {
+      "name": "Keito Nakamura",
+      "team": "Stade de Reims",
+      "position": "Forward",
+      "age": 24,
+      "number": 11,
+      "nationality": "Japan",
+      "photo": "images/leagues/Ligue1/Reims/Logo/Reims.png",
+      "tier": 2
+    },
+    {
+      "name": "Mohamed Daramy",
+      "team": "Stade de Reims",
+      "position": "Forward",
+      "age": 22,
+      "number": 21,
+      "nationality": "Denmark",
+      "photo": "images/leagues/Ligue1/Reims/Logo/Reims.png",
+      "tier": 2
+    },
+    {
+      "name": "Mamadou Diakhon",
+      "team": "Stade de Reims",
+      "position": "Forward",
+      "age": 19,
+      "number": 27,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Reims/Logo/Reims.png",
+      "tier": 3
+    },
+    {
+      "name": "Guillaume Restes",
+      "team": "Toulouse FC",
+      "position": "Goalkeeper",
+      "age": 19,
+      "number": 1,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Toulose/Logo/Toulouse.png",
+      "tier": 2
+    },
+    {
+      "name": "Rasmus Nicolaisen",
+      "team": "Toulouse FC",
+      "position": "Defender",
+      "age": 27,
+      "number": 5,
+      "nationality": "Denmark",
+      "photo": "images/leagues/Ligue1/Toulose/Logo/Toulouse.png",
+      "tier": 2
+    },
+    {
+      "name": "Mark McKenzie",
+      "team": "Toulouse FC",
+      "position": "Defender",
+      "age": 25,
+      "number": 4,
+      "nationality": "USA",
+      "photo": "images/leagues/Ligue1/Toulose/Logo/Toulouse.png",
+      "tier": 2
+    },
+    {
+      "name": "Warren Kamanzi",
+      "team": "Toulouse FC",
+      "position": "Defender",
+      "age": 24,
+      "number": 27,
+      "nationality": "Norway",
+      "photo": "images/leagues/Ligue1/Toulose/Logo/Toulouse.png",
+      "tier": 3
+    },
+    {
+      "name": "Gabriel Suazo",
+      "team": "Toulouse FC",
+      "position": "Defender",
+      "age": 27,
+      "number": 3,
+      "nationality": "Chile",
+      "photo": "images/leagues/Ligue1/Toulose/Logo/Toulouse.png",
+      "tier": 3
+    },
+    {
+      "name": "Cristian Casseres",
+      "team": "Toulouse FC",
+      "position": "Midfielder",
+      "age": 25,
+      "number": 6,
+      "nationality": "Venezuela",
+      "photo": "images/leagues/Ligue1/Toulose/Logo/Toulouse.png",
+      "tier": 3
+    },
+    {
+      "name": "Vincent Sierro",
+      "team": "Toulouse FC",
+      "position": "Midfielder",
+      "age": 29,
+      "number": 8,
+      "nationality": "Switzerland",
+      "photo": "images/leagues/Ligue1/Toulose/Logo/Toulouse.png",
+      "tier": 2
+    },
+    {
+      "name": "Stijn Spierings",
+      "team": "Toulouse FC",
+      "position": "Midfielder",
+      "age": 28,
+      "number": 14,
+      "nationality": "Netherlands",
+      "photo": "images/leagues/Ligue1/Toulose/Logo/Toulouse.png",
+      "tier": 3
+    },
+    {
+      "name": "Yann Gboho",
+      "team": "Toulouse FC",
+      "position": "Forward",
+      "age": 23,
+      "number": 10,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Toulose/Logo/Toulouse.png",
+      "tier": 2
+    },
+    {
+      "name": "Frank Magri",
+      "team": "Toulouse FC",
+      "position": "Forward",
+      "age": 25,
+      "number": 7,
+      "nationality": "Cameroon",
+      "photo": "images/leagues/Ligue1/Toulose/Logo/Toulouse.png",
+      "tier": 2
+    },
+    {
+      "name": "Shavy Babicka",
+      "team": "Toulouse FC",
+      "position": "Forward",
+      "age": 24,
+      "number": 29,
+      "nationality": "Gabon",
+      "photo": "images/leagues/Ligue1/Toulose/Logo/Toulouse.png",
+      "tier": 3
+    },
+    {
+      "name": "Aron Donnum",
+      "team": "Toulouse FC",
+      "position": "Forward",
+      "age": 26,
+      "number": 11,
+      "nationality": "Norway",
+      "photo": "images/leagues/Ligue1/Toulose/Logo/Toulouse.png",
+      "tier": 2
+    },
+    {
+      "name": "Joshua King",
+      "team": "Toulouse FC",
+      "position": "Forward",
+      "age": 32,
+      "number": 17,
+      "nationality": "Norway",
+      "photo": "images/leagues/Ligue1/Toulose/Logo/Toulouse.png",
+      "tier": 2
+    },
+    {
+      "name": "Benjamin Lecomte",
+      "team": "Montpellier HSC",
+      "position": "Goalkeeper",
+      "age": 33,
+      "number": 40,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Montpellier/Logo/Montpellier.png",
+      "tier": 2
+    },
+    {
+      "name": "Falaye Sacko",
+      "team": "Montpellier HSC",
+      "position": "Defender",
+      "age": 29,
+      "number": 3,
+      "nationality": "Mali",
+      "photo": "images/leagues/Ligue1/Montpellier/Logo/Montpellier.png",
+      "tier": 3
+    },
+    {
+      "name": "Issiaga Sylla",
+      "team": "Montpellier HSC",
+      "position": "Defender",
+      "age": 30,
+      "number": 12,
+      "nationality": "Guinea",
+      "photo": "images/leagues/Ligue1/Montpellier/Logo/Montpellier.png",
+      "tier": 3
+    },
+    {
+      "name": "Enzo Tchato",
+      "team": "Montpellier HSC",
+      "position": "Defender",
+      "age": 22,
+      "number": 2,
+      "nationality": "Cameroon",
+      "photo": "images/leagues/Ligue1/Montpellier/Logo/Montpellier.png",
+      "tier": 3
+    },
+    {
+      "name": "Becir Omeragic",
+      "team": "Montpellier HSC",
+      "position": "Defender",
+      "age": 22,
+      "number": 5,
+      "nationality": "Switzerland",
+      "photo": "images/leagues/Ligue1/Montpellier/Logo/Montpellier.png",
+      "tier": 3
+    },
+    {
+      "name": "Jordan Ferri",
+      "team": "Montpellier HSC",
+      "position": "Midfielder",
+      "age": 32,
+      "number": 8,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Montpellier/Logo/Montpellier.png",
+      "tier": 2
+    },
+    {
+      "name": "Joris Chotard",
+      "team": "Montpellier HSC",
+      "position": "Midfielder",
+      "age": 23,
+      "number": 6,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Montpellier/Logo/Montpellier.png",
+      "tier": 2
+    },
+    {
+      "name": "Teji Savanier",
+      "team": "Montpellier HSC",
+      "position": "Midfielder",
+      "age": 33,
+      "number": 10,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Montpellier/Logo/Montpellier.png",
+      "tier": 1
+    },
+    {
+      "name": "Musa Al-Taamari",
+      "team": "Montpellier HSC",
+      "position": "Forward",
+      "age": 27,
+      "number": 11,
+      "nationality": "Jordan",
+      "photo": "images/leagues/Ligue1/Montpellier/Logo/Montpellier.png",
+      "tier": 2
+    },
+    {
+      "name": "Wahbi Khazri",
+      "team": "Montpellier HSC",
+      "position": "Forward",
+      "age": 33,
+      "number": 9,
+      "nationality": "Tunisia",
+      "photo": "images/leagues/Ligue1/Montpellier/Logo/Montpellier.png",
+      "tier": 2
+    },
+    {
+      "name": "Akor Adams",
+      "team": "Montpellier HSC",
+      "position": "Forward",
+      "age": 24,
+      "number": 18,
+      "nationality": "Nigeria",
+      "photo": "images/leagues/Ligue1/Montpellier/Logo/Montpellier.png",
+      "tier": 3
+    },
+    {
+      "name": "Arnaud Nordin",
+      "team": "Montpellier HSC",
+      "position": "Forward",
+      "age": 26,
+      "number": 7,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Montpellier/Logo/Montpellier.png",
+      "tier": 3
+    },
+    {
+      "name": "Arthur Desmas",
+      "team": "Le Havre AC",
+      "position": "Goalkeeper",
+      "age": 30,
+      "number": 1,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/LeHavre/Logo/LeHavre.png",
+      "tier": 3
+    },
+    {
+      "name": "Loic Nego",
+      "team": "Le Havre AC",
+      "position": "Defender",
+      "age": 33,
+      "number": 21,
+      "nationality": "Hungary",
+      "photo": "images/leagues/Ligue1/LeHavre/Logo/LeHavre.png",
+      "tier": 2
+    },
+    {
+      "name": "Gautier Lloris",
+      "team": "Le Havre AC",
+      "position": "Defender",
+      "age": 29,
+      "number": 6,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/LeHavre/Logo/LeHavre.png",
+      "tier": 3
+    },
+    {
+      "name": "Arouna Sangante",
+      "team": "Le Havre AC",
+      "position": "Defender",
+      "age": 22,
+      "number": 4,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/LeHavre/Logo/LeHavre.png",
+      "tier": 2
+    },
+    {
+      "name": "Himad Abdelli",
+      "team": "Le Havre AC",
+      "position": "Midfielder",
+      "age": 25,
+      "number": 10,
+      "nationality": "Algeria",
+      "photo": "images/leagues/Ligue1/LeHavre/Logo/LeHavre.png",
+      "tier": 2
+    },
+    {
+      "name": "Daler Kuzyaev",
+      "team": "Le Havre AC",
+      "position": "Midfielder",
+      "age": 31,
+      "number": 14,
+      "nationality": "Russia",
+      "photo": "images/leagues/Ligue1/LeHavre/Logo/LeHavre.png",
+      "tier": 2
+    },
+    {
+      "name": "Abdoulaye Toure",
+      "team": "Le Havre AC",
+      "position": "Midfielder",
+      "age": 30,
+      "number": 28,
+      "nationality": "Guinea",
+      "photo": "images/leagues/Ligue1/LeHavre/Logo/LeHavre.png",
+      "tier": 2
+    },
+    {
+      "name": "Josue Casimir",
+      "team": "Le Havre AC",
+      "position": "Forward",
+      "age": 23,
+      "number": 7,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/LeHavre/Logo/LeHavre.png",
+      "tier": 3
+    },
+    {
+      "name": "Andre Ayew",
+      "team": "Le Havre AC",
+      "position": "Forward",
+      "age": 35,
+      "number": 9,
+      "nationality": "Ghana",
+      "photo": "images/leagues/Ligue1/LeHavre/Logo/LeHavre.png",
+      "tier": 1
+    },
+    {
+      "name": "Issa Soumare",
+      "team": "Le Havre AC",
+      "position": "Forward",
+      "age": 24,
+      "number": 11,
+      "nationality": "Senegal",
+      "photo": "images/leagues/Ligue1/LeHavre/Logo/LeHavre.png",
+      "tier": 3
+    },
+    {
+      "name": "Yahia Fofana",
+      "team": "Angers SCO",
+      "position": "Goalkeeper",
+      "age": 24,
+      "number": 16,
+      "nationality": "Ivory Coast",
+      "photo": "images/leagues/Ligue1/Angers/Logo/Angers.png",
+      "tier": 2
+    },
+    {
+      "name": "Ousmane Camara",
+      "team": "Angers SCO",
+      "position": "Defender",
+      "age": 21,
+      "number": 5,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Angers/Logo/Angers.png",
+      "tier": 3
+    },
+    {
+      "name": "Cedric Hountondji",
+      "team": "Angers SCO",
+      "position": "Defender",
+      "age": 30,
+      "number": 4,
+      "nationality": "Benin",
+      "photo": "images/leagues/Ligue1/Angers/Logo/Angers.png",
+      "tier": 3
+    },
+    {
+      "name": "Jordan Lefort",
+      "team": "Angers SCO",
+      "position": "Defender",
+      "age": 31,
+      "number": 15,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Angers/Logo/Angers.png",
+      "tier": 3
+    },
+    {
+      "name": "Pierrick Capelle",
+      "team": "Angers SCO",
+      "position": "Midfielder",
+      "age": 37,
+      "number": 24,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Angers/Logo/Angers.png",
+      "tier": 2
+    },
+    {
+      "name": "Zinedine Ferhat",
+      "team": "Angers SCO",
+      "position": "Midfielder",
+      "age": 31,
+      "number": 7,
+      "nationality": "Algeria",
+      "photo": "images/leagues/Ligue1/Angers/Logo/Angers.png",
+      "tier": 2
+    },
+    {
+      "name": "Jean-Eudes Aholou",
+      "team": "Angers SCO",
+      "position": "Midfielder",
+      "age": 30,
+      "number": 29,
+      "nationality": "Ivory Coast",
+      "photo": "images/leagues/Ligue1/Angers/Logo/Angers.png",
+      "tier": 3
+    },
+    {
+      "name": "Esteban Lepaul",
+      "team": "Angers SCO",
+      "position": "Forward",
+      "age": 24,
+      "number": 9,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Angers/Logo/Angers.png",
+      "tier": 3
+    },
+    {
+      "name": "Bamba Dieng",
+      "team": "Angers SCO",
+      "position": "Forward",
+      "age": 24,
+      "number": 11,
+      "nationality": "Senegal",
+      "photo": "images/leagues/Ligue1/Angers/Logo/Angers.png",
+      "tier": 2
+    },
+    {
+      "name": "Farid El Melali",
+      "team": "Angers SCO",
+      "position": "Forward",
+      "age": 27,
+      "number": 26,
+      "nationality": "Algeria",
+      "photo": "images/leagues/Ligue1/Angers/Logo/Angers.png",
+      "tier": 3
+    },
+    {
+      "name": "Donovan Leon",
+      "team": "AJ Auxerre",
+      "position": "Goalkeeper",
+      "age": 32,
+      "number": 30,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Auxerre/Logo/Auxerre.png",
+      "tier": 3
+    },
+    {
+      "name": "Jubal",
+      "team": "AJ Auxerre",
+      "position": "Defender",
+      "age": 31,
+      "number": 4,
+      "nationality": "Brazil",
+      "photo": "images/leagues/Ligue1/Auxerre/Logo/Auxerre.png",
+      "tier": 3
+    },
+    {
+      "name": "Clement Akpa",
+      "team": "AJ Auxerre",
+      "position": "Defender",
+      "age": 22,
+      "number": 28,
+      "nationality": "Ivory Coast",
+      "photo": "images/leagues/Ligue1/Auxerre/Logo/Auxerre.png",
+      "tier": 3
+    },
+    {
+      "name": "Paul Joly",
+      "team": "AJ Auxerre",
+      "position": "Defender",
+      "age": 24,
+      "number": 2,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Auxerre/Logo/Auxerre.png",
+      "tier": 3
+    },
+    {
+      "name": "Gideon Mensah",
+      "team": "AJ Auxerre",
+      "position": "Defender",
+      "age": 26,
+      "number": 3,
+      "nationality": "Ghana",
+      "photo": "images/leagues/Ligue1/Auxerre/Logo/Auxerre.png",
+      "tier": 3
+    },
+    {
+      "name": "Han-Noah Massengo",
+      "team": "AJ Auxerre",
+      "position": "Midfielder",
+      "age": 23,
+      "number": 18,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Auxerre/Logo/Auxerre.png",
+      "tier": 3
+    },
+    {
+      "name": "Elisha Owusu",
+      "team": "AJ Auxerre",
+      "position": "Midfielder",
+      "age": 27,
+      "number": 6,
+      "nationality": "Ghana",
+      "photo": "images/leagues/Ligue1/Auxerre/Logo/Auxerre.png",
+      "tier": 3
+    },
+    {
+      "name": "Gauthier Hein",
+      "team": "AJ Auxerre",
+      "position": "Midfielder",
+      "age": 28,
+      "number": 10,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/Auxerre/Logo/Auxerre.png",
+      "tier": 2
+    },
+    {
+      "name": "Lassine Sinayoko",
+      "team": "AJ Auxerre",
+      "position": "Forward",
+      "age": 25,
+      "number": 14,
+      "nationality": "Mali",
+      "photo": "images/leagues/Ligue1/Auxerre/Logo/Auxerre.png",
+      "tier": 2
+    },
+    {
+      "name": "Ado Onaiwu",
+      "team": "AJ Auxerre",
+      "position": "Forward",
+      "age": 29,
+      "number": 21,
+      "nationality": "Japan",
+      "photo": "images/leagues/Ligue1/Auxerre/Logo/Auxerre.png",
+      "tier": 2
+    },
+    {
+      "name": "Theo Bair",
+      "team": "AJ Auxerre",
+      "position": "Forward",
+      "age": 25,
+      "number": 24,
+      "nationality": "Canada",
+      "photo": "images/leagues/Ligue1/Auxerre/Logo/Auxerre.png",
+      "tier": 2
+    },
+    {
+      "name": "Gautier Larsonneur",
+      "team": "AS Saint-Etienne",
+      "position": "Goalkeeper",
+      "age": 27,
+      "number": 1,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/StEtienne/Logo/StEtienne.png",
+      "tier": 2
+    },
+    {
+      "name": "Anthony Briancon",
+      "team": "AS Saint-Etienne",
+      "position": "Defender",
+      "age": 30,
+      "number": 4,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/StEtienne/Logo/StEtienne.png",
+      "tier": 3
+    },
+    {
+      "name": "Mickael Nade",
+      "team": "AS Saint-Etienne",
+      "position": "Defender",
+      "age": 25,
+      "number": 22,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/StEtienne/Logo/StEtienne.png",
+      "tier": 3
+    },
+    {
+      "name": "Yunis Abdelhamid",
+      "team": "AS Saint-Etienne",
+      "position": "Defender",
+      "age": 37,
+      "number": 5,
+      "nationality": "Morocco",
+      "photo": "images/leagues/Ligue1/StEtienne/Logo/StEtienne.png",
+      "tier": 2
+    },
+    {
+      "name": "Leo Petrot",
+      "team": "AS Saint-Etienne",
+      "position": "Defender",
+      "age": 27,
+      "number": 3,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/StEtienne/Logo/StEtienne.png",
+      "tier": 3
+    },
+    {
+      "name": "Dennis Appiah",
+      "team": "AS Saint-Etienne",
+      "position": "Defender",
+      "age": 32,
+      "number": 2,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/StEtienne/Logo/StEtienne.png",
+      "tier": 3
+    },
+    {
+      "name": "Pierre Ekwah",
+      "team": "AS Saint-Etienne",
+      "position": "Midfielder",
+      "age": 22,
+      "number": 6,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/StEtienne/Logo/StEtienne.png",
+      "tier": 2
+    },
+    {
+      "name": "Florian Tardieu",
+      "team": "AS Saint-Etienne",
+      "position": "Midfielder",
+      "age": 32,
+      "number": 8,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/StEtienne/Logo/StEtienne.png",
+      "tier": 3
+    },
+    {
+      "name": "Benjamin Bouchouari",
+      "team": "AS Saint-Etienne",
+      "position": "Midfielder",
+      "age": 23,
+      "number": 18,
+      "nationality": "Morocco",
+      "photo": "images/leagues/Ligue1/StEtienne/Logo/StEtienne.png",
+      "tier": 3
+    },
+    {
+      "name": "Mathieu Cafaro",
+      "team": "AS Saint-Etienne",
+      "position": "Midfielder",
+      "age": 27,
+      "number": 10,
+      "nationality": "France",
+      "photo": "images/leagues/Ligue1/StEtienne/Logo/StEtienne.png",
+      "tier": 3
+    },
+    {
+      "name": "Zuriko Davitashvili",
+      "team": "AS Saint-Etienne",
+      "position": "Forward",
+      "age": 23,
+      "number": 11,
+      "nationality": "Georgia",
+      "photo": "images/leagues/Ligue1/StEtienne/Logo/StEtienne.png",
+      "tier": 2
+    },
+    {
+      "name": "Lucas Stassin",
+      "team": "AS Saint-Etienne",
+      "position": "Forward",
+      "age": 20,
+      "number": 9,
+      "nationality": "Belgium",
+      "photo": "images/leagues/Ligue1/StEtienne/Logo/StEtienne.png",
+      "tier": 2
+    },
+    {
+      "name": "Ibrahim Sissoko",
+      "team": "AS Saint-Etienne",
+      "position": "Forward",
+      "age": 33,
+      "number": 29,
+      "nationality": "Mali",
+      "photo": "images/leagues/Ligue1/StEtienne/Logo/StEtienne.png",
+      "tier": 2
+    }
+  ]
+}
