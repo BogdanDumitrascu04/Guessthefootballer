@@ -1,0 +1,29 @@
+{
+  "seasons": [
+    "2024-25"
+  ],
+  "defaultSeason": "2024-25",
+  "leagues": [
+    {
+      "id": "premier-league",
+      "name": "Premier League",
+      "seasons": [
+        "2024-25"
+      ]
+    },
+    {
+      "id": "la-liga",
+      "name": "La Liga",
+      "seasons": [
+        "2024-25"
+      ]
+    },
+    {
+      "id": "bundesliga",
+      "name": "Bundesliga",
+      "seasons": [
+        "2024-25"
+      ]
+    }
+  ]
+}

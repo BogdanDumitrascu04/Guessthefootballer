@@ -1,0 +1,2057 @@
+{
+  "id": "bundesliga",
+  "name": "Bundesliga",
+  "season": "2024-25",
+  "teams": {
+    "Bayern Munich": "images/leagues/Bundesliga/Bayern/Logo/Bayern.png",
+    "Bayer Leverkusen": "images/leagues/Bundesliga/Leverkusen/Logo/Leverkusen.png",
+    "Borussia Dortmund": "images/leagues/Bundesliga/Dortmund/Logo/Dortmund.png",
+    "RB Leipzig": "images/leagues/Bundesliga/Leipzig/Logo/Leipzig.png",
+    "Eintracht Frankfurt": "images/leagues/Bundesliga/Frankfurt/Logo/Frankfurt.png",
+    "VfB Stuttgart": "images/leagues/Bundesliga/Stuttgart/Logo/Stuttgart.png",
+    "VfL Wolfsburg": "images/leagues/Bundesliga/Wolfsburg/Logo/Wolfsburg.png",
+    "Borussia Monchengladbach": "images/leagues/Bundesliga/Monchenglabach/Logo/Monchenglabach.png",
+    "SC Freiburg": "images/leagues/Bundesliga/Freiburg/Logo/Freiburg.png",
+    "TSG Hoffenheim": "images/leagues/Bundesliga/Hoffenheim/Logo/Hoffenheim.png",
+    "FC Augsburg": "images/leagues/Bundesliga/Augsburg/Logo/Augsburg.png",
+    "Werder Bremen": "images/leagues/Bundesliga/Bremen/Logo/Bremen.png",
+    "Mainz 05": "images/leagues/Bundesliga/Mainz/Logo/Mainz.png",
+    "Union Berlin": "images/leagues/Bundesliga/UnionBerlin/Logo/UnionBerlin.png",
+    "VfL Bochum": "images/leagues/Bundesliga/Bochum/Logo/Bochum.png",
+    "FC Heidenheim": "images/leagues/Bundesliga/Heidenheim/Logo/Heidenheim.png",
+    "Holstein Kiel": "images/leagues/Bundesliga/Kiel/Logo/Kiel.png",
+    "FC St. Pauli": "images/leagues/Bundesliga/StPauli/Logo/StPauli.png"
+  },
+  "players": [
+    {
+      "name": "Manuel Neuer",
+      "team": "Bayern Munich",
+      "position": "Goalkeeper",
+      "age": 38,
+      "number": 1,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Bayern/Logo/Bayern.png",
+      "tier": 1
+    },
+    {
+      "name": "Dayot Upamecano",
+      "team": "Bayern Munich",
+      "position": "Defender",
+      "age": 26,
+      "number": 2,
+      "nationality": "France",
+      "photo": "images/leagues/Bundesliga/Bayern/Logo/Bayern.png",
+      "tier": 2
+    },
+    {
+      "name": "Kim Min-jae",
+      "team": "Bayern Munich",
+      "position": "Defender",
+      "age": 28,
+      "number": 3,
+      "nationality": "South Korea",
+      "photo": "images/leagues/Bundesliga/Bayern/Logo/Bayern.png",
+      "tier": 1
+    },
+    {
+      "name": "Alphonso Davies",
+      "team": "Bayern Munich",
+      "position": "Defender",
+      "age": 24,
+      "number": 19,
+      "nationality": "Canada",
+      "photo": "images/leagues/Bundesliga/Bayern/Logo/Bayern.png",
+      "tier": 1
+    },
+    {
+      "name": "Joshua Kimmich",
+      "team": "Bayern Munich",
+      "position": "Midfielder",
+      "age": 29,
+      "number": 6,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Bayern/Logo/Bayern.png",
+      "tier": 1
+    },
+    {
+      "name": "Leon Goretzka",
+      "team": "Bayern Munich",
+      "position": "Midfielder",
+      "age": 29,
+      "number": 8,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Bayern/Logo/Bayern.png",
+      "tier": 2
+    },
+    {
+      "name": "Jamal Musiala",
+      "team": "Bayern Munich",
+      "position": "Midfielder",
+      "age": 21,
+      "number": 42,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Bayern/Logo/Bayern.png",
+      "tier": 1
+    },
+    {
+      "name": "Aleksandar Pavlovic",
+      "team": "Bayern Munich",
+      "position": "Midfielder",
+      "age": 20,
+      "number": 45,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Bayern/Logo/Bayern.png",
+      "tier": 2
+    },
+    {
+      "name": "Harry Kane",
+      "team": "Bayern Munich",
+      "position": "Forward",
+      "age": 31,
+      "number": 9,
+      "nationality": "England",
+      "photo": "images/leagues/Bundesliga/Bayern/Logo/Bayern.png",
+      "tier": 1
+    },
+    {
+      "name": "Leroy Sane",
+      "team": "Bayern Munich",
+      "position": "Forward",
+      "age": 29,
+      "number": 10,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Bayern/Logo/Bayern.png",
+      "tier": 1
+    },
+    {
+      "name": "Serge Gnabry",
+      "team": "Bayern Munich",
+      "position": "Forward",
+      "age": 29,
+      "number": 7,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Bayern/Logo/Bayern.png",
+      "tier": 1
+    },
+    {
+      "name": "Kingsley Coman",
+      "team": "Bayern Munich",
+      "position": "Forward",
+      "age": 28,
+      "number": 11,
+      "nationality": "France",
+      "photo": "images/leagues/Bundesliga/Bayern/Logo/Bayern.png",
+      "tier": 1
+    },
+    {
+      "name": "Michael Olise",
+      "team": "Bayern Munich",
+      "position": "Forward",
+      "age": 23,
+      "number": 17,
+      "nationality": "France",
+      "photo": "images/leagues/Bundesliga/Bayern/Logo/Bayern.png",
+      "tier": 1
+    },
+    {
+      "name": "Thomas Muller",
+      "team": "Bayern Munich",
+      "position": "Forward",
+      "age": 35,
+      "number": 25,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Bayern/Logo/Bayern.png",
+      "tier": 1
+    },
+    {
+      "name": "Lukas Hradecky",
+      "team": "Bayer Leverkusen",
+      "position": "Goalkeeper",
+      "age": 35,
+      "number": 1,
+      "nationality": "Finland",
+      "photo": "images/leagues/Bundesliga/Leverkusen/Logo/Leverkusen.png",
+      "tier": 2
+    },
+    {
+      "name": "Jonathan Tah",
+      "team": "Bayer Leverkusen",
+      "position": "Defender",
+      "age": 28,
+      "number": 4,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Leverkusen/Logo/Leverkusen.png",
+      "tier": 2
+    },
+    {
+      "name": "Edmond Tapsoba",
+      "team": "Bayer Leverkusen",
+      "position": "Defender",
+      "age": 26,
+      "number": 12,
+      "nationality": "Burkina Faso",
+      "photo": "images/leagues/Bundesliga/Leverkusen/Logo/Leverkusen.png",
+      "tier": 2
+    },
+    {
+      "name": "Piero Hincapie",
+      "team": "Bayer Leverkusen",
+      "position": "Defender",
+      "age": 23,
+      "number": 3,
+      "nationality": "Ecuador",
+      "photo": "images/leagues/Bundesliga/Leverkusen/Logo/Leverkusen.png",
+      "tier": 2
+    },
+    {
+      "name": "Alejandro Grimaldo",
+      "team": "Bayer Leverkusen",
+      "position": "Defender",
+      "age": 29,
+      "number": 20,
+      "nationality": "Spain",
+      "photo": "images/leagues/Bundesliga/Leverkusen/Logo/Leverkusen.png",
+      "tier": 1
+    },
+    {
+      "name": "Jeremie Frimpong",
+      "team": "Bayer Leverkusen",
+      "position": "Defender",
+      "age": 24,
+      "number": 30,
+      "nationality": "Netherlands",
+      "photo": "images/leagues/Bundesliga/Leverkusen/Logo/Leverkusen.png",
+      "tier": 1
+    },
+    {
+      "name": "Granit Xhaka",
+      "team": "Bayer Leverkusen",
+      "position": "Midfielder",
+      "age": 32,
+      "number": 34,
+      "nationality": "Switzerland",
+      "photo": "images/leagues/Bundesliga/Leverkusen/Logo/Leverkusen.png",
+      "tier": 1
+    },
+    {
+      "name": "Exequiel Palacios",
+      "team": "Bayer Leverkusen",
+      "position": "Midfielder",
+      "age": 26,
+      "number": 25,
+      "nationality": "Argentina",
+      "photo": "images/leagues/Bundesliga/Leverkusen/Logo/Leverkusen.png",
+      "tier": 2
+    },
+    {
+      "name": "Florian Wirtz",
+      "team": "Bayer Leverkusen",
+      "position": "Midfielder",
+      "age": 21,
+      "number": 10,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Leverkusen/Logo/Leverkusen.png",
+      "tier": 1
+    },
+    {
+      "name": "Jonas Hofmann",
+      "team": "Bayer Leverkusen",
+      "position": "Midfielder",
+      "age": 32,
+      "number": 7,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Leverkusen/Logo/Leverkusen.png",
+      "tier": 2
+    },
+    {
+      "name": "Victor Boniface",
+      "team": "Bayer Leverkusen",
+      "position": "Forward",
+      "age": 24,
+      "number": 22,
+      "nationality": "Nigeria",
+      "photo": "images/leagues/Bundesliga/Leverkusen/Logo/Leverkusen.png",
+      "tier": 1
+    },
+    {
+      "name": "Patrik Schick",
+      "team": "Bayer Leverkusen",
+      "position": "Forward",
+      "age": 29,
+      "number": 14,
+      "nationality": "Czech Republic",
+      "photo": "images/leagues/Bundesliga/Leverkusen/Logo/Leverkusen.png",
+      "tier": 2
+    },
+    {
+      "name": "Martin Terrier",
+      "team": "Bayer Leverkusen",
+      "position": "Forward",
+      "age": 27,
+      "number": 11,
+      "nationality": "France",
+      "photo": "images/leagues/Bundesliga/Leverkusen/Logo/Leverkusen.png",
+      "tier": 2
+    },
+    {
+      "name": "Gregor Kobel",
+      "team": "Borussia Dortmund",
+      "position": "Goalkeeper",
+      "age": 27,
+      "number": 1,
+      "nationality": "Switzerland",
+      "photo": "images/leagues/Bundesliga/Dortmund/Logo/Dortmund.png",
+      "tier": 2
+    },
+    {
+      "name": "Nico Schlotterbeck",
+      "team": "Borussia Dortmund",
+      "position": "Defender",
+      "age": 25,
+      "number": 4,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Dortmund/Logo/Dortmund.png",
+      "tier": 2
+    },
+    {
+      "name": "Waldemar Anton",
+      "team": "Borussia Dortmund",
+      "position": "Defender",
+      "age": 28,
+      "number": 3,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Dortmund/Logo/Dortmund.png",
+      "tier": 2
+    },
+    {
+      "name": "Julian Ryerson",
+      "team": "Borussia Dortmund",
+      "position": "Defender",
+      "age": 26,
+      "number": 26,
+      "nationality": "Norway",
+      "photo": "images/leagues/Bundesliga/Dortmund/Logo/Dortmund.png",
+      "tier": 2
+    },
+    {
+      "name": "Ramy Bensebaini",
+      "team": "Borussia Dortmund",
+      "position": "Defender",
+      "age": 29,
+      "number": 5,
+      "nationality": "Algeria",
+      "photo": "images/leagues/Bundesliga/Dortmund/Logo/Dortmund.png",
+      "tier": 2
+    },
+    {
+      "name": "Emre Can",
+      "team": "Borussia Dortmund",
+      "position": "Midfielder",
+      "age": 31,
+      "number": 23,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Dortmund/Logo/Dortmund.png",
+      "tier": 1
+    },
+    {
+      "name": "Marcel Sabitzer",
+      "team": "Borussia Dortmund",
+      "position": "Midfielder",
+      "age": 30,
+      "number": 20,
+      "nationality": "Austria",
+      "photo": "images/leagues/Bundesliga/Dortmund/Logo/Dortmund.png",
+      "tier": 1
+    },
+    {
+      "name": "Julian Brandt",
+      "team": "Borussia Dortmund",
+      "position": "Midfielder",
+      "age": 28,
+      "number": 10,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Dortmund/Logo/Dortmund.png",
+      "tier": 1
+    },
+    {
+      "name": "Giovanni Reyna",
+      "team": "Borussia Dortmund",
+      "position": "Midfielder",
+      "age": 22,
+      "number": 7,
+      "nationality": "USA",
+      "photo": "images/leagues/Bundesliga/Dortmund/Logo/Dortmund.png",
+      "tier": 1
+    },
+    {
+      "name": "Jamie Gittens",
+      "team": "Borussia Dortmund",
+      "position": "Forward",
+      "age": 20,
+      "number": 43,
+      "nationality": "England",
+      "photo": "images/leagues/Bundesliga/Dortmund/Logo/Dortmund.png",
+      "tier": 2
+    },
+    {
+      "name": "Karim Adeyemi",
+      "team": "Borussia Dortmund",
+      "position": "Forward",
+      "age": 23,
+      "number": 27,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Dortmund/Logo/Dortmund.png",
+      "tier": 1
+    },
+    {
+      "name": "Serhou Guirassy",
+      "team": "Borussia Dortmund",
+      "position": "Forward",
+      "age": 29,
+      "number": 9,
+      "nationality": "Guinea",
+      "photo": "images/leagues/Bundesliga/Dortmund/Logo/Dortmund.png",
+      "tier": 1
+    },
+    {
+      "name": "Maximilian Beier",
+      "team": "Borussia Dortmund",
+      "position": "Forward",
+      "age": 22,
+      "number": 14,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Dortmund/Logo/Dortmund.png",
+      "tier": 2
+    },
+    {
+      "name": "Peter Gulacsi",
+      "team": "RB Leipzig",
+      "position": "Goalkeeper",
+      "age": 34,
+      "number": 1,
+      "nationality": "Hungary",
+      "photo": "images/leagues/Bundesliga/Leipzig/Logo/Leipzig.png",
+      "tier": 2
+    },
+    {
+      "name": "Willi Orban",
+      "team": "RB Leipzig",
+      "position": "Defender",
+      "age": 32,
+      "number": 4,
+      "nationality": "Hungary",
+      "photo": "images/leagues/Bundesliga/Leipzig/Logo/Leipzig.png",
+      "tier": 2
+    },
+    {
+      "name": "Lukas Klostermann",
+      "team": "RB Leipzig",
+      "position": "Defender",
+      "age": 28,
+      "number": 16,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Leipzig/Logo/Leipzig.png",
+      "tier": 3
+    },
+    {
+      "name": "David Raum",
+      "team": "RB Leipzig",
+      "position": "Defender",
+      "age": 26,
+      "number": 22,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Leipzig/Logo/Leipzig.png",
+      "tier": 2
+    },
+    {
+      "name": "Benjamin Henrichs",
+      "team": "RB Leipzig",
+      "position": "Defender",
+      "age": 27,
+      "number": 39,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Leipzig/Logo/Leipzig.png",
+      "tier": 3
+    },
+    {
+      "name": "Amadou Haidara",
+      "team": "RB Leipzig",
+      "position": "Midfielder",
+      "age": 26,
+      "number": 8,
+      "nationality": "Mali",
+      "photo": "images/leagues/Bundesliga/Leipzig/Logo/Leipzig.png",
+      "tier": 2
+    },
+    {
+      "name": "Nicolas Seiwald",
+      "team": "RB Leipzig",
+      "position": "Midfielder",
+      "age": 23,
+      "number": 13,
+      "nationality": "Austria",
+      "photo": "images/leagues/Bundesliga/Leipzig/Logo/Leipzig.png",
+      "tier": 2
+    },
+    {
+      "name": "Christoph Baumgartner",
+      "team": "RB Leipzig",
+      "position": "Midfielder",
+      "age": 25,
+      "number": 14,
+      "nationality": "Austria",
+      "photo": "images/leagues/Bundesliga/Leipzig/Logo/Leipzig.png",
+      "tier": 2
+    },
+    {
+      "name": "Xavi Simons",
+      "team": "RB Leipzig",
+      "position": "Midfielder",
+      "age": 21,
+      "number": 10,
+      "nationality": "Netherlands",
+      "photo": "images/leagues/Bundesliga/Leipzig/Logo/Leipzig.png",
+      "tier": 1
+    },
+    {
+      "name": "Lois Openda",
+      "team": "RB Leipzig",
+      "position": "Forward",
+      "age": 24,
+      "number": 17,
+      "nationality": "Belgium",
+      "photo": "images/leagues/Bundesliga/Leipzig/Logo/Leipzig.png",
+      "tier": 1
+    },
+    {
+      "name": "Benjamin Sesko",
+      "team": "RB Leipzig",
+      "position": "Forward",
+      "age": 21,
+      "number": 30,
+      "nationality": "Slovenia",
+      "photo": "images/leagues/Bundesliga/Leipzig/Logo/Leipzig.png",
+      "tier": 1
+    },
+    {
+      "name": "Yussuf Poulsen",
+      "team": "RB Leipzig",
+      "position": "Forward",
+      "age": 30,
+      "number": 9,
+      "nationality": "Denmark",
+      "photo": "images/leagues/Bundesliga/Leipzig/Logo/Leipzig.png",
+      "tier": 2
+    },
+    {
+      "name": "Kevin Trapp",
+      "team": "Eintracht Frankfurt",
+      "position": "Goalkeeper",
+      "age": 34,
+      "number": 1,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Frankfurt/Logo/Frankfurt.png",
+      "tier": 2
+    },
+    {
+      "name": "Robin Koch",
+      "team": "Eintracht Frankfurt",
+      "position": "Defender",
+      "age": 28,
+      "number": 4,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Frankfurt/Logo/Frankfurt.png",
+      "tier": 2
+    },
+    {
+      "name": "Tuta",
+      "team": "Eintracht Frankfurt",
+      "position": "Defender",
+      "age": 25,
+      "number": 35,
+      "nationality": "Brazil",
+      "photo": "images/leagues/Bundesliga/Frankfurt/Logo/Frankfurt.png",
+      "tier": 3
+    },
+    {
+      "name": "Arthur Theate",
+      "team": "Eintracht Frankfurt",
+      "position": "Defender",
+      "age": 24,
+      "number": 47,
+      "nationality": "Belgium",
+      "photo": "images/leagues/Bundesliga/Frankfurt/Logo/Frankfurt.png",
+      "tier": 2
+    },
+    {
+      "name": "Rasmus Kristensen",
+      "team": "Eintracht Frankfurt",
+      "position": "Defender",
+      "age": 27,
+      "number": 2,
+      "nationality": "Denmark",
+      "photo": "images/leagues/Bundesliga/Frankfurt/Logo/Frankfurt.png",
+      "tier": 3
+    },
+    {
+      "name": "Hugo Larsson",
+      "team": "Eintracht Frankfurt",
+      "position": "Midfielder",
+      "age": 20,
+      "number": 16,
+      "nationality": "Sweden",
+      "photo": "images/leagues/Bundesliga/Frankfurt/Logo/Frankfurt.png",
+      "tier": 2
+    },
+    {
+      "name": "Ellyes Skhiri",
+      "team": "Eintracht Frankfurt",
+      "position": "Midfielder",
+      "age": 29,
+      "number": 15,
+      "nationality": "Tunisia",
+      "photo": "images/leagues/Bundesliga/Frankfurt/Logo/Frankfurt.png",
+      "tier": 2
+    },
+    {
+      "name": "Mario Gotze",
+      "team": "Eintracht Frankfurt",
+      "position": "Midfielder",
+      "age": 32,
+      "number": 27,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Frankfurt/Logo/Frankfurt.png",
+      "tier": 1
+    },
+    {
+      "name": "Ansgar Knauff",
+      "team": "Eintracht Frankfurt",
+      "position": "Forward",
+      "age": 23,
+      "number": 36,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Frankfurt/Logo/Frankfurt.png",
+      "tier": 2
+    },
+    {
+      "name": "Omar Marmoush",
+      "team": "Eintracht Frankfurt",
+      "position": "Forward",
+      "age": 25,
+      "number": 7,
+      "nationality": "Egypt",
+      "photo": "images/leagues/Bundesliga/Frankfurt/Logo/Frankfurt.png",
+      "tier": 1
+    },
+    {
+      "name": "Hugo Ekitike",
+      "team": "Eintracht Frankfurt",
+      "position": "Forward",
+      "age": 22,
+      "number": 11,
+      "nationality": "France",
+      "photo": "images/leagues/Bundesliga/Frankfurt/Logo/Frankfurt.png",
+      "tier": 1
+    },
+    {
+      "name": "Alexander Nubel",
+      "team": "VfB Stuttgart",
+      "position": "Goalkeeper",
+      "age": 28,
+      "number": 33,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Stuttgart/Logo/Stuttgart.png",
+      "tier": 2
+    },
+    {
+      "name": "Jeff Chabot",
+      "team": "VfB Stuttgart",
+      "position": "Defender",
+      "age": 26,
+      "number": 24,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Stuttgart/Logo/Stuttgart.png",
+      "tier": 3
+    },
+    {
+      "name": "Maximilian Mittelstadt",
+      "team": "VfB Stuttgart",
+      "position": "Defender",
+      "age": 27,
+      "number": 7,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Stuttgart/Logo/Stuttgart.png",
+      "tier": 2
+    },
+    {
+      "name": "Josha Vagnoman",
+      "team": "VfB Stuttgart",
+      "position": "Defender",
+      "age": 24,
+      "number": 21,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Stuttgart/Logo/Stuttgart.png",
+      "tier": 3
+    },
+    {
+      "name": "Anthony Rouault",
+      "team": "VfB Stuttgart",
+      "position": "Defender",
+      "age": 23,
+      "number": 4,
+      "nationality": "France",
+      "photo": "images/leagues/Bundesliga/Stuttgart/Logo/Stuttgart.png",
+      "tier": 3
+    },
+    {
+      "name": "Atakan Karazor",
+      "team": "VfB Stuttgart",
+      "position": "Midfielder",
+      "age": 28,
+      "number": 16,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Stuttgart/Logo/Stuttgart.png",
+      "tier": 3
+    },
+    {
+      "name": "Angelo Stiller",
+      "team": "VfB Stuttgart",
+      "position": "Midfielder",
+      "age": 23,
+      "number": 6,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Stuttgart/Logo/Stuttgart.png",
+      "tier": 2
+    },
+    {
+      "name": "Enzo Millot",
+      "team": "VfB Stuttgart",
+      "position": "Midfielder",
+      "age": 22,
+      "number": 8,
+      "nationality": "France",
+      "photo": "images/leagues/Bundesliga/Stuttgart/Logo/Stuttgart.png",
+      "tier": 2
+    },
+    {
+      "name": "Chris Fuhrich",
+      "team": "VfB Stuttgart",
+      "position": "Forward",
+      "age": 26,
+      "number": 27,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Stuttgart/Logo/Stuttgart.png",
+      "tier": 2
+    },
+    {
+      "name": "Jamie Leweling",
+      "team": "VfB Stuttgart",
+      "position": "Forward",
+      "age": 23,
+      "number": 18,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Stuttgart/Logo/Stuttgart.png",
+      "tier": 2
+    },
+    {
+      "name": "Deniz Undav",
+      "team": "VfB Stuttgart",
+      "position": "Forward",
+      "age": 28,
+      "number": 26,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Stuttgart/Logo/Stuttgart.png",
+      "tier": 1
+    },
+    {
+      "name": "Ermedin Demirovic",
+      "team": "VfB Stuttgart",
+      "position": "Forward",
+      "age": 26,
+      "number": 9,
+      "nationality": "Bosnia and Herzegovina",
+      "photo": "images/leagues/Bundesliga/Stuttgart/Logo/Stuttgart.png",
+      "tier": 2
+    },
+    {
+      "name": "Kamil Grabara",
+      "team": "VfL Wolfsburg",
+      "position": "Goalkeeper",
+      "age": 26,
+      "number": 1,
+      "nationality": "Poland",
+      "photo": "images/leagues/Bundesliga/Wolfsburg/Logo/Wolfsburg.png",
+      "tier": 2
+    },
+    {
+      "name": "Konstantinos Koulierakis",
+      "team": "VfL Wolfsburg",
+      "position": "Defender",
+      "age": 21,
+      "number": 15,
+      "nationality": "Greece",
+      "photo": "images/leagues/Bundesliga/Wolfsburg/Logo/Wolfsburg.png",
+      "tier": 3
+    },
+    {
+      "name": "Sebastiaan Bornauw",
+      "team": "VfL Wolfsburg",
+      "position": "Defender",
+      "age": 25,
+      "number": 4,
+      "nationality": "Belgium",
+      "photo": "images/leagues/Bundesliga/Wolfsburg/Logo/Wolfsburg.png",
+      "tier": 3
+    },
+    {
+      "name": "Joakim Maehle",
+      "team": "VfL Wolfsburg",
+      "position": "Defender",
+      "age": 27,
+      "number": 3,
+      "nationality": "Denmark",
+      "photo": "images/leagues/Bundesliga/Wolfsburg/Logo/Wolfsburg.png",
+      "tier": 2
+    },
+    {
+      "name": "Maximilian Arnold",
+      "team": "VfL Wolfsburg",
+      "position": "Midfielder",
+      "age": 30,
+      "number": 27,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Wolfsburg/Logo/Wolfsburg.png",
+      "tier": 2
+    },
+    {
+      "name": "Mattias Svanberg",
+      "team": "VfL Wolfsburg",
+      "position": "Midfielder",
+      "age": 25,
+      "number": 24,
+      "nationality": "Sweden",
+      "photo": "images/leagues/Bundesliga/Wolfsburg/Logo/Wolfsburg.png",
+      "tier": 3
+    },
+    {
+      "name": "Patrick Wimmer",
+      "team": "VfL Wolfsburg",
+      "position": "Midfielder",
+      "age": 23,
+      "number": 10,
+      "nationality": "Austria",
+      "photo": "images/leagues/Bundesliga/Wolfsburg/Logo/Wolfsburg.png",
+      "tier": 2
+    },
+    {
+      "name": "Jonas Wind",
+      "team": "VfL Wolfsburg",
+      "position": "Forward",
+      "age": 26,
+      "number": 7,
+      "nationality": "Denmark",
+      "photo": "images/leagues/Bundesliga/Wolfsburg/Logo/Wolfsburg.png",
+      "tier": 2
+    },
+    {
+      "name": "Mohamed Amoura",
+      "team": "VfL Wolfsburg",
+      "position": "Forward",
+      "age": 24,
+      "number": 21,
+      "nationality": "Algeria",
+      "photo": "images/leagues/Bundesliga/Wolfsburg/Logo/Wolfsburg.png",
+      "tier": 2
+    },
+    {
+      "name": "Tiago Tomas",
+      "team": "VfL Wolfsburg",
+      "position": "Forward",
+      "age": 22,
+      "number": 19,
+      "nationality": "Portugal",
+      "photo": "images/leagues/Bundesliga/Wolfsburg/Logo/Wolfsburg.png",
+      "tier": 3
+    },
+    {
+      "name": "Moritz Nicolas",
+      "team": "Borussia Monchengladbach",
+      "position": "Goalkeeper",
+      "age": 27,
+      "number": 1,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Monchenglabach/Logo/Monchenglabach.png",
+      "tier": 3
+    },
+    {
+      "name": "Nico Elvedi",
+      "team": "Borussia Monchengladbach",
+      "position": "Defender",
+      "age": 28,
+      "number": 30,
+      "nationality": "Switzerland",
+      "photo": "images/leagues/Bundesliga/Monchenglabach/Logo/Monchenglabach.png",
+      "tier": 2
+    },
+    {
+      "name": "Ko Itakura",
+      "team": "Borussia Monchengladbach",
+      "position": "Defender",
+      "age": 27,
+      "number": 3,
+      "nationality": "Japan",
+      "photo": "images/leagues/Bundesliga/Monchenglabach/Logo/Monchenglabach.png",
+      "tier": 2
+    },
+    {
+      "name": "Joe Scally",
+      "team": "Borussia Monchengladbach",
+      "position": "Defender",
+      "age": 22,
+      "number": 29,
+      "nationality": "USA",
+      "photo": "images/leagues/Bundesliga/Monchenglabach/Logo/Monchenglabach.png",
+      "tier": 2
+    },
+    {
+      "name": "Julian Weigl",
+      "team": "Borussia Monchengladbach",
+      "position": "Midfielder",
+      "age": 29,
+      "number": 8,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Monchenglabach/Logo/Monchenglabach.png",
+      "tier": 2
+    },
+    {
+      "name": "Rocco Reitz",
+      "team": "Borussia Monchengladbach",
+      "position": "Midfielder",
+      "age": 22,
+      "number": 34,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Monchenglabach/Logo/Monchenglabach.png",
+      "tier": 2
+    },
+    {
+      "name": "Kevin Stoger",
+      "team": "Borussia Monchengladbach",
+      "position": "Midfielder",
+      "age": 31,
+      "number": 10,
+      "nationality": "Austria",
+      "photo": "images/leagues/Bundesliga/Monchenglabach/Logo/Monchenglabach.png",
+      "tier": 2
+    },
+    {
+      "name": "Franck Honorat",
+      "team": "Borussia Monchengladbach",
+      "position": "Forward",
+      "age": 28,
+      "number": 9,
+      "nationality": "France",
+      "photo": "images/leagues/Bundesliga/Monchenglabach/Logo/Monchenglabach.png",
+      "tier": 2
+    },
+    {
+      "name": "Tim Kleindienst",
+      "team": "Borussia Monchengladbach",
+      "position": "Forward",
+      "age": 29,
+      "number": 36,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Monchenglabach/Logo/Monchenglabach.png",
+      "tier": 2
+    },
+    {
+      "name": "Alassane Plea",
+      "team": "Borussia Monchengladbach",
+      "position": "Forward",
+      "age": 31,
+      "number": 14,
+      "nationality": "France",
+      "photo": "images/leagues/Bundesliga/Monchenglabach/Logo/Monchenglabach.png",
+      "tier": 2
+    },
+    {
+      "name": "Robin Hack",
+      "team": "Borussia Monchengladbach",
+      "position": "Forward",
+      "age": 25,
+      "number": 21,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Monchenglabach/Logo/Monchenglabach.png",
+      "tier": 2
+    },
+    {
+      "name": "Noah Atubolu",
+      "team": "SC Freiburg",
+      "position": "Goalkeeper",
+      "age": 22,
+      "number": 1,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Freiburg/Logo/Freiburg.png",
+      "tier": 2
+    },
+    {
+      "name": "Matthias Ginter",
+      "team": "SC Freiburg",
+      "position": "Defender",
+      "age": 30,
+      "number": 28,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Freiburg/Logo/Freiburg.png",
+      "tier": 1
+    },
+    {
+      "name": "Philipp Lienhart",
+      "team": "SC Freiburg",
+      "position": "Defender",
+      "age": 28,
+      "number": 3,
+      "nationality": "Austria",
+      "photo": "images/leagues/Bundesliga/Freiburg/Logo/Freiburg.png",
+      "tier": 3
+    },
+    {
+      "name": "Christian Gunter",
+      "team": "SC Freiburg",
+      "position": "Defender",
+      "age": 30,
+      "number": 30,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Freiburg/Logo/Freiburg.png",
+      "tier": 2
+    },
+    {
+      "name": "Lukas Kubler",
+      "team": "SC Freiburg",
+      "position": "Defender",
+      "age": 32,
+      "number": 17,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Freiburg/Logo/Freiburg.png",
+      "tier": 3
+    },
+    {
+      "name": "Maximilian Eggestein",
+      "team": "SC Freiburg",
+      "position": "Midfielder",
+      "age": 27,
+      "number": 8,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Freiburg/Logo/Freiburg.png",
+      "tier": 2
+    },
+    {
+      "name": "Patrick Osterhage",
+      "team": "SC Freiburg",
+      "position": "Midfielder",
+      "age": 24,
+      "number": 14,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Freiburg/Logo/Freiburg.png",
+      "tier": 3
+    },
+    {
+      "name": "Ritsu Doan",
+      "team": "SC Freiburg",
+      "position": "Forward",
+      "age": 26,
+      "number": 42,
+      "nationality": "Japan",
+      "photo": "images/leagues/Bundesliga/Freiburg/Logo/Freiburg.png",
+      "tier": 2
+    },
+    {
+      "name": "Vincenzo Grifo",
+      "team": "SC Freiburg",
+      "position": "Forward",
+      "age": 31,
+      "number": 32,
+      "nationality": "Italy",
+      "photo": "images/leagues/Bundesliga/Freiburg/Logo/Freiburg.png",
+      "tier": 1
+    },
+    {
+      "name": "Lucas Holer",
+      "team": "SC Freiburg",
+      "position": "Forward",
+      "age": 30,
+      "number": 9,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Freiburg/Logo/Freiburg.png",
+      "tier": 2
+    },
+    {
+      "name": "Junior Adamu",
+      "team": "SC Freiburg",
+      "position": "Forward",
+      "age": 23,
+      "number": 26,
+      "nationality": "Austria",
+      "photo": "images/leagues/Bundesliga/Freiburg/Logo/Freiburg.png",
+      "tier": 3
+    },
+    {
+      "name": "Oliver Baumann",
+      "team": "TSG Hoffenheim",
+      "position": "Goalkeeper",
+      "age": 34,
+      "number": 1,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Hoffenheim/Logo/Hoffenheim.png",
+      "tier": 2
+    },
+    {
+      "name": "Pavel Kaderabek",
+      "team": "TSG Hoffenheim",
+      "position": "Defender",
+      "age": 32,
+      "number": 3,
+      "nationality": "Czech Republic",
+      "photo": "images/leagues/Bundesliga/Hoffenheim/Logo/Hoffenheim.png",
+      "tier": 2
+    },
+    {
+      "name": "Robin Hranac",
+      "team": "TSG Hoffenheim",
+      "position": "Defender",
+      "age": 24,
+      "number": 5,
+      "nationality": "Czech Republic",
+      "photo": "images/leagues/Bundesliga/Hoffenheim/Logo/Hoffenheim.png",
+      "tier": 3
+    },
+    {
+      "name": "Kevin Akpoguma",
+      "team": "TSG Hoffenheim",
+      "position": "Defender",
+      "age": 29,
+      "number": 25,
+      "nationality": "Nigeria",
+      "photo": "images/leagues/Bundesliga/Hoffenheim/Logo/Hoffenheim.png",
+      "tier": 3
+    },
+    {
+      "name": "Anton Stach",
+      "team": "TSG Hoffenheim",
+      "position": "Midfielder",
+      "age": 26,
+      "number": 16,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Hoffenheim/Logo/Hoffenheim.png",
+      "tier": 2
+    },
+    {
+      "name": "Tom Bischof",
+      "team": "TSG Hoffenheim",
+      "position": "Midfielder",
+      "age": 19,
+      "number": 46,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Hoffenheim/Logo/Hoffenheim.png",
+      "tier": 2
+    },
+    {
+      "name": "Andrej Kramaric",
+      "team": "TSG Hoffenheim",
+      "position": "Forward",
+      "age": 33,
+      "number": 27,
+      "nationality": "Croatia",
+      "photo": "images/leagues/Bundesliga/Hoffenheim/Logo/Hoffenheim.png",
+      "tier": 1
+    },
+    {
+      "name": "Ihlas Bebou",
+      "team": "TSG Hoffenheim",
+      "position": "Forward",
+      "age": 30,
+      "number": 9,
+      "nationality": "Togo",
+      "photo": "images/leagues/Bundesliga/Hoffenheim/Logo/Hoffenheim.png",
+      "tier": 2
+    },
+    {
+      "name": "Marius Bulter",
+      "team": "TSG Hoffenheim",
+      "position": "Forward",
+      "age": 31,
+      "number": 14,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Hoffenheim/Logo/Hoffenheim.png",
+      "tier": 2
+    },
+    {
+      "name": "Adam Hlozek",
+      "team": "TSG Hoffenheim",
+      "position": "Forward",
+      "age": 22,
+      "number": 23,
+      "nationality": "Czech Republic",
+      "photo": "images/leagues/Bundesliga/Hoffenheim/Logo/Hoffenheim.png",
+      "tier": 2
+    },
+    {
+      "name": "Nediljko Labrovic",
+      "team": "FC Augsburg",
+      "position": "Goalkeeper",
+      "age": 25,
+      "number": 1,
+      "nationality": "Croatia",
+      "photo": "images/leagues/Bundesliga/Augsburg/Logo/Augsburg.png",
+      "tier": 3
+    },
+    {
+      "name": "Jeffrey Gouweleeuw",
+      "team": "FC Augsburg",
+      "position": "Defender",
+      "age": 33,
+      "number": 6,
+      "nationality": "Netherlands",
+      "photo": "images/leagues/Bundesliga/Augsburg/Logo/Augsburg.png",
+      "tier": 2
+    },
+    {
+      "name": "Keven Schlotterbeck",
+      "team": "FC Augsburg",
+      "position": "Defender",
+      "age": 27,
+      "number": 40,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Augsburg/Logo/Augsburg.png",
+      "tier": 3
+    },
+    {
+      "name": "Chrislain Matsima",
+      "team": "FC Augsburg",
+      "position": "Defender",
+      "age": 22,
+      "number": 5,
+      "nationality": "France",
+      "photo": "images/leagues/Bundesliga/Augsburg/Logo/Augsburg.png",
+      "tier": 3
+    },
+    {
+      "name": "Kristijan Jakic",
+      "team": "FC Augsburg",
+      "position": "Midfielder",
+      "age": 27,
+      "number": 20,
+      "nationality": "Croatia",
+      "photo": "images/leagues/Bundesliga/Augsburg/Logo/Augsburg.png",
+      "tier": 2
+    },
+    {
+      "name": "Elvis Rexhbecaj",
+      "team": "FC Augsburg",
+      "position": "Midfielder",
+      "age": 27,
+      "number": 8,
+      "nationality": "Kosovo",
+      "photo": "images/leagues/Bundesliga/Augsburg/Logo/Augsburg.png",
+      "tier": 3
+    },
+    {
+      "name": "Frank Onyeka",
+      "team": "FC Augsburg",
+      "position": "Midfielder",
+      "age": 27,
+      "number": 35,
+      "nationality": "Nigeria",
+      "photo": "images/leagues/Bundesliga/Augsburg/Logo/Augsburg.png",
+      "tier": 2
+    },
+    {
+      "name": "Ruben Vargas",
+      "team": "FC Augsburg",
+      "position": "Forward",
+      "age": 26,
+      "number": 16,
+      "nationality": "Switzerland",
+      "photo": "images/leagues/Bundesliga/Augsburg/Logo/Augsburg.png",
+      "tier": 2
+    },
+    {
+      "name": "Phillip Tietz",
+      "team": "FC Augsburg",
+      "position": "Forward",
+      "age": 27,
+      "number": 21,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Augsburg/Logo/Augsburg.png",
+      "tier": 2
+    },
+    {
+      "name": "Alexis Claude-Maurice",
+      "team": "FC Augsburg",
+      "position": "Forward",
+      "age": 26,
+      "number": 10,
+      "nationality": "France",
+      "photo": "images/leagues/Bundesliga/Augsburg/Logo/Augsburg.png",
+      "tier": 2
+    },
+    {
+      "name": "Samuel Essende",
+      "team": "FC Augsburg",
+      "position": "Forward",
+      "age": 26,
+      "number": 26,
+      "nationality": "DR Congo",
+      "photo": "images/leagues/Bundesliga/Augsburg/Logo/Augsburg.png",
+      "tier": 3
+    },
+    {
+      "name": "Michael Zetterer",
+      "team": "Werder Bremen",
+      "position": "Goalkeeper",
+      "age": 29,
+      "number": 1,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Bremen/Logo/Bremen.png",
+      "tier": 2
+    },
+    {
+      "name": "Marco Friedl",
+      "team": "Werder Bremen",
+      "position": "Defender",
+      "age": 26,
+      "number": 32,
+      "nationality": "Austria",
+      "photo": "images/leagues/Bundesliga/Bremen/Logo/Bremen.png",
+      "tier": 2
+    },
+    {
+      "name": "Niklas Stark",
+      "team": "Werder Bremen",
+      "position": "Defender",
+      "age": 29,
+      "number": 4,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Bremen/Logo/Bremen.png",
+      "tier": 2
+    },
+    {
+      "name": "Milos Veljkovic",
+      "team": "Werder Bremen",
+      "position": "Defender",
+      "age": 29,
+      "number": 5,
+      "nationality": "Serbia",
+      "photo": "images/leagues/Bundesliga/Bremen/Logo/Bremen.png",
+      "tier": 3
+    },
+    {
+      "name": "Mitchell Weiser",
+      "team": "Werder Bremen",
+      "position": "Defender",
+      "age": 30,
+      "number": 8,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Bremen/Logo/Bremen.png",
+      "tier": 2
+    },
+    {
+      "name": "Senne Lynen",
+      "team": "Werder Bremen",
+      "position": "Midfielder",
+      "age": 25,
+      "number": 6,
+      "nationality": "Belgium",
+      "photo": "images/leagues/Bundesliga/Bremen/Logo/Bremen.png",
+      "tier": 3
+    },
+    {
+      "name": "Jens Stage",
+      "team": "Werder Bremen",
+      "position": "Midfielder",
+      "age": 28,
+      "number": 23,
+      "nationality": "Denmark",
+      "photo": "images/leagues/Bundesliga/Bremen/Logo/Bremen.png",
+      "tier": 2
+    },
+    {
+      "name": "Romano Schmid",
+      "team": "Werder Bremen",
+      "position": "Midfielder",
+      "age": 25,
+      "number": 20,
+      "nationality": "Austria",
+      "photo": "images/leagues/Bundesliga/Bremen/Logo/Bremen.png",
+      "tier": 2
+    },
+    {
+      "name": "Marco Grull",
+      "team": "Werder Bremen",
+      "position": "Forward",
+      "age": 26,
+      "number": 7,
+      "nationality": "Austria",
+      "photo": "images/leagues/Bundesliga/Bremen/Logo/Bremen.png",
+      "tier": 2
+    },
+    {
+      "name": "Marvin Ducksch",
+      "team": "Werder Bremen",
+      "position": "Forward",
+      "age": 30,
+      "number": 11,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Bremen/Logo/Bremen.png",
+      "tier": 2
+    },
+    {
+      "name": "Justin Njinmah",
+      "team": "Werder Bremen",
+      "position": "Forward",
+      "age": 24,
+      "number": 30,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Bremen/Logo/Bremen.png",
+      "tier": 3
+    },
+    {
+      "name": "Robin Zentner",
+      "team": "Mainz 05",
+      "position": "Goalkeeper",
+      "age": 30,
+      "number": 27,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Mainz/Logo/Mainz.png",
+      "tier": 2
+    },
+    {
+      "name": "Andreas Hanche-Olsen",
+      "team": "Mainz 05",
+      "position": "Defender",
+      "age": 27,
+      "number": 2,
+      "nationality": "Norway",
+      "photo": "images/leagues/Bundesliga/Mainz/Logo/Mainz.png",
+      "tier": 3
+    },
+    {
+      "name": "Anthony Caci",
+      "team": "Mainz 05",
+      "position": "Defender",
+      "age": 27,
+      "number": 3,
+      "nationality": "France",
+      "photo": "images/leagues/Bundesliga/Mainz/Logo/Mainz.png",
+      "tier": 3
+    },
+    {
+      "name": "Dominik Kohr",
+      "team": "Mainz 05",
+      "position": "Midfielder",
+      "age": 31,
+      "number": 21,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Mainz/Logo/Mainz.png",
+      "tier": 3
+    },
+    {
+      "name": "Kaishu Sano",
+      "team": "Mainz 05",
+      "position": "Midfielder",
+      "age": 24,
+      "number": 6,
+      "nationality": "Japan",
+      "photo": "images/leagues/Bundesliga/Mainz/Logo/Mainz.png",
+      "tier": 2
+    },
+    {
+      "name": "Nadiem Amiri",
+      "team": "Mainz 05",
+      "position": "Midfielder",
+      "age": 28,
+      "number": 18,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Mainz/Logo/Mainz.png",
+      "tier": 2
+    },
+    {
+      "name": "Lee Jae-sung",
+      "team": "Mainz 05",
+      "position": "Midfielder",
+      "age": 32,
+      "number": 7,
+      "nationality": "South Korea",
+      "photo": "images/leagues/Bundesliga/Mainz/Logo/Mainz.png",
+      "tier": 2
+    },
+    {
+      "name": "Jonathan Burkardt",
+      "team": "Mainz 05",
+      "position": "Forward",
+      "age": 24,
+      "number": 29,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Mainz/Logo/Mainz.png",
+      "tier": 2
+    },
+    {
+      "name": "Karim Onisiwo",
+      "team": "Mainz 05",
+      "position": "Forward",
+      "age": 32,
+      "number": 17,
+      "nationality": "Austria",
+      "photo": "images/leagues/Bundesliga/Mainz/Logo/Mainz.png",
+      "tier": 2
+    },
+    {
+      "name": "Paul Nebel",
+      "team": "Mainz 05",
+      "position": "Forward",
+      "age": 22,
+      "number": 14,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Mainz/Logo/Mainz.png",
+      "tier": 2
+    },
+    {
+      "name": "Nelson Weiper",
+      "team": "Mainz 05",
+      "position": "Forward",
+      "age": 19,
+      "number": 40,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Mainz/Logo/Mainz.png",
+      "tier": 3
+    },
+    {
+      "name": "Frederik Ronnow",
+      "team": "Union Berlin",
+      "position": "Goalkeeper",
+      "age": 32,
+      "number": 1,
+      "nationality": "Denmark",
+      "photo": "images/leagues/Bundesliga/UnionBerlin/Logo/UnionBerlin.png",
+      "tier": 2
+    },
+    {
+      "name": "Danilho Doekhi",
+      "team": "Union Berlin",
+      "position": "Defender",
+      "age": 26,
+      "number": 5,
+      "nationality": "Netherlands",
+      "photo": "images/leagues/Bundesliga/UnionBerlin/Logo/UnionBerlin.png",
+      "tier": 2
+    },
+    {
+      "name": "Kevin Vogt",
+      "team": "Union Berlin",
+      "position": "Defender",
+      "age": 33,
+      "number": 4,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/UnionBerlin/Logo/UnionBerlin.png",
+      "tier": 2
+    },
+    {
+      "name": "Christopher Trimmel",
+      "team": "Union Berlin",
+      "position": "Defender",
+      "age": 37,
+      "number": 28,
+      "nationality": "Austria",
+      "photo": "images/leagues/Bundesliga/UnionBerlin/Logo/UnionBerlin.png",
+      "tier": 2
+    },
+    {
+      "name": "Alex Kral",
+      "team": "Union Berlin",
+      "position": "Midfielder",
+      "age": 26,
+      "number": 6,
+      "nationality": "Czech Republic",
+      "photo": "images/leagues/Bundesliga/UnionBerlin/Logo/UnionBerlin.png",
+      "tier": 3
+    },
+    {
+      "name": "Rani Khedira",
+      "team": "Union Berlin",
+      "position": "Midfielder",
+      "age": 29,
+      "number": 8,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/UnionBerlin/Logo/UnionBerlin.png",
+      "tier": 2
+    },
+    {
+      "name": "Andras Schafer",
+      "team": "Union Berlin",
+      "position": "Midfielder",
+      "age": 25,
+      "number": 17,
+      "nationality": "Hungary",
+      "photo": "images/leagues/Bundesliga/UnionBerlin/Logo/UnionBerlin.png",
+      "tier": 2
+    },
+    {
+      "name": "Lucas Tousart",
+      "team": "Union Berlin",
+      "position": "Midfielder",
+      "age": 27,
+      "number": 11,
+      "nationality": "France",
+      "photo": "images/leagues/Bundesliga/UnionBerlin/Logo/UnionBerlin.png",
+      "tier": 2
+    },
+    {
+      "name": "Benedict Hollerbach",
+      "team": "Union Berlin",
+      "position": "Forward",
+      "age": 23,
+      "number": 47,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/UnionBerlin/Logo/UnionBerlin.png",
+      "tier": 2
+    },
+    {
+      "name": "Yorbe Vertessen",
+      "team": "Union Berlin",
+      "position": "Forward",
+      "age": 24,
+      "number": 7,
+      "nationality": "Belgium",
+      "photo": "images/leagues/Bundesliga/UnionBerlin/Logo/UnionBerlin.png",
+      "tier": 3
+    },
+    {
+      "name": "Andrej Ilic",
+      "team": "Union Berlin",
+      "position": "Forward",
+      "age": 24,
+      "number": 19,
+      "nationality": "Serbia",
+      "photo": "images/leagues/Bundesliga/UnionBerlin/Logo/UnionBerlin.png",
+      "tier": 3
+    },
+    {
+      "name": "Patrick Drewes",
+      "team": "VfL Bochum",
+      "position": "Goalkeeper",
+      "age": 31,
+      "number": 1,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Bochum/Logo/Bochum.png",
+      "tier": 3
+    },
+    {
+      "name": "Ivan Ordets",
+      "team": "VfL Bochum",
+      "position": "Defender",
+      "age": 32,
+      "number": 14,
+      "nationality": "Ukraine",
+      "photo": "images/leagues/Bundesliga/Bochum/Logo/Bochum.png",
+      "tier": 3
+    },
+    {
+      "name": "Erhan Masovic",
+      "team": "VfL Bochum",
+      "position": "Defender",
+      "age": 26,
+      "number": 4,
+      "nationality": "Serbia",
+      "photo": "images/leagues/Bundesliga/Bochum/Logo/Bochum.png",
+      "tier": 3
+    },
+    {
+      "name": "Maximilian Wittek",
+      "team": "VfL Bochum",
+      "position": "Defender",
+      "age": 29,
+      "number": 40,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Bochum/Logo/Bochum.png",
+      "tier": 3
+    },
+    {
+      "name": "Anthony Losilla",
+      "team": "VfL Bochum",
+      "position": "Midfielder",
+      "age": 38,
+      "number": 8,
+      "nationality": "France",
+      "photo": "images/leagues/Bundesliga/Bochum/Logo/Bochum.png",
+      "tier": 2
+    },
+    {
+      "name": "Ibrahima Sissoko",
+      "team": "VfL Bochum",
+      "position": "Midfielder",
+      "age": 27,
+      "number": 27,
+      "nationality": "France",
+      "photo": "images/leagues/Bundesliga/Bochum/Logo/Bochum.png",
+      "tier": 3
+    },
+    {
+      "name": "Matus Bero",
+      "team": "VfL Bochum",
+      "position": "Midfielder",
+      "age": 29,
+      "number": 6,
+      "nationality": "Slovakia",
+      "photo": "images/leagues/Bundesliga/Bochum/Logo/Bochum.png",
+      "tier": 3
+    },
+    {
+      "name": "Dani de Wit",
+      "team": "VfL Bochum",
+      "position": "Midfielder",
+      "age": 27,
+      "number": 10,
+      "nationality": "Netherlands",
+      "photo": "images/leagues/Bundesliga/Bochum/Logo/Bochum.png",
+      "tier": 3
+    },
+    {
+      "name": "Philipp Hofmann",
+      "team": "VfL Bochum",
+      "position": "Forward",
+      "age": 31,
+      "number": 11,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Bochum/Logo/Bochum.png",
+      "tier": 2
+    },
+    {
+      "name": "Myron Boadu",
+      "team": "VfL Bochum",
+      "position": "Forward",
+      "age": 24,
+      "number": 18,
+      "nationality": "Netherlands",
+      "photo": "images/leagues/Bundesliga/Bochum/Logo/Bochum.png",
+      "tier": 3
+    },
+    {
+      "name": "Kevin Muller",
+      "team": "FC Heidenheim",
+      "position": "Goalkeeper",
+      "age": 33,
+      "number": 1,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Heidenheim/Logo/Heidenheim.png",
+      "tier": 3
+    },
+    {
+      "name": "Patrick Mainka",
+      "team": "FC Heidenheim",
+      "position": "Defender",
+      "age": 30,
+      "number": 6,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Heidenheim/Logo/Heidenheim.png",
+      "tier": 2
+    },
+    {
+      "name": "Benedikt Gimber",
+      "team": "FC Heidenheim",
+      "position": "Defender",
+      "age": 27,
+      "number": 5,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Heidenheim/Logo/Heidenheim.png",
+      "tier": 3
+    },
+    {
+      "name": "Marnon Busch",
+      "team": "FC Heidenheim",
+      "position": "Defender",
+      "age": 30,
+      "number": 3,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Heidenheim/Logo/Heidenheim.png",
+      "tier": 3
+    },
+    {
+      "name": "Lennard Maloney",
+      "team": "FC Heidenheim",
+      "position": "Midfielder",
+      "age": 25,
+      "number": 33,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Heidenheim/Logo/Heidenheim.png",
+      "tier": 3
+    },
+    {
+      "name": "Jan Schoppner",
+      "team": "FC Heidenheim",
+      "position": "Midfielder",
+      "age": 25,
+      "number": 18,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Heidenheim/Logo/Heidenheim.png",
+      "tier": 3
+    },
+    {
+      "name": "Adrian Beck",
+      "team": "FC Heidenheim",
+      "position": "Midfielder",
+      "age": 27,
+      "number": 10,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Heidenheim/Logo/Heidenheim.png",
+      "tier": 3
+    },
+    {
+      "name": "Paul Wanner",
+      "team": "FC Heidenheim",
+      "position": "Midfielder",
+      "age": 19,
+      "number": 22,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Heidenheim/Logo/Heidenheim.png",
+      "tier": 2
+    },
+    {
+      "name": "Marvin Pieringer",
+      "team": "FC Heidenheim",
+      "position": "Forward",
+      "age": 25,
+      "number": 14,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Heidenheim/Logo/Heidenheim.png",
+      "tier": 3
+    },
+    {
+      "name": "Mathias Honsak",
+      "team": "FC Heidenheim",
+      "position": "Forward",
+      "age": 28,
+      "number": 16,
+      "nationality": "Austria",
+      "photo": "images/leagues/Bundesliga/Heidenheim/Logo/Heidenheim.png",
+      "tier": 3
+    },
+    {
+      "name": "Timon Weiner",
+      "team": "Holstein Kiel",
+      "position": "Goalkeeper",
+      "age": 25,
+      "number": 1,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Kiel/Logo/Kiel.png",
+      "tier": 3
+    },
+    {
+      "name": "Timo Becker",
+      "team": "Holstein Kiel",
+      "position": "Defender",
+      "age": 27,
+      "number": 5,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Kiel/Logo/Kiel.png",
+      "tier": 3
+    },
+    {
+      "name": "Marco Komenda",
+      "team": "Holstein Kiel",
+      "position": "Defender",
+      "age": 28,
+      "number": 4,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Kiel/Logo/Kiel.png",
+      "tier": 3
+    },
+    {
+      "name": "Tom Rothe",
+      "team": "Holstein Kiel",
+      "position": "Defender",
+      "age": 20,
+      "number": 3,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Kiel/Logo/Kiel.png",
+      "tier": 3
+    },
+    {
+      "name": "Patrick Erras",
+      "team": "Holstein Kiel",
+      "position": "Defender",
+      "age": 29,
+      "number": 25,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Kiel/Logo/Kiel.png",
+      "tier": 3
+    },
+    {
+      "name": "Nicolai Remberg",
+      "team": "Holstein Kiel",
+      "position": "Midfielder",
+      "age": 24,
+      "number": 6,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Kiel/Logo/Kiel.png",
+      "tier": 3
+    },
+    {
+      "name": "Armin Gigovic",
+      "team": "Holstein Kiel",
+      "position": "Midfielder",
+      "age": 22,
+      "number": 8,
+      "nationality": "Sweden",
+      "photo": "images/leagues/Bundesliga/Kiel/Logo/Kiel.png",
+      "tier": 3
+    },
+    {
+      "name": "Lewis Holtby",
+      "team": "Holstein Kiel",
+      "position": "Midfielder",
+      "age": 34,
+      "number": 10,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Kiel/Logo/Kiel.png",
+      "tier": 2
+    },
+    {
+      "name": "Shuto Machino",
+      "team": "Holstein Kiel",
+      "position": "Forward",
+      "age": 25,
+      "number": 23,
+      "nationality": "Japan",
+      "photo": "images/leagues/Bundesliga/Kiel/Logo/Kiel.png",
+      "tier": 2
+    },
+    {
+      "name": "Steven Skrzybski",
+      "team": "Holstein Kiel",
+      "position": "Forward",
+      "age": 32,
+      "number": 7,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Kiel/Logo/Kiel.png",
+      "tier": 3
+    },
+    {
+      "name": "Fiete Arp",
+      "team": "Holstein Kiel",
+      "position": "Forward",
+      "age": 25,
+      "number": 11,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Kiel/Logo/Kiel.png",
+      "tier": 2
+    },
+    {
+      "name": "Phil Harres",
+      "team": "Holstein Kiel",
+      "position": "Forward",
+      "age": 22,
+      "number": 9,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/Kiel/Logo/Kiel.png",
+      "tier": 3
+    },
+    {
+      "name": "Nikola Vasilj",
+      "team": "FC St. Pauli",
+      "position": "Goalkeeper",
+      "age": 29,
+      "number": 22,
+      "nationality": "Bosnia and Herzegovina",
+      "photo": "images/leagues/Bundesliga/StPauli/Logo/StPauli.png",
+      "tier": 2
+    },
+    {
+      "name": "Karol Mets",
+      "team": "FC St. Pauli",
+      "position": "Defender",
+      "age": 31,
+      "number": 24,
+      "nationality": "Estonia",
+      "photo": "images/leagues/Bundesliga/StPauli/Logo/StPauli.png",
+      "tier": 3
+    },
+    {
+      "name": "Hauke Wahl",
+      "team": "FC St. Pauli",
+      "position": "Defender",
+      "age": 30,
+      "number": 5,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/StPauli/Logo/StPauli.png",
+      "tier": 3
+    },
+    {
+      "name": "Manolis Saliakas",
+      "team": "FC St. Pauli",
+      "position": "Defender",
+      "age": 28,
+      "number": 18,
+      "nationality": "Greece",
+      "photo": "images/leagues/Bundesliga/StPauli/Logo/StPauli.png",
+      "tier": 3
+    },
+    {
+      "name": "Eric Smith",
+      "team": "FC St. Pauli",
+      "position": "Defender",
+      "age": 27,
+      "number": 7,
+      "nationality": "Sweden",
+      "photo": "images/leagues/Bundesliga/StPauli/Logo/StPauli.png",
+      "tier": 3
+    },
+    {
+      "name": "Jackson Irvine",
+      "team": "FC St. Pauli",
+      "position": "Midfielder",
+      "age": 31,
+      "number": 13,
+      "nationality": "Australia",
+      "photo": "images/leagues/Bundesliga/StPauli/Logo/StPauli.png",
+      "tier": 2
+    },
+    {
+      "name": "Danel Sinani",
+      "team": "FC St. Pauli",
+      "position": "Midfielder",
+      "age": 27,
+      "number": 20,
+      "nationality": "Luxembourg",
+      "photo": "images/leagues/Bundesliga/StPauli/Logo/StPauli.png",
+      "tier": 3
+    },
+    {
+      "name": "Johannes Eggestein",
+      "team": "FC St. Pauli",
+      "position": "Forward",
+      "age": 26,
+      "number": 11,
+      "nationality": "Germany",
+      "photo": "images/leagues/Bundesliga/StPauli/Logo/StPauli.png",
+      "tier": 2
+    },
+    {
+      "name": "Oladapo Afolayan",
+      "team": "FC St. Pauli",
+      "position": "Forward",
+      "age": 27,
+      "number": 14,
+      "nationality": "England",
+      "photo": "images/leagues/Bundesliga/StPauli/Logo/StPauli.png",
+      "tier": 2
+    },
+    {
+      "name": "Morgan Guilavogui",
+      "team": "FC St. Pauli",
+      "position": "Forward",
+      "age": 26,
+      "number": 9,
+      "nationality": "Guinea",
+      "photo": "images/leagues/Bundesliga/StPauli/Logo/StPauli.png",
+      "tier": 3
+    }
+  ]
+}
