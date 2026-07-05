@@ -368,7 +368,7 @@ body {
 /* Desktops and larger screens */
 @media only screen and (min-width: 1025px) {
     body{
-        background-image: url('/images/leagues/PremierLeague/Logo/1.jpg');
+        background-image: url('images/leagues/PremierLeague/Logo/1.jpg');
     }
     .header {
         height: 60px;
