@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <title>Guess the Footballer</title>
+</head>
+<body>
+    <div class="header">
+        <img src="../../images/Header/fotbal.png" alt="Bogdy's Game Logo" id="logo">
+        <div id="mainHeader" data-translate="guessTheFootballer">Guess the footballer</div>
+        <div class="language-selector">
+            <label for="language">Language:</label>
+            <select id="language">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="ro">Română</option>
+            </select>
+        </div>
+        <div class="header-buttons">
+            <div id="infoButton">ⓘ</div>
+            <button id="menuButton">&#9776;</button>
+        </div>
+        <div id="infoContent" class="hidden">
+            <button id="closeButton">X</button>
+            <h2 data-translate="howToPlay">How to Play</h2>
+            <p data-translate="selectLeague">1. Select a league, a season and a difficulty.</p>
+            <p data-translate="guessFootballer">2. Guess the footballer based on the clues provided.</p>
+            <p data-translate="enjoyGame">3. Enjoy the game!</p>
+        </div>
+    </div>
+    <div class="navbar hidden" id="navbar">
+        <ul id="menuContent"></ul>
+    </div>
+    <div class="content">
+        <div id="game">
+            <h1 data-translate="guessTheFootballPlayer">Guess the Football Player</h1>
+            <div class="game-meta">
+                <span id="gameSubtitle"></span>
+                <span id="difficultyChip" class="difficulty-chip"></span>
+            </div>
+            <div class="Guess">
+                <input type="text" id="guessInput" placeholder="Type player name...">
+            </div>
+            <div class="result-box"></div>
+            <div id="playerInfo"></div>
+            <div id="feedback"></div>
+            <div id="restartContainer"></div>
+            <button id="hintButton" data-translate="showHint">Show Hint</button>
+            <div id="hint"></div>
+        </div>
+    </div>
+
+    <script defer src="i18n.js"></script>
+    <script defer src="engine.js"></script>
+    <script defer src="ui.js"></script>
+</body>
+</html>

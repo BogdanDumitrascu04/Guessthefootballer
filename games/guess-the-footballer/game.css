@@ -1,0 +1,965 @@
+:root {
+    --league-bg: url('../../images/leagues/PremierLeague/Logo/1.jpg');
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 100%);
+    margin: 0;
+    padding-top: 50px; /* Ajustează această valoare în funcție de înălțimea header-ului */
+    box-sizing: border-box;
+    width: 100%;
+    overflow-y: auto; /* Permite derularea verticală */
+    position: relative; 
+}
+.language-selector {
+    padding: 5px;
+    text-align: right;
+    background-color: #68a6ff;
+    border-radius: 8px; /* Rotunjirea colțurilor */
+    box-shadow: 0 2px 5px rgba(5, 5, 227, 0.1); /* Adaugă o umbră subtilă */
+    display: inline-block; /* Pentru a se adapta la conținut */
+}
+
+.language-selector label {
+    margin-right: 10px;
+    font-weight: bold; 
+    color: hsl(0, 9%, 96%); 
+}
+
+#language {
+    padding: 8px 12px; 
+    border: 1px solid #6CA3FEff; 
+    border-radius: 5px; 
+    background-color: #6CA3FEff; 
+    font-size: 14px; 
+    cursor: pointer; 
+    transition: border-color 0.3s ease; 
+    color: hsl(0, 9%, 96%); 
+}
+
+#language:hover {
+    border-color: #007bff; /* Schimbă culoarea bordurii la hover pentru a adăuga un efect vizual */
+}
+
+.header {
+    color: #fff;
+    background-image: var(--league-bg);
+    height: 60px;
+    position: fixed;
+    width: 100%; /* Ajustează la 100% pentru a ocupa toată lățimea */
+    top: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    opacity: 90%;
+    z-index: 1000; /* Asigură-te că header-ul rămâne deasupra altor elemente */
+}
+.header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+#infoButton, #menuButton {
+    margin-left: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+}
+
+#mainHeader {
+    font-size: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 10px; /* Ajustează pentru a centra mai bine titlul */
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    background-image: var(--league-bg);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    width: 100%;
+    height: 40vh;
+    position: fixed;
+    top: 75px;
+    right: 0;
+    font-size: 1.5rem;
+    display: none;
+    
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar ul.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.navbar ul.menu li {
+    display: inline;
+}
+
+.navbar ul.menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#menuContent {
+    background-image: var(--league-bg);
+    box-shadow: 0 4px 15px rgba(4, 53, 30, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 40vh;
+    top: 0;
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+
+#menuContent a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#menuContent a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+#infoContent {
+    position: fixed;
+    top: 30%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-image: var(--league-bg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+    text-align: left;
+    border-radius: 10px;
+    opacity: 80%;
+}
+#closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+#logo {
+    height: 90px; /* Ajustează dimensiunea după cum este necesar */
+    width: auto;
+    max-width: 100px; /* Lățime maximă pentru logo */
+    height: auto; /* Înălțime automată pentru a menține proporțiile */
+    display: block; /* Afișare ca bloc pentru a centra */
+    
+}
+
+.content {
+    background-image: var(--league-bg);
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 50px; /* Ajustăm paddingul */
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    margin: 100px auto 0 auto; /* Asigură-te că conținutul este sub header */
+    height: auto; 
+}
+
+/* Title styling */
+h1 {
+    font-size: 24px;
+    color:#fff;;
+    margin-bottom: 20px;
+}
+
+/* Input box styling */
+.Guess input {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #5e53c2;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1; /* Asigură-te că este sub header */
+    background-color: #42A0FF;
+    color:#fff;
+}
+.Guess input::placeholder {
+    color: #ffffff; /* Setează culoarea textului placeholder la alb */
+    opacity: 1; /* Asigură-te că opacitatea este setată la 100% */
+}
+
+/* Styling for the result box */
+.result-box {
+    position: relative;
+    width: 95%;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #42A0FF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    color:#fff;
+}
+
+/* List styling within the result box */
+.result-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual list item styling in the result box */
+.result-box li {
+    display: flex; /* Folosim flexbox pentru a alinia conținutul */
+    align-items: center; /* Aliniem vertical conținutul */
+    padding: 8px;
+    cursor: pointer;
+    border-bottom: 1px solid 
+}
+
+/* Stil pentru textul din list item */
+.result-box li span {
+    flex-grow: 1; /* Permite textului să ocupe tot spațiul disponibil */
+    margin-left: 10px;
+}
+
+/* Hover effect pentru list items */
+.result-box li:hover {
+    background-color: #3a92ea;
+}
+/* Styling for feedback and hint */
+#feedback {
+    font-size: 18px;
+    color:#FF0000; 
+    margin: 20px 0;
+}
+
+#hint {
+    font-size: 16px;
+    color: #222831; /* Blue color for hints */
+    margin: 20px 0;
+}
+
+/* Button styling */
+button {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Button active effect */
+button:active {
+    transform: scale(0.98);
+}
+
+/* Button hidden class */
+.hidden {
+    display: none;
+}
+#restartContainer {
+    text-align: center;
+    margin-top: 20px; /* Ajustează această valoare după cum este necesar */
+}
+/* Player info styling */
+#playerInfo {
+    margin: 20px 0;
+}
+
+#playerInfo ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#playerInfo li {
+    background-color: #333;
+    color: #42A0FF;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    flex: 1;
+    min-width: 120px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    text-align: left;
+}
+
+/* Highlighting correct guesses */
+#playerInfo li span {
+    font-weight: bold;
+    color: #76c7c0;
+}
+
+/* Styling for matching attributes */
+.match {
+    color: green;
+    font-weight: bold;
+}
+
+/* Styling for player cards */
+.player-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #42A0FF;
+    max-width: 300px;
+    margin: 0 auto;
+    color: #470e7d;
+    
+}
+
+.player-card img {
+    max-width: 60px;
+    height: auto;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+
+/* Stiluri pentru logo-ul echipei */
+.player-team-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+
+/* Stiluri pentru detaliile jucătorului */
+.player-detail {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5px 0;
+    text-align: left;
+}
+
+/* Stiluri pentru etichete și valori */
+.player-detail label {
+    font-weight: bold;
+    width: 100px; /* Lățime fixă pentru aliniere consistentă */
+}
+
+.player-detail span {
+    flex-grow: 1; /* Se extinde pentru a ocupa spațiul rămas */
+}
+.success-message {
+    color: #28a745; /* Verde pentru mesajele de succes */
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.team-logo-small {
+    max-width: 30px; /* Ajustează dimensiunea logo-ului */
+    height: auto;
+    margin-right: 10px; /* Spațiu între imagine și text */
+    vertical-align: middle; /* Aliniază imaginea cu textul */
+}
+.player-logo-small {
+    max-width: 30px; /* Ajustează dimensiunea logo-ului */
+    height: auto;
+    margin-right: 10px; /* Spațiu între imagine și text */
+    vertical-align: middle; /* Aliniază imaginea cu textul */
+}
+.ui-autocomplete {
+    position: relative;
+    z-index: 9990; /* Asigură-te că lista de sugestii este deasupra header-ului */
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    width: 90%;
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+.ui-menu-item {
+    padding: 10px; /* Padding pentru fiecare element din lista de sugestii */
+    display: flex;
+    align-items: center;
+}
+
+.ui-menu-item img {
+    margin-right: 10px; /* Spațiu între imagine și text */
+}
+.show {
+    display: block; /* Sau flex, dacă aveți un layout flexbox */
+}
+#infoContent.show {
+    display: block; /* Afișează infoContent când este activ */
+}
+@media (max-width: 450px) {
+    body {
+        position: relative;
+    }
+
+    .header {
+        height: 55px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        padding: 2px 6px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        opacity: 90%;
+    }
+    .language-selector {
+        font-size: 0.5rem; /* Ajustează dimensiunea fontului */
+        margin-right: 1px; /* Adaugă un spațiu între elemente */
+        padding: 2px;
+    }
+
+    .language-selector label {
+        font-size: 0.4rem; /* Ajustează dimensiunea fontului */
+    }
+
+    #language {
+        font-size: 0.4rem; /* Ajustează dimensiunea fontului */
+    }
+    #mainHeader {
+        font-size: 0.5rem;
+        max-width: calc(100% - 30px);
+    }
+
+    #logo {
+        height: 40px;
+        width: auto;
+        display: block;
+        margin-left: 2px auto;
+    }
+
+    .navbar {
+        width: 100%;
+        position: fixed;
+        top: 53px;
+        left: 0;
+        z-index: 1000;
+        display: none;
+        overflow: hidden;
+        transition: opacity 0.3s ease, height 0.3s ease;
+        opacity: 0;
+    }
+
+    .navbar.show {
+        display: block;
+        opacity: 1;
+        height: 40vh; 
+    }
+
+    .result-box {
+        margin-left: 1px;
+        width: 100%;
+    }
+
+    #menuContent {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        height: 40vh;
+    }
+
+    #menuContent ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #menuContent li {
+        padding: 1px 3px;
+        border-bottom: 1px solid #eee;
+    }
+
+    #menuContent li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 0.7em;
+        display: block;
+       
+    }
+
+
+    #infoButton, #menuButton {
+        font-size: 0.8rem;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: #fff;
+    }
+
+    .content {
+        transition: margin-top 1s ease;
+        margin-top: 40px;
+        padding: 4px;
+        font-size: 1rem;
+        border-radius: 50px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #infoContent {
+        position: fixed;
+        top: 80px;
+        left: 50%;
+        width: 50%;
+        transform: translateX(-50%);
+        background-color: #ffffff;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        display: none;
+        transition: height 0.3s ease;
+        padding: 4px;
+        font-size: 0.7rem;
+    }
+
+    h1 {
+        font-size: 1.4em;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    #infoContent.show {
+        display: block;
+    }
+}
+
+/* Stiluri pentru telefoane mobile (portret) și tablete (portret) */
+@media (min-width: 450px) and (max-width: 600px) {
+    body {
+        position: relative;
+    }
+
+    .header {
+        height: 50px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        padding: 2px 6px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        opacity: 90%;
+    }
+    .language-selector {
+        font-size: 0.8rem; /* Ajustează dimensiunea fontului */
+        margin-right: 10px; /* Adaugă un spațiu între elemente */
+        padding: 2px;
+    }
+
+    .language-selector label {
+        font-size: 0.7rem; /* Ajustează dimensiunea fontului */
+    }
+
+    #language {
+        font-size: 0.7rem; /* Ajustează dimensiunea fontului */
+    }
+    #mainHeader {
+        font-size: 0.9rem;
+        max-width: calc(100% - 30px);
+    }
+
+    #logo {
+        height: 50px;
+        width: auto;
+        display: block;
+        margin-left: 2px auto;
+    }
+
+    .navbar {
+        width: 100%;
+        position: fixed;
+        top: 53px;
+        left: 0;
+        z-index: 1000;
+        display: none;
+        overflow: hidden;
+        transition: opacity 0.3s ease, height 0.3s ease;
+        opacity: 0;
+    }
+
+    .navbar.show {
+        display: block;
+        opacity: 1;
+        height: 40vh; 
+    }
+
+    .result-box {
+        margin-left: 1px;
+        width: 100%;
+    }
+
+    #menuContent {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        height: 40vh;
+    }
+
+    #menuContent ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #menuContent li {
+        padding: 1px 3px;
+        border-bottom: 1px solid #eee;
+    }
+
+    #menuContent li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 0.7em;
+        display: block;
+    }
+
+    #infoButton, #menuButton {
+        font-size: 1rem;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: #fff;
+    }
+
+    .content {
+        transition: margin-top 1s ease;
+        margin-top: 40px;
+        padding: 4px;
+        font-size: 1rem;
+        border-radius: 50px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #infoContent {
+        position: fixed;
+        top: 130px;
+        left: 50%;
+        width: 50%;
+        transform: translateX(-50%);
+        background-color: #ffffff;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        display: none;
+        transition: height 0.3s ease;
+        padding: 4px;
+        font-size: 0.7rem;
+    }
+
+    h1 {
+        font-size: 1.4em;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    #infoContent.show {
+        display: block;
+    }
+}
+
+/* Stiluri pentru tablete (peisaj) și laptopuri mici */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .header {
+        height: 60px;
+        padding: 4px 10px;
+    }
+
+    .language-selector {
+        font-size: 0.8rem; /* Ajustează dimensiunea fontului */
+        margin-right: 10px; /* Adaugă un spațiu între elemente */
+        padding: 2px;
+    }
+
+    .language-selector label {
+        font-size: 0.7rem; /* Ajustează dimensiunea fontului */
+    }
+
+    #language {
+        font-size: 0.7rem; /* Ajustează dimensiunea fontului */
+    }
+    #mainHeader {
+        font-size: 1.2rem;
+        max-width: calc(100% - 30px);
+    }
+    #logo {
+        height: 60px;
+        margin-left: 4px auto;
+    }
+
+    .navbar {
+        top: 43px;
+        transition: 0.3s ease;
+        z-index: 1000;
+    }
+
+    #menuContent {
+        height: 40vh;
+    }
+
+    #menuContent li a {
+        font-size: 0.9em;
+    }
+
+    .content {
+        margin-top: 60px;
+        padding: 8px;
+        font-size: 1rem;
+        transition: margin-top 1s ease;
+    }
+
+    #infoContent {
+        width: 60%;
+        font-size: 0.9rem;
+        top: 250px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+}
+
+/* Stiluri pentru laptopuri mari și desktopuri */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .header {
+        height: 70px;
+        padding: 6px 20px;
+    }
+
+    #mainHeader {
+        font-size: 1.8rem;
+        max-width: calc(100% - 50px);
+    }
+
+    #logo {
+        height: 70px;
+        margin-left: 6px auto;
+    }
+
+    .navbar {
+        top: 58px;
+        z-index: 1000;
+    }
+
+    #menuContent {
+        height: 40vh;
+    }
+
+    #menuContent li a {
+        font-size: 1em;
+    }
+
+    .content {
+        margin-top: 70px;
+        padding: 12px;
+        font-size: 1rem;
+        transition: margin-top 1s ease;
+    }
+
+    #infoContent {
+        width: 30%;
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+}
+
+/* Stiluri pentru desktopuri mari */
+@media (min-width: 1441px) {
+    .header {
+        height: 80px;
+        padding: 8px 30px;
+        width: 99%;
+    }
+
+    #mainHeader {
+        font-size: 2rem;
+        max-width: calc(100% - 60px);
+    }
+
+    #logo {
+        height: 80px;
+        margin-left: 8px auto;
+    }
+
+    .navbar {
+        top: 70px;
+        position: fixed;
+        z-index: 1000;
+        
+    }
+
+    #menuContent {
+        height: 40vh;
+    }
+
+    #menuContent li a {
+        font-size: 1.1em;
+    }
+
+    .content {
+        margin-top: 80px;
+        padding: 16px;
+        font-size: 1rem;
+        transition: margin-top 1s ease;
+    }
+
+    #infoContent {
+        width: 30%;
+        font-size: 1.1rem;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
+
+/* --- unified engine additions ------------------------------------------- */
+.game-meta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.difficulty-chip {
+    padding: 4px 14px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: none;
+}
+.difficulty-easy { background-color: #28a745; }
+.difficulty-medium { background-color: #f0a500; }
+.difficulty-hard { background-color: #dc3545; }
+
+/* --- league / season / difficulty picker -------------------------------- */
+.picker-section {
+    margin: 25px 0;
+}
+.picker-section h2 {
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.league-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.league-card {
+    background-color: #42A0FF;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    width: 160px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.league-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #3a92ea;
+}
+.league-card img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.option-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.option-button {
+    background-color: #42A0FF;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 10px 18px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    max-width: 220px;
+}
+.option-button small {
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 4px;
+    opacity: 0.9;
+}
+.option-button.selected {
+    border-color: #fff;
+    background-color: #0056b3;
+    font-weight: bold;
+}
+
+@media (max-width: 450px) {
+    .league-card { width: 120px; font-size: 14px; }
+    .league-card img { width: 64px; height: 64px; }
+}

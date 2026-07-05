@@ -1,29 +1,27 @@
 {
-  "seasons": [
-    "2024-25"
-  ],
+  "seasons": ["2024-25"],
   "defaultSeason": "2024-25",
   "leagues": [
     {
       "id": "premier-league",
       "name": "Premier League",
-      "seasons": [
-        "2024-25"
-      ]
+      "logo": "images/leagues/PremierLeague/Logo/Premier League.png.png",
+      "background": "images/leagues/PremierLeague/Logo/1.jpg",
+      "seasons": ["2024-25"]
     },
     {
       "id": "la-liga",
       "name": "La Liga",
-      "seasons": [
-        "2024-25"
-      ]
+      "logo": "images/leagues/LaLiga/Logo/LaLiga.jpg",
+      "background": "images/leagues/LaLiga/Logo/1.jpg",
+      "seasons": ["2024-25"]
     },
     {
       "id": "bundesliga",
       "name": "Bundesliga",
-      "seasons": [
-        "2024-25"
-      ]
+      "logo": "images/leagues/Bundesliga/Logo/bundesliga.jpg",
+      "background": "images/leagues/Bundesliga/Logo/1.jpg",
+      "seasons": ["2024-25"]
     }
   ]
 }
