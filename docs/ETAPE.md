@@ -16,7 +16,7 @@ Bifăm aici pe parcurs.
 - [x] deciziile: Supabase, mod mixt, poze API-Football (`DECIZII.md`)
 - [x] sursele testate: football-data.org dă loturile pe 3 sezoane, API-Football dă pozele (`SURSE-DATE.md`)
 - [ ] **Bogdan:** cont Supabase (cu GitHub-ul `BogdanDumitrascu04`), proiect nou, regiunea Frankfurt (eu-central-1)
-- [ ] **Bogdan:** primul commit cu documentele (`CLAUDE.md`, `docs/`)
+- [x] **Bogdan:** primul commit cu documentele (`CLAUDE.md`, `docs/`) — „pasul 0”, pushed 22 oct. GitHub Desktop e pe contul `BogdanDumitrascu4`, care e colaborator pe repo; emailul local al repo-ului e gmail-ul (legat de `BogdanDumitrascu04`)
 
 **Gata când:** totul e bifat.
 
@@ -27,7 +27,11 @@ Bifăm aici pe parcurs.
 - [ ] pasul 1: descărcarea loturilor de la football-data.org (15 cereri) — `scripts/download_squads.py`
   - [x] cerința (Bogdan, cu variante): `data/raw/PL_2024-25.json`; sezoanele terminate o dată, cel curent la fiecare rulare; la 429 așteaptă și reîncearcă o dată; la eroare trece mai departe; un rând pe fișier
   - [x] codul + 16 teste fără internet (Claude, 21 oct)
-  - [ ] rularea (Bogdan) → review Copilot → commit
+  - [x] commit + push (în „pasul 0”, 22 oct)
+  - [x] rularea pe date reale (Bogdan, 22 oct): 15 fișiere, 9.081 de jucători în loturi, 0 erori; a doua rulare: „existent” + „actualizat”, fără pauză
+  - [x] review cu Gemma 4 E4B, local în Bionic (22 oct, 14 min): 5 observații, verificate una câte una — niciuna valabilă (4 descriu cod care există deja, 1 e o alegere de design)
+  - [x] decizia lui Bogdan (22 oct): nu reparăm nimic
+  - [ ] commit (Bogdan)
 - [ ] schema: `leagues`, `seasons`, `clubs`, `players`, `squad_entries`
 - [ ] încărcarea în SQLite + verificări (câți jucători pe ligă/sezon, duplicate)
 - [ ] pozele + numerele de la API-Football, potrivite cu jucătorii (96 de cereri, pe o zi)

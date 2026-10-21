@@ -114,7 +114,7 @@ def get_squads(fetch: Fetch, sleep: Sleep, code: str, start_year: int) -> bytes:
     response = fetch(url, params)
     if response.status_code == 429:
         seconds = wait_seconds(response)
-        print(f"  limita sursei (10 cereri pe minut): aștept {seconds:.0f} s...", flush=True)
+        print(f"  limita sursei (10 cereri pe minut): aștept {seconds:.0f} s, apoi continui singur...", flush=True)
         sleep(seconds)
         response = fetch(url, params)  # dacă și acum e 429, raise_for_status îl face eroare
     response.raise_for_status()
