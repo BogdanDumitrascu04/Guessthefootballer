@@ -1,0 +1,7 @@
+[tool.pytest.ini_options]
+# permite testelor să importe din scripts/
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
