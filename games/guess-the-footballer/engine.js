@@ -1,13 +1,10 @@
-// Guess the Footballer — game engine.
-// One engine for every league/season: reads ?league=&season=&difficulty= from the
-// URL and loads the matching JSON from data/seasons/<season>/<league>.json.
+// One engine for every league and season: the URL decides which JSON file to load.
 const ROOT = '../../';
 const MAX_ATTEMPTS = 10;
 const MAX_SUGGESTIONS = 30;
 const MAX_HINTS = 2;
-// difficulty → tiers the hidden player may come from (1 star, 2 regular, 3 deep squad)
+// Tiers the hidden player may come from: 1 star, 2 regular, 3 deep squad.
 const TARGET_TIERS = { easy: [1], medium: [1, 2], hard: [2, 3] };
-// what each guess is compared on; numeric attributes also get an arrow
 const ATTRIBUTES = [
     { key: 'team' },
     { key: 'position' },
@@ -15,7 +12,7 @@ const ATTRIBUTES = [
     { key: 'number', numeric: true },
     { key: 'nationality' },
 ];
-// letters that Unicode normalization does not reduce to a plain one
+// Letters that Unicode normalization does not reduce to a plain one.
 const SPECIAL_LETTERS = { ø: 'o', æ: 'ae', œ: 'oe', ß: 'ss', ł: 'l', đ: 'd', ð: 'd', þ: 'th', ı: 'i' };
 
 const params = new URLSearchParams(location.search);
@@ -27,8 +24,8 @@ let league, players, targetPool, targetPlayer;
 let guesses = [];
 let hintStage = 0;
 let roundOver = false;
-let message = null; // { kind: 'success' | 'error', key, params }, re-rendered when the language changes
-let highlighted = -1; // suggestion selected with the arrow keys
+let message = null; // kept as a key, so it can be redrawn when the language changes
+let highlighted = -1;
 
 const inputBox = document.getElementById('guessInput');
 const resultsBox = document.querySelector('.result-box');
@@ -97,11 +94,11 @@ function startRound() {
 }
 
 function focusInput() {
-    // on phones this would open the keyboard over the result of the guess
+    // On phones this would open the keyboard over the result of the guess.
     if (matchMedia('(pointer: fine)').matches) inputBox.focus();
 }
 
-// "Ødegaard" and "odegaard", "Alexander-Arnold" and "alexander arnold" must match
+// "Ødegaard" and "odegaard", "Alexander-Arnold" and "alexander arnold" must match.
 function normalize(text) {
     return text
         .toLowerCase()
@@ -118,7 +115,7 @@ function findPlayerByName(name) {
     return players.find(p => p.searchName === wanted);
 }
 
-// the JSON repeats the club badge as "photo" for players without a portrait
+// The JSON repeats the club badge as "photo" for players without a portrait.
 function hasPortrait(player) {
     return player.photo !== league.teams[player.team];
 }
@@ -146,7 +143,7 @@ function createTeamLogo(team, className) {
     return img;
 }
 
-// --- autocomplete -----------------------------------------------------------
+// Autocomplete
 function matchRank(player, input) {
     if (player.searchName.startsWith(input)) return 0;
     return ` ${player.searchName}`.includes(` ${input}`) ? 1 : 2; // a surname beats the middle of a word
@@ -214,7 +211,7 @@ document.addEventListener('click', event => {
     if (!event.target.closest('.Guess')) closeSuggestions();
 });
 
-// --- game logic --------------------------------------------------------------
+// Game logic
 function checkGuess() {
     const guessedPlayer = findPlayerByName(inputBox.value);
     closeSuggestions();
@@ -256,7 +253,7 @@ function endRound() {
     restartContainer.appendChild(restartButton);
 }
 
-// --- rendering (everything here can be redrawn when the language changes) ----
+// Rendering
 function render() {
     document.getElementById('difficultyChip').textContent = t(difficulty);
     attemptCounter.textContent = `${t('guesses')}: ${guesses.length}/${MAX_ATTEMPTS}`;
@@ -355,7 +352,7 @@ function createTile(player, { key, numeric }) {
     return tile;
 }
 
-// --- hints (club, then age) --------------------------------------------------
+// Hints: club, then age
 hintButton.addEventListener('click', () => {
     hintStage++;
     if (hintStage >= MAX_HINTS) hintButton.style.display = 'none';

@@ -1,4 +1,4 @@
-// Shared header behaviour for the game pages: burger menu and "how to play" panel.
+// Header behaviour shared by the picker and the game page.
 document.addEventListener('DOMContentLoaded', () => {
     const menuButton = document.getElementById('menuButton');
     const navbar = document.getElementById('navbar');

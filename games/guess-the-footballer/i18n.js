@@ -1,5 +1,4 @@
-// i18n for Guess the Footballer — EN / ES / FR / RO.
-// t(key, params) formats {placeholders}; language persists in localStorage.
+// EN / ES / FR / RO dictionaries. t(key, params) fills in the {placeholders}.
 const translations = {
     en: {
         guessTheFootballer: 'Guess the footballer',

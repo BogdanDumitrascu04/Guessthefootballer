@@ -32,7 +32,7 @@ body {
     display: none !important;
 }
 
-/* --- header -------------------------------------------------------------- */
+/* Header */
 .header {
     display: flex;
     align-items: center;
@@ -53,7 +53,7 @@ body {
     font-weight: 700;
 }
 
-/* --- hub ----------------------------------------------------------------- */
+/* Hub */
 .hub-content {
     flex: 1;
     width: 100%;
@@ -159,7 +159,7 @@ a.game-card:hover .play-button {
     text-decoration: underline;
 }
 
-/* --- cookie banner ------------------------------------------------------- */
+/* Cookie banner */
 .cookie-consent {
     position: fixed;
     right: 0;

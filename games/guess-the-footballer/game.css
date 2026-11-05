@@ -1,4 +1,4 @@
-/* Guess the Footballer: picker and game pages. */
+/* Picker and game pages */
 :root {
     color-scheme: dark;
     --league-bg: url('../../images/leagues/PremierLeague/Logo/1.jpg');
@@ -48,7 +48,7 @@ button {
     cursor: pointer;
 }
 
-/* --- header -------------------------------------------------------------- */
+/* Header */
 .header {
     position: sticky;
     top: 0;
@@ -118,7 +118,7 @@ button {
     background: var(--surface-raised);
 }
 
-/* Burger menu and "how to play" panels, both anchored under the header. */
+/* Burger menu and "how to play" panels */
 .navbar,
 #infoContent {
     position: absolute;
@@ -172,7 +172,7 @@ button {
     right: 6px;
 }
 
-/* --- page layout --------------------------------------------------------- */
+/* Page layout */
 .content {
     width: 100%;
     max-width: 880px;
@@ -180,7 +180,7 @@ button {
     padding: 20px 16px 48px;
 }
 
-/* --- game: head and input ------------------------------------------------ */
+/* Game: head and input */
 .game-head {
     display: flex;
     flex-wrap: wrap;
@@ -351,7 +351,7 @@ button {
     color: var(--muted);
 }
 
-/* --- game: messages, hints, result --------------------------------------- */
+/* Game: messages, hints, result */
 #feedback {
     margin-top: 14px;
     font-size: 1rem;
@@ -445,7 +445,7 @@ button {
     display: none;
 }
 
-/* --- game: one row per guess, newest first ------------------------------- */
+/* Game: one row per guess, newest first */
 #playerInfo {
     display: flex;
     flex-direction: column;
@@ -532,7 +532,7 @@ button {
     color: #dcfce7;
 }
 
-/* --- picker -------------------------------------------------------------- */
+/* Picker */
 .picker-section {
     margin-bottom: 26px;
 }
@@ -609,7 +609,7 @@ button {
     border-radius: 10px;
 }
 
-/* --- phones -------------------------------------------------------------- */
+/* Phones */
 @media (max-width: 640px) {
     /* Team and nationality have long names, so they share the first row. */
     .attempt {

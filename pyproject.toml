@@ -1,5 +1,5 @@
 [tool.pytest.ini_options]
-# permite testelor să importe din scripts/
+# lets the tests import from scripts/
 pythonpath = ["."]
 testpaths = ["tests"]
 

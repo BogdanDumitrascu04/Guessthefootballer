@@ -49,6 +49,7 @@
 | Temă | Închisă, aceeași pe hub și în joc; fundalul ligii doar în capul jocului | Pe vechile fundaluri colorate, textul roșu, verde și mov nu se citea, iar jumătate de pagină rămânea albă. |
 | Grilă | Câte un rând pe încercare, cea mai nouă sus; potrivirile au verde **și** ✓ | E un joc tip Wordle, deci toate încercările trebuie să rămână vizibile; ✓ ajută și cine nu distinge culorile. |
 | Schema din 30 oct | Rămâne locală, fără commit, până când Bogdan o explică | Regula de aur nu se schimbă din cauza termenului. |
+| Comentarii în cod | În engleză, strict esențiale: de ce, nu ce; fără bannere (ca în FlowLogix). Documentele din `docs/` și mesajele afișate de scripturi rămân în română. | Cererea lui Bogdan: același standard în toate proiectele din CV. |
 
 ## De decis
 - ~~**Tier-ul**~~ → decis pe 29 oct (mai sus).

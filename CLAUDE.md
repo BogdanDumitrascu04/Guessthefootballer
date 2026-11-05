@@ -40,6 +40,7 @@ Pentru jocul 1:
 - Jucătorii se leagă **după ID-ul sursei**, niciodată doar după nume (numele diferă între surse: „H. Davies" vs „Harvey Davies").
 - Date doar din surse care permit folosirea lor. **Nu facem noi scraping** (Transfermarkt, Sofascore etc.). Singura excepție, decisă pe 29 oct: setul public `transfermarkt-datasets` (Kaggle `davidcariboo/player-scores`, CC0), pentru valori de piață, transferuri și minute, cu sursa citată în README. Pozele nu se iau de acolo.
 - **Tier-ul îl alege Bogdan** într-un Excel (o coloană cu listă: vedetă / titular / lot), precompletat cu o sugestie; importul validează fiecare rând și păstrează alegerile la actualizări.
+- **Comentariile din cod** sunt în engleză și strict esențiale, ca în FlowLogix: explică de ce, nu ce; fără bannere și fără comentarii care repetă codul.
 - Cheile API stau doar în `.env` (în `.gitignore`), niciodată în cod sau în commit-uri. În browser ajunge doar cheia publică (`anon`) de la Supabase; securitatea vine din politicile RLS.
 - Limita API-Football (100 de cereri pe zi) e **comună cu alt proiect local al lui Bogdan** care folosește aceeași cheie.
 

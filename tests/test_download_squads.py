@@ -1,4 +1,4 @@
-"""Teste fără internet pentru scripts/download_squads.py. Internetul e înlocuit cu funcții false."""
+"""Tests for scripts/download_squads.py. No internet: fake functions stand in for it."""
 
 import json
 from datetime import date
@@ -32,7 +32,7 @@ def response(status: int, content: bytes = b"", headers: dict | None = None) -> 
 
 
 def fake_fetch(*responses: httpx.Response):
-    """Întoarce răspunsurile pe rând și ține minte fiecare cerere."""
+    """Returns the responses in order and records every request."""
     queue, calls = list(responses), []
 
     def fetch(url: str, params: dict) -> httpx.Response:
@@ -47,9 +47,9 @@ def no_sleep(seconds: float) -> None:
 
 
 def test_current_season_start():
-    assert current_season_start(date(2026, 10, 21)) == 2026  # toamna: 2026/27
-    assert current_season_start(date(2027, 3, 1)) == 2026  # primăvara: tot 2026/27
-    assert current_season_start(date(2027, 7, 1)) == 2027  # din iulie: sezon nou
+    assert current_season_start(date(2026, 10, 21)) == 2026  # autumn: 2026/27
+    assert current_season_start(date(2027, 3, 1)) == 2026  # spring: still 2026/27
+    assert current_season_start(date(2027, 7, 1)) == 2027  # from July: new season
 
 
 def test_last_three_seasons():
@@ -96,7 +96,7 @@ def test_past_season_is_downloaded_only_once(tmp_path):
     second = process(fetch, no_sleep, tmp_path, "PL", 2024, current=2026)
     assert (first.status, first.teams, first.players) == ("descărcat", 2, 5)
     assert (second.status, second.players) == ("existent", 5)
-    assert calls == [("/competitions/PL/teams", {"season": 2024})]  # a doua oară n-a mai cerut nimic
+    assert calls == [("/competitions/PL/teams", {"season": 2024})]  # the second run requested nothing
 
 
 def test_current_season_is_downloaded_every_time(tmp_path):
@@ -133,7 +133,7 @@ def test_429_twice_is_an_error_and_keeps_the_old_file(tmp_path):
     result = process(fetch, lambda s: None, tmp_path, "PL", 2026, current=2026)
     assert result.status == "EROARE: prea multe cereri (429), chiar și după așteptare (am păstrat fișierul vechi)"
     assert path.read_bytes() == squads_json(2026)
-    assert len(calls) == 2  # o singură reîncercare, nu la nesfârșit
+    assert len(calls) == 2  # one retry, not forever
 
 
 def test_403_is_reported_without_retry(tmp_path):
@@ -148,7 +148,7 @@ def test_403_is_reported_without_retry(tmp_path):
 def test_wrong_content_does_not_overwrite_good_file(tmp_path):
     path = file_path(tmp_path, "PL", 2026)
     path.write_bytes(squads_json(2026))
-    fetch, _ = fake_fetch(response(200, squads_json(2025)))  # sursa a trimis alt sezon
+    fetch, _ = fake_fetch(response(200, squads_json(2025)))  # the source sent another season
     result = process(fetch, no_sleep, tmp_path, "PL", 2026, current=2026)
     assert "alt sezon (2025)" in result.status
     assert path.read_bytes() == squads_json(2026)
@@ -156,6 +156,6 @@ def test_wrong_content_does_not_overwrite_good_file(tmp_path):
 
 def test_wait_seconds():
     assert wait_seconds(response(429, headers={"X-RequestCounter-Reset": "30"})) == 30
-    assert wait_seconds(response(429)) == MAX_WAIT  # fără indicație: un minut întreg
+    assert wait_seconds(response(429)) == MAX_WAIT  # no header: a full minute
     assert wait_seconds(response(429, headers={"X-RequestCounter-Reset": "3600"})) == MAX_WAIT
     assert wait_seconds(response(429, headers={"X-RequestCounter-Reset": "abc"})) == MAX_WAIT

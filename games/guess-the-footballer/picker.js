@@ -1,5 +1,4 @@
-// League / season / difficulty picker. Clicking a league card starts the game
-// with the currently selected season and difficulty.
+// Clicking a league card starts the game with the selected season and difficulty.
 const ROOT = '../../';
 const DIFFICULTIES = ['easy', 'medium', 'hard'];
 
@@ -52,7 +51,6 @@ async function initPicker() {
         leagueGrid.appendChild(card);
     }
 
-    // populate the burger menu with the same leagues
     const menu = document.getElementById('menuContent');
     for (const league of manifest.leagues) {
         const a = document.createElement('a');

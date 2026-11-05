@@ -1,16 +1,9 @@
-"""Etapa 1, pasul 1: descarcă loturile de pe football-data.org în data/raw/.
+"""Downloads the football-data.org squads into data/raw/, one JSON per league and season.
 
-Ce face:
-- 5 ligi × ultimele 3 sezoane, câte un JSON pe ligă și sezon, exact cum vine de la sursă;
-- numele fișierelor: PL_2024-25.json;
-- sezoanele terminate se descarcă doar dacă lipsesc (nu se mai schimbă);
-- sezonul curent se descarcă la fiecare rulare (loturile se schimbă la transferuri);
-- sursa permite 10 cereri pe minut: nu facem pauze, dar la refuz (429) așteptăm cât cere sursa
-  și reîncercăm o singură dată;
-- răspunsul e verificat înainte de salvare și merge întâi într-un fișier .part, redenumit abia când e complet;
-- la eroare trece la următorul fișier; la final afișează un rezumat, un rând pe fișier.
+Finished seasons are downloaded only if missing; the current one on every run,
+because squads change with transfers.
 
-Rulare (din folderul proiectului):
+Run from the project folder:
     .venv\\Scripts\\python.exe scripts\\download_squads.py
 """
 
@@ -30,14 +23,13 @@ BASE_URL = "https://api.football-data.org/v4"
 PROJECT_DIR = Path(__file__).resolve().parent.parent
 RAW_DIR = PROJECT_DIR / "data" / "raw"
 
-SEASONS = 3  # ultimele 3 sezoane, inclusiv cel curent
+SEASONS = 3  # including the current one
 
-# Codul ligii la football-data.org → numele afișat
 LEAGUES = {"PL": "Premier League", "PD": "La Liga", "BL1": "Bundesliga", "SA": "Serie A", "FL1": "Ligue 1"}
 
-MAX_WAIT = 65  # secunde; sursa își resetează contorul la fiecare minut
+MAX_WAIT = 65  # seconds; the source resets its counter every minute
 
-Fetch = Callable[[str, dict], httpx.Response]  # adresa relativă + parametrii → răspunsul sursei
+Fetch = Callable[[str, dict], httpx.Response]
 Sleep = Callable[[float], None]
 
 
@@ -50,11 +42,11 @@ class Result:
     status: str
 
 
-# --- Funcții fără internet (le verifică testele din tests/) ---
+# Functions without internet access, covered by tests/
 
 
 def current_season_start(today: date) -> int:
-    """Sezonul începe vara: din iulie 2026 suntem în 2026/27, până în iunie 2026 în 2025/26."""
+    """The season starts in summer: from July 2026 it is 2026/27, until June 2026 it is 2025/26."""
     return today.year if today.month >= 7 else today.year - 1
 
 
@@ -64,7 +56,7 @@ def seasons_to_download(current: int) -> list[int]:
 
 
 def season_label(start_year: int) -> str:
-    """2024 -> '2024-25' (în numele fișierului; '/' nu e voie pe Windows)."""
+    """2024 -> '2024-25' ('/' is not allowed in Windows file names)."""
     return f"{start_year}-{(start_year + 1) % 100:02d}"
 
 
@@ -73,7 +65,7 @@ def file_path(raw_dir: Path, code: str, start_year: int) -> Path:
 
 
 def count_squads(content: bytes, start_year: int) -> tuple[int, int]:
-    """(echipe, jucători). Aruncă ValueError dacă răspunsul nu arată ca loturile sezonului cerut."""
+    """Returns (teams, players). Raises ValueError if the content is not the requested season's squads."""
     try:
         data = json.loads(content)
     except (json.JSONDecodeError, UnicodeDecodeError) as error:
@@ -81,7 +73,7 @@ def count_squads(content: bytes, start_year: int) -> tuple[int, int]:
     teams = data.get("teams") if isinstance(data, dict) else None
     if not teams:
         raise ValueError("lipsesc echipele")
-    # pentru un sezon pe care nu-l are, o sursă poate trimite în liniște alt sezon
+    # for a season it doesn't have, a source can silently send another one
     sent = str((data.get("season") or {}).get("startDate", ""))[:4]
     if sent != str(start_year):
         raise ValueError(f"sursa a trimis alt sezon ({sent or 'necunoscut'})")
@@ -92,7 +84,7 @@ def count_squads(content: bytes, start_year: int) -> tuple[int, int]:
 
 
 def save_complete(path: Path, content: bytes) -> None:
-    """Scrie în .part, apoi redenumește. Un fișier final există doar dacă e complet."""
+    """Writes to .part, then renames, so a final file exists only if it is complete."""
     path.parent.mkdir(parents=True, exist_ok=True)
     part = path.with_name(path.name + ".part")
     part.write_bytes(content)
@@ -100,7 +92,7 @@ def save_complete(path: Path, content: bytes) -> None:
 
 
 def wait_seconds(response: httpx.Response) -> float:
-    """Cât cere sursa să așteptăm după un refuz (429). Fără indicație: un minut întreg."""
+    """How long the source asks us to wait after a 429. Without a header: a full minute."""
     try:
         seconds = float(response.headers.get("X-RequestCounter-Reset", MAX_WAIT))
     except ValueError:
@@ -109,20 +101,20 @@ def wait_seconds(response: httpx.Response) -> float:
 
 
 def get_squads(fetch: Fetch, sleep: Sleep, code: str, start_year: int) -> bytes:
-    """O cerere pentru o ligă și un sezon. La 429 așteaptă și reîncearcă o singură dată."""
+    """One request for a league and season. On 429 it waits and retries once."""
     url, params = f"/competitions/{code}/teams", {"season": start_year}
     response = fetch(url, params)
     if response.status_code == 429:
         seconds = wait_seconds(response)
         print(f"  limita sursei (10 cereri pe minut): aștept {seconds:.0f} s, apoi continui singur...", flush=True)
         sleep(seconds)
-        response = fetch(url, params)  # dacă și acum e 429, raise_for_status îl face eroare
+        response = fetch(url, params)  # a second 429 becomes an error in raise_for_status
     response.raise_for_status()
     return response.content
 
 
 def process(fetch: Fetch, sleep: Sleep, raw_dir: Path, code: str, start_year: int, current: int) -> Result:
-    """Un fișier: îl sare, îl descarcă sau îl actualizează. Nu aruncă erori, le pune în Result."""
+    """One file: skips, downloads or updates it. Errors go into the Result instead of being raised."""
     league, label = LEAGUES[code], season_label(start_year)
     path = file_path(raw_dir, code, start_year)
     is_current = start_year == current
@@ -132,12 +124,12 @@ def process(fetch: Fetch, sleep: Sleep, raw_dir: Path, code: str, start_year: in
         try:
             return Result(league, label, *count_squads(path.read_bytes(), start_year), "existent")
         except ValueError:
-            local_broken = True  # e doar o copie a datelor de la sursă: îl luăm din nou
+            local_broken = True  # it is only a copy of the source's data, so download it again
 
     existed = path.exists()
     try:
         content = get_squads(fetch, sleep, code, start_year)
-        teams, players = count_squads(content, start_year)  # verificăm ÎNAINTE să salvăm
+        teams, players = count_squads(content, start_year)  # validate before overwriting the old file
         save_complete(path, content)
     except (httpx.HTTPError, ValueError, OSError) as error:
         kept = " (am păstrat fișierul vechi)" if existed else ""
@@ -172,7 +164,7 @@ def format_row(r: Result) -> str:
     return f"{r.league:<15} {r.season}  {counts}  {r.status}"
 
 
-# --- Partea cu internetul ---
+# The part that uses the internet
 
 
 def download_all(key: str, show: bool = True) -> list[Result]:
@@ -202,7 +194,7 @@ def main() -> None:
     total = sum(r.players or 0 for r in results)
     print(f"\n{len(results)} fișiere, {total} jucători în loturi, {errors} erori. Folder: {RAW_DIR}")
     if errors:
-        sys.exit(1)  # cine pornește scriptul automat trebuie să afle că n-a mers tot
+        sys.exit(1)  # so an automated run can tell that not everything worked
 
 
 if __name__ == "__main__":

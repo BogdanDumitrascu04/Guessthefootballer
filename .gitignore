@@ -1,16 +1,15 @@
 node_modules/
 
-# mediul Python (se recreează din requirements.txt)
 .venv/
 __pycache__/
 *.pyc
 .pytest_cache/
 .ruff_cache/
 
-# chei API — NICIODATĂ în git
+# API keys: never in git
 .env
 
-# date descărcate și baza locală (se regenerează oricând din surse)
+# Downloaded data, can be regenerated from the sources
 data/raw/
 *.db
 *.sqlite
