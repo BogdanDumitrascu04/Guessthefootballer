@@ -38,6 +38,60 @@ Cerere: `GET /players/squads?team=<id>` (fără parametru de sezon → merge pe 
 - 96 de echipe = 96 de cereri; limita e 100 pe zi, **comună cu alt proiect care folosește aceeași cheie**.
 - ⚠️ Jucătorii trebuie potriviți cu cei de la football-data.org (ID-uri diferite, nume prescurtate): echipă + nume de familie + vârstă.
 
+## Verificat (29 oct 2026) — transfermarkt-datasets (Kaggle `davidcariboo/player-scores`)
+
+Proiect public pe GitHub (`dcaribou/transfermarkt-datasets`), construit din datele Transfermarkt. **Licența CC0** e afișată pe repo; pagina nu spune explicit că acoperă și datele. Nu menționează termenii Transfermarkt și nu cere o formă anume de citare.
+
+- 12 tabele: `competitions`, `clubs`, `players`, `games`, `appearances`, `player_valuations`, `club_games`, `game_events`, `game_lineups`, `transfers`, `countries`, `national_teams`.
+- ⚠️ **Actualizările sunt oprite:** pagina scrie că datele sunt valabile până pe **6 iulie 2026**, fără dată de reluare. Lipsesc transferurile din vara lui 2026; valorile pentru 2026-27 sunt cele din iulie.
+- Descărcare fără cont, fișier cu fișier, de pe `pub-e682421888d945d684bcae8890b0ec20.r2.dev/data/` (fișiere din 5 sept 2026). Mărimi (`.csv.gz`, comprimat):
+
+| Fișier | MB | La ce ne trebuie |
+|---|---|---|
+| `players` | 4,4 | legătura cu football-data.org (`player_id` Transfermarkt) |
+| `player_valuations` | 7,2 | valorile de piață în timp → jocul 2 (peste 650.000 de rânduri) |
+| `transfers` | 5,8 | cariera → jocul 3 (peste 175.000 de rânduri) |
+| `clubs`, `competitions` | 0,05 | numele cluburilor și ligilor |
+| `appearances` + `games` | 45 + 5 | minutele pe sezon → sugestia „titular” |
+| `game_lineups` | 126 | probabil numărul pe tricou la fiecare meci (de verificat) |
+
+Tot setul: zip de 241 MB sau un fișier DuckDB de 211 MB.
+
+- ⚠️ ID-urile Transfermarkt diferă de cele de la football-data.org → potrivire o singură dată după **nume + data nașterii**, apoi `tm_id` se salvează în `players`.
+
+### Inventar (29 oct 2026, primele 5 tabele descărcate în `data/raw/transfermarkt/`, UTF-8)
+
+| Tabel | Rânduri | Coloane folositoare |
+|---|---|---|
+| `players` | 50.149 | `player_id`, `name`, `date_of_birth` (99,9%), `position` / `sub_position`, `country_of_citizenship`, `current_club_id`, `market_value_in_eur`, `highest_market_value_in_eur`, `international_caps`; are și `image_url` (Transfermarkt → **nu îl folosim**) |
+| `player_valuations` | 656.301 (41.528 de jucători) | `player_id`, `date`, `market_value_in_eur`, `current_club_id` |
+| `transfers` | 175.165 (23.379 de jucători) | `player_id`, `transfer_date`, `transfer_season` („25/26”), `from_club_id/name`, `to_club_id/name`, `transfer_fee` (65%), `market_value_in_eur` (61%) |
+| `clubs` | 796 | `club_id`, `name`, `domestic_competition_id`; `total_market_value` e gol |
+| `competitions` | 65 | codurile ligilor: `GB1`, `ES1`, `L1`, `IT1`, `FR1` |
+
+**Potrivirea cu loturile football-data.org (5.054 de jucători):** 4.633 găsiți (**91,7%**): 4.158 după numele complet + data nașterii, 475 după un cuvânt din nume + data nașterii. Restul: 405 negăsiți, 3 ambigui, 13 fără dată de naștere. Printre negăsiți sunt și greșeli de dată la football-data.org (Simon Walde: „2026-06-30”), pe lângă nume scrise diferit (Yussuf Poulsen) → a doua regulă: nume + club.
+
+**Valori de piață** (de la 2000 până pe **12 iunie 2026**; actualizări mari în martie, mai, iunie):
+
+| Sezon | În lot | Potriviți | Cu o valoare în timpul sezonului |
+|---|---|---|---|
+| 2024-25 | 3.196 | 3.092 | 2.610 (82%) |
+| 2025-26 | 3.233 | 3.116 | 2.574 (80%) |
+| 2026-27 | 2.650 | 2.369 | 0 → folosim ultima valoare (iunie 2026): 2.274 |
+
+**Transferuri:** din 4.633 de jucători potriviți, 3.939 au cel puțin un transfer, iar 3.747 au trei sau mai multe. Câteva capcane pentru cariere:
+- Sunt incluse mutările la juniori (Mbappé: „Monaco Youth → Monaco U19 → Monaco”) → de filtrat echipele `Youth` / `U19` / `II`.
+- Împrumutul apare ca două rânduri: PSG 31.08.2017, apoi „PSG → Monaco” pe 30.06.2018 (finalul împrumutului) și „Monaco → PSG” pe 01.07.2018 (180 mil. €) → perioadele consecutive la același club se unesc.
+- 475 de transferuri au data în viitor (ex. întoarceri din armată în Coreea, 2028) → le ignorăm pe cele de după data importului.
+- Unele transferuri din vara lui 2026 există (1.242 cu data între 1 iulie și 29 oct: semnate înainte de 6 iulie).
+- Exemplu verificat: Mbappé → Monaco 2016 → PSG 2017 (împrumut, apoi 180 mil. €) → Real Madrid 2024.
+
+## Verificat (29 oct 2026) — Wikidata (rezervă pentru cariere)
+
+Gratuit, CC0, fără cheie. Proprietatea `P54` („member of sports team”) are anii de început și de sfârșit.
+- Mbappé (`Q21621995`): Monaco 2015–2018, PSG 2017–2018 (împrumut) și 2018–2024, Real Madrid 2024–. Apar și echipele naționale, de tineret și secundele (Monaco II) → de filtrat.
+- Doar anul, fără lună. Acoperirea pe toți cei 5.054 de jucători nu e testată.
+
 ## Ce avem și ce lipsește
 
 | Ce | Sursa | Stare |
@@ -47,6 +101,8 @@ Cerere: `GET /players/squads?team=<id>` (fără parametru de sezon → merge pe 
 | Poza jucătorului | API-Football | ✅ (lotul curent; jucătorii plecați din top 5 păstrează poza veche dacă o avem) |
 | Număr pe tricou 2026-27 | API-Football | ✅ |
 | Număr pe tricou 2024-25 | JSON-ul vechi din `data/` | ✅ parțial (1.186 de jucători) |
-| Număr pe tricou 2025-26 | — | ❌ |
-| Tier (vedetă / titular / lot) | JSON-ul vechi pentru 2024-25; pentru rest de decis | ⚠️ |
+| Număr pe tricou 2025-26 | `game_lineups` din setul Transfermarkt | ⚠️ de verificat |
+| Tier (vedetă / titular / lot) | Excelul lui Bogdan, precompletat din valoare + minute | ⚠️ după descărcare |
+| Valoarea de piață pe sezon | setul Transfermarkt (`player_valuations`) | ✅ până în iul 2026 |
+| Cariera (cluburi + ani) | setul Transfermarkt (`transfers`) + clubul din 2026-27 (football-data.org); rezervă: Wikidata | ✅ până în iul 2026 |
 | Siglele cluburilor | football-data.org (`crest`) sau `images/` | ✅ |
