@@ -1,965 +1,678 @@
+/* Guess the Footballer: picker and game pages. */
 :root {
+    color-scheme: dark;
     --league-bg: url('../../images/leagues/PremierLeague/Logo/1.jpg');
+    --bg: #0b1220;
+    --surface: #141d2e;
+    --surface-raised: #1d2840;
+    --border: #2c3a55;
+    --text: #f1f5fb;
+    --muted: #a3b1c6;
+    --accent: #f5b301;
+    --accent-hover: #ffc933;
+    --on-accent: #1a1300;
+    --match: #15803d;
+    --match-border: #22c55e;
+    --success: #4ade80;
+    --error: #ff9a9a;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: hsl(0, 0%, 100%);
+    min-height: 100vh;
     margin: 0;
-    padding-top: 50px; /* Ajustează această valoare în funcție de înălțimea header-ului */
-    box-sizing: border-box;
-    width: 100%;
-    overflow-y: auto; /* Permite derularea verticală */
-    position: relative; 
-}
-.language-selector {
-    padding: 5px;
-    text-align: right;
-    background-color: #68a6ff;
-    border-radius: 8px; /* Rotunjirea colțurilor */
-    box-shadow: 0 2px 5px rgba(5, 5, 227, 0.1); /* Adaugă o umbră subtilă */
-    display: inline-block; /* Pentru a se adapta la conținut */
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.5;
+    color: var(--text);
+    background: var(--bg);
 }
 
-.language-selector label {
-    margin-right: 10px;
-    font-weight: bold; 
-    color: hsl(0, 9%, 96%); 
+.hidden {
+    display: none;
 }
 
-#language {
-    padding: 8px 12px; 
-    border: 1px solid #6CA3FEff; 
-    border-radius: 5px; 
-    background-color: #6CA3FEff; 
-    font-size: 14px; 
-    cursor: pointer; 
-    transition: border-color 0.3s ease; 
-    color: hsl(0, 9%, 96%); 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
 }
 
-#language:hover {
-    border-color: #007bff; /* Schimbă culoarea bordurii la hover pentru a adăuga un efect vizual */
+button {
+    font: inherit;
+    cursor: pointer;
 }
 
+/* --- header -------------------------------------------------------------- */
 .header {
-    color: #fff;
-    background-image: var(--league-bg);
-    height: 60px;
-    position: fixed;
-    width: 100%; /* Ajustează la 100% pentru a ocupa toată lățimea */
+    position: sticky;
     top: 0;
-    padding: 20px;
+    z-index: 30;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    opacity: 90%;
-    z-index: 1000; /* Asigură-te că header-ul rămâne deasupra altor elemente */
-}
-.header-buttons {
-    display: flex;
-    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
 }
 
-#infoButton, #menuButton {
-    margin-left: 10px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #fff;
-    background-color: transparent;
-    border: none;
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+    color: var(--text);
+    text-decoration: none;
+}
+
+#logo {
+    flex: none;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
 }
 
 #mainHeader {
-    font-size: 2rem;
-    margin: 0 auto;
-    text-align: center;
-    margin-left: 10px; /* Ajustează pentru a centra mai bine titlul */
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    background-image: var(--league-bg);
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
-.navbar {
-    width: 100%;
-    height: 40vh;
-    position: fixed;
-    top: 75px;
-    right: 0;
-    font-size: 1.5rem;
-    display: none;
-    
-}
-
-.navbar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.navbar ul.menu {
+.header-tools {
     display: flex;
-    justify-content: space-between;
-    padding: 0 10px;
+    flex: none;
+    align-items: center;
+    gap: 4px;
 }
 
-.navbar ul.menu li {
-    display: inline;
+#language {
+    padding: 7px 8px;
+    font: inherit;
+    font-size: 0.875rem;
+    color: var(--text);
+    cursor: pointer;
+    background: var(--surface-raised);
+    border: 1px solid var(--border);
+    border-radius: 8px;
 }
 
-.navbar ul.menu li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
+.icon-button {
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    font-size: 1.25rem;
+    line-height: 1;
+    color: var(--text);
+    background: transparent;
+    border: none;
+    border-radius: 8px;
 }
 
-#menuContent {
-    background-image: var(--league-bg);
-    box-shadow: 0 4px 15px rgba(4, 53, 30, 0.2);
-    border-radius: 10px;
-    overflow: hidden;
-    height: 40vh;
-    top: 0;
-    padding: 10px;
-    transition: all 0.5s ease;
+.icon-button:hover {
+    background: var(--surface-raised);
+}
+
+/* Burger menu and "how to play" panels, both anchored under the header. */
+.navbar,
+#infoContent {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 16px;
+    width: min(320px, calc(100vw - 32px));
+    background: var(--surface-raised);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+}
+
+.navbar.show,
+#infoContent.show {
+    display: block;
 }
 
 #menuContent a {
     display: block;
-    padding: 10px 20px;
+    padding: 11px 16px;
+    color: var(--text);
     text-decoration: none;
-    color: #fff;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid var(--border);
+}
+
+#menuContent a:last-child {
+    border-bottom: none;
 }
 
 #menuContent a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background: var(--border);
 }
 
-.hidden {
-    display: none;
-}
 #infoContent {
-    position: fixed;
-    top: 30%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    background-image: var(--league-bg);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    display: none;
-    text-align: left;
-    border-radius: 10px;
-    opacity: 80%;
+    padding: 14px 18px;
 }
+
+#infoContent h2 {
+    margin: 0 0 8px;
+    font-size: 1.1rem;
+}
+
+#infoContent p {
+    margin: 6px 0;
+    color: var(--muted);
+}
+
 #closeButton {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-#logo {
-    height: 90px; /* Ajustează dimensiunea după cum este necesar */
-    width: auto;
-    max-width: 100px; /* Lățime maximă pentru logo */
-    height: auto; /* Înălțime automată pentru a menține proporțiile */
-    display: block; /* Afișare ca bloc pentru a centra */
-    
+    top: 6px;
+    right: 6px;
 }
 
+/* --- page layout --------------------------------------------------------- */
 .content {
-    background-image: var(--league-bg);
-    border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 50px; /* Ajustăm paddingul */
-    width: 80%;
-    max-width: 800px;
-    text-align: center;
-    margin: 100px auto 0 auto; /* Asigură-te că conținutul este sub header */
-    height: auto; 
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 20px 16px 48px;
 }
 
-/* Title styling */
-h1 {
-    font-size: 24px;
-    color:#fff;;
-    margin-bottom: 20px;
+/* --- game: head and input ------------------------------------------------ */
+.game-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 14px;
+    padding: 14px 16px;
+    margin-bottom: 14px;
+    background:
+        linear-gradient(rgba(11, 18, 32, 0.74), rgba(11, 18, 32, 0.88)),
+        var(--league-bg) center / cover var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
 }
 
-/* Input box styling */
+.game-head h1 {
+    flex: 1 1 auto;
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.25;
+}
+
+.logo-chip {
+    flex: none;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 6px;
+}
+
+#leagueLogo {
+    width: 44px;
+    height: 44px;
+    padding: 3px;
+}
+
+#leagueLogo:not([src]) {
+    visibility: hidden;
+}
+
+.game-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.difficulty-chip,
+.counter-chip {
+    padding: 3px 12px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border-radius: 999px;
+}
+
+.counter-chip {
+    background: var(--surface-raised);
+    border: 1px solid var(--border);
+}
+
+.difficulty-easy { color: #052e16; background: #4ade80; }
+.difficulty-medium { color: var(--on-accent); background: var(--accent); }
+.difficulty-hard { color: #450a0a; background: #fca5a5; }
+
+.Guess {
+    position: relative;
+}
+
 .Guess input {
-    width: 90%;
-    padding: 12px;
-    border: 1px solid #5e53c2;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-    margin-bottom: 20px;
-    position: relative;
-    z-index: 1; /* Asigură-te că este sub header */
-    background-color: #42A0FF;
-    color:#fff;
+    width: 100%;
+    padding: 13px 14px;
+    font: inherit;
+    font-size: 1rem;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
 }
+
 .Guess input::placeholder {
-    color: #ffffff; /* Setează culoarea textului placeholder la alb */
-    opacity: 1; /* Asigură-te că opacitatea este setată la 100% */
+    color: var(--muted);
 }
 
-/* Styling for the result box */
+.Guess input:focus {
+    border-color: var(--accent);
+    outline: 2px solid var(--accent);
+    outline-offset: -1px;
+}
+
+.Guess input:disabled {
+    opacity: 0.55;
+}
+
 .result-box {
-    position: relative;
-    width: 95%;
-    max-height: 200px;
+    position: absolute;
+    top: calc(100% + 4px);
+    right: 0;
+    left: 0;
+    z-index: 20;
+    max-height: 300px;
     overflow-y: auto;
-    background-color: #42A0FF;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    margin-bottom: 20px;
-    margin-left: 25px;
-    color:#fff;
+    background: var(--surface-raised);
+    border-radius: 10px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
 }
 
-/* List styling within the result box */
 .result-box ul {
-    list-style-type: none;
     padding: 0;
     margin: 0;
+    list-style: none;
+    border: 1px solid var(--border);
+    border-radius: 10px;
 }
 
-/* Individual list item styling in the result box */
 .result-box li {
-    display: flex; /* Folosim flexbox pentru a alinia conținutul */
-    align-items: center; /* Aliniem vertical conținutul */
-    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 10px;
     cursor: pointer;
-    border-bottom: 1px solid 
+    border-bottom: 1px solid var(--border);
 }
 
-/* Stil pentru textul din list item */
-.result-box li span {
-    flex-grow: 1; /* Permite textului să ocupe tot spațiul disponibil */
-    margin-left: 10px;
+.result-box li:last-child {
+    border-bottom: none;
 }
 
-/* Hover effect pentru list items */
-.result-box li:hover {
-    background-color: #3a92ea;
+.result-box li:hover,
+.result-box li.active {
+    background: var(--border);
 }
-/* Styling for feedback and hint */
+
+.suggestion-name {
+    flex: 1;
+    min-width: 0;
+    font-weight: 600;
+}
+
+.suggestion-name small {
+    display: block;
+    font-weight: 400;
+    color: var(--muted);
+}
+
+.team-logo-small {
+    width: 28px;
+    height: 28px;
+    padding: 2px;
+}
+
+.avatar {
+    display: inline-flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text);
+    object-fit: cover;
+    object-position: top;
+    background: var(--border);
+    border-radius: 50%;
+}
+
+.legend {
+    margin: 8px 2px 0;
+    font-size: 0.82rem;
+    color: var(--muted);
+}
+
+/* --- game: messages, hints, result --------------------------------------- */
 #feedback {
-    font-size: 18px;
-    color:#FF0000; 
-    margin: 20px 0;
+    margin-top: 14px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#feedback:empty {
+    display: none;
+}
+
+.feedback-success { color: var(--success); }
+.feedback-error { color: var(--error); }
+
+.reveal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 16px;
+    margin-top: 12px;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+}
+
+.reveal-photo {
+    width: 104px;
+    height: 104px;
+    object-fit: contain;
+}
+
+.reveal-photo.logo-chip {
+    padding: 8px;
+    border-radius: 14px;
+}
+
+.reveal-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.reveal-details {
+    color: var(--muted);
+}
+
+#restartContainer {
+    text-align: center;
+}
+
+#restartContainer button,
+.primary-button {
+    padding: 11px 32px;
+    margin-top: 14px;
+    font-weight: 700;
+    color: var(--on-accent);
+    background: var(--accent);
+    border: none;
+    border-radius: 8px;
+}
+
+#restartContainer button:hover,
+.primary-button:hover {
+    background: var(--accent-hover);
+}
+
+.hint-area {
+    margin-top: 14px;
+    text-align: center;
+}
+
+.secondary-button {
+    padding: 8px 20px;
+    font-weight: 600;
+    color: var(--text);
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.secondary-button:hover {
+    background: var(--surface-raised);
 }
 
 #hint {
-    font-size: 16px;
-    color: #222831; /* Blue color for hints */
-    margin: 20px 0;
+    margin-top: 8px;
+    color: var(--text);
 }
 
-/* Button styling */
-button {
-    padding: 12px 24px;
-    background-color: #007bff;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-/* Button hover effect */
-button:hover {
-    background-color: #0056b3;
-}
-
-/* Button active effect */
-button:active {
-    transform: scale(0.98);
-}
-
-/* Button hidden class */
-.hidden {
+#hint:empty {
     display: none;
 }
-#restartContainer {
-    text-align: center;
-    margin-top: 20px; /* Ajustează această valoare după cum este necesar */
-}
-/* Player info styling */
+
+/* --- game: one row per guess, newest first ------------------------------- */
 #playerInfo {
-    margin: 20px 0;
-}
-
-#playerInfo ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-#playerInfo li {
-    background-color: #333;
-    color: #42A0FF;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 5px;
-    flex: 1;
-    min-width: 120px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-    text-align: left;
-}
-
-/* Highlighting correct guesses */
-#playerInfo li span {
-    font-weight: bold;
-    color: #76c7c0;
-}
-
-/* Styling for matching attributes */
-.match {
-    color: green;
-    font-weight: bold;
-}
-
-/* Styling for player cards */
-.player-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    background-color: #42A0FF;
-    max-width: 300px;
-    margin: 0 auto;
-    color: #470e7d;
-    
+    gap: 8px;
+    margin-top: 18px;
 }
 
-.player-card img {
-    max-width: 60px;
-    height: auto;
-    border-radius: 50%;
-    vertical-align: middle;
+.attempt {
+    display: grid;
+    grid-template-columns: minmax(170px, 1.5fr) repeat(5, minmax(0, 1fr));
+    gap: 5px;
 }
 
-
-/* Stiluri pentru logo-ul echipei */
-.player-team-logo {
-    width: 80px;
-    height: auto;
-    margin-bottom: 15px;
-}
-
-
-/* Stiluri pentru detaliile jucătorului */
-.player-detail {
+.attempt-player {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: 5px 0;
-    text-align: left;
-}
-
-/* Stiluri pentru etichete și valori */
-.player-detail label {
-    font-weight: bold;
-    width: 100px; /* Lățime fixă pentru aliniere consistentă */
-}
-
-.player-detail span {
-    flex-grow: 1; /* Se extinde pentru a ocupa spațiul rămas */
-}
-.success-message {
-    color: #28a745; /* Verde pentru mesajele de succes */
-    font-size: 18px;
-    font-weight: bold;
-    margin: 20px 0;
-}
-.team-logo-small {
-    max-width: 30px; /* Ajustează dimensiunea logo-ului */
-    height: auto;
-    margin-right: 10px; /* Spațiu între imagine și text */
-    vertical-align: middle; /* Aliniază imaginea cu textul */
-}
-.player-logo-small {
-    max-width: 30px; /* Ajustează dimensiunea logo-ului */
-    height: auto;
-    margin-right: 10px; /* Spațiu între imagine și text */
-    vertical-align: middle; /* Aliniază imaginea cu textul */
-}
-.ui-autocomplete {
-    position: relative;
-    z-index: 9990; /* Asigură-te că lista de sugestii este deasupra header-ului */
-    background-color: white;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    width: 90%;
-    overflow-y: auto;
-    max-height: 200px;
-}
-
-.ui-menu-item {
-    padding: 10px; /* Padding pentru fiecare element din lista de sugestii */
-    display: flex;
-    align-items: center;
-}
-
-.ui-menu-item img {
-    margin-right: 10px; /* Spațiu între imagine și text */
-}
-.show {
-    display: block; /* Sau flex, dacă aveți un layout flexbox */
-}
-#infoContent.show {
-    display: block; /* Afișează infoContent când este activ */
-}
-@media (max-width: 450px) {
-    body {
-        position: relative;
-    }
-
-    .header {
-        height: 55px;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        padding: 2px 6px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        opacity: 90%;
-    }
-    .language-selector {
-        font-size: 0.5rem; /* Ajustează dimensiunea fontului */
-        margin-right: 1px; /* Adaugă un spațiu între elemente */
-        padding: 2px;
-    }
-
-    .language-selector label {
-        font-size: 0.4rem; /* Ajustează dimensiunea fontului */
-    }
-
-    #language {
-        font-size: 0.4rem; /* Ajustează dimensiunea fontului */
-    }
-    #mainHeader {
-        font-size: 0.5rem;
-        max-width: calc(100% - 30px);
-    }
-
-    #logo {
-        height: 40px;
-        width: auto;
-        display: block;
-        margin-left: 2px auto;
-    }
-
-    .navbar {
-        width: 100%;
-        position: fixed;
-        top: 53px;
-        left: 0;
-        z-index: 1000;
-        display: none;
-        overflow: hidden;
-        transition: opacity 0.3s ease, height 0.3s ease;
-        opacity: 0;
-    }
-
-    .navbar.show {
-        display: block;
-        opacity: 1;
-        height: 40vh; 
-    }
-
-    .result-box {
-        margin-left: 1px;
-        width: 100%;
-    }
-
-    #menuContent {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        height: 40vh;
-    }
-
-    #menuContent ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    #menuContent li {
-        padding: 1px 3px;
-        border-bottom: 1px solid #eee;
-    }
-
-    #menuContent li a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 0.7em;
-        display: block;
-       
-    }
-
-
-    #infoButton, #menuButton {
-        font-size: 0.8rem;
-        cursor: pointer;
-        background: none;
-        border: none;
-        color: #fff;
-    }
-
-    .content {
-        transition: margin-top 1s ease;
-        margin-top: 40px;
-        padding: 4px;
-        font-size: 1rem;
-        border-radius: 50px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    #infoContent {
-        position: fixed;
-        top: 80px;
-        left: 50%;
-        width: 50%;
-        transform: translateX(-50%);
-        background-color: #ffffff;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-        z-index: 999;
-        display: none;
-        transition: height 0.3s ease;
-        padding: 4px;
-        font-size: 0.7rem;
-    }
-
-    h1 {
-        font-size: 1.4em;
-        color: #fff;
-        margin-bottom: 20px;
-    }
-
-    #infoContent.show {
-        display: block;
-    }
-}
-
-/* Stiluri pentru telefoane mobile (portret) și tablete (portret) */
-@media (min-width: 450px) and (max-width: 600px) {
-    body {
-        position: relative;
-    }
-
-    .header {
-        height: 50px;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        padding: 2px 6px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        opacity: 90%;
-    }
-    .language-selector {
-        font-size: 0.8rem; /* Ajustează dimensiunea fontului */
-        margin-right: 10px; /* Adaugă un spațiu între elemente */
-        padding: 2px;
-    }
-
-    .language-selector label {
-        font-size: 0.7rem; /* Ajustează dimensiunea fontului */
-    }
-
-    #language {
-        font-size: 0.7rem; /* Ajustează dimensiunea fontului */
-    }
-    #mainHeader {
-        font-size: 0.9rem;
-        max-width: calc(100% - 30px);
-    }
-
-    #logo {
-        height: 50px;
-        width: auto;
-        display: block;
-        margin-left: 2px auto;
-    }
-
-    .navbar {
-        width: 100%;
-        position: fixed;
-        top: 53px;
-        left: 0;
-        z-index: 1000;
-        display: none;
-        overflow: hidden;
-        transition: opacity 0.3s ease, height 0.3s ease;
-        opacity: 0;
-    }
-
-    .navbar.show {
-        display: block;
-        opacity: 1;
-        height: 40vh; 
-    }
-
-    .result-box {
-        margin-left: 1px;
-        width: 100%;
-    }
-
-    #menuContent {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        height: 40vh;
-    }
-
-    #menuContent ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    #menuContent li {
-        padding: 1px 3px;
-        border-bottom: 1px solid #eee;
-    }
-
-    #menuContent li a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 0.7em;
-        display: block;
-    }
-
-    #infoButton, #menuButton {
-        font-size: 1rem;
-        cursor: pointer;
-        background: none;
-        border: none;
-        color: #fff;
-    }
-
-    .content {
-        transition: margin-top 1s ease;
-        margin-top: 40px;
-        padding: 4px;
-        font-size: 1rem;
-        border-radius: 50px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    #infoContent {
-        position: fixed;
-        top: 130px;
-        left: 50%;
-        width: 50%;
-        transform: translateX(-50%);
-        background-color: #ffffff;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-        z-index: 999;
-        display: none;
-        transition: height 0.3s ease;
-        padding: 4px;
-        font-size: 0.7rem;
-    }
-
-    h1 {
-        font-size: 1.4em;
-        color: #fff;
-        margin-bottom: 20px;
-    }
-
-    #infoContent.show {
-        display: block;
-    }
-}
-
-/* Stiluri pentru tablete (peisaj) și laptopuri mici */
-@media (min-width: 601px) and (max-width: 1024px) {
-    .header {
-        height: 60px;
-        padding: 4px 10px;
-    }
-
-    .language-selector {
-        font-size: 0.8rem; /* Ajustează dimensiunea fontului */
-        margin-right: 10px; /* Adaugă un spațiu între elemente */
-        padding: 2px;
-    }
-
-    .language-selector label {
-        font-size: 0.7rem; /* Ajustează dimensiunea fontului */
-    }
-
-    #language {
-        font-size: 0.7rem; /* Ajustează dimensiunea fontului */
-    }
-    #mainHeader {
-        font-size: 1.2rem;
-        max-width: calc(100% - 30px);
-    }
-    #logo {
-        height: 60px;
-        margin-left: 4px auto;
-    }
-
-    .navbar {
-        top: 43px;
-        transition: 0.3s ease;
-        z-index: 1000;
-    }
-
-    #menuContent {
-        height: 40vh;
-    }
-
-    #menuContent li a {
-        font-size: 0.9em;
-    }
-
-    .content {
-        margin-top: 60px;
-        padding: 8px;
-        font-size: 1rem;
-        transition: margin-top 1s ease;
-    }
-
-    #infoContent {
-        width: 60%;
-        font-size: 0.9rem;
-        top: 250px;
-    }
-
-    h1 {
-        font-size: 1.6em;
-    }
-}
-
-/* Stiluri pentru laptopuri mari și desktopuri */
-@media (min-width: 1025px) and (max-width: 1440px) {
-    .header {
-        height: 70px;
-        padding: 6px 20px;
-    }
-
-    #mainHeader {
-        font-size: 1.8rem;
-        max-width: calc(100% - 50px);
-    }
-
-    #logo {
-        height: 70px;
-        margin-left: 6px auto;
-    }
-
-    .navbar {
-        top: 58px;
-        z-index: 1000;
-    }
-
-    #menuContent {
-        height: 40vh;
-    }
-
-    #menuContent li a {
-        font-size: 1em;
-    }
-
-    .content {
-        margin-top: 70px;
-        padding: 12px;
-        font-size: 1rem;
-        transition: margin-top 1s ease;
-    }
-
-    #infoContent {
-        width: 30%;
-        font-size: 1rem;
-    }
-
-    h1 {
-        font-size: 1.8em;
-    }
-}
-
-/* Stiluri pentru desktopuri mari */
-@media (min-width: 1441px) {
-    .header {
-        height: 80px;
-        padding: 8px 30px;
-        width: 99%;
-    }
-
-    #mainHeader {
-        font-size: 2rem;
-        max-width: calc(100% - 60px);
-    }
-
-    #logo {
-        height: 80px;
-        margin-left: 8px auto;
-    }
-
-    .navbar {
-        top: 70px;
-        position: fixed;
-        z-index: 1000;
-        
-    }
-
-    #menuContent {
-        height: 40vh;
-    }
-
-    #menuContent li a {
-        font-size: 1.1em;
-    }
-
-    .content {
-        margin-top: 80px;
-        padding: 16px;
-        font-size: 1rem;
-        transition: margin-top 1s ease;
-    }
-
-    #infoContent {
-        width: 30%;
-        font-size: 1.1rem;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-}
-
-/* --- unified engine additions ------------------------------------------- */
-.game-meta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 20px;
-    color: #fff;
-    font-size: 18px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-.difficulty-chip {
-    padding: 4px 14px;
-    border-radius: 999px;
-    font-size: 14px;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: none;
-}
-.difficulty-easy { background-color: #28a745; }
-.difficulty-medium { background-color: #f0a500; }
-.difficulty-hard { background-color: #dc3545; }
-
-/* --- league / season / difficulty picker -------------------------------- */
-.picker-section {
-    margin: 25px 0;
-}
-.picker-section h2 {
-    color: #fff;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-.league-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.league-card {
-    background-color: #42A0FF;
-    border: none;
-    border-radius: 10px;
-    padding: 15px;
-    width: 160px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     gap: 10px;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.league-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    background-color: #3a92ea;
-}
-.league-card img {
-    width: 90px;
-    height: 90px;
-    object-fit: contain;
+    min-width: 0;
+    padding: 6px 10px;
+    font-weight: 700;
+    line-height: 1.25;
+    background: var(--surface);
+    border: 1px solid var(--border);
     border-radius: 8px;
-    background-color: #fff;
+}
+
+.attempt-number {
+    flex: none;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--muted);
+}
+
+.tile {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    min-height: 68px;
+    padding: 6px 3px;
+    text-align: center;
+    background: var(--surface-raised);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.tile-label {
+    font-size: 0.66rem;
+    letter-spacing: 0.03em;
+    color: var(--muted);
+    text-transform: uppercase;
+}
+
+.tile-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+    max-width: 100%;
+}
+
+.tile-value {
+    max-width: 100%;
+    font-size: 0.86rem;
+    font-weight: 700;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+}
+
+.tile-logo {
+    width: 24px;
+    height: 24px;
+    padding: 2px;
+}
+
+.tile.match {
+    background: var(--match);
+    border-color: var(--match-border);
+}
+
+.tile.match .tile-label {
+    color: #dcfce7;
+}
+
+/* --- picker -------------------------------------------------------------- */
+.picker-section {
+    margin-bottom: 26px;
+}
+
+.picker-section h2 {
+    margin: 0 0 12px;
+    font-size: 1.1rem;
 }
 
 .option-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 10px;
 }
 
 .option-button {
-    background-color: #42A0FF;
-    color: #fff;
-    border: 2px solid transparent;
-    border-radius: 8px;
-    padding: 10px 18px;
-    cursor: pointer;
-    font-size: 15px;
-    transition: background-color 0.2s ease, border-color 0.2s ease;
-    max-width: 220px;
-}
-.option-button small {
-    display: block;
-    font-size: 12px;
-    font-weight: normal;
-    margin-top: 4px;
-    opacity: 0.9;
-}
-.option-button.selected {
-    border-color: #fff;
-    background-color: #0056b3;
-    font-weight: bold;
+    padding: 11px 14px;
+    font-weight: 700;
+    color: var(--text);
+    background: var(--surface);
+    border: 2px solid var(--border);
+    border-radius: 10px;
 }
 
-@media (max-width: 450px) {
-    .league-card { width: 120px; font-size: 14px; }
-    .league-card img { width: 64px; height: 64px; }
+.option-button small {
+    display: block;
+    margin-top: 2px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--muted);
+}
+
+.option-button:hover {
+    border-color: var(--muted);
+}
+
+.option-button.selected {
+    background: var(--surface-raised);
+    border-color: var(--accent);
+}
+
+.league-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+}
+
+.league-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 16px 10px;
+    font-weight: 700;
+    color: var(--text);
+    background: var(--surface);
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.league-card:hover,
+.league-card:focus-visible {
+    border-color: var(--accent);
+    transform: translateY(-3px);
+}
+
+.league-card img {
+    width: 84px;
+    height: 84px;
+    padding: 6px;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 10px;
+}
+
+/* --- phones -------------------------------------------------------------- */
+@media (max-width: 640px) {
+    /* Team and nationality have long names, so they share the first row. */
+    .attempt {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+
+    .attempt-player {
+        grid-column: 1 / -1;
+        order: -2;
+        padding: 4px 8px;
+    }
+
+    .attempt-player .avatar {
+        width: 32px;
+        height: 32px;
+    }
+
+    .tile {
+        grid-column: span 2;
+        min-height: 48px;
+        padding: 4px;
+    }
+
+    .tile-team,
+    .tile-nationality {
+        grid-column: span 3;
+        order: -1;
+    }
+
+    .tile-body {
+        flex-direction: row;
+        gap: 6px;
+    }
+
+    .tile-logo {
+        flex: none;
+        width: 22px;
+        height: 22px;
+    }
+
+    .tile-label {
+        font-size: 0.62rem;
+    }
+
+    .tile-value {
+        font-size: 0.82rem;
+    }
+
+    #mainHeader {
+        font-size: 0.95rem;
+    }
+
+    #logo {
+        width: 34px;
+        height: 34px;
+    }
+
+    .header {
+        padding: 6px 10px;
+    }
+
+    .icon-button {
+        width: 34px;
+        height: 34px;
+    }
 }

@@ -12,14 +12,14 @@ A small platform of browser games built entirely with **vanilla JavaScript, HTML
 
 1. Choose a **league**, a **season** and a **difficulty**.
 2. Type a player's name — an autocomplete list with photos and club badges helps you search.
-3. After each guess, a comparison card shows how close you are:
-   - 🟩 **Green** — the attribute (team, position, age, shirt number, nationality) matches the hidden player.
+3. Each guess adds a row to the grid, so every attempt stays visible:
+   - 🟩 **Green ✓** — the attribute (team, position, age, shirt number, nationality) matches the hidden player.
    - **↑ / ↓ arrows** — whether the hidden player's age or shirt number is higher or lower than your guess.
 4. Stuck? The **Show Hint** button progressively reveals the club, then the age.
 5. Guess the player within 10 attempts to win.
 
 ![Picker](screenshots/picker.jpg)
-![Gameplay](screenshots/gameplay.png)
+![Gameplay](screenshots/gameplay.jpg)
 
 ### Difficulty modes
 
@@ -45,10 +45,11 @@ Every player in the database has a curated **tier**: 1 = league star, 2 = regula
 
 ## Features
 
-- **Wordle-style attribute feedback** on every guess
+- **Wordle-style attribute grid**: every guess stays on screen, newest first
 - **Three difficulty modes** driven by per-player tiers
 - **Season selection** — new seasons are added as plain JSON files, zero code changes
-- **Autocomplete search** with player photos and club badges
+- **Autocomplete search** with player photos and club badges, keyboard navigation, and no need for accents ("odegaard" finds "Ødegaard")
+- **Responsive layout** for phones and desktops
 - **Progressive hint system** (club → age)
 - **4 languages** — English, Spanish, French and Romanian, switchable live; choice persists between visits
 - **Fully static** — one game engine + JSON data, runs on any static file server
@@ -89,11 +90,18 @@ Then open <http://localhost:8000> in your browser.
 
 ## Roadmap
 
-- Season **2025/26** data
+- **In progress: PostgreSQL database (Supabase)** with full squads for three seasons (2024/25 to 2026/27), replacing the hand-written JSON
+- **Higher or Lower**: which player has the higher market value?
+- **Career Path**: guess the player from their clubs and years
+- **User accounts** with statistics and streaks
 - **Icons mode** — guess legendary players, possibly from their silhouette
 - **Daily challenge** — the same hidden player for everyone, with streaks
 - **Share result** button (emoji grid, spoiler-free)
 - Per-league statistics and more games on the platform
+
+## How it was built
+
+I designed the game, set the rules and tested every change. Most of the code was generated with an AI assistant (Claude).
 
 ## Author
 

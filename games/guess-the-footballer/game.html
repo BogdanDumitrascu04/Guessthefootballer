@@ -4,54 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="game.css">
+    <link rel="icon" href="../../images/Header/fotbal.png">
     <title>Guess the Footballer</title>
 </head>
 <body>
-    <div class="header">
-        <img src="../../images/Header/fotbal.png" alt="Bogdy's Game Logo" id="logo">
-        <div id="mainHeader" data-translate="guessTheFootballer">Guess the footballer</div>
-        <div class="language-selector">
-            <label for="language">Language:</label>
-            <select id="language">
-                <option value="en">English</option>
-                <option value="es">Español</option>
-                <option value="fr">Français</option>
-                <option value="ro">Română</option>
-            </select>
-        </div>
-        <div class="header-buttons">
-            <div id="infoButton">ⓘ</div>
-            <button id="menuButton">&#9776;</button>
+    <header class="header">
+        <a class="brand" href="index.html">
+            <img src="../../images/Header/fotbal.png" alt="" id="logo">
+            <span id="mainHeader" data-translate="guessTheFootballer">Guess the footballer</span>
+        </a>
+        <div class="header-tools">
+            <label class="language-selector">
+                <span class="visually-hidden">Language</span>
+                <select id="language">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                    <option value="ro">Română</option>
+                </select>
+            </label>
+            <button id="infoButton" class="icon-button" aria-label="How to play">ⓘ</button>
+            <button id="menuButton" class="icon-button" aria-label="Menu">&#9776;</button>
         </div>
         <div id="infoContent" class="hidden">
-            <button id="closeButton">X</button>
+            <button id="closeButton" class="icon-button" aria-label="Close">&times;</button>
             <h2 data-translate="howToPlay">How to Play</h2>
             <p data-translate="selectLeague">1. Select a league, a season and a difficulty.</p>
             <p data-translate="guessFootballer">2. Guess the footballer based on the clues provided.</p>
             <p data-translate="enjoyGame">3. Enjoy the game!</p>
         </div>
-    </div>
-    <div class="navbar hidden" id="navbar">
-        <ul id="menuContent"></ul>
-    </div>
-    <div class="content">
-        <div id="game">
-            <h1 data-translate="guessTheFootballPlayer">Guess the Football Player</h1>
-            <div class="game-meta">
-                <span id="gameSubtitle"></span>
-                <span id="difficultyChip" class="difficulty-chip"></span>
-            </div>
-            <div class="Guess">
-                <input type="text" id="guessInput" placeholder="Type player name...">
-            </div>
-            <div class="result-box"></div>
-            <div id="playerInfo"></div>
-            <div id="feedback"></div>
-            <div id="restartContainer"></div>
-            <button id="hintButton" data-translate="showHint">Show Hint</button>
-            <div id="hint"></div>
+        <div class="navbar hidden" id="navbar">
+            <nav id="menuContent"></nav>
         </div>
-    </div>
+    </header>
+
+    <main class="content">
+        <div id="game">
+            <section class="game-head">
+                <img id="leagueLogo" class="logo-chip" alt="">
+                <h1 id="gameSubtitle"></h1>
+                <div class="game-meta">
+                    <span id="difficultyChip" class="difficulty-chip"></span>
+                    <span id="attemptCounter" class="counter-chip"></span>
+                </div>
+            </section>
+
+            <div class="Guess">
+                <input type="text" id="guessInput" placeholder="Type player name..." aria-label="Player name"
+                       autocomplete="off" autocapitalize="off" spellcheck="false">
+                <div class="result-box"></div>
+            </div>
+            <p class="legend" data-translate="legend"></p>
+
+            <div id="feedback" role="status" aria-live="polite"></div>
+            <div id="restartContainer"></div>
+            <div class="hint-area">
+                <button id="hintButton" class="secondary-button" data-translate="showHint">Show Hint</button>
+                <div id="hint"></div>
+            </div>
+
+            <div id="playerInfo"></div>
+        </div>
+    </main>
 
     <script defer src="i18n.js"></script>
     <script defer src="engine.js"></script>

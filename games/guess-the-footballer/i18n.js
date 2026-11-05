@@ -26,6 +26,10 @@ const translations = {
         hardDesc: 'Full squads — no stars as the answer',
         changeSettings: 'Change league / difficulty',
         allGames: 'All games',
+        legend: "Green ✓ = same as the hidden player · ↑ ↓ = the hidden player's age or number is higher / lower",
+        alreadyGuessed: "You already tried {name}.",
+        guesses: 'Guesses',
+        loadError: 'Could not load the players. Please refresh the page.',
     },
     es: {
         guessTheFootballer: 'Adivina el futbolista',
@@ -52,6 +56,10 @@ const translations = {
         hardDesc: 'Plantillas completas — sin estrellas como respuesta',
         changeSettings: 'Cambiar liga / dificultad',
         allGames: 'Todos los juegos',
+        legend: "Verde ✓ = igual que el jugador oculto · ↑ ↓ = la edad o el número del jugador oculto es mayor / menor",
+        alreadyGuessed: "Ya probaste con {name}.",
+        guesses: 'Intentos',
+        loadError: 'No se pudieron cargar los jugadores. Recarga la página.',
     },
     fr: {
         guessTheFootballer: 'Devinez le footballeur',
@@ -78,6 +86,10 @@ const translations = {
         hardDesc: 'Effectifs complets — pas de stars comme réponse',
         changeSettings: 'Changer de ligue / difficulté',
         allGames: 'Tous les jeux',
+        legend: "Vert ✓ = comme le joueur caché · ↑ ↓ = l'âge ou le numéro du joueur caché est plus grand / plus petit",
+        alreadyGuessed: "Vous avez déjà essayé {name}.",
+        guesses: 'Essais',
+        loadError: 'Impossible de charger les joueurs. Actualisez la page.',
     },
     ro: {
         guessTheFootballer: 'Ghicește fotbalistul',
@@ -104,6 +116,10 @@ const translations = {
         hardDesc: 'Loturi complete — fără staruri ca răspuns',
         changeSettings: 'Schimbă liga / dificultatea',
         allGames: 'Toate jocurile',
+        legend: "Verde ✓ = la fel ca jucătorul ascuns · ↑ ↓ = vârsta sau numărul jucătorului ascuns e mai mare / mai mic",
+        alreadyGuessed: "L-ai încercat deja pe {name}.",
+        guesses: 'Încercări',
+        loadError: 'Jucătorii nu s-au putut încărca. Reîmprospătează pagina.',
     },
 };
 
