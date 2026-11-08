@@ -74,7 +74,9 @@ Făcută pe 5 nov, înaintea Supabase, pe datele din JSON (2024-25). Testată lo
 - [x] mobil
 - [x] căutare fără diacritice („odegaard”), cu săgeți + Enter; o încercare repetată nu se mai consumă; numele jucătorului apare la final
 - [x] hub-ul: cifrele corecte („5 leagues · 1,186 players”), scrise de mână
-- [ ] testul lui Bogdan + push
+- [x] testul lui Bogdan + push (5 nov)
+- [x] prima pagină nouă: titlu, rând animat din joc, intrare directă pe ligă, carduri „Coming soon”, 4 limbi, fără banner de cookie-uri, politică rescrisă, logo și fundal mai ușoare, previzualizare la link (5 nov, Claude; testat local pe desktop și la 375 px)
+- [ ] testul lui Bogdan + push pentru prima pagină
 - [ ] hub-ul: cifrele luate din bază (după Etapa 2)
 
 ## Etapa 4 — Jocul 2: higher or lower (până la CV)
@@ -91,6 +93,7 @@ Făcută pe 5 nov, înaintea Supabase, pe datele din JSON (2024-25). Testată lo
 - [ ] jocul: cluburile și anii, ghicești jucătorul (autocomplete ca la jocul 1)
 
 ## Etapa 7 — Conturi (decembrie)
+- [ ] politica de confidențialitate actualizată, înainte de lansarea conturilor
 - [ ] înregistrare / login (Supabase Auth)
 - [ ] fiecare joc terminat se salvează (`game_results`, cu jocul, scorul, data)
 - [ ] pagina de profil: statistici, streak

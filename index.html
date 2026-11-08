@@ -3,52 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bogdy's Games</title>
+    <meta name="description" content="Wordle-style football games built on real squads from Europe's top 5 leagues. Free, in your browser.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bogdy's Games: how well do you know football?">
+    <meta property="og:description" content="Wordle-style football games built on real squads from Europe's top 5 leagues. Free, in your browser.">
+    <meta property="og:url" content="https://bogdandumitrascu04.github.io/Guessthefootballer/">
+    <meta property="og:image" content="https://bogdandumitrascu04.github.io/Guessthefootballer/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="images/Header/fotbal.png">
-    <title>Bogdy's Games</title>
 </head>
 <body>
     <header class="header">
-        <img src="images/Header/fotbal.png" alt="" id="logo">
-        <div id="mainHeader">Bogdy's Games</div>
+        <a class="brand" href="index.html">
+            <img src="images/Header/fotbal.png" alt="" id="logo">
+            <span id="mainHeader">Bogdy's Games</span>
+        </a>
+        <label class="language-selector">
+            <span class="visually-hidden">Language</span>
+            <select id="language">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="ro">Română</option>
+            </select>
+        </label>
     </header>
 
-    <main class="hub-content">
-        <h1>Pick a game</h1>
-        <div class="games-grid">
-            <a class="game-card" href="games/guess-the-footballer/index.html">
-                <img src="images/Header/fotbal.png" alt="">
-                <h2>Guess the Footballer</h2>
-                <p>A Wordle-style deduction game: pick a league, a season and a difficulty,
-                   then find the hidden player in 10 guesses using attribute clues.</p>
-                <span class="game-tag">5 leagues · 1,186 players · EN / ES / FR / RO</span>
-                <span class="play-button">Play</span>
-            </a>
-            <div class="game-card coming-soon">
-                <h2>Coming next</h2>
-                <p><strong>Higher or Lower:</strong> which player has the higher market value?</p>
-                <p><strong>Career Path:</strong> guess the player from their clubs and years.</p>
+    <main class="hub">
+        <section class="hero">
+            <h1 data-translate="heroTitle">How well do you know football?</h1>
+            <p class="hero-subtitle" data-translate="heroSubtitle">Deduction games built on real squads from Europe's top 5 leagues.</p>
+
+            <div class="demo" aria-hidden="true">
+                <div class="demo-player">
+                    <img src="images/leagues/PremierLeague/Liverpool/Salah.png" alt="">
+                    <span>Mohamed Salah</span>
+                </div>
+                <div class="tile match" style="--i: 0">
+                    <span class="tile-label" data-translate="team">Team</span>
+                    <img class="tile-logo" src="images/leagues/PremierLeague/Liverpool/Logo/Liverpool.png" alt="">
+                    <span class="tile-value">Liverpool ✓</span>
+                </div>
+                <div class="tile match" style="--i: 1">
+                    <span class="tile-label" data-translate="position">Position</span>
+                    <span class="tile-value">Forward ✓</span>
+                </div>
+                <div class="tile" style="--i: 2">
+                    <span class="tile-label" data-translate="age">Age</span>
+                    <span class="tile-value">32 ↓</span>
+                </div>
+                <div class="tile" style="--i: 3">
+                    <span class="tile-label" data-translate="number">Number</span>
+                    <span class="tile-value">11 ↑</span>
+                </div>
+                <div class="tile" style="--i: 4">
+                    <span class="tile-label" data-translate="nationality">Nationality</span>
+                    <span class="tile-value">Egypt</span>
+                </div>
             </div>
-        </div>
+            <p class="demo-caption" data-translate="demoCaption">Every guess tells you how close you are.</p>
+        </section>
+
+        <section class="featured">
+            <div class="featured-head">
+                <svg class="game-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M8.5 3 3 6l-1 4 3.5 1.5.5-1V21h12V10.5l.5 1L22 10l-1-4-5.5-3c-.5 1.5-1.9 2.5-3.5 2.5S9 4.5 8.5 3Z"/>
+                    <path d="M10.2 12a1.8 1.8 0 1 1 2.7 1.56c-.6.35-.9.75-.9 1.44M12 17.5v.01"/>
+                </svg>
+                <div class="featured-text">
+                    <h2 data-translate="guessTheFootballer">Guess the Footballer</h2>
+                    <p data-translate="hubGameDesc">Pick a league, a season and a difficulty, then find the hidden player in 10 guesses using attribute clues.</p>
+                </div>
+                <a class="play-button" href="games/guess-the-footballer/index.html" data-translate="play">Play</a>
+            </div>
+
+            <ul class="stats">
+                <li><strong>5</strong> <span data-translate="statLeagues">leagues</span></li>
+                <li><strong>1186</strong> <span data-translate="statPlayers">players</span></li>
+                <li><strong>4</strong> <span data-translate="statLanguages">languages</span></li>
+            </ul>
+
+            <p class="leagues-label" data-translate="jumpToLeague">Or jump straight into a league</p>
+            <nav class="league-links">
+                <a href="games/guess-the-footballer/game.html?league=premier-league" title="Premier League"><img src="images/leagues/PremierLeague/Logo/Premier%20League.png.png" alt="Premier League"></a>
+                <a href="games/guess-the-footballer/game.html?league=la-liga" title="La Liga"><img src="images/leagues/LaLiga/Logo/LaLiga.jpg" alt="La Liga"></a>
+                <a href="games/guess-the-footballer/game.html?league=bundesliga" title="Bundesliga"><img src="images/leagues/Bundesliga/Logo/bundesliga.jpg" alt="Bundesliga"></a>
+                <a href="games/guess-the-footballer/game.html?league=serie-a" title="Serie A"><img src="images/leagues/SerieA/Logo/SerieA.png" alt="Serie A"></a>
+                <a href="games/guess-the-footballer/game.html?league=ligue-1" title="Ligue 1"><img src="images/leagues/Ligue1/Logo/Ligue1.png" alt="Ligue 1"></a>
+            </nav>
+        </section>
+
+        <section class="upcoming">
+            <article class="upcoming-card">
+                <svg class="game-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M8 20V5M3.5 9.5 8 5l4.5 4.5M16 4v15M11.5 14.5 16 19l4.5-4.5"/>
+                </svg>
+                <h2 data-translate="higherLower">Higher or Lower</h2>
+                <p data-translate="higherLowerDesc">Which player has the higher market value?</p>
+                <span class="soon-badge">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+                    <span data-translate="comingSoon">Coming soon</span>
+                </span>
+            </article>
+            <article class="upcoming-card">
+                <svg class="game-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="5" cy="18" r="2.5"/><circle cx="12" cy="7" r="2.5"/><circle cx="19" cy="15" r="2.5"/>
+                    <path d="m6.4 15.9 4.2-6.8M13.7 8.9l3.7 4.2"/>
+                </svg>
+                <h2 data-translate="careerPath">Career Path</h2>
+                <p data-translate="careerPathDesc">Guess the player from their clubs and years.</p>
+                <span class="soon-badge">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+                    <span data-translate="comingSoon">Coming soon</span>
+                </span>
+            </article>
+        </section>
     </main>
 
     <footer class="hub-footer">
-        <a href="privacy-policy.html">Privacy policy</a> ·
-        <a href="https://github.com/BogdanDumitrascu04/Guessthefootballer">GitHub</a>
+        <span data-translate="builtBy">Built by</span> Bogdan Dumitrascu ·
+        <a href="https://github.com/BogdanDumitrascu04/Guessthefootballer">GitHub</a> ·
+        <a href="privacy-policy.html" data-translate="privacyPolicy">Privacy policy</a>
     </footer>
 
-    <div id="cookie-banner-placeholder"></div>
-    <script src="js/cookie-banner.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            fetch('cookie-banner.html')
-                .then(response => response.text())
-                .then(html => {
-                    document.getElementById('cookie-banner-placeholder').innerHTML = html;
-                    if (typeof initCookieConsent === 'function') initCookieConsent();
-                })
-                .catch(error => console.error('Error loading cookie banner HTML:', error));
-        });
-    </script>
+    <script defer src="games/guess-the-footballer/i18n.js"></script>
 </body>
 </html>

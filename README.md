@@ -70,13 +70,14 @@ One parameterized engine replaces the old copy-per-league code. League and seaso
 ├── data/
 │   ├── manifest.json              # Available leagues and seasons
 │   └── seasons/2024-25/           # One JSON per league (players + tiers)
+├── fonts/                         # Self-hosted headline font
 ├── images/                        # Club badges and player photos
 └── screenshots/
 ```
 
 ## Run it locally
 
-You can [play it online](https://bogdandumitrascu04.github.io/Guessthefootballer/) without installing anything. To run it locally, serve the folder over HTTP (player data and the cookie banner are loaded with `fetch()`, so opening files directly from disk won't work):
+You can [play it online](https://bogdandumitrascu04.github.io/Guessthefootballer/) without installing anything. To run it locally, serve the folder over HTTP (player data is loaded with `fetch()`, so opening files directly from disk won't work):
 
 ```bash
 git clone https://github.com/BogdanDumitrascu04/Guessthefootballer.git
@@ -98,6 +99,10 @@ Then open <http://localhost:8000> in your browser.
 - **Daily challenge** — the same hidden player for everyone, with streaks
 - **Share result** button (emoji grid, spoiler-free)
 - Per-league statistics and more games on the platform
+
+## Credits
+
+Headline font: [Barlow Condensed](https://github.com/jpt/barlow), SIL Open Font License (`fonts/OFL-LICENSE.txt`).
 
 ## How it was built
 

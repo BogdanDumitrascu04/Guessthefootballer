@@ -45,12 +45,13 @@ Pentru jocul 1:
 - Limita API-Football (100 de cereri pe zi) e **comună cu alt proiect local al lui Bogdan** care folosește aceeași cheie.
 
 ## Structura
-- `index.html` — hub-ul „Bogdy's Games”.
+- `index.html` — prima pagină (hub-ul „Bogdy's Games”); textele vin tot din `i18n.js`, din folderul jocului.
 - `games/guess-the-footballer/` — picker (`index.html`) + jocul (`game.html`, `engine.js`, `i18n.js`, `game.css`).
 - `data/` — JSON-ul vechi (2024-25, 1.186 de jucători, cu `tier` și număr curatoriate) — sursă pentru import, apoi iese din joc.
 - `data/raw/` (în `.gitignore`) — ce descarcă scripturile: loturile football-data.org, setul Transfermarkt (`data/raw/transfermarkt/`).
 - `scripts/` + `tests/` — scripturile de date (Python) și testele lor.
 - `images/` — siglele cluburilor și pozele vechi (14 MB).
+- `fonts/` — fontul titlurilor (Barlow Condensed), găzduit în repo, cu licența lui.
 
 ## Mediu
 - Windows 11, Git, VS Code. Python 3.13 (de folosit un `.venv` propriu în Etapa 1).

@@ -51,6 +51,20 @@
 | Schema din 30 oct | Rămâne locală, fără commit, până când Bogdan o explică | Regula de aur nu se schimbă din cauza termenului. |
 | Comentarii în cod | În engleză, strict esențiale: de ce, nu ce; fără bannere (ca în FlowLogix). Documentele din `docs/` și mesajele afișate de scripturi rămân în română. | Cererea lui Bogdan: același standard în toate proiectele din CV. |
 
+## 5 nov 2026 — prima pagină
+
+Punct de plecare: propunerile lui Gemini, verificate pe pagina reală, plus ideile lui Claude; aprobate de Bogdan.
+
+| Decizie | Ce am ales | De ce |
+|---|---|---|
+| Structură | Titlu mare, un rând real din joc (animat), cardul jocului cu Play și intrare directă pe ligă, carduri separate pentru jocurile viitoare | Cine intră pe link înțelege jocul în câteva secunde și ajunge la el dintr-un click. |
+| Cookie-uri | Bannerul e scos, politica de confidențialitate e rescrisă | Site-ul nu are cookie-uri, tracking sau reclame, doar limba și dificultatea în `localStorage`. Bannerul și vechea politică (din 2024, „Body's Game”) spuneau altceva. La conturi, politica se actualizează prima. |
+| Font | Barlow Condensed pentru titluri, găzduit în repo; textul rămâne pe fonturile sistemului | Fără Google Fonts: IP-urile vizitatorilor nu ajung la un serviciu terț. Are ă, ș, ț (verificat). Licență OFL, inclusă. |
+| Fundal | Linii de teren (SVG), în locul pozei cu stadionul | Mai curat și mult mai ușor; poza avea 322 KB. |
+| Logo | Redus de la 674 KB (1024 px) la 17 KB (128 px) | Se afișează la cel mult 42 px. |
+| Limbi | Prima pagină e tradusă în EN / ES / FR / RO, cu selector cu numele limbilor | Alegerea se păstrează și în joc; steagurile nu reprezintă limbi. |
+| Respins din propunere | Schimbarea culorii textului (contrastul e deja 7–8:1, iar culoarea propusă l-ar fi scăzut), blur pe fundal, transparență pe carduri, noua paletă, „& Trivia” și „jocuri zilnice” în titlu | Fie nu rezolvau o problemă reală, fie promiteau ceva ce nu există. |
+
 ## De decis
 - ~~**Tier-ul**~~ → decis pe 29 oct (mai sus).
 - ~~**SQLite sau direct Supabase**~~ → direct în Supabase, decis pe 29 oct (mai sus).
