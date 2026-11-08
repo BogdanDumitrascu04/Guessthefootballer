@@ -14,7 +14,8 @@ async function initPicker() {
     for (const season of manifest.seasons) {
         const btn = document.createElement('button');
         btn.className = 'option-button';
-        btn.textContent = season;
+        btn.dataset.season = season;
+        btn.dataset.current = season === manifest.defaultSeason;
         btn.classList.toggle('selected', season === selectedSeason);
         btn.addEventListener('click', () => {
             selectedSeason = season;
@@ -38,7 +39,7 @@ async function initPicker() {
         });
         difficultyRow.appendChild(btn);
     }
-    renderDifficultyLabels();
+    renderLabels();
 
     const leagueGrid = document.getElementById('leagueGrid');
     for (const league of manifest.leagues) {
@@ -65,12 +66,16 @@ async function initPicker() {
     menu.appendChild(hub);
 }
 
-function renderDifficultyLabels() {
+function renderLabels() {
+    document.querySelectorAll('#seasonRow .option-button').forEach(btn => {
+        const note = btn.dataset.current === 'true' ? `<small>${t('currentSeason')}</small>` : '';
+        btn.innerHTML = `${btn.dataset.season}${note}`;
+    });
     document.querySelectorAll('#difficultyRow .option-button').forEach(btn => {
         const diff = btn.dataset.difficulty;
         btn.innerHTML = `${t(diff)}<small>${t(diff + 'Desc')}</small>`;
     });
 }
-document.addEventListener('languagechange', renderDifficultyLabels);
+document.addEventListener('languagechange', renderLabels);
 
 document.addEventListener('DOMContentLoaded', initPicker);

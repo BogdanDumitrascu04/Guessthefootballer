@@ -32,6 +32,8 @@
             <h2 data-translate="howToPlay">How to Play</h2>
             <p data-translate="selectLeague">1. Select a league, a season and a difficulty.</p>
             <p data-translate="guessFootballer">2. Guess the footballer based on the clues provided.</p>
+            <p data-translate="legend">Green ✓ = same as the hidden player · ↑ ↓ = the hidden player's age or number is higher / lower</p>
+            <p data-translate="hintRule">Hints: the club unlocks after 3 guesses, the age after 6.</p>
             <p data-translate="enjoyGame">3. Enjoy the game!</p>
         </div>
         <div class="navbar hidden" id="navbar">
@@ -55,14 +57,15 @@
                        autocomplete="off" autocapitalize="off" spellcheck="false">
                 <div class="result-box"></div>
             </div>
-            <p class="legend" data-translate="legend"></p>
+            <div id="hints" class="hint-row"></div>
+            <ul class="legend">
+                <li><span class="legend-chip match" aria-hidden="true">✓</span><span data-translate="legendSame">same</span></li>
+                <li><span class="legend-chip" aria-hidden="true">↑</span><span data-translate="legendHigher">higher</span></li>
+                <li><span class="legend-chip" aria-hidden="true">↓</span><span data-translate="legendLower">lower</span></li>
+            </ul>
 
             <div id="feedback" role="status" aria-live="polite"></div>
             <div id="restartContainer"></div>
-            <div class="hint-area">
-                <button id="hintButton" class="secondary-button" data-translate="showHint">Show Hint</button>
-                <div id="hint"></div>
-            </div>
 
             <div id="playerInfo"></div>
         </div>

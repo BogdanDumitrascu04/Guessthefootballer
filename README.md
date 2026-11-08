@@ -15,7 +15,7 @@ A small platform of browser games built entirely with **vanilla JavaScript, HTML
 3. Each guess adds a row to the grid, so every attempt stays visible:
    - 🟩 **Green ✓** — the attribute (team, position, age, shirt number, nationality) matches the hidden player.
    - **↑ / ↓ arrows** — whether the hidden player's age or shirt number is higher or lower than your guess.
-4. Stuck? The **Show Hint** button progressively reveals the club, then the age.
+4. Stuck? **Hints unlock as you play**: the club after 3 guesses, the age after 6.
 5. Guess the player within 10 attempts to win.
 
 ![Picker](screenshots/picker.jpg)
@@ -50,9 +50,10 @@ Transfermarkt market values. **2024/25** is the original hand-curated season.
 - **Wordle-style attribute grid**: every guess stays on screen, newest first
 - **Three difficulty modes** driven by per-player tiers
 - **Season selection** — the current season (2026/27) or 2024/25; a new season is one script run, zero code changes
-- **Autocomplete search** with player photos and club badges, keyboard navigation, and no need for accents ("odegaard" finds "Ødegaard")
+- **Autocomplete search** with player photos and club badges, keyboard navigation (Enter picks the highlighted name), and no need for accents ("odegaard" finds "Ødegaard")
 - **Responsive layout** for phones and desktops
-- **Progressive hint system** (club → age)
+- **Hints that unlock** after 3 and 6 guesses (club, then age), so the game stays about deduction
+- **Share your result** as a spoiler-free emoji grid (🟩⬜…): the share sheet on phones, the clipboard on desktop
 - **4 languages** — English, Spanish, French and Romanian, switchable live; choice persists between visits
 - **Fully static** — one game engine + JSON data, runs on any static file server
 
@@ -100,7 +101,6 @@ Then open <http://localhost:8765> in your browser. Unlike `python -m http.server
 - **User accounts** with statistics and streaks
 - **Icons mode** — guess legendary players, possibly from their silhouette
 - **Daily challenge** — the same hidden player for everyone, with streaks
-- **Share result** button (emoji grid, spoiler-free)
 - Per-league statistics and more games on the platform
 
 ## Credits

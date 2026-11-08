@@ -2,9 +2,13 @@
 const ROOT = '../../';
 const MAX_ATTEMPTS = 10;
 const MAX_SUGGESTIONS = 30;
-const MAX_HINTS = 2;
 // Tiers the hidden player may come from: 1 star, 2 regular, 3 deep squad.
 const TARGET_TIERS = { easy: [1], medium: [1, 2], hard: [2, 3] };
+// Each hint unlocks after this many guesses, so the game stays a deduction game.
+const HINTS = [
+    { key: 'team', after: 3 },
+    { key: 'age', after: 6 },
+];
 const ATTRIBUTES = [
     { key: 'team' },
     { key: 'position' },
@@ -22,17 +26,17 @@ const difficulty = TARGET_TIERS[params.get('difficulty')] ? params.get('difficul
 
 let league, players, targetPool, targetPlayer;
 let guesses = [];
-let hintStage = 0;
+const revealedHints = new Set();
 let roundOver = false;
 let message = null; // kept as a key, so it can be redrawn when the language changes
 let highlighted = -1;
+let animateLast = false; // only a new guess flips; redrawing for another language must not
 
 const inputBox = document.getElementById('guessInput');
 const resultsBox = document.querySelector('.result-box');
 const feedback = document.getElementById('feedback');
 const playerInfo = document.getElementById('playerInfo');
-const hintButton = document.getElementById('hintButton');
-const hintDiv = document.getElementById('hint');
+const hintsBox = document.getElementById('hints');
 const restartContainer = document.getElementById('restartContainer');
 const attemptCounter = document.getElementById('attemptCounter');
 
@@ -87,14 +91,13 @@ function buildNavbar(manifest) {
 
 function startRound() {
     guesses = [];
-    hintStage = 0;
+    revealedHints.clear();
     roundOver = false;
     message = null;
     targetPlayer = targetPool[Math.floor(Math.random() * targetPool.length)];
     inputBox.disabled = false;
     inputBox.value = '';
     restartContainer.innerHTML = '';
-    hintButton.style.display = '';
     closeSuggestions();
     render();
     focusInput();
@@ -157,6 +160,7 @@ function createTeamLogo(team, className) {
 
 // Autocomplete
 function matchRank(player, input) {
+    if (player.searchName === input) return -1;
     if (player.searchName.startsWith(input)) return 0;
     return ` ${player.searchName}`.includes(` ${input}`) ? 1 : 2; // a surname beats the middle of a word
 }
@@ -190,6 +194,14 @@ function showSuggestions() {
         list.appendChild(li);
     }
     resultsBox.appendChild(list);
+    highlight(0, false); // Enter picks the highlighted name
+}
+
+function highlight(index, scroll = true) {
+    const items = [...resultsBox.querySelectorAll('li')];
+    highlighted = index;
+    items.forEach((li, i) => li.classList.toggle('active', i === index));
+    if (scroll) items[index]?.scrollIntoView({ block: 'nearest' });
 }
 
 inputBox.addEventListener('input', showSuggestions);
@@ -206,13 +218,10 @@ inputBox.addEventListener('keydown', event => {
     if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
         event.preventDefault();
         if (!items.length) return;
-        if (event.key === 'ArrowDown') highlighted = (highlighted + 1) % items.length;
-        else highlighted = highlighted <= 0 ? items.length - 1 : highlighted - 1;
-        items.forEach((li, i) => li.classList.toggle('active', i === highlighted));
-        items[highlighted].scrollIntoView({ block: 'nearest' });
+        if (event.key === 'ArrowDown') highlight((highlighted + 1) % items.length);
+        else highlight(highlighted <= 0 ? items.length - 1 : highlighted - 1);
     } else if (event.key === 'Enter') {
         if (highlighted >= 0) inputBox.value = items[highlighted].dataset.name;
-        else if (items.length === 1) inputBox.value = items[0].dataset.name;
         checkGuess();
     } else if (event.key === 'Escape') {
         closeSuggestions();
@@ -240,6 +249,7 @@ function checkGuess() {
     }
 
     guesses.push(guessedPlayer);
+    animateLast = true;
     inputBox.value = '';
     if (guessedPlayer === targetPlayer) {
         message = { kind: 'success', key: 'congrats' };
@@ -257,12 +267,46 @@ function checkGuess() {
 function endRound() {
     roundOver = true;
     inputBox.disabled = true;
-    hintButton.style.display = 'none';
     const restartButton = document.createElement('button');
+    restartButton.className = 'primary-button';
     restartButton.setAttribute('data-translate', 'restart');
     restartButton.textContent = t('restart');
     restartButton.addEventListener('click', startRound);
-    restartContainer.appendChild(restartButton);
+    const shareButton = document.createElement('button');
+    shareButton.className = 'secondary-button';
+    shareButton.setAttribute('data-translate', 'share');
+    shareButton.textContent = t('share');
+    shareButton.addEventListener('click', () => shareResult(shareButton));
+    restartContainer.append(restartButton, shareButton);
+}
+
+// Colours only, never names, so the result does not spoil the answer.
+function shareText() {
+    const won = guesses[guesses.length - 1] === targetPlayer;
+    const rows = guesses.map(p =>
+        ATTRIBUTES.map(({ key }) => (p[key] != null && p[key] === targetPlayer[key] ? '🟩' : '⬜')).join('')
+    );
+    return [
+        `Guess the Footballer · ${league.info.name} ${league.seasonUsed} · ${t(difficulty)}`,
+        `${won ? guesses.length : 'X'}/${MAX_ATTEMPTS}`,
+        ...rows,
+        location.href.replace(/games\/.*$/, ''),
+    ].join('\n');
+}
+
+async function shareResult(button) {
+    const text = shareText();
+    try {
+        // Phones open their share sheet; desktops copy, because the Windows share sheet has few useful targets.
+        if (navigator.share && matchMedia('(pointer: coarse)').matches) {
+            await navigator.share({ text });
+            return;
+        }
+        await navigator.clipboard.writeText(text);
+        button.textContent = t('copied');
+    } catch (error) {
+        if (error.name !== 'AbortError') window.prompt(t('share'), text);
+    }
 }
 
 // Rendering
@@ -303,26 +347,54 @@ function createReveal() {
 }
 
 function renderHints() {
-    hintDiv.innerHTML = '';
-    if (roundOver || !hintStage) return;
-    const hints = [t('hintTeam', { team: targetPlayer.team }), t('hintAge', { age: targetPlayer.age })];
-    for (const hint of hints.slice(0, hintStage)) {
-        const line = document.createElement('div');
-        line.textContent = hint;
-        hintDiv.appendChild(line);
+    hintsBox.innerHTML = '';
+    if (roundOver) return;
+    for (const { key, after } of HINTS) hintsBox.appendChild(createHint(key, after));
+}
+
+function createHint(key, after) {
+    const chip = document.createElement('button');
+    chip.type = 'button';
+    const label = document.createElement('span');
+    label.className = 'hint-label';
+    const value = document.createElement('span');
+    value.className = 'hint-value';
+    if (revealedHints.has(key)) {
+        chip.className = 'hint-chip revealed';
+        chip.disabled = true;
+        label.textContent = t(key);
+        if (key === 'team') value.appendChild(createTeamLogo(targetPlayer.team, 'hint-logo'));
+        value.append(String(targetPlayer[key]));
+    } else if (guesses.length >= after) {
+        chip.className = 'hint-chip ready';
+        label.textContent = `💡 ${t(key)}`;
+        value.textContent = t('hintShow');
+        chip.addEventListener('click', () => {
+            revealedHints.add(key);
+            renderHints();
+        });
+    } else {
+        chip.className = 'hint-chip locked';
+        chip.disabled = true;
+        label.textContent = `🔒 ${t(key)}`;
+        value.textContent = t('hintAfter', { n: after });
     }
+    chip.append(label, value);
+    return chip;
 }
 
 function renderAttempts() {
+    const fresh = animateLast;
+    animateLast = false;
     playerInfo.innerHTML = '';
     for (let i = guesses.length - 1; i >= 0; i--) {
-        playerInfo.appendChild(createAttempt(guesses[i], i + 1));
+        playerInfo.appendChild(createAttempt(guesses[i], i + 1, fresh && i === guesses.length - 1));
     }
 }
 
-function createAttempt(player, number) {
+function createAttempt(player, number, fresh) {
     const row = document.createElement('div');
-    row.className = 'attempt';
+    row.className = fresh ? 'attempt fresh' : 'attempt';
 
     const who = document.createElement('div');
     who.className = 'attempt-player';
@@ -334,7 +406,11 @@ function createAttempt(player, number) {
     who.append(position, createAvatar(player), name);
     row.appendChild(who);
 
-    for (const attribute of ATTRIBUTES) row.appendChild(createTile(player, attribute));
+    ATTRIBUTES.forEach((attribute, i) => {
+        const tile = createTile(player, attribute);
+        tile.style.setProperty('--i', i);
+        row.appendChild(tile);
+    });
     return row;
 }
 
@@ -367,13 +443,6 @@ function createTile(player, { key, numeric }) {
     return tile;
 }
 
-// Hints: club, then age
-hintButton.addEventListener('click', () => {
-    hintStage++;
-    if (hintStage >= MAX_HINTS) hintButton.style.display = 'none';
-    renderHints();
-});
-
 document.addEventListener('languagechange', () => {
     if (league) render();
 });
@@ -382,7 +451,6 @@ document.addEventListener('DOMContentLoaded', () => {
     loadLeague().catch(error => {
         console.error('Could not load the league data:', error);
         inputBox.disabled = true;
-        hintButton.style.display = 'none';
         message = { kind: 'error', key: 'loadError' };
         renderMessage();
     });

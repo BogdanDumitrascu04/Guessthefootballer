@@ -77,6 +77,23 @@ Punct de plecare: propunerile lui Gemini, verificate pe pagina reală, plus idei
 | Vârsta | Din data nașterii de la football-data.org; la o diferență de peste 3 ani față de API-Football, se ia vârsta de acolo | football-data.org are câteva date greșite (un jucător de 21 de ani apărea cu 48). |
 | Poze și sigle 2026-27 | Încărcate direct de pe serverul API-Football, menționat în politica de confidențialitate | Fără 2.400 de imagini în repo. |
 
+## 8 nov 2026 — feedback Gemini pe joc
+
+| Decizie | Ce am ales | De ce |
+|---|---|---|
+| Făcute | Pagina de selecție centrată, „current” pe sezonul implicit, Enter alege primul nume din listă, animația pentru încercarea nouă, butonul Share | Aprobate de Bogdan. Enter dădea „Jucătorul nu s-a găsit” când erau mai multe sugestii. |
+| Share | Doar culori (🟩/⬜), scorul și linkul; pe telefon fereastra de share, pe desktop copiere | Rezultatul nu dezvăluie jucătorul. |
+| Respinse | „2023-24 (curând)”, galben pentru „aceeași ligă”, poze în căutare și efecte la cursor (există deja) | Nu promitem date pe care nu le avem; toți jucătorii dintr-un joc sunt din aceeași ligă. |
+| Amânate | Galben pentru vârsta la ±2 ani (opțional); statistici și serii, odată cu conturile | Statisticile ar trebui făcute de două ori dacă le punem acum doar în browser. |
+
+## 8 nov 2026 — indiciile și legenda
+
+| Decizie | Ce am ales | De ce |
+|---|---|---|
+| Indicii | Două cipuri pe un rând (Echipă, Vârstă), vizibile de la început: blocate, apoi „Arată” după 3, respectiv 6 încercări, apoi valoarea. Dispar la final. | Combină variantele Gemini 1.1 (se vede ce indicii există) și 1.2 (compact); pe telefon un singur rând. |
+| Când se deblochează | După încercarea 3 și 6; se deschid doar la click | Înainte, indiciul putea fi cerut înainte de prima încercare și jocul devenea căutare, nu deducție. Cine vrea, joacă fără ele. |
+| Legendă | Un rând de trei cipuri (✓ la fel, ↑ mai mare, ↓ mai mic), aceleași simboluri ca în grilă; explicația completă și regula indiciilor în ⓘ | Propoziția lungă ocupa 2 rânduri pe telefon. Săgeți text, nu emoji, ca să arate la fel pe orice telefon. |
+
 ## De decis
 - ~~**Tier-ul**~~ → decis pe 29 oct (mai sus).
 - ~~**SQLite sau direct Supabase**~~ → direct în Supabase, decis pe 29 oct (mai sus).

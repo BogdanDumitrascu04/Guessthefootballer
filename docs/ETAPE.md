@@ -79,6 +79,9 @@ Făcută pe 5 nov, înaintea Supabase, pe datele din JSON (2024-25). Testată lo
 - [x] testul lui Bogdan + push pentru prima pagină (5 nov)
 - [x] sezonul 2026-27 în joc, pe varianta rapidă (8 nov, Claude): loturile reîmprospătate, 101 cereri API-Football, `download_api_football.py` + `build_season.py` + 10 teste noi (42 în total, verzi); testat local, desktop și telefon
 - [x] testul lui Bogdan (8 nov); jocul, datele 2026-27 și `scripts/serve.py` puse pe GitHub
+- [x] după feedbackul Gemini (8 nov): pagina de selecție centrată + eticheta „current”, Enter alege primul nume din listă, căsuțele noii încercări se întorc, butonul Share cu pătrățele (fără nume); testat local, desktop și telefon
+- [x] indiciile și legenda refăcute (8 nov, după propunerile Gemini + Claude, alese de Bogdan): două cipuri blocate, deblocate după 3 și 6 încercări, deschise cu un click; legenda pe un rând de cipuri; regulile complete în ⓘ; testat local, desktop și telefon
+- [ ] testul lui Bogdan + push pentru schimbările de după feedbackul Gemini (cele patru + indiciile)
 - [ ] explicația lui Bogdan pentru `download_api_football.py` și `build_season.py` (regula de aur), apoi commit pentru ele + `tests/test_build_season.py`
 - [ ] la următoarea fereastră de transferuri: `download_squads.py`, apoi `download_api_football.py --squads` (după ce se șterg loturile vechi din `data/raw/api-football/`), apoi `build_season.py`
 - [ ] hub-ul: cifrele luate din bază (după Etapa 2)

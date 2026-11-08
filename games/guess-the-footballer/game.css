@@ -349,10 +349,116 @@ button {
     border-radius: 50%;
 }
 
+/* Hints: locked until enough guesses, then one click shows them */
+.hint-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.hint-row:empty {
+    display: none;
+}
+
+.hint-chip {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    min-height: 54px;
+    padding: 6px 10px;
+    color: var(--text);
+    text-align: center;
+    background: var(--surface);
+    border: 1px dashed var(--border);
+    border-radius: 10px;
+}
+
+.hint-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.03em;
+    color: var(--muted);
+    text-transform: uppercase;
+}
+
+.hint-value {
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.hint-chip:disabled {
+    cursor: default;
+}
+
+.hint-chip.locked .hint-value {
+    font-weight: 400;
+    color: var(--muted);
+}
+
+.hint-chip.ready {
+    border: 1px solid var(--accent);
+}
+
+.hint-chip.ready .hint-value {
+    color: var(--accent);
+}
+
+.hint-chip.ready:hover {
+    background: var(--surface-raised);
+}
+
+.hint-chip.revealed {
+    background: var(--surface-raised);
+    border-style: solid;
+}
+
+.hint-logo {
+    width: 20px;
+    height: 20px;
+    padding: 1px;
+}
+
 .legend {
-    margin: 8px 2px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+    justify-content: center;
+    padding: 0;
+    margin: 10px 0 0;
     font-size: 0.82rem;
     color: var(--muted);
+    list-style: none;
+}
+
+.legend li {
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.legend-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--text);
+    background: var(--surface-raised);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+.legend-chip.match {
+    background: var(--match);
+    border-color: var(--match-border);
 }
 
 /* Game: messages, hints, result */
@@ -405,13 +511,19 @@ button {
 }
 
 #restartContainer {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 14px;
 }
 
-#restartContainer button,
+#restartContainer:empty {
+    display: none;
+}
+
 .primary-button {
     padding: 11px 32px;
-    margin-top: 14px;
     font-weight: 700;
     color: var(--on-accent);
     background: var(--accent);
@@ -419,14 +531,12 @@ button {
     border-radius: 8px;
 }
 
-#restartContainer button:hover,
 .primary-button:hover {
     background: var(--accent-hover);
 }
 
-.hint-area {
-    margin-top: 14px;
-    text-align: center;
+#restartContainer .secondary-button {
+    padding: 11px 24px;
 }
 
 .secondary-button {
@@ -440,15 +550,6 @@ button {
 
 .secondary-button:hover {
     background: var(--surface-raised);
-}
-
-#hint {
-    margin-top: 8px;
-    color: var(--text);
-}
-
-#hint:empty {
-    display: none;
 }
 
 /* Game: one row per guess, newest first */
@@ -539,9 +640,36 @@ button {
     color: #dcfce7;
 }
 
+.attempt.fresh {
+    perspective: 800px;
+}
+
+.attempt.fresh .tile {
+    animation: tile-flip 0.45s ease-out both;
+    animation-delay: calc(var(--i) * 120ms);
+}
+
+@keyframes tile-flip {
+    from {
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .attempt.fresh .tile {
+        animation: none;
+    }
+}
+
 /* Picker */
 .picker-section {
     margin-bottom: 26px;
+    text-align: center;
 }
 
 .picker-section h2 {
@@ -552,12 +680,15 @@ button {
 }
 
 .option-row {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
 }
 
 .option-button {
+    flex: 1 1 200px;
+    max-width: 260px;
     padding: 11px 14px;
     font-weight: 700;
     color: var(--text);
