@@ -1,41 +1,59 @@
 {
-  "seasons": ["2024-25"],
-  "defaultSeason": "2024-25",
+  "seasons": [
+    "2024-25",
+    "2026-27"
+  ],
+  "defaultSeason": "2026-27",
   "leagues": [
     {
       "id": "premier-league",
       "name": "Premier League",
       "logo": "images/leagues/PremierLeague/Logo/Premier League.png.png",
       "background": "images/leagues/PremierLeague/Logo/1.jpg",
-      "seasons": ["2024-25"]
+      "seasons": [
+        "2024-25",
+        "2026-27"
+      ]
     },
     {
       "id": "la-liga",
       "name": "La Liga",
       "logo": "images/leagues/LaLiga/Logo/LaLiga.jpg",
       "background": "images/leagues/LaLiga/Logo/1.jpg",
-      "seasons": ["2024-25"]
+      "seasons": [
+        "2024-25",
+        "2026-27"
+      ]
     },
     {
       "id": "bundesliga",
       "name": "Bundesliga",
       "logo": "images/leagues/Bundesliga/Logo/bundesliga.jpg",
       "background": "images/leagues/Bundesliga/Logo/1.jpg",
-      "seasons": ["2024-25"]
+      "seasons": [
+        "2024-25",
+        "2026-27"
+      ]
     },
     {
       "id": "serie-a",
       "name": "Serie A",
       "logo": "images/leagues/SerieA/Logo/SerieA.png",
       "background": "images/leagues/SerieA/Logo/1.png",
-      "seasons": ["2024-25"]
+      "seasons": [
+        "2024-25",
+        "2026-27"
+      ]
     },
     {
       "id": "ligue-1",
       "name": "Ligue 1",
       "logo": "images/leagues/Ligue1/Logo/Ligue1.png",
       "background": "images/leagues/Ligue1/Logo/1.jpg",
-      "seasons": ["2024-25"]
+      "seasons": [
+        "2024-25",
+        "2026-27"
+      ]
     }
   ]
 }

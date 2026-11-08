@@ -7,7 +7,7 @@ let selectedDifficulty = localStorage.getItem('gtf-difficulty') || 'medium';
 if (!DIFFICULTIES.includes(selectedDifficulty)) selectedDifficulty = 'medium';
 
 async function initPicker() {
-    const manifest = await (await fetch(`${ROOT}data/manifest.json`)).json();
+    const manifest = await (await fetch(`${ROOT}data/manifest.json`, { cache: 'no-cache' })).json();
     selectedSeason = manifest.defaultSeason;
 
     const seasonRow = document.getElementById('seasonRow');

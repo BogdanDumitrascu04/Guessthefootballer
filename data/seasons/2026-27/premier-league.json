@@ -1,0 +1,5489 @@
+{
+ "id": "premier-league",
+ "name": "Premier League",
+ "season": "2026-27",
+ "teams": {
+  "Arsenal": "https://media.api-sports.io/football/teams/42.png",
+  "Aston Villa": "https://media.api-sports.io/football/teams/66.png",
+  "Chelsea": "https://media.api-sports.io/football/teams/49.png",
+  "Everton": "https://media.api-sports.io/football/teams/45.png",
+  "Fulham": "https://media.api-sports.io/football/teams/36.png",
+  "Liverpool": "https://media.api-sports.io/football/teams/40.png",
+  "Manchester City": "https://media.api-sports.io/football/teams/50.png",
+  "Manchester United": "https://media.api-sports.io/football/teams/33.png",
+  "Newcastle": "https://media.api-sports.io/football/teams/34.png",
+  "Sunderland": "https://media.api-sports.io/football/teams/746.png",
+  "Tottenham": "https://media.api-sports.io/football/teams/47.png",
+  "Hull City": "https://media.api-sports.io/football/teams/64.png",
+  "Leeds": "https://media.api-sports.io/football/teams/63.png",
+  "Ipswich": "https://media.api-sports.io/football/teams/57.png",
+  "Nottingham Forest": "https://media.api-sports.io/football/teams/65.png",
+  "Crystal Palace": "https://media.api-sports.io/football/teams/52.png",
+  "Brighton": "https://media.api-sports.io/football/teams/51.png",
+  "Brentford": "https://media.api-sports.io/football/teams/55.png",
+  "Bournemouth": "https://media.api-sports.io/football/teams/35.png",
+  "Coventry": "https://media.api-sports.io/football/teams/1346.png"
+ },
+ "players": [
+  {
+   "name": "Kepa Arrizabalaga",
+   "team": "Arsenal",
+   "position": "Goalkeeper",
+   "age": 32,
+   "number": 13,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/2273.png",
+   "tier": 3
+  },
+  {
+   "name": "David Raya",
+   "team": "Arsenal",
+   "position": "Goalkeeper",
+   "age": 31,
+   "number": 1,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/19465.png",
+   "tier": 2
+  },
+  {
+   "name": "Illan Meslier",
+   "team": "Arsenal",
+   "position": "Goalkeeper",
+   "age": 26,
+   "number": 30,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/20619.png",
+   "tier": 3
+  },
+  {
+   "name": "Ben White",
+   "team": "Arsenal",
+   "position": "Defender",
+   "age": 29,
+   "number": 4,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19959.png",
+   "tier": 2
+  },
+  {
+   "name": "Ezri Konsa",
+   "team": "Arsenal",
+   "position": "Defender",
+   "age": 29,
+   "number": 15,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19354.png",
+   "tier": 2
+  },
+  {
+   "name": "Gabriel Magalhães",
+   "team": "Arsenal",
+   "position": "Defender",
+   "age": 28,
+   "number": 6,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/22224.png",
+   "tier": 1
+  },
+  {
+   "name": "William Saliba",
+   "team": "Arsenal",
+   "position": "Defender",
+   "age": 25,
+   "number": 2,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/22090.png",
+   "tier": 1
+  },
+  {
+   "name": "Jurrien Timber",
+   "team": "Arsenal",
+   "position": "Defender",
+   "age": 25,
+   "number": 12,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/38746.png",
+   "tier": 1
+  },
+  {
+   "name": "Piero Hincapié",
+   "team": "Arsenal",
+   "position": "Defender",
+   "age": 24,
+   "number": 5,
+   "nationality": "Ecuador",
+   "photo": "https://media.api-sports.io/football/players/127817.png",
+   "tier": 2
+  },
+  {
+   "name": "Riccardo Calafiori",
+   "team": "Arsenal",
+   "position": "Defender",
+   "age": 24,
+   "number": 33,
+   "nationality": "Italy",
+   "photo": "https://media.api-sports.io/football/players/157052.png",
+   "tier": 2
+  },
+  {
+   "name": "Cristhian Mosquera",
+   "team": "Arsenal",
+   "position": "Defender",
+   "age": 22,
+   "number": 3,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/333682.png",
+   "tier": 2
+  },
+  {
+   "name": "Bruno Guimarães",
+   "team": "Arsenal",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 39,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/10135.png",
+   "tier": 1
+  },
+  {
+   "name": "Eberechi Eze",
+   "team": "Arsenal",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 10,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19586.png",
+   "tier": 1
+  },
+  {
+   "name": "Martin Ødegaard",
+   "team": "Arsenal",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 8,
+   "nationality": "Norway",
+   "photo": "https://media.api-sports.io/football/players/37127.png",
+   "tier": 1
+  },
+  {
+   "name": "Mikel Merino",
+   "team": "Arsenal",
+   "position": "Midfielder",
+   "age": 30,
+   "number": 23,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47311.png",
+   "tier": 3
+  },
+  {
+   "name": "Declan Rice",
+   "team": "Arsenal",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 41,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/2937.png",
+   "tier": 1
+  },
+  {
+   "name": "Martín Zubimendi",
+   "team": "Arsenal",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 36,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47315.png",
+   "tier": 1
+  },
+  {
+   "name": "Myles Lewis-Skelly",
+   "team": "Arsenal",
+   "position": "Defender",
+   "age": 20,
+   "number": 49,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/313245.png",
+   "tier": 2
+  },
+  {
+   "name": "Kai Havertz",
+   "team": "Arsenal",
+   "position": "Forward",
+   "age": 27,
+   "number": 29,
+   "nationality": "Germany",
+   "photo": "https://media.api-sports.io/football/players/978.png",
+   "tier": 2
+  },
+  {
+   "name": "Viktor Gyökeres",
+   "team": "Arsenal",
+   "position": "Forward",
+   "age": 28,
+   "number": 14,
+   "nationality": "Sweden",
+   "photo": "https://media.api-sports.io/football/players/18979.png",
+   "tier": 1
+  },
+  {
+   "name": "Bukayo Saka",
+   "team": "Arsenal",
+   "position": "Forward",
+   "age": 25,
+   "number": 7,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/1460.png",
+   "tier": 1
+  },
+  {
+   "name": "Christos Tzolis",
+   "team": "Arsenal",
+   "position": "Forward",
+   "age": 24,
+   "number": 17,
+   "nationality": "Greece",
+   "photo": "https://media.api-sports.io/football/players/161800.png",
+   "tier": 2
+  },
+  {
+   "name": "Noni Madueke",
+   "team": "Arsenal",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 20,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/136723.png",
+   "tier": 2
+  },
+  {
+   "name": "Max Dowman",
+   "team": "Arsenal",
+   "position": "Forward",
+   "age": 16,
+   "number": 56,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/442044.png",
+   "tier": 2
+  },
+  {
+   "name": "Maalik Hashi",
+   "team": "Arsenal",
+   "position": "Midfielder",
+   "age": 18,
+   "number": 74,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/567716.png",
+   "tier": 3
+  },
+  {
+   "name": "Marco Bizot",
+   "team": "Aston Villa",
+   "position": "Goalkeeper",
+   "age": 35,
+   "number": 40,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/36878.png",
+   "tier": 3
+  },
+  {
+   "name": "Zion Suzuki",
+   "team": "Aston Villa",
+   "position": "Goalkeeper",
+   "age": 24,
+   "number": 1,
+   "nationality": "Japan",
+   "photo": "https://media.api-sports.io/football/players/199578.png",
+   "tier": 3
+  },
+  {
+   "name": "James Wright",
+   "team": "Aston Villa",
+   "position": "Goalkeeper",
+   "age": 21,
+   "number": 42,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/284390.png",
+   "tier": 3
+  },
+  {
+   "name": "Victor Nilsson-Lindelöf",
+   "team": "Aston Villa",
+   "position": "Defender",
+   "age": 32,
+   "number": 3,
+   "nationality": "Sweden",
+   "photo": "https://media.api-sports.io/football/players/889.png",
+   "tier": 3
+  },
+  {
+   "name": "Aaron Wan-Bissaka",
+   "team": "Aston Villa",
+   "position": "Defender",
+   "age": 28,
+   "number": 29,
+   "nationality": "Congo DR",
+   "photo": "https://media.api-sports.io/football/players/18846.png",
+   "tier": 3
+  },
+  {
+   "name": "Tyrone Mings",
+   "team": "Aston Villa",
+   "position": "Defender",
+   "age": 33,
+   "number": 5,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19179.png",
+   "tier": 3
+  },
+  {
+   "name": "Matty Cash",
+   "team": "Aston Villa",
+   "position": "Defender",
+   "age": 29,
+   "number": 2,
+   "nationality": "Poland",
+   "photo": "https://media.api-sports.io/football/players/19298.png",
+   "tier": 3
+  },
+  {
+   "name": "Pau Torres",
+   "team": "Aston Villa",
+   "position": "Defender",
+   "age": 29,
+   "number": 14,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/46815.png",
+   "tier": 3
+  },
+  {
+   "name": "Taylor Harwood-Bellis",
+   "team": "Aston Villa",
+   "position": "Defender",
+   "age": 24,
+   "number": 4,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/144729.png",
+   "tier": 3
+  },
+  {
+   "name": "Ian Maatsen",
+   "team": "Aston Villa",
+   "position": "Defender",
+   "age": 24,
+   "number": 22,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/138816.png",
+   "tier": 2
+  },
+  {
+   "name": "Matteo Ruggeri",
+   "team": "Aston Villa",
+   "position": "Defender",
+   "age": 24,
+   "number": 13,
+   "nationality": "Italy",
+   "photo": "https://media.api-sports.io/football/players/162012.png",
+   "tier": 2
+  },
+  {
+   "name": "Modou Keba Cisse",
+   "team": "Aston Villa",
+   "position": "Defender",
+   "age": 21,
+   "number": 48,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/478441.png",
+   "tier": 3
+  },
+  {
+   "name": "Leon Goretzka",
+   "team": "Aston Villa",
+   "position": "Midfielder",
+   "age": 31,
+   "number": 27,
+   "nationality": "Germany",
+   "photo": "https://media.api-sports.io/football/players/511.png",
+   "tier": 3
+  },
+  {
+   "name": "Ross Barkley",
+   "team": "Aston Villa",
+   "position": "Midfielder",
+   "age": 32,
+   "number": 6,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/2287.png",
+   "tier": 3
+  },
+  {
+   "name": "Boubacar Kamara",
+   "team": "Aston Villa",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 8,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/1904.png",
+   "tier": 2
+  },
+  {
+   "name": "Emiliano Buendía",
+   "team": "Aston Villa",
+   "position": "Midfielder",
+   "age": 29,
+   "number": 10,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/19071.png",
+   "tier": 3
+  },
+  {
+   "name": "John McGinn",
+   "team": "Aston Villa",
+   "position": "Midfielder",
+   "age": 32,
+   "number": 7,
+   "nationality": "Scotland",
+   "photo": "https://media.api-sports.io/football/players/19191.png",
+   "tier": 3
+  },
+  {
+   "name": "Amadou Onana",
+   "team": "Aston Villa",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 24,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/162714.png",
+   "tier": 2
+  },
+  {
+   "name": "João Gomes",
+   "team": "Aston Villa",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 35,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/195103.png",
+   "tier": 2
+  },
+  {
+   "name": "Lamare Bogarde",
+   "team": "Aston Villa",
+   "position": "Defender",
+   "age": 22,
+   "number": 26,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/284457.png",
+   "tier": 3
+  },
+  {
+   "name": "Johan Manzambi",
+   "team": "Aston Villa",
+   "position": "Midfielder",
+   "age": 21,
+   "number": 44,
+   "nationality": "Switzerland",
+   "photo": "https://media.api-sports.io/football/players/406244.png",
+   "tier": 2
+  },
+  {
+   "name": "Tammy Abraham",
+   "team": "Aston Villa",
+   "position": "Forward",
+   "age": 29,
+   "number": 18,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19194.png",
+   "tier": 3
+  },
+  {
+   "name": "Nicolas Jackson",
+   "team": "Aston Villa",
+   "position": "Forward",
+   "age": 25,
+   "number": 11,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/283058.png",
+   "tier": 2
+  },
+  {
+   "name": "Alejandro Garnacho",
+   "team": "Aston Villa",
+   "position": "Forward",
+   "age": 22,
+   "number": 17,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/284324.png",
+   "tier": 2
+  },
+  {
+   "name": "Alysson",
+   "team": "Aston Villa",
+   "position": "Forward",
+   "age": 20,
+   "number": 47,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/464004.png",
+   "tier": 3
+  },
+  {
+   "name": "Ibrahim M'Baye",
+   "team": "Aston Villa",
+   "position": "Forward",
+   "age": 18,
+   "number": 19,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/446249.png",
+   "tier": 2
+  },
+  {
+   "name": "Brian Madjo",
+   "team": "Aston Villa",
+   "position": "Forward",
+   "age": 17,
+   "number": 39,
+   "nationality": "Luxembourg",
+   "photo": "https://media.api-sports.io/football/players/514519.png",
+   "tier": 3
+  },
+  {
+   "name": "George Hemmings",
+   "team": "Aston Villa",
+   "position": "Forward",
+   "age": 19,
+   "number": 53,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/364566.png",
+   "tier": 3
+  },
+  {
+   "name": "Emiliano Martínez",
+   "team": "Chelsea",
+   "position": "Goalkeeper",
+   "age": 34,
+   "number": 1,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/19599.png",
+   "tier": 3
+  },
+  {
+   "name": "Gabriel Slonina",
+   "team": "Chelsea",
+   "position": "Goalkeeper",
+   "age": 22,
+   "number": 44,
+   "nationality": "USA",
+   "photo": "https://media.api-sports.io/football/players/64167.png",
+   "tier": 3
+  },
+  {
+   "name": "Teddy Sharman-Lowe",
+   "team": "Chelsea",
+   "position": "Goalkeeper",
+   "age": 23,
+   "number": 28,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/180940.png",
+   "tier": 3
+  },
+  {
+   "name": "Mike Penders",
+   "team": "Chelsea",
+   "position": "Goalkeeper",
+   "age": 21,
+   "number": 39,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/340151.png",
+   "tier": 3
+  },
+  {
+   "name": "Wesley Fofana",
+   "team": "Chelsea",
+   "position": "Defender",
+   "age": 25,
+   "number": 3,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/22094.png",
+   "tier": 2
+  },
+  {
+   "name": "Reece James",
+   "team": "Chelsea",
+   "position": "Defender",
+   "age": 26,
+   "number": 24,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19545.png",
+   "tier": 2
+  },
+  {
+   "name": "Maxence Lacroix",
+   "team": "Chelsea",
+   "position": "Defender",
+   "age": 26,
+   "number": 5,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/20995.png",
+   "tier": 2
+  },
+  {
+   "name": "Pep Chavarría",
+   "team": "Chelsea",
+   "position": "Defender",
+   "age": 28,
+   "number": 29,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/181734.png",
+   "tier": 3
+  },
+  {
+   "name": "Malo Gusto",
+   "team": "Chelsea",
+   "position": "Defender",
+   "age": 23,
+   "number": 27,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/161907.png",
+   "tier": 2
+  },
+  {
+   "name": "Levi Colwill",
+   "team": "Chelsea",
+   "position": "Defender",
+   "age": 23,
+   "number": 6,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/152953.png",
+   "tier": 2
+  },
+  {
+   "name": "Jorrel Hato",
+   "team": "Chelsea",
+   "position": "Defender",
+   "age": 20,
+   "number": 21,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/341642.png",
+   "tier": 2
+  },
+  {
+   "name": "Marco Palestra",
+   "team": "Chelsea",
+   "position": "Defender",
+   "age": 21,
+   "number": 2,
+   "nationality": "Italy",
+   "photo": "https://media.api-sports.io/football/players/383018.png",
+   "tier": 2
+  },
+  {
+   "name": "Aaron Anselmino",
+   "team": "Chelsea",
+   "position": "Defender",
+   "age": 21,
+   "number": 30,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/422780.png",
+   "tier": 3
+  },
+  {
+   "name": "Josh Acheampong",
+   "team": "Chelsea",
+   "position": "Defender",
+   "age": 20,
+   "number": null,
+   "nationality": "England",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Jordan Henderson",
+   "team": "Chelsea",
+   "position": "Midfielder",
+   "age": 36,
+   "number": 14,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/292.png",
+   "tier": 3
+  },
+  {
+   "name": "Morgan Rogers",
+   "team": "Chelsea",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 17,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19170.png",
+   "tier": 1
+  },
+  {
+   "name": "Moisés Caicedo",
+   "team": "Chelsea",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 25,
+   "nationality": "Ecuador",
+   "photo": "https://media.api-sports.io/football/players/116117.png",
+   "tier": 1
+  },
+  {
+   "name": "Cole Palmer",
+   "team": "Chelsea",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 10,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/152982.png",
+   "tier": 1
+  },
+  {
+   "name": "Valentin Barco",
+   "team": "Chelsea",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 4,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/319572.png",
+   "tier": 2
+  },
+  {
+   "name": "Romeo Lavia",
+   "team": "Chelsea",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 45,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/282125.png",
+   "tier": 3
+  },
+  {
+   "name": "Mahdi Nicoll-Jazuli",
+   "team": "Chelsea",
+   "position": "Midfielder",
+   "age": 16,
+   "number": 32,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/506618.png",
+   "tier": 3
+  },
+  {
+   "name": "Pedro Neto",
+   "team": "Chelsea",
+   "position": "Forward",
+   "age": 26,
+   "number": 7,
+   "nationality": "Portugal",
+   "photo": "https://media.api-sports.io/football/players/1864.png",
+   "tier": 2
+  },
+  {
+   "name": "Danny Welbeck",
+   "team": "Chelsea",
+   "position": "Forward",
+   "age": 35,
+   "number": 18,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/1469.png",
+   "tier": 3
+  },
+  {
+   "name": "João Pedro",
+   "team": "Chelsea",
+   "position": "Forward",
+   "age": 25,
+   "number": 9,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/10329.png",
+   "tier": 1
+  },
+  {
+   "name": "Emanuel Emegha",
+   "team": "Chelsea",
+   "position": "Forward",
+   "age": 23,
+   "number": 22,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/203762.png",
+   "tier": 3
+  },
+  {
+   "name": "Jamie Bynoe-Gittens",
+   "team": "Chelsea",
+   "position": "Forward",
+   "age": 22,
+   "number": 11,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/286894.png",
+   "tier": 2
+  },
+  {
+   "name": "Geovany Quenda",
+   "team": "Chelsea",
+   "position": "Midfielder",
+   "age": 19,
+   "number": 23,
+   "nationality": "Guinea-Bissau",
+   "photo": "https://media.api-sports.io/football/players/419582.png",
+   "tier": 2
+  },
+  {
+   "name": "Estevao",
+   "team": "Chelsea",
+   "position": "Midfielder",
+   "age": 19,
+   "number": 41,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/425733.png",
+   "tier": 1
+  },
+  {
+   "name": "Jordan Pickford",
+   "team": "Everton",
+   "position": "Goalkeeper",
+   "age": 32,
+   "number": 1,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/2932.png",
+   "tier": 3
+  },
+  {
+   "name": "Thomas King",
+   "team": "Everton",
+   "position": "Goalkeeper",
+   "age": 31,
+   "number": 31,
+   "nationality": "Wales",
+   "photo": "https://media.api-sports.io/football/players/82855.png",
+   "tier": 3
+  },
+  {
+   "name": "Mark Travers",
+   "team": "Everton",
+   "position": "Goalkeeper",
+   "age": 27,
+   "number": 12,
+   "nationality": "Ireland",
+   "photo": "https://media.api-sports.io/football/players/18860.png",
+   "tier": 3
+  },
+  {
+   "name": "James Tarkowski",
+   "team": "Everton",
+   "position": "Defender",
+   "age": 33,
+   "number": 6,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/2936.png",
+   "tier": 3
+  },
+  {
+   "name": "Ainsley Maitland-Niles",
+   "team": "Everton",
+   "position": "Midfielder",
+   "age": 29,
+   "number": 2,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/1456.png",
+   "tier": 3
+  },
+  {
+   "name": "Michael Keane",
+   "team": "Everton",
+   "position": "Defender",
+   "age": 33,
+   "number": 5,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/2934.png",
+   "tier": 3
+  },
+  {
+   "name": "Vitalii Mykolenko",
+   "team": "Everton",
+   "position": "Defender",
+   "age": 27,
+   "number": 16,
+   "nationality": "Ukraine",
+   "photo": "https://media.api-sports.io/football/players/2165.png",
+   "tier": 3
+  },
+  {
+   "name": "Jarrad Branthwaite",
+   "team": "Everton",
+   "position": "Defender",
+   "age": 24,
+   "number": 4,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/17661.png",
+   "tier": 2
+  },
+  {
+   "name": "Jake O'Brien",
+   "team": "Everton",
+   "position": "Defender",
+   "age": 25,
+   "number": 15,
+   "nationality": "Ireland",
+   "photo": "https://media.api-sports.io/football/players/270139.png",
+   "tier": 3
+  },
+  {
+   "name": "Christian Nørgaard",
+   "team": "Everton",
+   "position": "Midfielder",
+   "age": 32,
+   "number": 23,
+   "nationality": "Denmark",
+   "photo": "https://media.api-sports.io/football/players/30407.png",
+   "tier": 3
+  },
+  {
+   "name": "James Garner",
+   "team": "Everton",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 37,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/895.png",
+   "tier": 2
+  },
+  {
+   "name": "Hayden Hackney",
+   "team": "Everton",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 30,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/179685.png",
+   "tier": 3
+  },
+  {
+   "name": "Kiernan Dewsbury Hall",
+   "team": "Everton",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 8,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/148099.png",
+   "tier": 2
+  },
+  {
+   "name": "Carlos Alcaraz",
+   "team": "Everton",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 24,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/195993.png",
+   "tier": 3
+  },
+  {
+   "name": "Merlin Röhl",
+   "team": "Everton",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 34,
+   "nationality": "Germany",
+   "photo": "https://media.api-sports.io/football/players/202854.png",
+   "tier": 3
+  },
+  {
+   "name": "Harrison Armstrong",
+   "team": "Everton",
+   "position": "Midfielder",
+   "age": 19,
+   "number": 45,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/405360.png",
+   "tier": 3
+  },
+  {
+   "name": "Jack Grealish",
+   "team": "Everton",
+   "position": "Midfielder",
+   "age": 31,
+   "number": 10,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19187.png",
+   "tier": 3
+  },
+  {
+   "name": "Brennan Johnson",
+   "team": "Everton",
+   "position": "Forward",
+   "age": 25,
+   "number": 22,
+   "nationality": "Wales",
+   "photo": "https://media.api-sports.io/football/players/129711.png",
+   "tier": 2
+  },
+  {
+   "name": "Thierno Barry",
+   "team": "Everton",
+   "position": "Forward",
+   "age": 26,
+   "number": 11,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/343684.png",
+   "tier": 3
+  },
+  {
+   "name": "Tyler Dibling",
+   "team": "Everton",
+   "position": "Forward",
+   "age": 20,
+   "number": 20,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/304317.png",
+   "tier": 3
+  },
+  {
+   "name": "Briaden Graham",
+   "team": "Everton",
+   "position": "Forward",
+   "age": 19,
+   "number": 58,
+   "nationality": "Northern Ireland",
+   "photo": "https://media.api-sports.io/football/players/413034.png",
+   "tier": 3
+  },
+  {
+   "name": "Tyrique George",
+   "team": "Everton",
+   "position": "Midfielder",
+   "age": 20,
+   "number": 19,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/334037.png",
+   "tier": 3
+  },
+  {
+   "name": "Bernd Leno",
+   "team": "Fulham",
+   "position": "Goalkeeper",
+   "age": 34,
+   "number": 1,
+   "nationality": "Germany",
+   "photo": "https://media.api-sports.io/football/players/1438.png",
+   "tier": 3
+  },
+  {
+   "name": "Benjamin Lecomte",
+   "team": "Fulham",
+   "position": "Goalkeeper",
+   "age": 35,
+   "number": 23,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/21566.png",
+   "tier": 3
+  },
+  {
+   "name": "Alex Borto",
+   "team": "Fulham",
+   "position": "Goalkeeper",
+   "age": 23,
+   "number": null,
+   "nationality": "United States",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Timothy Castagne",
+   "team": "Fulham",
+   "position": "Defender",
+   "age": 30,
+   "number": 21,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/2920.png",
+   "tier": 3
+  },
+  {
+   "name": "Joachim Andersen",
+   "team": "Fulham",
+   "position": "Defender",
+   "age": 30,
+   "number": 5,
+   "nationality": "Denmark",
+   "photo": "https://media.api-sports.io/football/players/2729.png",
+   "tier": 3
+  },
+  {
+   "name": "Antonee Robinson",
+   "team": "Fulham",
+   "position": "Defender",
+   "age": 29,
+   "number": 33,
+   "nationality": "USA",
+   "photo": "https://media.api-sports.io/football/players/19549.png",
+   "tier": 3
+  },
+  {
+   "name": "Ryan Sessegnon",
+   "team": "Fulham",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 30,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19032.png",
+   "tier": 3
+  },
+  {
+   "name": "Kenny Tete",
+   "team": "Fulham",
+   "position": "Defender",
+   "age": 31,
+   "number": 2,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/657.png",
+   "tier": 3
+  },
+  {
+   "name": "Jorge Cuenca",
+   "team": "Fulham",
+   "position": "Defender",
+   "age": 26,
+   "number": 4,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/131.png",
+   "tier": 3
+  },
+  {
+   "name": "David Affengruber",
+   "team": "Fulham",
+   "position": "Defender",
+   "age": 25,
+   "number": 22,
+   "nationality": "Austria",
+   "photo": "https://media.api-sports.io/football/players/126640.png",
+   "tier": 3
+  },
+  {
+   "name": "Calvin Bassey",
+   "team": "Fulham",
+   "position": "Defender",
+   "age": 26,
+   "number": 3,
+   "nationality": "Nigeria",
+   "photo": "https://media.api-sports.io/football/players/152967.png",
+   "tier": 2
+  },
+  {
+   "name": "Alex Iwobi",
+   "team": "Fulham",
+   "position": "Midfielder",
+   "age": 30,
+   "number": 17,
+   "nationality": "Nigeria",
+   "photo": "https://media.api-sports.io/football/players/1455.png",
+   "tier": 3
+  },
+  {
+   "name": "Tom Cairney",
+   "team": "Fulham",
+   "position": "Midfielder",
+   "age": 35,
+   "number": 10,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19025.png",
+   "tier": 3
+  },
+  {
+   "name": "Harrison Reed",
+   "team": "Fulham",
+   "position": "Midfielder",
+   "age": 31,
+   "number": 6,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19480.png",
+   "tier": 3
+  },
+  {
+   "name": "Sander Berge",
+   "team": "Fulham",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 16,
+   "nationality": "Norway",
+   "photo": "https://media.api-sports.io/football/players/1934.png",
+   "tier": 3
+  },
+  {
+   "name": "Emile Smith Rowe",
+   "team": "Fulham",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 32,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/1161.png",
+   "tier": 3
+  },
+  {
+   "name": "Hugo Larsson",
+   "team": "Fulham",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 15,
+   "nationality": "Sweden",
+   "photo": "https://media.api-sports.io/football/players/335094.png",
+   "tier": 2
+  },
+  {
+   "name": "Shea Charles",
+   "team": "Fulham",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 19,
+   "nationality": "Northern Ireland",
+   "photo": "https://media.api-sports.io/football/players/284356.png",
+   "tier": 3
+  },
+  {
+   "name": "Joshua King",
+   "team": "Fulham",
+   "position": "Midfielder",
+   "age": 19,
+   "number": 24,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/389315.png",
+   "tier": 3
+  },
+  {
+   "name": "César Palacios",
+   "team": "Fulham",
+   "position": "Midfielder",
+   "age": 21,
+   "number": 8,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/386306.png",
+   "tier": 3
+  },
+  {
+   "name": "Manuel Angel",
+   "team": "Fulham",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 20,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/313167.png",
+   "tier": 3
+  },
+  {
+   "name": "Rodrigo Muniz",
+   "team": "Fulham",
+   "position": "Forward",
+   "age": 25,
+   "number": 9,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/195106.png",
+   "tier": 3
+  },
+  {
+   "name": "Kevin Santos",
+   "team": "Fulham",
+   "position": "Forward",
+   "age": 23,
+   "number": 11,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/237819.png",
+   "tier": 3
+  },
+  {
+   "name": "Oscar Bobb",
+   "team": "Fulham",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 14,
+   "nationality": "Norway",
+   "photo": "https://media.api-sports.io/football/players/278133.png",
+   "tier": 2
+  },
+  {
+   "name": "Jonah Kusi-Asare",
+   "team": "Fulham",
+   "position": "Forward",
+   "age": 19,
+   "number": 9,
+   "nationality": "Sweden",
+   "photo": "https://media.api-sports.io/football/players/436443.png",
+   "tier": 3
+  },
+  {
+   "name": "Gonzalo García",
+   "team": "Fulham",
+   "position": "Forward",
+   "age": 22,
+   "number": 7,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/336711.png",
+   "tier": 2
+  },
+  {
+   "name": "Alisson Becker",
+   "team": "Liverpool",
+   "position": "Goalkeeper",
+   "age": 34,
+   "number": 1,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/280.png",
+   "tier": 3
+  },
+  {
+   "name": "Freddie Woodman",
+   "team": "Liverpool",
+   "position": "Goalkeeper",
+   "age": 29,
+   "number": 28,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/18889.png",
+   "tier": 3
+  },
+  {
+   "name": "Giorgi Mamardashvili",
+   "team": "Liverpool",
+   "position": "Goalkeeper",
+   "age": 26,
+   "number": 25,
+   "nationality": "Georgia",
+   "photo": "https://media.api-sports.io/football/players/24760.png",
+   "tier": 2
+  },
+  {
+   "name": "Vítězslav Jaroš",
+   "team": "Liverpool",
+   "position": "Goalkeeper",
+   "age": 25,
+   "number": null,
+   "nationality": "Czech Republic",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Harvey Davies",
+   "team": "Liverpool",
+   "position": "Goalkeeper",
+   "age": 23,
+   "number": 1,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/180316.png",
+   "tier": 3
+  },
+  {
+   "name": "Kostas Tsimikas",
+   "team": "Liverpool",
+   "position": "Defender",
+   "age": 30,
+   "number": 21,
+   "nationality": "Greece",
+   "photo": "https://media.api-sports.io/football/players/1600.png",
+   "tier": 3
+  },
+  {
+   "name": "Joe Gomez",
+   "team": "Liverpool",
+   "position": "Defender",
+   "age": 29,
+   "number": 2,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/284.png",
+   "tier": 3
+  },
+  {
+   "name": "Virgil van Dijk",
+   "team": "Liverpool",
+   "position": "Defender",
+   "age": 35,
+   "number": 4,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/290.png",
+   "tier": 3
+  },
+  {
+   "name": "Ronald Araújo",
+   "team": "Liverpool",
+   "position": "Defender",
+   "age": 27,
+   "number": 33,
+   "nationality": "Uruguay",
+   "photo": "https://media.api-sports.io/football/players/101814.png",
+   "tier": 3
+  },
+  {
+   "name": "Jeremie Frimpong",
+   "team": "Liverpool",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 30,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/152654.png",
+   "tier": 2
+  },
+  {
+   "name": "Milos Kerkez",
+   "team": "Liverpool",
+   "position": "Defender",
+   "age": 23,
+   "number": 6,
+   "nationality": "Hungary",
+   "photo": "https://media.api-sports.io/football/players/206254.png",
+   "tier": 2
+  },
+  {
+   "name": "Conor Bradley",
+   "team": "Liverpool",
+   "position": "Defender",
+   "age": 23,
+   "number": null,
+   "nationality": "Northern Ireland",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Giovanni Leoni",
+   "team": "Liverpool",
+   "position": "Defender",
+   "age": 19,
+   "number": null,
+   "nationality": "Italy",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Jeremy Jacquet",
+   "team": "Liverpool",
+   "position": "Defender",
+   "age": 21,
+   "number": 5,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/367636.png",
+   "tier": 2
+  },
+  {
+   "name": "Wataru Endō",
+   "team": "Liverpool",
+   "position": "Midfielder",
+   "age": 33,
+   "number": 3,
+   "nationality": "Japan",
+   "photo": "https://media.api-sports.io/football/players/8500.png",
+   "tier": 3
+  },
+  {
+   "name": "Dominik Szoboszlai",
+   "team": "Liverpool",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 8,
+   "nationality": "Hungary",
+   "photo": "https://media.api-sports.io/football/players/1096.png",
+   "tier": 1
+  },
+  {
+   "name": "Florian Wirtz",
+   "team": "Liverpool",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 7,
+   "nationality": "Germany",
+   "photo": "https://media.api-sports.io/football/players/203224.png",
+   "tier": 1
+  },
+  {
+   "name": "Alexis Mac Allister",
+   "team": "Liverpool",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 10,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/6716.png",
+   "tier": 1
+  },
+  {
+   "name": "Ryan Gravenberch",
+   "team": "Liverpool",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 38,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/542.png",
+   "tier": 1
+  },
+  {
+   "name": "James McConnell",
+   "team": "Liverpool",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 53,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/287109.png",
+   "tier": 3
+  },
+  {
+   "name": "Trey Nyoni",
+   "team": "Liverpool",
+   "position": "Midfielder",
+   "age": 19,
+   "number": 42,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/397997.png",
+   "tier": 3
+  },
+  {
+   "name": "Federico Chiesa",
+   "team": "Liverpool",
+   "position": "Forward",
+   "age": 29,
+   "number": 14,
+   "nationality": "Italy",
+   "photo": "https://media.api-sports.io/football/players/30410.png",
+   "tier": 3
+  },
+  {
+   "name": "Alexander Isak",
+   "team": "Liverpool",
+   "position": "Forward",
+   "age": 27,
+   "number": 9,
+   "nationality": "Sweden",
+   "photo": "https://media.api-sports.io/football/players/2864.png",
+   "tier": 1
+  },
+  {
+   "name": "Cody Gakpo",
+   "team": "Liverpool",
+   "position": "Forward",
+   "age": 27,
+   "number": 18,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/247.png",
+   "tier": 2
+  },
+  {
+   "name": "Hugo Ekitike",
+   "team": "Liverpool",
+   "position": "Forward",
+   "age": 24,
+   "number": null,
+   "nationality": "France",
+   "photo": null,
+   "tier": 1
+  },
+  {
+   "name": "Bradley Barcola",
+   "team": "Liverpool",
+   "position": "Forward",
+   "age": 24,
+   "number": 29,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/161904.png",
+   "tier": 1
+  },
+  {
+   "name": "Lewis Koumas",
+   "team": "Liverpool",
+   "position": "Forward",
+   "age": 21,
+   "number": 67,
+   "nationality": "Wales",
+   "photo": "https://media.api-sports.io/football/players/328107.png",
+   "tier": 3
+  },
+  {
+   "name": "Víctor Muñoz",
+   "team": "Liverpool",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 23,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/338751.png",
+   "tier": 2
+  },
+  {
+   "name": "Rio Ngumoha",
+   "team": "Liverpool",
+   "position": "Midfielder",
+   "age": 18,
+   "number": 73,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/452685.png",
+   "tier": 2
+  },
+  {
+   "name": "Joshua Sonni-Lambie",
+   "team": "Liverpool",
+   "position": "Forward",
+   "age": 18,
+   "number": 10,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/437561.png",
+   "tier": 3
+  },
+  {
+   "name": "Géronimo Rulli",
+   "team": "Manchester City",
+   "position": "Goalkeeper",
+   "age": 34,
+   "number": 28,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/47296.png",
+   "tier": 3
+  },
+  {
+   "name": "Gianluigi Donnarumma",
+   "team": "Manchester City",
+   "position": "Goalkeeper",
+   "age": 27,
+   "number": 1,
+   "nationality": "Italy",
+   "photo": "https://media.api-sports.io/football/players/1622.png",
+   "tier": 2
+  },
+  {
+   "name": "Marcus Bettinelli",
+   "team": "Manchester City",
+   "position": "Goalkeeper",
+   "age": 34,
+   "number": 13,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19012.png",
+   "tier": 3
+  },
+  {
+   "name": "Rayan Aït Nouri",
+   "team": "Manchester City",
+   "position": "Defender",
+   "age": 25,
+   "number": 21,
+   "nationality": "Algeria",
+   "photo": "https://media.api-sports.io/football/players/21138.png",
+   "tier": 2
+  },
+  {
+   "name": "Rúben Dias",
+   "team": "Manchester City",
+   "position": "Defender",
+   "age": 29,
+   "number": 3,
+   "nationality": "Portugal",
+   "photo": "https://media.api-sports.io/football/players/567.png",
+   "tier": 2
+  },
+  {
+   "name": "Matheus Nunes",
+   "team": "Manchester City",
+   "position": "Defender",
+   "age": 28,
+   "number": 27,
+   "nationality": "Portugal",
+   "photo": "https://media.api-sports.io/football/players/41621.png",
+   "tier": 2
+  },
+  {
+   "name": "Marc Guéhi",
+   "team": "Manchester City",
+   "position": "Defender",
+   "age": 26,
+   "number": 6,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/67971.png",
+   "tier": 1
+  },
+  {
+   "name": "Joško Gvardiol",
+   "team": "Manchester City",
+   "position": "Defender",
+   "age": 24,
+   "number": 24,
+   "nationality": "Croatia",
+   "photo": "https://media.api-sports.io/football/players/129033.png",
+   "tier": 1
+  },
+  {
+   "name": "Rico Lewis",
+   "team": "Manchester City",
+   "position": "Defender",
+   "age": 21,
+   "number": 82,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/284230.png",
+   "tier": 2
+  },
+  {
+   "name": "Nico O'Reilly",
+   "team": "Manchester City",
+   "position": "Defender",
+   "age": 21,
+   "number": 33,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/307123.png",
+   "tier": 1
+  },
+  {
+   "name": "Abdukodir Khusanov",
+   "team": "Manchester City",
+   "position": "Defender",
+   "age": 22,
+   "number": 45,
+   "nationality": "Uzbekistan",
+   "photo": "https://media.api-sports.io/football/players/360114.png",
+   "tier": 2
+  },
+  {
+   "name": "Vitor Reis",
+   "team": "Manchester City",
+   "position": "Defender",
+   "age": 20,
+   "number": null,
+   "nationality": "Brazil",
+   "photo": null,
+   "tier": 2
+  },
+  {
+   "name": "Mateo Kovačić",
+   "team": "Manchester City",
+   "position": "Midfielder",
+   "age": 32,
+   "number": 8,
+   "nationality": "Croatia",
+   "photo": "https://media.api-sports.io/football/players/2291.png",
+   "tier": 3
+  },
+  {
+   "name": "Phil Foden",
+   "team": "Manchester City",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 47,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/631.png",
+   "tier": 1
+  },
+  {
+   "name": "Enzo Fernández",
+   "team": "Manchester City",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 17,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/5996.png",
+   "tier": 1
+  },
+  {
+   "name": "Elliot Anderson",
+   "team": "Manchester City",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 5,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/138908.png",
+   "tier": 1
+  },
+  {
+   "name": "Rayan Cherki",
+   "team": "Manchester City",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 10,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/156477.png",
+   "tier": 1
+  },
+  {
+   "name": "Ayyoub Bouaddi",
+   "team": "Manchester City",
+   "position": "Midfielder",
+   "age": 19,
+   "number": 32,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/438688.png",
+   "tier": 2
+  },
+  {
+   "name": "Antoine Semenyo",
+   "team": "Manchester City",
+   "position": "Forward",
+   "age": 26,
+   "number": 42,
+   "nationality": "Ghana",
+   "photo": "https://media.api-sports.io/football/players/19281.png",
+   "tier": 1
+  },
+  {
+   "name": "Erling Haaland",
+   "team": "Manchester City",
+   "position": "Forward",
+   "age": 26,
+   "number": 9,
+   "nationality": "Norway",
+   "photo": "https://media.api-sports.io/football/players/1100.png",
+   "tier": 1
+  },
+  {
+   "name": "Iliman Ndiaye",
+   "team": "Manchester City",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 7,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/18592.png",
+   "tier": 2
+  },
+  {
+   "name": "Jeremy Doku",
+   "team": "Manchester City",
+   "position": "Forward",
+   "age": 24,
+   "number": 11,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/1422.png",
+   "tier": 1
+  },
+  {
+   "name": "Allan",
+   "team": "Manchester City",
+   "position": "Forward",
+   "age": 22,
+   "number": 37,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/425714.png",
+   "tier": 3
+  },
+  {
+   "name": "Ryan McAidoo",
+   "team": "Manchester City",
+   "position": "Forward",
+   "age": 18,
+   "number": 56,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/442048.png",
+   "tier": 3
+  },
+  {
+   "name": "Karl Darlow",
+   "team": "Manchester United",
+   "position": "Goalkeeper",
+   "age": 36,
+   "number": 12,
+   "nationality": "Wales",
+   "photo": "https://media.api-sports.io/football/players/18885.png",
+   "tier": 3
+  },
+  {
+   "name": "Tom Heaton",
+   "team": "Manchester United",
+   "position": "Goalkeeper",
+   "age": 40,
+   "number": 22,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/2931.png",
+   "tier": 3
+  },
+  {
+   "name": "Senne Lammens",
+   "team": "Manchester United",
+   "position": "Goalkeeper",
+   "age": 24,
+   "number": 1,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/162511.png",
+   "tier": 2
+  },
+  {
+   "name": "Dermot Mee",
+   "team": "Manchester United",
+   "position": "Goalkeeper",
+   "age": 23,
+   "number": 45,
+   "nationality": "Northern Ireland",
+   "photo": "https://media.api-sports.io/football/players/284382.png",
+   "tier": 3
+  },
+  {
+   "name": "Harry Maguire",
+   "team": "Manchester United",
+   "position": "Defender",
+   "age": 33,
+   "number": 5,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/2935.png",
+   "tier": 3
+  },
+  {
+   "name": "Matthijs de Ligt",
+   "team": "Manchester United",
+   "position": "Defender",
+   "age": 27,
+   "number": 4,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/532.png",
+   "tier": 2
+  },
+  {
+   "name": "Noussair Mazraoui",
+   "team": "Manchester United",
+   "position": "Defender",
+   "age": 28,
+   "number": 3,
+   "nationality": "Morocco",
+   "photo": "https://media.api-sports.io/football/players/545.png",
+   "tier": 3
+  },
+  {
+   "name": "Luke Shaw",
+   "team": "Manchester United",
+   "position": "Defender",
+   "age": 31,
+   "number": 23,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/891.png",
+   "tier": 3
+  },
+  {
+   "name": "Diogo Dalot",
+   "team": "Manchester United",
+   "position": "Defender",
+   "age": 27,
+   "number": 2,
+   "nationality": "Portugal",
+   "photo": "https://media.api-sports.io/football/players/886.png",
+   "tier": 2
+  },
+  {
+   "name": "Lisandro Martínez",
+   "team": "Manchester United",
+   "position": "Defender",
+   "age": 28,
+   "number": 6,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/2467.png",
+   "tier": 2
+  },
+  {
+   "name": "Leny Yoro",
+   "team": "Manchester United",
+   "position": "Defender",
+   "age": 20,
+   "number": 15,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/342970.png",
+   "tier": 2
+  },
+  {
+   "name": "Harry Amass",
+   "team": "Manchester United",
+   "position": "Defender",
+   "age": 19,
+   "number": 41,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/403064.png",
+   "tier": 3
+  },
+  {
+   "name": "Ayden Heaven",
+   "team": "Manchester United",
+   "position": "Defender",
+   "age": 20,
+   "number": 26,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/402329.png",
+   "tier": 2
+  },
+  {
+   "name": "Bruno Fernandes",
+   "team": "Manchester United",
+   "position": "Midfielder",
+   "age": 32,
+   "number": 8,
+   "nationality": "Portugal",
+   "photo": "https://media.api-sports.io/football/players/1485.png",
+   "tier": 2
+  },
+  {
+   "name": "Youri Tielemans",
+   "team": "Manchester United",
+   "position": "Midfielder",
+   "age": 29,
+   "number": 18,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/2926.png",
+   "tier": 2
+  },
+  {
+   "name": "Mason Mount",
+   "team": "Manchester United",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 7,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19220.png",
+   "tier": 3
+  },
+  {
+   "name": "Manuel Ugarte",
+   "team": "Manchester United",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 25,
+   "nationality": "Uruguay",
+   "photo": "https://media.api-sports.io/football/players/51494.png",
+   "tier": 3
+  },
+  {
+   "name": "Andrey Santos",
+   "team": "Manchester United",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 17,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/305834.png",
+   "tier": 2
+  },
+  {
+   "name": "Carlos Baleba",
+   "team": "Manchester United",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 20,
+   "nationality": "Cameroon",
+   "photo": "https://media.api-sports.io/football/players/356041.png",
+   "tier": 2
+  },
+  {
+   "name": "Kobbie Mainoo",
+   "team": "Manchester United",
+   "position": "Midfielder",
+   "age": 21,
+   "number": 37,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/284322.png",
+   "tier": 1
+  },
+  {
+   "name": "Tyler Fletcher",
+   "team": "Manchester United",
+   "position": "Midfielder",
+   "age": 19,
+   "number": 39,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/557460.png",
+   "tier": 3
+  },
+  {
+   "name": "Marcus Rashford",
+   "team": "Manchester United",
+   "position": "Forward",
+   "age": 29,
+   "number": 9,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/909.png",
+   "tier": 2
+  },
+  {
+   "name": "Bryan Mbeumo",
+   "team": "Manchester United",
+   "position": "Forward",
+   "age": 27,
+   "number": 19,
+   "nationality": "Cameroon",
+   "photo": "https://media.api-sports.io/football/players/20589.png",
+   "tier": 1
+  },
+  {
+   "name": "Matheus Cunha",
+   "team": "Manchester United",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 10,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/1165.png",
+   "tier": 1
+  },
+  {
+   "name": "Joshua Zirkzee",
+   "team": "Manchester United",
+   "position": "Forward",
+   "age": 25,
+   "number": 11,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/70100.png",
+   "tier": 3
+  },
+  {
+   "name": "Benjamin Šeško",
+   "team": "Manchester United",
+   "position": "Forward",
+   "age": 23,
+   "number": 30,
+   "nationality": "Slovenia",
+   "photo": "https://media.api-sports.io/football/players/115589.png",
+   "tier": 1
+  },
+  {
+   "name": "Amad Diallo",
+   "team": "Manchester United",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 16,
+   "nationality": "Ivory Coast",
+   "photo": "https://media.api-sports.io/football/players/157997.png",
+   "tier": 2
+  },
+  {
+   "name": "Patrick Dorgu",
+   "team": "Manchester United",
+   "position": "Defender",
+   "age": 22,
+   "number": 13,
+   "nationality": "Denmark",
+   "photo": "https://media.api-sports.io/football/players/382452.png",
+   "tier": 2
+  },
+  {
+   "name": "Shea Lacey",
+   "team": "Manchester United",
+   "position": "Forward",
+   "age": 19,
+   "number": 31,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/557462.png",
+   "tier": 3
+  },
+  {
+   "name": "Daniel Armer",
+   "team": "Manchester United",
+   "position": "Defender",
+   "age": 19,
+   "number": 57,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/407026.png",
+   "tier": 3
+  },
+  {
+   "name": "Nick Pope",
+   "team": "Newcastle",
+   "position": "Goalkeeper",
+   "age": 34,
+   "number": 1,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/18911.png",
+   "tier": 3
+  },
+  {
+   "name": "Mark Gillespie",
+   "team": "Newcastle",
+   "position": "Goalkeeper",
+   "age": 34,
+   "number": 29,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/44912.png",
+   "tier": 3
+  },
+  {
+   "name": "Lukáš Horníček",
+   "team": "Newcastle",
+   "position": "Goalkeeper",
+   "age": 24,
+   "number": 21,
+   "nationality": "Czech Republic",
+   "photo": "https://media.api-sports.io/football/players/269349.png",
+   "tier": 3
+  },
+  {
+   "name": "Ewen Jaouen",
+   "team": "Newcastle",
+   "position": "Goalkeeper",
+   "age": 20,
+   "number": 24,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/329640.png",
+   "tier": 3
+  },
+  {
+   "name": "Fabian Schär",
+   "team": "Newcastle",
+   "position": "Defender",
+   "age": 34,
+   "number": 5,
+   "nationality": "Switzerland",
+   "photo": "https://media.api-sports.io/football/players/2806.png",
+   "tier": 3
+  },
+  {
+   "name": "Dan Burn",
+   "team": "Newcastle",
+   "position": "Defender",
+   "age": 34,
+   "number": 33,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/18961.png",
+   "tier": 3
+  },
+  {
+   "name": "Sven Botman",
+   "team": "Newcastle",
+   "position": "Defender",
+   "age": 26,
+   "number": 4,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/38734.png",
+   "tier": 2
+  },
+  {
+   "name": "Amar Dedić",
+   "team": "Newcastle",
+   "position": "Defender",
+   "age": 24,
+   "number": 37,
+   "nationality": "Austria",
+   "photo": "https://media.api-sports.io/football/players/7318.png",
+   "tier": 3
+  },
+  {
+   "name": "Malick Thiaw",
+   "team": "Newcastle",
+   "position": "Defender",
+   "age": 25,
+   "number": 12,
+   "nationality": "Germany",
+   "photo": "https://media.api-sports.io/football/players/163189.png",
+   "tier": 2
+  },
+  {
+   "name": "Valentino Livramento",
+   "team": "Newcastle",
+   "position": "Defender",
+   "age": 23,
+   "number": null,
+   "nationality": "England",
+   "photo": null,
+   "tier": 2
+  },
+  {
+   "name": "Lewis Hall",
+   "team": "Newcastle",
+   "position": "Defender",
+   "age": 22,
+   "number": 3,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/284492.png",
+   "tier": 2
+  },
+  {
+   "name": "Joe Willock",
+   "team": "Newcastle",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 28,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/1463.png",
+   "tier": 3
+  },
+  {
+   "name": "Joelinton",
+   "team": "Newcastle",
+   "position": "Midfielder",
+   "age": 30,
+   "number": 7,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/723.png",
+   "tier": 3
+  },
+  {
+   "name": "Jacob Ramsey",
+   "team": "Newcastle",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 41,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19192.png",
+   "tier": 2
+  },
+  {
+   "name": "Nico Gonzalez",
+   "team": "Newcastle",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 6,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/161933.png",
+   "tier": 2
+  },
+  {
+   "name": "Lewis Miley",
+   "team": "Newcastle",
+   "position": "Midfielder",
+   "age": 20,
+   "number": 67,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/328105.png",
+   "tier": 3
+  },
+  {
+   "name": "Sean Steur",
+   "team": "Newcastle",
+   "position": "Midfielder",
+   "age": 18,
+   "number": 14,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/469321.png",
+   "tier": 3
+  },
+  {
+   "name": "Aladji Bamba",
+   "team": "Newcastle",
+   "position": "Midfielder",
+   "age": 20,
+   "number": 8,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/453792.png",
+   "tier": 3
+  },
+  {
+   "name": "Yoane Wissa",
+   "team": "Newcastle",
+   "position": "Forward",
+   "age": 30,
+   "number": 9,
+   "nationality": "Congo DR",
+   "photo": "https://media.api-sports.io/football/players/20649.png",
+   "tier": 3
+  },
+  {
+   "name": "Jacob Murphy",
+   "team": "Newcastle",
+   "position": "Midfielder",
+   "age": 31,
+   "number": 23,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19163.png",
+   "tier": 3
+  },
+  {
+   "name": "Harvey Barnes",
+   "team": "Newcastle",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 11,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/18778.png",
+   "tier": 2
+  },
+  {
+   "name": "Anthony Elanga",
+   "team": "Newcastle",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 19,
+   "nationality": "Sweden",
+   "photo": "https://media.api-sports.io/football/players/153430.png",
+   "tier": 2
+  },
+  {
+   "name": "William Osula",
+   "team": "Newcastle",
+   "position": "Forward",
+   "age": 23,
+   "number": 10,
+   "nationality": "Denmark",
+   "photo": "https://media.api-sports.io/football/players/315237.png",
+   "tier": 2
+  },
+  {
+   "name": "Matias Fernandez-Pardo",
+   "team": "Newcastle",
+   "position": "Forward",
+   "age": 21,
+   "number": 20,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/340077.png",
+   "tier": 2
+  },
+  {
+   "name": "Bazoumana Touré",
+   "team": "Newcastle",
+   "position": "Midfielder",
+   "age": 20,
+   "number": 17,
+   "nationality": "Ivory Coast",
+   "photo": "https://media.api-sports.io/football/players/387643.png",
+   "tier": 2
+  },
+  {
+   "name": "Simon Moore",
+   "team": "Sunderland",
+   "position": "Goalkeeper",
+   "age": 36,
+   "number": 21,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19089.png",
+   "tier": 3
+  },
+  {
+   "name": "Robin Roefs",
+   "team": "Sunderland",
+   "position": "Goalkeeper",
+   "age": 23,
+   "number": 22,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/194536.png",
+   "tier": 2
+  },
+  {
+   "name": "Melker Ellborg",
+   "team": "Sunderland",
+   "position": "Goalkeeper",
+   "age": 23,
+   "number": 31,
+   "nationality": "Sweden",
+   "photo": "https://media.api-sports.io/football/players/278454.png",
+   "tier": 3
+  },
+  {
+   "name": "Thomas Meunier",
+   "team": "Sunderland",
+   "position": "Defender",
+   "age": 35,
+   "number": 12,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/264.png",
+   "tier": 3
+  },
+  {
+   "name": "Luke O'Nien",
+   "team": "Sunderland",
+   "position": "Midfielder",
+   "age": 31,
+   "number": 13,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19911.png",
+   "tier": 3
+  },
+  {
+   "name": "Kevin Danso",
+   "team": "Sunderland",
+   "position": "Defender",
+   "age": 28,
+   "number": 4,
+   "nationality": "Austria",
+   "photo": "https://media.api-sports.io/football/players/25287.png",
+   "tier": 3
+  },
+  {
+   "name": "Nordi Mukiele",
+   "team": "Sunderland",
+   "position": "Defender",
+   "age": 29,
+   "number": 20,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/1146.png",
+   "tier": 3
+  },
+  {
+   "name": "Reinildo",
+   "team": "Sunderland",
+   "position": "Defender",
+   "age": 32,
+   "number": 17,
+   "nationality": "Mozambique",
+   "photo": "https://media.api-sports.io/football/players/22225.png",
+   "tier": 3
+  },
+  {
+   "name": "Omar Alderete",
+   "team": "Sunderland",
+   "position": "Defender",
+   "age": 29,
+   "number": 15,
+   "nationality": "Paraguay",
+   "photo": "https://media.api-sports.io/football/players/6168.png",
+   "tier": 3
+  },
+  {
+   "name": "Trai Hume",
+   "team": "Sunderland",
+   "position": "Defender",
+   "age": 24,
+   "number": 32,
+   "nationality": "Northern Ireland",
+   "photo": "https://media.api-sports.io/football/players/119121.png",
+   "tier": 3
+  },
+  {
+   "name": "Daniel Ballard",
+   "team": "Sunderland",
+   "position": "Defender",
+   "age": 27,
+   "number": 5,
+   "nationality": "Northern Ireland",
+   "photo": "https://media.api-sports.io/football/players/55904.png",
+   "tier": 3
+  },
+  {
+   "name": "Aji Alese",
+   "team": "Sunderland",
+   "position": "Defender",
+   "age": 25,
+   "number": 5,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/141133.png",
+   "tier": 3
+  },
+  {
+   "name": "Dayann Methalie",
+   "team": "Sunderland",
+   "position": "Defender",
+   "age": 20,
+   "number": 6,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/452697.png",
+   "tier": 3
+  },
+  {
+   "name": "Granit Xhaka",
+   "team": "Sunderland",
+   "position": "Midfielder",
+   "age": 34,
+   "number": 34,
+   "nationality": "Switzerland",
+   "photo": "https://media.api-sports.io/football/players/1464.png",
+   "tier": 3
+  },
+  {
+   "name": "Alan Browne",
+   "team": "Sunderland",
+   "position": "Defender",
+   "age": 31,
+   "number": 8,
+   "nationality": "Ireland",
+   "photo": "https://media.api-sports.io/football/players/19446.png",
+   "tier": 3
+  },
+  {
+   "name": "Enzo Le Fée",
+   "team": "Sunderland",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 28,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/20638.png",
+   "tier": 2
+  },
+  {
+   "name": "Habib Diarra",
+   "team": "Sunderland",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 19,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/327631.png",
+   "tier": 2
+  },
+  {
+   "name": "Noah Sadiki",
+   "team": "Sunderland",
+   "position": "Midfielder",
+   "age": 21,
+   "number": 27,
+   "nationality": "Congo DR",
+   "photo": "https://media.api-sports.io/football/players/365331.png",
+   "tier": 2
+  },
+  {
+   "name": "Chris Rigg",
+   "team": "Sunderland",
+   "position": "Midfielder",
+   "age": 19,
+   "number": 11,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/339201.png",
+   "tier": 3
+  },
+  {
+   "name": "Jules Ahoka",
+   "team": "Sunderland",
+   "position": "Midfielder",
+   "age": 20,
+   "number": 29,
+   "nationality": "DR Congo",
+   "photo": "https://media.api-sports.io/football/players/662488.png",
+   "tier": 3
+  },
+  {
+   "name": "Wilson Isidor",
+   "team": "Sunderland",
+   "position": "Forward",
+   "age": 26,
+   "number": 18,
+   "nationality": "Haiti",
+   "photo": "https://media.api-sports.io/football/players/84087.png",
+   "tier": 3
+  },
+  {
+   "name": "Brian Brobbey",
+   "team": "Sunderland",
+   "position": "Forward",
+   "age": 24,
+   "number": 9,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/38750.png",
+   "tier": 2
+  },
+  {
+   "name": "Abdoullah Ba",
+   "team": "Sunderland",
+   "position": "Forward",
+   "age": 23,
+   "number": null,
+   "nationality": "France",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Romaine Mundle",
+   "team": "Sunderland",
+   "position": "Forward",
+   "age": 23,
+   "number": 14,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/284414.png",
+   "tier": 3
+  },
+  {
+   "name": "Malick Fofana",
+   "team": "Sunderland",
+   "position": "Midfielder",
+   "age": 21,
+   "number": 39,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/361348.png",
+   "tier": 2
+  },
+  {
+   "name": "Nilson Angulo",
+   "team": "Sunderland",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 10,
+   "nationality": "Ecuador",
+   "photo": "https://media.api-sports.io/football/players/311543.png",
+   "tier": 3
+  },
+  {
+   "name": "Chemsdine Talbi",
+   "team": "Sunderland",
+   "position": "Forward",
+   "age": 21,
+   "number": 7,
+   "nationality": "Morocco",
+   "photo": "https://media.api-sports.io/football/players/336659.png",
+   "tier": 3
+  },
+  {
+   "name": "Jocelin Bi",
+   "team": "Sunderland",
+   "position": "Forward",
+   "age": 21,
+   "number": 37,
+   "nationality": "Ivory Coast",
+   "photo": "https://media.api-sports.io/football/players/492528.png",
+   "tier": 3
+  },
+  {
+   "name": "Martin Dúbravka",
+   "team": "Tottenham",
+   "position": "Goalkeeper",
+   "age": 37,
+   "number": 39,
+   "nationality": "Slovakia",
+   "photo": "https://media.api-sports.io/football/players/18886.png",
+   "tier": 3
+  },
+  {
+   "name": "Brandon Austin",
+   "team": "Tottenham",
+   "position": "Goalkeeper",
+   "age": 27,
+   "number": 40,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/156428.png",
+   "tier": 3
+  },
+  {
+   "name": "Antonín Kinský",
+   "team": "Tottenham",
+   "position": "Goalkeeper",
+   "age": 23,
+   "number": 31,
+   "nationality": "Czech Republic",
+   "photo": "https://media.api-sports.io/football/players/265826.png",
+   "tier": 3
+  },
+  {
+   "name": "Andrew Robertson",
+   "team": "Tottenham",
+   "position": "Defender",
+   "age": 32,
+   "number": 3,
+   "nationality": "Scotland",
+   "photo": "https://media.api-sports.io/football/players/289.png",
+   "tier": 3
+  },
+  {
+   "name": "Tosin Adarabioyo",
+   "team": "Tottenham",
+   "position": "Defender",
+   "age": 29,
+   "number": 4,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19145.png",
+   "tier": 3
+  },
+  {
+   "name": "Ben Davies",
+   "team": "Tottenham",
+   "position": "Defender",
+   "age": 33,
+   "number": 33,
+   "nationality": "Wales",
+   "photo": "https://media.api-sports.io/football/players/164.png",
+   "tier": 3
+  },
+  {
+   "name": "Marcos Senesi",
+   "team": "Tottenham",
+   "position": "Defender",
+   "age": 29,
+   "number": 5,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/6610.png",
+   "tier": 3
+  },
+  {
+   "name": "Pedro Porro",
+   "team": "Tottenham",
+   "position": "Defender",
+   "age": 27,
+   "number": 23,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47519.png",
+   "tier": 2
+  },
+  {
+   "name": "Jan Paul van Hecke",
+   "team": "Tottenham",
+   "position": "Defender",
+   "age": 26,
+   "number": 6,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/38695.png",
+   "tier": 2
+  },
+  {
+   "name": "Mickey van de Ven",
+   "team": "Tottenham",
+   "position": "Defender",
+   "age": 25,
+   "number": 37,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/152849.png",
+   "tier": 2
+  },
+  {
+   "name": "Destiny Udogie",
+   "team": "Tottenham",
+   "position": "Defender",
+   "age": 23,
+   "number": 13,
+   "nationality": "Italy",
+   "photo": "https://media.api-sports.io/football/players/204039.png",
+   "tier": 2
+  },
+  {
+   "name": "Archie Gray",
+   "team": "Tottenham",
+   "position": "Defender",
+   "age": 20,
+   "number": 14,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/328089.png",
+   "tier": 2
+  },
+  {
+   "name": "Dejan Kulusevski",
+   "team": "Tottenham",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 21,
+   "nationality": "Sweden",
+   "photo": "https://media.api-sports.io/football/players/30435.png",
+   "tier": 3
+  },
+  {
+   "name": "Rodrigo Bentancur",
+   "team": "Tottenham",
+   "position": "Midfielder",
+   "age": 29,
+   "number": 30,
+   "nationality": "Uruguay",
+   "photo": "https://media.api-sports.io/football/players/863.png",
+   "tier": 3
+  },
+  {
+   "name": "Sandro Tonali",
+   "team": "Tottenham",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 16,
+   "nationality": "Italy",
+   "photo": "https://media.api-sports.io/football/players/31146.png",
+   "tier": 1
+  },
+  {
+   "name": "James Maddison",
+   "team": "Tottenham",
+   "position": "Midfielder",
+   "age": 29,
+   "number": 10,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/18784.png",
+   "tier": 3
+  },
+  {
+   "name": "Conor Gallagher",
+   "team": "Tottenham",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 8,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/67972.png",
+   "tier": 2
+  },
+  {
+   "name": "Xavi Simons",
+   "team": "Tottenham",
+   "position": "Midfielder",
+   "age": 23,
+   "number": null,
+   "nationality": "Netherlands",
+   "photo": null,
+   "tier": 2
+  },
+  {
+   "name": "Mateus Fernandes",
+   "team": "Tottenham",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 18,
+   "nationality": "Portugal",
+   "photo": "https://media.api-sports.io/football/players/336585.png",
+   "tier": 2
+  },
+  {
+   "name": "Lucas Bergvall",
+   "team": "Tottenham",
+   "position": "Midfielder",
+   "age": 20,
+   "number": 15,
+   "nationality": "Sweden",
+   "photo": "https://media.api-sports.io/football/players/347316.png",
+   "tier": 2
+  },
+  {
+   "name": "Dominic Solanke",
+   "team": "Tottenham",
+   "position": "Forward",
+   "age": 29,
+   "number": 19,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/18883.png",
+   "tier": 2
+  },
+  {
+   "name": "Richarlison",
+   "team": "Tottenham",
+   "position": "Forward",
+   "age": 29,
+   "number": 9,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/2413.png",
+   "tier": 3
+  },
+  {
+   "name": "Omar Marmoush",
+   "team": "Tottenham",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 22,
+   "nationality": "Egypt",
+   "photo": "https://media.api-sports.io/football/players/81573.png",
+   "tier": 2
+  },
+  {
+   "name": "Mohammed Kudus",
+   "team": "Tottenham",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 20,
+   "nationality": "Ghana",
+   "photo": "https://media.api-sports.io/football/players/15911.png",
+   "tier": 2
+  },
+  {
+   "name": "Mykhailo Mudryk",
+   "team": "Tottenham",
+   "position": "Forward",
+   "age": 25,
+   "number": 27,
+   "nationality": "Ukraine",
+   "photo": "https://media.api-sports.io/football/players/63577.png",
+   "tier": 3
+  },
+  {
+   "name": "Sávio",
+   "team": "Tottenham",
+   "position": "Forward",
+   "age": 22,
+   "number": 17,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/266657.png",
+   "tier": 3
+  },
+  {
+   "name": "Mathys Tel",
+   "team": "Tottenham",
+   "position": "Midfielder",
+   "age": 21,
+   "number": 11,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/270510.png",
+   "tier": 3
+  },
+  {
+   "name": "Wilson Odobert",
+   "team": "Tottenham",
+   "position": "Forward",
+   "age": 21,
+   "number": null,
+   "nationality": "France",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Jack Butland",
+   "team": "Hull City",
+   "position": "Goalkeeper",
+   "age": 33,
+   "number": 1,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/2930.png",
+   "tier": 3
+  },
+  {
+   "name": "Dillon Phillips",
+   "team": "Hull City",
+   "position": "Goalkeeper",
+   "age": 31,
+   "number": 12,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19811.png",
+   "tier": 3
+  },
+  {
+   "name": "Konstantinos Tzolakis",
+   "team": "Hull City",
+   "position": "Goalkeeper",
+   "age": 24,
+   "number": 19,
+   "nationality": "Greece",
+   "photo": "https://media.api-sports.io/football/players/1591.png",
+   "tier": 3
+  },
+  {
+   "name": "Matt Targett",
+   "team": "Hull City",
+   "position": "Defender",
+   "age": 31,
+   "number": 23,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/18941.png",
+   "tier": 3
+  },
+  {
+   "name": "Paddy McNair",
+   "team": "Hull City",
+   "position": "Defender",
+   "age": 31,
+   "number": 17,
+   "nationality": "Northern Ireland",
+   "photo": "https://media.api-sports.io/football/players/19242.png",
+   "tier": 3
+  },
+  {
+   "name": "John Egan",
+   "team": "Hull City",
+   "position": "Defender",
+   "age": 34,
+   "number": 15,
+   "nationality": "Ireland",
+   "photo": "https://media.api-sports.io/football/players/19093.png",
+   "tier": 3
+  },
+  {
+   "name": "Lewie Coyle",
+   "team": "Hull City",
+   "position": "Defender",
+   "age": 31,
+   "number": 2,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/20073.png",
+   "tier": 3
+  },
+  {
+   "name": "Semi Ajayi",
+   "team": "Hull City",
+   "position": "Defender",
+   "age": 32,
+   "number": 6,
+   "nationality": "Nigeria",
+   "photo": "https://media.api-sports.io/football/players/2769.png",
+   "tier": 3
+  },
+  {
+   "name": "Ryan John Giles",
+   "team": "Hull City",
+   "position": "Defender",
+   "age": 26,
+   "number": 3,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/18747.png",
+   "tier": 3
+  },
+  {
+   "name": "Brooke Norton-Cuffy",
+   "team": "Hull City",
+   "position": "Defender",
+   "age": 22,
+   "number": 18,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/284570.png",
+   "tier": 3
+  },
+  {
+   "name": "Charlie Hughes",
+   "team": "Hull City",
+   "position": "Defender",
+   "age": 23,
+   "number": 4,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/331551.png",
+   "tier": 3
+  },
+  {
+   "name": "Nobel Mendy",
+   "team": "Hull City",
+   "position": "Defender",
+   "age": 22,
+   "number": 32,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/358431.png",
+   "tier": 3
+  },
+  {
+   "name": "Lucas Herrington",
+   "team": "Hull City",
+   "position": "Defender",
+   "age": 19,
+   "number": 22,
+   "nationality": "Australia",
+   "photo": "https://media.api-sports.io/football/players/426480.png",
+   "tier": 3
+  },
+  {
+   "name": "Regan Slater",
+   "team": "Hull City",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 27,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/17670.png",
+   "tier": 3
+  },
+  {
+   "name": "Kieran Dowell",
+   "team": "Hull City",
+   "position": "Midfielder",
+   "age": 29,
+   "number": 26,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19100.png",
+   "tier": 3
+  },
+  {
+   "name": "Hidemasa Morita",
+   "team": "Hull City",
+   "position": "Midfielder",
+   "age": 31,
+   "number": 5,
+   "nationality": "Japan",
+   "photo": "https://media.api-sports.io/football/players/32960.png",
+   "tier": 3
+  },
+  {
+   "name": "Eliot Matazo",
+   "team": "Hull City",
+   "position": "Midfielder",
+   "age": 24,
+   "number": null,
+   "nationality": "Belgium",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Tim Iroegbunam",
+   "team": "Hull City",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 42,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/284500.png",
+   "tier": 3
+  },
+  {
+   "name": "Lucas Gourna-Douath",
+   "team": "Hull City",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 29,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/179843.png",
+   "tier": 3
+  },
+  {
+   "name": "Darko Gyabi",
+   "team": "Hull City",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 24,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/282124.png",
+   "tier": 3
+  },
+  {
+   "name": "Jens Hjertö-Dahl",
+   "team": "Hull City",
+   "position": "Midfielder",
+   "age": 21,
+   "number": 14,
+   "nationality": "Norway",
+   "photo": "https://media.api-sports.io/football/players/396407.png",
+   "tier": 3
+  },
+  {
+   "name": "Óscar Zambrano",
+   "team": "Hull City",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 20,
+   "nationality": "Ecuador",
+   "photo": "https://media.api-sports.io/football/players/338046.png",
+   "tier": 3
+  },
+  {
+   "name": "Christos Mouzakitis",
+   "team": "Hull City",
+   "position": "Midfielder",
+   "age": 19,
+   "number": 36,
+   "nationality": "Greece",
+   "photo": "https://media.api-sports.io/football/players/392514.png",
+   "tier": 3
+  },
+  {
+   "name": "Oliver McBurnie",
+   "team": "Hull City",
+   "position": "Forward",
+   "age": 30,
+   "number": 9,
+   "nationality": "Scotland",
+   "photo": "https://media.api-sports.io/football/players/19337.png",
+   "tier": 3
+  },
+  {
+   "name": "Sorba Thomas",
+   "team": "Hull City",
+   "position": "Forward",
+   "age": 27,
+   "number": 7,
+   "nationality": "Wales",
+   "photo": "https://media.api-sports.io/football/players/18599.png",
+   "tier": 3
+  },
+  {
+   "name": "Abdülkadir Ömür",
+   "team": "Hull City",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 33,
+   "nationality": "Turkey",
+   "photo": "https://media.api-sports.io/football/players/49883.png",
+   "tier": 3
+  },
+  {
+   "name": "Joe Gelhardt",
+   "team": "Hull City",
+   "position": "Forward",
+   "age": 24,
+   "number": 11,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19569.png",
+   "tier": 3
+  },
+  {
+   "name": "Mohamed Ali Cho",
+   "team": "Hull City",
+   "position": "Forward",
+   "age": 22,
+   "number": 50,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/274312.png",
+   "tier": 3
+  },
+  {
+   "name": "Elliot Stroud",
+   "team": "Hull City",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 21,
+   "nationality": "Sweden",
+   "photo": "https://media.api-sports.io/football/players/226765.png",
+   "tier": 3
+  },
+  {
+   "name": "Ilyas Ansah",
+   "team": "Hull City",
+   "position": "Forward",
+   "age": 22,
+   "number": 10,
+   "nationality": "Germany",
+   "photo": "https://media.api-sports.io/football/players/380873.png",
+   "tier": 3
+  },
+  {
+   "name": "Robinio Vaz",
+   "team": "Hull City",
+   "position": "Forward",
+   "age": 19,
+   "number": 47,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/435482.png",
+   "tier": 3
+  },
+  {
+   "name": "Mohamed Belloumi",
+   "team": "Hull City",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 10,
+   "nationality": "Algeria",
+   "photo": "https://media.api-sports.io/football/players/299923.png",
+   "tier": 3
+  },
+  {
+   "name": "Alex Cairns",
+   "team": "Leeds",
+   "position": "Goalkeeper",
+   "age": 33,
+   "number": 21,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/20068.png",
+   "tier": 3
+  },
+  {
+   "name": "Michael Zetterer",
+   "team": "Leeds",
+   "position": "Goalkeeper",
+   "age": 31,
+   "number": 16,
+   "nationality": "Germany",
+   "photo": "https://media.api-sports.io/football/players/7288.png",
+   "tier": 3
+  },
+  {
+   "name": "James Trafford",
+   "team": "Leeds",
+   "position": "Goalkeeper",
+   "age": 24,
+   "number": 1,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/162489.png",
+   "tier": 3
+  },
+  {
+   "name": "Nico Elvedi",
+   "team": "Leeds",
+   "position": "Defender",
+   "age": 30,
+   "number": 30,
+   "nationality": "Switzerland",
+   "photo": "https://media.api-sports.io/football/players/2803.png",
+   "tier": 3
+  },
+  {
+   "name": "Jayden Bogle",
+   "team": "Leeds",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 2,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19201.png",
+   "tier": 3
+  },
+  {
+   "name": "James Justin",
+   "team": "Leeds",
+   "position": "Defender",
+   "age": 28,
+   "number": 24,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19760.png",
+   "tier": 3
+  },
+  {
+   "name": "Joe Rodon",
+   "team": "Leeds",
+   "position": "Defender",
+   "age": 29,
+   "number": 6,
+   "nationality": "Wales",
+   "photo": "https://media.api-sports.io/football/players/19321.png",
+   "tier": 3
+  },
+  {
+   "name": "Gabriel Gudmundsson",
+   "team": "Leeds",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 3,
+   "nationality": "Sweden",
+   "photo": "https://media.api-sports.io/football/players/47969.png",
+   "tier": 3
+  },
+  {
+   "name": "Jaka Bijol",
+   "team": "Leeds",
+   "position": "Defender",
+   "age": 27,
+   "number": 15,
+   "nationality": "Slovenia",
+   "photo": "https://media.api-sports.io/football/players/833.png",
+   "tier": 3
+  },
+  {
+   "name": "Melvin Bard",
+   "team": "Leeds",
+   "position": "Defender",
+   "age": 26,
+   "number": 26,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/162465.png",
+   "tier": 3
+  },
+  {
+   "name": "Tarik Muharemović",
+   "team": "Leeds",
+   "position": "Defender",
+   "age": 23,
+   "number": 5,
+   "nationality": "Bosnia-Herzegovina",
+   "photo": "https://media.api-sports.io/football/players/271350.png",
+   "tier": 3
+  },
+  {
+   "name": "Sean Longstaff",
+   "team": "Leeds",
+   "position": "Midfielder",
+   "age": 29,
+   "number": 8,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/18901.png",
+   "tier": 3
+  },
+  {
+   "name": "Ethan Ampadu",
+   "team": "Leeds",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 4,
+   "nationality": "Wales",
+   "photo": "https://media.api-sports.io/football/players/2279.png",
+   "tier": 2
+  },
+  {
+   "name": "Ao Tanaka",
+   "team": "Leeds",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 22,
+   "nationality": "Japan",
+   "photo": "https://media.api-sports.io/football/players/32966.png",
+   "tier": 3
+  },
+  {
+   "name": "Anton Stach",
+   "team": "Leeds",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 18,
+   "nationality": "Germany",
+   "photo": "https://media.api-sports.io/football/players/177665.png",
+   "tier": 2
+  },
+  {
+   "name": "Ilia Gruev",
+   "team": "Leeds",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 44,
+   "nationality": "Bulgaria",
+   "photo": "https://media.api-sports.io/football/players/129142.png",
+   "tier": 3
+  },
+  {
+   "name": "Brenden Aaronson",
+   "team": "Leeds",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 11,
+   "nationality": "USA",
+   "photo": "https://media.api-sports.io/football/players/50739.png",
+   "tier": 3
+  },
+  {
+   "name": "Dominic Calvert-Lewin",
+   "team": "Leeds",
+   "position": "Forward",
+   "age": 29,
+   "number": 9,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/18766.png",
+   "tier": 3
+  },
+  {
+   "name": "Lukas Nmecha",
+   "team": "Leeds",
+   "position": "Forward",
+   "age": 27,
+   "number": 14,
+   "nationality": "Germany",
+   "photo": "https://media.api-sports.io/football/players/19461.png",
+   "tier": 3
+  },
+  {
+   "name": "Daniel James",
+   "team": "Leeds",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 7,
+   "nationality": "Wales",
+   "photo": "https://media.api-sports.io/football/players/19329.png",
+   "tier": 3
+  },
+  {
+   "name": "Harry Wilson",
+   "team": "Leeds",
+   "position": "Midfielder",
+   "age": 29,
+   "number": 10,
+   "nationality": "Wales",
+   "photo": "https://media.api-sports.io/football/players/19221.png",
+   "tier": 3
+  },
+  {
+   "name": "Noah Okafor",
+   "team": "Leeds",
+   "position": "Forward",
+   "age": 26,
+   "number": 19,
+   "nationality": "Switzerland",
+   "photo": "https://media.api-sports.io/football/players/48389.png",
+   "tier": 3
+  },
+  {
+   "name": "Mateo Fernandez",
+   "team": "Leeds",
+   "position": "Forward",
+   "age": 23,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Jean Bahoya",
+   "team": "Leeds",
+   "position": "Forward",
+   "age": 21,
+   "number": 23,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/369674.png",
+   "tier": 3
+  },
+  {
+   "name": "David Button",
+   "team": "Ipswich",
+   "position": "Goalkeeper",
+   "age": 37,
+   "number": 27,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/18958.png",
+   "tier": 3
+  },
+  {
+   "name": "Christian Walton",
+   "team": "Ipswich",
+   "position": "Goalkeeper",
+   "age": 30,
+   "number": 28,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19541.png",
+   "tier": 3
+  },
+  {
+   "name": "Alex Palmer",
+   "team": "Ipswich",
+   "position": "Goalkeeper",
+   "age": 30,
+   "number": 1,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/82097.png",
+   "tier": 3
+  },
+  {
+   "name": "Kjell Scherpen",
+   "team": "Ipswich",
+   "position": "Goalkeeper",
+   "age": 26,
+   "number": 37,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/37276.png",
+   "tier": 3
+  },
+  {
+   "name": "Darnell Furlong",
+   "team": "Ipswich",
+   "position": "Defender",
+   "age": 31,
+   "number": 2,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19577.png",
+   "tier": 3
+  },
+  {
+   "name": "Issa Diop",
+   "team": "Ipswich",
+   "position": "Defender",
+   "age": 29,
+   "number": 6,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/18814.png",
+   "tier": 3
+  },
+  {
+   "name": "Dara O'Shea",
+   "team": "Ipswich",
+   "position": "Defender",
+   "age": 27,
+   "number": 26,
+   "nationality": "Ireland",
+   "photo": "https://media.api-sports.io/football/players/17597.png",
+   "tier": 3
+  },
+  {
+   "name": "Cédric Kipré",
+   "team": "Ipswich",
+   "position": "Defender",
+   "age": 29,
+   "number": 4,
+   "nationality": "Ivory Coast",
+   "photo": "https://media.api-sports.io/football/players/19546.png",
+   "tier": 3
+  },
+  {
+   "name": "Leif Davis",
+   "team": "Ipswich",
+   "position": "Defender",
+   "age": 26,
+   "number": 3,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19119.png",
+   "tier": 3
+  },
+  {
+   "name": "Jacob Greaves",
+   "team": "Ipswich",
+   "position": "Defender",
+   "age": 26,
+   "number": 24,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/127579.png",
+   "tier": 3
+  },
+  {
+   "name": "Abdoul Ouattara",
+   "team": "Ipswich",
+   "position": "Defender",
+   "age": 21,
+   "number": 42,
+   "nationality": "Ivory Coast",
+   "photo": "https://media.api-sports.io/football/players/358166.png",
+   "tier": 3
+  },
+  {
+   "name": "Jack Taylor",
+   "team": "Ipswich",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 14,
+   "nationality": "Ireland",
+   "photo": "https://media.api-sports.io/football/players/18397.png",
+   "tier": 3
+  },
+  {
+   "name": "Azor Matusiwa",
+   "team": "Ipswich",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 5,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/37236.png",
+   "tier": 3
+  },
+  {
+   "name": "Exequiel Palacios",
+   "team": "Ipswich",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 25,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/6002.png",
+   "tier": 3
+  },
+  {
+   "name": "Saša Lukić",
+   "team": "Ipswich",
+   "position": "Midfielder",
+   "age": 30,
+   "number": 23,
+   "nationality": "Serbia",
+   "photo": "https://media.api-sports.io/football/players/2823.png",
+   "tier": 3
+  },
+  {
+   "name": "Florentino",
+   "team": "Ipswich",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 12,
+   "nationality": "Portugal",
+   "photo": "https://media.api-sports.io/football/players/575.png",
+   "tier": 3
+  },
+  {
+   "name": "Marcelino Núñez",
+   "team": "Ipswich",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 32,
+   "nationality": "Chile",
+   "photo": "https://media.api-sports.io/football/players/195121.png",
+   "tier": 3
+  },
+  {
+   "name": "Anis Mehmeti",
+   "team": "Ipswich",
+   "position": "Forward",
+   "age": 25,
+   "number": 33,
+   "nationality": "Albania",
+   "photo": "https://media.api-sports.io/football/players/286349.png",
+   "tier": 3
+  },
+  {
+   "name": "Julio Enciso",
+   "team": "Ipswich",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 10,
+   "nationality": "Paraguay",
+   "photo": "https://media.api-sports.io/football/players/70747.png",
+   "tier": 3
+  },
+  {
+   "name": "Jack Clarke",
+   "team": "Ipswich",
+   "position": "Forward",
+   "age": 25,
+   "number": 47,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19136.png",
+   "tier": 3
+  },
+  {
+   "name": "Chuba Akpom",
+   "team": "Ipswich",
+   "position": "Forward",
+   "age": 31,
+   "number": 29,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/2380.png",
+   "tier": 3
+  },
+  {
+   "name": "Daizen Maeda",
+   "team": "Ipswich",
+   "position": "Forward",
+   "age": 29,
+   "number": 38,
+   "nationality": "Japan",
+   "photo": "https://media.api-sports.io/football/players/33224.png",
+   "tier": 3
+  },
+  {
+   "name": "Zian Flemming",
+   "team": "Ipswich",
+   "position": "Forward",
+   "age": 28,
+   "number": 9,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/36927.png",
+   "tier": 3
+  },
+  {
+   "name": "Jaden Philogene-Bidace",
+   "team": "Ipswich",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 11,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/138931.png",
+   "tier": 3
+  },
+  {
+   "name": "Emersonn",
+   "team": "Ipswich",
+   "position": "Forward",
+   "age": 22,
+   "number": 19,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/321648.png",
+   "tier": 3
+  },
+  {
+   "name": "Kasey McAteer",
+   "team": "Ipswich",
+   "position": "Forward",
+   "age": 24,
+   "number": 20,
+   "nationality": "Ireland",
+   "photo": "https://media.api-sports.io/football/players/283290.png",
+   "tier": 3
+  },
+  {
+   "name": "Abdul Issahaku",
+   "team": "Ipswich",
+   "position": "Forward",
+   "age": 22,
+   "number": null,
+   "nationality": "Ghana",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Sindre Egeli",
+   "team": "Ipswich",
+   "position": "Forward",
+   "age": 20,
+   "number": 8,
+   "nationality": "Norway",
+   "photo": "https://media.api-sports.io/football/players/342654.png",
+   "tier": 3
+  },
+  {
+   "name": "John",
+   "team": "Nottingham Forest",
+   "position": "Goalkeeper",
+   "age": 30,
+   "number": 12,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/70366.png",
+   "tier": 3
+  },
+  {
+   "name": "Matz Sels",
+   "team": "Nottingham Forest",
+   "position": "Goalkeeper",
+   "age": 34,
+   "number": 26,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/2919.png",
+   "tier": 3
+  },
+  {
+   "name": "Steven Benda",
+   "team": "Nottingham Forest",
+   "position": "Goalkeeper",
+   "age": 28,
+   "number": 13,
+   "nationality": "Germany",
+   "photo": "https://media.api-sports.io/football/players/19312.png",
+   "tier": 3
+  },
+  {
+   "name": "Nikola Milenković",
+   "team": "Nottingham Forest",
+   "position": "Defender",
+   "age": 29,
+   "number": 31,
+   "nationality": "Serbia",
+   "photo": "https://media.api-sports.io/football/players/2817.png",
+   "tier": 2
+  },
+  {
+   "name": "Ola Aina",
+   "team": "Nottingham Forest",
+   "position": "Midfielder",
+   "age": 30,
+   "number": 34,
+   "nationality": "Nigeria",
+   "photo": "https://media.api-sports.io/football/players/2771.png",
+   "tier": 3
+  },
+  {
+   "name": "Daniel Muñoz",
+   "team": "Nottingham Forest",
+   "position": "Defender",
+   "age": 30,
+   "number": 27,
+   "nationality": "Colombia",
+   "photo": "https://media.api-sports.io/football/players/13736.png",
+   "tier": 3
+  },
+  {
+   "name": "Neco Williams",
+   "team": "Nottingham Forest",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 3,
+   "nationality": "Wales",
+   "photo": "https://media.api-sports.io/football/players/138780.png",
+   "tier": 2
+  },
+  {
+   "name": "Luca Netz",
+   "team": "Nottingham Forest",
+   "position": "Defender",
+   "age": 23,
+   "number": 25,
+   "nationality": "Germany",
+   "photo": "https://media.api-sports.io/football/players/163069.png",
+   "tier": 3
+  },
+  {
+   "name": "Jair Paula",
+   "team": "Nottingham Forest",
+   "position": "Defender",
+   "age": 21,
+   "number": 23,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/362711.png",
+   "tier": 3
+  },
+  {
+   "name": "Nicolò Savona",
+   "team": "Nottingham Forest",
+   "position": "Defender",
+   "age": 23,
+   "number": null,
+   "nationality": "Italy",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Murillo",
+   "team": "Nottingham Forest",
+   "position": "Defender",
+   "age": 24,
+   "number": 5,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/363695.png",
+   "tier": 2
+  },
+  {
+   "name": "Morgan Gibbs-White",
+   "team": "Nottingham Forest",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 10,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/18746.png",
+   "tier": 1
+  },
+  {
+   "name": "Ryan Yates",
+   "team": "Nottingham Forest",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 22,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19305.png",
+   "tier": 3
+  },
+  {
+   "name": "Ibrahim Sangaré",
+   "team": "Nottingham Forest",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 6,
+   "nationality": "Ivory Coast",
+   "photo": "https://media.api-sports.io/football/players/22149.png",
+   "tier": 3
+  },
+  {
+   "name": "Xaver Schlager",
+   "team": "Nottingham Forest",
+   "position": "Midfielder",
+   "age": 29,
+   "number": 21,
+   "nationality": "Austria",
+   "photo": "https://media.api-sports.io/football/players/1095.png",
+   "tier": 3
+  },
+  {
+   "name": "Nicolás Domínguez",
+   "team": "Nottingham Forest",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 8,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/6056.png",
+   "tier": 3
+  },
+  {
+   "name": "James McAtee",
+   "team": "Nottingham Forest",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 24,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/158697.png",
+   "tier": 3
+  },
+  {
+   "name": "Callum Hudson-Odoi",
+   "team": "Nottingham Forest",
+   "position": "Forward",
+   "age": 26,
+   "number": 7,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/2298.png",
+   "tier": 2
+  },
+  {
+   "name": "Chris Wood",
+   "team": "Nottingham Forest",
+   "position": "Forward",
+   "age": 34,
+   "number": 9,
+   "nationality": "New Zealand",
+   "photo": "https://media.api-sports.io/football/players/18931.png",
+   "tier": 3
+  },
+  {
+   "name": "Dan Ndoye",
+   "team": "Nottingham Forest",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 14,
+   "nationality": "Switzerland",
+   "photo": "https://media.api-sports.io/football/players/48648.png",
+   "tier": 2
+  },
+  {
+   "name": "Arnaud Kalimuendo",
+   "team": "Nottingham Forest",
+   "position": "Forward",
+   "age": 24,
+   "number": 15,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/147831.png",
+   "tier": 3
+  },
+  {
+   "name": "Liam Delap",
+   "team": "Nottingham Forest",
+   "position": "Forward",
+   "age": 23,
+   "number": 19,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/161948.png",
+   "tier": 2
+  },
+  {
+   "name": "Igor Jesus",
+   "team": "Nottingham Forest",
+   "position": "Forward",
+   "age": 25,
+   "number": 11,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/9366.png",
+   "tier": 3
+  },
+  {
+   "name": "Dean Henderson",
+   "team": "Crystal Palace",
+   "position": "Goalkeeper",
+   "age": 29,
+   "number": 1,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19088.png",
+   "tier": 2
+  },
+  {
+   "name": "Remi Matthews",
+   "team": "Crystal Palace",
+   "position": "Goalkeeper",
+   "age": 32,
+   "number": 31,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19684.png",
+   "tier": 3
+  },
+  {
+   "name": "Walter Benítez",
+   "team": "Crystal Palace",
+   "position": "Goalkeeper",
+   "age": 33,
+   "number": 44,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/22157.png",
+   "tier": 3
+  },
+  {
+   "name": "Axel Disasi",
+   "team": "Crystal Palace",
+   "position": "Defender",
+   "age": 28,
+   "number": 5,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/21998.png",
+   "tier": 3
+  },
+  {
+   "name": "Ben Chilwell",
+   "team": "Crystal Palace",
+   "position": "Defender",
+   "age": 29,
+   "number": 33,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/2933.png",
+   "tier": 3
+  },
+  {
+   "name": "Takehiro Tomiyasu",
+   "team": "Crystal Palace",
+   "position": "Defender",
+   "age": 28,
+   "number": 17,
+   "nationality": "Japan",
+   "photo": "https://media.api-sports.io/football/players/2597.png",
+   "tier": 3
+  },
+  {
+   "name": "Chris Richards",
+   "team": "Crystal Palace",
+   "position": "Defender",
+   "age": 26,
+   "number": 26,
+   "nationality": "USA",
+   "photo": "https://media.api-sports.io/football/players/126949.png",
+   "tier": 2
+  },
+  {
+   "name": "Tyrick Mitchell",
+   "team": "Crystal Palace",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 3,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/182201.png",
+   "tier": 3
+  },
+  {
+   "name": "Óscar Mingueza",
+   "team": "Crystal Palace",
+   "position": "Defender",
+   "age": 27,
+   "number": 30,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/162712.png",
+   "tier": 3
+  },
+  {
+   "name": "Chadi Riad",
+   "team": "Crystal Palace",
+   "position": "Defender",
+   "age": 23,
+   "number": 4,
+   "nationality": "Morocco",
+   "photo": "https://media.api-sports.io/football/players/278898.png",
+   "tier": 3
+  },
+  {
+   "name": "Anan Khalaili",
+   "team": "Crystal Palace",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 25,
+   "nationality": "Israel",
+   "photo": "https://media.api-sports.io/football/players/338735.png",
+   "tier": 3
+  },
+  {
+   "name": "Jaydee Canvot",
+   "team": "Crystal Palace",
+   "position": "Defender",
+   "age": 20,
+   "number": 6,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/412759.png",
+   "tier": 2
+  },
+  {
+   "name": "Honest Ahanor",
+   "team": "Crystal Palace",
+   "position": "Defender",
+   "age": 18,
+   "number": 21,
+   "nationality": "Italy",
+   "photo": "https://media.api-sports.io/football/players/453906.png",
+   "tier": 2
+  },
+  {
+   "name": "Jefferson Lerma",
+   "team": "Crystal Palace",
+   "position": "Midfielder",
+   "age": 32,
+   "number": 8,
+   "nationality": "Colombia",
+   "photo": "https://media.api-sports.io/football/players/2490.png",
+   "tier": 3
+  },
+  {
+   "name": "Daichi Kamada",
+   "team": "Crystal Palace",
+   "position": "Forward",
+   "age": 30,
+   "number": 18,
+   "nationality": "Japan",
+   "photo": "https://media.api-sports.io/football/players/2601.png",
+   "tier": 3
+  },
+  {
+   "name": "Will Hughes",
+   "team": "Crystal Palace",
+   "position": "Midfielder",
+   "age": 31,
+   "number": 19,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/18806.png",
+   "tier": 3
+  },
+  {
+   "name": "Cheick Doucouré",
+   "team": "Crystal Palace",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 28,
+   "nationality": "Mali",
+   "photo": "https://media.api-sports.io/football/players/3339.png",
+   "tier": 3
+  },
+  {
+   "name": "Quinten Timber",
+   "team": "Crystal Palace",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 23,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/38747.png",
+   "tier": 3
+  },
+  {
+   "name": "Adam Wharton",
+   "team": "Crystal Palace",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 20,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/288102.png",
+   "tier": 3
+  },
+  {
+   "name": "Nathanael Kalembo",
+   "team": "Crystal Palace",
+   "position": "Midfielder",
+   "age": 16,
+   "number": null,
+   "nationality": "England",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Jean-Philippe Mateta",
+   "team": "Crystal Palace",
+   "position": "Forward",
+   "age": 29,
+   "number": 14,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/25927.png",
+   "tier": 2
+  },
+  {
+   "name": "Ismaïla Sarr",
+   "team": "Crystal Palace",
+   "position": "Forward",
+   "age": 28,
+   "number": 7,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/2218.png",
+   "tier": 2
+  },
+  {
+   "name": "Eddie Nketiah",
+   "team": "Crystal Palace",
+   "position": "Forward",
+   "age": 27,
+   "number": 9,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/1468.png",
+   "tier": 3
+  },
+  {
+   "name": "Dwight McNeil",
+   "team": "Crystal Palace",
+   "position": "Forward",
+   "age": 26,
+   "number": 11,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/18929.png",
+   "tier": 3
+  },
+  {
+   "name": "Evann Guessand",
+   "team": "Crystal Palace",
+   "position": "Forward",
+   "age": 25,
+   "number": 29,
+   "nationality": "Ivory Coast",
+   "photo": "https://media.api-sports.io/football/players/137303.png",
+   "tier": 3
+  },
+  {
+   "name": "Yeremi Pino",
+   "team": "Crystal Palace",
+   "position": "Forward",
+   "age": 24,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 2
+  },
+  {
+   "name": "Darío Osorio",
+   "team": "Crystal Palace",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 24,
+   "nationality": "Chile",
+   "photo": "https://media.api-sports.io/football/players/307117.png",
+   "tier": 3
+  },
+  {
+   "name": "Jørgen Strand Larsen",
+   "team": "Crystal Palace",
+   "position": "Forward",
+   "age": 26,
+   "number": 22,
+   "nationality": "Norway",
+   "photo": "https://media.api-sports.io/football/players/2032.png",
+   "tier": 2
+  },
+  {
+   "name": "Zavier Gozo",
+   "team": "Crystal Palace",
+   "position": "Forward",
+   "age": 19,
+   "number": 12,
+   "nationality": "USA",
+   "photo": "https://media.api-sports.io/football/players/412227.png",
+   "tier": 3
+  },
+  {
+   "name": "Jason Steele",
+   "team": "Brighton",
+   "position": "Goalkeeper",
+   "age": 36,
+   "number": 23,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/18960.png",
+   "tier": 3
+  },
+  {
+   "name": "Bart Verbruggen",
+   "team": "Brighton",
+   "position": "Goalkeeper",
+   "age": 24,
+   "number": 1,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/129058.png",
+   "tier": 2
+  },
+  {
+   "name": "Thomas McGill",
+   "team": "Brighton",
+   "position": "Goalkeeper",
+   "age": 26,
+   "number": 38,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/167663.png",
+   "tier": 3
+  },
+  {
+   "name": "Olivier Boscagli",
+   "team": "Brighton",
+   "position": "Defender",
+   "age": 28,
+   "number": 21,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/22160.png",
+   "tier": 3
+  },
+  {
+   "name": "Pascal Struijk",
+   "team": "Brighton",
+   "position": "Defender",
+   "age": 27,
+   "number": 4,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/64003.png",
+   "tier": 3
+  },
+  {
+   "name": "Lewis Dunk",
+   "team": "Brighton",
+   "position": "Defender",
+   "age": 34,
+   "number": 5,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/18963.png",
+   "tier": 3
+  },
+  {
+   "name": "Ferdi Kadıoğlu",
+   "team": "Brighton",
+   "position": "Defender",
+   "age": 27,
+   "number": 24,
+   "nationality": "Turkey",
+   "photo": "https://media.api-sports.io/football/players/1361.png",
+   "tier": 2
+  },
+  {
+   "name": "Michael Svoboda",
+   "team": "Brighton",
+   "position": "Defender",
+   "age": 28,
+   "number": 30,
+   "nationality": "Austria",
+   "photo": "https://media.api-sports.io/football/players/7090.png",
+   "tier": 3
+  },
+  {
+   "name": "Mats Wieffer",
+   "team": "Brighton",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 27,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/92993.png",
+   "tier": 3
+  },
+  {
+   "name": "Maxim De Cuyper",
+   "team": "Brighton",
+   "position": "Defender",
+   "age": 25,
+   "number": 29,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/162007.png",
+   "tier": 3
+  },
+  {
+   "name": "Jaouen Hadjam",
+   "team": "Brighton",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 3,
+   "nationality": "Algeria",
+   "photo": "https://media.api-sports.io/football/players/271539.png",
+   "tier": 3
+  },
+  {
+   "name": "Costinha",
+   "team": "Brighton",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 20,
+   "nationality": "Portugal",
+   "photo": "https://media.api-sports.io/football/players/204037.png",
+   "tier": 3
+  },
+  {
+   "name": "Luka Vušković",
+   "team": "Brighton",
+   "position": "Defender",
+   "age": 19,
+   "number": 44,
+   "nationality": "Croatia",
+   "photo": "https://media.api-sports.io/football/players/387521.png",
+   "tier": 2
+  },
+  {
+   "name": "Matt O'Riley",
+   "team": "Brighton",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 33,
+   "nationality": "Denmark",
+   "photo": "https://media.api-sports.io/football/players/19030.png",
+   "tier": 3
+  },
+  {
+   "name": "Pascal Groß",
+   "team": "Brighton",
+   "position": "Midfielder",
+   "age": 35,
+   "number": 13,
+   "nationality": "Germany",
+   "photo": "https://media.api-sports.io/football/players/18970.png",
+   "tier": 3
+  },
+  {
+   "name": "Yasin Ayari",
+   "team": "Brighton",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 26,
+   "nationality": "Sweden",
+   "photo": "https://media.api-sports.io/football/players/265820.png",
+   "tier": 2
+  },
+  {
+   "name": "Diego Gómez",
+   "team": "Brighton",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 25,
+   "nationality": "Paraguay",
+   "photo": "https://media.api-sports.io/football/players/278370.png",
+   "tier": 3
+  },
+  {
+   "name": "Jack Hinshelwood",
+   "team": "Brighton",
+   "position": "Forward",
+   "age": 21,
+   "number": 8,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/305730.png",
+   "tier": 2
+  },
+  {
+   "name": "Malick Yalcouyé",
+   "team": "Brighton",
+   "position": "Forward",
+   "age": 20,
+   "number": 35,
+   "nationality": "Mali",
+   "photo": "https://media.api-sports.io/football/players/410125.png",
+   "tier": 3
+  },
+  {
+   "name": "Chema Andrés",
+   "team": "Brighton",
+   "position": "Midfielder",
+   "age": 21,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Femi Azeez",
+   "team": "Brighton",
+   "position": "Forward",
+   "age": 25,
+   "number": null,
+   "nationality": "England",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Georginio Rutter",
+   "team": "Brighton",
+   "position": "Forward",
+   "age": 24,
+   "number": 10,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/90590.png",
+   "tier": 2
+  },
+  {
+   "name": "Evan Ferguson",
+   "team": "Brighton",
+   "position": "Forward",
+   "age": 22,
+   "number": null,
+   "nationality": "Ireland",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Kaoru Mitoma",
+   "team": "Brighton",
+   "position": "Forward",
+   "age": 29,
+   "number": 22,
+   "nationality": "Japan",
+   "photo": "https://media.api-sports.io/football/players/106835.png",
+   "tier": 3
+  },
+  {
+   "name": "Yankubah Minteh",
+   "team": "Brighton",
+   "position": "Forward",
+   "age": 22,
+   "number": 11,
+   "nationality": "Gambia",
+   "photo": "https://media.api-sports.io/football/players/383685.png",
+   "tier": 2
+  },
+  {
+   "name": "Ibrahim Osman",
+   "team": "Brighton",
+   "position": "Forward",
+   "age": 21,
+   "number": 15,
+   "nationality": "Ghana",
+   "photo": "https://media.api-sports.io/football/players/293643.png",
+   "tier": 3
+  },
+  {
+   "name": "Stefanos Tzimas",
+   "team": "Brighton",
+   "position": "Forward",
+   "age": 20,
+   "number": null,
+   "nationality": "Greece",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Promise Akinpelu",
+   "team": "Brighton",
+   "position": "Forward",
+   "age": 25,
+   "number": null,
+   "nationality": "Canada",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Charalampos Kostoulas",
+   "team": "Brighton",
+   "position": "Forward",
+   "age": 19,
+   "number": 19,
+   "nationality": "Greece",
+   "photo": "https://media.api-sports.io/football/players/392482.png",
+   "tier": 2
+  },
+  {
+   "name": "Zadok Yohanna",
+   "team": "Brighton",
+   "position": "Forward",
+   "age": 19,
+   "number": 36,
+   "nationality": "Nigeria",
+   "photo": "https://media.api-sports.io/football/players/524411.png",
+   "tier": 3
+  },
+  {
+   "name": "Ellery Balcombe",
+   "team": "Brentford",
+   "position": "Goalkeeper",
+   "age": 27,
+   "number": 31,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19340.png",
+   "tier": 3
+  },
+  {
+   "name": "Caoimhin Kelleher",
+   "team": "Brentford",
+   "position": "Goalkeeper",
+   "age": 27,
+   "number": 1,
+   "nationality": "Ireland",
+   "photo": "https://media.api-sports.io/football/players/281.png",
+   "tier": 2
+  },
+  {
+   "name": "Hákon Rafn Valdimarsson",
+   "team": "Brentford",
+   "position": "Goalkeeper",
+   "age": 25,
+   "number": 12,
+   "nationality": "Iceland",
+   "photo": "https://media.api-sports.io/football/players/61742.png",
+   "tier": 3
+  },
+  {
+   "name": "Rico Henry",
+   "team": "Brentford",
+   "position": "Defender",
+   "age": 29,
+   "number": 3,
+   "nationality": "Jamaica",
+   "photo": "https://media.api-sports.io/football/players/19346.png",
+   "tier": 3
+  },
+  {
+   "name": "Sepp van den Berg",
+   "team": "Brentford",
+   "position": "Defender",
+   "age": 24,
+   "number": 4,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/36922.png",
+   "tier": 2
+  },
+  {
+   "name": "Kristoffer Ajer",
+   "team": "Brentford",
+   "position": "Defender",
+   "age": 28,
+   "number": 20,
+   "nationality": "Norway",
+   "photo": "https://media.api-sports.io/football/players/1119.png",
+   "tier": 3
+  },
+  {
+   "name": "Aaron Hickey",
+   "team": "Brentford",
+   "position": "Defender",
+   "age": 24,
+   "number": 2,
+   "nationality": "Scotland",
+   "photo": "https://media.api-sports.io/football/players/44871.png",
+   "tier": 3
+  },
+  {
+   "name": "Keane Lewis-Potter",
+   "team": "Brentford",
+   "position": "Defender",
+   "age": 25,
+   "number": 23,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/106725.png",
+   "tier": 2
+  },
+  {
+   "name": "Nathan Collins",
+   "team": "Brentford",
+   "position": "Defender",
+   "age": 25,
+   "number": 22,
+   "nationality": "Ireland",
+   "photo": "https://media.api-sports.io/football/players/19495.png",
+   "tier": 2
+  },
+  {
+   "name": "El Hadji Malick Diouf",
+   "team": "Brentford",
+   "position": "Defender",
+   "age": 21,
+   "number": 25,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/409303.png",
+   "tier": 3
+  },
+  {
+   "name": "Michael Kayode",
+   "team": "Brentford",
+   "position": "Defender",
+   "age": 22,
+   "number": 33,
+   "nationality": "Italy",
+   "photo": "https://media.api-sports.io/football/players/342022.png",
+   "tier": 2
+  },
+  {
+   "name": "Ji-soo Kim",
+   "team": "Brentford",
+   "position": "Defender",
+   "age": 21,
+   "number": null,
+   "nationality": "South Korea",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Jannik Schuster",
+   "team": "Brentford",
+   "position": "Defender",
+   "age": 20,
+   "number": 44,
+   "nationality": "Austria",
+   "photo": "https://media.api-sports.io/football/players/441271.png",
+   "tier": 3
+  },
+  {
+   "name": "Benjamin Fredrick",
+   "team": "Brentford",
+   "position": "Defender",
+   "age": 21,
+   "number": 48,
+   "nationality": "Nigeria",
+   "photo": "https://media.api-sports.io/football/players/408221.png",
+   "tier": 3
+  },
+  {
+   "name": "Josh Dasilva",
+   "team": "Brentford",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 10,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19362.png",
+   "tier": 3
+  },
+  {
+   "name": "Vitaly Janelt",
+   "team": "Brentford",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 27,
+   "nationality": "Germany",
+   "photo": "https://media.api-sports.io/football/players/25073.png",
+   "tier": 3
+  },
+  {
+   "name": "Mathias Jensen",
+   "team": "Brentford",
+   "position": "Midfielder",
+   "age": 30,
+   "number": 8,
+   "nationality": "Denmark",
+   "photo": "https://media.api-sports.io/football/players/47438.png",
+   "tier": 3
+  },
+  {
+   "name": "Mikkel Damsgaard",
+   "team": "Brentford",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 24,
+   "nationality": "Denmark",
+   "photo": "https://media.api-sports.io/football/players/15908.png",
+   "tier": 2
+  },
+  {
+   "name": "Mamadou Sangare",
+   "team": "Brentford",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 18,
+   "nationality": "Mali",
+   "photo": "https://media.api-sports.io/football/players/277306.png",
+   "tier": 2
+  },
+  {
+   "name": "Fabio Carvalho",
+   "team": "Brentford",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 14,
+   "nationality": "Portugal",
+   "photo": "https://media.api-sports.io/football/players/153066.png",
+   "tier": 3
+  },
+  {
+   "name": "Antoni Milambo",
+   "team": "Brentford",
+   "position": "Midfielder",
+   "age": 21,
+   "number": null,
+   "nationality": "Netherlands",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Yegor Yarmolyuk",
+   "team": "Brentford",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 6,
+   "nationality": "Ukraine",
+   "photo": "https://media.api-sports.io/football/players/263538.png",
+   "tier": 2
+  },
+  {
+   "name": "Callum Wilson",
+   "team": "Brentford",
+   "position": "Forward",
+   "age": 34,
+   "number": 13,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/2939.png",
+   "tier": 3
+  },
+  {
+   "name": "Kevin Schade",
+   "team": "Brentford",
+   "position": "Forward",
+   "age": 24,
+   "number": 7,
+   "nationality": "Germany",
+   "photo": "https://media.api-sports.io/football/players/178077.png",
+   "tier": 2
+  },
+  {
+   "name": "Thiago",
+   "team": "Brentford",
+   "position": "Forward",
+   "age": 25,
+   "number": 9,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/196156.png",
+   "tier": 1
+  },
+  {
+   "name": "Jaidon Anthony",
+   "team": "Brentford",
+   "position": "Forward",
+   "age": 26,
+   "number": 19,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/196855.png",
+   "tier": 3
+  },
+  {
+   "name": "Dango Ouattara",
+   "team": "Brentford",
+   "position": "Forward",
+   "age": 24,
+   "number": 11,
+   "nationality": "Burkina Faso",
+   "photo": "https://media.api-sports.io/football/players/284797.png",
+   "tier": 2
+  },
+  {
+   "name": "Gustavo Gomes",
+   "team": "Brentford",
+   "position": "Forward",
+   "age": 20,
+   "number": 39,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/427736.png",
+   "tier": 3
+  },
+  {
+   "name": "Kaye Furo",
+   "team": "Brentford",
+   "position": "Forward",
+   "age": 19,
+   "number": 9,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/393193.png",
+   "tier": 3
+  },
+  {
+   "name": "Fraser Forster",
+   "team": "Bournemouth",
+   "position": "Goalkeeper",
+   "age": 38,
+   "number": 17,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/18932.png",
+   "tier": 3
+  },
+  {
+   "name": "Michele Di Gregorio",
+   "team": "Bournemouth",
+   "position": "Goalkeeper",
+   "age": 29,
+   "number": 20,
+   "nationality": "Italy",
+   "photo": "https://media.api-sports.io/football/players/30670.png",
+   "tier": 3
+  },
+  {
+   "name": "Đorđe Petrović",
+   "team": "Bournemouth",
+   "position": "Goalkeeper",
+   "age": 27,
+   "number": 1,
+   "nationality": "Serbia",
+   "photo": "https://media.api-sports.io/football/players/118307.png",
+   "tier": 2
+  },
+  {
+   "name": "Adam Smith",
+   "team": "Bournemouth",
+   "position": "Defender",
+   "age": 35,
+   "number": 15,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/18869.png",
+   "tier": 3
+  },
+  {
+   "name": "Max Aarons",
+   "team": "Bournemouth",
+   "position": "Defender",
+   "age": 26,
+   "number": 2,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19070.png",
+   "tier": 3
+  },
+  {
+   "name": "James Hill",
+   "team": "Bournemouth",
+   "position": "Defender",
+   "age": 24,
+   "number": 5,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/20093.png",
+   "tier": 3
+  },
+  {
+   "name": "Bafodé Diakité",
+   "team": "Bournemouth",
+   "position": "Defender",
+   "age": 25,
+   "number": 18,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/22136.png",
+   "tier": 2
+  },
+  {
+   "name": "Julian Araujo",
+   "team": "Bournemouth",
+   "position": "Defender",
+   "age": 25,
+   "number": 22,
+   "nationality": "USA",
+   "photo": "https://media.api-sports.io/football/players/51051.png",
+   "tier": 3
+  },
+  {
+   "name": "Adrien Truffert",
+   "team": "Bournemouth",
+   "position": "Defender",
+   "age": 24,
+   "number": 3,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/162267.png",
+   "tier": 2
+  },
+  {
+   "name": "Juanlu",
+   "team": "Bournemouth",
+   "position": "Defender",
+   "age": 23,
+   "number": 24,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/182772.png",
+   "tier": 3
+  },
+  {
+   "name": "Julio Soler",
+   "team": "Bournemouth",
+   "position": "Defender",
+   "age": 21,
+   "number": 6,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/363333.png",
+   "tier": 3
+  },
+  {
+   "name": "Antonio Silva",
+   "team": "Bournemouth",
+   "position": "Defender",
+   "age": 23,
+   "number": 14,
+   "nationality": "Portugal",
+   "photo": "https://media.api-sports.io/football/players/331832.png",
+   "tier": 3
+  },
+  {
+   "name": "Veljko Milosavljević",
+   "team": "Bournemouth",
+   "position": "Defender",
+   "age": 19,
+   "number": null,
+   "nationality": "Serbia",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Lewis Cook",
+   "team": "Bournemouth",
+   "position": "Midfielder",
+   "age": 29,
+   "number": 4,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/18872.png",
+   "tier": 3
+  },
+  {
+   "name": "Justin Kluivert",
+   "team": "Bournemouth",
+   "position": "Forward",
+   "age": 27,
+   "number": 19,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/792.png",
+   "tier": 2
+  },
+  {
+   "name": "Ryan Christie",
+   "team": "Bournemouth",
+   "position": "Midfielder",
+   "age": 31,
+   "number": 10,
+   "nationality": "Scotland",
+   "photo": "https://media.api-sports.io/football/players/1125.png",
+   "tier": 3
+  },
+  {
+   "name": "Tyler Adams",
+   "team": "Bournemouth",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 12,
+   "nationality": "USA",
+   "photo": "https://media.api-sports.io/football/players/1150.png",
+   "tier": 2
+  },
+  {
+   "name": "Alex Scott",
+   "team": "Bournemouth",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 8,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/304853.png",
+   "tier": 2
+  },
+  {
+   "name": "Alex Toth",
+   "team": "Bournemouth",
+   "position": "Midfielder",
+   "age": 21,
+   "number": 27,
+   "nationality": "Hungary",
+   "photo": "https://media.api-sports.io/football/players/361485.png",
+   "tier": 3
+  },
+  {
+   "name": "David Brooks",
+   "team": "Bournemouth",
+   "position": "Midfielder",
+   "age": 29,
+   "number": 7,
+   "nationality": "Wales",
+   "photo": "https://media.api-sports.io/football/players/18870.png",
+   "tier": 3
+  },
+  {
+   "name": "Marcus Tavernier",
+   "team": "Bournemouth",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 16,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19245.png",
+   "tier": 2
+  },
+  {
+   "name": "Evanilson",
+   "team": "Bournemouth",
+   "position": "Forward",
+   "age": 27,
+   "number": 9,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/152856.png",
+   "tier": 2
+  },
+  {
+   "name": "Amine Adli",
+   "team": "Bournemouth",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 21,
+   "nationality": "Morocco",
+   "photo": "https://media.api-sports.io/football/players/129682.png",
+   "tier": 3
+  },
+  {
+   "name": "Daniel Jebbison",
+   "team": "Bournemouth",
+   "position": "Forward",
+   "age": 23,
+   "number": 29,
+   "nationality": "Canada",
+   "photo": "https://media.api-sports.io/football/players/296458.png",
+   "tier": 3
+  },
+  {
+   "name": "Ben Doak",
+   "team": "Bournemouth",
+   "position": "Midfielder",
+   "age": 20,
+   "number": 11,
+   "nationality": "Scotland",
+   "photo": "https://media.api-sports.io/football/players/343576.png",
+   "tier": 3
+  },
+  {
+   "name": "Alvaro Rodriguez",
+   "team": "Bournemouth",
+   "position": "Forward",
+   "age": 22,
+   "number": 30,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/343202.png",
+   "tier": 3
+  },
+  {
+   "name": "Rayan",
+   "team": "Bournemouth",
+   "position": "Forward",
+   "age": 20,
+   "number": 37,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/407806.png",
+   "tier": 2
+  },
+  {
+   "name": "Eli Kroupi",
+   "team": "Bournemouth",
+   "position": "Forward",
+   "age": 20,
+   "number": 22,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/368030.png",
+   "tier": 1
+  },
+  {
+   "name": "Daniel Bentley",
+   "team": "Coventry",
+   "position": "Goalkeeper",
+   "age": 33,
+   "number": 25,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19341.png",
+   "tier": 3
+  },
+  {
+   "name": "Ben Wilson",
+   "team": "Coventry",
+   "position": "Goalkeeper",
+   "age": 34,
+   "number": 13,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/20484.png",
+   "tier": 3
+  },
+  {
+   "name": "Carl Rushworth",
+   "team": "Coventry",
+   "position": "Goalkeeper",
+   "age": 25,
+   "number": 19,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/278088.png",
+   "tier": 3
+  },
+  {
+   "name": "Jake Bidwell",
+   "team": "Coventry",
+   "position": "Defender",
+   "age": 33,
+   "number": 21,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19574.png",
+   "tier": 3
+  },
+  {
+   "name": "Luke Woolfenden",
+   "team": "Coventry",
+   "position": "Defender",
+   "age": 28,
+   "number": 26,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/17714.png",
+   "tier": 3
+  },
+  {
+   "name": "Ethan Pinnock",
+   "team": "Coventry",
+   "position": "Defender",
+   "age": 33,
+   "number": 2,
+   "nationality": "Jamaica",
+   "photo": "https://media.api-sports.io/football/players/19789.png",
+   "tier": 3
+  },
+  {
+   "name": "Jay Dasilva",
+   "team": "Coventry",
+   "position": "Defender",
+   "age": 28,
+   "number": 3,
+   "nationality": "Wales",
+   "photo": "https://media.api-sports.io/football/players/19260.png",
+   "tier": 3
+  },
+  {
+   "name": "Milan van Ewijk",
+   "team": "Coventry",
+   "position": "Defender",
+   "age": 26,
+   "number": 27,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/37961.png",
+   "tier": 3
+  },
+  {
+   "name": "Joel Latibeaudiere",
+   "team": "Coventry",
+   "position": "Defender",
+   "age": 26,
+   "number": 22,
+   "nationality": "Jamaica",
+   "photo": "https://media.api-sports.io/football/players/145538.png",
+   "tier": 3
+  },
+  {
+   "name": "Bobby Thomas",
+   "team": "Coventry",
+   "position": "Defender",
+   "age": 25,
+   "number": 4,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/264437.png",
+   "tier": 3
+  },
+  {
+   "name": "Aurele Amenda",
+   "team": "Coventry",
+   "position": "Defender",
+   "age": 23,
+   "number": 24,
+   "nationality": "Switzerland",
+   "photo": "https://media.api-sports.io/football/players/162414.png",
+   "tier": 3
+  },
+  {
+   "name": "Kaine Kesler",
+   "team": "Coventry",
+   "position": "Defender",
+   "age": 24,
+   "number": null,
+   "nationality": "England",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Stephen Mfuni",
+   "team": "Coventry",
+   "position": "Defender",
+   "age": 18,
+   "number": 12,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/382358.png",
+   "tier": 3
+  },
+  {
+   "name": "Matt Grimes",
+   "team": "Coventry",
+   "position": "Midfielder",
+   "age": 31,
+   "number": 6,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19328.png",
+   "tier": 3
+  },
+  {
+   "name": "Gustavo Hamer",
+   "team": "Coventry",
+   "position": "Midfielder",
+   "age": 29,
+   "number": 38,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/36929.png",
+   "tier": 3
+  },
+  {
+   "name": "Victor Torp",
+   "team": "Coventry",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 29,
+   "nationality": "Denmark",
+   "photo": "https://media.api-sports.io/football/players/16046.png",
+   "tier": 3
+  },
+  {
+   "name": "Frank Onyeka",
+   "team": "Coventry",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 16,
+   "nationality": "Nigeria",
+   "photo": "https://media.api-sports.io/football/players/15799.png",
+   "tier": 3
+  },
+  {
+   "name": "Josh Eccles",
+   "team": "Coventry",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 28,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19984.png",
+   "tier": 3
+  },
+  {
+   "name": "Jack Rudoni",
+   "team": "Coventry",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 5,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/20372.png",
+   "tier": 3
+  },
+  {
+   "name": "Caleb Yirenkyi",
+   "team": "Coventry",
+   "position": "Midfielder",
+   "age": 20,
+   "number": 8,
+   "nationality": "Ghana",
+   "photo": "https://media.api-sports.io/football/players/475575.png",
+   "tier": 3
+  },
+  {
+   "name": "Ephron Mason-Clark",
+   "team": "Coventry",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 10,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/18404.png",
+   "tier": 3
+  },
+  {
+   "name": "Brandon Thomas-Asante",
+   "team": "Coventry",
+   "position": "Forward",
+   "age": 27,
+   "number": 23,
+   "nationality": "Ghana",
+   "photo": "https://media.api-sports.io/football/players/82090.png",
+   "tier": 3
+  },
+  {
+   "name": "Taiwo Awoniyi",
+   "team": "Coventry",
+   "position": "Forward",
+   "age": 29,
+   "number": 14,
+   "nationality": "Nigeria",
+   "photo": "https://media.api-sports.io/football/players/8598.png",
+   "tier": 3
+  },
+  {
+   "name": "Haji Wright",
+   "team": "Coventry",
+   "position": "Forward",
+   "age": 28,
+   "number": 11,
+   "nationality": "USA",
+   "photo": "https://media.api-sports.io/football/players/427.png",
+   "tier": 3
+  },
+  {
+   "name": "Yann Gboho",
+   "team": "Coventry",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 34,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/84128.png",
+   "tier": 3
+  },
+  {
+   "name": "Tatsuhiro Sakamoto",
+   "team": "Coventry",
+   "position": "Midfielder",
+   "age": 30,
+   "number": 7,
+   "nationality": "Japan",
+   "photo": "https://media.api-sports.io/football/players/33462.png",
+   "tier": 3
+  },
+  {
+   "name": "Ellis Simms",
+   "team": "Coventry",
+   "position": "Forward",
+   "age": 25,
+   "number": 9,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/138786.png",
+   "tier": 3
+  },
+  {
+   "name": "Loum Tchaouna",
+   "team": "Coventry",
+   "position": "Forward",
+   "age": 23,
+   "number": 17,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/161621.png",
+   "tier": 3
+  },
+  {
+   "name": "Sidiki Cherif",
+   "team": "Coventry",
+   "position": "Forward",
+   "age": 19,
+   "number": 49,
+   "nationality": "Guinea",
+   "photo": "https://media.api-sports.io/football/players/421875.png",
+   "tier": 3
+  }
+ ]
+}

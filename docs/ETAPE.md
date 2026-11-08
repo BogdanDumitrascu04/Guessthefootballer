@@ -76,7 +76,11 @@ Făcută pe 5 nov, înaintea Supabase, pe datele din JSON (2024-25). Testată lo
 - [x] hub-ul: cifrele corecte („5 leagues · 1,186 players”), scrise de mână
 - [x] testul lui Bogdan + push (5 nov)
 - [x] prima pagină nouă: titlu, rând animat din joc, intrare directă pe ligă, carduri „Coming soon”, 4 limbi, fără banner de cookie-uri, politică rescrisă, logo și fundal mai ușoare, previzualizare la link (5 nov, Claude; testat local pe desktop și la 375 px)
-- [ ] testul lui Bogdan + push pentru prima pagină
+- [x] testul lui Bogdan + push pentru prima pagină (5 nov)
+- [x] sezonul 2026-27 în joc, pe varianta rapidă (8 nov, Claude): loturile reîmprospătate, 101 cereri API-Football, `download_api_football.py` + `build_season.py` + 10 teste noi (42 în total, verzi); testat local, desktop și telefon
+- [x] testul lui Bogdan (8 nov); jocul, datele 2026-27 și `scripts/serve.py` puse pe GitHub
+- [ ] explicația lui Bogdan pentru `download_api_football.py` și `build_season.py` (regula de aur), apoi commit pentru ele + `tests/test_build_season.py`
+- [ ] la următoarea fereastră de transferuri: `download_squads.py`, apoi `download_api_football.py --squads` (după ce se șterg loturile vechi din `data/raw/api-football/`), apoi `build_season.py`
 - [ ] hub-ul: cifrele luate din bază (după Etapa 2)
 
 ## Etapa 4 — Jocul 2: higher or lower (până la CV)

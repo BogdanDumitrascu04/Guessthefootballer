@@ -1,0 +1,4847 @@
+{
+ "id": "ligue-1",
+ "name": "Ligue 1",
+ "season": "2026-27",
+ "teams": {
+  "Toulouse": "https://media.api-sports.io/football/teams/96.png",
+  "Stade Brestois 29": "https://media.api-sports.io/football/teams/106.png",
+  "Marseille": "https://media.api-sports.io/football/teams/81.png",
+  "Auxerre": "https://media.api-sports.io/football/teams/108.png",
+  "Lille": "https://media.api-sports.io/football/teams/79.png",
+  "Nice": "https://media.api-sports.io/football/teams/84.png",
+  "Lyon": "https://media.api-sports.io/football/teams/80.png",
+  "Paris Saint Germain": "https://media.api-sports.io/football/teams/85.png",
+  "Lorient": "https://media.api-sports.io/football/teams/97.png",
+  "Rennes": "https://media.api-sports.io/football/teams/94.png",
+  "Estac Troyes": "https://media.api-sports.io/football/teams/110.png",
+  "Angers": "https://media.api-sports.io/football/teams/77.png",
+  "Le Havre": "https://media.api-sports.io/football/teams/111.png",
+  "Le Mans": "https://media.api-sports.io/football/teams/1298.png",
+  "Lens": "https://media.api-sports.io/football/teams/116.png",
+  "Monaco": "https://media.api-sports.io/football/teams/91.png",
+  "Strasbourg": "https://media.api-sports.io/football/teams/95.png",
+  "Paris FC": "https://media.api-sports.io/football/teams/114.png"
+ },
+ "players": [
+  {
+   "name": "Guillaume Restes",
+   "team": "Toulouse",
+   "position": "Goalkeeper",
+   "age": 21,
+   "number": 16,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/325346.png",
+   "tier": 2
+  },
+  {
+   "name": "Mathys Niflore",
+   "team": "Toulouse",
+   "position": "Goalkeeper",
+   "age": 19,
+   "number": 60,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/551204.png",
+   "tier": 3
+  },
+  {
+   "name": "Rasmus Nicolaisen",
+   "team": "Toulouse",
+   "position": "Defender",
+   "age": 29,
+   "number": 2,
+   "nationality": "Denmark",
+   "photo": "https://media.api-sports.io/football/players/15793.png",
+   "tier": 3
+  },
+  {
+   "name": "Mark McKenzie",
+   "team": "Toulouse",
+   "position": "Defender",
+   "age": 27,
+   "number": 3,
+   "nationality": "USA",
+   "photo": "https://media.api-sports.io/football/players/50735.png",
+   "tier": 2
+  },
+  {
+   "name": "David Odogu",
+   "team": "Toulouse",
+   "position": "Defender",
+   "age": 20,
+   "number": 19,
+   "nationality": "Germany",
+   "photo": "https://media.api-sports.io/football/players/394740.png",
+   "tier": 3
+  },
+  {
+   "name": "Rafik Messali",
+   "team": "Toulouse",
+   "position": "Defender",
+   "age": 23,
+   "number": 22,
+   "nationality": "Algeria",
+   "photo": "https://media.api-sports.io/football/players/334952.png",
+   "tier": 3
+  },
+  {
+   "name": "Seny Koumbassa",
+   "team": "Toulouse",
+   "position": "Defender",
+   "age": 19,
+   "number": 5,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/489905.png",
+   "tier": 3
+  },
+  {
+   "name": "Niklas Schmidt",
+   "team": "Toulouse",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 31,
+   "nationality": "Germany",
+   "photo": "https://media.api-sports.io/football/players/25533.png",
+   "tier": 3
+  },
+  {
+   "name": "Cristian Cásseres Jr.",
+   "team": "Toulouse",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 23,
+   "nationality": "Venezuela",
+   "photo": "https://media.api-sports.io/football/players/50956.png",
+   "tier": 2
+  },
+  {
+   "name": "Francis Abu",
+   "team": "Toulouse",
+   "position": "Midfielder",
+   "age": 25,
+   "number": null,
+   "nationality": "Ghana",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Aron Dönnum",
+   "team": "Toulouse",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 15,
+   "nationality": "Norway",
+   "photo": "https://media.api-sports.io/football/players/39115.png",
+   "tier": 3
+  },
+  {
+   "name": "Thomas Jørgensen",
+   "team": "Toulouse",
+   "position": "Midfielder",
+   "age": 21,
+   "number": 8,
+   "nationality": "Denmark",
+   "photo": "https://media.api-sports.io/football/players/386277.png",
+   "tier": 3
+  },
+  {
+   "name": "Niko Sigur",
+   "team": "Toulouse",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 14,
+   "nationality": "Canada",
+   "photo": "https://media.api-sports.io/football/players/416901.png",
+   "tier": 3
+  },
+  {
+   "name": "Mathis Amougou",
+   "team": "Toulouse",
+   "position": "Midfielder",
+   "age": 20,
+   "number": 18,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/395762.png",
+   "tier": 2
+  },
+  {
+   "name": "Alexis Vossah",
+   "team": "Toulouse",
+   "position": "Midfielder",
+   "age": 18,
+   "number": 6,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/514464.png",
+   "tier": 2
+  },
+  {
+   "name": "Aymen Amaaouch",
+   "team": "Toulouse",
+   "position": "Midfielder",
+   "age": 17,
+   "number": 49,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/570583.png",
+   "tier": 3
+  },
+  {
+   "name": "Yann Gboho",
+   "team": "Toulouse",
+   "position": "Forward",
+   "age": 25,
+   "number": null,
+   "nationality": "France",
+   "photo": null,
+   "tier": 2
+  },
+  {
+   "name": "Casper Tengstedt",
+   "team": "Toulouse",
+   "position": "Forward",
+   "age": 26,
+   "number": 20,
+   "nationality": "Denmark",
+   "photo": "https://media.api-sports.io/football/players/162703.png",
+   "tier": 3
+  },
+  {
+   "name": "Jacen Russell-Rowe",
+   "team": "Toulouse",
+   "position": "Forward",
+   "age": 24,
+   "number": 13,
+   "nationality": "Canada",
+   "photo": "https://media.api-sports.io/football/players/203428.png",
+   "tier": 3
+  },
+  {
+   "name": "Santiago Hidalgo",
+   "team": "Toulouse",
+   "position": "Forward",
+   "age": 21,
+   "number": 9,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/362741.png",
+   "tier": 2
+  },
+  {
+   "name": "Sion Oppong",
+   "team": "Toulouse",
+   "position": "Forward",
+   "age": 19,
+   "number": 11,
+   "nationality": "Sweden",
+   "photo": "https://media.api-sports.io/football/players/508069.png",
+   "tier": 3
+  },
+  {
+   "name": "Ilyas Azizi",
+   "team": "Toulouse",
+   "position": "Forward",
+   "age": 18,
+   "number": null,
+   "nationality": "France",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Julián Vignolo",
+   "team": "Toulouse",
+   "position": "Forward",
+   "age": 19,
+   "number": 7,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/457025.png",
+   "tier": 3
+  },
+  {
+   "name": "Théo Collin",
+   "team": "Toulouse",
+   "position": "Goalkeeper",
+   "age": 20,
+   "number": 1,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/674690.png",
+   "tier": 3
+  },
+  {
+   "name": "Egil Selvik",
+   "team": "Stade Brestois 29",
+   "position": "Goalkeeper",
+   "age": 29,
+   "number": 1,
+   "nationality": "Norway",
+   "photo": "https://media.api-sports.io/football/players/39082.png",
+   "tier": 3
+  },
+  {
+   "name": "Romain Cagnon",
+   "team": "Stade Brestois 29",
+   "position": "Goalkeeper",
+   "age": 29,
+   "number": 49,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/158587.png",
+   "tier": 3
+  },
+  {
+   "name": "Mathieu Patouillet",
+   "team": "Stade Brestois 29",
+   "position": "Goalkeeper",
+   "age": 22,
+   "number": 30,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/198389.png",
+   "tier": 3
+  },
+  {
+   "name": "Brendan Chardonnet",
+   "team": "Stade Brestois 29",
+   "position": "Defender",
+   "age": 31,
+   "number": 5,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/20546.png",
+   "tier": 3
+  },
+  {
+   "name": "Gautier Lloris",
+   "team": "Stade Brestois 29",
+   "position": "Defender",
+   "age": 31,
+   "number": 4,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/64255.png",
+   "tier": 3
+  },
+  {
+   "name": "Kenny Lala",
+   "team": "Stade Brestois 29",
+   "position": "Defender",
+   "age": 35,
+   "number": 70,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/22247.png",
+   "tier": 3
+  },
+  {
+   "name": "Bradley Locko",
+   "team": "Stade Brestois 29",
+   "position": "Defender",
+   "age": 24,
+   "number": 2,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/274267.png",
+   "tier": 2
+  },
+  {
+   "name": "Luc Zogbe",
+   "team": "Stade Brestois 29",
+   "position": "Defender",
+   "age": 21,
+   "number": 12,
+   "nationality": "Ivory Coast",
+   "photo": "https://media.api-sports.io/football/players/422595.png",
+   "tier": 3
+  },
+  {
+   "name": "Raphaël Le Guen",
+   "team": "Stade Brestois 29",
+   "position": "Defender",
+   "age": 20,
+   "number": 71,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/498791.png",
+   "tier": 3
+  },
+  {
+   "name": "Justin Bourgault",
+   "team": "Stade Brestois 29",
+   "position": "Defender",
+   "age": 21,
+   "number": 18,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/369556.png",
+   "tier": 3
+  },
+  {
+   "name": "Lucas Tousart",
+   "team": "Stade Brestois 29",
+   "position": "Defender",
+   "age": 29,
+   "number": 29,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/664.png",
+   "tier": 3
+  },
+  {
+   "name": "Hugo Magnetti",
+   "team": "Stade Brestois 29",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 8,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/20558.png",
+   "tier": 2
+  },
+  {
+   "name": "Joris Chotard",
+   "team": "Stade Brestois 29",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 13,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/128287.png",
+   "tier": 2
+  },
+  {
+   "name": "Mamady Diambou",
+   "team": "Stade Brestois 29",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 6,
+   "nationality": "Mali",
+   "photo": "https://media.api-sports.io/football/players/302915.png",
+   "tier": 3
+  },
+  {
+   "name": "Kamory Doumbia",
+   "team": "Stade Brestois 29",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 23,
+   "nationality": "Mali",
+   "photo": "https://media.api-sports.io/football/players/326068.png",
+   "tier": 2
+  },
+  {
+   "name": "Axel Camblan",
+   "team": "Stade Brestois 29",
+   "position": "Midfielder",
+   "age": 23,
+   "number": null,
+   "nationality": "France",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Joseph Nonge",
+   "team": "Stade Brestois 29",
+   "position": "Midfielder",
+   "age": 21,
+   "number": null,
+   "nationality": "Belgium",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Hamidou Makalou",
+   "team": "Stade Brestois 29",
+   "position": "Midfielder",
+   "age": 20,
+   "number": null,
+   "nationality": "Mali",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Ludovic Ajorque",
+   "team": "Stade Brestois 29",
+   "position": "Forward",
+   "age": 32,
+   "number": 19,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/22264.png",
+   "tier": 3
+  },
+  {
+   "name": "Mama Baldé",
+   "team": "Stade Brestois 29",
+   "position": "Midfielder",
+   "age": 31,
+   "number": 17,
+   "nationality": "Guinea-Bissau",
+   "photo": "https://media.api-sports.io/football/players/41323.png",
+   "tier": 3
+  },
+  {
+   "name": "Noah Edjouma",
+   "team": "Stade Brestois 29",
+   "position": "Forward",
+   "age": 21,
+   "number": 11,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/430816.png",
+   "tier": 3
+  },
+  {
+   "name": "Pathé Mboup",
+   "team": "Stade Brestois 29",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 9,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/375990.png",
+   "tier": 3
+  },
+  {
+   "name": "Enzo Monchatre",
+   "team": "Stade Brestois 29",
+   "position": "Forward",
+   "age": 18,
+   "number": 33,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/653463.png",
+   "tier": 3
+  },
+  {
+   "name": "Jeffrey De Lange",
+   "team": "Marseille",
+   "position": "Goalkeeper",
+   "age": 28,
+   "number": 12,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/36827.png",
+   "tier": 3
+  },
+  {
+   "name": "Théo Vermot",
+   "team": "Marseille",
+   "position": "Goalkeeper",
+   "age": 29,
+   "number": 92,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/129672.png",
+   "tier": 3
+  },
+  {
+   "name": "Jelle Van Neck",
+   "team": "Marseille",
+   "position": "Goalkeeper",
+   "age": 22,
+   "number": 40,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/336654.png",
+   "tier": 3
+  },
+  {
+   "name": "Ulisses Garcia",
+   "team": "Marseille",
+   "position": "Defender",
+   "age": 30,
+   "number": 25,
+   "nationality": "Switzerland",
+   "photo": "https://media.api-sports.io/football/players/943.png",
+   "tier": 3
+  },
+  {
+   "name": "Emerson",
+   "team": "Marseille",
+   "position": "Defender",
+   "age": 32,
+   "number": 33,
+   "nationality": "Italy",
+   "photo": "https://media.api-sports.io/football/players/2284.png",
+   "tier": 2
+  },
+  {
+   "name": "Tim Weah",
+   "team": "Marseille",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 22,
+   "nationality": "USA",
+   "photo": "https://media.api-sports.io/football/players/1138.png",
+   "tier": 2
+  },
+  {
+   "name": "Nayef Aguerd",
+   "team": "Marseille",
+   "position": "Defender",
+   "age": 30,
+   "number": 21,
+   "nationality": "Morocco",
+   "photo": "https://media.api-sports.io/football/players/21694.png",
+   "tier": 2
+  },
+  {
+   "name": "Derek Cornelius",
+   "team": "Marseille",
+   "position": "Defender",
+   "age": 28,
+   "number": 13,
+   "nationality": "Canada",
+   "photo": "https://media.api-sports.io/football/players/51295.png",
+   "tier": 3
+  },
+  {
+   "name": "Bamo Meité",
+   "team": "Marseille",
+   "position": "Defender",
+   "age": 25,
+   "number": 18,
+   "nationality": "Ivory Coast",
+   "photo": "https://media.api-sports.io/football/players/193501.png",
+   "tier": 3
+  },
+  {
+   "name": "CJ Egan-Riley",
+   "team": "Marseille",
+   "position": "Defender",
+   "age": 23,
+   "number": 4,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/181827.png",
+   "tier": 2
+  },
+  {
+   "name": "Angel Gomes",
+   "team": "Marseille",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 7,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/896.png",
+   "tier": 2
+  },
+  {
+   "name": "Pierre Emile Højbjerg",
+   "team": "Marseille",
+   "position": "Midfielder",
+   "age": 31,
+   "number": 23,
+   "nationality": "Denmark",
+   "photo": "https://media.api-sports.io/football/players/2735.png",
+   "tier": 2
+  },
+  {
+   "name": "Geoffrey Kondogbia",
+   "team": "Marseille",
+   "position": "Midfielder",
+   "age": 33,
+   "number": 19,
+   "nationality": "Central African Republic",
+   "photo": "https://media.api-sports.io/football/players/926.png",
+   "tier": 3
+  },
+  {
+   "name": "Himad Abdelli",
+   "team": "Marseille",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 8,
+   "nationality": "Algeria",
+   "photo": "https://media.api-sports.io/football/players/20692.png",
+   "tier": 3
+  },
+  {
+   "name": "Tochukwu Nadi",
+   "team": "Marseille",
+   "position": "Midfielder",
+   "age": 23,
+   "number": null,
+   "nationality": "Nigeria",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Amine Harit",
+   "team": "Marseille",
+   "position": "Midfielder",
+   "age": 29,
+   "number": 77,
+   "nationality": "Morocco",
+   "photo": "https://media.api-sports.io/football/players/412.png",
+   "tier": 3
+  },
+  {
+   "name": "Neal Maupay",
+   "team": "Marseille",
+   "position": "Forward",
+   "age": 30,
+   "number": 11,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/19364.png",
+   "tier": 3
+  },
+  {
+   "name": "Amine Gouiri",
+   "team": "Marseille",
+   "position": "Forward",
+   "age": 26,
+   "number": 9,
+   "nationality": "Algeria",
+   "photo": "https://media.api-sports.io/football/players/85041.png",
+   "tier": 1
+  },
+  {
+   "name": "Igor Paixão",
+   "team": "Marseille",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 14,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/9363.png",
+   "tier": 1
+  },
+  {
+   "name": "Faris Moumbagna",
+   "team": "Marseille",
+   "position": "Forward",
+   "age": 26,
+   "number": 29,
+   "nationality": "Cameroon",
+   "photo": "https://media.api-sports.io/football/players/102447.png",
+   "tier": 3
+  },
+  {
+   "name": "Keyliane Abdallah",
+   "team": "Marseille",
+   "position": "Forward",
+   "age": 20,
+   "number": 48,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/449158.png",
+   "tier": 3
+  },
+  {
+   "name": "Tadjidine M'Madi",
+   "team": "Marseille",
+   "position": "Forward",
+   "age": 19,
+   "number": 43,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/511641.png",
+   "tier": 3
+  },
+  {
+   "name": "Ibrahim Gomis",
+   "team": "Marseille",
+   "position": "Goalkeeper",
+   "age": 21,
+   "number": 41,
+   "nationality": "Morocco",
+   "photo": "https://media.api-sports.io/football/players/565705.png",
+   "tier": 3
+  },
+  {
+   "name": "Paul Nardi",
+   "team": "Auxerre",
+   "position": "Goalkeeper",
+   "age": 32,
+   "number": 1,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/8657.png",
+   "tier": 3
+  },
+  {
+   "name": "Mamadou Diop",
+   "team": "Auxerre",
+   "position": "Goalkeeper",
+   "age": 26,
+   "number": 23,
+   "nationality": "Mauritania",
+   "photo": "https://media.api-sports.io/football/players/134264.png",
+   "tier": 3
+  },
+  {
+   "name": "Louis Mezerette",
+   "team": "Auxerre",
+   "position": "Goalkeeper",
+   "age": 20,
+   "number": 37,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/614174.png",
+   "tier": 3
+  },
+  {
+   "name": "Francisco Sierralta",
+   "team": "Auxerre",
+   "position": "Defender",
+   "age": 29,
+   "number": null,
+   "nationality": "Chile",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Axel Tuanzebe",
+   "team": "Auxerre",
+   "position": "Defender",
+   "age": 28,
+   "number": 4,
+   "nationality": "Congo DR",
+   "photo": "https://media.api-sports.io/football/players/19182.png",
+   "tier": 3
+  },
+  {
+   "name": "Bryan Okoh",
+   "team": "Auxerre",
+   "position": "Defender",
+   "age": 23,
+   "number": 24,
+   "nationality": "Switzerland",
+   "photo": "https://media.api-sports.io/football/players/115588.png",
+   "tier": 3
+  },
+  {
+   "name": "Sinaly Diomandé",
+   "team": "Auxerre",
+   "position": "Defender",
+   "age": 25,
+   "number": 20,
+   "nationality": "Ivory Coast",
+   "photo": "https://media.api-sports.io/football/players/162466.png",
+   "tier": 2
+  },
+  {
+   "name": "Marvin Senaya",
+   "team": "Auxerre",
+   "position": "Defender",
+   "age": 25,
+   "number": 29,
+   "nationality": "Ghana",
+   "photo": "https://media.api-sports.io/football/players/191240.png",
+   "tier": 3
+  },
+  {
+   "name": "Fredrik Oppegard",
+   "team": "Auxerre",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 22,
+   "nationality": "Norway",
+   "photo": "https://media.api-sports.io/football/players/215827.png",
+   "tier": 3
+  },
+  {
+   "name": "Lamine Sy",
+   "team": "Auxerre",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 27,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/193953.png",
+   "tier": 3
+  },
+  {
+   "name": "Clement Akpa",
+   "team": "Auxerre",
+   "position": "Defender",
+   "age": 24,
+   "number": 92,
+   "nationality": "Ivory Coast",
+   "photo": "https://media.api-sports.io/football/players/191189.png",
+   "tier": 2
+  },
+  {
+   "name": "Christ Makosso",
+   "team": "Auxerre",
+   "position": "Defender",
+   "age": 22,
+   "number": 15,
+   "nationality": "Congo",
+   "photo": "https://media.api-sports.io/football/players/412926.png",
+   "tier": 3
+  },
+  {
+   "name": "Sekou Fofana",
+   "team": "Auxerre",
+   "position": "Defender",
+   "age": 23,
+   "number": 93,
+   "nationality": "Ivory Coast",
+   "photo": "https://media.api-sports.io/football/players/193505.png",
+   "tier": 3
+  },
+  {
+   "name": "Telli Siwe",
+   "team": "Auxerre",
+   "position": "Defender",
+   "age": 21,
+   "number": 13,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/402542.png",
+   "tier": 3
+  },
+  {
+   "name": "Elikya Legros",
+   "team": "Auxerre",
+   "position": "Defender",
+   "age": 18,
+   "number": 35,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/496787.png",
+   "tier": 3
+  },
+  {
+   "name": "Alvin Petit Dol",
+   "team": "Auxerre",
+   "position": "Defender",
+   "age": 20,
+   "number": 38,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/422689.png",
+   "tier": 3
+  },
+  {
+   "name": "Assane Dioussé",
+   "team": "Auxerre",
+   "position": "Midfielder",
+   "age": 29,
+   "number": 18,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/30748.png",
+   "tier": 3
+  },
+  {
+   "name": "Romain Faivre",
+   "team": "Auxerre",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 21,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/84082.png",
+   "tier": 3
+  },
+  {
+   "name": "Naouirou Ahamada",
+   "team": "Auxerre",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 8,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/152418.png",
+   "tier": 3
+  },
+  {
+   "name": "Kevin Danois",
+   "team": "Auxerre",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 5,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/323625.png",
+   "tier": 2
+  },
+  {
+   "name": "Pierre Ekwah",
+   "team": "Auxerre",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 17,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/278232.png",
+   "tier": 3
+  },
+  {
+   "name": "Arthur Piedfort",
+   "team": "Auxerre",
+   "position": "Midfielder",
+   "age": 21,
+   "number": 46,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/371950.png",
+   "tier": 3
+  },
+  {
+   "name": "Tidiane Devernois",
+   "team": "Auxerre",
+   "position": "Midfielder",
+   "age": 19,
+   "number": 36,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/468459.png",
+   "tier": 3
+  },
+  {
+   "name": "Lamfia Dioubaté",
+   "team": "Auxerre",
+   "position": "Midfielder",
+   "age": 19,
+   "number": 34,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/629378.png",
+   "tier": 3
+  },
+  {
+   "name": "Daniel Namaso",
+   "team": "Auxerre",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 10,
+   "nationality": "Cameroon",
+   "photo": "https://media.api-sports.io/football/players/19625.png",
+   "tier": 2
+  },
+  {
+   "name": "Eros Maddy",
+   "team": "Auxerre",
+   "position": "Forward",
+   "age": 25,
+   "number": null,
+   "nationality": "Netherlands",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Cameron Archer",
+   "team": "Auxerre",
+   "position": "Forward",
+   "age": 25,
+   "number": 9,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/137302.png",
+   "tier": 3
+  },
+  {
+   "name": "Josué Casimir",
+   "team": "Auxerre",
+   "position": "Forward",
+   "age": 25,
+   "number": null,
+   "nationality": "Haiti",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Lasso Coulibaly",
+   "team": "Auxerre",
+   "position": "Forward",
+   "age": 24,
+   "number": null,
+   "nationality": "Ivory Coast",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Rémy Labeau Lascary",
+   "team": "Auxerre",
+   "position": "Forward",
+   "age": 23,
+   "number": 3,
+   "nationality": "Guadeloupe",
+   "photo": "https://media.api-sports.io/football/players/326073.png",
+   "tier": 3
+  },
+  {
+   "name": "Rayan Mandengue",
+   "team": "Auxerre",
+   "position": "Defender",
+   "age": 20,
+   "number": 32,
+   "nationality": "Cameroon",
+   "photo": "https://media.api-sports.io/football/players/435514.png",
+   "tier": 3
+  },
+  {
+   "name": "Aristide Zossou",
+   "team": "Auxerre",
+   "position": "Midfielder",
+   "age": 21,
+   "number": 77,
+   "nationality": "Ivory Coast",
+   "photo": "https://media.api-sports.io/football/players/490095.png",
+   "tier": 3
+  },
+  {
+   "name": "Xiangxin Wei",
+   "team": "Auxerre",
+   "position": "Forward",
+   "age": 18,
+   "number": 49,
+   "nationality": "China PR",
+   "photo": "https://media.api-sports.io/football/players/511151.png",
+   "tier": 3
+  },
+  {
+   "name": "Ryan Rodin",
+   "team": "Auxerre",
+   "position": "Forward",
+   "age": 20,
+   "number": null,
+   "nationality": "France",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Youssef Khoudda",
+   "team": "Auxerre",
+   "position": "Forward",
+   "age": 19,
+   "number": 47,
+   "nationality": "Morocco",
+   "photo": "https://media.api-sports.io/football/players/670610.png",
+   "tier": 3
+  },
+  {
+   "name": "Arnaud Bodart",
+   "team": "Lille",
+   "position": "Goalkeeper",
+   "age": 28,
+   "number": null,
+   "nationality": "Belgium",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Berke Özer",
+   "team": "Lille",
+   "position": "Goalkeeper",
+   "age": 26,
+   "number": 1,
+   "nationality": "Turkey",
+   "photo": "https://media.api-sports.io/football/players/1337.png",
+   "tier": 2
+  },
+  {
+   "name": "Orlando Gill",
+   "team": "Lille",
+   "position": "Goalkeeper",
+   "age": 26,
+   "number": 12,
+   "nationality": "Paraguay",
+   "photo": "https://media.api-sports.io/football/players/70852.png",
+   "tier": 2
+  },
+  {
+   "name": "Romain Perraud",
+   "team": "Lille",
+   "position": "Defender",
+   "age": 29,
+   "number": 15,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/20600.png",
+   "tier": 2
+  },
+  {
+   "name": "Calvin Verdonk",
+   "team": "Lille",
+   "position": "Defender",
+   "age": 29,
+   "number": 24,
+   "nationality": "Indonesia",
+   "photo": "https://media.api-sports.io/football/players/37151.png",
+   "tier": 3
+  },
+  {
+   "name": "Nianzou Kouassi",
+   "team": "Lille",
+   "position": "Defender",
+   "age": 24,
+   "number": null,
+   "nationality": "France",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Alexsandro Ribeiro",
+   "team": "Lille",
+   "position": "Defender",
+   "age": 27,
+   "number": 4,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/142691.png",
+   "tier": 2
+  },
+  {
+   "name": "Tiago Santos",
+   "team": "Lille",
+   "position": "Defender",
+   "age": 24,
+   "number": 22,
+   "nationality": "Portugal",
+   "photo": "https://media.api-sports.io/football/players/379329.png",
+   "tier": 2
+  },
+  {
+   "name": "Nathan Ngoy",
+   "team": "Lille",
+   "position": "Defender",
+   "age": 23,
+   "number": 3,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/312964.png",
+   "tier": 1
+  },
+  {
+   "name": "Loun Srdanovic",
+   "team": "Lille",
+   "position": "Defender",
+   "age": 20,
+   "number": 2,
+   "nationality": "Switzerland",
+   "photo": "https://media.api-sports.io/football/players/394211.png",
+   "tier": 3
+  },
+  {
+   "name": "Isaac Cossier",
+   "team": "Lille",
+   "position": "Defender",
+   "age": 19,
+   "number": 26,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/486136.png",
+   "tier": 3
+  },
+  {
+   "name": "Nabil Bentaleb",
+   "team": "Lille",
+   "position": "Midfielder",
+   "age": 31,
+   "number": 6,
+   "nationality": "Algeria",
+   "photo": "https://media.api-sports.io/football/players/409.png",
+   "tier": 3
+  },
+  {
+   "name": "Benjamin André",
+   "team": "Lille",
+   "position": "Midfielder",
+   "age": 36,
+   "number": 21,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/2204.png",
+   "tier": 3
+  },
+  {
+   "name": "Hákon Arnar Haraldsson",
+   "team": "Lille",
+   "position": "Forward",
+   "age": 23,
+   "number": 10,
+   "nationality": "Iceland",
+   "photo": "https://media.api-sports.io/football/players/67889.png",
+   "tier": 1
+  },
+  {
+   "name": "Maurits Kjærgaard",
+   "team": "Lille",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 14,
+   "nationality": "Denmark",
+   "photo": "https://media.api-sports.io/football/players/115587.png",
+   "tier": 2
+  },
+  {
+   "name": "Ngal'ayel Mukau",
+   "team": "Lille",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 17,
+   "nationality": "Congo DR",
+   "photo": "https://media.api-sports.io/football/players/375598.png",
+   "tier": 2
+  },
+  {
+   "name": "Mohamed Bayo",
+   "team": "Lille",
+   "position": "Forward",
+   "age": 33,
+   "number": null,
+   "nationality": "Guinea",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Gaëtan Perrin",
+   "team": "Lille",
+   "position": "Forward",
+   "age": 30,
+   "number": 28,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/20732.png",
+   "tier": 3
+  },
+  {
+   "name": "Olivier Giroud",
+   "team": "Lille",
+   "position": "Forward",
+   "age": 40,
+   "number": 9,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/2295.png",
+   "tier": 3
+  },
+  {
+   "name": "Osame Sahraoui",
+   "team": "Lille",
+   "position": "Forward",
+   "age": 25,
+   "number": 11,
+   "nationality": "Morocco",
+   "photo": "https://media.api-sports.io/football/players/99576.png",
+   "tier": 2
+  },
+  {
+   "name": "Ayase Ueda",
+   "team": "Lille",
+   "position": "Forward",
+   "age": 28,
+   "number": 18,
+   "nationality": "Japan",
+   "photo": "https://media.api-sports.io/football/players/72155.png",
+   "tier": 2
+  },
+  {
+   "name": "Tiago Fonseca Morais",
+   "team": "Lille",
+   "position": "Forward",
+   "age": 23,
+   "number": null,
+   "nationality": "Portugal",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Dilane Bakwa",
+   "team": "Lille",
+   "position": "Forward",
+   "age": 24,
+   "number": 7,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/129695.png",
+   "tier": 1
+  },
+  {
+   "name": "Basar Onal",
+   "team": "Lille",
+   "position": "Forward",
+   "age": 22,
+   "number": 19,
+   "nationality": "Turkey",
+   "photo": "https://media.api-sports.io/football/players/360032.png",
+   "tier": 2
+  },
+  {
+   "name": "Ethan Mbappé",
+   "team": "Lille",
+   "position": "Forward",
+   "age": 19,
+   "number": 8,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/386287.png",
+   "tier": 2
+  },
+  {
+   "name": "Hamza Igamane",
+   "team": "Lille",
+   "position": "Forward",
+   "age": 24,
+   "number": null,
+   "nationality": "Morocco",
+   "photo": null,
+   "tier": 2
+  },
+  {
+   "name": "Soriba Diaoune",
+   "team": "Lille",
+   "position": "Forward",
+   "age": 19,
+   "number": 35,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/487381.png",
+   "tier": 3
+  },
+  {
+   "name": "Yéli Traoré",
+   "team": "Lille",
+   "position": null,
+   "age": 19,
+   "number": null,
+   "nationality": "France",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Yehvann Diouf",
+   "team": "Nice",
+   "position": "Goalkeeper",
+   "age": 26,
+   "number": 23,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/20566.png",
+   "tier": 2
+  },
+  {
+   "name": "Teddy Boulhendi",
+   "team": "Nice",
+   "position": "Goalkeeper",
+   "age": 25,
+   "number": 77,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/175171.png",
+   "tier": 3
+  },
+  {
+   "name": "Jonathan Clauss",
+   "team": "Nice",
+   "position": "Midfielder",
+   "age": 34,
+   "number": 92,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/25008.png",
+   "tier": 3
+  },
+  {
+   "name": "Ali El Abdi",
+   "team": "Nice",
+   "position": "Defender",
+   "age": 32,
+   "number": 2,
+   "nationality": "Tunisia",
+   "photo": "https://media.api-sports.io/football/players/49583.png",
+   "tier": 3
+  },
+  {
+   "name": "Niels Nkounkou",
+   "team": "Nice",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 27,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/156490.png",
+   "tier": 3
+  },
+  {
+   "name": "Antoine Mendy",
+   "team": "Nice",
+   "position": "Defender",
+   "age": 22,
+   "number": 33,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/313937.png",
+   "tier": 2
+  },
+  {
+   "name": "Youssouf Ndayishimiye",
+   "team": "Nice",
+   "position": "Defender",
+   "age": 28,
+   "number": 55,
+   "nationality": "Burundi",
+   "photo": "https://media.api-sports.io/football/players/3099.png",
+   "tier": 2
+  },
+  {
+   "name": "Moise Bombito",
+   "team": "Nice",
+   "position": "Defender",
+   "age": 26,
+   "number": null,
+   "nationality": "Canada",
+   "photo": null,
+   "tier": 2
+  },
+  {
+   "name": "Mohamed Abdelmonem",
+   "team": "Nice",
+   "position": "Defender",
+   "age": 27,
+   "number": 5,
+   "nationality": "Egypt",
+   "photo": "https://media.api-sports.io/football/players/196343.png",
+   "tier": 3
+  },
+  {
+   "name": "Hamza Koutoune",
+   "team": "Nice",
+   "position": "Defender",
+   "age": 20,
+   "number": 84,
+   "nationality": "Morocco",
+   "photo": "https://media.api-sports.io/football/players/417914.png",
+   "tier": 3
+  },
+  {
+   "name": "Brad Mantsounga",
+   "team": "Nice",
+   "position": "Defender",
+   "age": 19,
+   "number": null,
+   "nationality": "Congo",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Laurent Abergel",
+   "team": "Nice",
+   "position": "Midfielder",
+   "age": 33,
+   "number": 6,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/20917.png",
+   "tier": 3
+  },
+  {
+   "name": "Axel Witsel",
+   "team": "Nice",
+   "position": "Midfielder",
+   "age": 37,
+   "number": 28,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/20.png",
+   "tier": 3
+  },
+  {
+   "name": "Morgan Sanson",
+   "team": "Nice",
+   "position": "Midfielder",
+   "age": 32,
+   "number": 8,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/1914.png",
+   "tier": 3
+  },
+  {
+   "name": "Everton",
+   "team": "Nice",
+   "position": "Midfielder",
+   "age": 31,
+   "number": null,
+   "nationality": "Brazil",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Salis Abdul Samed",
+   "team": "Nice",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 99,
+   "nationality": "Ghana",
+   "photo": "https://media.api-sports.io/football/players/128987.png",
+   "tier": 3
+  },
+  {
+   "name": "Hicham Boudaoui",
+   "team": "Nice",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 6,
+   "nationality": "Algeria",
+   "photo": "https://media.api-sports.io/football/players/4399.png",
+   "tier": 2
+  },
+  {
+   "name": "Issiaga Camara",
+   "team": "Nice",
+   "position": "Midfielder",
+   "age": 21,
+   "number": 22,
+   "nationality": "Guinea",
+   "photo": "https://media.api-sports.io/football/players/444561.png",
+   "tier": 3
+  },
+  {
+   "name": "Djibril Coulibaly",
+   "team": "Nice",
+   "position": "Midfielder",
+   "age": 17,
+   "number": 39,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/504157.png",
+   "tier": 3
+  },
+  {
+   "name": "Nassim Laarej",
+   "team": "Nice",
+   "position": "Midfielder",
+   "age": 17,
+   "number": null,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/668718.png",
+   "tier": 3
+  },
+  {
+   "name": "Gauthier Hein",
+   "team": "Nice",
+   "position": "Midfielder",
+   "age": 30,
+   "number": 7,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/20529.png",
+   "tier": 3
+  },
+  {
+   "name": "Sofiane Diop",
+   "team": "Nice",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 10,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/107.png",
+   "tier": 2
+  },
+  {
+   "name": "Isak Jansson",
+   "team": "Nice",
+   "position": "Forward",
+   "age": 24,
+   "number": 21,
+   "nationality": "Sweden",
+   "photo": "https://media.api-sports.io/football/players/105154.png",
+   "tier": 3
+  },
+  {
+   "name": "Nathan N'Goumou",
+   "team": "Nice",
+   "position": "Forward",
+   "age": 26,
+   "number": 29,
+   "nationality": "Cameroon",
+   "photo": "https://media.api-sports.io/football/players/22148.png",
+   "tier": 3
+  },
+  {
+   "name": "Sepe Elye Wahi",
+   "team": "Nice",
+   "position": "Forward",
+   "age": 23,
+   "number": null,
+   "nationality": "Ivory Coast",
+   "photo": null,
+   "tier": 2
+  },
+  {
+   "name": "Mohammed Amoura",
+   "team": "Nice",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 9,
+   "nationality": "Algeria",
+   "photo": "https://media.api-sports.io/football/players/200139.png",
+   "tier": 2
+  },
+  {
+   "name": "Zoumana Diallo",
+   "team": "Nice",
+   "position": "Forward",
+   "age": 21,
+   "number": 44,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/362470.png",
+   "tier": 3
+  },
+  {
+   "name": "Victor Orakpo",
+   "team": "Nice",
+   "position": "Forward",
+   "age": 20,
+   "number": null,
+   "nationality": "Nigeria",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Rémy Descamps",
+   "team": "Lyon",
+   "position": "Goalkeeper",
+   "age": 30,
+   "number": 40,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/20762.png",
+   "tier": 3
+  },
+  {
+   "name": "Dominik Greif",
+   "team": "Lyon",
+   "position": "Goalkeeper",
+   "age": 29,
+   "number": 1,
+   "nationality": "Slovakia",
+   "photo": "https://media.api-sports.io/football/players/61142.png",
+   "tier": 2
+  },
+  {
+   "name": "Justin Jose Bengui Joao",
+   "team": "Lyon",
+   "position": "Goalkeeper",
+   "age": 21,
+   "number": 25,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/270814.png",
+   "tier": 3
+  },
+  {
+   "name": "Lassine Diarra",
+   "team": "Lyon",
+   "position": "Goalkeeper",
+   "age": 23,
+   "number": null,
+   "nationality": "Mali",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Nicolás Tagliafico",
+   "team": "Lyon",
+   "position": "Defender",
+   "age": 34,
+   "number": 3,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/529.png",
+   "tier": 3
+  },
+  {
+   "name": "Moussa Niakhaté",
+   "team": "Lyon",
+   "position": "Defender",
+   "age": 30,
+   "number": 19,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/25916.png",
+   "tier": 2
+  },
+  {
+   "name": "Clinton Mata",
+   "team": "Lyon",
+   "position": "Defender",
+   "age": 34,
+   "number": 22,
+   "nationality": "Angola",
+   "photo": "https://media.api-sports.io/football/players/68.png",
+   "tier": 3
+  },
+  {
+   "name": "Felix Bacher",
+   "team": "Lyon",
+   "position": "Defender",
+   "age": 26,
+   "number": 20,
+   "nationality": "Austria",
+   "photo": "https://media.api-sports.io/football/players/7147.png",
+   "tier": 2
+  },
+  {
+   "name": "Abner",
+   "team": "Lyon",
+   "position": "Defender",
+   "age": 26,
+   "number": 16,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/9700.png",
+   "tier": 2
+  },
+  {
+   "name": "Ruben Kluivert",
+   "team": "Lyon",
+   "position": "Defender",
+   "age": 25,
+   "number": 21,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/193293.png",
+   "tier": 2
+  },
+  {
+   "name": "Mohamed Ouédraogo",
+   "team": "Lyon",
+   "position": "Defender",
+   "age": 23,
+   "number": 76,
+   "nationality": "Burkina Faso",
+   "photo": "https://media.api-sports.io/football/players/412049.png",
+   "tier": 3
+  },
+  {
+   "name": "Zachary Athekame",
+   "team": "Lyon",
+   "position": "Defender",
+   "age": 21,
+   "number": 13,
+   "nationality": "Switzerland",
+   "photo": "https://media.api-sports.io/football/players/396380.png",
+   "tier": 2
+  },
+  {
+   "name": "Noham Kamara",
+   "team": "Lyon",
+   "position": "Defender",
+   "age": 19,
+   "number": 85,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/493026.png",
+   "tier": 3
+  },
+  {
+   "name": "Corentin Tolisso",
+   "team": "Lyon",
+   "position": "Midfielder",
+   "age": 32,
+   "number": 8,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/519.png",
+   "tier": 2
+  },
+  {
+   "name": "Paul Akouokou",
+   "team": "Lyon",
+   "position": "Midfielder",
+   "age": 28,
+   "number": null,
+   "nationality": "Ivory Coast",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Pavel Šulc",
+   "team": "Lyon",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 10,
+   "nationality": "Czech Republic",
+   "photo": "https://media.api-sports.io/football/players/66387.png",
+   "tier": 2
+  },
+  {
+   "name": "Tanner Tessmann",
+   "team": "Lyon",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 6,
+   "nationality": "USA",
+   "photo": "https://media.api-sports.io/football/players/80752.png",
+   "tier": 2
+  },
+  {
+   "name": "Mads Bidstrup",
+   "team": "Lyon",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 2,
+   "nationality": "Denmark",
+   "photo": "https://media.api-sports.io/football/players/162189.png",
+   "tier": 2
+  },
+  {
+   "name": "Tyler Morton",
+   "team": "Lyon",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 23,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/162590.png",
+   "tier": 1
+  },
+  {
+   "name": "Noah Nartey",
+   "team": "Lyon",
+   "position": "Midfielder",
+   "age": 21,
+   "number": 99,
+   "nationality": "Denmark",
+   "photo": "https://media.api-sports.io/football/players/361352.png",
+   "tier": 2
+  },
+  {
+   "name": "Mathys De Carvalho",
+   "team": "Lyon",
+   "position": "Midfielder",
+   "age": 21,
+   "number": null,
+   "nationality": "Portugal",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Khalis Merah",
+   "team": "Lyon",
+   "position": "Forward",
+   "age": 19,
+   "number": 18,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/519664.png",
+   "tier": 2
+  },
+  {
+   "name": "Loïs Openda",
+   "team": "Lyon",
+   "position": "Forward",
+   "age": 26,
+   "number": 17,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/86.png",
+   "tier": 1
+  },
+  {
+   "name": "Julien Duranville",
+   "team": "Lyon",
+   "position": "Forward",
+   "age": 20,
+   "number": 24,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/368230.png",
+   "tier": 2
+  },
+  {
+   "name": "Ernest Nuamah",
+   "team": "Lyon",
+   "position": "Forward",
+   "age": 23,
+   "number": 7,
+   "nationality": "Ghana",
+   "photo": "https://media.api-sports.io/football/players/350856.png",
+   "tier": 2
+  },
+  {
+   "name": "Kaïl Boudache",
+   "team": "Lyon",
+   "position": "Forward",
+   "age": 20,
+   "number": 26,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/405237.png",
+   "tier": 3
+  },
+  {
+   "name": "Alejandro Rodriguez",
+   "team": "Lyon",
+   "position": "Forward",
+   "age": 18,
+   "number": 32,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/409794.png",
+   "tier": 3
+  },
+  {
+   "name": "Rémi Himbert",
+   "team": "Lyon",
+   "position": "Forward",
+   "age": 18,
+   "number": 45,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/497617.png",
+   "tier": 2
+  },
+  {
+   "name": "Cluver Sambi Mbungu",
+   "team": "Lyon",
+   "position": "Midfielder",
+   "age": 18,
+   "number": 33,
+   "nationality": "DR Congo",
+   "photo": "https://media.api-sports.io/football/players/691283.png",
+   "tier": 3
+  },
+  {
+   "name": "Ángel García",
+   "team": "Lyon",
+   "position": "Defender",
+   "age": 18,
+   "number": 38,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/689330.png",
+   "tier": 3
+  },
+  {
+   "name": "Matvei Safonov",
+   "team": "Paris Saint Germain",
+   "position": "Goalkeeper",
+   "age": 27,
+   "number": 39,
+   "nationality": "Russia",
+   "photo": "https://media.api-sports.io/football/players/2068.png",
+   "tier": 1
+  },
+  {
+   "name": "Lucas Chevalier",
+   "team": "Paris Saint Germain",
+   "position": "Goalkeeper",
+   "age": 25,
+   "number": 30,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/162453.png",
+   "tier": 1
+  },
+  {
+   "name": "Achraf Hakimi",
+   "team": "Paris Saint Germain",
+   "position": "Defender",
+   "age": 28,
+   "number": 2,
+   "nationality": "Morocco",
+   "photo": "https://media.api-sports.io/football/players/9.png",
+   "tier": 1
+  },
+  {
+   "name": "Marquinhos",
+   "team": "Paris Saint Germain",
+   "position": "Defender",
+   "age": 32,
+   "number": 5,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/257.png",
+   "tier": 1
+  },
+  {
+   "name": "Lucas Digne",
+   "team": "Paris Saint Germain",
+   "position": "Defender",
+   "age": 33,
+   "number": 12,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/2724.png",
+   "tier": 2
+  },
+  {
+   "name": "Lucas Hernández",
+   "team": "Paris Saint Germain",
+   "position": "Defender",
+   "age": 30,
+   "number": 21,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/33.png",
+   "tier": 2
+  },
+  {
+   "name": "William Pacho",
+   "team": "Paris Saint Germain",
+   "position": "Defender",
+   "age": 25,
+   "number": 51,
+   "nationality": "Ecuador",
+   "photo": "https://media.api-sports.io/football/players/16367.png",
+   "tier": 1
+  },
+  {
+   "name": "Illia Zabarnyi",
+   "team": "Paris Saint Germain",
+   "position": "Defender",
+   "age": 24,
+   "number": 6,
+   "nationality": "Ukraine",
+   "photo": "https://media.api-sports.io/football/players/161671.png",
+   "tier": 1
+  },
+  {
+   "name": "Nuno Mendes",
+   "team": "Paris Saint Germain",
+   "position": "Defender",
+   "age": 24,
+   "number": 25,
+   "nationality": "Portugal",
+   "photo": "https://media.api-sports.io/football/players/263482.png",
+   "tier": 1
+  },
+  {
+   "name": "Lucas Beraldo",
+   "team": "Paris Saint Germain",
+   "position": "Defender",
+   "age": 22,
+   "number": 4,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/307835.png",
+   "tier": 1
+  },
+  {
+   "name": "Fabián Ruiz",
+   "team": "Paris Saint Germain",
+   "position": "Midfielder",
+   "age": 30,
+   "number": 8,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/328.png",
+   "tier": 1
+  },
+  {
+   "name": "Vitinha",
+   "team": "Paris Saint Germain",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 17,
+   "nationality": "Portugal",
+   "photo": "https://media.api-sports.io/football/players/128384.png",
+   "tier": 1
+  },
+  {
+   "name": "Warren Zaïre-Emery",
+   "team": "Paris Saint Germain",
+   "position": "Midfielder",
+   "age": 20,
+   "number": 33,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/336657.png",
+   "tier": 1
+  },
+  {
+   "name": "Joao Neves",
+   "team": "Paris Saint Germain",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 87,
+   "nationality": "Portugal",
+   "photo": "https://media.api-sports.io/football/players/335051.png",
+   "tier": 1
+  },
+  {
+   "name": "Senny Mayulu",
+   "team": "Paris Saint Germain",
+   "position": "Forward",
+   "age": 20,
+   "number": 24,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/409216.png",
+   "tier": 1
+  },
+  {
+   "name": "Pedro Fernández",
+   "team": "Paris Saint Germain",
+   "position": "Midfielder",
+   "age": 18,
+   "number": 27,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/491087.png",
+   "tier": 2
+  },
+  {
+   "name": "Ousmane Dembélé",
+   "team": "Paris Saint Germain",
+   "position": "Forward",
+   "age": 29,
+   "number": 10,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/153.png",
+   "tier": 1
+  },
+  {
+   "name": "Ferrán Torres",
+   "team": "Paris Saint Germain",
+   "position": "Forward",
+   "age": 26,
+   "number": 9,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/931.png",
+   "tier": 1
+  },
+  {
+   "name": "Khvicha Kvaratskhelia",
+   "team": "Paris Saint Germain",
+   "position": "Forward",
+   "age": 25,
+   "number": 7,
+   "nationality": "Georgia",
+   "photo": "https://media.api-sports.io/football/players/483.png",
+   "tier": 1
+  },
+  {
+   "name": "Maghnes Akliouche",
+   "team": "Paris Saint Germain",
+   "position": "Forward",
+   "age": 24,
+   "number": 11,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/274300.png",
+   "tier": 1
+  },
+  {
+   "name": "Desire Doue",
+   "team": "Paris Saint Germain",
+   "position": "Forward",
+   "age": 21,
+   "number": 14,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/343027.png",
+   "tier": 1
+  },
+  {
+   "name": "Mika Godts",
+   "team": "Paris Saint Germain",
+   "position": "Forward",
+   "age": 21,
+   "number": 22,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/340153.png",
+   "tier": 1
+  },
+  {
+   "name": "Quentin Ndjantou",
+   "team": "Paris Saint Germain",
+   "position": "Forward",
+   "age": 19,
+   "number": 47,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/471107.png",
+   "tier": 2
+  },
+  {
+   "name": "Younes Idder",
+   "team": "Paris Saint Germain",
+   "position": null,
+   "age": 18,
+   "number": null,
+   "nationality": "Morocco",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Arthur Bar",
+   "team": "Paris Saint Germain",
+   "position": null,
+   "age": 16,
+   "number": null,
+   "nationality": "France",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Adam Mouak",
+   "team": "Paris Saint Germain",
+   "position": "Goalkeeper",
+   "age": 17,
+   "number": 80,
+   "nationality": "Morocco",
+   "photo": "https://media.api-sports.io/football/players/689071.png",
+   "tier": 3
+  },
+  {
+   "name": "Benjamin Leroy",
+   "team": "Lorient",
+   "position": "Goalkeeper",
+   "age": 37,
+   "number": 1,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/20936.png",
+   "tier": 3
+  },
+  {
+   "name": "Bingourou Kamara",
+   "team": "Lorient",
+   "position": "Goalkeeper",
+   "age": 30,
+   "number": 21,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/22241.png",
+   "tier": 3
+  },
+  {
+   "name": "Yvon Mvogo",
+   "team": "Lorient",
+   "position": "Goalkeeper",
+   "age": 32,
+   "number": 38,
+   "nationality": "Switzerland",
+   "photo": "https://media.api-sports.io/football/players/1142.png",
+   "tier": 3
+  },
+  {
+   "name": "Alec Georgen",
+   "team": "Lorient",
+   "position": "Defender",
+   "age": 28,
+   "number": 2,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/85773.png",
+   "tier": 3
+  },
+  {
+   "name": "Souleymane Isaak Toure",
+   "team": "Lorient",
+   "position": "Defender",
+   "age": 23,
+   "number": 95,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/195893.png",
+   "tier": 3
+  },
+  {
+   "name": "Formose Mendy",
+   "team": "Lorient",
+   "position": "Defender",
+   "age": 25,
+   "number": 27,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/162236.png",
+   "tier": 3
+  },
+  {
+   "name": "Montassar Talbi",
+   "team": "Lorient",
+   "position": "Defender",
+   "age": 28,
+   "number": 3,
+   "nationality": "Tunisia",
+   "photo": "https://media.api-sports.io/football/players/50030.png",
+   "tier": 2
+  },
+  {
+   "name": "Dembo Sylla",
+   "team": "Lorient",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 20,
+   "nationality": "Guinea",
+   "photo": "https://media.api-sports.io/football/players/193507.png",
+   "tier": 3
+  },
+  {
+   "name": "Nathaniel Adjei",
+   "team": "Lorient",
+   "position": "Defender",
+   "age": 24,
+   "number": 32,
+   "nationality": "Ghana",
+   "photo": "https://media.api-sports.io/football/players/214310.png",
+   "tier": 3
+  },
+  {
+   "name": "Srđan Kuzmić",
+   "team": "Lorient",
+   "position": "Defender",
+   "age": 22,
+   "number": 30,
+   "nationality": "Slovenia",
+   "photo": "https://media.api-sports.io/football/players/278556.png",
+   "tier": 3
+  },
+  {
+   "name": "Nosa Edward Obaretin",
+   "team": "Lorient",
+   "position": "Defender",
+   "age": 23,
+   "number": 55,
+   "nationality": "Italy",
+   "photo": "https://media.api-sports.io/football/players/336688.png",
+   "tier": 3
+  },
+  {
+   "name": "Kan Guy Arsène Kouassi",
+   "team": "Lorient",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 43,
+   "nationality": "Burkina Faso",
+   "photo": "https://media.api-sports.io/football/players/402386.png",
+   "tier": 3
+  },
+  {
+   "name": "Jean-Victor Makengo",
+   "team": "Lorient",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 17,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/22171.png",
+   "tier": 2
+  },
+  {
+   "name": "Noah Cadiou",
+   "team": "Lorient",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 8,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/23363.png",
+   "tier": 3
+  },
+  {
+   "name": "Bandiougou Fadiga",
+   "team": "Lorient",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 7,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/162018.png",
+   "tier": 3
+  },
+  {
+   "name": "Noah Mbamba",
+   "team": "Lorient",
+   "position": "Midfielder",
+   "age": 21,
+   "number": 72,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/298006.png",
+   "tier": 3
+  },
+  {
+   "name": "Theo Le Bris",
+   "team": "Lorient",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 11,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/174703.png",
+   "tier": 2
+  },
+  {
+   "name": "Panos Katseris",
+   "team": "Lorient",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 77,
+   "nationality": "Greece",
+   "photo": "https://media.api-sports.io/football/players/384112.png",
+   "tier": 3
+  },
+  {
+   "name": "Arthur Ebong",
+   "team": "Lorient",
+   "position": "Midfielder",
+   "age": 21,
+   "number": null,
+   "nationality": "Cameroon",
+   "photo": null,
+   "tier": 2
+  },
+  {
+   "name": "Gabin Bernardeau",
+   "team": "Lorient",
+   "position": "Midfielder",
+   "age": 20,
+   "number": 33,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/483118.png",
+   "tier": 3
+  },
+  {
+   "name": "Aiyegun Tosin",
+   "team": "Lorient",
+   "position": "Forward",
+   "age": 28,
+   "number": 15,
+   "nationality": "Benin",
+   "photo": "https://media.api-sports.io/football/players/72457.png",
+   "tier": 3
+  },
+  {
+   "name": "Isak Jensen",
+   "team": "Lorient",
+   "position": "Forward",
+   "age": 22,
+   "number": 10,
+   "nationality": "Denmark",
+   "photo": "https://media.api-sports.io/football/players/289670.png",
+   "tier": 2
+  },
+  {
+   "name": "Ibrahima Baldé",
+   "team": "Lorient",
+   "position": "Forward",
+   "age": 23,
+   "number": 18,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/274278.png",
+   "tier": 3
+  },
+  {
+   "name": "Mohamed Bamba",
+   "team": "Lorient",
+   "position": "Forward",
+   "age": 24,
+   "number": 9,
+   "nationality": "Ivory Coast",
+   "photo": "https://media.api-sports.io/football/players/200873.png",
+   "tier": 3
+  },
+  {
+   "name": "Souleymane Faye",
+   "team": "Lorient",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 19,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/353771.png",
+   "tier": 3
+  },
+  {
+   "name": "Nicolas Lemaître",
+   "team": "Rennes",
+   "position": "Goalkeeper",
+   "age": 29,
+   "number": 16,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/21995.png",
+   "tier": 3
+  },
+  {
+   "name": "Brice Samba",
+   "team": "Rennes",
+   "position": "Goalkeeper",
+   "age": 32,
+   "number": 30,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/21628.png",
+   "tier": 2
+  },
+  {
+   "name": "Kilian Belazzoug",
+   "team": "Rennes",
+   "position": "Goalkeeper",
+   "age": 20,
+   "number": 60,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/601332.png",
+   "tier": 3
+  },
+  {
+   "name": "Przemysław Frankowski",
+   "team": "Rennes",
+   "position": "Midfielder",
+   "age": 31,
+   "number": 95,
+   "nationality": "Poland",
+   "photo": "https://media.api-sports.io/football/players/3007.png",
+   "tier": 2
+  },
+  {
+   "name": "Bryan Reynolds",
+   "team": "Rennes",
+   "position": "Defender",
+   "age": 25,
+   "number": 14,
+   "nationality": "USA",
+   "photo": "https://media.api-sports.io/football/players/51144.png",
+   "tier": 3
+  },
+  {
+   "name": "Alidu Seidu",
+   "team": "Rennes",
+   "position": "Defender",
+   "age": 26,
+   "number": null,
+   "nationality": "Ghana",
+   "photo": null,
+   "tier": 2
+  },
+  {
+   "name": "Anthony Rouault",
+   "team": "Rennes",
+   "position": "Defender",
+   "age": 25,
+   "number": 24,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/129681.png",
+   "tier": 2
+  },
+  {
+   "name": "Charlie Cresswell",
+   "team": "Rennes",
+   "position": "Defender",
+   "age": 24,
+   "number": 4,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/278392.png",
+   "tier": 1
+  },
+  {
+   "name": "Quentin Merlin",
+   "team": "Rennes",
+   "position": "Defender",
+   "age": 24,
+   "number": 26,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/272460.png",
+   "tier": 2
+  },
+  {
+   "name": "Mahamadou Nagida",
+   "team": "Rennes",
+   "position": "Defender",
+   "age": 21,
+   "number": 18,
+   "nationality": "Cameroon",
+   "photo": "https://media.api-sports.io/football/players/438281.png",
+   "tier": 2
+  },
+  {
+   "name": "Gonçalo Oliveira",
+   "team": "Rennes",
+   "position": "Defender",
+   "age": 20,
+   "number": 5,
+   "nationality": "Portugal",
+   "photo": "https://media.api-sports.io/football/players/400525.png",
+   "tier": 3
+  },
+  {
+   "name": "Abdelhamid Ait Boudlal",
+   "team": "Rennes",
+   "position": "Defender",
+   "age": 20,
+   "number": 48,
+   "nationality": "Morocco",
+   "photo": "https://media.api-sports.io/football/players/417830.png",
+   "tier": 2
+  },
+  {
+   "name": "Mahdi Camara",
+   "team": "Rennes",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 45,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/24147.png",
+   "tier": 2
+  },
+  {
+   "name": "Valentin Rongier",
+   "team": "Rennes",
+   "position": "Midfielder",
+   "age": 31,
+   "number": 21,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/21102.png",
+   "tier": 2
+  },
+  {
+   "name": "Adrien Thomasson",
+   "team": "Rennes",
+   "position": "Midfielder",
+   "age": 32,
+   "number": 28,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/22261.png",
+   "tier": 3
+  },
+  {
+   "name": "Sebastian Szymański",
+   "team": "Rennes",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 17,
+   "nationality": "Poland",
+   "photo": "https://media.api-sports.io/football/players/40403.png",
+   "tier": 2
+  },
+  {
+   "name": "Ludovic Blas",
+   "team": "Rennes",
+   "position": "Forward",
+   "age": 28,
+   "number": 10,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/21497.png",
+   "tier": 2
+  },
+  {
+   "name": "Ayanda Sishuba",
+   "team": "Rennes",
+   "position": "Midfielder",
+   "age": 21,
+   "number": null,
+   "nationality": "Belgium",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Djaoui Cissé",
+   "team": "Rennes",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 6,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/343792.png",
+   "tier": 2
+  },
+  {
+   "name": "Arnaud Nordin",
+   "team": "Rennes",
+   "position": "Forward",
+   "age": 28,
+   "number": 70,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/22097.png",
+   "tier": 3
+  },
+  {
+   "name": "Boulaye Dia",
+   "team": "Rennes",
+   "position": "Forward",
+   "age": 29,
+   "number": 22,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/22015.png",
+   "tier": 2
+  },
+  {
+   "name": "Musa Al Taamari",
+   "team": "Rennes",
+   "position": "Forward",
+   "age": 29,
+   "number": null,
+   "nationality": "Jordan",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Esteban Lepaul",
+   "team": "Rennes",
+   "position": "Forward",
+   "age": 26,
+   "number": 9,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/163004.png",
+   "tier": 1
+  },
+  {
+   "name": "Eliezer Mayenda",
+   "team": "Rennes",
+   "position": "Forward",
+   "age": 21,
+   "number": 12,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/349799.png",
+   "tier": 2
+  },
+  {
+   "name": "Elias Legendre Quiñonez",
+   "team": "Rennes",
+   "position": "Forward",
+   "age": 18,
+   "number": 35,
+   "nationality": "Ecuador",
+   "photo": "https://media.api-sports.io/football/players/625629.png",
+   "tier": 3
+  },
+  {
+   "name": "Zacharie Boucher",
+   "team": "Estac Troyes",
+   "position": "Goalkeeper",
+   "age": 34,
+   "number": 1,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/21135.png",
+   "tier": 3
+  },
+  {
+   "name": "Hillel Konaté",
+   "team": "Estac Troyes",
+   "position": "Goalkeeper",
+   "age": 31,
+   "number": 40,
+   "nationality": "Burkina Faso",
+   "photo": "https://media.api-sports.io/football/players/20873.png",
+   "tier": 3
+  },
+  {
+   "name": "Patrick Beach",
+   "team": "Estac Troyes",
+   "position": "Goalkeeper",
+   "age": 23,
+   "number": 33,
+   "nationality": "Australia",
+   "photo": "https://media.api-sports.io/football/players/353883.png",
+   "tier": 3
+  },
+  {
+   "name": "Adrien Monfray",
+   "team": "Estac Troyes",
+   "position": "Defender",
+   "age": 35,
+   "number": 6,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/20715.png",
+   "tier": 3
+  },
+  {
+   "name": "Paolo Gozzi Iweru",
+   "team": "Estac Troyes",
+   "position": "Defender",
+   "age": 25,
+   "number": 5,
+   "nationality": "Italy",
+   "photo": "https://media.api-sports.io/football/players/859.png",
+   "tier": 3
+  },
+  {
+   "name": "Ismaëlben Boura",
+   "team": "Estac Troyes",
+   "position": "Defender",
+   "age": 26,
+   "number": 14,
+   "nationality": "Comoros",
+   "photo": "https://media.api-sports.io/football/players/174596.png",
+   "tier": 3
+  },
+  {
+   "name": "Lucas Maronnier",
+   "team": "Estac Troyes",
+   "position": "Defender",
+   "age": 26,
+   "number": 2,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/174766.png",
+   "tier": 3
+  },
+  {
+   "name": "Michel Diaz",
+   "team": "Estac Troyes",
+   "position": "Defender",
+   "age": 23,
+   "number": 4,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/365742.png",
+   "tier": 2
+  },
+  {
+   "name": "Yvann Titi",
+   "team": "Estac Troyes",
+   "position": "Defender",
+   "age": 20,
+   "number": 44,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/395810.png",
+   "tier": 3
+  },
+  {
+   "name": "Tom Akpakoun",
+   "team": "Estac Troyes",
+   "position": "Defender",
+   "age": 21,
+   "number": null,
+   "nationality": "France",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Anis Ouzenadji",
+   "team": "Estac Troyes",
+   "position": "Defender",
+   "age": 20,
+   "number": 3,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/442933.png",
+   "tier": 3
+  },
+  {
+   "name": "Alexandre Phliponeau",
+   "team": "Estac Troyes",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 26,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/1913.png",
+   "tier": 3
+  },
+  {
+   "name": "Iron Gomis",
+   "team": "Estac Troyes",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 11,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/21386.png",
+   "tier": 3
+  },
+  {
+   "name": "Antoine Mille",
+   "team": "Estac Troyes",
+   "position": "Midfielder",
+   "age": 29,
+   "number": 17,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/174806.png",
+   "tier": 3
+  },
+  {
+   "name": "Karim Dermane",
+   "team": "Estac Troyes",
+   "position": "Midfielder",
+   "age": 22,
+   "number": null,
+   "nationality": "Togo",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Mouhamed Diop",
+   "team": "Estac Troyes",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 8,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/335162.png",
+   "tier": 3
+  },
+  {
+   "name": "Hugo Picard",
+   "team": "Estac Troyes",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 22,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/338201.png",
+   "tier": 3
+  },
+  {
+   "name": "Roman Murcy",
+   "team": "Estac Troyes",
+   "position": "Midfielder",
+   "age": 20,
+   "number": 35,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/456882.png",
+   "tier": 3
+  },
+  {
+   "name": "Renaud Ripart",
+   "team": "Estac Troyes",
+   "position": "Forward",
+   "age": 33,
+   "number": 20,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/21451.png",
+   "tier": 3
+  },
+  {
+   "name": "Timothée Nkada",
+   "team": "Estac Troyes",
+   "position": "Forward",
+   "age": 27,
+   "number": 23,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/2217.png",
+   "tier": 3
+  },
+  {
+   "name": "Kandet Diawara",
+   "team": "Estac Troyes",
+   "position": "Forward",
+   "age": 26,
+   "number": 7,
+   "nationality": "Guinea",
+   "photo": "https://media.api-sports.io/football/players/158516.png",
+   "tier": 3
+  },
+  {
+   "name": "Jérémy Le Douaron",
+   "team": "Estac Troyes",
+   "position": "Forward",
+   "age": 28,
+   "number": 9,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/85772.png",
+   "tier": 2
+  },
+  {
+   "name": "Ibrahim Traoré",
+   "team": "Estac Troyes",
+   "position": "Forward",
+   "age": 20,
+   "number": 34,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/421863.png",
+   "tier": 3
+  },
+  {
+   "name": "Merwan Ifnaoui",
+   "team": "Estac Troyes",
+   "position": "Forward",
+   "age": 28,
+   "number": 10,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/275478.png",
+   "tier": 3
+  },
+  {
+   "name": "Amadou Diakite",
+   "team": "Estac Troyes",
+   "position": "Forward",
+   "age": 21,
+   "number": null,
+   "nationality": "France",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Elijah Olaniyi Odede",
+   "team": "Estac Troyes",
+   "position": "Forward",
+   "age": 19,
+   "number": null,
+   "nationality": "Nigeria",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Lassana Simakha",
+   "team": "Estac Troyes",
+   "position": "Defender",
+   "age": 19,
+   "number": 34,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/681732.png",
+   "tier": 3
+  },
+  {
+   "name": "Enisio Carneiro",
+   "team": "Estac Troyes",
+   "position": null,
+   "age": 19,
+   "number": null,
+   "nationality": "France",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Anthony Lopes",
+   "team": "Angers",
+   "position": "Goalkeeper",
+   "age": 36,
+   "number": 1,
+   "nationality": "Portugal",
+   "photo": "https://media.api-sports.io/football/players/647.png",
+   "tier": 3
+  },
+  {
+   "name": "Melvin Zinga",
+   "team": "Angers",
+   "position": "Goalkeeper",
+   "age": 24,
+   "number": 16,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/174973.png",
+   "tier": 3
+  },
+  {
+   "name": "Oumar Pona",
+   "team": "Angers",
+   "position": "Goalkeeper",
+   "age": 20,
+   "number": 40,
+   "nationality": "Mali",
+   "photo": "https://media.api-sports.io/football/players/396308.png",
+   "tier": 3
+  },
+  {
+   "name": "Carlens Arcus",
+   "team": "Angers",
+   "position": "Defender",
+   "age": 30,
+   "number": 2,
+   "nationality": "Haiti",
+   "photo": "https://media.api-sports.io/football/players/20850.png",
+   "tier": 3
+  },
+  {
+   "name": "Jordan Lefort",
+   "team": "Angers",
+   "position": "Defender",
+   "age": 33,
+   "number": 21,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/21381.png",
+   "tier": 3
+  },
+  {
+   "name": "Ousman Camara",
+   "team": "Angers",
+   "position": "Defender",
+   "age": 23,
+   "number": 4,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/271540.png",
+   "tier": 2
+  },
+  {
+   "name": "Emmanuel Biumla",
+   "team": "Angers",
+   "position": "Defender",
+   "age": 21,
+   "number": 24,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/385569.png",
+   "tier": 3
+  },
+  {
+   "name": "Lilian Rao-Lisoa",
+   "team": "Angers",
+   "position": "Defender",
+   "age": 26,
+   "number": 27,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/174660.png",
+   "tier": 3
+  },
+  {
+   "name": "Joseph Kalulu",
+   "team": "Angers",
+   "position": "Defender",
+   "age": 21,
+   "number": 17,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/409558.png",
+   "tier": 3
+  },
+  {
+   "name": "Marius Louãr",
+   "team": "Angers",
+   "position": "Defender",
+   "age": 19,
+   "number": null,
+   "nationality": "France",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Haris Belkebla",
+   "team": "Angers",
+   "position": "Midfielder",
+   "age": 32,
+   "number": 93,
+   "nationality": "Algeria",
+   "photo": "https://media.api-sports.io/football/players/20554.png",
+   "tier": 3
+  },
+  {
+   "name": "Branco van den Boomen",
+   "team": "Angers",
+   "position": "Midfielder",
+   "age": 31,
+   "number": 8,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/37652.png",
+   "tier": 3
+  },
+  {
+   "name": "Louis Mouton",
+   "team": "Angers",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 6,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/289555.png",
+   "tier": 3
+  },
+  {
+   "name": "Yassin Belkhdim",
+   "team": "Angers",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 14,
+   "nationality": "Morocco",
+   "photo": "https://media.api-sports.io/football/players/174708.png",
+   "tier": 2
+  },
+  {
+   "name": "Bané Diatta",
+   "team": "Angers",
+   "position": "Midfielder",
+   "age": 18,
+   "number": 36,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/655113.png",
+   "tier": 3
+  },
+  {
+   "name": "Jim Allevinah",
+   "team": "Angers",
+   "position": "Forward",
+   "age": 31,
+   "number": 18,
+   "nationality": "Gabon",
+   "photo": "https://media.api-sports.io/football/players/21618.png",
+   "tier": 3
+  },
+  {
+   "name": "Amine El Ouazzani",
+   "team": "Angers",
+   "position": "Forward",
+   "age": 25,
+   "number": 19,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/193188.png",
+   "tier": 3
+  },
+  {
+   "name": "Mamadou Usman Simbakoli",
+   "team": "Angers",
+   "position": "Forward",
+   "age": 25,
+   "number": null,
+   "nationality": "Central African Republic",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Amine Sbaï",
+   "team": "Angers",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 10,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/191289.png",
+   "tier": 3
+  },
+  {
+   "name": "Anthony Bermont",
+   "team": "Angers",
+   "position": "Midfielder",
+   "age": 21,
+   "number": 26,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/402066.png",
+   "tier": 3
+  },
+  {
+   "name": "Prosper Peter",
+   "team": "Angers",
+   "position": "Forward",
+   "age": 19,
+   "number": 9,
+   "nationality": "Nigeria",
+   "photo": "https://media.api-sports.io/football/players/457541.png",
+   "tier": 2
+  },
+  {
+   "name": "Harouna Djibirin",
+   "team": "Angers",
+   "position": "Forward",
+   "age": 20,
+   "number": 11,
+   "nationality": "Cameroon",
+   "photo": "https://media.api-sports.io/football/players/579375.png",
+   "tier": 3
+  },
+  {
+   "name": "Gauthier Gallon",
+   "team": "Le Havre",
+   "position": "Goalkeeper",
+   "age": 33,
+   "number": 93,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/20706.png",
+   "tier": 3
+  },
+  {
+   "name": "Lionel Mpasi",
+   "team": "Le Havre",
+   "position": "Goalkeeper",
+   "age": 32,
+   "number": 77,
+   "nationality": "Congo DR",
+   "photo": "https://media.api-sports.io/football/players/24012.png",
+   "tier": 3
+  },
+  {
+   "name": "Paul Argney",
+   "team": "Le Havre",
+   "position": "Goalkeeper",
+   "age": 20,
+   "number": null,
+   "nationality": "France",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Ahmed Touba",
+   "team": "Le Havre",
+   "position": "Defender",
+   "age": 27,
+   "number": 5,
+   "nationality": "Algeria",
+   "photo": "https://media.api-sports.io/football/players/8777.png",
+   "tier": 3
+  },
+  {
+   "name": "Vincent Sasso",
+   "team": "Le Havre",
+   "position": "Defender",
+   "age": 35,
+   "number": 23,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/41238.png",
+   "tier": 3
+  },
+  {
+   "name": "Ayumu Seko",
+   "team": "Le Havre",
+   "position": "Defender",
+   "age": 26,
+   "number": 15,
+   "nationality": "Japan",
+   "photo": "https://media.api-sports.io/football/players/33165.png",
+   "tier": 2
+  },
+  {
+   "name": "Timothee Pembele",
+   "team": "Le Havre",
+   "position": "Defender",
+   "age": 24,
+   "number": 32,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/162067.png",
+   "tier": 3
+  },
+  {
+   "name": "Elias Jelert Kristensen",
+   "team": "Le Havre",
+   "position": "Defender",
+   "age": 23,
+   "number": 12,
+   "nationality": "Denmark",
+   "photo": "https://media.api-sports.io/football/players/341234.png",
+   "tier": 2
+  },
+  {
+   "name": "Stephan Zagadou",
+   "team": "Le Havre",
+   "position": "Defender",
+   "age": 18,
+   "number": null,
+   "nationality": "France",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Enzo Koffi",
+   "team": "Le Havre",
+   "position": "Defender",
+   "age": 20,
+   "number": null,
+   "nationality": "France",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Kaito Mizuta",
+   "team": "Le Havre",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 17,
+   "nationality": "Japan",
+   "photo": "https://media.api-sports.io/football/players/273142.png",
+   "tier": 3
+  },
+  {
+   "name": "Amir Richardson",
+   "team": "Le Havre",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 7,
+   "nationality": "Morocco",
+   "photo": "https://media.api-sports.io/football/players/314231.png",
+   "tier": 3
+  },
+  {
+   "name": "Rassoul N'Diaye",
+   "team": "Le Havre",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 14,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/128342.png",
+   "tier": 2
+  },
+  {
+   "name": "Junior Mwanga",
+   "team": "Le Havre",
+   "position": "Defender",
+   "age": 23,
+   "number": 6,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/282549.png",
+   "tier": 2
+  },
+  {
+   "name": "Simon Ebonog",
+   "team": "Le Havre",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 26,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/364093.png",
+   "tier": 3
+  },
+  {
+   "name": "Ismail Bouneb",
+   "team": "Le Havre",
+   "position": "Midfielder",
+   "age": 20,
+   "number": 44,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/395765.png",
+   "tier": 3
+  },
+  {
+   "name": "Daren Mosengo",
+   "team": "Le Havre",
+   "position": "Midfielder",
+   "age": 20,
+   "number": 78,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/460805.png",
+   "tier": 3
+  },
+  {
+   "name": "Guy Zohouri",
+   "team": "Le Havre",
+   "position": "Midfielder",
+   "age": 19,
+   "number": 24,
+   "nationality": "Ivory Coast",
+   "photo": "https://media.api-sports.io/football/players/451961.png",
+   "tier": 3
+  },
+  {
+   "name": "Josh Maja",
+   "team": "Le Havre",
+   "position": "Forward",
+   "age": 27,
+   "number": 9,
+   "nationality": "Nigeria",
+   "photo": "https://media.api-sports.io/football/players/1279.png",
+   "tier": 2
+  },
+  {
+   "name": "Mbwana Samatta",
+   "team": "Le Havre",
+   "position": "Forward",
+   "age": 33,
+   "number": 25,
+   "nationality": "Tanzania",
+   "photo": "https://media.api-sports.io/football/players/1945.png",
+   "tier": 3
+  },
+  {
+   "name": "Felix Mambimbi",
+   "team": "Le Havre",
+   "position": "Forward",
+   "age": 25,
+   "number": 10,
+   "nationality": "Switzerland",
+   "photo": "https://media.api-sports.io/football/players/961.png",
+   "tier": 3
+  },
+  {
+   "name": "Andy Logbo",
+   "team": "Le Havre",
+   "position": "Forward",
+   "age": 22,
+   "number": null,
+   "nationality": "France",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Joan Tincres",
+   "team": "Le Havre",
+   "position": "Forward",
+   "age": 20,
+   "number": 19,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/419584.png",
+   "tier": 3
+  },
+  {
+   "name": "Sota Nakamura",
+   "team": "Le Havre",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 30,
+   "nationality": "Japan",
+   "photo": "https://media.api-sports.io/football/players/508070.png",
+   "tier": 3
+  },
+  {
+   "name": "Rayan Fofana",
+   "team": "Le Havre",
+   "position": "Midfielder",
+   "age": 20,
+   "number": 38,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/443579.png",
+   "tier": 2
+  },
+  {
+   "name": "Hakim Dongopandji",
+   "team": "Le Havre",
+   "position": "Forward",
+   "age": 19,
+   "number": 33,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/673858.png",
+   "tier": 3
+  },
+  {
+   "name": "Nicolas Kocik",
+   "team": "Le Mans",
+   "position": "Goalkeeper",
+   "age": 28,
+   "number": 98,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/24189.png",
+   "tier": 3
+  },
+  {
+   "name": "Ewan Hatfout",
+   "team": "Le Mans",
+   "position": "Goalkeeper",
+   "age": 26,
+   "number": 1,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/179480.png",
+   "tier": 3
+  },
+  {
+   "name": "Augustin Delbecque",
+   "team": "Le Mans",
+   "position": "Goalkeeper",
+   "age": 24,
+   "number": 55,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/633362.png",
+   "tier": 3
+  },
+  {
+   "name": "Lucas Buadés",
+   "team": "Le Mans",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 18,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/21448.png",
+   "tier": 3
+  },
+  {
+   "name": "Samuel Yohou",
+   "team": "Le Mans",
+   "position": "Defender",
+   "age": 35,
+   "number": 17,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/20602.png",
+   "tier": 3
+  },
+  {
+   "name": "Djibril Sidibé",
+   "team": "Le Mans",
+   "position": "Defender",
+   "age": 34,
+   "number": 19,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/102.png",
+   "tier": 3
+  },
+  {
+   "name": "Yasser Larouci",
+   "team": "Le Mans",
+   "position": "Defender",
+   "age": 25,
+   "number": 76,
+   "nationality": "Algeria",
+   "photo": "https://media.api-sports.io/football/players/138828.png",
+   "tier": 3
+  },
+  {
+   "name": "Raúl Torrente",
+   "team": "Le Mans",
+   "position": "Defender",
+   "age": 25,
+   "number": 16,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/290215.png",
+   "tier": 3
+  },
+  {
+   "name": "Harold Voyer",
+   "team": "Le Mans",
+   "position": "Defender",
+   "age": 29,
+   "number": 5,
+   "nationality": "Martinique",
+   "photo": "https://media.api-sports.io/football/players/174605.png",
+   "tier": 3
+  },
+  {
+   "name": "Lucas Calodat",
+   "team": "Le Mans",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 22,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/179414.png",
+   "tier": 3
+  },
+  {
+   "name": "Rayan Bamba",
+   "team": "Le Mans",
+   "position": "Defender",
+   "age": 22,
+   "number": 26,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/363226.png",
+   "tier": 3
+  },
+  {
+   "name": "Théo Eyoum",
+   "team": "Le Mans",
+   "position": "Defender",
+   "age": 24,
+   "number": 21,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/270515.png",
+   "tier": 3
+  },
+  {
+   "name": "Noa Boisse",
+   "team": "Le Mans",
+   "position": "Defender",
+   "age": 20,
+   "number": 15,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/483116.png",
+   "tier": 3
+  },
+  {
+   "name": "Edwin Quarshie",
+   "team": "Le Mans",
+   "position": "Midfielder",
+   "age": 31,
+   "number": 6,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/24259.png",
+   "tier": 3
+  },
+  {
+   "name": "Alexandre Lauray",
+   "team": "Le Mans",
+   "position": "Midfielder",
+   "age": 29,
+   "number": 8,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/1258.png",
+   "tier": 3
+  },
+  {
+   "name": "Jean Vercruysse",
+   "team": "Le Mans",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 10,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/162706.png",
+   "tier": 3
+  },
+  {
+   "name": "Milan Robin",
+   "team": "Le Mans",
+   "position": "Midfielder",
+   "age": 26,
+   "number": null,
+   "nationality": "France",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Martin Rossignol",
+   "team": "Le Mans",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 27,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/349631.png",
+   "tier": 3
+  },
+  {
+   "name": "Lucas Bretelle",
+   "team": "Le Mans",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 29,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/274254.png",
+   "tier": 3
+  },
+  {
+   "name": "Adil Bourabaa",
+   "team": "Le Mans",
+   "position": "Midfielder",
+   "age": 21,
+   "number": 11,
+   "nationality": "Algeria",
+   "photo": "https://media.api-sports.io/football/players/608142.png",
+   "tier": 3
+  },
+  {
+   "name": "Habib Diallo",
+   "team": "Le Mans",
+   "position": "Forward",
+   "age": 31,
+   "number": 13,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/20535.png",
+   "tier": 3
+  },
+  {
+   "name": "Antoine Rabillard",
+   "team": "Le Mans",
+   "position": "Midfielder",
+   "age": 31,
+   "number": 9,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/21048.png",
+   "tier": 3
+  },
+  {
+   "name": "Dame Guèye",
+   "team": "Le Mans",
+   "position": "Forward",
+   "age": 31,
+   "number": 25,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/4743.png",
+   "tier": 3
+  },
+  {
+   "name": "Louis Mafouta",
+   "team": "Le Mans",
+   "position": "Forward",
+   "age": 32,
+   "number": 14,
+   "nationality": "Central African Republic",
+   "photo": "https://media.api-sports.io/football/players/85558.png",
+   "tier": 3
+  },
+  {
+   "name": "Erwan Colas",
+   "team": "Le Mans",
+   "position": "Forward",
+   "age": 29,
+   "number": 28,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/174939.png",
+   "tier": 3
+  },
+  {
+   "name": "Bilal Brahimi",
+   "team": "Le Mans",
+   "position": "Forward",
+   "age": 26,
+   "number": 7,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/19250.png",
+   "tier": 3
+  },
+  {
+   "name": "Enzo Vagner",
+   "team": "Le Mans",
+   "position": "Forward",
+   "age": 20,
+   "number": 99,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/504965.png",
+   "tier": 3
+  },
+  {
+   "name": "William Harhouz",
+   "team": "Le Mans",
+   "position": "Forward",
+   "age": 26,
+   "number": 20,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/381116.png",
+   "tier": 3
+  },
+  {
+   "name": "Lenny Videira",
+   "team": "Le Mans",
+   "position": "Midfielder",
+   "age": 20,
+   "number": 36,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/669862.png",
+   "tier": 3
+  },
+  {
+   "name": "Mathieu Gorgelin",
+   "team": "Lens",
+   "position": "Goalkeeper",
+   "age": 36,
+   "number": 16,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/646.png",
+   "tier": 3
+  },
+  {
+   "name": "Régis Gurtner",
+   "team": "Lens",
+   "position": "Goalkeeper",
+   "age": 39,
+   "number": 1,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/21378.png",
+   "tier": 3
+  },
+  {
+   "name": "Robin Risser",
+   "team": "Lens",
+   "position": "Goalkeeper",
+   "age": 21,
+   "number": 40,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/347211.png",
+   "tier": 1
+  },
+  {
+   "name": "Ilan Jourdren",
+   "team": "Lens",
+   "position": "Goalkeeper",
+   "age": 18,
+   "number": 1,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/497661.png",
+   "tier": 3
+  },
+  {
+   "name": "Jonathan Gradit",
+   "team": "Lens",
+   "position": "Defender",
+   "age": 33,
+   "number": 24,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/21635.png",
+   "tier": 3
+  },
+  {
+   "name": "Ruben Aguilar",
+   "team": "Lens",
+   "position": "Defender",
+   "age": 33,
+   "number": 2,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/21568.png",
+   "tier": 3
+  },
+  {
+   "name": "Matthieu Udol",
+   "team": "Lens",
+   "position": "Midfielder",
+   "age": 30,
+   "number": 14,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/20525.png",
+   "tier": 2
+  },
+  {
+   "name": "Jean-Clair Todibo",
+   "team": "Lens",
+   "position": "Defender",
+   "age": 26,
+   "number": 20,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/138.png",
+   "tier": 1
+  },
+  {
+   "name": "Maik Nawrocki",
+   "team": "Lens",
+   "position": "Defender",
+   "age": 25,
+   "number": 3,
+   "nationality": "Poland",
+   "photo": "https://media.api-sports.io/football/players/178708.png",
+   "tier": 3
+  },
+  {
+   "name": "Saud Abdulhamid",
+   "team": "Lens",
+   "position": "Defender",
+   "age": 27,
+   "number": 23,
+   "nationality": "Saudi Arabia",
+   "photo": "https://media.api-sports.io/football/players/44594.png",
+   "tier": 2
+  },
+  {
+   "name": "Jhoanner Chavez",
+   "team": "Lens",
+   "position": "Defender",
+   "age": 24,
+   "number": null,
+   "nationality": "Ecuador",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Samson Baidoo",
+   "team": "Lens",
+   "position": "Defender",
+   "age": 22,
+   "number": 6,
+   "nationality": "Austria",
+   "photo": "https://media.api-sports.io/football/players/322984.png",
+   "tier": 1
+  },
+  {
+   "name": "Pierre Ganiou",
+   "team": "Lens",
+   "position": "Defender",
+   "age": 21,
+   "number": null,
+   "nationality": "France",
+   "photo": null,
+   "tier": 2
+  },
+  {
+   "name": "Nidal Čelik",
+   "team": "Lens",
+   "position": "Defender",
+   "age": 20,
+   "number": null,
+   "nationality": "Bosnia-Herzegovina",
+   "photo": null,
+   "tier": 2
+  },
+  {
+   "name": "Kyllian Antonio",
+   "team": "Lens",
+   "position": "Defender",
+   "age": 18,
+   "number": 32,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/441264.png",
+   "tier": 3
+  },
+  {
+   "name": "Souleymane Sagnan",
+   "team": "Lens",
+   "position": "Defender",
+   "age": 20,
+   "number": 31,
+   "nationality": "Mali",
+   "photo": "https://media.api-sports.io/football/players/437139.png",
+   "tier": 3
+  },
+  {
+   "name": "Thorgan Hazard",
+   "team": "Lens",
+   "position": "Midfielder",
+   "age": 33,
+   "number": 9,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/2929.png",
+   "tier": 3
+  },
+  {
+   "name": "Mickaël Cuisance",
+   "team": "Lens",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 27,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/25634.png",
+   "tier": 3
+  },
+  {
+   "name": "Amadou Haïdara",
+   "team": "Lens",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 21,
+   "nationality": "Mali",
+   "photo": "https://media.api-sports.io/football/players/1153.png",
+   "tier": 2
+  },
+  {
+   "name": "Yacine Titraoui",
+   "team": "Lens",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 8,
+   "nationality": "Algeria",
+   "photo": "https://media.api-sports.io/football/players/327599.png",
+   "tier": 2
+  },
+  {
+   "name": "Andrija Bulatović",
+   "team": "Lens",
+   "position": "Midfielder",
+   "age": 19,
+   "number": 5,
+   "nationality": "Montenegro",
+   "photo": "https://media.api-sports.io/football/players/394950.png",
+   "tier": 2
+  },
+  {
+   "name": "Mezian Soares",
+   "team": "Lens",
+   "position": "Midfielder",
+   "age": 17,
+   "number": 38,
+   "nationality": "Portugal",
+   "photo": "https://media.api-sports.io/football/players/660571.png",
+   "tier": 3
+  },
+  {
+   "name": "Florian Thauvin",
+   "team": "Lens",
+   "position": "Midfielder",
+   "age": 33,
+   "number": 10,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/1922.png",
+   "tier": 2
+  },
+  {
+   "name": "Odsonne Edouard",
+   "team": "Lens",
+   "position": "Forward",
+   "age": 28,
+   "number": 11,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/1135.png",
+   "tier": 2
+  },
+  {
+   "name": "Florian Sotoca",
+   "team": "Lens",
+   "position": "Forward",
+   "age": 36,
+   "number": 7,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/20761.png",
+   "tier": 3
+  },
+  {
+   "name": "Michał Skóraś",
+   "team": "Lens",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 22,
+   "nationality": "Poland",
+   "photo": "https://media.api-sports.io/football/players/40809.png",
+   "tier": 3
+  },
+  {
+   "name": "Junior Kadile",
+   "team": "Lens",
+   "position": "Forward",
+   "age": 23,
+   "number": 28,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/161620.png",
+   "tier": 3
+  },
+  {
+   "name": "Abdallah Sima",
+   "team": "Lens",
+   "position": "Forward",
+   "age": 25,
+   "number": 19,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/277191.png",
+   "tier": 2
+  },
+  {
+   "name": "Franjo Ivanovic",
+   "team": "Lens",
+   "position": "Forward",
+   "age": 23,
+   "number": 29,
+   "nationality": "Austria",
+   "photo": "https://media.api-sports.io/football/players/202951.png",
+   "tier": 2
+  },
+  {
+   "name": "Lukáš Hrádecký",
+   "team": "Monaco",
+   "position": "Goalkeeper",
+   "age": 36,
+   "number": 1,
+   "nationality": "Finland",
+   "photo": "https://media.api-sports.io/football/players/963.png",
+   "tier": 3
+  },
+  {
+   "name": "Philipp Köhn",
+   "team": "Monaco",
+   "position": "Goalkeeper",
+   "age": 28,
+   "number": 16,
+   "nationality": "Switzerland",
+   "photo": "https://media.api-sports.io/football/players/7313.png",
+   "tier": 3
+  },
+  {
+   "name": "Yann Lienard",
+   "team": "Monaco",
+   "position": "Goalkeeper",
+   "age": 23,
+   "number": null,
+   "nationality": "France",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Eric Dier",
+   "team": "Monaco",
+   "position": "Defender",
+   "age": 32,
+   "number": 15,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/175.png",
+   "tier": 3
+  },
+  {
+   "name": "Thilo Kehrer",
+   "team": "Monaco",
+   "position": "Defender",
+   "age": 30,
+   "number": null,
+   "nationality": "Germany",
+   "photo": null,
+   "tier": 2
+  },
+  {
+   "name": "Jordan Teze",
+   "team": "Monaco",
+   "position": "Defender",
+   "age": 27,
+   "number": 4,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/231.png",
+   "tier": 2
+  },
+  {
+   "name": "Mohammed Salisu",
+   "team": "Monaco",
+   "position": "Defender",
+   "age": 27,
+   "number": 22,
+   "nationality": "Ghana",
+   "photo": "https://media.api-sports.io/football/players/47480.png",
+   "tier": 2
+  },
+  {
+   "name": "Vanderson",
+   "team": "Monaco",
+   "position": "Defender",
+   "age": 25,
+   "number": 2,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/291649.png",
+   "tier": 2
+  },
+  {
+   "name": "Flávio Nazinho",
+   "team": "Monaco",
+   "position": "Defender",
+   "age": 23,
+   "number": 20,
+   "nationality": "Portugal",
+   "photo": "https://media.api-sports.io/football/players/294722.png",
+   "tier": 2
+  },
+  {
+   "name": "Christian Mawissa",
+   "team": "Monaco",
+   "position": "Defender",
+   "age": 21,
+   "number": null,
+   "nationality": "France",
+   "photo": null,
+   "tier": 2
+  },
+  {
+   "name": "Sadibou Sané",
+   "team": "Monaco",
+   "position": "Defender",
+   "age": 22,
+   "number": 72,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/428084.png",
+   "tier": 2
+  },
+  {
+   "name": "Samuel Nibombe",
+   "team": "Monaco",
+   "position": "Defender",
+   "age": 19,
+   "number": 44,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/449676.png",
+   "tier": 3
+  },
+  {
+   "name": "Aleksandr Golovin",
+   "team": "Monaco",
+   "position": "Midfielder",
+   "age": 30,
+   "number": 10,
+   "nationality": "Russia",
+   "photo": "https://media.api-sports.io/football/players/109.png",
+   "tier": 2
+  },
+  {
+   "name": "Denis Zakaria",
+   "team": "Monaco",
+   "position": "Midfielder",
+   "age": 29,
+   "number": 6,
+   "nationality": "Switzerland",
+   "photo": "https://media.api-sports.io/football/players/2810.png",
+   "tier": 1
+  },
+  {
+   "name": "Edan Diop",
+   "team": "Monaco",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 37,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/374361.png",
+   "tier": 3
+  },
+  {
+   "name": "Lamine Camara",
+   "team": "Monaco",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 8,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/374058.png",
+   "tier": 1
+  },
+  {
+   "name": "Stanis Idumbo-Muzambo",
+   "team": "Monaco",
+   "position": "Midfielder",
+   "age": 21,
+   "number": 17,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/340152.png",
+   "tier": 3
+  },
+  {
+   "name": "Mamadou Coulibaly",
+   "team": "Monaco",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 28,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/419035.png",
+   "tier": 2
+  },
+  {
+   "name": "Pape Cabral",
+   "team": "Monaco",
+   "position": "Midfielder",
+   "age": 19,
+   "number": 19,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/543470.png",
+   "tier": 3
+  },
+  {
+   "name": "Takumi Minamino",
+   "team": "Monaco",
+   "position": "Midfielder",
+   "age": 31,
+   "number": 18,
+   "nationality": "Japan",
+   "photo": "https://media.api-sports.io/football/players/1101.png",
+   "tier": 2
+  },
+  {
+   "name": "Ansu Fati",
+   "team": "Monaco",
+   "position": "Forward",
+   "age": 24,
+   "number": 31,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/135775.png",
+   "tier": 2
+  },
+  {
+   "name": "Folarin Balogun",
+   "team": "Monaco",
+   "position": "Forward",
+   "age": 25,
+   "number": 9,
+   "nationality": "USA",
+   "photo": "https://media.api-sports.io/football/players/138835.png",
+   "tier": 1
+  },
+  {
+   "name": "Matthis Abline",
+   "team": "Monaco",
+   "position": "Forward",
+   "age": 23,
+   "number": 11,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/161622.png",
+   "tier": 2
+  },
+  {
+   "name": "Mika Biereth",
+   "team": "Monaco",
+   "position": "Forward",
+   "age": 23,
+   "number": 14,
+   "nationality": "Denmark",
+   "photo": "https://media.api-sports.io/football/players/283026.png",
+   "tier": 2
+  },
+  {
+   "name": "Paris Brunner",
+   "team": "Monaco",
+   "position": "Forward",
+   "age": 20,
+   "number": 29,
+   "nationality": "Germany",
+   "photo": "https://media.api-sports.io/football/players/386276.png",
+   "tier": 3
+  },
+  {
+   "name": "Mathys Detourbet",
+   "team": "Monaco",
+   "position": "Midfielder",
+   "age": 19,
+   "number": 7,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/462278.png",
+   "tier": 3
+  },
+  {
+   "name": "Filip Jörgensen",
+   "team": "Strasbourg",
+   "position": "Goalkeeper",
+   "age": 24,
+   "number": 1,
+   "nationality": "Denmark",
+   "photo": "https://media.api-sports.io/football/players/286616.png",
+   "tier": 2
+  },
+  {
+   "name": "Miłosz Piekutowski",
+   "team": "Strasbourg",
+   "position": "Goalkeeper",
+   "age": 20,
+   "number": 12,
+   "nationality": "Poland",
+   "photo": "https://media.api-sports.io/football/players/374727.png",
+   "tier": 3
+  },
+  {
+   "name": "Ismaël Doukouré",
+   "team": "Strasbourg",
+   "position": "Defender",
+   "age": 23,
+   "number": 6,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/271542.png",
+   "tier": 1
+  },
+  {
+   "name": "Andrew Omobamidele",
+   "team": "Strasbourg",
+   "position": "Defender",
+   "age": 24,
+   "number": null,
+   "nationality": "Ireland",
+   "photo": null,
+   "tier": 2
+  },
+  {
+   "name": "Abakar Sylla",
+   "team": "Strasbourg",
+   "position": "Defender",
+   "age": 23,
+   "number": null,
+   "nationality": "Ivory Coast",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Mateo Del Blanco",
+   "team": "Strasbourg",
+   "position": "Defender",
+   "age": 23,
+   "number": 15,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/355256.png",
+   "tier": 2
+  },
+  {
+   "name": "Lucas Høgsberg",
+   "team": "Strasbourg",
+   "position": "Defender",
+   "age": 20,
+   "number": 24,
+   "nationality": "Denmark",
+   "photo": "https://media.api-sports.io/football/players/396193.png",
+   "tier": 2
+  },
+  {
+   "name": "Jeyland Mitchell",
+   "team": "Strasbourg",
+   "position": "Defender",
+   "age": 22,
+   "number": 4,
+   "nationality": "Costa Rica",
+   "photo": "https://media.api-sports.io/football/players/297583.png",
+   "tier": 3
+  },
+  {
+   "name": "Karim Coulibaly",
+   "team": "Strasbourg",
+   "position": "Defender",
+   "age": 19,
+   "number": 31,
+   "nationality": "Germany",
+   "photo": "https://media.api-sports.io/football/players/440147.png",
+   "tier": 1
+  },
+  {
+   "name": "Genesis Antwi",
+   "team": "Strasbourg",
+   "position": "Defender",
+   "age": 19,
+   "number": 16,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/398000.png",
+   "tier": 3
+  },
+  {
+   "name": "Gio Reyna",
+   "team": "Strasbourg",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 10,
+   "nationality": "USA",
+   "photo": "https://media.api-sports.io/football/players/161921.png",
+   "tier": 3
+  },
+  {
+   "name": "Dario Essugo",
+   "team": "Strasbourg",
+   "position": "Midfielder",
+   "age": 21,
+   "number": 14,
+   "nationality": "Portugal",
+   "photo": "https://media.api-sports.io/football/players/308678.png",
+   "tier": 2
+  },
+  {
+   "name": "Pape Diop",
+   "team": "Strasbourg",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 21,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/339417.png",
+   "tier": 2
+  },
+  {
+   "name": "Maximillian Oyedele",
+   "team": "Strasbourg",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 8,
+   "nationality": "Poland",
+   "photo": "https://media.api-sports.io/football/players/303016.png",
+   "tier": 2
+  },
+  {
+   "name": "Samir El Mourabet",
+   "team": "Strasbourg",
+   "position": "Midfielder",
+   "age": 21,
+   "number": 29,
+   "nationality": "Morocco",
+   "photo": "https://media.api-sports.io/football/players/415431.png",
+   "tier": 1
+  },
+  {
+   "name": "Benjamin Brantlind",
+   "team": "Strasbourg",
+   "position": "Midfielder",
+   "age": 18,
+   "number": 45,
+   "nationality": "Sweden",
+   "photo": "https://media.api-sports.io/football/players/456862.png",
+   "tier": 3
+  },
+  {
+   "name": "Omari Kellyman",
+   "team": "Strasbourg",
+   "position": "Midfielder",
+   "age": 21,
+   "number": 26,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/329347.png",
+   "tier": 3
+  },
+  {
+   "name": "Diogo Lobão",
+   "team": "Strasbourg",
+   "position": "Midfielder",
+   "age": 20,
+   "number": null,
+   "nationality": "Portugal",
+   "photo": null,
+   "tier": 2
+  },
+  {
+   "name": "Sebastian Nanasi",
+   "team": "Strasbourg",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 11,
+   "nationality": "Sweden",
+   "photo": "https://media.api-sports.io/football/players/226803.png",
+   "tier": 2
+  },
+  {
+   "name": "Sekou Mara",
+   "team": "Strasbourg",
+   "position": "Forward",
+   "age": 24,
+   "number": 14,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/190686.png",
+   "tier": 3
+  },
+  {
+   "name": "Deivid Washington",
+   "team": "Strasbourg",
+   "position": "Forward",
+   "age": 21,
+   "number": 42,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/415001.png",
+   "tier": 2
+  },
+  {
+   "name": "Joaquín Panichelli",
+   "team": "Strasbourg",
+   "position": "Forward",
+   "age": 24,
+   "number": null,
+   "nationality": "Argentina",
+   "photo": null,
+   "tier": 1
+  },
+  {
+   "name": "Martial Godo",
+   "team": "Strasbourg",
+   "position": "Forward",
+   "age": 23,
+   "number": 20,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/359386.png",
+   "tier": 1
+  },
+  {
+   "name": "Conrad Harder",
+   "team": "Strasbourg",
+   "position": "Forward",
+   "age": 21,
+   "number": 40,
+   "nationality": "Denmark",
+   "photo": "https://media.api-sports.io/football/players/419916.png",
+   "tier": 2
+  },
+  {
+   "name": "Samuel Amo-Ameyaw",
+   "team": "Strasbourg",
+   "position": "Forward",
+   "age": 20,
+   "number": 7,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/334035.png",
+   "tier": 2
+  },
+  {
+   "name": "Fabio Baldé",
+   "team": "Strasbourg",
+   "position": "Forward",
+   "age": 21,
+   "number": 19,
+   "nationality": "Germany",
+   "photo": "https://media.api-sports.io/football/players/380939.png",
+   "tier": 2
+  },
+  {
+   "name": "Oso",
+   "team": "Strasbourg",
+   "position": "Defender",
+   "age": 23,
+   "number": 36,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/341453.png",
+   "tier": 2
+  },
+  {
+   "name": "Gessime Yassine",
+   "team": "Strasbourg",
+   "position": "Forward",
+   "age": 20,
+   "number": 80,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/369544.png",
+   "tier": 2
+  },
+  {
+   "name": "Yaya Diemé",
+   "team": "Strasbourg",
+   "position": "Forward",
+   "age": 19,
+   "number": 34,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/659107.png",
+   "tier": 3
+  },
+  {
+   "name": "Jacobo Ortega",
+   "team": "Strasbourg",
+   "position": "Forward",
+   "age": 20,
+   "number": 30,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/561010.png",
+   "tier": 3
+  },
+  {
+   "name": "Kevin Trapp",
+   "team": "Paris FC",
+   "position": "Goalkeeper",
+   "age": 36,
+   "number": 1,
+   "nationality": "Germany",
+   "photo": "https://media.api-sports.io/football/players/1800.png",
+   "tier": 3
+  },
+  {
+   "name": "Obed Nkambadio",
+   "team": "Paris FC",
+   "position": "Goalkeeper",
+   "age": 23,
+   "number": 16,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/194981.png",
+   "tier": 2
+  },
+  {
+   "name": "Hamari Traoré",
+   "team": "Paris FC",
+   "position": "Defender",
+   "age": 34,
+   "number": 14,
+   "nationality": "Mali",
+   "photo": "https://media.api-sports.io/football/players/2202.png",
+   "tier": 3
+  },
+  {
+   "name": "Thibault De Smet",
+   "team": "Paris FC",
+   "position": "Defender",
+   "age": 28,
+   "number": 28,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/8474.png",
+   "tier": 3
+  },
+  {
+   "name": "Samir Chergui",
+   "team": "Paris FC",
+   "position": "Defender",
+   "age": 27,
+   "number": 31,
+   "nationality": "Algeria",
+   "photo": "https://media.api-sports.io/football/players/20869.png",
+   "tier": 3
+  },
+  {
+   "name": "Otavio Ataide",
+   "team": "Paris FC",
+   "position": "Defender",
+   "age": 24,
+   "number": 6,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/266013.png",
+   "tier": 2
+  },
+  {
+   "name": "Mamadou Mbow",
+   "team": "Paris FC",
+   "position": "Defender",
+   "age": 26,
+   "number": 5,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/174881.png",
+   "tier": 2
+  },
+  {
+   "name": "Yoan Kore",
+   "team": "Paris FC",
+   "position": "Defender",
+   "age": 21,
+   "number": 25,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/324900.png",
+   "tier": 3
+  },
+  {
+   "name": "Diego Coppola",
+   "team": "Paris FC",
+   "position": "Defender",
+   "age": 22,
+   "number": 42,
+   "nationality": "Italy",
+   "photo": "https://media.api-sports.io/football/players/342063.png",
+   "tier": 2
+  },
+  {
+   "name": "Nhoa Sangui",
+   "team": "Paris FC",
+   "position": "Defender",
+   "age": 20,
+   "number": 19,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/389322.png",
+   "tier": 2
+  },
+  {
+   "name": "Vincent Marchetti",
+   "team": "Paris FC",
+   "position": "Midfielder",
+   "age": 29,
+   "number": 4,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/20925.png",
+   "tier": 3
+  },
+  {
+   "name": "Maxime López",
+   "team": "Paris FC",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 20,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/1910.png",
+   "tier": 2
+  },
+  {
+   "name": "Pierre Lees Melou",
+   "team": "Paris FC",
+   "position": "Midfielder",
+   "age": 33,
+   "number": 33,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/22170.png",
+   "tier": 3
+  },
+  {
+   "name": "Adama Camara",
+   "team": "Paris FC",
+   "position": "Defender",
+   "age": 30,
+   "number": 17,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/84218.png",
+   "tier": 3
+  },
+  {
+   "name": "Patrick Zabi",
+   "team": "Paris FC",
+   "position": "Midfielder",
+   "age": 20,
+   "number": null,
+   "nationality": "Ivory Coast",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Rudy Matondo",
+   "team": "Paris FC",
+   "position": "Midfielder",
+   "age": 18,
+   "number": 23,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/496896.png",
+   "tier": 1
+  },
+  {
+   "name": "Lassine Sinayoko",
+   "team": "Paris FC",
+   "position": "Forward",
+   "age": 26,
+   "number": 9,
+   "nationality": "Mali",
+   "photo": "https://media.api-sports.io/football/players/90617.png",
+   "tier": 2
+  },
+  {
+   "name": "Moses Simon",
+   "team": "Paris FC",
+   "position": "Midfielder",
+   "age": 31,
+   "number": 27,
+   "nationality": "Nigeria",
+   "photo": "https://media.api-sports.io/football/players/2781.png",
+   "tier": 2
+  },
+  {
+   "name": "Jonathan Ikoné",
+   "team": "Paris FC",
+   "position": "Forward",
+   "age": 28,
+   "number": 93,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/22229.png",
+   "tier": 3
+  },
+  {
+   "name": "Jean-Philippe Krasso",
+   "team": "Paris FC",
+   "position": "Forward",
+   "age": 29,
+   "number": 11,
+   "nationality": "Ivory Coast",
+   "photo": "https://media.api-sports.io/football/players/22842.png",
+   "tier": 3
+  },
+  {
+   "name": "Ilan Kebbal",
+   "team": "Paris FC",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 10,
+   "nationality": "Algeria",
+   "photo": "https://media.api-sports.io/football/players/83831.png",
+   "tier": 2
+  },
+  {
+   "name": "Pablo Pagis",
+   "team": "Paris FC",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 7,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/276662.png",
+   "tier": 2
+  },
+  {
+   "name": "Luca Koleosho",
+   "team": "Paris FC",
+   "position": "Forward",
+   "age": 22,
+   "number": 15,
+   "nationality": "Italy",
+   "photo": "https://media.api-sports.io/football/players/359603.png",
+   "tier": 2
+  },
+  {
+   "name": "Omar Sissoko",
+   "team": "Paris FC",
+   "position": "Forward",
+   "age": 20,
+   "number": 18,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/417550.png",
+   "tier": 3
+  },
+  {
+   "name": "Ibrahim Meïté",
+   "team": "Paris FC",
+   "position": null,
+   "age": 22,
+   "number": null,
+   "nationality": "France",
+   "photo": null,
+   "tier": 3
+  }
+ ]
+}

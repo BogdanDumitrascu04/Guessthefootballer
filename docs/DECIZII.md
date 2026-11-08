@@ -65,6 +65,18 @@ Punct de plecare: propunerile lui Gemini, verificate pe pagina reală, plus idei
 | Limbi | Prima pagină e tradusă în EN / ES / FR / RO, cu selector cu numele limbilor | Alegerea se păstrează și în joc; steagurile nu reprezintă limbi. |
 | Respins din propunere | Schimbarea culorii textului (contrastul e deja 7–8:1, iar culoarea propusă l-ar fi scăzut), blur pe fundal, transparență pe carduri, noua paletă, „& Trivia” și „jocuri zilnice” în titlu | Fie nu rezolvau o problemă reală, fie promiteau ceva ce nu există. |
 
+## 8 nov 2026 — sezonul curent, pe varianta rapidă
+
+| Decizie | Ce am ales | De ce |
+|---|---|---|
+| Drum | 2026-27 generat ca JSON de un script Python, în formatul pe care jocul îl citea deja; baza Supabase rămâne pentru după | Ziua avea toate cele 100 de cereri API-Football libere. Logica (legătura dintre surse, tier-ul) se mută apoi în încărcarea în bază. |
+| Sezoane în joc | 2026-27 (implicit) și 2024-25; fără 2025-26 | Pentru 2025-26 nu avem numerele de pe tricou. |
+| Legătura cu API-Football | Club: după cuvintele din nume, apoi codul de 3 litere (96/96, unul corectat manual: Rennes). Jucător: în același club, după nume (API-Football scurtează prenumele: „H. Davies”) și vârstă; cazurile neclare rămân nelegate | Niciodată doar după nume, cum cere regula; un jucător nelegat apare cu inițiale și fără număr, nu cu poza altcuiva. Rezultat: 88–95% cu poză și număr. |
+| Jucătorul ascuns | Doar dintre cei cu număr și vârstă cunoscute | Altfel ar lipsi un indiciu. |
+| Tier 2026-27 | Sugestie automată: locul în ligă după ultima valoare Transfermarkt (1–40 vedetă, 41–180 titular, restul lot) | Excelul lui Bogdan rămâne pentru mai târziu și va înlocui sugestia. |
+| Vârsta | Din data nașterii de la football-data.org; la o diferență de peste 3 ani față de API-Football, se ia vârsta de acolo | football-data.org are câteva date greșite (un jucător de 21 de ani apărea cu 48). |
+| Poze și sigle 2026-27 | Încărcate direct de pe serverul API-Football, menționat în politica de confidențialitate | Fără 2.400 de imagini în repo. |
+
 ## De decis
 - ~~**Tier-ul**~~ → decis pe 29 oct (mai sus).
 - ~~**SQLite sau direct Supabase**~~ → direct în Supabase, decis pe 29 oct (mai sus).

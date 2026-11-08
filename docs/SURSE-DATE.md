@@ -92,6 +92,14 @@ Gratuit, CC0, fără cheie. Proprietatea `P54` („member of sports team”) are
 - Mbappé (`Q21621995`): Monaco 2015–2018, PSG 2017–2018 (împrumut) și 2018–2024, Real Madrid 2024–. Apar și echipele naționale, de tineret și secundele (Monaco II) → de filtrat.
 - Doar anul, fără lună. Acoperirea pe toți cei 5.054 de jucători nu e testată.
 
+## Folosit (8 nov 2026) — API-Football pentru 2026-27
+
+- `GET /teams?country=<țară>`: toate cluburile unei țări (England: 1.694, inclusiv tineret, rezerve și echipe feminine; se filtrează). 5 cereri.
+- `GET /players/squads?team=<id>`: lotul curent al unui club. 96 de cereri, câte una la ~7 secunde (limita: 10 pe minut).
+- Numele vin uneori codificate pentru web („O&apos;Reilly”) → se decodifică.
+- Potrivirea jucătorilor cu football-data.org: 2.419 legați; poză + număr pentru 95% (PL), 92% (SA), 89% (PD, BL1), 88% (FL1).
+- Planul gratuit nu are acces la sezonul 2026 pe `/teams?league=` sau `/fixtures` („try from 2022 to 2024”), dar `/players/squads` merge.
+
 ## Ce avem și ce lipsește
 
 | Ce | Sursa | Stare |

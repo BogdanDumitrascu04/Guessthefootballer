@@ -1,0 +1,5249 @@
+{
+ "id": "la-liga",
+ "name": "La Liga",
+ "season": "2026-27",
+ "teams": {
+  "Athletic Club": "https://media.api-sports.io/football/teams/531.png",
+  "Atletico Madrid": "https://media.api-sports.io/football/teams/530.png",
+  "Osasuna": "https://media.api-sports.io/football/teams/727.png",
+  "Espanyol": "https://media.api-sports.io/football/teams/540.png",
+  "Barcelona": "https://media.api-sports.io/football/teams/529.png",
+  "Getafe": "https://media.api-sports.io/football/teams/546.png",
+  "Malaga": "https://media.api-sports.io/football/teams/535.png",
+  "Real Madrid": "https://media.api-sports.io/football/teams/541.png",
+  "Rayo Vallecano": "https://media.api-sports.io/football/teams/728.png",
+  "Levante": "https://media.api-sports.io/football/teams/539.png",
+  "Real Betis": "https://media.api-sports.io/football/teams/543.png",
+  "Real Sociedad": "https://media.api-sports.io/football/teams/548.png",
+  "Villarreal": "https://media.api-sports.io/football/teams/533.png",
+  "Valencia": "https://media.api-sports.io/football/teams/532.png",
+  "Alaves": "https://media.api-sports.io/football/teams/542.png",
+  "Elche": "https://media.api-sports.io/football/teams/797.png",
+  "Celta Vigo": "https://media.api-sports.io/football/teams/538.png",
+  "Sevilla": "https://media.api-sports.io/football/teams/536.png",
+  "Deportivo La Coruna": "https://media.api-sports.io/football/teams/544.png",
+  "Racing Santander": "https://media.api-sports.io/football/teams/4665.png"
+ },
+ "players": [
+  {
+   "name": "Unai Simón",
+   "team": "Athletic Club",
+   "position": "Goalkeeper",
+   "age": 29,
+   "number": 1,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47270.png",
+   "tier": 2
+  },
+  {
+   "name": "Álex Padilla",
+   "team": "Athletic Club",
+   "position": "Goalkeeper",
+   "age": 23,
+   "number": 13,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/312468.png",
+   "tier": 3
+  },
+  {
+   "name": "Aymeric Laporte",
+   "team": "Athletic Club",
+   "position": "Defender",
+   "age": 32,
+   "number": 14,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/622.png",
+   "tier": 2
+  },
+  {
+   "name": "Yuri Berchiche",
+   "team": "Athletic Club",
+   "position": "Defender",
+   "age": 36,
+   "number": 17,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47273.png",
+   "tier": 3
+  },
+  {
+   "name": "Yeray Álvarez",
+   "team": "Athletic Club",
+   "position": "Defender",
+   "age": 31,
+   "number": 5,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47271.png",
+   "tier": 3
+  },
+  {
+   "name": "Daniel Vivian",
+   "team": "Athletic Club",
+   "position": "Defender",
+   "age": 27,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 2
+  },
+  {
+   "name": "Jesús Areso",
+   "team": "Athletic Club",
+   "position": "Defender",
+   "age": 27,
+   "number": 12,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/182181.png",
+   "tier": 3
+  },
+  {
+   "name": "Aitor Paredes Casamichana",
+   "team": "Athletic Club",
+   "position": "Defender",
+   "age": 26,
+   "number": 4,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/183849.png",
+   "tier": 2
+  },
+  {
+   "name": "Hugo Rincón",
+   "team": "Athletic Club",
+   "position": "Defender",
+   "age": 23,
+   "number": 15,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/313025.png",
+   "tier": 3
+  },
+  {
+   "name": "Unai Egiluz",
+   "team": "Athletic Club",
+   "position": "Defender",
+   "age": 24,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Ruiz de Galarreta",
+   "team": "Athletic Club",
+   "position": "Midfielder",
+   "age": 33,
+   "number": 16,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47007.png",
+   "tier": 3
+  },
+  {
+   "name": "Oihan Sancet",
+   "team": "Athletic Club",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 8,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/128398.png",
+   "tier": 2
+  },
+  {
+   "name": "Benat Prados",
+   "team": "Athletic Club",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 6,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/182617.png",
+   "tier": 2
+  },
+  {
+   "name": "Mikel Jauregizar",
+   "team": "Athletic Club",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 18,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/383780.png",
+   "tier": 2
+  },
+  {
+   "name": "Peio Canales",
+   "team": "Athletic Club",
+   "position": "Midfielder",
+   "age": 21,
+   "number": 28,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/437643.png",
+   "tier": 3
+  },
+  {
+   "name": "Alejandro Rego",
+   "team": "Athletic Club",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 20,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/332309.png",
+   "tier": 3
+  },
+  {
+   "name": "Beñat Gerenabarrena",
+   "team": "Athletic Club",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 24,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/332307.png",
+   "tier": 3
+  },
+  {
+   "name": "Álex Berenguer",
+   "team": "Athletic Club",
+   "position": "Midfielder",
+   "age": 31,
+   "number": 7,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/30510.png",
+   "tier": 3
+  },
+  {
+   "name": "Iñaki Williams",
+   "team": "Athletic Club",
+   "position": "Forward",
+   "age": 32,
+   "number": 9,
+   "nationality": "Ghana",
+   "photo": "https://media.api-sports.io/football/players/47294.png",
+   "tier": 2
+  },
+  {
+   "name": "Gorka Guruzeta",
+   "team": "Athletic Club",
+   "position": "Forward",
+   "age": 30,
+   "number": 11,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47291.png",
+   "tier": 3
+  },
+  {
+   "name": "Roberto Navarro",
+   "team": "Athletic Club",
+   "position": "Forward",
+   "age": 24,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Nico Williams",
+   "team": "Athletic Club",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 10,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/183799.png",
+   "tier": 1
+  },
+  {
+   "name": "Nico Serrano",
+   "team": "Athletic Club",
+   "position": "Forward",
+   "age": 23,
+   "number": 22,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/286593.png",
+   "tier": 3
+  },
+  {
+   "name": "Álvaro Djaló",
+   "team": "Athletic Club",
+   "position": "Forward",
+   "age": 27,
+   "number": 25,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/190489.png",
+   "tier": 3
+  },
+  {
+   "name": "Sannadi",
+   "team": "Athletic Club",
+   "position": "Forward",
+   "age": 25,
+   "number": 21,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/287680.png",
+   "tier": 3
+  },
+  {
+   "name": "Christian Imga",
+   "team": "Athletic Club",
+   "position": null,
+   "age": 17,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Jan Oblak",
+   "team": "Atletico Madrid",
+   "position": "Goalkeeper",
+   "age": 33,
+   "number": 13,
+   "nationality": "Slovenia",
+   "photo": "https://media.api-sports.io/football/players/29.png",
+   "tier": 2
+  },
+  {
+   "name": "Juan Musso",
+   "team": "Atletico Madrid",
+   "position": "Goalkeeper",
+   "age": 32,
+   "number": 1,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/2465.png",
+   "tier": 3
+  },
+  {
+   "name": "Salvi Esquivel",
+   "team": "Atletico Madrid",
+   "position": "Goalkeeper",
+   "age": 21,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Marcos Llorente",
+   "team": "Atletico Madrid",
+   "position": "Defender",
+   "age": 31,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 2
+  },
+  {
+   "name": "Dávid Hancko",
+   "team": "Atletico Madrid",
+   "position": "Defender",
+   "age": 28,
+   "number": 17,
+   "nationality": "Slovakia",
+   "photo": "https://media.api-sports.io/football/players/30399.png",
+   "tier": 2
+  },
+  {
+   "name": "Alejandro Grimaldo",
+   "team": "Atletico Madrid",
+   "position": "Defender",
+   "age": 31,
+   "number": 22,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/563.png",
+   "tier": 2
+  },
+  {
+   "name": "Christian Romero",
+   "team": "Atletico Madrid",
+   "position": "Defender",
+   "age": 28,
+   "number": null,
+   "nationality": "Argentina",
+   "photo": null,
+   "tier": 1
+  },
+  {
+   "name": "Robin Le Normand",
+   "team": "Atletico Madrid",
+   "position": "Defender",
+   "age": 29,
+   "number": 24,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/47301.png",
+   "tier": 2
+  },
+  {
+   "name": "Marc Pubill",
+   "team": "Atletico Madrid",
+   "position": "Defender",
+   "age": 23,
+   "number": 18,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/295793.png",
+   "tier": 2
+  },
+  {
+   "name": "Daniel Martínez",
+   "team": "Atletico Madrid",
+   "position": "Defender",
+   "age": 22,
+   "number": 30,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/386869.png",
+   "tier": 3
+  },
+  {
+   "name": "Jorge Domínguez",
+   "team": "Atletico Madrid",
+   "position": "Defender",
+   "age": 16,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Koke",
+   "team": "Atletico Madrid",
+   "position": "Midfielder",
+   "age": 34,
+   "number": 6,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/50.png",
+   "tier": 3
+  },
+  {
+   "name": "Morten Hjulmand",
+   "team": "Atletico Madrid",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 23,
+   "nationality": "Denmark",
+   "photo": "https://media.api-sports.io/football/players/7712.png",
+   "tier": 1
+  },
+  {
+   "name": "Johnny",
+   "team": "Atletico Madrid",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 5,
+   "nationality": "USA",
+   "photo": "https://media.api-sports.io/football/players/133185.png",
+   "tier": 2
+  },
+  {
+   "name": "Obed Vargas",
+   "team": "Atletico Madrid",
+   "position": "Midfielder",
+   "age": 21,
+   "number": 3,
+   "nationality": "USA",
+   "photo": "https://media.api-sports.io/football/players/313383.png",
+   "tier": 2
+  },
+  {
+   "name": "Rodrigo Mendoza",
+   "team": "Atletico Madrid",
+   "position": "Midfielder",
+   "age": 21,
+   "number": 4,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/341371.png",
+   "tier": 2
+  },
+  {
+   "name": "Kang-in Lee",
+   "team": "Atletico Madrid",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 7,
+   "nationality": "South Korea",
+   "photo": "https://media.api-sports.io/football/players/927.png",
+   "tier": 2
+  },
+  {
+   "name": "Alexander Sørloth",
+   "team": "Atletico Madrid",
+   "position": "Forward",
+   "age": 30,
+   "number": 9,
+   "nationality": "Norway",
+   "photo": "https://media.api-sports.io/football/players/8492.png",
+   "tier": 2
+  },
+  {
+   "name": "Jonathan David",
+   "team": "Atletico Madrid",
+   "position": "Forward",
+   "age": 26,
+   "number": 15,
+   "nationality": "Canada",
+   "photo": "https://media.api-sports.io/football/players/8489.png",
+   "tier": 2
+  },
+  {
+   "name": "Ademola Lookman",
+   "team": "Atletico Madrid",
+   "position": "Forward",
+   "age": 29,
+   "number": 11,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/18767.png",
+   "tier": 1
+  },
+  {
+   "name": "Julián Álvarez",
+   "team": "Atletico Madrid",
+   "position": "Forward",
+   "age": 26,
+   "number": 19,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/6009.png",
+   "tier": 1
+  },
+  {
+   "name": "Alejandro Baena",
+   "team": "Atletico Madrid",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 10,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/182219.png",
+   "tier": 1
+  },
+  {
+   "name": "Giuliano Simeone",
+   "team": "Atletico Madrid",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 20,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/323935.png",
+   "tier": 1
+  },
+  {
+   "name": "Arnau Ortiz",
+   "team": "Atletico Madrid",
+   "position": "Forward",
+   "age": 25,
+   "number": 16,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/183948.png",
+   "tier": 3
+  },
+  {
+   "name": "Carlos Martin",
+   "team": "Atletico Madrid",
+   "position": "Forward",
+   "age": 24,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Sergio Herrera",
+   "team": "Osasuna",
+   "position": "Goalkeeper",
+   "age": 33,
+   "number": 1,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/46646.png",
+   "tier": 3
+  },
+  {
+   "name": "Aitor Fernández",
+   "team": "Osasuna",
+   "position": "Goalkeeper",
+   "age": 35,
+   "number": 13,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47448.png",
+   "tier": 3
+  },
+  {
+   "name": "Diego Rico",
+   "team": "Osasuna",
+   "position": "Defender",
+   "age": 33,
+   "number": 15,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/18867.png",
+   "tier": 3
+  },
+  {
+   "name": "Valentin Rosier",
+   "team": "Osasuna",
+   "position": "Defender",
+   "age": 30,
+   "number": 19,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/21701.png",
+   "tier": 3
+  },
+  {
+   "name": "Catena",
+   "team": "Osasuna",
+   "position": "Defender",
+   "age": 32,
+   "number": 24,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47533.png",
+   "tier": 3
+  },
+  {
+   "name": "Flavien Boyomo",
+   "team": "Osasuna",
+   "position": "Defender",
+   "age": 25,
+   "number": 22,
+   "nationality": "Cameroon",
+   "photo": "https://media.api-sports.io/football/players/279822.png",
+   "tier": 2
+  },
+  {
+   "name": "Jorge Herrando",
+   "team": "Osasuna",
+   "position": "Defender",
+   "age": 25,
+   "number": 5,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/182592.png",
+   "tier": 3
+  },
+  {
+   "name": "Abel Bretones",
+   "team": "Osasuna",
+   "position": "Defender",
+   "age": 26,
+   "number": 23,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/181259.png",
+   "tier": 3
+  },
+  {
+   "name": "Rockson Yeboah",
+   "team": "Osasuna",
+   "position": "Defender",
+   "age": 22,
+   "number": 48,
+   "nationality": "Ghana",
+   "photo": "https://media.api-sports.io/football/players/428586.png",
+   "tier": 3
+  },
+  {
+   "name": "Iñigo Arguibide",
+   "team": "Osasuna",
+   "position": "Defender",
+   "age": 21,
+   "number": 27,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/421044.png",
+   "tier": 3
+  },
+  {
+   "name": "Lucas Torró",
+   "team": "Osasuna",
+   "position": "Midfielder",
+   "age": 32,
+   "number": 6,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/1825.png",
+   "tier": 3
+  },
+  {
+   "name": "Moi Gómez",
+   "team": "Osasuna",
+   "position": "Midfielder",
+   "age": 32,
+   "number": 16,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47574.png",
+   "tier": 3
+  },
+  {
+   "name": "Jon Moncayola",
+   "team": "Osasuna",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 7,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/46662.png",
+   "tier": 2
+  },
+  {
+   "name": "Aimar Oroz",
+   "team": "Osasuna",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 10,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/67939.png",
+   "tier": 2
+  },
+  {
+   "name": "Iker Munoz",
+   "team": "Osasuna",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 8,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/182621.png",
+   "tier": 3
+  },
+  {
+   "name": "Asier Osambela",
+   "team": "Osasuna",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 29,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/381197.png",
+   "tier": 3
+  },
+  {
+   "name": "Romain Del Castillo",
+   "team": "Osasuna",
+   "position": "Forward",
+   "age": 30,
+   "number": 20,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/2214.png",
+   "tier": 2
+  },
+  {
+   "name": "Ante Budimir",
+   "team": "Osasuna",
+   "position": "Forward",
+   "age": 35,
+   "number": 17,
+   "nationality": "Croatia",
+   "photo": "https://media.api-sports.io/football/players/46746.png",
+   "tier": 3
+  },
+  {
+   "name": "Kike Barja",
+   "team": "Osasuna",
+   "position": "Forward",
+   "age": 29,
+   "number": 11,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/46667.png",
+   "tier": 3
+  },
+  {
+   "name": "Rubén García",
+   "team": "Osasuna",
+   "position": "Midfielder",
+   "age": 33,
+   "number": 14,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/46658.png",
+   "tier": 3
+  },
+  {
+   "name": "Raúl (Osasuna)",
+   "team": "Osasuna",
+   "position": "Forward",
+   "age": 26,
+   "number": 9,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/146751.png",
+   "tier": 3
+  },
+  {
+   "name": "Raúl Moro",
+   "team": "Osasuna",
+   "position": "Forward",
+   "age": 23,
+   "number": 18,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/264470.png",
+   "tier": 3
+  },
+  {
+   "name": "Jonathan Dubasin",
+   "team": "Osasuna",
+   "position": "Forward",
+   "age": 26,
+   "number": 21,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/183931.png",
+   "tier": 3
+  },
+  {
+   "name": "Mikel Bermejo",
+   "team": "Osasuna",
+   "position": "Goalkeeper",
+   "age": 17,
+   "number": 32,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/585235.png",
+   "tier": 3
+  },
+  {
+   "name": "Marko Dmitrović",
+   "team": "Espanyol",
+   "position": "Goalkeeper",
+   "age": 34,
+   "number": 13,
+   "nationality": "Serbia",
+   "photo": "https://media.api-sports.io/football/players/2813.png",
+   "tier": 3
+  },
+  {
+   "name": "Ángel Fortuño Viñas",
+   "team": "Espanyol",
+   "position": "Goalkeeper",
+   "age": 25,
+   "number": 1,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/182735.png",
+   "tier": 3
+  },
+  {
+   "name": "Leandro Cabrera",
+   "team": "Espanyol",
+   "position": "Defender",
+   "age": 35,
+   "number": 6,
+   "nationality": "Uruguay",
+   "photo": "https://media.api-sports.io/football/players/47249.png",
+   "tier": 3
+  },
+  {
+   "name": "Unai Núñez",
+   "team": "Espanyol",
+   "position": "Defender",
+   "age": 29,
+   "number": 14,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47277.png",
+   "tier": 3
+  },
+  {
+   "name": "Andoni Gorosabel",
+   "team": "Espanyol",
+   "position": "Defender",
+   "age": 30,
+   "number": 2,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47299.png",
+   "tier": 3
+  },
+  {
+   "name": "Vanja Drkušič",
+   "team": "Espanyol",
+   "position": "Defender",
+   "age": 27,
+   "number": 16,
+   "nationality": "Slovenia",
+   "photo": "https://media.api-sports.io/football/players/36983.png",
+   "tier": 3
+  },
+  {
+   "name": "Clemens Riedel",
+   "team": "Espanyol",
+   "position": "Defender",
+   "age": 23,
+   "number": 5,
+   "nationality": "Germany",
+   "photo": "https://media.api-sports.io/football/players/282054.png",
+   "tier": 3
+  },
+  {
+   "name": "Quilindschy Hartman",
+   "team": "Espanyol",
+   "position": "Defender",
+   "age": 24,
+   "number": 3,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/375915.png",
+   "tier": 2
+  },
+  {
+   "name": "Roger Hinojo",
+   "team": "Espanyol",
+   "position": "Defender",
+   "age": 21,
+   "number": 21,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/450716.png",
+   "tier": 3
+  },
+  {
+   "name": "Edu Expósito",
+   "team": "Espanyol",
+   "position": "Midfielder",
+   "age": 30,
+   "number": 8,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/46799.png",
+   "tier": 3
+  },
+  {
+   "name": "Pol Lozano",
+   "team": "Espanyol",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 10,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/127426.png",
+   "tier": 3
+  },
+  {
+   "name": "Urko González",
+   "team": "Espanyol",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 4,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/183699.png",
+   "tier": 2
+  },
+  {
+   "name": "Moscardo",
+   "team": "Espanyol",
+   "position": "Midfielder",
+   "age": 21,
+   "number": 20,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/415089.png",
+   "tier": 2
+  },
+  {
+   "name": "Álex Calatrava",
+   "team": "Espanyol",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 22,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/286038.png",
+   "tier": 3
+  },
+  {
+   "name": "Pere Milla",
+   "team": "Espanyol",
+   "position": "Midfielder",
+   "age": 34,
+   "number": 11,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47398.png",
+   "tier": 3
+  },
+  {
+   "name": "Kike García",
+   "team": "Espanyol",
+   "position": "Forward",
+   "age": 36,
+   "number": 19,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47396.png",
+   "tier": 3
+  },
+  {
+   "name": "Javi Puado",
+   "team": "Espanyol",
+   "position": "Forward",
+   "age": 28,
+   "number": 7,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47349.png",
+   "tier": 2
+  },
+  {
+   "name": "Tyrhys Dolan",
+   "team": "Espanyol",
+   "position": "Forward",
+   "age": 24,
+   "number": 24,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/273732.png",
+   "tier": 2
+  },
+  {
+   "name": "Jofre Carreras Pagès",
+   "team": "Espanyol",
+   "position": "Forward",
+   "age": 25,
+   "number": 17,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/182674.png",
+   "tier": 3
+  },
+  {
+   "name": "Roberto Fernández",
+   "team": "Espanyol",
+   "position": "Forward",
+   "age": 24,
+   "number": 9,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/312990.png",
+   "tier": 2
+  },
+  {
+   "name": "Marcos Fernández",
+   "team": "Espanyol",
+   "position": "Forward",
+   "age": 23,
+   "number": 18,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/347885.png",
+   "tier": 3
+  },
+  {
+   "name": "Muñeco",
+   "team": "Espanyol",
+   "position": null,
+   "age": 19,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Víctor Mullerat",
+   "team": "Espanyol",
+   "position": "Forward",
+   "age": 19,
+   "number": 29,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/680896.png",
+   "tier": 3
+  },
+  {
+   "name": "Wojciech Szczęsny",
+   "team": "Barcelona",
+   "position": "Goalkeeper",
+   "age": 36,
+   "number": 13,
+   "nationality": "Poland",
+   "photo": "https://media.api-sports.io/football/players/851.png",
+   "tier": 3
+  },
+  {
+   "name": "Dominik Livaković",
+   "team": "Barcelona",
+   "position": "Goalkeeper",
+   "age": 31,
+   "number": 25,
+   "nationality": "Croatia",
+   "photo": "https://media.api-sports.io/football/players/1305.png",
+   "tier": 3
+  },
+  {
+   "name": "Joan García",
+   "team": "Barcelona",
+   "position": "Goalkeeper",
+   "age": 25,
+   "number": 1,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/182718.png",
+   "tier": 1
+  },
+  {
+   "name": "João Cancelo",
+   "team": "Barcelona",
+   "position": "Defender",
+   "age": 32,
+   "number": 2,
+   "nationality": "Portugal",
+   "photo": "https://media.api-sports.io/football/players/855.png",
+   "tier": 2
+  },
+  {
+   "name": "Andreas Christensen",
+   "team": "Barcelona",
+   "position": "Defender",
+   "age": 30,
+   "number": 15,
+   "nationality": "Denmark",
+   "photo": "https://media.api-sports.io/football/players/2282.png",
+   "tier": 2
+  },
+  {
+   "name": "Jules Koundé",
+   "team": "Barcelona",
+   "position": "Defender",
+   "age": 27,
+   "number": 23,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/1257.png",
+   "tier": 1
+  },
+  {
+   "name": "Eric García",
+   "team": "Barcelona",
+   "position": "Defender",
+   "age": 25,
+   "number": 24,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/619.png",
+   "tier": 1
+  },
+  {
+   "name": "Álex Balde",
+   "team": "Barcelona",
+   "position": "Defender",
+   "age": 23,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 1
+  },
+  {
+   "name": "Pau Cubarsí",
+   "team": "Barcelona",
+   "position": "Defender",
+   "age": 19,
+   "number": 5,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/396623.png",
+   "tier": 1
+  },
+  {
+   "name": "Gerard Martín",
+   "team": "Barcelona",
+   "position": "Defender",
+   "age": 24,
+   "number": 18,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/181701.png",
+   "tier": 2
+  },
+  {
+   "name": "Xavi Espart",
+   "team": "Barcelona",
+   "position": "Defender",
+   "age": 19,
+   "number": 12,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/568001.png",
+   "tier": 3
+  },
+  {
+   "name": "Rodri",
+   "team": "Barcelona",
+   "position": "Midfielder",
+   "age": 30,
+   "number": 16,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/44.png",
+   "tier": 1
+  },
+  {
+   "name": "Frenkie de Jong",
+   "team": "Barcelona",
+   "position": "Midfielder",
+   "age": 29,
+   "number": 21,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/538.png",
+   "tier": 2
+  },
+  {
+   "name": "Dani Olmo",
+   "team": "Barcelona",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 20,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/1323.png",
+   "tier": 1
+  },
+  {
+   "name": "Pedri",
+   "team": "Barcelona",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 8,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/133609.png",
+   "tier": 1
+  },
+  {
+   "name": "Pablo Gavira",
+   "team": "Barcelona",
+   "position": "Midfielder",
+   "age": 22,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Fermín López",
+   "team": "Barcelona",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 7,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/340626.png",
+   "tier": 1
+  },
+  {
+   "name": "Marc Bernal",
+   "team": "Barcelona",
+   "position": "Midfielder",
+   "age": 19,
+   "number": 22,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/433396.png",
+   "tier": 2
+  },
+  {
+   "name": "Brian Fariñas",
+   "team": "Barcelona",
+   "position": "Defender",
+   "age": 20,
+   "number": 4,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/574799.png",
+   "tier": 3
+  },
+  {
+   "name": "Gabriel Jesus",
+   "team": "Barcelona",
+   "position": "Forward",
+   "age": 29,
+   "number": 9,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/643.png",
+   "tier": 2
+  },
+  {
+   "name": "Anthony Gordon",
+   "team": "Barcelona",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 17,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/138787.png",
+   "tier": 1
+  },
+  {
+   "name": "Raphinha",
+   "team": "Barcelona",
+   "position": "Forward",
+   "age": 29,
+   "number": 11,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/1496.png",
+   "tier": 1
+  },
+  {
+   "name": "Karim Adeyemi",
+   "team": "Barcelona",
+   "position": "Forward",
+   "age": 24,
+   "number": 14,
+   "nationality": "Germany",
+   "photo": "https://media.api-sports.io/football/players/7334.png",
+   "tier": 1
+  },
+  {
+   "name": "Roony Bardghji",
+   "team": "Barcelona",
+   "position": "Forward",
+   "age": 20,
+   "number": 19,
+   "nationality": "Sweden",
+   "photo": "https://media.api-sports.io/football/players/338958.png",
+   "tier": 2
+  },
+  {
+   "name": "Lamine Yamal",
+   "team": "Barcelona",
+   "position": "Midfielder",
+   "age": 19,
+   "number": 10,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/386828.png",
+   "tier": 1
+  },
+  {
+   "name": "Hamza Abdelkarim",
+   "team": "Barcelona",
+   "position": "Forward",
+   "age": 18,
+   "number": 29,
+   "nationality": "Egypt",
+   "photo": "https://media.api-sports.io/football/players/550547.png",
+   "tier": 3
+  },
+  {
+   "name": "Jesse Bisiwu",
+   "team": "Barcelona",
+   "position": "Forward",
+   "age": 18,
+   "number": 74,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/426446.png",
+   "tier": 3
+  },
+  {
+   "name": "Ebrima Tunkara",
+   "team": "Barcelona",
+   "position": "Midfielder",
+   "age": 16,
+   "number": 30,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/568143.png",
+   "tier": 3
+  },
+  {
+   "name": "Orian Goren",
+   "team": "Barcelona",
+   "position": "Midfielder",
+   "age": 17,
+   "number": 32,
+   "nationality": "Israel",
+   "photo": "https://media.api-sports.io/football/players/568002.png",
+   "tier": 3
+  },
+  {
+   "name": "Álex Campos",
+   "team": "Barcelona",
+   "position": "Defender",
+   "age": 18,
+   "number": 41,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/567999.png",
+   "tier": 3
+  },
+  {
+   "name": "Iker Rodríguez",
+   "team": "Barcelona",
+   "position": "Goalkeeper",
+   "age": 18,
+   "number": 35,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/639167.png",
+   "tier": 3
+  },
+  {
+   "name": "David Soria",
+   "team": "Getafe",
+   "position": "Goalkeeper",
+   "age": 33,
+   "number": 13,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47247.png",
+   "tier": 3
+  },
+  {
+   "name": "Jiří Letáček",
+   "team": "Getafe",
+   "position": "Goalkeeper",
+   "age": 27,
+   "number": 1,
+   "nationality": "Czech Republic",
+   "photo": "https://media.api-sports.io/football/players/66491.png",
+   "tier": 3
+  },
+  {
+   "name": "Dakonam Djené",
+   "team": "Getafe",
+   "position": "Defender",
+   "age": 34,
+   "number": 2,
+   "nationality": "Togo",
+   "photo": "https://media.api-sports.io/football/players/47250.png",
+   "tier": 3
+  },
+  {
+   "name": "Johan Mojica",
+   "team": "Getafe",
+   "position": "Defender",
+   "age": 34,
+   "number": 22,
+   "nationality": "Colombia",
+   "photo": "https://media.api-sports.io/football/players/64268.png",
+   "tier": 3
+  },
+  {
+   "name": "Femenía Far",
+   "team": "Getafe",
+   "position": "Defender",
+   "age": 35,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Abdelkabir Abqar",
+   "team": "Getafe",
+   "position": "Defender",
+   "age": 27,
+   "number": 5,
+   "nationality": "Morocco",
+   "photo": "https://media.api-sports.io/football/players/46813.png",
+   "tier": 3
+  },
+  {
+   "name": "Saba Sazonov",
+   "team": "Getafe",
+   "position": "Defender",
+   "age": 24,
+   "number": 4,
+   "nationality": "Georgia",
+   "photo": "https://media.api-sports.io/football/players/268728.png",
+   "tier": 3
+  },
+  {
+   "name": "Zaid Romero",
+   "team": "Getafe",
+   "position": "Defender",
+   "age": 26,
+   "number": 24,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/180927.png",
+   "tier": 3
+  },
+  {
+   "name": "Andrés Garcia",
+   "team": "Getafe",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 21,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/388013.png",
+   "tier": 3
+  },
+  {
+   "name": "Sebastián Boselli",
+   "team": "Getafe",
+   "position": "Defender",
+   "age": 22,
+   "number": 15,
+   "nationality": "Uruguay",
+   "photo": "https://media.api-sports.io/football/players/316516.png",
+   "tier": 3
+  },
+  {
+   "name": "Davinchi",
+   "team": "Getafe",
+   "position": "Defender",
+   "age": 19,
+   "number": 3,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/471478.png",
+   "tier": 3
+  },
+  {
+   "name": "Valou",
+   "team": "Getafe",
+   "position": "Defender",
+   "age": 20,
+   "number": null,
+   "nationality": "Ivory Coast",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Orel Mangala",
+   "team": "Getafe",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 23,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/24882.png",
+   "tier": 2
+  },
+  {
+   "name": "Nemanja Gudelj",
+   "team": "Getafe",
+   "position": "Midfielder",
+   "age": 34,
+   "number": 8,
+   "nationality": "Serbia",
+   "photo": "https://media.api-sports.io/football/players/1489.png",
+   "tier": 3
+  },
+  {
+   "name": "Yvan Neyou",
+   "team": "Getafe",
+   "position": "Midfielder",
+   "age": 29,
+   "number": null,
+   "nationality": "Cameroon",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Francho Serrano",
+   "team": "Getafe",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 16,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/162249.png",
+   "tier": 3
+  },
+  {
+   "name": "RamónTerrats Espacio",
+   "team": "Getafe",
+   "position": "Midfielder",
+   "age": 26,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Mario Martin",
+   "team": "Getafe",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 6,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/343205.png",
+   "tier": 2
+  },
+  {
+   "name": "Juanmi",
+   "team": "Getafe",
+   "position": "Forward",
+   "age": 33,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Borja Mayoral",
+   "team": "Getafe",
+   "position": "Forward",
+   "age": 29,
+   "number": 9,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47472.png",
+   "tier": 3
+  },
+  {
+   "name": "Enes Ünal",
+   "team": "Getafe",
+   "position": "Forward",
+   "age": 29,
+   "number": 19,
+   "nationality": "Turkey",
+   "photo": "https://media.api-sports.io/football/players/47499.png",
+   "tier": 2
+  },
+  {
+   "name": "Martin Satriano",
+   "team": "Getafe",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 10,
+   "nationality": "Uruguay",
+   "photo": "https://media.api-sports.io/football/players/195512.png",
+   "tier": 2
+  },
+  {
+   "name": "Ivan Azón",
+   "team": "Getafe",
+   "position": "Forward",
+   "age": 23,
+   "number": 20,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/161590.png",
+   "tier": 3
+  },
+  {
+   "name": "Chrisantus",
+   "team": "Getafe",
+   "position": "Forward",
+   "age": 23,
+   "number": null,
+   "nationality": "Nigeria",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Ibra Danfakha",
+   "team": "Getafe",
+   "position": "Forward",
+   "age": 17,
+   "number": 36,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/670698.png",
+   "tier": 3
+  },
+  {
+   "name": "Alfonso Herrero",
+   "team": "Malaga",
+   "position": "Goalkeeper",
+   "age": 32,
+   "number": 1,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/46843.png",
+   "tier": 3
+  },
+  {
+   "name": "Lopez Nogueras",
+   "team": "Malaga",
+   "position": "Goalkeeper",
+   "age": 21,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Fernando Calero",
+   "team": "Malaga",
+   "position": "Defender",
+   "age": 31,
+   "number": 20,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47478.png",
+   "tier": 3
+  },
+  {
+   "name": "Juan Berrocal",
+   "team": "Malaga",
+   "position": "Defender",
+   "age": 27,
+   "number": 25,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/2039.png",
+   "tier": 3
+  },
+  {
+   "name": "Alex Pastor Carayol",
+   "team": "Malaga",
+   "position": "Defender",
+   "age": 27,
+   "number": 5,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/56670.png",
+   "tier": 3
+  },
+  {
+   "name": "José Salinas",
+   "team": "Malaga",
+   "position": "Defender",
+   "age": 26,
+   "number": 12,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/184407.png",
+   "tier": 3
+  },
+  {
+   "name": "Ángel Recio",
+   "team": "Malaga",
+   "position": "Defender",
+   "age": 23,
+   "number": 15,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/316115.png",
+   "tier": 3
+  },
+  {
+   "name": "Diego Murillo",
+   "team": "Malaga",
+   "position": "Defender",
+   "age": 25,
+   "number": 16,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/185234.png",
+   "tier": 3
+  },
+  {
+   "name": "Einar Galilea",
+   "team": "Malaga",
+   "position": "Defender",
+   "age": 32,
+   "number": 4,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/14470.png",
+   "tier": 3
+  },
+  {
+   "name": "Rafa Garrido",
+   "team": "Malaga",
+   "position": "Defender",
+   "age": 22,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Adam Aznou",
+   "team": "Malaga",
+   "position": "Midfielder",
+   "age": 20,
+   "number": 39,
+   "nationality": "Morocco",
+   "photo": "https://media.api-sports.io/football/players/431921.png",
+   "tier": 3
+  },
+  {
+   "name": "Puga",
+   "team": "Malaga",
+   "position": "Defender",
+   "age": 25,
+   "number": 3,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/185096.png",
+   "tier": 3
+  },
+  {
+   "name": "Jens Cajuste",
+   "team": "Malaga",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 2,
+   "nationality": "Sweden",
+   "photo": "https://media.api-sports.io/football/players/15797.png",
+   "tier": 2
+  },
+  {
+   "name": "Pablo Martínez",
+   "team": "Malaga",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 18,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/104949.png",
+   "tier": 3
+  },
+  {
+   "name": "Ramón Enríquez Rodríguez",
+   "team": "Malaga",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 6,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/129056.png",
+   "tier": 3
+  },
+  {
+   "name": "Dani Lorenzo",
+   "team": "Malaga",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 22,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/337523.png",
+   "tier": 3
+  },
+  {
+   "name": "Carlos Dotor",
+   "team": "Malaga",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 8,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/162034.png",
+   "tier": 3
+  },
+  {
+   "name": "Rafa Rodriguez",
+   "team": "Malaga",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 14,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/335221.png",
+   "tier": 3
+  },
+  {
+   "name": "Izan Merino",
+   "team": "Malaga",
+   "position": "Midfielder",
+   "age": 20,
+   "number": 23,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/394372.png",
+   "tier": 3
+  },
+  {
+   "name": "Aarón Ochoa",
+   "team": "Malaga",
+   "position": "Midfielder",
+   "age": 19,
+   "number": 35,
+   "nationality": "Ireland",
+   "photo": "https://media.api-sports.io/football/players/444451.png",
+   "tier": 3
+  },
+  {
+   "name": "Eneko Jauregi Escobar",
+   "team": "Malaga",
+   "position": "Forward",
+   "age": 30,
+   "number": 17,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/104903.png",
+   "tier": 3
+  },
+  {
+   "name": "Juan Cruz",
+   "team": "Malaga",
+   "position": "Forward",
+   "age": 26,
+   "number": 19,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/185202.png",
+   "tier": 3
+  },
+  {
+   "name": "Joaquín Muñoz",
+   "team": "Malaga",
+   "position": "Forward",
+   "age": 27,
+   "number": 11,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/60.png",
+   "tier": 3
+  },
+  {
+   "name": "Julen Lobete",
+   "team": "Malaga",
+   "position": "Forward",
+   "age": 26,
+   "number": 24,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/182602.png",
+   "tier": 3
+  },
+  {
+   "name": "David Larrubia",
+   "team": "Malaga",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 10,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/190253.png",
+   "tier": 3
+  },
+  {
+   "name": "Haitam Abaida",
+   "team": "Malaga",
+   "position": "Forward",
+   "age": 24,
+   "number": 7,
+   "nationality": "Morocco",
+   "photo": "https://media.api-sports.io/football/players/296695.png",
+   "tier": 3
+  },
+  {
+   "name": "Adrián Niño",
+   "team": "Malaga",
+   "position": "Forward",
+   "age": 22,
+   "number": 21,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/386850.png",
+   "tier": 3
+  },
+  {
+   "name": "Chupete",
+   "team": "Malaga",
+   "position": "Forward",
+   "age": 22,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Thibaut Courtois",
+   "team": "Real Madrid",
+   "position": "Goalkeeper",
+   "age": 34,
+   "number": 1,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/730.png",
+   "tier": 2
+  },
+  {
+   "name": "Andriy Lunin",
+   "team": "Real Madrid",
+   "position": "Goalkeeper",
+   "age": 27,
+   "number": 13,
+   "nationality": "Ukraine",
+   "photo": "https://media.api-sports.io/football/players/47400.png",
+   "tier": 2
+  },
+  {
+   "name": "Éder Militão",
+   "team": "Real Madrid",
+   "position": "Defender",
+   "age": 28,
+   "number": 3,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/372.png",
+   "tier": 2
+  },
+  {
+   "name": "Antonio Rüdiger",
+   "team": "Real Madrid",
+   "position": "Defender",
+   "age": 33,
+   "number": 22,
+   "nationality": "Germany",
+   "photo": "https://media.api-sports.io/football/players/2285.png",
+   "tier": 3
+  },
+  {
+   "name": "Denzel Dumfries",
+   "team": "Real Madrid",
+   "position": "Defender",
+   "age": 30,
+   "number": 24,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/226.png",
+   "tier": 2
+  },
+  {
+   "name": "Trent Alexander-Arnold",
+   "team": "Real Madrid",
+   "position": "Defender",
+   "age": 28,
+   "number": 12,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/283.png",
+   "tier": 1
+  },
+  {
+   "name": "Ferland Mendy",
+   "team": "Real Madrid",
+   "position": "Defender",
+   "age": 31,
+   "number": 23,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/653.png",
+   "tier": 3
+  },
+  {
+   "name": "Ibrahima Konaté",
+   "team": "Real Madrid",
+   "position": "Defender",
+   "age": 27,
+   "number": 16,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/1145.png",
+   "tier": 1
+  },
+  {
+   "name": "Cucurella",
+   "team": "Real Madrid",
+   "position": "Defender",
+   "age": 28,
+   "number": 17,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47380.png",
+   "tier": 1
+  },
+  {
+   "name": "Álvaro Carreras",
+   "team": "Real Madrid",
+   "position": "Defender",
+   "age": 23,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 1
+  },
+  {
+   "name": "Dean Huijsen",
+   "team": "Real Madrid",
+   "position": "Defender",
+   "age": 21,
+   "number": 4,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/361497.png",
+   "tier": 1
+  },
+  {
+   "name": "Raúl (Real Madrid)",
+   "team": "Real Madrid",
+   "position": "Defender",
+   "age": 23,
+   "number": 2,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/341640.png",
+   "tier": 2
+  },
+  {
+   "name": "Federico Valverde",
+   "team": "Real Madrid",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 8,
+   "nationality": "Uruguay",
+   "photo": "https://media.api-sports.io/football/players/756.png",
+   "tier": 1
+  },
+  {
+   "name": "Bernardo Silva",
+   "team": "Real Madrid",
+   "position": "Midfielder",
+   "age": 32,
+   "number": 20,
+   "nationality": "Portugal",
+   "photo": "https://media.api-sports.io/football/players/636.png",
+   "tier": 2
+  },
+  {
+   "name": "Aurélien Tchouameni",
+   "team": "Real Madrid",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 14,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/1271.png",
+   "tier": 1
+  },
+  {
+   "name": "Eduardo Camavinga",
+   "team": "Real Madrid",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 6,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/2207.png",
+   "tier": 1
+  },
+  {
+   "name": "Jude Bellingham",
+   "team": "Real Madrid",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 5,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/129718.png",
+   "tier": 1
+  },
+  {
+   "name": "Arda Guler",
+   "team": "Real Madrid",
+   "position": "Midfielder",
+   "age": 21,
+   "number": 15,
+   "nationality": "Turkey",
+   "photo": "https://media.api-sports.io/football/players/291964.png",
+   "tier": 1
+  },
+  {
+   "name": "Thiago Pitarch",
+   "team": "Real Madrid",
+   "position": "Midfielder",
+   "age": 19,
+   "number": 27,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/509470.png",
+   "tier": 2
+  },
+  {
+   "name": "Jorge Cestero",
+   "team": "Real Madrid",
+   "position": "Midfielder",
+   "age": 20,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 2
+  },
+  {
+   "name": "Rodrygo",
+   "team": "Real Madrid",
+   "position": "Forward",
+   "age": 25,
+   "number": null,
+   "nationality": "Brazil",
+   "photo": null,
+   "tier": 1
+  },
+  {
+   "name": "Vinicius Junior",
+   "team": "Real Madrid",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 7,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/762.png",
+   "tier": 1
+  },
+  {
+   "name": "Kylian Mbappé",
+   "team": "Real Madrid",
+   "position": "Forward",
+   "age": 27,
+   "number": 10,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/278.png",
+   "tier": 1
+  },
+  {
+   "name": "Brahim Diaz",
+   "team": "Real Madrid",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 21,
+   "nationality": "Morocco",
+   "photo": "https://media.api-sports.io/football/players/744.png",
+   "tier": 1
+  },
+  {
+   "name": "Endrick",
+   "team": "Real Madrid",
+   "position": "Forward",
+   "age": 20,
+   "number": 9,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/377122.png",
+   "tier": 1
+  },
+  {
+   "name": "Carlos Espí",
+   "team": "Real Madrid",
+   "position": "Forward",
+   "age": 21,
+   "number": 19,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/450497.png",
+   "tier": 2
+  },
+  {
+   "name": "Yan Diomandé",
+   "team": "Real Madrid",
+   "position": "Midfielder",
+   "age": 19,
+   "number": 25,
+   "nationality": "Ivory Coast",
+   "photo": "https://media.api-sports.io/football/players/513776.png",
+   "tier": 1
+  },
+  {
+   "name": "Ilya Voloshyn",
+   "team": "Real Madrid",
+   "position": "Goalkeeper",
+   "age": 19,
+   "number": 39,
+   "nationality": "Ukraine",
+   "photo": "https://media.api-sports.io/football/players/460594.png",
+   "tier": 3
+  },
+  {
+   "name": "Emil Audero",
+   "team": "Rayo Vallecano",
+   "position": "Goalkeeper",
+   "age": 29,
+   "number": 25,
+   "nationality": "Indonesia",
+   "photo": "https://media.api-sports.io/football/players/30441.png",
+   "tier": 3
+  },
+  {
+   "name": "Augusto Batalla",
+   "team": "Rayo Vallecano",
+   "position": "Goalkeeper",
+   "age": 30,
+   "number": 13,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/11379.png",
+   "tier": 3
+  },
+  {
+   "name": "Morro",
+   "team": "Rayo Vallecano",
+   "position": "Goalkeeper",
+   "age": 26,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Dani Cárdenas",
+   "team": "Rayo Vallecano",
+   "position": "Goalkeeper",
+   "age": 29,
+   "number": 1,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/156488.png",
+   "tier": 3
+  },
+  {
+   "name": "Luiz Felipe",
+   "team": "Rayo Vallecano",
+   "position": "Defender",
+   "age": 29,
+   "number": 5,
+   "nationality": "Italy",
+   "photo": "https://media.api-sports.io/football/players/1847.png",
+   "tier": 3
+  },
+  {
+   "name": "Marash Kumbulla",
+   "team": "Rayo Vallecano",
+   "position": "Defender",
+   "age": 26,
+   "number": 3,
+   "nationality": "Italy",
+   "photo": "https://media.api-sports.io/football/players/30924.png",
+   "tier": 3
+  },
+  {
+   "name": "Florian Lejeune",
+   "team": "Rayo Vallecano",
+   "position": "Defender",
+   "age": 35,
+   "number": 24,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/18895.png",
+   "tier": 3
+  },
+  {
+   "name": "Iván Balliu",
+   "team": "Rayo Vallecano",
+   "position": "Defender",
+   "age": 34,
+   "number": 20,
+   "nationality": "Albania",
+   "photo": "https://media.api-sports.io/football/players/20520.png",
+   "tier": 3
+  },
+  {
+   "name": "Mujaid Sadick",
+   "team": "Rayo Vallecano",
+   "position": "Defender",
+   "age": 26,
+   "number": 15,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/104795.png",
+   "tier": 3
+  },
+  {
+   "name": "Pedrosa",
+   "team": "Rayo Vallecano",
+   "position": "Defender",
+   "age": 28,
+   "number": 17,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47329.png",
+   "tier": 3
+  },
+  {
+   "name": "Andrei Rațiu",
+   "team": "Rayo Vallecano",
+   "position": "Defender",
+   "age": 28,
+   "number": 2,
+   "nationality": "Romania",
+   "photo": "https://media.api-sports.io/football/players/1703.png",
+   "tier": 2
+  },
+  {
+   "name": "Jozhua Vertrouwd",
+   "team": "Rayo Vallecano",
+   "position": "Defender",
+   "age": 22,
+   "number": 33,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/314006.png",
+   "tier": 3
+  },
+  {
+   "name": "Pelayo Fernández",
+   "team": "Rayo Vallecano",
+   "position": "Defender",
+   "age": 23,
+   "number": 22,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/333292.png",
+   "tier": 3
+  },
+  {
+   "name": "Óscar Valentín",
+   "team": "Rayo Vallecano",
+   "position": "Midfielder",
+   "age": 32,
+   "number": 23,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47109.png",
+   "tier": 3
+  },
+  {
+   "name": "Unai López",
+   "team": "Rayo Vallecano",
+   "position": "Midfielder",
+   "age": 31,
+   "number": 8,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47285.png",
+   "tier": 3
+  },
+  {
+   "name": "Pedro Díaz",
+   "team": "Rayo Vallecano",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 4,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/46887.png",
+   "tier": 3
+  },
+  {
+   "name": "Pathé Ciss",
+   "team": "Rayo Vallecano",
+   "position": "Midfielder",
+   "age": 32,
+   "number": 6,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/41552.png",
+   "tier": 3
+  },
+  {
+   "name": "Randy Ntekja",
+   "team": "Rayo Vallecano",
+   "position": "Midfielder",
+   "age": 28,
+   "number": null,
+   "nationality": "Angola",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Gnangoro Bouare",
+   "team": "Rayo Vallecano",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 36,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/548809.png",
+   "tier": 3
+  },
+  {
+   "name": "Raúl de Tomás",
+   "team": "Rayo Vallecano",
+   "position": "Forward",
+   "age": 32,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Álvaro García",
+   "team": "Rayo Vallecano",
+   "position": "Forward",
+   "age": 34,
+   "number": 18,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47543.png",
+   "tier": 3
+  },
+  {
+   "name": "Isi Palazón",
+   "team": "Rayo Vallecano",
+   "position": "Midfielder",
+   "age": 31,
+   "number": 7,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/131546.png",
+   "tier": 3
+  },
+  {
+   "name": "Alexandre Alemão",
+   "team": "Rayo Vallecano",
+   "position": "Forward",
+   "age": 28,
+   "number": 9,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/91745.png",
+   "tier": 3
+  },
+  {
+   "name": "Sergio Camello",
+   "team": "Rayo Vallecano",
+   "position": "Forward",
+   "age": 25,
+   "number": 10,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/52.png",
+   "tier": 3
+  },
+  {
+   "name": "Jorge de Frutos",
+   "team": "Rayo Vallecano",
+   "position": "Forward",
+   "age": 29,
+   "number": 19,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/128582.png",
+   "tier": 2
+  },
+  {
+   "name": "Fran Perez",
+   "team": "Rayo Vallecano",
+   "position": "Forward",
+   "age": 24,
+   "number": 21,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/162931.png",
+   "tier": 3
+  },
+  {
+   "name": "Georgiy Tsitaishvili",
+   "team": "Rayo Vallecano",
+   "position": "Forward",
+   "age": 25,
+   "number": 14,
+   "nationality": "Georgia",
+   "photo": "https://media.api-sports.io/football/players/2181.png",
+   "tier": 3
+  },
+  {
+   "name": "Maty Ryan",
+   "team": "Levante",
+   "position": "Goalkeeper",
+   "age": 34,
+   "number": 13,
+   "nationality": "Australia",
+   "photo": "https://media.api-sports.io/football/players/2741.png",
+   "tier": 3
+  },
+  {
+   "name": "Pablo Cuñat",
+   "team": "Levante",
+   "position": "Goalkeeper",
+   "age": 24,
+   "number": 1,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/286611.png",
+   "tier": 3
+  },
+  {
+   "name": "Álex Primo",
+   "team": "Levante",
+   "position": "Goalkeeper",
+   "age": 22,
+   "number": 32,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/338295.png",
+   "tier": 3
+  },
+  {
+   "name": "Aïssa Mandi",
+   "team": "Levante",
+   "position": "Defender",
+   "age": 35,
+   "number": 2,
+   "nationality": "Algeria",
+   "photo": "https://media.api-sports.io/football/players/1567.png",
+   "tier": 3
+  },
+  {
+   "name": "Jeremy Toljan",
+   "team": "Levante",
+   "position": "Defender",
+   "age": 32,
+   "number": 22,
+   "nationality": "Germany",
+   "photo": "https://media.api-sports.io/football/players/1118.png",
+   "tier": 3
+  },
+  {
+   "name": "Adrián de la Fuente",
+   "team": "Levante",
+   "position": "Defender",
+   "age": 27,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Manuel Sánchez",
+   "team": "Levante",
+   "position": "Defender",
+   "age": 26,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Xavi Grande",
+   "team": "Levante",
+   "position": "Defender",
+   "age": 21,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Jorge Cabello",
+   "team": "Levante",
+   "position": "Defender",
+   "age": 22,
+   "number": 14,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/408320.png",
+   "tier": 3
+  },
+  {
+   "name": "Axel Tape",
+   "team": "Levante",
+   "position": "Defender",
+   "age": 19,
+   "number": 16,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/491103.png",
+   "tier": 2
+  },
+  {
+   "name": "Ifeanyi Ndukwe",
+   "team": "Levante",
+   "position": "Defender",
+   "age": 18,
+   "number": 3,
+   "nationality": "Austria",
+   "photo": "https://media.api-sports.io/football/players/511971.png",
+   "tier": 3
+  },
+  {
+   "name": "Nacho Pérez",
+   "team": "Levante",
+   "position": "Defender",
+   "age": 18,
+   "number": 29,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/504605.png",
+   "tier": 3
+  },
+  {
+   "name": "Marc Santos",
+   "team": "Levante",
+   "position": "Defender",
+   "age": 15,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Oriol Rey",
+   "team": "Levante",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 20,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/106727.png",
+   "tier": 3
+  },
+  {
+   "name": "Carlos Álvarez",
+   "team": "Levante",
+   "position": "Midfielder",
+   "age": 23,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 2
+  },
+  {
+   "name": "Jon Olasagasti",
+   "team": "Levante",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 8,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/182603.png",
+   "tier": 3
+  },
+  {
+   "name": "Hugo Sotelo",
+   "team": "Levante",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 5,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/313651.png",
+   "tier": 3
+  },
+  {
+   "name": "Enzo Bardeli",
+   "team": "Levante",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 18,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/161893.png",
+   "tier": 3
+  },
+  {
+   "name": "Dani Requena",
+   "team": "Levante",
+   "position": "Midfielder",
+   "age": 22,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Roger Brugué",
+   "team": "Levante",
+   "position": "Forward",
+   "age": 30,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Víctor García",
+   "team": "Levante",
+   "position": "Defender",
+   "age": 29,
+   "number": 17,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/46790.png",
+   "tier": 3
+  },
+  {
+   "name": "Iván Romero",
+   "team": "Levante",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 9,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/192032.png",
+   "tier": 2
+  },
+  {
+   "name": "Thiago Fernandez",
+   "team": "Levante",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 24,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/362750.png",
+   "tier": 3
+  },
+  {
+   "name": "Karl Etta Eyong",
+   "team": "Levante",
+   "position": "Forward",
+   "age": 23,
+   "number": 21,
+   "nationality": "Cameroon",
+   "photo": "https://media.api-sports.io/football/players/378284.png",
+   "tier": 2
+  },
+  {
+   "name": "Petar Ratkov",
+   "team": "Levante",
+   "position": "Forward",
+   "age": 23,
+   "number": 10,
+   "nationality": "Serbia",
+   "photo": "https://media.api-sports.io/football/players/301763.png",
+   "tier": 2
+  },
+  {
+   "name": "Paco Cortés",
+   "team": "Levante",
+   "position": "Forward",
+   "age": 19,
+   "number": 27,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/463279.png",
+   "tier": 3
+  },
+  {
+   "name": "Yanis Musuayi",
+   "team": "Levante",
+   "position": "Forward",
+   "age": 19,
+   "number": 11,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/482302.png",
+   "tier": 3
+  },
+  {
+   "name": "Álvaro Vallés Rosa",
+   "team": "Real Betis",
+   "position": "Goalkeeper",
+   "age": 29,
+   "number": 1,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/46990.png",
+   "tier": 2
+  },
+  {
+   "name": "Diego Conde",
+   "team": "Real Betis",
+   "position": "Goalkeeper",
+   "age": 28,
+   "number": 13,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/122956.png",
+   "tier": 3
+  },
+  {
+   "name": "Diego Llorente",
+   "team": "Real Betis",
+   "position": "Defender",
+   "age": 33,
+   "number": 3,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47302.png",
+   "tier": 3
+  },
+  {
+   "name": "Héctor Bellerín",
+   "team": "Real Betis",
+   "position": "Defender",
+   "age": 31,
+   "number": 2,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/1439.png",
+   "tier": 3
+  },
+  {
+   "name": "Júnior Firpo",
+   "team": "Real Betis",
+   "position": "Defender",
+   "age": 30,
+   "number": 23,
+   "nationality": "Dominican Republic",
+   "photo": "https://media.api-sports.io/football/players/1564.png",
+   "tier": 3
+  },
+  {
+   "name": "Bartra",
+   "team": "Real Betis",
+   "position": "Defender",
+   "age": 35,
+   "number": 5,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/1561.png",
+   "tier": 3
+  },
+  {
+   "name": "Francisco Garcia",
+   "team": "Real Betis",
+   "position": "Defender",
+   "age": 27,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 2
+  },
+  {
+   "name": "Natan",
+   "team": "Real Betis",
+   "position": "Defender",
+   "age": 25,
+   "number": 4,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/195100.png",
+   "tier": 2
+  },
+  {
+   "name": "Valentín Gómez",
+   "team": "Real Betis",
+   "position": "Defender",
+   "age": 23,
+   "number": 16,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/355004.png",
+   "tier": 2
+  },
+  {
+   "name": "Ángel Ortiz",
+   "team": "Real Betis",
+   "position": "Defender",
+   "age": 22,
+   "number": 12,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/334574.png",
+   "tier": 3
+  },
+  {
+   "name": "Isco",
+   "team": "Real Betis",
+   "position": "Midfielder",
+   "age": 34,
+   "number": 22,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/745.png",
+   "tier": 3
+  },
+  {
+   "name": "Dani Ceballos",
+   "team": "Real Betis",
+   "position": "Midfielder",
+   "age": 30,
+   "number": 25,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/748.png",
+   "tier": 2
+  },
+  {
+   "name": "Giovani Lo Celso",
+   "team": "Real Betis",
+   "position": "Midfielder",
+   "age": 30,
+   "number": 20,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/1578.png",
+   "tier": 2
+  },
+  {
+   "name": "Marc Roca",
+   "team": "Real Betis",
+   "position": "Midfielder",
+   "age": 29,
+   "number": 21,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47341.png",
+   "tier": 3
+  },
+  {
+   "name": "Pablo Fornals",
+   "team": "Real Betis",
+   "position": "Midfielder",
+   "age": 30,
+   "number": 8,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/1697.png",
+   "tier": 2
+  },
+  {
+   "name": "Álvaro Fidalgo",
+   "team": "Real Betis",
+   "position": "Midfielder",
+   "age": 29,
+   "number": 15,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/750.png",
+   "tier": 3
+  },
+  {
+   "name": "Iker Losada",
+   "team": "Real Betis",
+   "position": "Forward",
+   "age": 25,
+   "number": 14,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/128985.png",
+   "tier": 3
+  },
+  {
+   "name": "Nelson Deossa",
+   "team": "Real Betis",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 18,
+   "nationality": "Colombia",
+   "photo": "https://media.api-sports.io/football/players/300885.png",
+   "tier": 2
+  },
+  {
+   "name": "Facundo Bernal",
+   "team": "Real Betis",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 6,
+   "nationality": "Uruguay",
+   "photo": "https://media.api-sports.io/football/players/316519.png",
+   "tier": 3
+  },
+  {
+   "name": "Cucho Hernández",
+   "team": "Real Betis",
+   "position": "Forward",
+   "age": 27,
+   "number": 9,
+   "nationality": "Colombia",
+   "photo": "https://media.api-sports.io/football/players/47582.png",
+   "tier": 2
+  },
+  {
+   "name": "Aitor Ruibal",
+   "team": "Real Betis",
+   "position": "Forward",
+   "age": 30,
+   "number": 24,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47119.png",
+   "tier": 3
+  },
+  {
+   "name": "Antony",
+   "team": "Real Betis",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 7,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/9971.png",
+   "tier": 1
+  },
+  {
+   "name": "Rodrigo Riquelme",
+   "team": "Real Betis",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 17,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/136117.png",
+   "tier": 3
+  },
+  {
+   "name": "Troy Parrott",
+   "team": "Real Betis",
+   "position": "Forward",
+   "age": 24,
+   "number": 19,
+   "nationality": "Ireland",
+   "photo": "https://media.api-sports.io/football/players/149551.png",
+   "tier": 2
+  },
+  {
+   "name": "Abdessamad Ezzalzouli",
+   "team": "Real Betis",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 10,
+   "nationality": "Morocco",
+   "photo": "https://media.api-sports.io/football/players/181421.png",
+   "tier": 1
+  },
+  {
+   "name": "Álex Remiro",
+   "team": "Real Sociedad",
+   "position": "Goalkeeper",
+   "age": 31,
+   "number": 1,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47269.png",
+   "tier": 2
+  },
+  {
+   "name": "Unai Marrero",
+   "team": "Real Sociedad",
+   "position": "Goalkeeper",
+   "age": 25,
+   "number": 13,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/189832.png",
+   "tier": 3
+  },
+  {
+   "name": "Álvaro Odriozola",
+   "team": "Real Sociedad",
+   "position": "Defender",
+   "age": 30,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Igor Zubeldía",
+   "team": "Real Sociedad",
+   "position": "Defender",
+   "age": 29,
+   "number": 5,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47314.png",
+   "tier": 3
+  },
+  {
+   "name": "Sergio Gómez",
+   "team": "Real Sociedad",
+   "position": "Defender",
+   "age": 26,
+   "number": 17,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/23.png",
+   "tier": 2
+  },
+  {
+   "name": "Aihen Muñoz",
+   "team": "Real Sociedad",
+   "position": "Defender",
+   "age": 29,
+   "number": 3,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47303.png",
+   "tier": 3
+  },
+  {
+   "name": "Jon Aramburu",
+   "team": "Real Sociedad",
+   "position": "Defender",
+   "age": 24,
+   "number": 2,
+   "nationality": "Venezuela",
+   "photo": "https://media.api-sports.io/football/players/199044.png",
+   "tier": 2
+  },
+  {
+   "name": "Jon Pacheco",
+   "team": "Real Sociedad",
+   "position": "Defender",
+   "age": 25,
+   "number": 16,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/182546.png",
+   "tier": 3
+  },
+  {
+   "name": "Mamadou Sarr",
+   "team": "Real Sociedad",
+   "position": "Defender",
+   "age": 21,
+   "number": 19,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/276184.png",
+   "tier": 2
+  },
+  {
+   "name": "Héctor Fort",
+   "team": "Real Sociedad",
+   "position": "Defender",
+   "age": 20,
+   "number": 22,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/386859.png",
+   "tier": 2
+  },
+  {
+   "name": "Jon Martín",
+   "team": "Real Sociedad",
+   "position": "Defender",
+   "age": 20,
+   "number": 6,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/405073.png",
+   "tier": 2
+  },
+  {
+   "name": "Carlos Soler",
+   "team": "Real Sociedad",
+   "position": "Midfielder",
+   "age": 29,
+   "number": 18,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/930.png",
+   "tier": 2
+  },
+  {
+   "name": "Yangel Herrera",
+   "team": "Real Sociedad",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 21,
+   "nationality": "Venezuela",
+   "photo": "https://media.api-sports.io/football/players/2449.png",
+   "tier": 3
+  },
+  {
+   "name": "Luka Sučić",
+   "team": "Real Sociedad",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 24,
+   "nationality": "Croatia",
+   "photo": "https://media.api-sports.io/football/players/7332.png",
+   "tier": 2
+  },
+  {
+   "name": "Beñat Turrientes",
+   "team": "Real Sociedad",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 8,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/183744.png",
+   "tier": 2
+  },
+  {
+   "name": "Arsen Zakharyan",
+   "team": "Real Sociedad",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 23,
+   "nationality": "Russia",
+   "photo": "https://media.api-sports.io/football/players/268960.png",
+   "tier": 2
+  },
+  {
+   "name": "Pablo Marin",
+   "team": "Real Sociedad",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 15,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/290106.png",
+   "tier": 2
+  },
+  {
+   "name": "Jon Gorrotxategi",
+   "team": "Real Sociedad",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 4,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/287654.png",
+   "tier": 2
+  },
+  {
+   "name": "Gonçalo Guedes",
+   "team": "Real Sociedad",
+   "position": "Midfielder",
+   "age": 29,
+   "number": 11,
+   "nationality": "Portugal",
+   "photo": "https://media.api-sports.io/football/players/925.png",
+   "tier": 3
+  },
+  {
+   "name": "Takefusa Kubo",
+   "team": "Real Sociedad",
+   "position": "Forward",
+   "age": 25,
+   "number": 14,
+   "nationality": "Japan",
+   "photo": "https://media.api-sports.io/football/players/32862.png",
+   "tier": 2
+  },
+  {
+   "name": "Ander Barrenetxea",
+   "team": "Real Sociedad",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 7,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47317.png",
+   "tier": 2
+  },
+  {
+   "name": "Mikel Oyarzabal",
+   "team": "Real Sociedad",
+   "position": "Forward",
+   "age": 29,
+   "number": 10,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47323.png",
+   "tier": 2
+  },
+  {
+   "name": "Orri Steinn Óskarsson",
+   "team": "Real Sociedad",
+   "position": "Forward",
+   "age": 22,
+   "number": 9,
+   "nationality": "Iceland",
+   "photo": "https://media.api-sports.io/football/players/61774.png",
+   "tier": 2
+  },
+  {
+   "name": "Ochieng",
+   "team": "Real Sociedad",
+   "position": "Forward",
+   "age": 23,
+   "number": null,
+   "nationality": "Kenya",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Péter Gulácsi",
+   "team": "Villarreal",
+   "position": "Goalkeeper",
+   "age": 36,
+   "number": 25,
+   "nationality": "Hungary",
+   "photo": "https://media.api-sports.io/football/players/1139.png",
+   "tier": 3
+  },
+  {
+   "name": "Luiz Lúcio Reis Júnior",
+   "team": "Villarreal",
+   "position": "Goalkeeper",
+   "age": 25,
+   "number": 1,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/278619.png",
+   "tier": 3
+  },
+  {
+   "name": "Ruben Gomez",
+   "team": "Villarreal",
+   "position": "Goalkeeper",
+   "age": 24,
+   "number": 13,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/302277.png",
+   "tier": 3
+  },
+  {
+   "name": "Logan Costa",
+   "team": "Villarreal",
+   "position": "Defender",
+   "age": 25,
+   "number": 2,
+   "nationality": "Cape Verde Islands",
+   "photo": "https://media.api-sports.io/football/players/21997.png",
+   "tier": 2
+  },
+  {
+   "name": "Juan Foyth",
+   "team": "Villarreal",
+   "position": "Defender",
+   "age": 28,
+   "number": 8,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/166.png",
+   "tier": 2
+  },
+  {
+   "name": "Alex Freeman",
+   "team": "Villarreal",
+   "position": "Defender",
+   "age": 22,
+   "number": 3,
+   "nationality": "USA",
+   "photo": "https://media.api-sports.io/football/players/355994.png",
+   "tier": 3
+  },
+  {
+   "name": "Renato Veiga",
+   "team": "Villarreal",
+   "position": "Defender",
+   "age": 23,
+   "number": 12,
+   "nationality": "Portugal",
+   "photo": "https://media.api-sports.io/football/players/336671.png",
+   "tier": 2
+  },
+  {
+   "name": "Sergi Cardona",
+   "team": "Villarreal",
+   "position": "Defender",
+   "age": 27,
+   "number": 23,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/70500.png",
+   "tier": 2
+  },
+  {
+   "name": "Carlos Romero",
+   "team": "Villarreal",
+   "position": "Defender",
+   "age": 25,
+   "number": 20,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/184420.png",
+   "tier": 2
+  },
+  {
+   "name": "Santiago Mouriño",
+   "team": "Villarreal",
+   "position": "Defender",
+   "age": 24,
+   "number": 15,
+   "nationality": "Uruguay",
+   "photo": "https://media.api-sports.io/football/players/311773.png",
+   "tier": 2
+  },
+  {
+   "name": "Pau Navarro",
+   "team": "Villarreal",
+   "position": "Defender",
+   "age": 21,
+   "number": 6,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/435552.png",
+   "tier": 2
+  },
+  {
+   "name": "Pape Gueye",
+   "team": "Villarreal",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 18,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/20696.png",
+   "tier": 1
+  },
+  {
+   "name": "Santiago Comesaña",
+   "team": "Villarreal",
+   "position": "Midfielder",
+   "age": 30,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 2
+  },
+  {
+   "name": "Nathan-Dylan Saliba",
+   "team": "Villarreal",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 24,
+   "nationality": "Canada",
+   "photo": "https://media.api-sports.io/football/players/294824.png",
+   "tier": 2
+  },
+  {
+   "name": "Alassane Diatta",
+   "team": "Villarreal",
+   "position": "Midfielder",
+   "age": 21,
+   "number": 5,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/463280.png",
+   "tier": 3
+  },
+  {
+   "name": "Carlos Macià",
+   "team": "Villarreal",
+   "position": "Midfielder",
+   "age": 18,
+   "number": 16,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/548734.png",
+   "tier": 3
+  },
+  {
+   "name": "Ayoze Pérez",
+   "team": "Villarreal",
+   "position": "Forward",
+   "age": 33,
+   "number": 22,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/18906.png",
+   "tier": 3
+  },
+  {
+   "name": "Nicolas Pépé",
+   "team": "Villarreal",
+   "position": "Midfielder",
+   "age": 31,
+   "number": 19,
+   "nationality": "Ivory Coast",
+   "photo": "https://media.api-sports.io/football/players/3246.png",
+   "tier": 3
+  },
+  {
+   "name": "Gerard Moreno",
+   "team": "Villarreal",
+   "position": "Forward",
+   "age": 34,
+   "number": 7,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/1707.png",
+   "tier": 3
+  },
+  {
+   "name": "Tajon Buchanan",
+   "team": "Villarreal",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 17,
+   "nationality": "Canada",
+   "photo": "https://media.api-sports.io/football/players/51016.png",
+   "tier": 2
+  },
+  {
+   "name": "Georges Mikautadze",
+   "team": "Villarreal",
+   "position": "Forward",
+   "age": 26,
+   "number": 9,
+   "nationality": "Georgia",
+   "photo": "https://media.api-sports.io/football/players/180496.png",
+   "tier": 2
+  },
+  {
+   "name": "Alberto Moleiro",
+   "team": "Villarreal",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 10,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/182519.png",
+   "tier": 1
+  },
+  {
+   "name": "Ilias Akhomach",
+   "team": "Villarreal",
+   "position": "Forward",
+   "age": 22,
+   "number": 11,
+   "nationality": "Morocco",
+   "photo": "https://media.api-sports.io/football/players/290740.png",
+   "tier": 2
+  },
+  {
+   "name": "Tani Oluwaseyi",
+   "team": "Villarreal",
+   "position": "Forward",
+   "age": 26,
+   "number": 21,
+   "nationality": "Canada",
+   "photo": "https://media.api-sports.io/football/players/351587.png",
+   "tier": 2
+  },
+  {
+   "name": "Cristian",
+   "team": "Valencia",
+   "position": "Goalkeeper",
+   "age": 28,
+   "number": 13,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/913.png",
+   "tier": 3
+  },
+  {
+   "name": "Stole Dimitrievski",
+   "team": "Valencia",
+   "position": "Goalkeeper",
+   "age": 32,
+   "number": 1,
+   "nationality": "North Macedonia",
+   "photo": "https://media.api-sports.io/football/players/47527.png",
+   "tier": 3
+  },
+  {
+   "name": "Kayne van Oevelen",
+   "team": "Valencia",
+   "position": "Goalkeeper",
+   "age": 23,
+   "number": 25,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/328669.png",
+   "tier": 3
+  },
+  {
+   "name": "Mouctar Diakhaby",
+   "team": "Valencia",
+   "position": "Defender",
+   "age": 29,
+   "number": 4,
+   "nationality": "Guinea",
+   "photo": "https://media.api-sports.io/football/players/916.png",
+   "tier": 3
+  },
+  {
+   "name": "Dimitri Foulquier",
+   "team": "Valencia",
+   "position": "Defender",
+   "age": 33,
+   "number": null,
+   "nationality": "Guadeloupe",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Gaya",
+   "team": "Valencia",
+   "position": "Defender",
+   "age": 31,
+   "number": 14,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/918.png",
+   "tier": 3
+  },
+  {
+   "name": "Pablo Maffeo",
+   "team": "Valencia",
+   "position": "Midfielder",
+   "age": 29,
+   "number": 24,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/26302.png",
+   "tier": 3
+  },
+  {
+   "name": "Justin de Haas",
+   "team": "Valencia",
+   "position": "Defender",
+   "age": 26,
+   "number": 12,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/36884.png",
+   "tier": 2
+  },
+  {
+   "name": "Arnau Martinez",
+   "team": "Valencia",
+   "position": "Defender",
+   "age": 23,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 2
+  },
+  {
+   "name": "Jesus Vazquez Alcalde",
+   "team": "Valencia",
+   "position": "Defender",
+   "age": 23,
+   "number": 21,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/162175.png",
+   "tier": 3
+  },
+  {
+   "name": "Copete",
+   "team": "Valencia",
+   "position": "Defender",
+   "age": 27,
+   "number": 3,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/181582.png",
+   "tier": 3
+  },
+  {
+   "name": "Cesar Tarrega",
+   "team": "Valencia",
+   "position": "Defender",
+   "age": 24,
+   "number": 5,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/333672.png",
+   "tier": 2
+  },
+  {
+   "name": "Iker Córdoba",
+   "team": "Valencia",
+   "position": "Defender",
+   "age": 20,
+   "number": 36,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/442188.png",
+   "tier": 3
+  },
+  {
+   "name": "Filip Ugrinic",
+   "team": "Valencia",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 23,
+   "nationality": "Switzerland",
+   "photo": "https://media.api-sports.io/football/players/48465.png",
+   "tier": 2
+  },
+  {
+   "name": "Pepelu",
+   "team": "Valencia",
+   "position": "Defender",
+   "age": 28,
+   "number": 18,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47463.png",
+   "tier": 2
+  },
+  {
+   "name": "Guido Rodríguez",
+   "team": "Valencia",
+   "position": "Midfielder",
+   "age": 32,
+   "number": 2,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/2476.png",
+   "tier": 3
+  },
+  {
+   "name": "Harvey Elliott",
+   "team": "Valencia",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 10,
+   "nationality": "England",
+   "photo": "https://media.api-sports.io/football/players/19035.png",
+   "tier": 2
+  },
+  {
+   "name": "Javier Guerra",
+   "team": "Valencia",
+   "position": "Midfielder",
+   "age": 23,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 2
+  },
+  {
+   "name": "Aliou Dieng",
+   "team": "Valencia",
+   "position": "Midfielder",
+   "age": 29,
+   "number": 15,
+   "nationality": "Mali",
+   "photo": "https://media.api-sports.io/football/players/4458.png",
+   "tier": 3
+  },
+  {
+   "name": "Sergi Canós",
+   "team": "Valencia",
+   "position": "Forward",
+   "age": 29,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Umar Sadiq",
+   "team": "Valencia",
+   "position": "Forward",
+   "age": 29,
+   "number": 6,
+   "nationality": "Nigeria",
+   "photo": "https://media.api-sports.io/football/players/31406.png",
+   "tier": 3
+  },
+  {
+   "name": "Arnaut Danjuma",
+   "team": "Valencia",
+   "position": "Forward",
+   "age": 29,
+   "number": 7,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/83.png",
+   "tier": 3
+  },
+  {
+   "name": "Hugo Duro",
+   "team": "Valencia",
+   "position": "Forward",
+   "age": 26,
+   "number": 9,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47264.png",
+   "tier": 2
+  },
+  {
+   "name": "Dani Raba",
+   "team": "Valencia",
+   "position": "Forward",
+   "age": 31,
+   "number": 19,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/1708.png",
+   "tier": 3
+  },
+  {
+   "name": "Luis Rioja",
+   "team": "Valencia",
+   "position": "Midfielder",
+   "age": 33,
+   "number": 11,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/46933.png",
+   "tier": 3
+  },
+  {
+   "name": "Diego López",
+   "team": "Valencia",
+   "position": "Forward",
+   "age": 24,
+   "number": 16,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/162127.png",
+   "tier": 2
+  },
+  {
+   "name": "Ryunosuke Sato",
+   "team": "Valencia",
+   "position": "Midfielder",
+   "age": 20,
+   "number": 39,
+   "nationality": "Japan",
+   "photo": "https://media.api-sports.io/football/players/410840.png",
+   "tier": 3
+  },
+  {
+   "name": "Rodrigo Gamón",
+   "team": "Valencia",
+   "position": null,
+   "age": 18,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Sivera",
+   "team": "Alaves",
+   "position": "Goalkeeper",
+   "age": 30,
+   "number": 1,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47353.png",
+   "tier": 2
+  },
+  {
+   "name": "Adrian Rodriguez",
+   "team": "Alaves",
+   "position": "Goalkeeper",
+   "age": 25,
+   "number": null,
+   "nationality": "Argentina",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Jonny Otto",
+   "team": "Alaves",
+   "position": "Defender",
+   "age": 32,
+   "number": 17,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/18740.png",
+   "tier": 3
+  },
+  {
+   "name": "Facundo Garcés",
+   "team": "Alaves",
+   "position": "Defender",
+   "age": 27,
+   "number": null,
+   "nationality": "Malaysia",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Nahuel Tenaglia",
+   "team": "Alaves",
+   "position": "Defender",
+   "age": 30,
+   "number": 14,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/6233.png",
+   "tier": 3
+  },
+  {
+   "name": "Ville Koski",
+   "team": "Alaves",
+   "position": "Defender",
+   "age": 24,
+   "number": 16,
+   "nationality": "Finland",
+   "photo": "https://media.api-sports.io/football/players/106759.png",
+   "tier": 3
+  },
+  {
+   "name": "Hugo Novoa",
+   "team": "Alaves",
+   "position": "Forward",
+   "age": 23,
+   "number": 12,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/162170.png",
+   "tier": 3
+  },
+  {
+   "name": "Nicolas Valentini",
+   "team": "Alaves",
+   "position": "Defender",
+   "age": 25,
+   "number": 2,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/311071.png",
+   "tier": 3
+  },
+  {
+   "name": "Yusi",
+   "team": "Alaves",
+   "position": "Defender",
+   "age": 21,
+   "number": 3,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/361384.png",
+   "tier": 3
+  },
+  {
+   "name": "Aleñà",
+   "team": "Alaves",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 10,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/143.png",
+   "tier": 3
+  },
+  {
+   "name": "Denís Suárez",
+   "team": "Alaves",
+   "position": "Midfielder",
+   "age": 32,
+   "number": 4,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/1461.png",
+   "tier": 3
+  },
+  {
+   "name": "Carlos Benavidez",
+   "team": "Alaves",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 23,
+   "nationality": "Uruguay",
+   "photo": "https://media.api-sports.io/football/players/6085.png",
+   "tier": 3
+  },
+  {
+   "name": "Ander Guevara",
+   "team": "Alaves",
+   "position": "Midfielder",
+   "age": 29,
+   "number": 6,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47309.png",
+   "tier": 3
+  },
+  {
+   "name": "Antonio Blanco",
+   "team": "Alaves",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 8,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/162686.png",
+   "tier": 2
+  },
+  {
+   "name": "Pablo Ibáñez Tébar",
+   "team": "Alaves",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 19,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/139001.png",
+   "tier": 3
+  },
+  {
+   "name": "Tomas Mendes",
+   "team": "Alaves",
+   "position": "Midfielder",
+   "age": 21,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Selu Diallo",
+   "team": "Alaves",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 24,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/297973.png",
+   "tier": 3
+  },
+  {
+   "name": "Mikel Rodríguez",
+   "team": "Alaves",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 18,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/332645.png",
+   "tier": 3
+  },
+  {
+   "name": "Mariano Díaz",
+   "team": "Alaves",
+   "position": "Forward",
+   "age": 33,
+   "number": 9,
+   "nationality": "Dominican Republic",
+   "photo": "https://media.api-sports.io/football/players/760.png",
+   "tier": 3
+  },
+  {
+   "name": "Lucas Boyé",
+   "team": "Alaves",
+   "position": "Forward",
+   "age": 30,
+   "number": 15,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/608.png",
+   "tier": 3
+  },
+  {
+   "name": "Toni Martínez",
+   "team": "Alaves",
+   "position": "Forward",
+   "age": 29,
+   "number": 11,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47181.png",
+   "tier": 2
+  },
+  {
+   "name": "Miguel Rodríguez",
+   "team": "Alaves",
+   "position": "Forward",
+   "age": 23,
+   "number": 22,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/192434.png",
+   "tier": 3
+  },
+  {
+   "name": "Abde Rebbach",
+   "team": "Alaves",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 21,
+   "nationality": "Algeria",
+   "photo": "https://media.api-sports.io/football/players/183751.png",
+   "tier": 3
+  },
+  {
+   "name": "Aitor Mañas",
+   "team": "Alaves",
+   "position": "Forward",
+   "age": 23,
+   "number": 20,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/330440.png",
+   "tier": 3
+  },
+  {
+   "name": "Ángel Pérez",
+   "team": "Alaves",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 7,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/331369.png",
+   "tier": 3
+  },
+  {
+   "name": "Matías Dituro",
+   "team": "Elche",
+   "position": "Goalkeeper",
+   "age": 39,
+   "number": 1,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/11346.png",
+   "tier": 3
+  },
+  {
+   "name": "Alejandro Iturbe",
+   "team": "Elche",
+   "position": "Goalkeeper",
+   "age": 23,
+   "number": 13,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/315604.png",
+   "tier": 3
+  },
+  {
+   "name": "Pedro Bigas",
+   "team": "Elche",
+   "position": "Defender",
+   "age": 36,
+   "number": 6,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47378.png",
+   "tier": 3
+  },
+  {
+   "name": "Bambo Diaby",
+   "team": "Elche",
+   "position": "Defender",
+   "age": 28,
+   "number": 4,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/8746.png",
+   "tier": 3
+  },
+  {
+   "name": "Víctor Chust",
+   "team": "Elche",
+   "position": "Defender",
+   "age": 26,
+   "number": 23,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/162058.png",
+   "tier": 3
+  },
+  {
+   "name": "Kevin Lomónaco",
+   "team": "Elche",
+   "position": "Defender",
+   "age": 24,
+   "number": 15,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/237206.png",
+   "tier": 2
+  },
+  {
+   "name": "Roy Revivo",
+   "team": "Elche",
+   "position": "Defender",
+   "age": 23,
+   "number": 3,
+   "nationality": "Israel",
+   "photo": "https://media.api-sports.io/football/players/315127.png",
+   "tier": 3
+  },
+  {
+   "name": "Buba",
+   "team": "Elche",
+   "position": "Defender",
+   "age": 19,
+   "number": 2,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/446067.png",
+   "tier": 3
+  },
+  {
+   "name": "Matia Barzic",
+   "team": "Elche",
+   "position": "Defender",
+   "age": 22,
+   "number": 26,
+   "nationality": "Croatia",
+   "photo": "https://media.api-sports.io/football/players/436785.png",
+   "tier": 3
+  },
+  {
+   "name": "Thomas Lemar",
+   "team": "Elche",
+   "position": "Midfielder",
+   "age": 30,
+   "number": 18,
+   "nationality": "Guadeloupe",
+   "photo": "https://media.api-sports.io/football/players/45.png",
+   "tier": 3
+  },
+  {
+   "name": "Gonzalo Villar",
+   "team": "Elche",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 12,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/46982.png",
+   "tier": 3
+  },
+  {
+   "name": "Marc Aguado",
+   "team": "Elche",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 8,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/187318.png",
+   "tier": 3
+  },
+  {
+   "name": "Martim Neto",
+   "team": "Elche",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 16,
+   "nationality": "Portugal",
+   "photo": "https://media.api-sports.io/football/players/271580.png",
+   "tier": 3
+  },
+  {
+   "name": "Federico Redondo",
+   "team": "Elche",
+   "position": "Defender",
+   "age": 23,
+   "number": 5,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/311345.png",
+   "tier": 3
+  },
+  {
+   "name": "Facundo Buonanotte",
+   "team": "Elche",
+   "position": "Midfielder",
+   "age": 21,
+   "number": 10,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/311334.png",
+   "tier": 2
+  },
+  {
+   "name": "Javi Morcillo",
+   "team": "Elche",
+   "position": "Midfielder",
+   "age": 20,
+   "number": 47,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/548704.png",
+   "tier": 3
+  },
+  {
+   "name": "Grady Diangana",
+   "team": "Elche",
+   "position": "Forward",
+   "age": 28,
+   "number": 19,
+   "nationality": "DR Congo",
+   "photo": "https://media.api-sports.io/football/players/18821.png",
+   "tier": 3
+  },
+  {
+   "name": "Ezequiel Ponce",
+   "team": "Elche",
+   "position": "Forward",
+   "age": 29,
+   "number": 9,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/612.png",
+   "tier": 3
+  },
+  {
+   "name": "Josán Fernández",
+   "team": "Elche",
+   "position": "Midfielder",
+   "age": 36,
+   "number": 17,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/46973.png",
+   "tier": 3
+  },
+  {
+   "name": "Tete Morente",
+   "team": "Elche",
+   "position": "Forward",
+   "age": 29,
+   "number": 20,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47182.png",
+   "tier": 3
+  },
+  {
+   "name": "Germán Valera",
+   "team": "Elche",
+   "position": "Defender",
+   "age": 24,
+   "number": 11,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/161963.png",
+   "tier": 2
+  },
+  {
+   "name": "Fernando Niño",
+   "team": "Elche",
+   "position": "Forward",
+   "age": 26,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Lucas Cepeda",
+   "team": "Elche",
+   "position": "Forward",
+   "age": 24,
+   "number": 21,
+   "nationality": "Chile",
+   "photo": "https://media.api-sports.io/football/players/318592.png",
+   "tier": 3
+  },
+  {
+   "name": "Abiel Osorio",
+   "team": "Elche",
+   "position": "Forward",
+   "age": 24,
+   "number": 24,
+   "nationality": "Argentina",
+   "photo": "https://media.api-sports.io/football/players/358600.png",
+   "tier": 3
+  },
+  {
+   "name": "Yago Santiago",
+   "team": "Elche",
+   "position": "Forward",
+   "age": 23,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Ali Houary",
+   "team": "Elche",
+   "position": "Forward",
+   "age": 21,
+   "number": 29,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/448243.png",
+   "tier": 3
+  },
+  {
+   "name": "Adam",
+   "team": "Elche",
+   "position": "Forward",
+   "age": 21,
+   "number": 27,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/439293.png",
+   "tier": 3
+  },
+  {
+   "name": "Ruben Sanchez",
+   "team": "Elche",
+   "position": "Defender",
+   "age": 25,
+   "number": 22,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/199824.png",
+   "tier": 3
+  },
+  {
+   "name": "Ionuț Radu",
+   "team": "Celta Vigo",
+   "position": "Goalkeeper",
+   "age": 29,
+   "number": 13,
+   "nationality": "Romania",
+   "photo": "https://media.api-sports.io/football/players/30765.png",
+   "tier": 2
+  },
+  {
+   "name": "Altay Bayındır",
+   "team": "Celta Vigo",
+   "position": "Goalkeeper",
+   "age": 28,
+   "number": 1,
+   "nationality": "Turkey",
+   "photo": "https://media.api-sports.io/football/players/50132.png",
+   "tier": 3
+  },
+  {
+   "name": "Iván Villar",
+   "team": "Celta Vigo",
+   "position": "Goalkeeper",
+   "age": 29,
+   "number": 25,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47427.png",
+   "tier": 3
+  },
+  {
+   "name": "Marcos Alonso",
+   "team": "Celta Vigo",
+   "position": "Defender",
+   "age": 35,
+   "number": 3,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/2278.png",
+   "tier": 3
+  },
+  {
+   "name": "Sebastían Cáceres",
+   "team": "Celta Vigo",
+   "position": "Defender",
+   "age": 27,
+   "number": 21,
+   "nationality": "Uruguay",
+   "photo": "https://media.api-sports.io/football/players/51535.png",
+   "tier": 3
+  },
+  {
+   "name": "Carl Starfelt",
+   "team": "Celta Vigo",
+   "position": "Defender",
+   "age": 31,
+   "number": 2,
+   "nationality": "Sweden",
+   "photo": "https://media.api-sports.io/football/players/47988.png",
+   "tier": 3
+  },
+  {
+   "name": "Javier Galán",
+   "team": "Celta Vigo",
+   "position": "Defender",
+   "age": 31,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Abdoulaye Fayé",
+   "team": "Celta Vigo",
+   "position": "Defender",
+   "age": 21,
+   "number": 4,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/437776.png",
+   "tier": 3
+  },
+  {
+   "name": "Sergio Carreira",
+   "team": "Celta Vigo",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 5,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/157988.png",
+   "tier": 2
+  },
+  {
+   "name": "Álvaro Núñez",
+   "team": "Celta Vigo",
+   "position": "Defender",
+   "age": 26,
+   "number": 15,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/182661.png",
+   "tier": 3
+  },
+  {
+   "name": "Javi Rodríguez",
+   "team": "Celta Vigo",
+   "position": "Defender",
+   "age": 23,
+   "number": 20,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/384135.png",
+   "tier": 3
+  },
+  {
+   "name": "Yoel Lago",
+   "team": "Celta Vigo",
+   "position": "Defender",
+   "age": 22,
+   "number": 18,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/329722.png",
+   "tier": 3
+  },
+  {
+   "name": "Javi Rueda",
+   "team": "Celta Vigo",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 17,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/179955.png",
+   "tier": 2
+  },
+  {
+   "name": "Aleix Febas",
+   "team": "Celta Vigo",
+   "position": "Midfielder",
+   "age": 30,
+   "number": 14,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/46711.png",
+   "tier": 3
+  },
+  {
+   "name": "Ilaix Moriba",
+   "team": "Celta Vigo",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 6,
+   "nationality": "Guinea",
+   "photo": "https://media.api-sports.io/football/players/162123.png",
+   "tier": 2
+  },
+  {
+   "name": "Miguel Román",
+   "team": "Celta Vigo",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 8,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/333502.png",
+   "tier": 2
+  },
+  {
+   "name": "Iago Aspas",
+   "team": "Celta Vigo",
+   "position": "Forward",
+   "age": 39,
+   "number": 10,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47445.png",
+   "tier": 3
+  },
+  {
+   "name": "Borja Iglesias",
+   "team": "Celta Vigo",
+   "position": "Forward",
+   "age": 33,
+   "number": 7,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47348.png",
+   "tier": 3
+  },
+  {
+   "name": "Ferran Jutglà",
+   "team": "Celta Vigo",
+   "position": "Forward",
+   "age": 27,
+   "number": 9,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/122734.png",
+   "tier": 2
+  },
+  {
+   "name": "Couhaib Driouech",
+   "team": "Celta Vigo",
+   "position": "Forward",
+   "age": 24,
+   "number": 24,
+   "nationality": "Morocco",
+   "photo": "https://media.api-sports.io/football/players/272543.png",
+   "tier": 2
+  },
+  {
+   "name": "Williot Swedberg",
+   "team": "Celta Vigo",
+   "position": "Forward",
+   "age": 22,
+   "number": 19,
+   "nationality": "Sweden",
+   "photo": "https://media.api-sports.io/football/players/269163.png",
+   "tier": 2
+  },
+  {
+   "name": "Hugo Alvarez",
+   "team": "Celta Vigo",
+   "position": "Forward",
+   "age": 23,
+   "number": 23,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/329720.png",
+   "tier": 2
+  },
+  {
+   "name": "Hugo Gonzalez",
+   "team": "Celta Vigo",
+   "position": "Forward",
+   "age": 23,
+   "number": 16,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/161875.png",
+   "tier": 3
+  },
+  {
+   "name": "Jones El-Abdellaoui",
+   "team": "Celta Vigo",
+   "position": "Forward",
+   "age": 20,
+   "number": 39,
+   "nationality": "Norway",
+   "photo": "https://media.api-sports.io/football/players/351913.png",
+   "tier": 2
+  },
+  {
+   "name": "Pablo Duran",
+   "team": "Celta Vigo",
+   "position": "Forward",
+   "age": 25,
+   "number": 11,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/320517.png",
+   "tier": 3
+  },
+  {
+   "name": "Odisseas Vlachodimos",
+   "team": "Sevilla",
+   "position": "Goalkeeper",
+   "age": 32,
+   "number": 1,
+   "nationality": "Greece",
+   "photo": "https://media.api-sports.io/football/players/557.png",
+   "tier": 3
+  },
+  {
+   "name": "Fran Gonzalez",
+   "team": "Sevilla",
+   "position": "Goalkeeper",
+   "age": 21,
+   "number": 13,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/396475.png",
+   "tier": 3
+  },
+  {
+   "name": "Gabriel Suazo",
+   "team": "Sevilla",
+   "position": "Defender",
+   "age": 29,
+   "number": 17,
+   "nationality": "Chile",
+   "photo": "https://media.api-sports.io/football/players/11421.png",
+   "tier": 2
+  },
+  {
+   "name": "Fábio Cardoso",
+   "team": "Sevilla",
+   "position": "Defender",
+   "age": 32,
+   "number": 15,
+   "nationality": "Portugal",
+   "photo": "https://media.api-sports.io/football/players/41208.png",
+   "tier": 3
+  },
+  {
+   "name": "Marcão",
+   "team": "Sevilla",
+   "position": "Defender",
+   "age": 30,
+   "number": 23,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/433.png",
+   "tier": 3
+  },
+  {
+   "name": "Juan Iglesias",
+   "team": "Sevilla",
+   "position": "Defender",
+   "age": 28,
+   "number": 2,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/119742.png",
+   "tier": 3
+  },
+  {
+   "name": "Arouna Sangante",
+   "team": "Sevilla",
+   "position": "Defender",
+   "age": 24,
+   "number": 12,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/174927.png",
+   "tier": 2
+  },
+  {
+   "name": "Jose Angel Carmona",
+   "team": "Sevilla",
+   "position": "Defender",
+   "age": 24,
+   "number": 22,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/195923.png",
+   "tier": 2
+  },
+  {
+   "name": "Kike Salas",
+   "team": "Sevilla",
+   "position": "Defender",
+   "age": 24,
+   "number": 4,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/297311.png",
+   "tier": 2
+  },
+  {
+   "name": "Castrin",
+   "team": "Sevilla",
+   "position": "Defender",
+   "age": 23,
+   "number": 5,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/338902.png",
+   "tier": 2
+  },
+  {
+   "name": "Julio Díaz",
+   "team": "Sevilla",
+   "position": "Defender",
+   "age": 21,
+   "number": 3,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/386870.png",
+   "tier": 3
+  },
+  {
+   "name": "Jon Guridi",
+   "team": "Sevilla",
+   "position": "Midfielder",
+   "age": 31,
+   "number": 18,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/104821.png",
+   "tier": 3
+  },
+  {
+   "name": "Youssouf Fofana",
+   "team": "Sevilla",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 24,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/22254.png",
+   "tier": 2
+  },
+  {
+   "name": "Lucien Agoume",
+   "team": "Sevilla",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 6,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/21004.png",
+   "tier": 2
+  },
+  {
+   "name": "Giorgi Kochorashvili",
+   "team": "Sevilla",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 8,
+   "nationality": "Georgia",
+   "photo": "https://media.api-sports.io/football/players/119795.png",
+   "tier": 3
+  },
+  {
+   "name": "Manu Bueno",
+   "team": "Sevilla",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 14,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/331607.png",
+   "tier": 3
+  },
+  {
+   "name": "Nicolás Guillén",
+   "team": "Sevilla",
+   "position": "Midfielder",
+   "age": 18,
+   "number": 27,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/546882.png",
+   "tier": 3
+  },
+  {
+   "name": "Ruben Vargas",
+   "team": "Sevilla",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 11,
+   "nationality": "Switzerland",
+   "photo": "https://media.api-sports.io/football/players/48471.png",
+   "tier": 2
+  },
+  {
+   "name": "Alfonso González",
+   "team": "Sevilla",
+   "position": "Forward",
+   "age": 27,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Chidera Ejuke",
+   "team": "Sevilla",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 21,
+   "nationality": "Nigeria",
+   "photo": "https://media.api-sports.io/football/players/39121.png",
+   "tier": 3
+  },
+  {
+   "name": "Félix Correia",
+   "team": "Sevilla",
+   "position": "Midfielder",
+   "age": 25,
+   "number": 20,
+   "nationality": "Portugal",
+   "photo": "https://media.api-sports.io/football/players/135749.png",
+   "tier": 2
+  },
+  {
+   "name": "Peque",
+   "team": "Sevilla",
+   "position": "Forward",
+   "age": 24,
+   "number": 10,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/162126.png",
+   "tier": 3
+  },
+  {
+   "name": "Robbie Ure",
+   "team": "Sevilla",
+   "position": "Forward",
+   "age": 22,
+   "number": 9,
+   "nationality": "Scotland",
+   "photo": "https://media.api-sports.io/football/players/327536.png",
+   "tier": 3
+  },
+  {
+   "name": "Lucas Stassin",
+   "team": "Sevilla",
+   "position": "Forward",
+   "age": 21,
+   "number": 19,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/322560.png",
+   "tier": 2
+  },
+  {
+   "name": "Isaac",
+   "team": "Sevilla",
+   "position": "Forward",
+   "age": 26,
+   "number": 16,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/185398.png",
+   "tier": 3
+  },
+  {
+   "name": "Miguel Ángel Sierra",
+   "team": "Sevilla",
+   "position": "Forward",
+   "age": 22,
+   "number": 30,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/438263.png",
+   "tier": 3
+  },
+  {
+   "name": "Jesús Morales",
+   "team": "Sevilla",
+   "position": null,
+   "age": 19,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Álvaro Fernández",
+   "team": "Deportivo La Coruna",
+   "position": "Goalkeeper",
+   "age": 28,
+   "number": 25,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47016.png",
+   "tier": 3
+  },
+  {
+   "name": "German Parreno",
+   "team": "Deportivo La Coruna",
+   "position": "Goalkeeper",
+   "age": 33,
+   "number": 1,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/105015.png",
+   "tier": 3
+  },
+  {
+   "name": "Leo Román",
+   "team": "Deportivo La Coruna",
+   "position": "Goalkeeper",
+   "age": 26,
+   "number": 13,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/179139.png",
+   "tier": 2
+  },
+  {
+   "name": "Ximo Navarro",
+   "team": "Deportivo La Coruna",
+   "position": "Defender",
+   "age": 36,
+   "number": 23,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47360.png",
+   "tier": 3
+  },
+  {
+   "name": "Angeliño",
+   "team": "Deportivo La Coruna",
+   "position": "Defender",
+   "age": 29,
+   "number": 17,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/227.png",
+   "tier": 3
+  },
+  {
+   "name": "Giacomo Quagliata",
+   "team": "Deportivo La Coruna",
+   "position": "Defender",
+   "age": 26,
+   "number": 12,
+   "nationality": "Italy",
+   "photo": "https://media.api-sports.io/football/players/127025.png",
+   "tier": 3
+  },
+  {
+   "name": "Arnau Comas",
+   "team": "Deportivo La Coruna",
+   "position": "Defender",
+   "age": 26,
+   "number": 3,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/162695.png",
+   "tier": 3
+  },
+  {
+   "name": "Lucas Noubi",
+   "team": "Deportivo La Coruna",
+   "position": "Defender",
+   "age": 21,
+   "number": 4,
+   "nationality": "Belgium",
+   "photo": "https://media.api-sports.io/football/players/319512.png",
+   "tier": 3
+  },
+  {
+   "name": "Adrià Altimira",
+   "team": "Deportivo La Coruna",
+   "position": "Defender",
+   "age": 25,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Miguel Loureiro",
+   "team": "Deportivo La Coruna",
+   "position": "Defender",
+   "age": 29,
+   "number": 15,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47190.png",
+   "tier": 3
+  },
+  {
+   "name": "José Giménez",
+   "team": "Deportivo La Coruna",
+   "position": "Defender",
+   "age": 31,
+   "number": 20,
+   "nationality": "Uruguay",
+   "photo": "https://media.api-sports.io/football/players/31.png",
+   "tier": 2
+  },
+  {
+   "name": "Dani Barcia",
+   "team": "Deportivo La Coruna",
+   "position": "Defender",
+   "age": 23,
+   "number": 5,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/299763.png",
+   "tier": 3
+  },
+  {
+   "name": "Ede Bright",
+   "team": "Deportivo La Coruna",
+   "position": "Defender",
+   "age": 19,
+   "number": null,
+   "nationality": "Poland",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Mario Soriano",
+   "team": "Deportivo La Coruna",
+   "position": "Midfielder",
+   "age": 24,
+   "number": 21,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/161965.png",
+   "tier": 3
+  },
+  {
+   "name": "Riki Rodríguez",
+   "team": "Deportivo La Coruna",
+   "position": "Midfielder",
+   "age": 29,
+   "number": 14,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/107210.png",
+   "tier": 3
+  },
+  {
+   "name": "Marc Casado",
+   "team": "Deportivo La Coruna",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 6,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/329728.png",
+   "tier": 2
+  },
+  {
+   "name": "Lorenzo Amatucci",
+   "team": "Deportivo La Coruna",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 16,
+   "nationality": "Italy",
+   "photo": "https://media.api-sports.io/football/players/346865.png",
+   "tier": 3
+  },
+  {
+   "name": "Diego Villares",
+   "team": "Deportivo La Coruna",
+   "position": "Midfielder",
+   "age": 30,
+   "number": 8,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/182988.png",
+   "tier": 3
+  },
+  {
+   "name": "Teun Gijselhart",
+   "team": "Deportivo La Coruna",
+   "position": "Midfielder",
+   "age": 21,
+   "number": null,
+   "nationality": "Netherlands",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Jonathan Asp-Jensen",
+   "team": "Deportivo La Coruna",
+   "position": "Midfielder",
+   "age": 20,
+   "number": 18,
+   "nationality": "Denmark",
+   "photo": "https://media.api-sports.io/football/players/354754.png",
+   "tier": 3
+  },
+  {
+   "name": "Noé Carrillo",
+   "team": "Deportivo La Coruna",
+   "position": "Midfielder",
+   "age": 19,
+   "number": 37,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/628615.png",
+   "tier": 3
+  },
+  {
+   "name": "Adama Traoré",
+   "team": "Deportivo La Coruna",
+   "position": "Forward",
+   "age": 30,
+   "number": 24,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/18753.png",
+   "tier": 2
+  },
+  {
+   "name": "Pierre-Emerick Aubameyang",
+   "team": "Deportivo La Coruna",
+   "position": "Forward",
+   "age": 37,
+   "number": 7,
+   "nationality": "Gabon",
+   "photo": "https://media.api-sports.io/football/players/1465.png",
+   "tier": 3
+  },
+  {
+   "name": "Zakaria Eddahchouri",
+   "team": "Deportivo La Coruna",
+   "position": "Forward",
+   "age": 26,
+   "number": 9,
+   "nationality": "Netherlands",
+   "photo": "https://media.api-sports.io/football/players/37616.png",
+   "tier": 3
+  },
+  {
+   "name": "Luismi Cruz",
+   "team": "Deportivo La Coruna",
+   "position": "Forward",
+   "age": 25,
+   "number": 19,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/188445.png",
+   "tier": 3
+  },
+  {
+   "name": "David Mella",
+   "team": "Deportivo La Coruna",
+   "position": "Midfielder",
+   "age": 21,
+   "number": 11,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/335720.png",
+   "tier": 3
+  },
+  {
+   "name": "Peke",
+   "team": "Deportivo La Coruna",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 10,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/295880.png",
+   "tier": 3
+  },
+  {
+   "name": "Nsongo Tonfack",
+   "team": "Deportivo La Coruna",
+   "position": "Forward",
+   "age": 22,
+   "number": null,
+   "nationality": "Cameroon",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Julen Agirrezabala",
+   "team": "Racing Santander",
+   "position": "Goalkeeper",
+   "age": 25,
+   "number": 13,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/183848.png",
+   "tier": 2
+  },
+  {
+   "name": "Simon Eriksson",
+   "team": "Racing Santander",
+   "position": "Goalkeeper",
+   "age": 20,
+   "number": 1,
+   "nationality": "Sweden",
+   "photo": "https://media.api-sports.io/football/players/408875.png",
+   "tier": 3
+  },
+  {
+   "name": "José Manuel",
+   "team": "Racing Santander",
+   "position": "Defender",
+   "age": 28,
+   "number": null,
+   "nationality": "Spain",
+   "photo": null,
+   "tier": 3
+  },
+  {
+   "name": "Aaron Martín",
+   "team": "Racing Santander",
+   "position": "Defender",
+   "age": 29,
+   "number": 3,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/25914.png",
+   "tier": 3
+  },
+  {
+   "name": "Pablo Ramon",
+   "team": "Racing Santander",
+   "position": "Defender",
+   "age": 25,
+   "number": 5,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/46734.png",
+   "tier": 3
+  },
+  {
+   "name": "Pablo García",
+   "team": "Racing Santander",
+   "position": "Forward",
+   "age": 19,
+   "number": 15,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/443163.png",
+   "tier": 3
+  },
+  {
+   "name": "Álvaro Mantilla",
+   "team": "Racing Santander",
+   "position": "Defender",
+   "age": 26,
+   "number": 2,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/181685.png",
+   "tier": 3
+  },
+  {
+   "name": "Jeanuel Belocian",
+   "team": "Racing Santander",
+   "position": "Defender",
+   "age": 21,
+   "number": 24,
+   "nationality": "France",
+   "photo": "https://media.api-sports.io/football/players/343316.png",
+   "tier": 2
+  },
+  {
+   "name": "Facundo González",
+   "team": "Racing Santander",
+   "position": "Defender",
+   "age": 23,
+   "number": 16,
+   "nationality": "Uruguay",
+   "photo": "https://media.api-sports.io/football/players/286595.png",
+   "tier": 3
+  },
+  {
+   "name": "Pedro Felipe",
+   "team": "Racing Santander",
+   "position": "Defender",
+   "age": 22,
+   "number": 22,
+   "nationality": "Brazil",
+   "photo": "https://media.api-sports.io/football/players/415064.png",
+   "tier": 3
+  },
+  {
+   "name": "Salinas",
+   "team": "Racing Santander",
+   "position": "Defender",
+   "age": 19,
+   "number": 17,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/482469.png",
+   "tier": 3
+  },
+  {
+   "name": "Canales",
+   "team": "Racing Santander",
+   "position": "Midfielder",
+   "age": 35,
+   "number": 20,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/1570.png",
+   "tier": 3
+  },
+  {
+   "name": "André Almeida",
+   "team": "Racing Santander",
+   "position": "Midfielder",
+   "age": 26,
+   "number": 8,
+   "nationality": "Portugal",
+   "photo": "https://media.api-sports.io/football/players/41157.png",
+   "tier": 2
+  },
+  {
+   "name": "Iván Martín",
+   "team": "Racing Santander",
+   "position": "Midfielder",
+   "age": 27,
+   "number": 23,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/1700.png",
+   "tier": 3
+  },
+  {
+   "name": "Íñigo Sainz Maza",
+   "team": "Racing Santander",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 6,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/183683.png",
+   "tier": 3
+  },
+  {
+   "name": "Matteo Prati",
+   "team": "Racing Santander",
+   "position": "Midfielder",
+   "age": 22,
+   "number": 18,
+   "nationality": "Italy",
+   "photo": "https://media.api-sports.io/football/players/309388.png",
+   "tier": 3
+  },
+  {
+   "name": "Maguette Gueye",
+   "team": "Racing Santander",
+   "position": "Midfielder",
+   "age": 23,
+   "number": 14,
+   "nationality": "Senegal",
+   "photo": "https://media.api-sports.io/football/players/334014.png",
+   "tier": 3
+  },
+  {
+   "name": "Andrés Martín",
+   "team": "Racing Santander",
+   "position": "Forward",
+   "age": 27,
+   "number": 11,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47209.png",
+   "tier": 3
+  },
+  {
+   "name": "Asier Villalibre",
+   "team": "Racing Santander",
+   "position": "Forward",
+   "age": 29,
+   "number": 12,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/104853.png",
+   "tier": 3
+  },
+  {
+   "name": "Iñigo Vicente",
+   "team": "Racing Santander",
+   "position": "Midfielder",
+   "age": 28,
+   "number": 10,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/47293.png",
+   "tier": 3
+  },
+  {
+   "name": "Giorgi Guliashvili",
+   "team": "Racing Santander",
+   "position": "Forward",
+   "age": 25,
+   "number": 7,
+   "nationality": "Georgia",
+   "photo": "https://media.api-sports.io/football/players/24567.png",
+   "tier": 3
+  },
+  {
+   "name": "Arana",
+   "team": "Racing Santander",
+   "position": "Forward",
+   "age": 26,
+   "number": 9,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/184193.png",
+   "tier": 3
+  },
+  {
+   "name": "Yassir Zabiri",
+   "team": "Racing Santander",
+   "position": "Forward",
+   "age": 21,
+   "number": null,
+   "nationality": "Morocco",
+   "photo": null,
+   "tier": 2
+  },
+  {
+   "name": "Iker Luque",
+   "team": "Racing Santander",
+   "position": "Midfielder",
+   "age": 21,
+   "number": 19,
+   "nationality": "Spain",
+   "photo": "https://media.api-sports.io/football/players/441223.png",
+   "tier": 3
+  }
+ ]
+}

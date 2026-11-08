@@ -31,23 +31,25 @@ Every player in the database has a curated **tier**: 1 = league star, 2 = regula
 | 🟡 Medium | a star or a trickier regular (tiers 1–2) |
 | 🔴 Hard | **never a star** — regulars and deep-squad players only (tiers 2–3) |
 
-### Leagues (season 2024/25)
+### Leagues and seasons
 
-| League | Players | Clubs |
-|--------|---------|-------|
-| Premier League | 275 | 20 |
-| La Liga | 191 | 20 |
-| Bundesliga | 203 | 18 |
-| Serie A | 292 | 20 |
-| Ligue 1 | 225 | 18 |
+| League | 2026/27 (full squads) | 2024/25 (hand-curated) |
+|--------|-----------------------|------------------------|
+| Premier League | 546 | 275 |
+| La Liga | 522 | 191 |
+| Bundesliga | 521 | 203 |
+| Serie A | 593 | 292 |
+| Ligue 1 | 482 | 225 |
 
-**1,186 hand-curated players** in total. Squad data is curated from public sources (Transfermarkt, official club sites).
+**2026/27** is built by a Python script from three sources: full squads from football-data.org, photos and shirt
+numbers from API-Football (88–95% of players, linked by club, name and age), and difficulty tiers suggested by
+Transfermarkt market values. **2024/25** is the original hand-curated season.
 
 ## Features
 
 - **Wordle-style attribute grid**: every guess stays on screen, newest first
 - **Three difficulty modes** driven by per-player tiers
-- **Season selection** — new seasons are added as plain JSON files, zero code changes
+- **Season selection** — the current season (2026/27) or 2024/25; a new season is one script run, zero code changes
 - **Autocomplete search** with player photos and club badges, keyboard navigation, and no need for accents ("odegaard" finds "Ødegaard")
 - **Responsive layout** for phones and desktops
 - **Progressive hint system** (club → age)
@@ -67,6 +69,8 @@ One parameterized engine replaces the old copy-per-league code. League and seaso
 │       ├── engine.js              # All game logic, one copy
 │       ├── i18n.js                # EN / ES / FR / RO dictionaries
 │       └── game.css               # Theming via a --league-bg CSS variable
+├── scripts/                       # Python: download the sources, build a season's JSON
+├── tests/                         # pytest
 ├── data/
 │   ├── manifest.json              # Available leagues and seasons
 │   └── seasons/2024-25/           # One JSON per league (players + tiers)
@@ -83,11 +87,10 @@ You can [play it online](https://bogdandumitrascu04.github.io/Guessthefootballer
 git clone https://github.com/BogdanDumitrascu04/Guessthefootballer.git
 cd Guessthefootballer
 
-python -m http.server 8000
-# or: npx serve -l 8000
+python scripts/serve.py
 ```
 
-Then open <http://localhost:8000> in your browser.
+Then open <http://localhost:8765> in your browser. Unlike `python -m http.server`, this server makes the browser check every file for changes, so a test never shows an old copy from the cache.
 
 ## Roadmap
 
@@ -101,6 +104,10 @@ Then open <http://localhost:8000> in your browser.
 - Per-league statistics and more games on the platform
 
 ## Credits
+
+Data: [football-data.org](https://www.football-data.org/) (squads), [API-Football](https://www.api-football.com/)
+(photos, shirt numbers, club badges for 2026/27), [transfermarkt-datasets](https://github.com/dcaribou/transfermarkt-datasets)
+(market values, CC0). Non-commercial project.
 
 Headline font: [Barlow Condensed](https://github.com/jpt/barlow), SIL Open Font License (`fonts/OFL-LICENSE.txt`).
 

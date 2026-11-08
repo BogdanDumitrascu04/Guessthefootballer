@@ -7,7 +7,7 @@ Proiect de portofoliu al lui Bogdan (repo public pe contul `BogdanDumitrascu04`,
 - `docs/DECIZII.md` — deciziile luate. Orice decizie nouă se notează aici.
 - `docs/SURSE-DATE.md` — ce date primim din fiecare sursă, verificat.
 
-**Status (5 nov 2026):** site-ul live rulează pe JSON (2024-25), cu interfața nouă. Baza Supabase e în lucru: schema există local, fără commit, până când Bogdan o explică; loturile și setul Transfermarkt sunt descărcate.
+**Status (8 nov 2026):** site-ul rulează pe JSON: sezonul 2026-27 (implicit, generat de `scripts/build_season.py`) și 2024-25 (scris de mână). Baza Supabase e în lucru: schema există local, fără commit, până când Bogdan o explică; loturile și setul Transfermarkt sunt descărcate.
 
 **Termene:** CV-ul pleacă pe 5 nov, cu linkul live · noiembrie: baza + jocul 1 pe sezoane + jocul 2 (date de reconfirmat) · decembrie: jocul 3 + conturi · ianuarie: cod înghețat, înaintea interviului tehnic.
 
@@ -49,13 +49,13 @@ Pentru jocul 1:
 - `games/guess-the-footballer/` — picker (`index.html`) + jocul (`game.html`, `engine.js`, `i18n.js`, `game.css`).
 - `data/` — JSON-ul vechi (2024-25, 1.186 de jucători, cu `tier` și număr curatoriate) — sursă pentru import, apoi iese din joc.
 - `data/raw/` (în `.gitignore`) — ce descarcă scripturile: loturile football-data.org, setul Transfermarkt (`data/raw/transfermarkt/`).
-- `scripts/` + `tests/` — scripturile de date (Python) și testele lor.
+- `scripts/` + `tests/` — scripturile de date (Python) și testele lor: `download_squads.py` (football-data.org), `download_api_football.py` (poze, numere), `build_season.py` (scrie `data/seasons/2026-27/` + manifestul).
 - `images/` — siglele cluburilor și pozele vechi (14 MB).
 - `fonts/` — fontul titlurilor (Barlow Condensed), găzduit în repo, cu licența lui.
 
 ## Mediu
 - Windows 11, Git, VS Code. Python 3.13 (de folosit un `.venv` propriu în Etapa 1).
-- Testare locală: fișierele se servesc prin HTTP (jocul folosește `fetch()`), nu deschise direct de pe disc.
+- Testare locală: `.venv\Scripts\python.exe scripts\serve.py` → http://localhost:8765 (jocul folosește `fetch()`, deci nu se deschide direct de pe disc). Nu `python -m http.server`: acela lasă browserul să refolosească fișiere vechi zile întregi.
 - Live: https://bogdandumitrascu04.github.io/Guessthefootballer/ (GitHub Pages, branch `master`).
 - Supabase: proiectul `guessthefootballer` (organizația `BogdanDumitrascu04`, plan Free, regiunea London `eu-west-2`). Scripturile se conectează prin `SUPABASE_DB_URL` din `.env` (Session pooler, merge și pe rețele fără IPv6).
 - `C:\Users\BogdanPC\Desktop\Joc` e o copie veche (aug 2024, repo `BodysGame`) — nu e proiectul ăsta.

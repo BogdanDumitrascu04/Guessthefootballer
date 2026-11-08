@@ -36,17 +36,24 @@ const hintDiv = document.getElementById('hint');
 const restartContainer = document.getElementById('restartContainer');
 const attemptCounter = document.getElementById('attemptCounter');
 
+// Data changes when a season is rebuilt, so the browser must check for a newer copy instead of reusing its cache.
+async function getJson(path) {
+    return (await fetch(`${ROOT}${path}`, { cache: 'no-cache' })).json();
+}
+
 async function loadLeague() {
-    const manifest = await (await fetch(`${ROOT}data/manifest.json`)).json();
+    const manifest = await getJson('data/manifest.json');
     const info = manifest.leagues.find(l => l.id === requestedLeague) || manifest.leagues[0];
     const season = info.seasons.includes(requestedSeason) ? requestedSeason : manifest.defaultSeason;
-    league = await (await fetch(`${ROOT}data/seasons/${season}/${info.id}.json`)).json();
+    league = await getJson(`data/seasons/${season}/${info.id}.json`);
     league.info = info;
     league.seasonUsed = season;
     players = league.players;
     for (const p of players) p.searchName = normalize(p.name);
-    targetPool = players.filter(p => TARGET_TIERS[difficulty].includes(p.tier));
-    if (!targetPool.length) targetPool = players;
+    // The hidden player needs every clue; some players have no known number or age.
+    const complete = players.filter(p => p.number != null && p.age != null);
+    targetPool = complete.filter(p => TARGET_TIERS[difficulty].includes(p.tier));
+    if (!targetPool.length) targetPool = complete;
 
     document.title = `${info.name} ${season} — Guess the Footballer`;
     document.documentElement.style.setProperty('--league-bg', `url('${ROOT}${info.background}')`);
@@ -115,16 +122,21 @@ function findPlayerByName(name) {
     return players.find(p => p.searchName === wanted);
 }
 
-// The JSON repeats the club badge as "photo" for players without a portrait.
+// Older seasons use local images, newer ones full URLs.
+function asset(path) {
+    return /^https?:/.test(path) ? path : `${ROOT}${path}`;
+}
+
+// Older seasons repeat the club badge as "photo" for players without a portrait.
 function hasPortrait(player) {
-    return player.photo !== league.teams[player.team];
+    return Boolean(player.photo) && player.photo !== league.teams[player.team];
 }
 
 function createAvatar(player) {
     if (hasPortrait(player)) {
         const img = document.createElement('img');
         img.className = 'avatar';
-        img.src = `${ROOT}${player.photo}`;
+        img.src = asset(player.photo);
         img.alt = '';
         return img;
     }
@@ -138,7 +150,7 @@ function createAvatar(player) {
 function createTeamLogo(team, className) {
     const img = document.createElement('img');
     img.className = `logo-chip ${className}`;
-    img.src = `${ROOT}${league.teams[team]}`;
+    img.src = asset(league.teams[team]);
     img.alt = '';
     return img;
 }
@@ -276,8 +288,9 @@ function createReveal() {
     const card = document.createElement('div');
     card.className = 'reveal';
     const photo = document.createElement('img');
-    photo.className = hasPortrait(targetPlayer) ? 'reveal-photo' : 'reveal-photo logo-chip';
-    photo.src = `${ROOT}${targetPlayer.photo}`;
+    const portrait = hasPortrait(targetPlayer);
+    photo.className = portrait ? 'reveal-photo' : 'reveal-photo logo-chip';
+    photo.src = asset(portrait ? targetPlayer.photo : league.teams[targetPlayer.team]);
     photo.alt = targetPlayer.name;
     const name = document.createElement('div');
     name.className = 'reveal-name';
@@ -339,7 +352,9 @@ function createTile(player, { key, numeric }) {
     value.className = 'tile-value';
     const guessed = player[key];
     const target = targetPlayer[key];
-    if (guessed === target) {
+    if (guessed == null) {
+        value.textContent = '—';
+    } else if (guessed === target) {
         tile.classList.add('match');
         value.textContent = `${guessed} ✓`;
     } else if (numeric) {

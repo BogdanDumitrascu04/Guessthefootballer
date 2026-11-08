@@ -386,6 +386,7 @@ button {
     width: 104px;
     height: 104px;
     object-fit: contain;
+    border-radius: 14px;
 }
 
 .reveal-photo.logo-chip {
@@ -472,6 +473,7 @@ button {
     padding: 6px 10px;
     font-weight: 700;
     line-height: 1.25;
+    overflow-wrap: anywhere;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 8px;
