@@ -53,6 +53,7 @@ Transfermarkt market values. **2024/25** is the original hand-curated season.
 - **Autocomplete search** with player photos and club badges, keyboard navigation (Enter picks the highlighted name), and no need for accents ("odegaard" finds "Ødegaard")
 - **Responsive layout** for phones and desktops
 - **Hints that unlock** after 2 and 4 guesses (club, then age), so the game stays about deduction
+- **Points** for every win: 60 / 120 / 240 at the first guess on Easy / Medium / Hard, one step less for each extra guess or hint
 - **Share your result** as a spoiler-free emoji grid with a link to a result page (summary, every guess on request, the answer behind a spoiler button) (🟩⬜…): the share sheet on phones, the clipboard on desktop
 - **4 languages** — English, Spanish, French and Romanian, switchable live; choice persists between visits
 - **Fully static** — one game engine + JSON data, runs on any static file server

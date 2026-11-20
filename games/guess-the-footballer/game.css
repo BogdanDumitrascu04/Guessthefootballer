@@ -702,6 +702,15 @@ button {
     color: var(--muted);
 }
 
+.result-summary .result-points,
+.points-earned {
+    margin-top: 6px;
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
 .result-invalid {
     color: var(--error);
     font-weight: 700;

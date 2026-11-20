@@ -87,7 +87,7 @@ function createAttempt(player, number, { target, teams, fresh = false, hidden = 
     row.appendChild(who);
 
     ATTRIBUTES.forEach((attribute, i) => {
-        const tile = createTile(player, attribute, target, teams);
+        const tile = createTile(player, attribute, target, teams, hidden);
         tile.style.setProperty('--i', i);
         row.appendChild(tile);
     });
@@ -98,7 +98,8 @@ function isMatch(player, target, key) {
     return player[key] != null && player[key] === target[key];
 }
 
-function createTile(player, { key, numeric }, target, teams) {
+// hidden: the winning row's values (club, age, number...) would give the name away, so only the ticks show.
+function createTile(player, { key, numeric }, target, teams, hidden = false) {
     const tile = document.createElement('div');
     tile.className = `tile tile-${key}`;
     const label = document.createElement('span');
@@ -106,7 +107,7 @@ function createTile(player, { key, numeric }, target, teams) {
     label.textContent = t(key);
     const body = document.createElement('span');
     body.className = 'tile-body';
-    if (key === 'team') body.appendChild(createTeamLogo(player.team, teams, 'tile-logo'));
+    if (key === 'team' && !hidden) body.appendChild(createTeamLogo(player.team, teams, 'tile-logo'));
 
     const value = document.createElement('span');
     value.className = 'tile-value';
@@ -114,6 +115,9 @@ function createTile(player, { key, numeric }, target, teams) {
     const wanted = target[key];
     if (guessed == null) {
         value.textContent = '—';
+    } else if (hidden) {
+        tile.classList.add('match');
+        value.textContent = '✓';
     } else if (isMatch(player, target, key)) {
         tile.classList.add('match');
         value.textContent = `${guessed} ✓`;

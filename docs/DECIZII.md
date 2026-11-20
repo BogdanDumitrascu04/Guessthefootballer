@@ -126,11 +126,20 @@ Punct de plecare: propunerile lui Gemini, verificate pe pagina reală, plus idei
 |---|---|---|
 | Linkul de share | Duce la `result.html?r=<fișa rundei>`, nu la prima pagină; textul cu pătrățele rămâne, cu 💡 și numărul indiciilor folosite | Cerința lui Bogdan: prietenul vede runda, nu pagina jocului. |
 | Ce se vede întâi | Rezumatul: scorul (3/6 sau X/6), propoziția „Găsit în 3 din 6 încercări”, indiciile folosite, grila mică de culori; butoanele „Vezi detalii” și „Joacă o rundă” | Cerința lui Bogdan (rezumat + detalii la cerere). Grila mică nu dă răspunsul. |
-| Detaliile | Toate încercările, de la prima la ultima, ca în joc; numele jucătorului ascuns rămâne „???” până la „Arată jucătorul (spoiler)” | Prietenul poate încerca întâi să-l ghicească din culori. Ordinea cronologică spune povestea rundei (în joc contează ultima încercare, deci acolo e invers). |
+| Detaliile | Toate încercările, de la prima la ultima, ca în joc; până la „Arată jucătorul (spoiler)”, rândul câștigător arată „???” și doar ✓ în căsuțe, fără valori | Prietenul poate încerca întâi să-l ghicească din culori. Ordinea cronologică spune povestea rundei (în joc contează ultima încercare, deci acolo e invers). |
 | Limita de încercări în fișă | Fișa păstrează și limita (6) | E o regulă din ziua rundei, ca prețul pe factură: dacă trecem la 7, rundele vechi rămân „din 6”. Adăugată înainte să existe vreun link public, deci versiunea rămâne 1. |
 | Linkuri modificate | Pagina arată doar poze de pe site sau de la API-Football, iar textele doar ca text (niciodată ca HTML) | Oricine poate edita un link; altfel cineva ar putea afișa imagini sau cod străin pe site. |
 | Cod comun | Rândurile și căsuțele grilei stau în `common.js`, folosit de joc și de pagina de rezultat | Culorile se calculează din fișă: aceeași regulă trebuie să deseneze și jocul, și rezultatul. |
-| Punctele | Încă nu apar | Tabelul propus (10 × (7 − încercarea) × 1/2/4, un indiciu = o treaptă) așteaptă confirmarea lui Bogdan. |
+| Punctele | Apar în rezumat (vezi mai jos) | Tabelul a fost confirmat de Bogdan pe 20 nov. |
+| Valorile din rândul câștigător | Ascunse până la spoiler (cerut de Bogdan, după testul live) | Numele ascuns nu ajungea: Arsenal, Forward, 25, #7, England îl dădeau imediat pe Saka. Fără valori, rândurile anterioare rămân un puzzle. |
+
+## 20 nov 2026 — punctele
+
+| Decizie | Ce am ales | De ce |
+|---|---|---|
+| Formula (confirmată de Bogdan) | 10 × multiplicator × trepte; multiplicator 1 (Ușor), 2 (Mediu), 4 (Greu); trepte = încercări maxime + 1 − încercarea câștigătoare − indicii folosite, minim 1; rundă pierdută = 0 | Ușor din prima (60) = Mediu din a 4-a; Greu din a 4-a (120) = Mediu din prima. Un indiciu costă cât o încercare; un câștig valorează cel puțin o treaptă (10 / 20 / 40). |
+| Unde se calculează | `roundPoints()` în `round.js`, din fișa rundei; nu se salvează în fișă | Se pot calcula oricând din fișă. Cu conturile (Etapa 7), aceeași formulă devine o funcție în baza de date, ca browserul să nu poată trimite singur punctele. |
+| Unde apar | La finalul rundei, în textul de share („Puncte: 160”) și în rezumatul paginii de rezultat; regula, în ⓘ | Jucătorul vede imediat ce a câștigat. |
 
 ## De decis
 - **ID-uri pentru 2024-25**: JSON-ul scris de mână nu are ID-uri. Le potrivim cu loturile football-data din 2024-25 sau pagina de rezultat merge întâi doar pe 2026-27?

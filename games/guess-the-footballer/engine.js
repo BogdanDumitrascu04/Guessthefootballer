@@ -262,7 +262,7 @@ function shareText() {
     link.searchParams.set('r', encodeRound(lastRound));
     return [
         `Guess the Footballer · ${league.info.name} ${league.seasonUsed} · ${t(difficulty)}`,
-        `${won ? guesses.length : 'X'}/${MAX_ATTEMPTS}${hints}`,
+        `${won ? guesses.length : 'X'}/${MAX_ATTEMPTS}${hints} · ${t('pointsLine', { n: roundPoints(lastRound) })}`,
         ...rows,
         link.href,
     ].join('\n');
@@ -299,7 +299,11 @@ function renderMessage() {
     const text = document.createElement('strong');
     text.innerHTML = t(message.key, message.params); // the dictionaries contain <br>
     feedback.appendChild(text);
-    if (roundOver) feedback.appendChild(createReveal(targetPlayer, league.teams));
+    if (!roundOver) return;
+    const points = document.createElement('div');
+    points.className = 'points-earned';
+    points.textContent = t('pointsLine', { n: roundPoints(lastRound) });
+    feedback.append(points, createReveal(targetPlayer, league.teams));
 }
 
 function renderHints() {

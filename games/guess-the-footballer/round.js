@@ -29,6 +29,18 @@ function isWon(round) {
     return round.guesses[round.guesses.length - 1] === round.target;
 }
 
+const POINT_STEP = 10;
+const DIFFICULTY_MULTIPLIER = { easy: 1, medium: 2, hard: 4 };
+
+// Points come from the round, never from the browser's word: every extra guess or hint costs one step,
+// and a win is worth at least one step. Easy at the 1st guess (60) equals Medium at the 4th.
+function roundPoints(round) {
+    const multiplier = DIFFICULTY_MULTIPLIER[round.difficulty];
+    if (!isWon(round) || !multiplier) return 0;
+    const steps = Math.max(1, round.max + 1 - round.guesses.length - round.hints.length);
+    return POINT_STEP * multiplier * steps;
+}
+
 function packPlayer(player) {
     return PLAYER_FIELDS.map(key => {
         const photo = key === 'photo' && player.photo ? player.photo.match(AF_PHOTO) : null;
@@ -81,4 +93,4 @@ function decodeRound(code) {
     }
 }
 
-if (typeof module !== 'undefined') module.exports = { createRound, isWon, encodeRound, decodeRound };
+if (typeof module !== 'undefined') module.exports = { createRound, isWon, roundPoints, encodeRound, decodeRound };

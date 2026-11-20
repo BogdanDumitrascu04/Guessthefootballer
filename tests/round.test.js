@@ -1,7 +1,7 @@
 // Tests for games/guess-the-footballer/round.js. Run: node --test tests/
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { createRound, isWon, encodeRound, decodeRound } = require('../games/guess-the-footballer/round.js');
+const { createRound, isWon, roundPoints, encodeRound, decodeRound } = require('../games/guess-the-footballer/round.js');
 
 const kroupi = {
     id: 7, name: 'Eli Kroupi', team: 'Bournemouth', position: 'Forward', age: 20, number: 22,
@@ -63,6 +63,33 @@ test('a link cannot bring in pictures from other sites', () => {
     assert.equal(decodeRound(encodeRound(edited)).target.photo, null);
     const climbing = round([diakite], { ...kroupi, photo: 'images/../../secret.png' });
     assert.equal(decodeRound(encodeRound(climbing)).target.photo, null);
+});
+
+// n guesses, the last one right unless lost; the table agreed on 20 Nov 2026.
+function played(n, difficulty, hints = [], won = true) {
+    const misses = Array.from({ length: won ? n - 1 : n }, (_, i) => ({ ...diakite, id: 100 + i }));
+    const guesses = won ? [...misses, kroupi] : misses;
+    return createRound({ league: 'premier-league', season: '2026-27', difficulty, date: '2026-11-20', max: 6, hints, target: kroupi, guesses });
+}
+
+test('points follow the table: difficulty times the steps left', () => {
+    assert.equal(roundPoints(played(1, 'easy')), 60);
+    assert.equal(roundPoints(played(6, 'easy')), 10);
+    assert.equal(roundPoints(played(4, 'medium')), 60); // the same as Easy at the 1st guess
+    assert.equal(roundPoints(played(1, 'hard')), 240);
+    assert.equal(roundPoints(played(4, 'hard')), 120);
+});
+
+test('each hint costs one step, but a win keeps at least one', () => {
+    assert.equal(roundPoints(played(2, 'easy', ['team'])), 40);
+    assert.equal(roundPoints(played(4, 'hard', ['team', 'age'])), 40);
+    assert.equal(roundPoints(played(6, 'hard', ['team', 'age'])), 40);
+});
+
+test('a lost round or an unknown difficulty gives nothing', () => {
+    assert.equal(roundPoints(played(6, 'hard', [], false)), 0);
+    assert.equal(roundPoints(played(1, 'impossible')), 0);
+    assert.equal(roundPoints(decodeRound(encodeRound(played(3, 'medium')))), 80);
 });
 
 test('a broken or unknown code gives null', () => {
