@@ -1,13 +1,13 @@
 // One engine for every league and season: the URL decides which JSON file to load.
 const ROOT = '../../';
-const MAX_ATTEMPTS = 10;
+const MAX_ATTEMPTS = 6;
 const MAX_SUGGESTIONS = 30;
 // Tiers the hidden player may come from: 1 star, 2 regular, 3 deep squad.
 const TARGET_TIERS = { easy: [1], medium: [1, 2], hard: [2, 3] };
 // Each hint unlocks after this many guesses, so the game stays a deduction game.
 const HINTS = [
-    { key: 'team', after: 3 },
-    { key: 'age', after: 6 },
+    { key: 'team', after: 2 },
+    { key: 'age', after: 4 },
 ];
 const ATTRIBUTES = [
     { key: 'team' },
@@ -258,7 +258,8 @@ function checkGuess() {
         message = { kind: 'error', key: 'gameOver', params: { name: targetPlayer.name } };
         endRound();
     } else {
-        message = { kind: 'error', key: 'incorrect', params: { n: MAX_ATTEMPTS - guesses.length } };
+        const left = MAX_ATTEMPTS - guesses.length;
+        message = left === 1 ? { kind: 'error', key: 'incorrectLast' } : { kind: 'error', key: 'incorrect', params: { n: left } };
         focusInput();
     }
     render();

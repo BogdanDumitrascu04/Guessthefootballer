@@ -1,9 +1,9 @@
-# Pachetele pentru scripturile de date (Etapa 1). Restul le adăugăm când o etapă are nevoie de ele.
-# Instalare: .venv\Scripts\python.exe -m pip install -r requirements.txt
+# Install: .venv\Scripts\python.exe -m pip install -r requirements.txt
 
 httpx==0.28.1
 python-dotenv==1.2.4
+psycopg[binary]==3.3.6
 
-# calitate: teste, linter
+# Dev tools
 pytest==9.1.1
 ruff==0.17.1

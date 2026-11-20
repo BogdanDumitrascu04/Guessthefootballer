@@ -82,6 +82,12 @@ Făcută pe 5 nov, înaintea Supabase, pe datele din JSON (2024-25). Testată lo
 - [x] după feedbackul Gemini (8 nov): pagina de selecție centrată + eticheta „current”, Enter alege primul nume din listă, căsuțele noii încercări se întorc, butonul Share cu pătrățele (fără nume); testat local, desktop și telefon
 - [x] indiciile și legenda refăcute (8 nov, după propunerile Gemini + Claude, alese de Bogdan): două cipuri blocate, deblocate după 3 și 6 încercări, deschise cu un click; legenda pe un rând de cipuri; regulile complete în ⓘ; testat local, desktop și telefon
 - [ ] testul lui Bogdan + push pentru schimbările de după feedbackul Gemini (cele patru + indiciile)
+- [ ] **SuperLiga României** (decis 8 nov, de început pe 9 nov, când se resetează cererile API-Football):
+  - [ ] lista celor 16 cluburi din 2026-27 (confirmată de Bogdan sau din Wikipedia)
+  - [ ] 17 cereri API-Football: lista cluburilor din România + 16 loturi
+  - [ ] `build_season.py`: variantă pentru ligile fără football-data.org (baza = lotul API-Football; numele complet, naționalitatea, data nașterii și valoarea din setul Transfermarkt, `RO1`) + teste
+  - [ ] în joc: a 6-a ligă, doar 2026-27, afișată „SuperLiga”; prima pagină și pagina de selecție cu 6 ligi
+  - [ ] testul lui Bogdan + explicația scriptului (regula de aur) + push
 - [ ] explicația lui Bogdan pentru `download_api_football.py` și `build_season.py` (regula de aur), apoi commit pentru ele + `tests/test_build_season.py`
 - [ ] la următoarea fereastră de transferuri: `download_squads.py`, apoi `download_api_football.py --squads` (după ce se șterg loturile vechi din `data/raw/api-football/`), apoi `build_season.py`
 - [ ] hub-ul: cifrele luate din bază (după Etapa 2)

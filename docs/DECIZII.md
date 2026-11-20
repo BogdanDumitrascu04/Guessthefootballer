@@ -94,6 +94,22 @@ Punct de plecare: propunerile lui Gemini, verificate pe pagina reală, plus idei
 | Când se deblochează | După încercarea 3 și 6; se deschid doar la click | Înainte, indiciul putea fi cerut înainte de prima încercare și jocul devenea căutare, nu deducție. Cine vrea, joacă fără ele. |
 | Legendă | Un rând de trei cipuri (✓ la fel, ↑ mai mare, ↓ mai mic), aceleași simboluri ca în grilă; explicația completă și regula indiciilor în ⓘ | Propoziția lungă ocupa 2 rânduri pe telefon. Săgeți text, nu emoji, ca să arate la fel pe orice telefon. |
 
+## 8 nov 2026 — SuperLiga României
+
+| Decizie | Ce am ales | De ce |
+|---|---|---|
+| A 6-a ligă | SuperLiga României, doar în 2026-27, afișată „SuperLiga” | Cerută de Bogdan. „SuperLiga” nu se confundă cu Ligue 1. |
+| Surse | Lotul curent de la API-Football (poză, număr, post); nume complet, naționalitate, dată de naștere și valoare din setul Transfermarkt (`RO1`: 630 de jucători, 16 cluburi, 6 iul 2026) | football-data.org nu are România pe planul gratuit (verificat: 13 competiții). |
+| Limita | Jucătorii fără nume complet sau naționalitate nu pot fi jucătorul ascuns | Transfermarkt se oprește pe 6 iulie: transferurile de după lipsesc. Estimare: 60–75% complet. |
+
+## 20 nov 2026 — 6 încercări
+
+| Decizie | Ce am ales | De ce |
+|---|---|---|
+| Numărul de încercări | 6 în loc de 10, la toate dificultățile | Cerută de Bogdan (5–7). Cu 5, echipa după a 2-a și vârsta după a 3-a, primele 2 încercări erau aproape la ghici, iar ultimele 2 aproape sigure; cu 6 rămân 2 încercări de deducție între indicii. |
+| Când se deblochează indiciile | Echipa după încercarea 2, vârsta după 4 (înainte 3 și 6) | Pragurile scad odată cu numărul de încercări. |
+| Ultima încercare | Mesaj separat („Mai ai o singură încercare”), nu „Mai ai 1 încercări” | Cu 6 încercări, mesajul apare des. |
+
 ## De decis
 - ~~**Tier-ul**~~ → decis pe 29 oct (mai sus).
 - ~~**SQLite sau direct Supabase**~~ → direct în Supabase, decis pe 29 oct (mai sus).
