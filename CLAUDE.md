@@ -46,7 +46,7 @@ Pentru jocul 1:
 
 ## Structura
 - `index.html` — prima pagină (hub-ul „Bogdy's Games”); textele vin tot din `i18n.js`, din folderul jocului.
-- `games/guess-the-footballer/` — picker (`index.html`) + jocul (`game.html`, `engine.js`, `i18n.js`, `game.css`); `round.js` = fișa rundei (codul din linkul de share), testată cu `node --test tests/`.
+- `games/guess-the-footballer/` — picker (`index.html`) + jocul (`game.html`, `engine.js`, `i18n.js`, `game.css`); `round.js` = fișa rundei (codul din linkul de share), testată cu `node --test tests/`; `common.js` = rândurile și căsuțele grilei, comune jocului și paginii de rezultat (`result.html` + `result.js`).
 - `data/` — JSON-ul vechi (2024-25, 1.186 de jucători, cu `tier` și număr curatoriate) — sursă pentru import, apoi iese din joc.
 - `data/raw/` (în `.gitignore`) — ce descarcă scripturile: loturile football-data.org, setul Transfermarkt (`data/raw/transfermarkt/`).
 - `scripts/` + `tests/` — scripturile de date (Python) și testele lor: `download_squads.py` (football-data.org), `download_api_football.py` (poze, numere), `build_season.py` (scrie `data/seasons/2026-27/` + manifestul).

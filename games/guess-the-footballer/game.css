@@ -666,6 +666,110 @@ button {
     }
 }
 
+/* Result page */
+.result-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 16px;
+    text-align: center;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+}
+
+.result-summary p {
+    margin: 0;
+}
+
+.result-score {
+    font-family: var(--font-display);
+    font-size: 3.4rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.result-score.won { color: var(--success); }
+.result-score.lost { color: var(--error); }
+
+.result-summary .result-outcome {
+    margin-top: 8px;
+    font-weight: 700;
+}
+
+.result-summary .result-hints {
+    margin-top: 4px;
+    color: var(--muted);
+}
+
+.result-invalid {
+    color: var(--error);
+    font-weight: 700;
+}
+
+.mini-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 16px;
+}
+
+.mini-row {
+    display: flex;
+    gap: 4px;
+}
+
+.mini-row span {
+    width: 18px;
+    height: 18px;
+    background: var(--surface-raised);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+}
+
+.mini-row span.match {
+    background: var(--match);
+    border-color: var(--match-border);
+}
+
+.result-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 14px;
+}
+
+.result-actions .primary-button,
+.result-actions .secondary-button {
+    display: inline-block;
+    padding: 11px 24px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.result-details {
+    margin-top: 18px;
+}
+
+.result-details .legend {
+    margin-top: 0;
+}
+
+.reveal-unknown {
+    display: grid;
+    place-items: center;
+    width: 104px;
+    height: 104px;
+    font-family: var(--font-display);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--muted);
+    background: var(--surface-raised);
+    border: 1px dashed var(--border);
+    border-radius: 14px;
+}
+
 /* Picker */
 .picker-section {
     margin-bottom: 26px;

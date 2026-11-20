@@ -120,6 +120,18 @@ Punct de plecare: propunerile lui Gemini, verificate pe pagina reală, plus idei
 | Versiunea formatului | Fișa începe cu numărul versiunii formatului | Dacă schimbăm formatul, linkurile vechi se citesc în continuare. |
 | Interfața | Pagina de rezultat: sus rezumatul (încercări, puncte), iar „Vezi detalii” deschide grila completă. Două share-uri: după rundă, doar runda; din profil, tot istoricul (cu conturile, Etapa 7). | Cerința lui Bogdan. |
 
+## 20 nov 2026 — pagina de rezultat
+
+| Decizie | Ce am ales | De ce |
+|---|---|---|
+| Linkul de share | Duce la `result.html?r=<fișa rundei>`, nu la prima pagină; textul cu pătrățele rămâne, cu 💡 și numărul indiciilor folosite | Cerința lui Bogdan: prietenul vede runda, nu pagina jocului. |
+| Ce se vede întâi | Rezumatul: scorul (3/6 sau X/6), propoziția „Găsit în 3 din 6 încercări”, indiciile folosite, grila mică de culori; butoanele „Vezi detalii” și „Joacă o rundă” | Cerința lui Bogdan (rezumat + detalii la cerere). Grila mică nu dă răspunsul. |
+| Detaliile | Toate încercările, de la prima la ultima, ca în joc; numele jucătorului ascuns rămâne „???” până la „Arată jucătorul (spoiler)” | Prietenul poate încerca întâi să-l ghicească din culori. Ordinea cronologică spune povestea rundei (în joc contează ultima încercare, deci acolo e invers). |
+| Limita de încercări în fișă | Fișa păstrează și limita (6) | E o regulă din ziua rundei, ca prețul pe factură: dacă trecem la 7, rundele vechi rămân „din 6”. Adăugată înainte să existe vreun link public, deci versiunea rămâne 1. |
+| Linkuri modificate | Pagina arată doar poze de pe site sau de la API-Football, iar textele doar ca text (niciodată ca HTML) | Oricine poate edita un link; altfel cineva ar putea afișa imagini sau cod străin pe site. |
+| Cod comun | Rândurile și căsuțele grilei stau în `common.js`, folosit de joc și de pagina de rezultat | Culorile se calculează din fișă: aceeași regulă trebuie să deseneze și jocul, și rezultatul. |
+| Punctele | Încă nu apar | Tabelul propus (10 × (7 − încercarea) × 1/2/4, un indiciu = o treaptă) așteaptă confirmarea lui Bogdan. |
+
 ## De decis
 - **ID-uri pentru 2024-25**: JSON-ul scris de mână nu are ID-uri. Le potrivim cu loturile football-data din 2024-25 sau pagina de rezultat merge întâi doar pe 2026-27?
 - **ID-uri pentru SuperLiga**: football-data.org nu are România, deci jucătorii de acolo nu au ID-ul folosit în rest.

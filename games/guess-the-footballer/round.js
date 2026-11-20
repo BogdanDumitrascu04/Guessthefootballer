@@ -4,18 +4,20 @@
 const ROUND_VERSION = 1; // bump when the format changes, and keep reading the old versions
 const PLAYER_FIELDS = ['id', 'name', 'team', 'position', 'age', 'number', 'nationality', 'photo'];
 const AF_PHOTO = /^https:\/\/media\.api-sports\.io\/football\/players\/(\d+)\.png$/; // most photos; storing the number halves the link
+const LOCAL_PHOTO = /^images\/(?!.*\.\.)[\w./ -]+$/;
 
 function snapshot(player) {
     return Object.fromEntries(PLAYER_FIELDS.map(key => [key, player[key] ?? null]));
 }
 
-function createRound({ league, season, difficulty, date, hints, target, guesses }) {
+function createRound({ league, season, difficulty, date, max, hints, target, guesses }) {
     const copy = snapshot(target);
     return {
         league,
         season,
         difficulty,
         date,
+        max, // the attempt limit of that day: a later change of rules must not rewrite old rounds
         hints: [...hints],
         target: copy,
         // The winning guess is the target itself, so it is stored once and compared by identity.
@@ -36,7 +38,9 @@ function packPlayer(player) {
 
 function unpackPlayer(values) {
     const player = Object.fromEntries(PLAYER_FIELDS.map((key, i) => [key, values[i] ?? null]));
-    if (typeof player.photo === 'number') player.photo = `https://media.api-sports.io/football/players/${player.photo}.png`;
+    // Anyone can edit a link, so only our own images and API-Football portraits are shown.
+    if (Number.isInteger(player.photo)) player.photo = `https://media.api-sports.io/football/players/${player.photo}.png`;
+    else if (!LOCAL_PHOTO.test(player.photo ?? '')) player.photo = null;
     return player;
 }
 
@@ -57,18 +61,21 @@ function encodeRound(round) {
     // Positions instead of field names keep the link short; the target is player 0.
     const players = [round.target, ...round.guesses.filter(p => p !== round.target)];
     const order = round.guesses.map(p => players.indexOf(p));
-    const packed = [ROUND_VERSION, round.league, round.season, round.difficulty, round.date, round.hints, players.map(packPlayer), order];
+    const packed = [
+        ROUND_VERSION, round.league, round.season, round.difficulty, round.date, round.max, round.hints, players.map(packPlayer), order,
+    ];
     return toBase64Url(JSON.stringify(packed));
 }
 
 // Links are typed, cut and pasted by people, so anything unreadable gives null instead of an error.
 function decodeRound(code) {
     try {
-        const [version, league, season, difficulty, date, hints, players, order] = JSON.parse(fromBase64Url(code));
+        const [version, league, season, difficulty, date, max, hints, players, order] = JSON.parse(fromBase64Url(code));
         if (version !== ROUND_VERSION || !Array.isArray(players) || !players.length || !Array.isArray(order)) return null;
-        if (!Array.isArray(hints) || order.some(i => !Number.isInteger(i) || i < 0 || i >= players.length)) return null;
+        if (!players.every(p => Array.isArray(p) && typeof p[1] === 'string' && p[1])) return null; // every player needs a name
+        if (!Number.isInteger(max) || max < 1 || !Array.isArray(hints) || order.some(i => !Number.isInteger(i) || i < 0 || i >= players.length)) return null;
         const unpacked = players.map(unpackPlayer);
-        return { league, season, difficulty, date, hints, target: unpacked[0], guesses: order.map(i => unpacked[i]) };
+        return { league, season, difficulty, date, max, hints, target: unpacked[0], guesses: order.map(i => unpacked[i]) };
     } catch {
         return null;
     }

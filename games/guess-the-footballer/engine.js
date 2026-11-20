@@ -1,5 +1,4 @@
 // One engine for every league and season: the URL decides which JSON file to load.
-const ROOT = '../../';
 const MAX_ATTEMPTS = 6;
 const MAX_SUGGESTIONS = 30;
 // Tiers the hidden player may come from: 1 star, 2 regular, 3 deep squad.
@@ -8,13 +7,6 @@ const TARGET_TIERS = { easy: [1], medium: [1, 2], hard: [2, 3] };
 const HINTS = [
     { key: 'team', after: 2 },
     { key: 'age', after: 4 },
-];
-const ATTRIBUTES = [
-    { key: 'team' },
-    { key: 'position' },
-    { key: 'age', numeric: true },
-    { key: 'number', numeric: true },
-    { key: 'nationality' },
 ];
 // Letters that Unicode normalization does not reduce to a plain one.
 const SPECIAL_LETTERS = { ø: 'o', æ: 'ae', œ: 'oe', ß: 'ss', ł: 'l', đ: 'd', ð: 'd', þ: 'th', ı: 'i' };
@@ -40,11 +32,6 @@ const playerInfo = document.getElementById('playerInfo');
 const hintsBox = document.getElementById('hints');
 const restartContainer = document.getElementById('restartContainer');
 const attemptCounter = document.getElementById('attemptCounter');
-
-// Data changes when a season is rebuilt, so the browser must check for a newer copy instead of reusing its cache.
-async function getJson(path) {
-    return (await fetch(`${ROOT}${path}`, { cache: 'no-cache' })).json();
-}
 
 async function loadLeague() {
     const manifest = await getJson('data/manifest.json');
@@ -127,39 +114,6 @@ function findPlayerByName(name) {
     return players.find(p => p.searchName === wanted);
 }
 
-// Older seasons use local images, newer ones full URLs.
-function asset(path) {
-    return /^https?:/.test(path) ? path : `${ROOT}${path}`;
-}
-
-// Older seasons repeat the club badge as "photo" for players without a portrait.
-function hasPortrait(player) {
-    return Boolean(player.photo) && player.photo !== league.teams[player.team];
-}
-
-function createAvatar(player) {
-    if (hasPortrait(player)) {
-        const img = document.createElement('img');
-        img.className = 'avatar';
-        img.src = asset(player.photo);
-        img.alt = '';
-        return img;
-    }
-    const initials = document.createElement('span');
-    initials.className = 'avatar';
-    const words = player.name.split(' ');
-    initials.textContent = (words[0][0] + (words.length > 1 ? words[words.length - 1][0] : '')).toUpperCase();
-    return initials;
-}
-
-function createTeamLogo(team, className) {
-    const img = document.createElement('img');
-    img.className = `logo-chip ${className}`;
-    img.src = asset(league.teams[team]);
-    img.alt = '';
-    return img;
-}
-
 // Autocomplete
 function matchRank(player, input) {
     if (player.searchName === input) return -1;
@@ -192,7 +146,7 @@ function showSuggestions() {
         const team = document.createElement('small');
         team.textContent = p.team;
         name.appendChild(team);
-        li.append(createAvatar(p), name, createTeamLogo(p.team, 'team-logo-small'));
+        li.append(createAvatar(p, league.teams), name, createTeamLogo(p.team, league.teams, 'team-logo-small'));
         list.appendChild(li);
     }
     resultsBox.appendChild(list);
@@ -280,6 +234,7 @@ function endRound() {
         season: league.seasonUsed,
         difficulty,
         date: localDate(),
+        max: MAX_ATTEMPTS,
         hints: [...revealedHints],
         target: targetPlayer,
         guesses,
@@ -298,17 +253,18 @@ function endRound() {
     restartContainer.append(restartButton, shareButton);
 }
 
-// Colours only, never names, so the result does not spoil the answer.
+// Colours only, never names, so the text does not spoil the answer; the link opens the full round.
 function shareText() {
-    const won = guesses[guesses.length - 1] === targetPlayer;
-    const rows = guesses.map(p =>
-        ATTRIBUTES.map(({ key }) => (p[key] != null && p[key] === targetPlayer[key] ? '🟩' : '⬜')).join('')
-    );
+    const won = isWon(lastRound);
+    const rows = guesses.map(p => ATTRIBUTES.map(({ key }) => (isMatch(p, targetPlayer, key) ? '🟩' : '⬜')).join(''));
+    const hints = lastRound.hints.length ? ` · 💡${lastRound.hints.length}` : '';
+    const link = new URL('result.html', location.href);
+    link.searchParams.set('r', encodeRound(lastRound));
     return [
         `Guess the Footballer · ${league.info.name} ${league.seasonUsed} · ${t(difficulty)}`,
-        `${won ? guesses.length : 'X'}/${MAX_ATTEMPTS}`,
+        `${won ? guesses.length : 'X'}/${MAX_ATTEMPTS}${hints}`,
         ...rows,
-        location.href.replace(/games\/.*$/, ''),
+        link.href,
     ].join('\n');
 }
 
@@ -343,25 +299,7 @@ function renderMessage() {
     const text = document.createElement('strong');
     text.innerHTML = t(message.key, message.params); // the dictionaries contain <br>
     feedback.appendChild(text);
-    if (roundOver) feedback.appendChild(createReveal());
-}
-
-function createReveal() {
-    const card = document.createElement('div');
-    card.className = 'reveal';
-    const photo = document.createElement('img');
-    const portrait = hasPortrait(targetPlayer);
-    photo.className = portrait ? 'reveal-photo' : 'reveal-photo logo-chip';
-    photo.src = asset(portrait ? targetPlayer.photo : league.teams[targetPlayer.team]);
-    photo.alt = targetPlayer.name;
-    const name = document.createElement('div');
-    name.className = 'reveal-name';
-    name.textContent = targetPlayer.name;
-    const details = document.createElement('div');
-    details.className = 'reveal-details';
-    details.textContent = `${targetPlayer.team} · ${targetPlayer.position} · #${targetPlayer.number}`;
-    card.append(photo, name, details);
-    return card;
+    if (roundOver) feedback.appendChild(createReveal(targetPlayer, league.teams));
 }
 
 function renderHints() {
@@ -381,7 +319,7 @@ function createHint(key, after) {
         chip.className = 'hint-chip revealed';
         chip.disabled = true;
         label.textContent = t(key);
-        if (key === 'team') value.appendChild(createTeamLogo(targetPlayer.team, 'hint-logo'));
+        if (key === 'team') value.appendChild(createTeamLogo(targetPlayer.team, league.teams, 'hint-logo'));
         value.append(String(targetPlayer[key]));
     } else if (guesses.length >= after) {
         chip.className = 'hint-chip ready';
@@ -406,59 +344,9 @@ function renderAttempts() {
     animateLast = false;
     playerInfo.innerHTML = '';
     for (let i = guesses.length - 1; i >= 0; i--) {
-        playerInfo.appendChild(createAttempt(guesses[i], i + 1, fresh && i === guesses.length - 1));
+        const isNew = fresh && i === guesses.length - 1;
+        playerInfo.appendChild(createAttempt(guesses[i], i + 1, { target: targetPlayer, teams: league.teams, fresh: isNew }));
     }
-}
-
-function createAttempt(player, number, fresh) {
-    const row = document.createElement('div');
-    row.className = fresh ? 'attempt fresh' : 'attempt';
-
-    const who = document.createElement('div');
-    who.className = 'attempt-player';
-    const position = document.createElement('span');
-    position.className = 'attempt-number';
-    position.textContent = `${number}.`;
-    const name = document.createElement('span');
-    name.textContent = player.name;
-    who.append(position, createAvatar(player), name);
-    row.appendChild(who);
-
-    ATTRIBUTES.forEach((attribute, i) => {
-        const tile = createTile(player, attribute);
-        tile.style.setProperty('--i', i);
-        row.appendChild(tile);
-    });
-    return row;
-}
-
-function createTile(player, { key, numeric }) {
-    const tile = document.createElement('div');
-    tile.className = `tile tile-${key}`;
-    const label = document.createElement('span');
-    label.className = 'tile-label';
-    label.textContent = t(key);
-    const body = document.createElement('span');
-    body.className = 'tile-body';
-    if (key === 'team') body.appendChild(createTeamLogo(player.team, 'tile-logo'));
-
-    const value = document.createElement('span');
-    value.className = 'tile-value';
-    const guessed = player[key];
-    const target = targetPlayer[key];
-    if (guessed == null) {
-        value.textContent = '—';
-    } else if (guessed === target) {
-        tile.classList.add('match');
-        value.textContent = `${guessed} ✓`;
-    } else if (numeric) {
-        value.textContent = `${guessed} ${guessed < target ? '↑' : '↓'}`;
-    } else {
-        value.textContent = guessed;
-    }
-    body.appendChild(value);
-    tile.append(label, body);
-    return tile;
 }
 
 document.addEventListener('languagechange', () => {

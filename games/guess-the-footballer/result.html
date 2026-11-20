@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Guess the Footballer round: can you find the hidden player in fewer guesses?">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Guess the Footballer: can you beat this result?">
+    <meta property="og:description" content="Find the hidden player from real squads of Europe's top 5 leagues, in 6 guesses.">
+    <meta property="og:image" content="https://bogdandumitrascu04.github.io/Guessthefootballer/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="../../fonts/fonts.css">
+    <link rel="stylesheet" href="game.css">
+    <link rel="icon" href="../../images/Header/fotbal.png">
+    <title>Result — Guess the Footballer</title>
+</head>
+<body>
+    <header class="header">
+        <a class="brand" href="index.html">
+            <img src="../../images/Header/fotbal.png" alt="" id="logo">
+            <span id="mainHeader" data-translate="guessTheFootballer">Guess the footballer</span>
+        </a>
+        <div class="header-tools">
+            <label class="language-selector">
+                <span class="visually-hidden">Language</span>
+                <select id="language">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                    <option value="ro">Română</option>
+                </select>
+            </label>
+            <button id="infoButton" class="icon-button" aria-label="How to play">ⓘ</button>
+            <button id="menuButton" class="icon-button" aria-label="Menu">&#9776;</button>
+        </div>
+        <div id="infoContent" class="hidden">
+            <button id="closeButton" class="icon-button" aria-label="Close">&times;</button>
+            <h2 data-translate="howToPlay">How to Play</h2>
+            <p data-translate="selectLeague">1. Select a league, a season and a difficulty.</p>
+            <p data-translate="guessFootballer">2. Guess the footballer based on the clues provided.</p>
+            <p data-translate="legend">Green ✓ = same as the hidden player · ↑ ↓ = the hidden player's age or number is higher / lower</p>
+            <p data-translate="hintRule">Hints: the club unlocks after 2 guesses, the age after 4.</p>
+            <p data-translate="enjoyGame">3. Enjoy the game!</p>
+        </div>
+        <div class="navbar hidden" id="navbar">
+            <nav id="menuContent">
+                <a href="index.html" data-translate="changeSettings">Change league / difficulty</a>
+                <a href="../../index.html" data-translate="allGames">All games</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        <section class="game-head">
+            <img id="leagueLogo" class="logo-chip" alt="">
+            <h1 id="resultTitle" data-translate="resultTitle">Result</h1>
+            <div class="game-meta">
+                <span id="difficultyChip" class="difficulty-chip hidden"></span>
+                <span id="dateChip" class="counter-chip hidden"></span>
+            </div>
+        </section>
+
+        <section id="summary" class="result-summary" aria-live="polite"></section>
+
+        <div id="resultActions" class="result-actions"></div>
+
+        <section id="details" class="result-details hidden">
+            <ul class="legend">
+                <li><span class="legend-chip match" aria-hidden="true">✓</span><span data-translate="legendSame">same</span></li>
+                <li><span class="legend-chip" aria-hidden="true">↑</span><span data-translate="legendHigher">higher</span></li>
+                <li><span class="legend-chip" aria-hidden="true">↓</span><span data-translate="legendLower">lower</span></li>
+            </ul>
+            <div id="hiddenPlayer"></div>
+            <div id="playerInfo"></div>
+        </section>
+    </main>
+
+    <script defer src="i18n.js"></script>
+    <script defer src="round.js"></script>
+    <script defer src="common.js"></script>
+    <script defer src="result.js"></script>
+    <script defer src="ui.js"></script>
+</body>
+</html>

@@ -14,7 +14,7 @@ const diakite = {
 const odegaard = { name: 'Martin Ødegaard', team: 'Arsenal', position: 'Midfielder', age: 26, number: 8, nationality: 'Norway', photo: 'images/ode.png' };
 
 function round(guesses, target = kroupi, hints = []) {
-    return createRound({ league: 'premier-league', season: '2026-27', difficulty: 'easy', date: '2026-11-20', hints, target, guesses });
+    return createRound({ league: 'premier-league', season: '2026-27', difficulty: 'easy', date: '2026-11-20', max: 6, hints, target, guesses });
 }
 
 test('a won round reads back the same', () => {
@@ -22,6 +22,7 @@ test('a won round reads back the same', () => {
     assert.deepEqual(decoded, round([diakite, kroupi], kroupi, ['team']));
     assert.equal(isWon(decoded), true);
     assert.equal(decoded.guesses.length, 2);
+    assert.equal(decoded.max, 6);
 });
 
 test('a lost round keeps the hidden player apart from the guesses', () => {
@@ -57,6 +58,13 @@ test('the code is safe in a link and stays short', () => {
     assert.ok(code.length < 1000, `${code.length} characters`);
 });
 
+test('a link cannot bring in pictures from other sites', () => {
+    const edited = round([diakite], { ...kroupi, photo: 'https://example.com/anything.png' });
+    assert.equal(decodeRound(encodeRound(edited)).target.photo, null);
+    const climbing = round([diakite], { ...kroupi, photo: 'images/../../secret.png' });
+    assert.equal(decodeRound(encodeRound(climbing)).target.photo, null);
+});
+
 test('a broken or unknown code gives null', () => {
     const code = encodeRound(round([kroupi]));
     assert.equal(decodeRound(''), null);
@@ -64,6 +72,10 @@ test('a broken or unknown code gives null', () => {
     assert.equal(decodeRound(code.slice(0, 20)), null);
     const future = Buffer.from(JSON.stringify([2, 'premier-league'])).toString('base64url');
     assert.equal(decodeRound(future), null);
-    const outOfRange = Buffer.from(JSON.stringify([1, 'premier-league', '2026-27', 'easy', '2026-11-20', [], [[1]], [3]])).toString('base64url');
+    const outOfRange = Buffer.from(JSON.stringify([1, 'premier-league', '2026-27', 'easy', '2026-11-20', 6, [], [[1]], [3]])).toString('base64url');
     assert.equal(decodeRound(outOfRange), null);
+    const noLimit = Buffer.from(JSON.stringify([1, 'premier-league', '2026-27', 'easy', '2026-11-20', null, [], [[1]], [0]])).toString('base64url');
+    assert.equal(decodeRound(noLimit), null);
+    const noName = Buffer.from(JSON.stringify([1, 'premier-league', '2026-27', 'easy', '2026-11-20', 6, [], [[1, null]], [0]])).toString('base64url');
+    assert.equal(decodeRound(noName), null);
 });
