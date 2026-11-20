@@ -63,7 +63,7 @@ Bifăm aici pe parcurs.
 
 ## Etapa 2 — Jocul 1 pe Supabase (mod: ciclul complet la SQL)
 - [ ] politici RLS (citire publică a jucătorilor, fără scriere din browser)
-- [ ] la reluare: repornirea proiectului din dashboard (pus pe pauză, anunț pe email 5 nov; se poate reporni timp de 90 de zile)
+- [x] la reluare: repornirea proiectului din dashboard (pus pe pauză, anunț pe email 5 nov; repornit de Bogdan pe 20 nov)
 - [ ] **înainte de trecerea pe Supabase:** soluția pentru pauză, gratuită, fără Pro (activitate programată și/sau rezervă statică în JSON, vezi „De decis” în `DECIZII.md`), verificată: cu baza oprită, linkul din CV tot merge
 - [ ] jocul citește jucătorii din Supabase în loc de JSON (arată la fel ca acum)
 
@@ -81,14 +81,21 @@ Făcută pe 5 nov, înaintea Supabase, pe datele din JSON (2024-25). Testată lo
 - [x] testul lui Bogdan (8 nov); jocul, datele 2026-27 și `scripts/serve.py` puse pe GitHub
 - [x] după feedbackul Gemini (8 nov): pagina de selecție centrată + eticheta „current”, Enter alege primul nume din listă, căsuțele noii încercări se întorc, butonul Share cu pătrățele (fără nume); testat local, desktop și telefon
 - [x] indiciile și legenda refăcute (8 nov, după propunerile Gemini + Claude, alese de Bogdan): două cipuri blocate, deblocate după 3 și 6 încercări, deschise cu un click; legenda pe un rând de cipuri; regulile complete în ⓘ; testat local, desktop și telefon
-- [ ] testul lui Bogdan + push pentru schimbările de după feedbackul Gemini (cele patru + indiciile)
+- [x] testul lui Bogdan + push pentru schimbările de după feedbackul Gemini (cele patru + indiciile) (8 nov, `d2dcd3d`)
+- [x] cererile lui Bogdan din 20 nov, toate testate local și de el, pe GitHub:
+  - [x] 6 încercări; echipa după a 2-a, vârsta după a 4-a; mesaj separat la ultima încercare (`095b969`)
+  - [x] ID-ul football-data la fiecare jucător din 2026-27 + fișa rundei (`round.js`, cerința lui Bogdan, varianta b) (`685a9f6`)
+  - [x] pagina de rezultat: Share duce la `result.html?r=…`, rezumat + „Vezi detalii”, răspunsul după un buton de spoiler (`b6e7460`)
+  - [x] punctele (tabelul confirmat de Bogdan) + rândul câștigător fără valori până la spoiler (`1ba642c`)
+- [ ] indiciul de start (Easy/Medium: transferuri din Transfermarkt; Hard: „Știai că?”), din date structurate + șabloane în `i18n.js`; ciclul de învățare la partea de date
 - [ ] **SuperLiga României** (decis 8 nov, de început pe 9 nov, când se resetează cererile API-Football):
   - [ ] lista celor 16 cluburi din 2026-27 (confirmată de Bogdan sau din Wikipedia)
   - [ ] 17 cereri API-Football: lista cluburilor din România + 16 loturi
   - [ ] `build_season.py`: variantă pentru ligile fără football-data.org (baza = lotul API-Football; numele complet, naționalitatea, data nașterii și valoarea din setul Transfermarkt, `RO1`) + teste
   - [ ] în joc: a 6-a ligă, doar 2026-27, afișată „SuperLiga”; prima pagină și pagina de selecție cu 6 ligi
   - [ ] testul lui Bogdan + explicația scriptului (regula de aur) + push
-- [ ] explicația lui Bogdan pentru `download_api_football.py` și `build_season.py` (regula de aur), apoi commit pentru ele + `tests/test_build_season.py`
+- [x] explicația lui Bogdan pentru `build_season.py` (20 nov, din a doua încercare)
+- [ ] explicația lui Bogdan pentru `download_api_football.py` și pentru schema din `sql/` (regula de aur); fișierele au intrat deja în commitul `095b969`, din greșeală
 - [ ] la următoarea fereastră de transferuri: `download_squads.py`, apoi `download_api_football.py --squads` (după ce se șterg loturile vechi din `data/raw/api-football/`), apoi `build_season.py`
 - [ ] hub-ul: cifrele luate din bază (după Etapa 2)
 
@@ -105,11 +112,19 @@ Făcută pe 5 nov, înaintea Supabase, pe datele din JSON (2024-25). Testată lo
 - [ ] cariera din `transfers` + ultimul club din lotul 2026-27; fără echipe de tineret și secunde
 - [ ] jocul: cluburile și anii, ghicești jucătorul (autocomplete ca la jocul 1)
 
-## Etapa 7 — Conturi (decembrie)
-- [ ] politica de confidențialitate actualizată, înainte de lansarea conturilor
-- [ ] înregistrare / login (Supabase Auth)
-- [ ] fiecare joc terminat se salvează (`game_results`, cu jocul, scorul, data)
-- [ ] pagina de profil: statistici, streak
+## Etapa 7 — Conturi (decembrie; cerute din nou de Bogdan pe 20 nov)
+- [x] punctele pe rundă, calculate din fișa rundei (`roundPoints()`), vizibile fără cont (20 nov)
+- [x] **Bogdan:** repornește proiectul Supabase din dashboard (20 nov); pooler-ul a răspuns după câteva minute, cele 16 teste de schemă trec
+- [ ] ping zilnic din GitHub Actions, ca Supabase să nu intre pe pauză (adus înainte, cerut de Bogdan pe 20 nov)
+  - [x] `.github/workflows/keep-supabase-awake.yml` (Claude, 20 nov)
+  - [x] **Bogdan:** secretul `SUPABASE_DB_URL` în GitHub (Settings → Secrets and variables → Actions) (20 nov)
+  - [ ] **Bogdan:** commit + push, apoi „Run workflow” o dată de mână; rularea iese verde
+- [ ] **Bogdan:** client OAuth în Google Cloud Console (aplicația publicată, nu în „Testing”); cheile intră în Supabase, nu în chat
+- [ ] politica de confidențialitate actualizată + butonul „Șterge contul”, înainte de lansarea conturilor
+- [ ] înregistrare / login (Supabase Auth, Google)
+- [ ] fiecare rundă terminată se salvează (`game_results`: fișa rundei + punctele calculate de bază; RLS: fiecare își vede doar rundele lui) — ciclul de învățare
+- [ ] o rundă începută și abandonată contează ca pierdută (pentru streak)
+- [ ] pagina de profil: puncte, runde jucate și câștigate, procent, streak curent și cel mai bun, istoricul rundelor (fiecare se deschide în pagina de rezultat)
 
 ## După
-- provocarea zilnică (același jucător pentru toți), clasament, butonul de share, modul Icons
+- provocarea zilnică (același jucător pentru toți), clasament, „joacă același jucător” din pagina de rezultat, share-ul întregului istoric din profil, modul Icons

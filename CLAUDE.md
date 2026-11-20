@@ -7,7 +7,7 @@ Proiect de portofoliu al lui Bogdan (repo public pe contul `BogdanDumitrascu04`,
 - `docs/DECIZII.md` — deciziile luate. Orice decizie nouă se notează aici.
 - `docs/SURSE-DATE.md` — ce date primim din fiecare sursă, verificat.
 
-**Status (8 nov 2026):** site-ul rulează pe JSON: sezonul 2026-27 (implicit, generat de `scripts/build_season.py`) și 2024-25 (scris de mână). Baza Supabase e în lucru: schema există local, fără commit, până când Bogdan o explică; loturile și setul Transfermarkt sunt descărcate.
+**Status (20 nov 2026):** site-ul rulează pe JSON: sezonul 2026-27 (implicit, generat de `scripts/build_season.py`, fiecare jucător cu ID-ul football-data) și 2024-25 (scris de mână). Jocul are 6 încercări, puncte pe rundă și o pagină de rezultat pentru share (`result.html`, din fișa rundei din `round.js`). Urmează conturile (Etapa 7). Baza Supabase a fost repornită pe 20 nov și va fi ținută trează de un ping zilnic (`.github/workflows/keep-supabase-awake.yml`, pornește după secret + push); schema e pe GitHub, dar Bogdan încă n-a explicat-o.
 
 **Termene:** CV-ul pleacă pe 5 nov, cu linkul live · noiembrie: baza + jocul 1 pe sezoane + jocul 2 (date de reconfirmat) · decembrie: jocul 3 + conturi · ianuarie: cod înghețat, înaintea interviului tehnic.
 
@@ -50,6 +50,7 @@ Pentru jocul 1:
 - `data/` — JSON-ul vechi (2024-25, 1.186 de jucători, cu `tier` și număr curatoriate) — sursă pentru import, apoi iese din joc.
 - `data/raw/` (în `.gitignore`) — ce descarcă scripturile: loturile football-data.org, setul Transfermarkt (`data/raw/transfermarkt/`).
 - `scripts/` + `tests/` — scripturile de date (Python) și testele lor: `download_squads.py` (football-data.org), `download_api_football.py` (poze, numere), `build_season.py` (scrie `data/seasons/2026-27/` + manifestul).
+- `.github/workflows/` — acțiunile GitHub: `keep-supabase-awake.yml` (interogare zilnică, cu secretul `SUPABASE_DB_URL` din setările repo-ului).
 - `images/` — siglele cluburilor și pozele vechi (14 MB).
 - `fonts/` — fontul titlurilor (Barlow Condensed), găzduit în repo, cu licența lui.
 
