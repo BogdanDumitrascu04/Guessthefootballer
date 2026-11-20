@@ -24,6 +24,7 @@
  },
  "players": [
   {
+   "id": 7015,
    "name": "Matthias Köbbing",
    "team": "1. FC Köln",
    "position": "Goalkeeper",
@@ -34,6 +35,7 @@
    "tier": 3
   },
   {
+   "id": 9388,
    "name": "Ron-Robert Zieler",
    "team": "1. FC Köln",
    "position": "Goalkeeper",
@@ -44,6 +46,7 @@
    "tier": 3
   },
   {
+   "id": 9957,
    "name": "Marvin Schwäbe",
    "team": "1. FC Köln",
    "position": "Goalkeeper",
@@ -54,6 +57,7 @@
    "tier": 3
   },
   {
+   "id": 289578,
    "name": "Martin James",
    "team": "1. FC Köln",
    "position": "Goalkeeper",
@@ -64,6 +68,7 @@
    "tier": 3
   },
   {
+   "id": 309,
    "name": "Timo Hübers",
    "team": "1. FC Köln",
    "position": "Defender",
@@ -74,6 +79,7 @@
    "tier": 3
   },
   {
+   "id": 8945,
    "name": "Alessio Castro-Montes",
    "team": "1. FC Köln",
    "position": "Midfielder",
@@ -84,6 +90,7 @@
    "tier": 3
   },
   {
+   "id": 10208,
    "name": "Borna Sosa",
    "team": "1. FC Köln",
    "position": "Defender",
@@ -94,6 +101,7 @@
    "tier": 3
   },
   {
+   "id": 16340,
    "name": "Gideon Mensah",
    "team": "1. FC Köln",
    "position": "Defender",
@@ -104,6 +112,7 @@
    "tier": 3
   },
   {
+   "id": 84509,
    "name": "Luka Lochoshvili",
    "team": "1. FC Köln",
    "position": "Defender",
@@ -114,6 +123,7 @@
    "tier": 3
   },
   {
+   "id": 107201,
    "name": "Joël Schmied",
    "team": "1. FC Köln",
    "position": "Defender",
@@ -124,6 +134,7 @@
    "tier": 3
   },
   {
+   "id": 144647,
    "name": "Sebastian Sebulonsen",
    "team": "1. FC Köln",
    "position": "Defender",
@@ -134,6 +145,7 @@
    "tier": 3
   },
   {
+   "id": 152743,
    "name": "Rav van den Berg",
    "team": "1. FC Köln",
    "position": "Defender",
@@ -144,6 +156,7 @@
    "tier": 3
   },
   {
+   "id": 191221,
    "name": "Elias Bakatukanda",
    "team": "1. FC Köln",
    "position": "Defender",
@@ -154,6 +167,7 @@
    "tier": 3
   },
   {
+   "id": 244794,
    "name": "Julian Pauli",
    "team": "1. FC Köln",
    "position": "Defender",
@@ -164,6 +178,7 @@
    "tier": 3
   },
   {
+   "id": 272307,
    "name": "Jahmai Simpson-Pusey",
    "team": "1. FC Köln",
    "position": "Defender",
@@ -174,6 +189,7 @@
    "tier": 2
   },
   {
+   "id": 3608,
    "name": "Ellyes Skhiri",
    "team": "1. FC Köln",
    "position": "Midfielder",
@@ -184,6 +200,7 @@
    "tier": 3
   },
   {
+   "id": 99812,
    "name": "Tom Krauß",
    "team": "1. FC Köln",
    "position": "Midfielder",
@@ -194,6 +211,7 @@
    "tier": 3
   },
   {
+   "id": 184744,
    "name": "Ísak Bergmann Jóhannesson",
    "team": "1. FC Köln",
    "position": "Midfielder",
@@ -204,6 +222,7 @@
    "tier": 2
   },
   {
+   "id": 263718,
    "name": "Paul Okon-Engstler",
    "team": "1. FC Köln",
    "position": "Midfielder",
@@ -214,6 +233,7 @@
    "tier": 3
   },
   {
+   "id": 290555,
    "name": "Gil Neves",
    "team": "1. FC Köln",
    "position": "Midfielder",
@@ -224,6 +244,7 @@
    "tier": 3
   },
   {
+   "id": 327,
    "name": "Linton Maina",
    "team": "1. FC Köln",
    "position": "Midfielder",
@@ -234,6 +255,7 @@
    "tier": 3
   },
   {
+   "id": 6537,
    "name": "Gian-Luca Waldschmidt",
    "team": "1. FC Köln",
    "position": "Forward",
@@ -244,6 +266,7 @@
    "tier": 3
   },
   {
+   "id": 7772,
    "name": "Ragnar Ache",
    "team": "1. FC Köln",
    "position": "Forward",
@@ -254,6 +277,7 @@
    "tier": 2
   },
   {
+   "id": 9848,
    "name": "Thijs Dallinga",
    "team": "1. FC Köln",
    "position": "Forward",
@@ -264,6 +288,7 @@
    "tier": 2
   },
   {
+   "id": 17798,
    "name": "Imad Rondić",
    "team": "1. FC Köln",
    "position": "Forward",
@@ -274,6 +299,7 @@
    "tier": 3
   },
   {
+   "id": 65441,
    "name": "Marius Bülter",
    "team": "1. FC Köln",
    "position": "Forward",
@@ -284,6 +310,7 @@
    "tier": 3
   },
   {
+   "id": 137031,
    "name": "Jan Thielmann",
    "team": "1. FC Köln",
    "position": "Midfielder",
@@ -294,6 +321,7 @@
    "tier": 3
   },
   {
+   "id": 247659,
    "name": "Said El Mala",
    "team": "1. FC Köln",
    "position": "Forward",
@@ -304,6 +332,7 @@
    "tier": 1
   },
   {
+   "id": 250918,
    "name": "Malek El Mala",
    "team": "1. FC Köln",
    "position": "Forward",
@@ -314,6 +343,7 @@
    "tier": 3
   },
   {
+   "id": 251079,
    "name": "Mikey Moore",
    "team": "1. FC Köln",
    "position": "Forward",
@@ -324,6 +354,7 @@
    "tier": 2
   },
   {
+   "id": 286775,
    "name": "Reigan Heskey",
    "team": "1. FC Köln",
    "position": "Forward",
@@ -334,6 +365,7 @@
    "tier": 3
   },
   {
+   "id": 316,
    "name": "Oliver Baumann",
    "team": "1899 Hoffenheim",
    "position": "Goalkeeper",
@@ -344,6 +376,7 @@
    "tier": 3
   },
   {
+   "id": 75703,
    "name": "Luca Philipp",
    "team": "1899 Hoffenheim",
    "position": "Goalkeeper",
@@ -354,6 +387,7 @@
    "tier": 3
   },
   {
+   "id": 220259,
    "name": "Lukas Petersson",
    "team": "1899 Hoffenheim",
    "position": "Goalkeeper",
@@ -364,6 +398,7 @@
    "tier": 3
   },
   {
+   "id": 9540,
    "name": "Bernardo",
    "team": "1899 Hoffenheim",
    "position": "Defender",
@@ -374,6 +409,7 @@
    "tier": 3
   },
   {
+   "id": 30548,
    "name": "Ozan Kabak",
    "team": "1899 Hoffenheim",
    "position": "Defender",
@@ -384,6 +420,7 @@
    "tier": 2
   },
   {
+   "id": 49031,
    "name": "Koki Machida",
    "team": "1899 Hoffenheim",
    "position": "Defender",
@@ -394,6 +431,7 @@
    "tier": 3
   },
   {
+   "id": 62631,
    "name": "Vladimir Coufal",
    "team": "1899 Hoffenheim",
    "position": "Defender",
@@ -404,6 +442,7 @@
    "tier": 3
   },
   {
+   "id": 121279,
    "name": "Valentin Gendrey",
    "team": "1899 Hoffenheim",
    "position": "Defender",
@@ -414,6 +453,7 @@
    "tier": 3
   },
   {
+   "id": 151443,
    "name": "Albian Hajdari",
    "team": "1899 Hoffenheim",
    "position": "Defender",
@@ -424,6 +464,7 @@
    "tier": 2
   },
   {
+   "id": 169668,
    "name": "Arthur Chaves",
    "team": "1899 Hoffenheim",
    "position": "Defender",
@@ -434,6 +475,7 @@
    "tier": 3
   },
   {
+   "id": 188239,
    "name": "Robin Hranac",
    "team": "1899 Hoffenheim",
    "position": "Defender",
@@ -444,6 +486,7 @@
    "tier": 2
   },
   {
+   "id": 192148,
    "name": "Mats Rots",
    "team": "1899 Hoffenheim",
    "position": "Defender",
@@ -454,6 +497,7 @@
    "tier": 2
   },
   {
+   "id": 261045,
    "name": "Sean Dulic",
    "team": "1899 Hoffenheim",
    "position": "Defender",
@@ -464,6 +508,7 @@
    "tier": 3
   },
   {
+   "id": 291967,
    "name": "Natnael Abraha",
    "team": "1899 Hoffenheim",
    "position": "Midfielder",
@@ -474,6 +519,7 @@
    "tier": 3
   },
   {
+   "id": 76770,
    "name": "Wouter Burger",
    "team": "1899 Hoffenheim",
    "position": "Midfielder",
@@ -484,6 +530,7 @@
    "tier": 2
   },
   {
+   "id": 113457,
    "name": "Alexander Prass",
    "team": "1899 Hoffenheim",
    "position": "Midfielder",
@@ -494,6 +541,7 @@
    "tier": 2
   },
   {
+   "id": 177525,
    "name": "Bambase Conte",
    "team": "1899 Hoffenheim",
    "position": "Midfielder",
@@ -504,6 +552,7 @@
    "tier": 3
   },
   {
+   "id": 206319,
    "name": "Leon Avdullahu",
    "team": "1899 Hoffenheim",
    "position": "Midfielder",
@@ -514,6 +563,7 @@
    "tier": 3
   },
   {
+   "id": 250712,
    "name": "Luis Engelns",
    "team": "1899 Hoffenheim",
    "position": "Midfielder",
@@ -524,6 +574,7 @@
    "tier": 3
   },
   {
+   "id": 262477,
    "name": "Nathan De Cat",
    "team": "1899 Hoffenheim",
    "position": "Midfielder",
@@ -534,6 +585,7 @@
    "tier": 2
   },
   {
+   "id": 279699,
    "name": "Cajetan Lenz",
    "team": "1899 Hoffenheim",
    "position": "Midfielder",
@@ -544,6 +596,7 @@
    "tier": 3
   },
   {
+   "id": 318,
    "name": "Andrej Kramarić",
    "team": "1899 Hoffenheim",
    "position": "Midfielder",
@@ -554,6 +607,7 @@
    "tier": 3
   },
   {
+   "id": 99042,
    "name": "Adam Hložek",
    "team": "1899 Hoffenheim",
    "position": "Forward",
@@ -564,6 +618,7 @@
    "tier": 2
   },
   {
+   "id": 124324,
    "name": "Patrick Wimmer",
    "team": "1899 Hoffenheim",
    "position": "Forward",
@@ -574,6 +629,7 @@
    "tier": 2
   },
   {
+   "id": 144433,
    "name": "Tim Lemperle",
    "team": "1899 Hoffenheim",
    "position": "Forward",
@@ -584,6 +640,7 @@
    "tier": 2
   },
   {
+   "id": 145562,
    "name": "Fisnik Asllani",
    "team": "1899 Hoffenheim",
    "position": "Forward",
@@ -594,6 +651,7 @@
    "tier": 1
   },
   {
+   "id": 182004,
    "name": "Adam Daghim",
    "team": "1899 Hoffenheim",
    "position": "Forward",
@@ -604,6 +662,7 @@
    "tier": 2
   },
   {
+   "id": 248657,
    "name": "Max Moerstedt",
    "team": "1899 Hoffenheim",
    "position": "Forward",
@@ -614,6 +673,7 @@
    "tier": 3
   },
   {
+   "id": 165,
    "name": "Niklas Lomb",
    "team": "Bayer Leverkusen",
    "position": "Goalkeeper",
@@ -624,6 +684,7 @@
    "tier": 3
   },
   {
+   "id": 6931,
    "name": "Janis Blaswich",
    "team": "Bayer Leverkusen",
    "position": "Goalkeeper",
@@ -634,6 +695,7 @@
    "tier": 3
   },
   {
+   "id": 9923,
    "name": "Mark Flekken",
    "team": "Bayer Leverkusen",
    "position": "Goalkeeper",
@@ -644,6 +706,7 @@
    "tier": 3
   },
   {
+   "id": 45,
    "name": "Lucas Vázquez",
    "team": "Bayer Leverkusen",
    "position": "Midfielder",
@@ -654,6 +717,7 @@
    "tier": 3
   },
   {
+   "id": 46125,
    "name": "Facundo Medina",
    "team": "Bayer Leverkusen",
    "position": "Defender",
@@ -664,6 +728,7 @@
    "tier": 2
   },
   {
+   "id": 64713,
    "name": "Edmond Tapsoba",
    "team": "Bayer Leverkusen",
    "position": "Defender",
@@ -674,6 +739,7 @@
    "tier": 1
   },
   {
+   "id": 136039,
    "name": "Loïc Bade",
    "team": "Bayer Leverkusen",
    "position": "Defender",
@@ -684,6 +750,7 @@
    "tier": 2
   },
   {
+   "id": 144953,
    "name": "Miguel Gutiérrez",
    "team": "Bayer Leverkusen",
    "position": "Defender",
@@ -694,6 +761,7 @@
    "tier": 2
   },
   {
+   "id": 176718,
    "name": "Jarell Quansah",
    "team": "Bayer Leverkusen",
    "position": "Defender",
@@ -704,6 +772,7 @@
    "tier": 1
   },
   {
+   "id": 184979,
    "name": "Tim Oermann",
    "team": "Bayer Leverkusen",
    "position": "Defender",
@@ -714,6 +783,7 @@
    "tier": 3
   },
   {
+   "id": 6681,
    "name": "Jonas Hofmann",
    "team": "Bayer Leverkusen",
    "position": "Midfielder",
@@ -724,6 +794,7 @@
    "tier": 3
   },
   {
+   "id": 33524,
    "name": "Aleix García",
    "team": "Bayer Leverkusen",
    "position": "Midfielder",
@@ -734,6 +805,7 @@
    "tier": 2
   },
   {
+   "id": 45611,
    "name": "Robert Andrich",
    "team": "Bayer Leverkusen",
    "position": "Midfielder",
@@ -744,6 +816,7 @@
    "tier": 3
   },
   {
+   "id": 144470,
    "name": "Malik Tillman",
    "team": "Bayer Leverkusen",
    "position": "Midfielder",
@@ -754,6 +827,7 @@
    "tier": 1
   },
   {
+   "id": 166223,
    "name": "Ignacio Fernández",
    "team": "Bayer Leverkusen",
    "position": "Midfielder",
@@ -764,6 +838,7 @@
    "tier": 2
   },
   {
+   "id": 202532,
    "name": "Ibrahim Maza",
    "team": "Bayer Leverkusen",
    "position": "Midfielder",
@@ -774,6 +849,7 @@
    "tier": 1
   },
   {
+   "id": 273370,
    "name": "Kennet Eichhorn",
    "team": "Bayer Leverkusen",
    "position": "Midfielder",
@@ -784,6 +860,7 @@
    "tier": 3
   },
   {
+   "id": 289573,
    "name": "Naba Mensah",
    "team": "Bayer Leverkusen",
    "position": "Midfielder",
@@ -794,6 +871,7 @@
    "tier": 3
   },
   {
+   "id": 1826,
    "name": "Patrik Schick",
    "team": "Bayer Leverkusen",
    "position": "Forward",
@@ -804,6 +882,7 @@
    "tier": 2
   },
   {
+   "id": 2240,
    "name": "Moussa Diaby",
    "team": "Bayer Leverkusen",
    "position": "Forward",
@@ -814,6 +893,7 @@
    "tier": 2
   },
   {
+   "id": 8797,
    "name": "Martin Terrier",
    "team": "Bayer Leverkusen",
    "position": "Forward",
@@ -824,6 +904,7 @@
    "tier": 2
   },
   {
+   "id": 130811,
    "name": "Victor Boniface",
    "team": "Bayer Leverkusen",
    "position": "Forward",
@@ -834,6 +915,7 @@
    "tier": 3
   },
   {
+   "id": 144715,
    "name": "Nathan Tella",
    "team": "Bayer Leverkusen",
    "position": "Forward",
@@ -844,6 +926,7 @@
    "tier": 2
   },
   {
+   "id": 191157,
    "name": "Eliesse Ben Seghir",
    "team": "Bayer Leverkusen",
    "position": "Forward",
@@ -854,6 +937,7 @@
    "tier": 2
   },
   {
+   "id": 204136,
    "name": "Afonso Moreira",
    "team": "Bayer Leverkusen",
    "position": "Midfielder",
@@ -864,6 +948,7 @@
    "tier": 2
   },
   {
+   "id": 274045,
    "name": "Christian Kofane",
    "team": "Bayer Leverkusen",
    "position": "Forward",
@@ -874,6 +959,7 @@
    "tier": 1
   },
   {
+   "id": 287850,
    "name": "Montrell Culbreath",
    "team": "Bayer Leverkusen",
    "position": "Midfielder",
@@ -884,6 +970,7 @@
    "tier": 2
   },
   {
+   "id": 296856,
    "name": "Ndjicoura Bomba",
    "team": "Bayer Leverkusen",
    "position": "Forward",
@@ -894,6 +981,7 @@
    "tier": 3
   },
   {
+   "id": 302787,
    "name": "Dustin Buck",
    "team": "Bayer Leverkusen",
    "position": "Forward",
@@ -904,6 +992,7 @@
    "tier": 3
   },
   {
+   "id": 334,
    "name": "Gregor Kobel",
    "team": "Borussia Dortmund",
    "position": "Goalkeeper",
@@ -914,6 +1003,7 @@
    "tier": 1
   },
   {
+   "id": 7109,
    "name": "Patrick Drewes",
    "team": "Borussia Dortmund",
    "position": "Goalkeeper",
@@ -924,6 +1014,7 @@
    "tier": 3
   },
   {
+   "id": 9389,
    "name": "Alexander Meyer",
    "team": "Borussia Dortmund",
    "position": "Goalkeeper",
@@ -934,16 +1025,18 @@
    "tier": 3
   },
   {
+   "id": 176268,
    "name": "Silas Ostrzinski",
    "team": "Borussia Dortmund",
    "position": "Goalkeeper",
-   "age": 22,
+   "age": 23,
    "number": 31,
    "nationality": "Germany",
    "photo": "https://media.api-sports.io/football/players/280463.png",
    "tier": 3
   },
   {
+   "id": 379,
    "name": "Waldemar Anton",
    "team": "Borussia Dortmund",
    "position": "Defender",
@@ -954,6 +1047,7 @@
    "tier": 2
   },
   {
+   "id": 3183,
    "name": "Emre Can",
    "team": "Borussia Dortmund",
    "position": "Defender",
@@ -964,6 +1058,7 @@
    "tier": 3
   },
   {
+   "id": 8805,
    "name": "Ramy Bensebaini",
    "team": "Borussia Dortmund",
    "position": "Defender",
@@ -974,16 +1069,18 @@
    "tier": 3
   },
   {
+   "id": 44030,
    "name": "Julian Ryerson",
    "team": "Borussia Dortmund",
    "position": "Midfielder",
-   "age": 28,
+   "age": 29,
    "number": 26,
    "nationality": "Norway",
    "photo": "https://media.api-sports.io/football/players/24845.png",
    "tier": 2
   },
   {
+   "id": 75539,
    "name": "Nico Schlotterbeck",
    "team": "Borussia Dortmund",
    "position": "Defender",
@@ -994,6 +1091,7 @@
    "tier": 1
   },
   {
+   "id": 145937,
    "name": "Daniel Svensson",
    "team": "Borussia Dortmund",
    "position": "Midfielder",
@@ -1004,6 +1102,7 @@
    "tier": 2
   },
   {
+   "id": 246542,
    "name": "Kouakou Gadou",
    "team": "Borussia Dortmund",
    "position": "Defender",
@@ -1014,6 +1113,7 @@
    "tier": 2
   },
   {
+   "id": 261058,
    "name": "Filippo Mané",
    "team": "Borussia Dortmund",
    "position": "Defender",
@@ -1024,6 +1124,7 @@
    "tier": 3
   },
   {
+   "id": 276255,
    "name": "Kaua Prates",
    "team": "Borussia Dortmund",
    "position": "Defender",
@@ -1034,6 +1135,7 @@
    "tier": 2
   },
   {
+   "id": 290034,
    "name": "Luca Reggiani",
    "team": "Borussia Dortmund",
    "position": "Defender",
@@ -1044,6 +1146,7 @@
    "tier": 2
   },
   {
+   "id": 9551,
    "name": "Marcel Sabitzer",
    "team": "Borussia Dortmund",
    "position": "Midfielder",
@@ -1054,16 +1157,18 @@
    "tier": 3
   },
   {
+   "id": 53426,
    "name": "Joey Veerman",
    "team": "Borussia Dortmund",
    "position": "Midfielder",
-   "age": 27,
+   "age": 28,
    "number": 25,
    "nationality": "Netherlands",
    "photo": "https://media.api-sports.io/football/players/37749.png",
    "tier": 2
   },
   {
+   "id": 101074,
    "name": "Felix Kalu Nmecha",
    "team": "Borussia Dortmund",
    "position": "Midfielder",
@@ -1074,6 +1179,7 @@
    "tier": 1
   },
   {
+   "id": 167570,
    "name": "Carney Chukwuemeka",
    "team": "Borussia Dortmund",
    "position": "Midfielder",
@@ -1084,6 +1190,7 @@
    "tier": 2
   },
   {
+   "id": 171692,
    "name": "Jobe Bellingham",
    "team": "Borussia Dortmund",
    "position": "Forward",
@@ -1094,6 +1201,7 @@
    "tier": 1
   },
   {
+   "id": 188476,
    "name": "Ethan Nwaneri",
    "team": "Borussia Dortmund",
    "position": "Midfielder",
@@ -1104,16 +1212,18 @@
    "tier": 1
   },
   {
+   "id": 246522,
    "name": "Konstantinos Karetsas",
    "team": "Borussia Dortmund",
    "position": "Midfielder",
-   "age": 18,
+   "age": 19,
    "number": 19,
    "nationality": "Belgium",
    "photo": "https://media.api-sports.io/football/players/404891.png",
    "tier": 1
   },
   {
+   "id": 250337,
    "name": "Justin Lerma",
    "team": "Borussia Dortmund",
    "position": "Midfielder",
@@ -1124,16 +1234,18 @@
    "tier": 3
   },
   {
+   "id": 278316,
    "name": "Mussa Kaba",
    "team": "Borussia Dortmund",
    "position": "Midfielder",
-   "age": 17,
+   "age": 18,
    "number": null,
    "nationality": "Germany",
    "photo": null,
    "tier": 3
   },
   {
+   "id": 299456,
    "name": "Enzo dos Santos",
    "team": "Borussia Dortmund",
    "position": "Midfielder",
@@ -1144,6 +1256,7 @@
    "tier": 3
   },
   {
+   "id": 211,
    "name": "Sehrou Guirassy",
    "team": "Borussia Dortmund",
    "position": "Forward",
@@ -1154,6 +1267,7 @@
    "tier": 1
   },
   {
+   "id": 125151,
    "name": "Fábio Silva",
    "team": "Borussia Dortmund",
    "position": "Forward",
@@ -1164,6 +1278,7 @@
    "tier": 2
   },
   {
+   "id": 133903,
    "name": "Maximilian Beier",
    "team": "Borussia Dortmund",
    "position": "Forward",
@@ -1174,6 +1289,7 @@
    "tier": 1
   },
   {
+   "id": 279090,
    "name": "Samuele Inácio",
    "team": "Borussia Dortmund",
    "position": "Forward",
@@ -1184,6 +1300,7 @@
    "tier": 2
   },
   {
+   "id": 279093,
    "name": "Mathis Albert",
    "team": "Borussia Dortmund",
    "position": "Forward",
@@ -1194,6 +1311,7 @@
    "tier": 3
   },
   {
+   "id": 341,
    "name": "Manuel Neuer",
    "team": "Bayern München",
    "position": "Goalkeeper",
@@ -1204,6 +1322,7 @@
    "tier": 3
   },
   {
+   "id": 342,
    "name": "Sven Ulreich",
    "team": "Bayern München",
    "position": "Goalkeeper",
@@ -1214,6 +1333,7 @@
    "tier": 3
   },
   {
+   "id": 172342,
    "name": "Jonas Urbig",
    "team": "Bayern München",
    "position": "Goalkeeper",
@@ -1224,6 +1344,7 @@
    "tier": 2
   },
   {
+   "id": 149,
    "name": "Jonathan Tah",
    "team": "Bayern München",
    "position": "Defender",
@@ -1234,6 +1355,7 @@
    "tier": 2
   },
   {
+   "id": 9541,
    "name": "Dayot Upamecano",
    "team": "Bayern München",
    "position": "Defender",
@@ -1244,6 +1366,7 @@
    "tier": 1
   },
   {
+   "id": 9549,
    "name": "Konrad Laimer",
    "team": "Bayern München",
    "position": "Defender",
@@ -1254,6 +1377,7 @@
    "tier": 1
   },
   {
+   "id": 21288,
    "name": "Alphonso Davies",
    "team": "Bayern München",
    "position": "Midfielder",
@@ -1264,6 +1388,7 @@
    "tier": 1
   },
   {
+   "id": 48657,
    "name": "Hiroki Ito",
    "team": "Bayern München",
    "position": "Defender",
@@ -1274,6 +1399,7 @@
    "tier": 2
   },
   {
+   "id": 114915,
    "name": "Sacha Boey",
    "team": "Bayern München",
    "position": "Defender",
@@ -1284,6 +1410,7 @@
    "tier": 2
   },
   {
+   "id": 122188,
    "name": "Josip Stanišić",
    "team": "Bayern München",
    "position": "Defender",
@@ -1294,16 +1421,18 @@
    "tier": 1
   },
   {
+   "id": 168299,
    "name": "Min-Jae Kim",
    "team": "Bayern München",
    "position": "Defender",
-   "age": 29,
+   "age": 30,
    "number": 3,
    "nationality": "South Korea",
    "photo": "https://media.api-sports.io/football/players/2897.png",
    "tier": 2
   },
   {
+   "id": 184533,
    "name": "Nathaniel Brown",
    "team": "Bayern München",
    "position": "Defender",
@@ -1314,6 +1443,7 @@
    "tier": 1
   },
   {
+   "id": 359,
    "name": "Joshua Kimmich",
    "team": "Bayern München",
    "position": "Midfielder",
@@ -1324,6 +1454,7 @@
    "tier": 1
   },
   {
+   "id": 130173,
    "name": "Ismael Saibari",
    "team": "Bayern München",
    "position": "Midfielder",
@@ -1334,6 +1465,7 @@
    "tier": 1
   },
   {
+   "id": 144393,
    "name": "Jamal Musiala",
    "team": "Bayern München",
    "position": "Midfielder",
@@ -1344,6 +1476,7 @@
    "tier": 1
   },
   {
+   "id": 172574,
    "name": "Tom Bischof",
    "team": "Bayern München",
    "position": "Midfielder",
@@ -1354,6 +1487,7 @@
    "tier": 1
   },
   {
+   "id": 202665,
    "name": "Aleksandar Pavlović",
    "team": "Bayern München",
    "position": "Midfielder",
@@ -1364,6 +1498,7 @@
    "tier": 1
   },
   {
+   "id": 277592,
    "name": "Lennart Karl",
    "team": "Bayern München",
    "position": "Midfielder",
@@ -1374,6 +1509,7 @@
    "tier": 1
   },
   {
+   "id": 279063,
    "name": "David Daiber",
    "team": "Bayern München",
    "position": "Midfielder",
@@ -1384,6 +1520,7 @@
    "tier": 3
   },
   {
+   "id": 290450,
    "name": "Bara Ndiaye",
    "team": "Bayern München",
    "position": "Midfielder",
@@ -1394,6 +1531,7 @@
    "tier": 3
   },
   {
+   "id": 311,
    "name": "Serge Gnabry",
    "team": "Bayern München",
    "position": "Midfielder",
@@ -1404,6 +1542,7 @@
    "tier": 2
   },
   {
+   "id": 8004,
    "name": "Harry Kane",
    "team": "Bayern München",
    "position": "Forward",
@@ -1414,6 +1553,7 @@
    "tier": 1
   },
   {
+   "id": 22396,
    "name": "Luis Díaz",
    "team": "Bayern München",
    "position": "Forward",
@@ -1424,6 +1564,7 @@
    "tier": 1
   },
   {
+   "id": 113765,
    "name": "Michael Olise",
    "team": "Bayern München",
    "position": "Midfielder",
@@ -1434,6 +1575,7 @@
    "tier": 1
   },
   {
+   "id": 302254,
    "name": "David Podar-Stiube",
    "team": "Bayern München",
    "position": "Goalkeeper",
@@ -1444,6 +1586,7 @@
    "tier": 3
   },
   {
+   "id": 7013,
    "name": "Kevin Müller",
    "team": "FC Schalke 04",
    "position": "Goalkeeper",
@@ -1454,6 +1597,7 @@
    "tier": 3
   },
   {
+   "id": 7856,
    "name": "Loris Karius",
    "team": "FC Schalke 04",
    "position": "Goalkeeper",
@@ -1464,6 +1608,7 @@
    "tier": 3
   },
   {
+   "id": 279849,
    "name": "Johannes Siebeking",
    "team": "FC Schalke 04",
    "position": "Goalkeeper",
@@ -1474,6 +1619,7 @@
    "tier": 3
   },
   {
+   "id": 1847,
    "name": "Robin Gosens",
    "team": "FC Schalke 04",
    "position": "Defender",
@@ -1484,6 +1630,7 @@
    "tier": 3
   },
   {
+   "id": 7562,
    "name": "Maximilian Wöber",
    "team": "FC Schalke 04",
    "position": "Defender",
@@ -1494,6 +1641,7 @@
    "tier": 3
   },
   {
+   "id": 10324,
    "name": "Timo Becker",
    "team": "FC Schalke 04",
    "position": "Defender",
@@ -1504,6 +1652,7 @@
    "tier": 3
   },
   {
+   "id": 23182,
    "name": "Nikola Katić",
    "team": "FC Schalke 04",
    "position": "Defender",
@@ -1514,6 +1663,7 @@
    "tier": 3
   },
   {
+   "id": 113746,
    "name": "Hasan Kuruçay",
    "team": "FC Schalke 04",
    "position": "Defender",
@@ -1524,6 +1674,7 @@
    "tier": 3
   },
   {
+   "id": 146151,
    "name": "Adrian Gantenbein",
    "team": "FC Schalke 04",
    "position": "Defender",
@@ -1534,6 +1685,7 @@
    "tier": 3
   },
   {
+   "id": 260737,
    "name": "Vitalie Becker",
    "team": "FC Schalke 04",
    "position": "Defender",
@@ -1544,6 +1696,7 @@
    "tier": 3
   },
   {
+   "id": 278329,
    "name": "Mertcan Ayhan",
    "team": "FC Schalke 04",
    "position": "Midfielder",
@@ -1554,6 +1707,7 @@
    "tier": 3
   },
   {
+   "id": 303,
    "name": "Kenan Karaman",
    "team": "FC Schalke 04",
    "position": "Midfielder",
@@ -1564,6 +1718,7 @@
    "tier": 3
   },
   {
+   "id": 7048,
    "name": "Janik Bachmann",
    "team": "FC Schalke 04",
    "position": "Midfielder",
@@ -1574,6 +1729,7 @@
    "tier": 3
   },
   {
+   "id": 10366,
    "name": "Finn Porath",
    "team": "FC Schalke 04",
    "position": "Midfielder",
@@ -1584,6 +1740,7 @@
    "tier": 3
   },
   {
+   "id": 10656,
    "name": "Dejan Ljubicic",
    "team": "FC Schalke 04",
    "position": "Midfielder",
@@ -1594,6 +1751,7 @@
    "tier": 3
   },
   {
+   "id": 45582,
    "name": "Ron Schallenberg",
    "team": "FC Schalke 04",
    "position": "Midfielder",
@@ -1604,6 +1762,7 @@
    "tier": 3
   },
   {
+   "id": 116407,
    "name": "Dina Ebimbe",
    "team": "FC Schalke 04",
    "position": "Midfielder",
@@ -1614,6 +1773,7 @@
    "tier": 3
   },
   {
+   "id": 117469,
    "name": "Satoshi Tanaka",
    "team": "FC Schalke 04",
    "position": "Midfielder",
@@ -1624,6 +1784,7 @@
    "tier": 3
   },
   {
+   "id": 128453,
    "name": "Adil Aouchiche",
    "team": "FC Schalke 04",
    "position": "Midfielder",
@@ -1634,6 +1795,7 @@
    "tier": 3
   },
   {
+   "id": 170360,
    "name": "Soufiane El-Faouzi",
    "team": "FC Schalke 04",
    "position": "Midfielder",
@@ -1644,6 +1806,7 @@
    "tier": 3
   },
   {
+   "id": 288883,
    "name": "Luca Vozar",
    "team": "FC Schalke 04",
    "position": "Midfielder",
@@ -1654,16 +1817,18 @@
    "tier": 3
   },
   {
+   "id": 518,
    "name": "Bryan Lasme",
    "team": "FC Schalke 04",
    "position": "Forward",
-   "age": 27,
+   "age": 28,
    "number": 11,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/24228.png",
    "tier": 3
   },
   {
+   "id": 1822,
    "name": "Edin Džeko",
    "team": "FC Schalke 04",
    "position": "Forward",
@@ -1674,6 +1839,7 @@
    "tier": 3
   },
   {
+   "id": 3354,
    "name": "Hwang Heechan",
    "team": "FC Schalke 04",
    "position": "Forward",
@@ -1684,6 +1850,7 @@
    "tier": 3
   },
   {
+   "id": 8760,
    "name": "Moussa Sylla",
    "team": "FC Schalke 04",
    "position": "Forward",
@@ -1694,6 +1861,7 @@
    "tier": 3
   },
   {
+   "id": 60395,
    "name": "Chikwubuike Adamu",
    "team": "FC Schalke 04",
    "position": "Forward",
@@ -1704,6 +1872,7 @@
    "tier": 3
   },
   {
+   "id": 205506,
    "name": "Emil Højlund",
    "team": "FC Schalke 04",
    "position": "Forward",
@@ -1714,16 +1883,18 @@
    "tier": 3
   },
   {
+   "id": 10078,
    "name": "Daniel Fernandes",
    "team": "Hamburger SV",
    "position": "Goalkeeper",
-   "age": 33,
+   "age": 34,
    "number": 1,
    "nationality": "Portugal",
    "photo": "https://media.api-sports.io/football/players/25033.png",
    "tier": 3
   },
   {
+   "id": 146024,
    "name": "Sander Tangvik",
    "team": "Hamburger SV",
    "position": "Goalkeeper",
@@ -1734,6 +1905,7 @@
    "tier": 3
   },
   {
+   "id": 271950,
    "name": "Elias Lahti",
    "team": "Hamburger SV",
    "position": "Goalkeeper",
@@ -1744,6 +1916,7 @@
    "tier": 3
   },
   {
+   "id": 274402,
    "name": "Fernando Dickes",
    "team": "Hamburger SV",
    "position": "Goalkeeper",
@@ -1754,6 +1927,7 @@
    "tier": 3
   },
   {
+   "id": 6551,
    "name": "Jordan Torunarigha",
    "team": "Hamburger SV",
    "position": "Defender",
@@ -1764,6 +1938,7 @@
    "tier": 3
   },
   {
+   "id": 8847,
    "name": "Sebastiaan Bornauw",
    "team": "Hamburger SV",
    "position": "Defender",
@@ -1774,6 +1949,7 @@
    "tier": 2
   },
   {
+   "id": 50215,
    "name": "Miro Muheim",
    "team": "Hamburger SV",
    "position": "Midfielder",
@@ -1784,6 +1960,7 @@
    "tier": 3
   },
   {
+   "id": 102974,
    "name": "Nicolás Capaldo",
    "team": "Hamburger SV",
    "position": "Defender",
@@ -1794,6 +1971,7 @@
    "tier": 3
   },
   {
+   "id": 135467,
    "name": "Warmed Omari",
    "team": "Hamburger SV",
    "position": "Defender",
@@ -1804,6 +1982,7 @@
    "tier": 3
   },
   {
+   "id": 183356,
    "name": "Daniel Elfadli",
    "team": "Hamburger SV",
    "position": "Defender",
@@ -1814,6 +1993,7 @@
    "tier": 3
   },
   {
+   "id": 205467,
    "name": "David Wolfe",
    "team": "Hamburger SV",
    "position": "Defender",
@@ -1824,6 +2004,7 @@
    "tier": 2
   },
   {
+   "id": 209715,
    "name": "Joel Agyekum",
    "team": "Hamburger SV",
    "position": "Defender",
@@ -1834,6 +2015,7 @@
    "tier": 3
   },
   {
+   "id": 213459,
    "name": "Zakaria El Ouahdi",
    "team": "Hamburger SV",
    "position": "Defender",
@@ -1844,6 +2026,7 @@
    "tier": 2
   },
   {
+   "id": 277579,
    "name": "Shafiq Nandja",
    "team": "Hamburger SV",
    "position": "Defender",
@@ -1854,6 +2037,7 @@
    "tier": 3
   },
   {
+   "id": 289178,
    "name": "Louis Lemke",
    "team": "Hamburger SV",
    "position": "Midfielder",
@@ -1864,6 +2048,7 @@
    "tier": 3
   },
   {
+   "id": 6539,
    "name": "Bakery Jatta",
    "team": "Hamburger SV",
    "position": "Midfielder",
@@ -1874,6 +2059,7 @@
    "tier": 3
   },
   {
+   "id": 8862,
    "name": "Albert Sambi Lokonga",
    "team": "Hamburger SV",
    "position": "Midfielder",
@@ -1884,6 +2070,7 @@
    "tier": 2
   },
   {
+   "id": 112948,
    "name": "Fabio Vieira",
    "team": "Hamburger SV",
    "position": "Midfielder",
@@ -1894,6 +2081,7 @@
    "tier": 2
   },
   {
+   "id": 144415,
    "name": "Immanuel Pherai",
    "team": "Hamburger SV",
    "position": "Midfielder",
@@ -1904,6 +2092,7 @@
    "tier": 3
   },
   {
+   "id": 144430,
    "name": "Albert Gronbaek Erlykke",
    "team": "Hamburger SV",
    "position": "Midfielder",
@@ -1914,6 +2103,7 @@
    "tier": 3
   },
   {
+   "id": 149995,
    "name": "Nicolai Remberg",
    "team": "Hamburger SV",
    "position": "Midfielder",
@@ -1924,6 +2114,7 @@
    "tier": 2
   },
   {
+   "id": 170409,
    "name": "Bilal Nadir",
    "team": "Hamburger SV",
    "position": "Midfielder",
@@ -1934,6 +2125,7 @@
    "tier": 2
   },
   {
+   "id": 176762,
    "name": "Martin Adeline",
    "team": "Hamburger SV",
    "position": "Midfielder",
@@ -1944,6 +2136,7 @@
    "tier": 3
   },
   {
+   "id": 244694,
    "name": "Kofi Amoako",
    "team": "Hamburger SV",
    "position": "Midfielder",
@@ -1954,6 +2147,7 @@
    "tier": 3
   },
   {
+   "id": 3466,
    "name": "Yussuf Poulsen",
    "team": "Hamburger SV",
    "position": "Forward",
@@ -1964,6 +2158,7 @@
    "tier": 3
   },
   {
+   "id": 16348,
    "name": "Patson Daka",
    "team": "Hamburger SV",
    "position": "Forward",
@@ -1974,6 +2169,7 @@
    "tier": 2
   },
   {
+   "id": 113427,
    "name": "Terem Moffi",
    "team": "Hamburger SV",
    "position": "Forward",
@@ -1984,6 +2180,7 @@
    "tier": 2
   },
   {
+   "id": 228008,
    "name": "Otto Stange",
    "team": "Hamburger SV",
    "position": "Forward",
@@ -1994,6 +2191,7 @@
    "tier": 3
   },
   {
+   "id": 252883,
    "name": "Alexander Røssing-Lelesiit",
    "team": "Hamburger SV",
    "position": "Forward",
@@ -2004,6 +2202,7 @@
    "tier": 3
   },
   {
+   "id": 6603,
    "name": "Fabian Bredlow",
    "team": "VfB Stuttgart",
    "position": "Goalkeeper",
@@ -2014,6 +2213,7 @@
    "tier": 3
   },
   {
+   "id": 9888,
    "name": "Marius Funk",
    "team": "VfB Stuttgart",
    "position": "Goalkeeper",
@@ -2024,6 +2224,7 @@
    "tier": 3
   },
   {
+   "id": 67401,
    "name": "Stefan Drljača",
    "team": "VfB Stuttgart",
    "position": "Goalkeeper",
@@ -2034,6 +2235,7 @@
    "tier": 3
   },
   {
+   "id": 206327,
    "name": "Dennis Seimen",
    "team": "VfB Stuttgart",
    "position": "Goalkeeper",
@@ -2044,6 +2246,7 @@
    "tier": 3
   },
   {
+   "id": 6483,
    "name": "Dan-Axel Zagadou",
    "team": "VfB Stuttgart",
    "position": "Defender",
@@ -2054,6 +2257,7 @@
    "tier": 3
   },
   {
+   "id": 6523,
    "name": "Josha Vagnoman",
    "team": "VfB Stuttgart",
    "position": "Defender",
@@ -2064,6 +2268,7 @@
    "tier": 2
   },
   {
+   "id": 6549,
    "name": "Maximilian Mittelstädt",
    "team": "VfB Stuttgart",
    "position": "Defender",
@@ -2074,6 +2279,7 @@
    "tier": 2
   },
   {
+   "id": 7748,
    "name": "Julian Chabot",
    "team": "VfB Stuttgart",
    "position": "Defender",
@@ -2084,6 +2290,7 @@
    "tier": 2
   },
   {
+   "id": 111071,
    "name": "Leonidas Stergiou",
    "team": "VfB Stuttgart",
    "position": "Defender",
@@ -2094,6 +2301,7 @@
    "tier": 3
   },
   {
+   "id": 135485,
    "name": "Lorenz Assignon",
    "team": "VfB Stuttgart",
    "position": "Defender",
@@ -2104,6 +2312,7 @@
    "tier": 2
   },
   {
+   "id": 157263,
    "name": "Ramon Hendriks",
    "team": "VfB Stuttgart",
    "position": "Defender",
@@ -2114,6 +2323,7 @@
    "tier": 2
   },
   {
+   "id": 170857,
    "name": "Ameen Al Dakhil",
    "team": "VfB Stuttgart",
    "position": "Defender",
@@ -2124,6 +2334,7 @@
    "tier": 3
   },
   {
+   "id": 176711,
    "name": "Luca Jaquez",
    "team": "VfB Stuttgart",
    "position": "Defender",
@@ -2134,6 +2345,7 @@
    "tier": 2
   },
   {
+   "id": 221768,
    "name": "Finn Jeltsch",
    "team": "VfB Stuttgart",
    "position": "Defender",
@@ -2144,6 +2356,7 @@
    "tier": 1
   },
   {
+   "id": 190,
    "name": "Nikolas Nartey",
    "team": "VfB Stuttgart",
    "position": "Midfielder",
@@ -2154,6 +2367,7 @@
    "tier": 2
   },
   {
+   "id": 6836,
    "name": "Grischa Prömel",
    "team": "VfB Stuttgart",
    "position": "Midfielder",
@@ -2164,6 +2378,7 @@
    "tier": 3
   },
   {
+   "id": 7079,
    "name": "Atakan Karazor",
    "team": "VfB Stuttgart",
    "position": "Midfielder",
@@ -2174,6 +2389,7 @@
    "tier": 2
   },
   {
+   "id": 128565,
    "name": "Angelo Stiller",
    "team": "VfB Stuttgart",
    "position": "Midfielder",
@@ -2184,6 +2400,7 @@
    "tier": 1
   },
   {
+   "id": 189873,
    "name": "Bilal El Khannouss",
    "team": "VfB Stuttgart",
    "position": "Midfielder",
@@ -2194,6 +2411,7 @@
    "tier": 3
   },
   {
+   "id": 263221,
    "name": "Jarzinho Malanga",
    "team": "VfB Stuttgart",
    "position": "Forward",
@@ -2204,6 +2422,7 @@
    "tier": 3
   },
   {
+   "id": 296854,
    "name": "Ertugrul Yigit",
    "team": "VfB Stuttgart",
    "position": "Midfielder",
@@ -2214,6 +2433,7 @@
    "tier": 3
   },
   {
+   "id": 206,
    "name": "Chris Führich",
    "team": "VfB Stuttgart",
    "position": "Midfielder",
@@ -2224,6 +2444,7 @@
    "tier": 2
   },
   {
+   "id": 6928,
    "name": "Deniz Undav",
    "team": "VfB Stuttgart",
    "position": "Forward",
@@ -2234,6 +2455,7 @@
    "tier": 2
   },
   {
+   "id": 33242,
    "name": "Ermedin Demirovic",
    "team": "VfB Stuttgart",
    "position": "Forward",
@@ -2244,6 +2466,7 @@
    "tier": 2
   },
   {
+   "id": 123333,
    "name": "Jamie Leweling",
    "team": "VfB Stuttgart",
    "position": "Midfielder",
@@ -2254,6 +2477,7 @@
    "tier": 1
   },
   {
+   "id": 145057,
    "name": "Tiago Tomás",
    "team": "VfB Stuttgart",
    "position": "Forward",
@@ -2264,6 +2488,7 @@
    "tier": 2
   },
   {
+   "id": 184970,
    "name": "Dzenan Pejcinovic",
    "team": "VfB Stuttgart",
    "position": "Forward",
@@ -2274,6 +2499,7 @@
    "tier": 2
   },
   {
+   "id": 185007,
    "name": "Badredine Bouanani",
    "team": "VfB Stuttgart",
    "position": "Forward",
@@ -2284,6 +2510,7 @@
    "tier": 2
   },
   {
+   "id": 214587,
    "name": "Leo Sauer",
    "team": "VfB Stuttgart",
    "position": "Forward",
@@ -2294,6 +2521,7 @@
    "tier": 3
   },
   {
+   "id": 215510,
    "name": "Jeremy",
    "team": "VfB Stuttgart",
    "position": "Forward",
@@ -2304,6 +2532,7 @@
    "tier": 3
   },
   {
+   "id": 10702,
    "name": "Alexander Schlager",
    "team": "Werder Bremen",
    "position": "Goalkeeper",
@@ -2314,6 +2543,7 @@
    "tier": 3
   },
   {
+   "id": 45596,
    "name": "Markus Kolke",
    "team": "Werder Bremen",
    "position": "Goalkeeper",
@@ -2324,6 +2554,7 @@
    "tier": 3
   },
   {
+   "id": 256018,
    "name": "Stefan Smarkalev",
    "team": "Werder Bremen",
    "position": "Goalkeeper",
@@ -2334,6 +2565,7 @@
    "tier": 3
   },
   {
+   "id": 6555,
    "name": "Mitchell Weiser",
    "team": "Werder Bremen",
    "position": "Midfielder",
@@ -2344,6 +2576,7 @@
    "tier": 3
   },
   {
+   "id": 6557,
    "name": "Niklas Stark",
    "team": "Werder Bremen",
    "position": "Defender",
@@ -2354,6 +2587,7 @@
    "tier": 3
   },
   {
+   "id": 9447,
    "name": "Marco Friedl",
    "team": "Werder Bremen",
    "position": "Defender",
@@ -2364,6 +2598,7 @@
    "tier": 2
   },
   {
+   "id": 10559,
    "name": "Felix Agu",
    "team": "Werder Bremen",
    "position": "Defender",
@@ -2374,6 +2609,7 @@
    "tier": 3
   },
   {
+   "id": 66095,
    "name": "Amos Pieper",
    "team": "Werder Bremen",
    "position": "Defender",
@@ -2384,6 +2620,7 @@
    "tier": 3
   },
   {
+   "id": 93320,
    "name": "Olivier Deman",
    "team": "Werder Bremen",
    "position": "Defender",
@@ -2394,6 +2631,7 @@
    "tier": 3
   },
   {
+   "id": 153870,
    "name": "Julián Malatini",
    "team": "Werder Bremen",
    "position": "Defender",
@@ -2404,6 +2642,7 @@
    "tier": 3
   },
   {
+   "id": 173635,
    "name": "Moussa N'Diaye",
    "team": "Werder Bremen",
    "position": "Defender",
@@ -2414,6 +2653,7 @@
    "tier": 3
   },
   {
+   "id": 178860,
    "name": "Arthur Augusto",
    "team": "Werder Bremen",
    "position": "Defender",
@@ -2424,6 +2664,7 @@
    "tier": 2
   },
   {
+   "id": 275165,
    "name": "Mick Schmetgens",
    "team": "Werder Bremen",
    "position": "Defender",
@@ -2434,6 +2675,7 @@
    "tier": 3
   },
   {
+   "id": 296853,
    "name": "Oskar Wójcik",
    "team": "Werder Bremen",
    "position": "Defender",
@@ -2444,6 +2686,7 @@
    "tier": 3
   },
   {
+   "id": 7532,
    "name": "Ludovit Reis",
    "team": "Werder Bremen",
    "position": "Midfielder",
@@ -2454,6 +2697,7 @@
    "tier": 3
   },
   {
+   "id": 9765,
    "name": "Senne Lynen",
    "team": "Werder Bremen",
    "position": "Midfielder",
@@ -2464,6 +2708,7 @@
    "tier": 2
   },
   {
+   "id": 23925,
    "name": "Jens Stage",
    "team": "Werder Bremen",
    "position": "Midfielder",
@@ -2474,6 +2719,7 @@
    "tier": 2
   },
   {
+   "id": 142087,
    "name": "Youri Regeer",
    "team": "Werder Bremen",
    "position": "Midfielder",
@@ -2484,6 +2730,7 @@
    "tier": 3
   },
   {
+   "id": 178648,
    "name": "Skelly Alvero",
    "team": "Werder Bremen",
    "position": "Midfielder",
@@ -2494,6 +2741,7 @@
    "tier": 3
   },
   {
+   "id": 218448,
    "name": "Chuki",
    "team": "Werder Bremen",
    "position": "Midfielder",
@@ -2504,6 +2752,7 @@
    "tier": 3
   },
   {
+   "id": 264833,
    "name": "Dariusz Stalmach",
    "team": "Werder Bremen",
    "position": "Midfielder",
@@ -2514,6 +2763,7 @@
    "tier": 3
   },
   {
+   "id": 304,
    "name": "Niclas Füllkrug",
    "team": "Werder Bremen",
    "position": "Forward",
@@ -2524,6 +2774,7 @@
    "tier": 3
   },
   {
+   "id": 2263,
    "name": "Dawid Kownacki",
    "team": "Werder Bremen",
    "position": "Forward",
@@ -2534,6 +2785,7 @@
    "tier": 3
   },
   {
+   "id": 30780,
    "name": "Cédric Itten",
    "team": "Werder Bremen",
    "position": "Forward",
@@ -2544,6 +2796,7 @@
    "tier": 3
   },
   {
+   "id": 61630,
    "name": "Marco Grüll",
    "team": "Werder Bremen",
    "position": "Midfielder",
@@ -2554,16 +2807,18 @@
    "tier": 3
   },
   {
+   "id": 122949,
    "name": "Justin Njinmah",
    "team": "Werder Bremen",
    "position": "Forward",
-   "age": 25,
+   "age": 26,
    "number": 11,
    "nationality": "Germany",
    "photo": "https://media.api-sports.io/football/players/177807.png",
    "tier": 3
   },
   {
+   "id": 150733,
    "name": "Eren Dinkci",
    "team": "Werder Bremen",
    "position": "Forward",
@@ -2574,6 +2829,7 @@
    "tier": 3
   },
   {
+   "id": 176637,
    "name": "Keke Topp",
    "team": "Werder Bremen",
    "position": "Forward",
@@ -2584,6 +2840,7 @@
    "tier": 3
   },
   {
+   "id": 280220,
    "name": "Salim Musah",
    "team": "Werder Bremen",
    "position": "Forward",
@@ -2594,6 +2851,7 @@
    "tier": 3
   },
   {
+   "id": 281103,
    "name": "Kenny Quetant",
    "team": "Werder Bremen",
    "position": "Forward",
@@ -2604,6 +2862,7 @@
    "tier": 3
   },
   {
+   "id": 285126,
    "name": "Paul Erevbenagie",
    "team": "Werder Bremen",
    "position": "Forward",
@@ -2614,6 +2873,7 @@
    "tier": 3
   },
   {
+   "id": 6616,
    "name": "Robin Zentner",
    "team": "FSV Mainz 05",
    "position": "Goalkeeper",
@@ -2624,6 +2884,7 @@
    "tier": 3
   },
   {
+   "id": 9469,
    "name": "Alexander Schwolow",
    "team": "FSV Mainz 05",
    "position": "Goalkeeper",
@@ -2634,6 +2895,7 @@
    "tier": 3
   },
   {
+   "id": 171181,
    "name": "Maximilian Kinzig",
    "team": "FSV Mainz 05",
    "position": "Goalkeeper",
@@ -2644,6 +2906,7 @@
    "tier": 3
   },
   {
+   "id": 152,
    "name": "Dominik Kohr",
    "team": "FSV Mainz 05",
    "position": "Defender",
@@ -2654,6 +2917,7 @@
    "tier": 3
   },
   {
+   "id": 395,
    "name": "Stefan Posch",
    "team": "FSV Mainz 05",
    "position": "Defender",
@@ -2664,6 +2928,7 @@
    "tier": 3
   },
   {
+   "id": 2114,
    "name": "Silvan Widmer",
    "team": "FSV Mainz 05",
    "position": "Defender",
@@ -2674,6 +2939,7 @@
    "tier": 3
   },
   {
+   "id": 6576,
    "name": "Philipp Mwene",
    "team": "FSV Mainz 05",
    "position": "Midfielder",
@@ -2684,6 +2950,7 @@
    "tier": 3
   },
   {
+   "id": 6620,
    "name": "Stefan Bell",
    "team": "FSV Mainz 05",
    "position": "Defender",
@@ -2694,6 +2961,7 @@
    "tier": 3
   },
   {
+   "id": 6707,
    "name": "Danny da Costa",
    "team": "FSV Mainz 05",
    "position": "Defender",
@@ -2704,6 +2972,7 @@
    "tier": 3
   },
   {
+   "id": 8785,
    "name": "Anthony Caci",
    "team": "FSV Mainz 05",
    "position": "Midfielder",
@@ -2714,6 +2983,7 @@
    "tier": 3
   },
   {
+   "id": 182050,
    "name": "Fabio Gruber",
    "team": "FSV Mainz 05",
    "position": "Defender",
@@ -2724,6 +2994,7 @@
    "tier": 3
   },
   {
+   "id": 276971,
    "name": "Kacper Potulski",
    "team": "FSV Mainz 05",
    "position": "Defender",
@@ -2734,6 +3005,7 @@
    "tier": 2
   },
   {
+   "id": 320,
    "name": "Nadiem Amiri",
    "team": "FSV Mainz 05",
    "position": "Midfielder",
@@ -2744,6 +3016,7 @@
    "tier": 2
   },
   {
+   "id": 3347,
    "name": "Lee Jaesung",
    "team": "FSV Mainz 05",
    "position": "Midfielder",
@@ -2754,6 +3027,7 @@
    "tier": 3
   },
   {
+   "id": 6664,
    "name": "Marco Richter",
    "team": "FSV Mainz 05",
    "position": "Midfielder",
@@ -2764,6 +3038,7 @@
    "tier": 3
   },
   {
+   "id": 6826,
    "name": "Lennart Maloney",
    "team": "FSV Mainz 05",
    "position": "Midfielder",
@@ -2774,6 +3049,7 @@
    "tier": 3
   },
   {
+   "id": 114809,
    "name": "Kaishu Sano",
    "team": "FSV Mainz 05",
    "position": "Midfielder",
@@ -2784,6 +3060,7 @@
    "tier": 1
   },
   {
+   "id": 147832,
    "name": "Sota Kawasaki",
    "team": "FSV Mainz 05",
    "position": "Midfielder",
@@ -2794,6 +3071,7 @@
    "tier": 3
   },
   {
+   "id": 150432,
    "name": "Paul Nebel",
    "team": "FSV Mainz 05",
    "position": "Midfielder",
@@ -2804,6 +3082,7 @@
    "tier": 2
   },
   {
+   "id": 152726,
    "name": "Eric Martel",
    "team": "FSV Mainz 05",
    "position": "Midfielder",
@@ -2814,6 +3093,7 @@
    "tier": 2
   },
   {
+   "id": 180775,
    "name": "Hyun-seok Hong",
    "team": "FSV Mainz 05",
    "position": "Midfielder",
@@ -2824,6 +3104,7 @@
    "tier": 3
   },
   {
+   "id": 181758,
    "name": "Otto Ruoppi",
    "team": "FSV Mainz 05",
    "position": "Midfielder",
@@ -2834,6 +3115,7 @@
    "tier": 3
   },
   {
+   "id": 7633,
    "name": "Sheraldo Becker",
    "team": "FSV Mainz 05",
    "position": "Forward",
@@ -2844,6 +3126,7 @@
    "tier": 3
   },
   {
+   "id": 45593,
    "name": "Phillip Tietz",
    "team": "FSV Mainz 05",
    "position": "Forward",
@@ -2854,6 +3137,7 @@
    "tier": 3
   },
   {
+   "id": 82354,
    "name": "Silas Wamangituka",
    "team": "FSV Mainz 05",
    "position": "Forward",
@@ -2864,6 +3148,7 @@
    "tier": 3
   },
   {
+   "id": 137302,
    "name": "Ransford Königsdörffer",
    "team": "FSV Mainz 05",
    "position": "Forward",
@@ -2874,6 +3159,7 @@
    "tier": 3
   },
   {
+   "id": 150647,
    "name": "Benedict Hollerbach",
    "team": "FSV Mainz 05",
    "position": "Forward",
@@ -2884,6 +3170,7 @@
    "tier": 2
   },
   {
+   "id": 297913,
    "name": "Alynho Haidara",
    "team": "FSV Mainz 05",
    "position": "Forward",
@@ -2894,6 +3181,7 @@
    "tier": 3
   },
   {
+   "id": 6617,
    "name": "Finn Dahmen",
    "team": "FC Augsburg",
    "position": "Goalkeeper",
@@ -2904,6 +3192,7 @@
    "tier": 2
   },
   {
+   "id": 147197,
    "name": "Nediljko Labrović",
    "team": "FC Augsburg",
    "position": "Goalkeeper",
@@ -2914,16 +3203,18 @@
    "tier": 3
   },
   {
+   "id": 295064,
    "name": "Tom Wisbereit",
    "team": "FC Augsburg",
    "position": "Goalkeeper",
-   "age": 18,
+   "age": 19,
    "number": null,
    "nationality": "Germany",
    "photo": null,
    "tier": 3
   },
   {
+   "id": 6645,
    "name": "Jeffrey Gouweleeuw",
    "team": "FC Augsburg",
    "position": "Defender",
@@ -2934,6 +3225,7 @@
    "tier": 3
   },
   {
+   "id": 6714,
    "name": "Marius Wolf",
    "team": "FC Augsburg",
    "position": "Defender",
@@ -2944,6 +3236,7 @@
    "tier": 3
   },
   {
+   "id": 67408,
    "name": "Calvin Brackelmann",
    "team": "FC Augsburg",
    "position": "Defender",
@@ -2954,6 +3247,7 @@
    "tier": 3
   },
   {
+   "id": 147912,
    "name": "Chrislain Matsima",
    "team": "FC Augsburg",
    "position": "Defender",
@@ -2964,6 +3258,7 @@
    "tier": 2
   },
   {
+   "id": 243858,
    "name": "Young-woo Seol",
    "team": "FC Augsburg",
    "position": "Defender",
@@ -2974,6 +3269,7 @@
    "tier": 3
   },
   {
+   "id": 249428,
    "name": "Noahkai Banks",
    "team": "FC Augsburg",
    "position": "Defender",
@@ -2984,6 +3280,7 @@
    "tier": 2
   },
   {
+   "id": 261382,
    "name": "Hennes Behrens",
    "team": "FC Augsburg",
    "position": "Midfielder",
@@ -2994,6 +3291,7 @@
    "tier": 3
   },
   {
+   "id": 273121,
    "name": "Juma Bah",
    "team": "FC Augsburg",
    "position": "Defender",
@@ -3004,6 +3302,7 @@
    "tier": 2
   },
   {
+   "id": 608,
    "name": "Alexis Claude Maurice",
    "team": "FC Augsburg",
    "position": "Midfielder",
@@ -3014,6 +3313,7 @@
    "tier": 2
   },
   {
+   "id": 23222,
    "name": "Kristijan Jakić",
    "team": "FC Augsburg",
    "position": "Midfielder",
@@ -3024,6 +3324,7 @@
    "tier": 3
   },
   {
+   "id": 65692,
    "name": "Robin Fellhauer",
    "team": "FC Augsburg",
    "position": "Midfielder",
@@ -3034,6 +3335,7 @@
    "tier": 3
   },
   {
+   "id": 97120,
    "name": "Yannik Keitel",
    "team": "FC Augsburg",
    "position": "Defender",
@@ -3044,6 +3346,7 @@
    "tier": 3
   },
   {
+   "id": 98953,
    "name": "Han-Noah Massengo",
    "team": "FC Augsburg",
    "position": "Midfielder",
@@ -3054,6 +3357,7 @@
    "tier": 2
   },
   {
+   "id": 152692,
    "name": "Fabian Rieder",
    "team": "FC Augsburg",
    "position": "Midfielder",
@@ -3064,6 +3368,7 @@
    "tier": 2
   },
   {
+   "id": 153915,
    "name": "Tim Breithaupt",
    "team": "FC Augsburg",
    "position": "Midfielder",
@@ -3074,6 +3379,7 @@
    "tier": 3
   },
   {
+   "id": 175963,
    "name": "Anton Kade",
    "team": "FC Augsburg",
    "position": "Midfielder",
@@ -3084,6 +3390,7 @@
    "tier": 2
   },
   {
+   "id": 192654,
    "name": "Mert Kömür",
    "team": "FC Augsburg",
    "position": "Midfielder",
@@ -3094,6 +3401,7 @@
    "tier": 2
   },
   {
+   "id": 221763,
    "name": "Sima Suso",
    "team": "FC Augsburg",
    "position": "Midfielder",
@@ -3104,6 +3412,7 @@
    "tier": 3
   },
   {
+   "id": 290066,
    "name": "Tim Schnitzer",
    "team": "FC Augsburg",
    "position": "Midfielder",
@@ -3114,6 +3423,7 @@
    "tier": 3
   },
   {
+   "id": 6661,
    "name": "Michael Gregoritsch",
    "team": "FC Augsburg",
    "position": "Forward",
@@ -3124,6 +3434,7 @@
    "tier": 3
   },
   {
+   "id": 8193,
    "name": "Steve Mounié",
    "team": "FC Augsburg",
    "position": "Forward",
@@ -3134,6 +3445,7 @@
    "tier": 3
   },
   {
+   "id": 125668,
    "name": "Nathanael Mbuku",
    "team": "FC Augsburg",
    "position": "Forward",
@@ -3144,6 +3456,7 @@
    "tier": 3
   },
   {
+   "id": 176899,
    "name": "Arijon Ibrahimovic",
    "team": "FC Augsburg",
    "position": "Midfielder",
@@ -3154,6 +3467,7 @@
    "tier": 2
   },
   {
+   "id": 178772,
    "name": "Rodrigo Ribeiro",
    "team": "FC Augsburg",
    "position": "Forward",
@@ -3164,6 +3478,7 @@
    "tier": 3
   },
   {
+   "id": 273146,
    "name": "Faik Sakar",
    "team": "FC Augsburg",
    "position": "Forward",
@@ -3174,6 +3489,7 @@
    "tier": 3
   },
   {
+   "id": 274217,
    "name": "Uchenna Ogundu",
    "team": "FC Augsburg",
    "position": "Forward",
@@ -3184,16 +3500,18 @@
    "tier": 3
   },
   {
+   "id": 6614,
    "name": "Florian Müller",
    "team": "SC Freiburg",
    "position": "Goalkeeper",
-   "age": 28,
+   "age": 29,
    "number": 21,
    "nationality": "Germany",
    "photo": "https://media.api-sports.io/football/players/25905.png",
    "tier": 3
   },
   {
+   "id": 7741,
    "name": "Jannik Huth",
    "team": "SC Freiburg",
    "position": "Goalkeeper",
@@ -3204,6 +3522,7 @@
    "tier": 3
   },
   {
+   "id": 179984,
    "name": "Mio Backhaus",
    "team": "SC Freiburg",
    "position": "Goalkeeper",
@@ -3214,6 +3533,7 @@
    "tier": 2
   },
   {
+   "id": 3176,
    "name": "Matthias Ginter",
    "team": "SC Freiburg",
    "position": "Defender",
@@ -3224,6 +3544,7 @@
    "tier": 3
   },
   {
+   "id": 9472,
    "name": "Christian Günter",
    "team": "SC Freiburg",
    "position": "Defender",
@@ -3234,6 +3555,7 @@
    "tier": 3
   },
   {
+   "id": 9473,
    "name": "Lukas Kübler",
    "team": "SC Freiburg",
    "position": "Defender",
@@ -3244,6 +3566,7 @@
    "tier": 3
   },
   {
+   "id": 9477,
    "name": "Philipp Lienhart",
    "team": "SC Freiburg",
    "position": "Defender",
@@ -3254,6 +3577,7 @@
    "tier": 2
   },
   {
+   "id": 24097,
    "name": "Anthony Jung",
    "team": "SC Freiburg",
    "position": "Defender",
@@ -3264,6 +3588,7 @@
    "tier": 3
   },
   {
+   "id": 122651,
    "name": "Philipp Treu",
    "team": "SC Freiburg",
    "position": "Defender",
@@ -3274,6 +3599,7 @@
    "tier": 2
   },
   {
+   "id": 171186,
    "name": "Jordy Makengo",
    "team": "SC Freiburg",
    "position": "Defender",
@@ -3284,6 +3610,7 @@
    "tier": 3
   },
   {
+   "id": 171203,
    "name": "Max Rosenfelder",
    "team": "SC Freiburg",
    "position": "Defender",
@@ -3294,6 +3621,7 @@
    "tier": 3
   },
   {
+   "id": 229272,
    "name": "Ifechukwu Ogbus",
    "team": "SC Freiburg",
    "position": "Defender",
@@ -3304,6 +3632,7 @@
    "tier": 2
   },
   {
+   "id": 230514,
    "name": "Berkay Yılmaz",
    "team": "SC Freiburg",
    "position": "Defender",
@@ -3314,6 +3643,7 @@
    "tier": 3
   },
   {
+   "id": 9452,
    "name": "Maximilian Eggestein",
    "team": "SC Freiburg",
    "position": "Midfielder",
@@ -3324,6 +3654,7 @@
    "tier": 2
   },
   {
+   "id": 114219,
    "name": "Rihito Yamamoto",
    "team": "SC Freiburg",
    "position": "Midfielder",
@@ -3334,6 +3665,7 @@
    "tier": 3
   },
   {
+   "id": 120962,
    "name": "Patrick Osterhage",
    "team": "SC Freiburg",
    "position": "Midfielder",
@@ -3344,6 +3676,7 @@
    "tier": 2
   },
   {
+   "id": 123277,
    "name": "Yannik Engelhardt",
    "team": "SC Freiburg",
    "position": "Midfielder",
@@ -3354,6 +3687,7 @@
    "tier": 2
   },
   {
+   "id": 280416,
    "name": "Rouven Tarnutzer",
    "team": "SC Freiburg",
    "position": "Midfielder",
@@ -3364,6 +3698,7 @@
    "tier": 3
   },
   {
+   "id": 6484,
    "name": "Jan-Niklas Beste",
    "team": "SC Freiburg",
    "position": "Midfielder",
@@ -3374,6 +3709,7 @@
    "tier": 2
   },
   {
+   "id": 6686,
    "name": "Vincenzo Grifo",
    "team": "SC Freiburg",
    "position": "Midfielder",
@@ -3384,6 +3720,7 @@
    "tier": 3
   },
   {
+   "id": 6884,
    "name": "Florent Muslija",
    "team": "SC Freiburg",
    "position": "Forward",
@@ -3394,6 +3731,7 @@
    "tier": 3
   },
   {
+   "id": 9501,
    "name": "Lucas Höler",
    "team": "SC Freiburg",
    "position": "Forward",
@@ -3404,6 +3742,7 @@
    "tier": 3
   },
   {
+   "id": 145293,
    "name": "Yuito Suzuki",
    "team": "SC Freiburg",
    "position": "Midfielder",
@@ -3414,6 +3753,7 @@
    "tier": 2
   },
   {
+   "id": 156629,
    "name": "Igor Matanovic",
    "team": "SC Freiburg",
    "position": "Forward",
@@ -3424,16 +3764,18 @@
    "tier": 2
   },
   {
+   "id": 175704,
    "name": "Derry Scherhant",
    "team": "SC Freiburg",
    "position": "Forward",
-   "age": 23,
+   "age": 24,
    "number": 7,
    "nationality": "Germany",
    "photo": "https://media.api-sports.io/football/players/286710.png",
    "tier": 2
   },
   {
+   "id": 265186,
    "name": "Cyriaque Irié",
    "team": "SC Freiburg",
    "position": "Midfielder",
@@ -3444,6 +3786,7 @@
    "tier": 2
   },
   {
+   "id": 274204,
    "name": "Keisuke Goto",
    "team": "SC Freiburg",
    "position": "Forward",
@@ -3454,6 +3797,7 @@
    "tier": 2
   },
   {
+   "id": 6667,
    "name": "Tobias Sippel",
    "team": "Borussia Mönchengladbach",
    "position": "Goalkeeper",
@@ -3464,6 +3808,7 @@
    "tier": 3
   },
   {
+   "id": 6668,
    "name": "Moritz Nicolas",
    "team": "Borussia Mönchengladbach",
    "position": "Goalkeeper",
@@ -3474,6 +3819,7 @@
    "tier": 2
   },
   {
+   "id": 6985,
    "name": "Daniel Batz",
    "team": "Borussia Mönchengladbach",
    "position": "Goalkeeper",
@@ -3484,16 +3830,18 @@
    "tier": 3
   },
   {
+   "id": 97458,
    "name": "Jan Jakob Olschowsky",
    "team": "Borussia Mönchengladbach",
    "position": "Goalkeeper",
-   "age": 24,
+   "age": 25,
    "number": 23,
    "nationality": "Germany",
    "photo": "https://media.api-sports.io/football/players/178405.png",
    "tier": 3
   },
   {
+   "id": 7464,
    "name": "Kevin Diks",
    "team": "Borussia Mönchengladbach",
    "position": "Defender",
@@ -3504,6 +3852,7 @@
    "tier": 3
   },
   {
+   "id": 48834,
    "name": "Daiki Hashioka",
    "team": "Borussia Mönchengladbach",
    "position": "Defender",
@@ -3514,6 +3863,7 @@
    "tier": 3
   },
   {
+   "id": 48902,
    "name": "Ko Itakura",
    "team": "Borussia Mönchengladbach",
    "position": "Defender",
@@ -3524,6 +3874,7 @@
    "tier": 2
   },
   {
+   "id": 82442,
    "name": "Joseph Scally",
    "team": "Borussia Mönchengladbach",
    "position": "Midfielder",
@@ -3534,6 +3885,7 @@
    "tier": 2
   },
   {
+   "id": 172145,
    "name": "Yukhym Konoplya",
    "team": "Borussia Mönchengladbach",
    "position": "Defender",
@@ -3544,6 +3896,7 @@
    "tier": 3
   },
   {
+   "id": 176307,
    "name": "Fabio Chiarodia",
    "team": "Borussia Mönchengladbach",
    "position": "Defender",
@@ -3554,6 +3907,7 @@
    "tier": 3
   },
   {
+   "id": 182382,
    "name": "David Herold",
    "team": "Borussia Mönchengladbach",
    "position": "Defender",
@@ -3564,6 +3918,7 @@
    "tier": 3
   },
   {
+   "id": 187273,
    "name": "Lukas Ullrich",
    "team": "Borussia Mönchengladbach",
    "position": "Midfielder",
@@ -3574,6 +3929,7 @@
    "tier": 3
   },
   {
+   "id": 254363,
    "name": "Jan Leszczyński",
    "team": "Borussia Mönchengladbach",
    "position": "Defender",
@@ -3584,6 +3940,7 @@
    "tier": 3
   },
   {
+   "id": 9522,
    "name": "Florian Neuhaus",
    "team": "Borussia Mönchengladbach",
    "position": "Midfielder",
@@ -3594,6 +3951,7 @@
    "tier": 3
   },
   {
+   "id": 9999,
    "name": "Kevin Stöger",
    "team": "Borussia Mönchengladbach",
    "position": "Midfielder",
@@ -3604,6 +3962,7 @@
    "tier": 3
   },
   {
+   "id": 72392,
    "name": "Philipp Sander",
    "team": "Borussia Mönchengladbach",
    "position": "Defender",
@@ -3614,6 +3973,7 @@
    "tier": 3
   },
   {
+   "id": 122654,
    "name": "Enzo Leopold",
    "team": "Borussia Mönchengladbach",
    "position": "Midfielder",
@@ -3624,6 +3984,7 @@
    "tier": 3
   },
   {
+   "id": 151888,
    "name": "Jens Castrop",
    "team": "Borussia Mönchengladbach",
    "position": "Midfielder",
@@ -3634,16 +3995,18 @@
    "tier": 2
   },
   {
+   "id": 246946,
    "name": "Zento Uno",
    "team": "Borussia Mönchengladbach",
    "position": "Midfielder",
-   "age": 22,
+   "age": 23,
    "number": 47,
    "nationality": "Japan",
    "photo": "https://media.api-sports.io/football/players/351084.png",
    "tier": 3
   },
   {
+   "id": 270641,
    "name": "Fritz Fleck",
    "team": "Borussia Mönchengladbach",
    "position": "Midfielder",
@@ -3654,6 +4017,7 @@
    "tier": 3
   },
   {
+   "id": 282450,
    "name": "Wael Mohya",
    "team": "Borussia Mönchengladbach",
    "position": "Midfielder",
@@ -3664,6 +4028,7 @@
    "tier": 2
   },
   {
+   "id": 282593,
    "name": "Mathieu Nguefack",
    "team": "Borussia Mönchengladbach",
    "position": "Midfielder",
@@ -3674,6 +4039,7 @@
    "tier": 3
   },
   {
+   "id": 400,
    "name": "Robin Hack",
    "team": "Borussia Mönchengladbach",
    "position": "Midfielder",
@@ -3684,6 +4050,7 @@
    "tier": 2
   },
   {
+   "id": 727,
    "name": "Franck Honorat",
    "team": "Borussia Mönchengladbach",
    "position": "Midfielder",
@@ -3694,6 +4061,7 @@
    "tier": 2
   },
   {
+   "id": 9499,
    "name": "Tim Kleindienst",
    "team": "Borussia Mönchengladbach",
    "position": "Forward",
@@ -3704,6 +4072,7 @@
    "tier": 2
   },
   {
+   "id": 44463,
    "name": "Isac Lidberg",
    "team": "Borussia Mönchengladbach",
    "position": "Forward",
@@ -3714,6 +4083,7 @@
    "tier": 3
   },
   {
+   "id": 62913,
    "name": "Tomáš Čvančara",
    "team": "Borussia Mönchengladbach",
    "position": "Forward",
@@ -3724,6 +4094,7 @@
    "tier": 3
   },
   {
+   "id": 67902,
    "name": "Nicolas Kühn",
    "team": "Borussia Mönchengladbach",
    "position": "Forward",
@@ -3734,6 +4105,7 @@
    "tier": 2
   },
   {
+   "id": 188201,
    "name": "Hugo Bolin",
    "team": "Borussia Mönchengladbach",
    "position": "Midfielder",
@@ -3744,6 +4116,7 @@
    "tier": 3
   },
   {
+   "id": 189850,
    "name": "Shuto Machino",
    "team": "Borussia Mönchengladbach",
    "position": "Forward",
@@ -3754,6 +4127,7 @@
    "tier": 3
   },
   {
+   "id": 287515,
    "name": "Iaia Danfa",
    "team": "Borussia Mönchengladbach",
    "position": "Forward",
@@ -3764,6 +4138,7 @@
    "tier": 3
   },
   {
+   "id": 9387,
    "name": "Jens Grahl",
    "team": "Eintracht Frankfurt",
    "position": "Goalkeeper",
@@ -3774,6 +4149,7 @@
    "tier": 3
   },
   {
+   "id": 123287,
    "name": "Noah Atubolu",
    "team": "Eintracht Frankfurt",
    "position": "Goalkeeper",
@@ -3784,6 +4160,7 @@
    "tier": 2
   },
   {
+   "id": 189482,
    "name": "Kauã Santos",
    "team": "Eintracht Frankfurt",
    "position": "Goalkeeper",
@@ -3794,6 +4171,7 @@
    "tier": 2
   },
   {
+   "id": 273124,
    "name": "Amil Siljevic",
    "team": "Eintracht Frankfurt",
    "position": "Goalkeeper",
@@ -3804,6 +4182,7 @@
    "tier": 3
   },
   {
+   "id": 6701,
    "name": "Timmy Chandler",
    "team": "Eintracht Frankfurt",
    "position": "Defender",
@@ -3814,6 +4193,7 @@
    "tier": 3
   },
   {
+   "id": 9479,
    "name": "Robin Koch",
    "team": "Eintracht Frankfurt",
    "position": "Defender",
@@ -3824,6 +4204,7 @@
    "tier": 2
   },
   {
+   "id": 123200,
    "name": "Lilian Brassier",
    "team": "Eintracht Frankfurt",
    "position": "Defender",
@@ -3834,6 +4215,7 @@
    "tier": 2
   },
   {
+   "id": 171714,
    "name": "Nnamdi Collins",
    "team": "Eintracht Frankfurt",
    "position": "Defender",
@@ -3844,6 +4226,7 @@
    "tier": 2
   },
   {
+   "id": 213880,
    "name": "Elias Baum",
    "team": "Eintracht Frankfurt",
    "position": "Defender",
@@ -3854,6 +4237,7 @@
    "tier": 3
   },
   {
+   "id": 249811,
    "name": "Keita Kosugi",
    "team": "Eintracht Frankfurt",
    "position": "Defender",
@@ -3864,6 +4248,7 @@
    "tier": 3
   },
   {
+   "id": 277674,
    "name": "Otávio",
    "team": "Eintracht Frankfurt",
    "position": "Defender",
@@ -3874,6 +4259,7 @@
    "tier": 3
   },
   {
+   "id": 140,
    "name": "Mario Götze",
    "team": "Eintracht Frankfurt",
    "position": "Midfielder",
@@ -3884,6 +4270,7 @@
    "tier": 3
   },
   {
+   "id": 170776,
    "name": "Raphael Onyedika",
    "team": "Eintracht Frankfurt",
    "position": "Midfielder",
@@ -3894,6 +4281,7 @@
    "tier": 2
   },
   {
+   "id": 178658,
    "name": "Fares Chaïbi",
    "team": "Eintracht Frankfurt",
    "position": "Midfielder",
@@ -3904,16 +4292,18 @@
    "tier": 2
   },
   {
+   "id": 193605,
    "name": "Can Uzun",
    "team": "Eintracht Frankfurt",
    "position": "Midfielder",
-   "age": 20,
+   "age": 21,
    "number": 42,
    "nationality": "Turkey",
    "photo": "https://media.api-sports.io/football/players/339887.png",
    "tier": 1
   },
   {
+   "id": 202588,
    "name": "Noel Aseko Nkili",
    "team": "Eintracht Frankfurt",
    "position": "Midfielder",
@@ -3924,6 +4314,7 @@
    "tier": 3
   },
   {
+   "id": 205537,
    "name": "Oscar Højlund",
    "team": "Eintracht Frankfurt",
    "position": "Midfielder",
@@ -3934,6 +4325,7 @@
    "tier": 2
   },
   {
+   "id": 275141,
    "name": "Love Arrhov",
    "team": "Eintracht Frankfurt",
    "position": "Midfielder",
@@ -3944,6 +4336,7 @@
    "tier": 3
   },
   {
+   "id": 7531,
    "name": "Ritsu Doan",
    "team": "Eintracht Frankfurt",
    "position": "Midfielder",
@@ -3954,6 +4347,7 @@
    "tier": 2
   },
   {
+   "id": 82404,
    "name": "Jonathan Burkardt",
    "team": "Eintracht Frankfurt",
    "position": "Forward",
@@ -3964,6 +4358,7 @@
    "tier": 1
   },
   {
+   "id": 123049,
    "name": "Jessic Ngankam",
    "team": "Eintracht Frankfurt",
    "position": "Forward",
@@ -3974,6 +4369,7 @@
    "tier": 3
   },
   {
+   "id": 150860,
    "name": "Ansgar Knauff",
    "team": "Eintracht Frankfurt",
    "position": "Forward",
@@ -3984,6 +4380,7 @@
    "tier": 2
   },
   {
+   "id": 192207,
    "name": "Younes Ebnoutalib",
    "team": "Eintracht Frankfurt",
    "position": "Forward",
@@ -3994,6 +4391,7 @@
    "tier": 2
   },
   {
+   "id": 261438,
    "name": "Ayoube Amaimouni-Echghouyab",
    "team": "Eintracht Frankfurt",
    "position": "Forward",
@@ -4004,6 +4402,7 @@
    "tier": 2
   },
   {
+   "id": 291037,
    "name": "Malik Pimpong",
    "team": "Eintracht Frankfurt",
    "position": "Forward",
@@ -4014,6 +4413,7 @@
    "tier": 3
   },
   {
+   "id": 302824,
    "name": "Niko Iličević",
    "team": "Eintracht Frankfurt",
    "position": "Midfielder",
@@ -4024,6 +4424,7 @@
    "tier": 3
   },
   {
+   "id": 3450,
    "name": "Frederik Rønnow",
    "team": "Union Berlin",
    "position": "Goalkeeper",
@@ -4034,6 +4435,7 @@
    "tier": 3
   },
   {
+   "id": 50717,
    "name": "Carl Klaus",
    "team": "Union Berlin",
    "position": "Goalkeeper",
@@ -4044,6 +4446,7 @@
    "tier": 3
   },
   {
+   "id": 144395,
    "name": "Matheo Raab",
    "team": "Union Berlin",
    "position": "Goalkeeper",
@@ -4054,6 +4457,7 @@
    "tier": 3
   },
   {
+   "id": 6825,
    "name": "Marvin Friedrich",
    "team": "Union Berlin",
    "position": "Defender",
@@ -4064,6 +4468,7 @@
    "tier": 3
   },
   {
+   "id": 6828,
    "name": "Christopher Trimmel",
    "team": "Union Berlin",
    "position": "Defender",
@@ -4074,6 +4479,7 @@
    "tier": 3
   },
   {
+   "id": 9430,
    "name": "Ohis Uduokhai",
    "team": "Union Berlin",
    "position": "Defender",
@@ -4084,6 +4490,7 @@
    "tier": 3
   },
   {
+   "id": 23202,
    "name": "Josip Juranović",
    "team": "Union Berlin",
    "position": "Defender",
@@ -4094,6 +4501,7 @@
    "tier": 3
   },
   {
+   "id": 64934,
    "name": "Derrick Köhn",
    "team": "Union Berlin",
    "position": "Midfielder",
@@ -4104,6 +4512,7 @@
    "tier": 3
   },
   {
+   "id": 152811,
    "name": "Leopold Querfeld",
    "team": "Union Berlin",
    "position": "Defender",
@@ -4114,6 +4523,7 @@
    "tier": 2
   },
   {
+   "id": 171757,
    "name": "Tom Rothe",
    "team": "Union Berlin",
    "position": "Defender",
@@ -4124,6 +4534,7 @@
    "tier": 2
   },
   {
+   "id": 171936,
    "name": "Zeno Van Den Bosch",
    "team": "Union Berlin",
    "position": "Defender",
@@ -4134,6 +4545,7 @@
    "tier": 3
   },
   {
+   "id": 203039,
    "name": "Stanley N'Soki",
    "team": "Union Berlin",
    "position": "Defender",
@@ -4144,6 +4556,7 @@
    "tier": 3
   },
   {
+   "id": 279839,
    "name": "Andrik Markgraf",
    "team": "Union Berlin",
    "position": "Defender",
@@ -4154,6 +4567,7 @@
    "tier": 3
   },
   {
+   "id": 6657,
    "name": "Rani Khedira",
    "team": "Union Berlin",
    "position": "Defender",
@@ -4164,6 +4578,7 @@
    "tier": 3
   },
   {
+   "id": 9489,
    "name": "Janik Haberer",
    "team": "Union Berlin",
    "position": "Midfielder",
@@ -4174,6 +4589,7 @@
    "tier": 3
   },
   {
+   "id": 10195,
    "name": "Robert Skov",
    "team": "Union Berlin",
    "position": "Midfielder",
@@ -4184,6 +4600,7 @@
    "tier": 3
   },
   {
+   "id": 16265,
    "name": "Michel Aebischer",
    "team": "Union Berlin",
    "position": "Midfielder",
@@ -4194,6 +4611,7 @@
    "tier": 3
   },
   {
+   "id": 50358,
    "name": "Kastriot Imeri",
    "team": "Union Berlin",
    "position": "Midfielder",
@@ -4204,6 +4622,7 @@
    "tier": 3
   },
   {
+   "id": 72117,
    "name": "András Schafer",
    "team": "Union Berlin",
    "position": "Midfielder",
@@ -4214,6 +4633,7 @@
    "tier": 3
   },
   {
+   "id": 72432,
    "name": "Jeong Wooyeong",
    "team": "Union Berlin",
    "position": "Midfielder",
@@ -4224,6 +4644,7 @@
    "tier": 3
   },
   {
+   "id": 188299,
    "name": "Aljoscha Kemlein",
    "team": "Union Berlin",
    "position": "Midfielder",
@@ -4234,6 +4655,7 @@
    "tier": 2
   },
   {
+   "id": 1858,
    "name": "Emmanuel Latte Lath",
    "team": "Union Berlin",
    "position": "Forward",
@@ -4244,6 +4666,7 @@
    "tier": 2
   },
   {
+   "id": 7029,
    "name": "Tim Skarke",
    "team": "Union Berlin",
    "position": "Forward",
@@ -4254,6 +4677,7 @@
    "tier": 3
   },
   {
+   "id": 8027,
    "name": "Oliver Burke",
    "team": "Union Berlin",
    "position": "Forward",
@@ -4264,6 +4688,7 @@
    "tier": 3
   },
   {
+   "id": 182886,
    "name": "Andrej Ilic",
    "team": "Union Berlin",
    "position": "Forward",
@@ -4274,6 +4699,7 @@
    "tier": 2
   },
   {
+   "id": 186485,
    "name": "Marin Ljubicic",
    "team": "Union Berlin",
    "position": "Forward",
@@ -4284,6 +4710,7 @@
    "tier": 3
   },
   {
+   "id": 212285,
    "name": "Livan Burcu",
    "team": "Union Berlin",
    "position": "Forward",
@@ -4294,16 +4721,18 @@
    "tier": 3
   },
   {
+   "id": 291245,
    "name": "Julien Friedrich",
    "team": "Union Berlin",
    "position": "Forward",
-   "age": 19,
+   "age": 20,
    "number": 38,
    "nationality": "Germany",
    "photo": "https://media.api-sports.io/football/players/592161.png",
    "tier": 3
   },
   {
+   "id": 294498,
    "name": "Linus Güther",
    "team": "Union Berlin",
    "position": "Forward",
@@ -4314,6 +4743,7 @@
    "tier": 3
   },
   {
+   "id": 296855,
    "name": "Mekhi Gray",
    "team": "Union Berlin",
    "position": "Forward",
@@ -4324,6 +4754,7 @@
    "tier": 3
   },
   {
+   "id": 9956,
    "name": "Markus Schubert",
    "team": "SC Paderborn 07",
    "position": "Goalkeeper",
@@ -4334,6 +4765,7 @@
    "tier": 3
   },
   {
+   "id": 169319,
    "name": "Nahuel Noll",
    "team": "SC Paderborn 07",
    "position": "Goalkeeper",
@@ -4344,6 +4776,7 @@
    "tier": 3
   },
   {
+   "id": 211744,
    "name": "Florian Pruhs",
    "team": "SC Paderborn 07",
    "position": "Goalkeeper",
@@ -4354,6 +4787,7 @@
    "tier": 3
   },
   {
+   "id": 364,
    "name": "Felix Götze",
    "team": "SC Paderborn 07",
    "position": "Defender",
@@ -4364,6 +4798,7 @@
    "tier": 3
   },
   {
+   "id": 75842,
    "name": "Marcel Hoffmeier",
    "team": "SC Paderborn 07",
    "position": "Defender",
@@ -4374,6 +4809,7 @@
    "tier": 3
   },
   {
+   "id": 189255,
    "name": "Tjark Scheller",
    "team": "SC Paderborn 07",
    "position": "Defender",
@@ -4384,6 +4820,7 @@
    "tier": 3
   },
   {
+   "id": 206530,
    "name": "Jano ter Horst",
    "team": "SC Paderborn 07",
    "position": "Defender",
@@ -4394,6 +4831,7 @@
    "tier": 3
   },
   {
+   "id": 211743,
    "name": "Mattes Hansen",
    "team": "SC Paderborn 07",
    "position": "Defender",
@@ -4404,6 +4842,7 @@
    "tier": 3
   },
   {
+   "id": 212240,
    "name": "Tristan Zobel",
    "team": "SC Paderborn 07",
    "position": "Defender",
@@ -4414,6 +4853,7 @@
    "tier": 3
   },
   {
+   "id": 212299,
    "name": "Jonah Sticker",
    "team": "SC Paderborn 07",
    "position": "Defender",
@@ -4424,6 +4864,7 @@
    "tier": 3
   },
   {
+   "id": 213866,
    "name": "Nyamekye Awortwie-Grant",
    "team": "SC Paderborn 07",
    "position": "Defender",
@@ -4434,6 +4875,7 @@
    "tier": 3
   },
   {
+   "id": 261457,
    "name": "Ruben Müller",
    "team": "SC Paderborn 07",
    "position": "Defender",
@@ -4444,6 +4886,7 @@
    "tier": 3
   },
   {
+   "id": 9993,
    "name": "Tom Baack",
    "team": "SC Paderborn 07",
    "position": "Midfielder",
@@ -4454,6 +4897,7 @@
    "tier": 3
   },
   {
+   "id": 10554,
    "name": "Sebastian Klaas",
    "team": "SC Paderborn 07",
    "position": "Midfielder",
@@ -4464,6 +4908,7 @@
    "tier": 3
   },
   {
+   "id": 64933,
    "name": "Raphael Obermair",
    "team": "SC Paderborn 07",
    "position": "Midfielder",
@@ -4474,6 +4919,7 @@
    "tier": 3
   },
   {
+   "id": 75793,
    "name": "Timur Gayret",
    "team": "SC Paderborn 07",
    "position": "Midfielder",
@@ -4484,6 +4930,7 @@
    "tier": 3
   },
   {
+   "id": 117718,
    "name": "Laurin Curda",
    "team": "SC Paderborn 07",
    "position": "Midfielder",
@@ -4494,6 +4941,7 @@
    "tier": 3
   },
   {
+   "id": 186092,
    "name": "Laurin Ulrich",
    "team": "SC Paderborn 07",
    "position": "Midfielder",
@@ -4504,16 +4952,18 @@
    "tier": 3
   },
   {
+   "id": 212291,
    "name": "Santiago Castaneda",
    "team": "SC Paderborn 07",
    "position": "Midfielder",
-   "age": 21,
+   "age": 22,
    "number": 5,
    "nationality": "USA",
    "photo": "https://media.api-sports.io/football/players/363156.png",
    "tier": 3
   },
   {
+   "id": 220226,
    "name": "Luka Đurić",
    "team": "SC Paderborn 07",
    "position": "Midfielder",
@@ -4524,6 +4974,7 @@
    "tier": 3
   },
   {
+   "id": 273649,
    "name": "Clemens Lippmann",
    "team": "SC Paderborn 07",
    "position": "Defender",
@@ -4534,6 +4985,7 @@
    "tier": 3
   },
   {
+   "id": 279149,
    "name": "Niklas Mohr",
    "team": "SC Paderborn 07",
    "position": "Midfielder",
@@ -4544,6 +4996,7 @@
    "tier": 3
   },
   {
+   "id": 10561,
    "name": "Steffen Tigges",
    "team": "SC Paderborn 07",
    "position": "Forward",
@@ -4554,6 +5007,7 @@
    "tier": 3
   },
   {
+   "id": 45590,
    "name": "Sven Michel",
    "team": "SC Paderborn 07",
    "position": "Forward",
@@ -4564,6 +5018,7 @@
    "tier": 3
   },
   {
+   "id": 72437,
    "name": "Oliver Batista-Meier",
    "team": "SC Paderborn 07",
    "position": "Forward",
@@ -4574,6 +5029,7 @@
    "tier": 3
   },
   {
+   "id": 75545,
    "name": "Marvin Pieringer",
    "team": "SC Paderborn 07",
    "position": "Forward",
@@ -4584,6 +5040,7 @@
    "tier": 3
   },
   {
+   "id": 125686,
    "name": "Rayan Philippe",
    "team": "SC Paderborn 07",
    "position": "Forward",
@@ -4594,6 +5051,7 @@
    "tier": 3
   },
   {
+   "id": 171069,
    "name": "Gabriel Vidovic",
    "team": "SC Paderborn 07",
    "position": "Midfielder",
@@ -4604,6 +5062,7 @@
    "tier": 3
   },
   {
+   "id": 176617,
    "name": "Stefano Marino",
    "team": "SC Paderborn 07",
    "position": "Forward",
@@ -4614,6 +5073,7 @@
    "tier": 3
   },
   {
+   "id": 230352,
    "name": "Deniz Zeitler",
    "team": "SC Paderborn 07",
    "position": "Forward",
@@ -4624,16 +5084,18 @@
    "tier": 3
   },
   {
+   "id": 280968,
    "name": "Albert Millgramm",
    "team": "SC Paderborn 07",
    "position": "Forward",
-   "age": 21,
+   "age": 22,
    "number": 19,
    "nationality": "Germany",
    "photo": "https://media.api-sports.io/football/players/573737.png",
    "tier": 3
   },
   {
+   "id": 292360,
    "name": "Lasse Eickel",
    "team": "SC Paderborn 07",
    "position": "Forward",
@@ -4644,6 +5106,7 @@
    "tier": 3
   },
   {
+   "id": 58262,
    "name": "Tim Boss",
    "team": "SV Elversberg",
    "position": "Goalkeeper",
@@ -4654,6 +5117,7 @@
    "tier": 3
   },
   {
+   "id": 65597,
    "name": "Frank Lehmann",
    "team": "SV Elversberg",
    "position": "Goalkeeper",
@@ -4664,6 +5128,7 @@
    "tier": 3
   },
   {
+   "id": 122627,
    "name": "Nicolas Kristof",
    "team": "SV Elversberg",
    "position": "Goalkeeper",
@@ -4674,6 +5139,7 @@
    "tier": 3
   },
   {
+   "id": 289386,
    "name": "Elias Etringer",
    "team": "SV Elversberg",
    "position": "Goalkeeper",
@@ -4684,6 +5150,7 @@
    "tier": 3
   },
   {
+   "id": 8322,
    "name": "Florian Le Joncour",
    "team": "SV Elversberg",
    "position": "Defender",
@@ -4694,6 +5161,7 @@
    "tier": 3
   },
   {
+   "id": 9991,
    "name": "Jan Gyamerah",
    "team": "SV Elversberg",
    "position": "Defender",
@@ -4704,6 +5172,7 @@
    "tier": 3
   },
   {
+   "id": 99503,
    "name": "Luca Sirch",
    "team": "SV Elversberg",
    "position": "Defender",
@@ -4714,6 +5183,7 @@
    "tier": 3
   },
   {
+   "id": 122251,
    "name": "Maximilian Rohr",
    "team": "SV Elversberg",
    "position": "Defender",
@@ -4724,6 +5194,7 @@
    "tier": 3
   },
   {
+   "id": 122869,
    "name": "Lukas Pinckert",
    "team": "SV Elversberg",
    "position": "Defender",
@@ -4734,6 +5205,7 @@
    "tier": 3
   },
   {
+   "id": 161523,
    "name": "Lasse Günther",
    "team": "SV Elversberg",
    "position": "Defender",
@@ -4744,6 +5216,7 @@
    "tier": 3
   },
   {
+   "id": 167297,
    "name": "Look Sa Nicholas Mickelson",
    "team": "SV Elversberg",
    "position": "Defender",
@@ -4754,6 +5227,7 @@
    "tier": 3
   },
   {
+   "id": 209671,
    "name": "Luis Seifert",
    "team": "SV Elversberg",
    "position": "Defender",
@@ -4764,6 +5238,7 @@
    "tier": 3
   },
   {
+   "id": 7077,
    "name": "Amara Condé",
    "team": "SV Elversberg",
    "position": "Midfielder",
@@ -4774,6 +5249,7 @@
    "tier": 3
   },
   {
+   "id": 105289,
    "name": "Łukasz Poręba",
    "team": "SV Elversberg",
    "position": "Midfielder",
@@ -4784,6 +5260,7 @@
    "tier": 3
   },
   {
+   "id": 171668,
    "name": "Frederik Schmahl",
    "team": "SV Elversberg",
    "position": "Midfielder",
@@ -4794,6 +5271,7 @@
    "tier": 3
   },
   {
+   "id": 182225,
    "name": "Felix Keidel",
    "team": "SV Elversberg",
    "position": "Midfielder",
@@ -4804,6 +5282,7 @@
    "tier": 3
   },
   {
+   "id": 212314,
    "name": "Noah Darvich",
    "team": "SV Elversberg",
    "position": "Midfielder",
@@ -4814,6 +5293,7 @@
    "tier": 3
   },
   {
+   "id": 245832,
    "name": "Francis Onyeka",
    "team": "SV Elversberg",
    "position": "Midfielder",
@@ -4824,6 +5304,7 @@
    "tier": 3
   },
   {
+   "id": 58286,
    "name": "Luca Schnellbacher",
    "team": "SV Elversberg",
    "position": "Midfielder",
@@ -4834,6 +5315,7 @@
    "tier": 3
   },
   {
+   "id": 65047,
    "name": "Tom Zimmerschied",
    "team": "SV Elversberg",
    "position": "Forward",
@@ -4844,6 +5326,7 @@
    "tier": 3
   },
   {
+   "id": 65567,
    "name": "Luca Pfeiffer",
    "team": "SV Elversberg",
    "position": "Forward",
@@ -4854,6 +5337,7 @@
    "tier": 3
   },
   {
+   "id": 98330,
    "name": "Lukas Petkov",
    "team": "SV Elversberg",
    "position": "Midfielder",
@@ -4864,16 +5348,18 @@
    "tier": 3
   },
   {
+   "id": 121181,
    "name": "Jason Ceka",
    "team": "SV Elversberg",
    "position": "Forward",
-   "age": 26,
+   "age": 27,
    "number": null,
    "nationality": "Germany",
    "photo": null,
    "tier": 3
   },
   {
+   "id": 140191,
    "name": "Noel Futkeu",
    "team": "SV Elversberg",
    "position": "Forward",
@@ -4884,6 +5370,7 @@
    "tier": 3
   },
   {
+   "id": 183780,
    "name": "Maurice Krattenmacher",
    "team": "SV Elversberg",
    "position": "Forward",
@@ -4894,6 +5381,7 @@
    "tier": 3
   },
   {
+   "id": 213737,
    "name": "David Mokwa Ntusu",
    "team": "SV Elversberg",
    "position": "Forward",
@@ -4904,6 +5392,7 @@
    "tier": 3
   },
   {
+   "id": 265182,
    "name": "Cole Campbell",
    "team": "SV Elversberg",
    "position": "Forward",
@@ -4914,6 +5403,7 @@
    "tier": 3
   },
   {
+   "id": 280230,
    "name": "Raif Adam",
    "team": "SV Elversberg",
    "position": "Forward",
@@ -4924,6 +5414,7 @@
    "tier": 3
   },
   {
+   "id": 6843,
    "name": "Ørjan Nyland",
    "team": "RB Leipzig",
    "position": "Goalkeeper",
@@ -4934,6 +5425,7 @@
    "tier": 3
   },
   {
+   "id": 45569,
    "name": "Leopold Zingerle",
    "team": "RB Leipzig",
    "position": "Goalkeeper",
@@ -4944,6 +5436,7 @@
    "tier": 3
   },
   {
+   "id": 75739,
    "name": "Maarten Vandevoordt",
    "team": "RB Leipzig",
    "position": "Goalkeeper",
@@ -4954,6 +5447,7 @@
    "tier": 2
   },
   {
+   "id": 156,
    "name": "Benjamin Henrichs",
    "team": "RB Leipzig",
    "position": "Defender",
@@ -4964,6 +5458,7 @@
    "tier": 2
   },
   {
+   "id": 6634,
    "name": "Ridle Baku",
    "team": "RB Leipzig",
    "position": "Defender",
@@ -4974,6 +5469,7 @@
    "tier": 2
   },
   {
+   "id": 9536,
    "name": "Lukas Klostermann",
    "team": "RB Leipzig",
    "position": "Defender",
@@ -4984,6 +5480,7 @@
    "tier": 3
   },
   {
+   "id": 9537,
    "name": "Willi Orban",
    "team": "RB Leipzig",
    "position": "Defender",
@@ -4994,6 +5491,7 @@
    "tier": 3
   },
   {
+   "id": 9905,
    "name": "David Raum",
    "team": "RB Leipzig",
    "position": "Defender",
@@ -5004,6 +5502,7 @@
    "tier": 2
   },
   {
+   "id": 171405,
    "name": "Castello Lukeba",
    "team": "RB Leipzig",
    "position": "Defender",
@@ -5014,6 +5513,7 @@
    "tier": 1
   },
   {
+   "id": 175784,
    "name": "Maxime Estève",
    "team": "RB Leipzig",
    "position": "Defender",
@@ -5024,6 +5524,7 @@
    "tier": 2
   },
   {
+   "id": 214538,
    "name": "Max Finkgräfe",
    "team": "RB Leipzig",
    "position": "Defender",
@@ -5034,6 +5535,7 @@
    "tier": 3
   },
   {
+   "id": 251244,
    "name": "Abdoul Koné",
    "team": "RB Leipzig",
    "position": "Defender",
@@ -5044,6 +5546,7 @@
    "tier": 3
   },
   {
+   "id": 56829,
    "name": "Christoph Baumgartner",
    "team": "RB Leipzig",
    "position": "Midfielder",
@@ -5054,6 +5557,7 @@
    "tier": 1
   },
   {
+   "id": 113038,
    "name": "Nicolas  Seiwald",
    "team": "RB Leipzig",
    "position": "Midfielder",
@@ -5064,6 +5568,7 @@
    "tier": 2
   },
   {
+   "id": 150517,
    "name": "Rocco Reitz",
    "team": "RB Leipzig",
    "position": "Midfielder",
@@ -5074,6 +5579,7 @@
    "tier": 2
   },
   {
+   "id": 170647,
    "name": "Neil El Aynaoui",
    "team": "RB Leipzig",
    "position": "Midfielder",
@@ -5084,6 +5590,7 @@
    "tier": 2
   },
   {
+   "id": 175951,
    "name": "Ezechiel Banzuzi",
    "team": "RB Leipzig",
    "position": "Midfielder",
@@ -5094,6 +5601,7 @@
    "tier": 2
   },
   {
+   "id": 184146,
    "name": "Arthur Vermeeren",
    "team": "RB Leipzig",
    "position": "Midfielder",
@@ -5104,6 +5612,7 @@
    "tier": 2
   },
   {
+   "id": 191102,
    "name": "Brajan Gruda",
    "team": "RB Leipzig",
    "position": "Forward",
@@ -5114,6 +5623,7 @@
    "tier": 2
   },
   {
+   "id": 212636,
    "name": "Assan Ouédraogo",
    "team": "RB Leipzig",
    "position": "Midfielder",
@@ -5124,6 +5634,7 @@
    "tier": 1
   },
   {
+   "id": 227045,
    "name": "Andrija Maksimović",
    "team": "RB Leipzig",
    "position": "Midfielder",
@@ -5134,6 +5645,7 @@
    "tier": 2
   },
   {
+   "id": 264272,
    "name": "Viggo Gebel",
    "team": "RB Leipzig",
    "position": "Midfielder",
@@ -5144,6 +5656,7 @@
    "tier": 3
   },
   {
+   "id": 289807,
    "name": "Benno Kaltefleiter",
    "team": "RB Leipzig",
    "position": "Midfielder",
@@ -5154,16 +5667,18 @@
    "tier": 3
   },
   {
+   "id": 8484,
    "name": "Christopher Nkunku",
    "team": "RB Leipzig",
    "position": "Forward",
-   "age": 28,
+   "age": 29,
    "number": 28,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/269.png",
    "tier": 2
   },
   {
+   "id": 154110,
    "name": "Johan Bakayoko",
    "team": "RB Leipzig",
    "position": "Forward",
@@ -5174,6 +5689,7 @@
    "tier": 2
   },
   {
+   "id": 169295,
    "name": "Antonio Nusa",
    "team": "RB Leipzig",
    "position": "Forward",
@@ -5184,6 +5700,7 @@
    "tier": 1
   },
   {
+   "id": 178783,
    "name": "Romulo Cruz",
    "team": "RB Leipzig",
    "position": "Forward",
@@ -5194,6 +5711,7 @@
    "tier": 1
   },
   {
+   "id": 207109,
    "name": "Marc Guiu",
    "team": "RB Leipzig",
    "position": "Forward",
@@ -5204,6 +5722,7 @@
    "tier": 2
   },
   {
+   "id": 211796,
    "name": "Tidiam Gomis",
    "team": "RB Leipzig",
    "position": "Forward",
@@ -5214,6 +5733,7 @@
    "tier": 3
   },
   {
+   "id": 289697,
    "name": "Samba Konaté",
    "team": "RB Leipzig",
    "position": "Forward",
@@ -5224,6 +5744,7 @@
    "tier": 3
   },
   {
+   "id": 290739,
    "name": "Suleman Sani",
    "team": "RB Leipzig",
    "position": "Forward",

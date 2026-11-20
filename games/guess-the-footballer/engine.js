@@ -25,6 +25,7 @@ const requestedSeason = params.get('season');
 const difficulty = TARGET_TIERS[params.get('difficulty')] ? params.get('difficulty') : 'medium';
 
 let league, players, targetPool, targetPlayer;
+let lastRound = null; // what the result page and, later, the profile receive
 let guesses = [];
 const revealedHints = new Set();
 let roundOver = false;
@@ -91,6 +92,7 @@ function buildNavbar(manifest) {
 
 function startRound() {
     guesses = [];
+    lastRound = null;
     revealedHints.clear();
     roundOver = false;
     message = null;
@@ -265,8 +267,23 @@ function checkGuess() {
     render();
 }
 
+// The player's own calendar day, not the UTC one.
+function localDate() {
+    const now = new Date();
+    return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+}
+
 function endRound() {
     roundOver = true;
+    lastRound = createRound({
+        league: league.info.id,
+        season: league.seasonUsed,
+        difficulty,
+        date: localDate(),
+        hints: [...revealedHints],
+        target: targetPlayer,
+        guesses,
+    });
     inputBox.disabled = true;
     const restartButton = document.createElement('button');
     restartButton.className = 'primary-button';

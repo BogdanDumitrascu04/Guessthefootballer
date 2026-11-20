@@ -26,6 +26,7 @@
  },
  "players": [
   {
+   "id": 2476,
    "name": "Pietro Terracciano",
    "team": "AC Milan",
    "position": "Goalkeeper",
@@ -36,6 +37,7 @@
    "tier": 3
   },
   {
+   "id": 8390,
    "name": "Mike Maignan",
    "team": "AC Milan",
    "position": "Goalkeeper",
@@ -46,6 +48,7 @@
    "tier": 2
   },
   {
+   "id": 251128,
    "name": "Lorenzo Torriani",
    "team": "AC Milan",
    "position": "Goalkeeper",
@@ -56,6 +59,7 @@
    "tier": 3
   },
   {
+   "id": 1753,
    "name": "Matteo Gabbia",
    "team": "AC Milan",
    "position": "Defender",
@@ -66,6 +70,7 @@
    "tier": 2
   },
   {
+   "id": 11528,
    "name": "Fikayo Tomori",
    "team": "AC Milan",
    "position": "Defender",
@@ -76,6 +81,7 @@
    "tier": 2
   },
   {
+   "id": 32642,
    "name": "Pervis Estupiñán",
    "team": "AC Milan",
    "position": "Defender",
@@ -86,6 +92,7 @@
    "tier": 2
   },
   {
+   "id": 112969,
    "name": "Strahinja Pavlović",
    "team": "AC Milan",
    "position": "Defender",
@@ -96,6 +103,7 @@
    "tier": 1
   },
   {
+   "id": 144950,
    "name": "Filippo Terracciano",
    "team": "AC Milan",
    "position": "Defender",
@@ -106,6 +114,7 @@
    "tier": 3
   },
   {
+   "id": 153556,
    "name": "Koni De Winter",
    "team": "AC Milan",
    "position": "Defender",
@@ -116,6 +125,7 @@
    "tier": 2
   },
   {
+   "id": 180139,
    "name": "Gila",
    "team": "AC Milan",
    "position": "Defender",
@@ -126,6 +136,7 @@
    "tier": 2
   },
   {
+   "id": 215616,
    "name": "Davide Bartesaghi",
    "team": "AC Milan",
    "position": "Defender",
@@ -136,6 +147,7 @@
    "tier": 2
   },
   {
+   "id": 264215,
    "name": "Sankhoun Diawara",
    "team": "AC Milan",
    "position": "Defender",
@@ -146,6 +158,7 @@
    "tier": 3
   },
   {
+   "id": 43,
    "name": "Luka Modrić",
    "team": "AC Milan",
    "position": "Midfielder",
@@ -156,6 +169,7 @@
    "tier": 3
   },
   {
+   "id": 3368,
    "name": "Adrien Rabiot",
    "team": "AC Milan",
    "position": "Midfielder",
@@ -166,6 +180,7 @@
    "tier": 2
   },
   {
+   "id": 8159,
    "name": "Ruben Loftus-Cheek",
    "team": "AC Milan",
    "position": "Midfielder",
@@ -176,6 +191,7 @@
    "tier": 3
   },
   {
+   "id": 8858,
    "name": "Alexis Saelemaekers",
    "team": "AC Milan",
    "position": "Midfielder",
@@ -186,6 +202,7 @@
    "tier": 2
   },
   {
+   "id": 144909,
    "name": "Ardon Jasari",
    "team": "AC Milan",
    "position": "Midfielder",
@@ -196,6 +213,7 @@
    "tier": 2
   },
   {
+   "id": 150669,
    "name": "Yunus Musah",
    "team": "AC Milan",
    "position": "Midfielder",
@@ -206,6 +224,7 @@
    "tier": 2
   },
   {
+   "id": 156527,
    "name": "Warren Bondo",
    "team": "AC Milan",
    "position": "Midfielder",
@@ -216,6 +235,7 @@
    "tier": 3
   },
   {
+   "id": 182192,
    "name": "Diego Moreira",
    "team": "AC Milan",
    "position": "Forward",
@@ -226,6 +246,7 @@
    "tier": 2
   },
   {
+   "id": 192142,
    "name": "Alphadjo Cisse",
    "team": "AC Milan",
    "position": "Midfielder",
@@ -236,6 +257,7 @@
    "tier": 3
   },
   {
+   "id": 275197,
    "name": "Christian Comotto",
    "team": "AC Milan",
    "position": "Midfielder",
@@ -246,6 +268,7 @@
    "tier": 3
   },
   {
+   "id": 145,
    "name": "Christian Pulisic",
    "team": "AC Milan",
    "position": "Midfielder",
@@ -256,6 +279,7 @@
    "tier": 1
   },
   {
+   "id": 33124,
    "name": "Samuel Chukwueze",
    "team": "AC Milan",
    "position": "Forward",
@@ -266,6 +290,7 @@
    "tier": 2
   },
   {
+   "id": 101431,
    "name": "Gonçalo Ramos",
    "team": "AC Milan",
    "position": "Forward",
@@ -276,6 +301,7 @@
    "tier": 2
   },
   {
+   "id": 177477,
    "name": "Omari Hutchinson",
    "team": "AC Milan",
    "position": "Midfielder",
@@ -286,6 +312,7 @@
    "tier": 3
   },
   {
+   "id": 242550,
    "name": "Francesco Camarda",
    "team": "AC Milan",
    "position": "Forward",
@@ -296,6 +323,7 @@
    "tier": 2
   },
   {
+   "id": 302645,
    "name": "Lorenzo Ossola",
    "team": "AC Milan",
    "position": null,
@@ -306,6 +334,7 @@
    "tier": 3
   },
   {
+   "id": 302644,
    "name": "El Hadji Cissé",
    "team": "AC Milan",
    "position": "Defender",
@@ -316,6 +345,7 @@
    "tier": 3
   },
   {
+   "id": 302643,
    "name": "Luca Menon",
    "team": "AC Milan",
    "position": "Forward",
@@ -326,6 +356,7 @@
    "tier": 3
   },
   {
+   "id": 302642,
    "name": "Nirash Perera",
    "team": "AC Milan",
    "position": "Defender",
@@ -336,6 +367,7 @@
    "tier": 3
   },
   {
+   "id": 2786,
    "name": "Luca Lezzerini",
    "team": "Fiorentina",
    "position": "Goalkeeper",
@@ -346,6 +378,7 @@
    "tier": 3
   },
   {
+   "id": 3188,
    "name": "David De Gea",
    "team": "Fiorentina",
    "position": "Goalkeeper",
@@ -356,6 +389,7 @@
    "tier": 3
   },
   {
+   "id": 24293,
    "name": "Oliver Christensen",
    "team": "Fiorentina",
    "position": "Goalkeeper",
@@ -366,6 +400,7 @@
    "tier": 3
   },
   {
+   "id": 1778,
    "name": "Luca Ranieri",
    "team": "Fiorentina",
    "position": "Defender",
@@ -376,6 +411,7 @@
    "tier": 3
   },
   {
+   "id": 15110,
    "name": "Marin Pongračić",
    "team": "Fiorentina",
    "position": "Defender",
@@ -386,16 +422,18 @@
    "tier": 3
   },
   {
+   "id": 16474,
    "name": "Dodô",
    "team": "Fiorentina",
    "position": "Defender",
-   "age": 27,
+   "age": 28,
    "number": 2,
    "nationality": "Brazil",
    "photo": "https://media.api-sports.io/football/players/41144.png",
    "tier": 2
   },
   {
+   "id": 82126,
    "name": "João Mário Lopes",
    "team": "Fiorentina",
    "position": "Defender",
@@ -406,16 +444,18 @@
    "tier": 3
   },
   {
+   "id": 129801,
    "name": "Fabiano Parisi",
    "team": "Fiorentina",
    "position": "Defender",
-   "age": 25,
+   "age": 26,
    "number": 65,
    "nationality": "Italy",
    "photo": "https://media.api-sports.io/football/players/136087.png",
    "tier": 3
   },
   {
+   "id": 140432,
    "name": "Radu Drăgușin",
    "team": "Fiorentina",
    "position": "Defender",
@@ -426,6 +466,7 @@
    "tier": 2
   },
   {
+   "id": 211602,
    "name": "Viery",
    "team": "Fiorentina",
    "position": "Defender",
@@ -436,6 +477,7 @@
    "tier": 3
   },
   {
+   "id": 227048,
    "name": "Álex Jiménez",
    "team": "Fiorentina",
    "position": "Defender",
@@ -446,6 +488,7 @@
    "tier": 2
   },
   {
+   "id": 276963,
    "name": "Víctor Valdepeñas",
    "team": "Fiorentina",
    "position": "Defender",
@@ -456,6 +499,7 @@
    "tier": 3
   },
   {
+   "id": 2129,
    "name": "Antonín Barák",
    "team": "Fiorentina",
    "position": "Midfielder",
@@ -466,6 +510,7 @@
    "tier": 3
   },
   {
+   "id": 97879,
    "name": "Nicolò Fagioli",
    "team": "Fiorentina",
    "position": "Midfielder",
@@ -476,6 +521,7 @@
    "tier": 2
   },
   {
+   "id": 99858,
    "name": "Marco Brescianini",
    "team": "Fiorentina",
    "position": "Midfielder",
@@ -486,6 +532,7 @@
    "tier": 3
   },
   {
+   "id": 190552,
    "name": "Arthur Atta",
    "team": "Fiorentina",
    "position": "Midfielder",
@@ -496,6 +543,7 @@
    "tier": 2
   },
   {
+   "id": 192307,
    "name": "Cher Ndour",
    "team": "Fiorentina",
    "position": "Midfielder",
@@ -506,6 +554,7 @@
    "tier": 2
   },
   {
+   "id": 269161,
    "name": "Christ Ravynel Inao Oulaï",
    "team": "Fiorentina",
    "position": "Midfielder",
@@ -516,6 +565,7 @@
    "tier": 2
   },
   {
+   "id": 1792,
    "name": "Riccardo Sottil",
    "team": "Fiorentina",
    "position": "Forward",
@@ -526,6 +576,7 @@
    "tier": 3
   },
   {
+   "id": 92050,
    "name": "Pedro Gonçalves",
    "team": "Fiorentina",
    "position": "Forward",
@@ -536,6 +587,7 @@
    "tier": 2
   },
   {
+   "id": 125044,
    "name": "Beto",
    "team": "Fiorentina",
    "position": "Forward",
@@ -546,6 +598,7 @@
    "tier": 2
   },
   {
+   "id": 157538,
    "name": "Mateo Pellegrino",
    "team": "Fiorentina",
    "position": "Forward",
@@ -556,6 +609,7 @@
    "tier": 2
   },
   {
+   "id": 180813,
    "name": "Wilfried Gnonto",
    "team": "Fiorentina",
    "position": "Forward",
@@ -566,6 +620,7 @@
    "tier": 2
   },
   {
+   "id": 246508,
    "name": "Alieu Njie",
    "team": "Fiorentina",
    "position": "Forward",
@@ -576,6 +631,7 @@
    "tier": 3
   },
   {
+   "id": 250304,
    "name": "Franco Mastantuono",
    "team": "Fiorentina",
    "position": "Forward",
@@ -586,6 +642,7 @@
    "tier": 1
   },
   {
+   "id": 302757,
    "name": "Dennis Beldenti",
    "team": "Fiorentina",
    "position": "Defender",
@@ -596,6 +653,7 @@
    "tier": 3
   },
   {
+   "id": 1829,
    "name": "Pierluigi Gollini",
    "team": "AS Roma",
    "position": "Goalkeeper",
@@ -606,6 +664,7 @@
    "tier": 3
   },
   {
+   "id": 16735,
    "name": "Mile Svilar",
    "team": "AS Roma",
    "position": "Goalkeeper",
@@ -616,6 +675,7 @@
    "tier": 1
   },
   {
+   "id": 191127,
    "name": "Devis Vásquez",
    "team": "AS Roma",
    "position": "Goalkeeper",
@@ -626,6 +686,7 @@
    "tier": 3
   },
   {
+   "id": 273759,
    "name": "Giorgio De Marzi",
    "team": "AS Roma",
    "position": "Goalkeeper",
@@ -636,6 +697,7 @@
    "tier": 3
   },
   {
+   "id": 526,
    "name": "Evan N'Dicka",
    "team": "AS Roma",
    "position": "Defender",
@@ -646,6 +708,7 @@
    "tier": 1
   },
   {
+   "id": 1837,
    "name": "Gianluca Mancini",
    "team": "AS Roma",
    "position": "Defender",
@@ -656,6 +719,7 @@
    "tier": 2
   },
   {
+   "id": 32703,
    "name": "Mario Hermoso",
    "team": "AS Roma",
    "position": "Defender",
@@ -666,6 +730,7 @@
    "tier": 3
   },
   {
+   "id": 46452,
    "name": "Nahuel Molina",
    "team": "AS Roma",
    "position": "Defender",
@@ -676,6 +741,7 @@
    "tier": 2
   },
   {
+   "id": 82020,
    "name": "Leonardo Balerdi",
    "team": "AS Roma",
    "position": "Defender",
@@ -686,6 +752,7 @@
    "tier": 2
   },
   {
+   "id": 137693,
    "name": "Anass Salah-Eddine",
    "team": "AS Roma",
    "position": "Defender",
@@ -696,6 +763,7 @@
    "tier": 2
   },
   {
+   "id": 149173,
    "name": "Devyne Rensch",
    "team": "AS Roma",
    "position": "Midfielder",
@@ -706,6 +774,7 @@
    "tier": 3
   },
   {
+   "id": 177590,
    "name": "Konstantinos Koulierakis",
    "team": "AS Roma",
    "position": "Defender",
@@ -716,6 +785,7 @@
    "tier": 2
   },
   {
+   "id": 179164,
    "name": "Wesley",
    "team": "AS Roma",
    "position": "Midfielder",
@@ -726,6 +796,7 @@
    "tier": 1
   },
   {
+   "id": 191705,
    "name": "Daniele Ghilardi",
    "team": "AS Roma",
    "position": "Defender",
@@ -736,6 +807,7 @@
    "tier": 2
   },
   {
+   "id": 290391,
    "name": "Emanuele Lulli",
    "team": "AS Roma",
    "position": "Midfielder",
@@ -746,6 +818,7 @@
    "tier": 3
   },
   {
+   "id": 1819,
    "name": "Lorenzo Pellegrini",
    "team": "AS Roma",
    "position": "Midfielder",
@@ -756,6 +829,7 @@
    "tier": 3
   },
   {
+   "id": 1844,
    "name": "Bryan Cristante",
    "team": "AS Roma",
    "position": "Midfielder",
@@ -766,6 +840,7 @@
    "tier": 3
   },
   {
+   "id": 1848,
    "name": "Marten de Roon",
    "team": "AS Roma",
    "position": "Midfielder",
@@ -776,6 +851,7 @@
    "tier": 3
   },
   {
+   "id": 102395,
    "name": "Manu Koné",
    "team": "AS Roma",
    "position": "Midfielder",
@@ -786,6 +862,7 @@
    "tier": 1
   },
   {
+   "id": 192382,
    "name": "Niccolo Pisilli",
    "team": "AS Roma",
    "position": "Midfielder",
@@ -796,6 +873,7 @@
    "tier": 2
   },
   {
+   "id": 261273,
    "name": "Rodrigo Mora",
    "team": "AS Roma",
    "position": "Forward",
@@ -806,16 +884,18 @@
    "tier": 1
   },
   {
+   "id": 2046,
    "name": "Paulo Dybala",
    "team": "AS Roma",
    "position": "Midfielder",
-   "age": 32,
+   "age": 33,
    "number": 21,
    "nationality": "Argentina",
    "photo": "https://media.api-sports.io/football/players/875.png",
    "tier": 3
   },
   {
+   "id": 7457,
    "name": "Donyell Malen",
    "team": "AS Roma",
    "position": "Forward",
@@ -826,6 +906,7 @@
    "tier": 1
   },
   {
+   "id": 170891,
    "name": "Santiago Castro",
    "team": "AS Roma",
    "position": "Forward",
@@ -836,6 +917,7 @@
    "tier": 1
   },
   {
+   "id": 171121,
    "name": "Matias Soule",
    "team": "AS Roma",
    "position": "Forward",
@@ -846,6 +928,7 @@
    "tier": 1
   },
   {
+   "id": 302405,
    "name": "Alessandro Di Nunzio",
    "team": "AS Roma",
    "position": null,
@@ -856,6 +939,7 @@
    "tier": 3
   },
   {
+   "id": 1767,
    "name": "Marco Sportiello",
    "team": "Atalanta",
    "position": "Goalkeeper",
@@ -866,6 +950,7 @@
    "tier": 3
   },
   {
+   "id": 102220,
    "name": "Marco Carnesecchi",
    "team": "Atalanta",
    "position": "Goalkeeper",
@@ -876,6 +961,7 @@
    "tier": 2
   },
   {
+   "id": 285073,
    "name": "Thomas Pompei",
    "team": "Atalanta",
    "position": "Goalkeeper",
@@ -886,6 +972,7 @@
    "tier": 3
   },
   {
+   "id": 302201,
    "name": "Mattia Sonzogni",
    "team": "Atalanta",
    "position": "Goalkeeper",
@@ -896,6 +983,7 @@
    "tier": 3
   },
   {
+   "id": 7786,
    "name": "Sead Kolašinac",
    "team": "Atalanta",
    "position": "Defender",
@@ -906,6 +994,7 @@
    "tier": 3
   },
   {
+   "id": 151299,
    "name": "Thomas Kristensen",
    "team": "Atalanta",
    "position": "Defender",
@@ -916,6 +1005,7 @@
    "tier": 2
   },
   {
+   "id": 153990,
    "name": "Giorgio Scalvini",
    "team": "Atalanta",
    "position": "Defender",
@@ -926,6 +1016,7 @@
    "tier": 1
   },
   {
+   "id": 167031,
    "name": "Isak Hien",
    "team": "Atalanta",
    "position": "Defender",
@@ -936,6 +1027,7 @@
    "tier": 2
   },
   {
+   "id": 167098,
    "name": "Odilon Kossounou",
    "team": "Atalanta",
    "position": "Defender",
@@ -946,6 +1038,7 @@
    "tier": 2
   },
   {
+   "id": 1689,
    "name": "Éderson",
    "team": "Atalanta",
    "position": "Midfielder",
@@ -956,6 +1049,7 @@
    "tier": 3
   },
   {
+   "id": 1747,
    "name": "Franck Kessié",
    "team": "Atalanta",
    "position": "Midfielder",
@@ -966,6 +1060,7 @@
    "tier": 2
   },
   {
+   "id": 1748,
    "name": "Raoul Bellanova",
    "team": "Atalanta",
    "position": "Defender",
@@ -976,6 +1071,7 @@
    "tier": 2
   },
   {
+   "id": 3553,
    "name": "Mario Pašalić",
    "team": "Atalanta",
    "position": "Midfielder",
@@ -986,6 +1082,7 @@
    "tier": 3
   },
   {
+   "id": 7807,
    "name": "Davide Zappacosta",
    "team": "Atalanta",
    "position": "Defender",
@@ -996,6 +1093,7 @@
    "tier": 3
   },
   {
+   "id": 30629,
    "name": "Eljif Elmas",
    "team": "Atalanta",
    "position": "Midfielder",
@@ -1006,6 +1104,7 @@
    "tier": 2
   },
   {
+   "id": 102211,
    "name": "Gianluca Gaetano",
    "team": "Atalanta",
    "position": "Midfielder",
@@ -1016,6 +1115,7 @@
    "tier": 3
   },
   {
+   "id": 129947,
    "name": "Charles De Ketelaere",
    "team": "Atalanta",
    "position": "Forward",
@@ -1026,6 +1126,7 @@
    "tier": 2
   },
   {
+   "id": 130420,
    "name": "Lazar Samardzic",
    "team": "Atalanta",
    "position": "Midfielder",
@@ -1036,16 +1137,18 @@
    "tier": 2
   },
   {
+   "id": 151933,
    "name": "Lorenzo Bernasconi",
    "team": "Atalanta",
    "position": "Defender",
-   "age": 22,
+   "age": 23,
    "number": 47,
    "nationality": "Italy",
    "photo": "https://media.api-sports.io/football/players/264857.png",
    "tier": 2
   },
   {
+   "id": 152528,
    "name": "Nicola Zalewski",
    "team": "Atalanta",
    "position": "Midfielder",
@@ -1056,6 +1159,7 @@
    "tier": 2
   },
   {
+   "id": 2681,
    "name": "Gianluca Scamacca",
    "team": "Atalanta",
    "position": "Forward",
@@ -1066,6 +1170,7 @@
    "tier": 2
   },
   {
+   "id": 114117,
    "name": "Giacomo Raspadori",
    "team": "Atalanta",
    "position": "Forward",
@@ -1076,6 +1181,7 @@
    "tier": 2
   },
   {
+   "id": 120679,
    "name": "Nikola Krstović",
    "team": "Atalanta",
    "position": "Forward",
@@ -1086,6 +1192,7 @@
    "tier": 2
   },
   {
+   "id": 142140,
    "name": "Kamal Deen Sulemana",
    "team": "Atalanta",
    "position": "Midfielder",
@@ -1096,6 +1203,7 @@
    "tier": 2
   },
   {
+   "id": 176664,
    "name": "Jonathan Rowe",
    "team": "Atalanta",
    "position": "Midfielder",
@@ -1106,6 +1214,7 @@
    "tier": 2
   },
   {
+   "id": 1797,
    "name": "Łukasz Skorupski",
    "team": "Bologna",
    "position": "Goalkeeper",
@@ -1116,6 +1225,7 @@
    "tier": 3
   },
   {
+   "id": 273010,
    "name": "Massimo Pessina",
    "team": "Bologna",
    "position": "Goalkeeper",
@@ -1126,6 +1236,7 @@
    "tier": 3
   },
   {
+   "id": 286326,
    "name": "Ukko Happonen",
    "team": "Bologna",
    "position": "Goalkeeper",
@@ -1136,6 +1247,7 @@
    "tier": 3
   },
   {
+   "id": 2292,
    "name": "Lorenzo De Silvestri",
    "team": "Bologna",
    "position": "Defender",
@@ -1146,6 +1258,7 @@
    "tier": 3
   },
   {
+   "id": 16197,
    "name": "Torbjørn Heggem",
    "team": "Bologna",
    "position": "Defender",
@@ -1156,6 +1269,7 @@
    "tier": 2
   },
   {
+   "id": 32491,
    "name": "Juan Miranda",
    "team": "Bologna",
    "position": "Midfielder",
@@ -1166,6 +1280,7 @@
    "tier": 2
   },
   {
+   "id": 56645,
    "name": "Nicolò Casale",
    "team": "Bologna",
    "position": "Defender",
@@ -1176,6 +1291,7 @@
    "tier": 3
   },
   {
+   "id": 111777,
    "name": "Emil Holm",
    "team": "Bologna",
    "position": "Defender",
@@ -1186,6 +1302,7 @@
    "tier": 3
   },
   {
+   "id": 127143,
    "name": "Nadir Zortea",
    "team": "Bologna",
    "position": "Midfielder",
@@ -1196,6 +1313,7 @@
    "tier": 3
   },
   {
+   "id": 145893,
    "name": "Arthur Theate",
    "team": "Bologna",
    "position": "Defender",
@@ -1206,6 +1324,7 @@
    "tier": 2
   },
   {
+   "id": 152702,
    "name": "Martin Vitík",
    "team": "Bologna",
    "position": "Defender",
@@ -1216,6 +1335,7 @@
    "tier": 2
   },
   {
+   "id": 210842,
    "name": "Eivind Helland",
    "team": "Bologna",
    "position": "Defender",
@@ -1226,6 +1346,7 @@
    "tier": 3
   },
   {
+   "id": 226037,
    "name": "Rahim Alhassane",
    "team": "Bologna",
    "position": "Defender",
@@ -1236,6 +1357,7 @@
    "tier": 3
   },
   {
+   "id": 2017,
    "name": "Jens Odgaard",
    "team": "Bologna",
    "position": "Forward",
@@ -1246,6 +1368,7 @@
    "tier": 2
   },
   {
+   "id": 23135,
    "name": "Nikola Moro",
    "team": "Bologna",
    "position": "Midfielder",
@@ -1256,6 +1379,7 @@
    "tier": 3
   },
   {
+   "id": 34638,
    "name": "Lewis Ferguson",
    "team": "Bologna",
    "position": "Midfielder",
@@ -1266,6 +1390,7 @@
    "tier": 2
   },
   {
+   "id": 99013,
    "name": "Tommaso Pobega",
    "team": "Bologna",
    "position": "Midfielder",
@@ -1276,6 +1401,7 @@
    "tier": 3
   },
   {
+   "id": 171286,
    "name": "Oussama El Azzouzi",
    "team": "Bologna",
    "position": "Midfielder",
@@ -1286,6 +1412,7 @@
    "tier": 3
   },
   {
+   "id": 261839,
    "name": "Mikel Amondarain",
    "team": "Bologna",
    "position": "Midfielder",
@@ -1296,6 +1423,7 @@
    "tier": 3
   },
   {
+   "id": 1886,
    "name": "Riccardo Orsolini",
    "team": "Bologna",
    "position": "Forward",
@@ -1306,6 +1434,7 @@
    "tier": 2
   },
   {
+   "id": 2040,
    "name": "Federico Bernardeschi",
    "team": "Bologna",
    "position": "Midfielder",
@@ -1316,6 +1445,7 @@
    "tier": 3
   },
   {
+   "id": 24217,
    "name": "Artem Dovbyk",
    "team": "Bologna",
    "position": "Forward",
@@ -1326,6 +1456,7 @@
    "tier": 2
   },
   {
+   "id": 31243,
    "name": "Jesper Karlsson",
    "team": "Bologna",
    "position": "Forward",
@@ -1336,6 +1467,7 @@
    "tier": 3
   },
   {
+   "id": 102591,
    "name": "Roberto Piccoli",
    "team": "Bologna",
    "position": "Forward",
@@ -1346,6 +1478,7 @@
    "tier": 2
   },
   {
+   "id": 178016,
    "name": "Jay Enem",
    "team": "Bologna",
    "position": "Forward",
@@ -1356,6 +1489,7 @@
    "tier": 3
   },
   {
+   "id": 217678,
    "name": "Samuel Mbangula",
    "team": "Bologna",
    "position": "Forward",
@@ -1366,6 +1500,7 @@
    "tier": 3
   },
   {
+   "id": 2611,
    "name": "Boris Radunović",
    "team": "Cagliari",
    "position": "Goalkeeper",
@@ -1376,6 +1511,7 @@
    "tier": 3
   },
   {
+   "id": 82004,
    "name": "Elia Caprile",
    "team": "Cagliari",
    "position": "Goalkeeper",
@@ -1386,6 +1522,7 @@
    "tier": 2
   },
   {
+   "id": 148992,
    "name": "Alen Sherri",
    "team": "Cagliari",
    "position": "Goalkeeper",
@@ -1396,6 +1533,7 @@
    "tier": 3
   },
   {
+   "id": 3728,
    "name": "Yerry Mina",
    "team": "Cagliari",
    "position": "Defender",
@@ -1406,6 +1544,7 @@
    "tier": 3
   },
   {
+   "id": 48670,
    "name": "Yukinari Sugawara",
    "team": "Cagliari",
    "position": "Defender",
@@ -1416,6 +1555,7 @@
    "tier": 3
   },
   {
+   "id": 52950,
    "name": "Zé Pedro Figueiredo",
    "team": "Cagliari",
    "position": "Defender",
@@ -1426,6 +1566,7 @@
    "tier": 3
   },
   {
+   "id": 145309,
    "name": "Giuseppe Aurelio",
    "team": "Cagliari",
    "position": "Defender",
@@ -1436,6 +1577,7 @@
    "tier": 3
   },
   {
+   "id": 170374,
    "name": "Adam Obert",
    "team": "Cagliari",
    "position": "Defender",
@@ -1446,6 +1588,7 @@
    "tier": 3
   },
   {
+   "id": 202726,
    "name": "Raphael Kofler",
    "team": "Cagliari",
    "position": "Defender",
@@ -1456,6 +1599,7 @@
    "tier": 3
   },
   {
+   "id": 260246,
    "name": "Juan Martín Rodriguez",
    "team": "Cagliari",
    "position": "Defender",
@@ -1466,6 +1610,7 @@
    "tier": 3
   },
   {
+   "id": 261228,
    "name": "Riyad Idrissi",
    "team": "Cagliari",
    "position": "Defender",
@@ -1476,6 +1621,7 @@
    "tier": 3
   },
   {
+   "id": 1914,
    "name": "Alessandro Deiola",
    "team": "Cagliari",
    "position": "Defender",
@@ -1486,6 +1632,7 @@
    "tier": 3
   },
   {
+   "id": 2006,
    "name": "Roberto Gagliardini",
    "team": "Cagliari",
    "position": "Midfielder",
@@ -1496,6 +1643,7 @@
    "tier": 3
   },
   {
+   "id": 7999,
    "name": "Harry Winks",
    "team": "Cagliari",
    "position": "Midfielder",
@@ -1506,6 +1654,7 @@
    "tier": 3
   },
   {
+   "id": 136113,
    "name": "Daniel Maldini",
    "team": "Cagliari",
    "position": "Midfielder",
@@ -1516,6 +1665,7 @@
    "tier": 3
   },
   {
+   "id": 177054,
    "name": "Jacopo Fazzini",
    "team": "Cagliari",
    "position": "Midfielder",
@@ -1526,6 +1676,7 @@
    "tier": 3
   },
   {
+   "id": 185011,
    "name": "Yanis Massolin",
    "team": "Cagliari",
    "position": "Midfielder",
@@ -1536,6 +1687,7 @@
    "tier": 3
   },
   {
+   "id": 185019,
    "name": "Michel Adopo",
    "team": "Cagliari",
    "position": "Midfielder",
@@ -1546,6 +1698,7 @@
    "tier": 3
   },
   {
+   "id": 274076,
    "name": "Alessandro Romano",
    "team": "Cagliari",
    "position": "Midfielder",
@@ -1556,6 +1709,7 @@
    "tier": 3
   },
   {
+   "id": 286253,
    "name": "Joseph Liteta",
    "team": "Cagliari",
    "position": "Midfielder",
@@ -1566,6 +1720,7 @@
    "tier": 3
   },
   {
+   "id": 286712,
    "name": "Nicola Grandu",
    "team": "Cagliari",
    "position": "Defender",
@@ -1576,6 +1731,7 @@
    "tier": 3
   },
   {
+   "id": 289720,
    "name": "Ivan Sulev",
    "team": "Cagliari",
    "position": "Midfielder",
@@ -1586,6 +1742,7 @@
    "tier": 3
   },
   {
+   "id": 3011,
    "name": "Mbala N'Zola",
    "team": "Cagliari",
    "position": "Forward",
@@ -1596,6 +1753,7 @@
    "tier": 3
   },
   {
+   "id": 111294,
    "name": "Mattia Felici",
    "team": "Cagliari",
    "position": "Forward",
@@ -1606,6 +1764,7 @@
    "tier": 3
   },
   {
+   "id": 114101,
    "name": "Gennaro Borrelli",
    "team": "Cagliari",
    "position": "Forward",
@@ -1616,6 +1775,7 @@
    "tier": 3
   },
   {
+   "id": 156618,
    "name": "Riccardo Ciervo",
    "team": "Cagliari",
    "position": "Forward",
@@ -1626,6 +1786,7 @@
    "tier": 3
   },
   {
+   "id": 180180,
    "name": "Kevin Carlos",
    "team": "Cagliari",
    "position": "Forward",
@@ -1636,6 +1797,7 @@
    "tier": 3
   },
   {
+   "id": 192659,
    "name": "Alieu Fadera",
    "team": "Cagliari",
    "position": "Midfielder",
@@ -1646,6 +1808,7 @@
    "tier": 3
   },
   {
+   "id": 246153,
    "name": "Kingstone Mutandwa",
    "team": "Cagliari",
    "position": "Forward",
@@ -1656,6 +1819,7 @@
    "tier": 3
   },
   {
+   "id": 289719,
    "name": "Yael Trepy",
    "team": "Cagliari",
    "position": "Forward",
@@ -1666,6 +1830,7 @@
    "tier": 3
   },
   {
+   "id": 292394,
    "name": "Paul Mendy",
    "team": "Cagliari",
    "position": "Forward",
@@ -1676,6 +1841,7 @@
    "tier": 3
   },
   {
+   "id": 7460,
    "name": "Justin Bijlow",
    "team": "Genoa",
    "position": "Goalkeeper",
@@ -1686,6 +1852,7 @@
    "tier": 3
   },
   {
+   "id": 75224,
    "name": "Daniele Sommariva",
    "team": "Genoa",
    "position": "Goalkeeper",
@@ -1696,6 +1863,7 @@
    "tier": 3
   },
   {
+   "id": 76696,
    "name": "Franz Stolz",
    "team": "Genoa",
    "position": "Goalkeeper",
@@ -1706,6 +1874,7 @@
    "tier": 3
   },
   {
+   "id": 2443,
    "name": "Stefano Sabelli",
    "team": "Genoa",
    "position": "Defender",
@@ -1716,6 +1885,7 @@
    "tier": 3
   },
   {
+   "id": 39330,
    "name": "Johan Vásquez",
    "team": "Genoa",
    "position": "Defender",
@@ -1726,6 +1896,7 @@
    "tier": 2
   },
   {
+   "id": 44032,
    "name": "Leo Østigård",
    "team": "Genoa",
    "position": "Defender",
@@ -1736,6 +1907,7 @@
    "tier": 2
   },
   {
+   "id": 147780,
    "name": "Cody Drameh",
    "team": "Genoa",
    "position": "Defender",
@@ -1746,6 +1918,7 @@
    "tier": 3
   },
   {
+   "id": 152697,
    "name": "Mario Mitaj",
    "team": "Genoa",
    "position": "Defender",
@@ -1756,6 +1929,7 @@
    "tier": 3
   },
   {
+   "id": 188357,
    "name": "Sebastian Otoa",
    "team": "Genoa",
    "position": "Defender",
@@ -1766,6 +1940,7 @@
    "tier": 3
   },
   {
+   "id": 188644,
    "name": "Alessandro Marcandalli",
    "team": "Genoa",
    "position": "Defender",
@@ -1776,6 +1951,7 @@
    "tier": 2
   },
   {
+   "id": 217262,
    "name": "David Puczka",
    "team": "Genoa",
    "position": "Defender",
@@ -1786,6 +1962,7 @@
    "tier": 3
   },
   {
+   "id": 292956,
    "name": "Mamedi Doucouré",
    "team": "Genoa",
    "position": "Defender",
@@ -1796,6 +1973,7 @@
    "tier": 3
   },
   {
+   "id": 298167,
    "name": "Marcelo Vaz",
    "team": "Genoa",
    "position": "Defender",
@@ -1806,6 +1984,7 @@
    "tier": 3
   },
   {
+   "id": 16275,
    "name": "Djibril Sow",
    "team": "Genoa",
    "position": "Midfielder",
@@ -1816,6 +1995,7 @@
    "tier": 3
   },
   {
+   "id": 24119,
    "name": "Morten Frendrup",
    "team": "Genoa",
    "position": "Midfielder",
@@ -1826,6 +2006,7 @@
    "tier": 2
   },
   {
+   "id": 154031,
    "name": "Tommaso Baldanzi",
    "team": "Genoa",
    "position": "Midfielder",
@@ -1836,6 +2017,7 @@
    "tier": 3
   },
   {
+   "id": 172413,
    "name": "Mikael Egill Ellertsson",
    "team": "Genoa",
    "position": "Midfielder",
@@ -1846,6 +2028,7 @@
    "tier": 3
   },
   {
+   "id": 203350,
    "name": "Alexsandro Amorim",
    "team": "Genoa",
    "position": "Midfielder",
@@ -1856,6 +2039,7 @@
    "tier": 3
   },
   {
+   "id": 279548,
    "name": "Ethan Meichtry",
    "team": "Genoa",
    "position": "Midfielder",
@@ -1866,6 +2050,7 @@
    "tier": 3
   },
   {
+   "id": 292420,
    "name": "Samuel Wiafe",
    "team": "Genoa",
    "position": "Midfielder",
@@ -1876,6 +2061,7 @@
    "tier": 3
   },
   {
+   "id": 2499,
    "name": "Hamed Traoré",
    "team": "Genoa",
    "position": "Midfielder",
@@ -1886,6 +2072,7 @@
    "tier": 2
   },
   {
+   "id": 67743,
    "name": "Milutin Osmajić",
    "team": "Genoa",
    "position": "Forward",
@@ -1896,6 +2083,7 @@
    "tier": 3
   },
   {
+   "id": 97869,
    "name": "Junior Messias",
    "team": "Genoa",
    "position": "Midfielder",
@@ -1906,6 +2094,7 @@
    "tier": 3
   },
   {
+   "id": 144566,
    "name": "Lorenzo Colombo",
    "team": "Genoa",
    "position": "Forward",
@@ -1916,6 +2105,7 @@
    "tier": 3
   },
   {
+   "id": 156819,
    "name": "Vitor Oliveira",
    "team": "Genoa",
    "position": "Forward",
@@ -1926,6 +2116,7 @@
    "tier": 3
   },
   {
+   "id": 160899,
    "name": "Elias Havel",
    "team": "Genoa",
    "position": "Forward",
@@ -1936,6 +2127,7 @@
    "tier": 3
   },
   {
+   "id": 274222,
    "name": "Lorenzo Venturino",
    "team": "Genoa",
    "position": "Forward",
@@ -1946,6 +2138,7 @@
    "tier": 3
   },
   {
+   "id": 2475,
    "name": "Ivan Provedel",
    "team": "Inter",
    "position": "Goalkeeper",
@@ -1956,6 +2149,7 @@
    "tier": 3
   },
   {
+   "id": 2819,
    "name": "Raffaele Di Gennaro",
    "team": "Inter",
    "position": "Goalkeeper",
@@ -1966,6 +2160,7 @@
    "tier": 3
   },
   {
+   "id": 101415,
    "name": "Josep Martinez",
    "team": "Inter",
    "position": "Goalkeeper",
@@ -1976,6 +2171,7 @@
    "tier": 3
   },
   {
+   "id": 143,
    "name": "Manuel Akanji",
    "team": "Inter",
    "position": "Defender",
@@ -1986,6 +2182,7 @@
    "tier": 2
   },
   {
+   "id": 193,
    "name": "Yann Aurel Bisseck",
    "team": "Inter",
    "position": "Defender",
@@ -1996,6 +2193,7 @@
    "tier": 1
   },
   {
+   "id": 1834,
    "name": "Alessandro Bastoni",
    "team": "Inter",
    "position": "Defender",
@@ -2006,6 +2204,7 @@
    "tier": 1
   },
   {
+   "id": 3313,
    "name": "John Stones",
    "team": "Inter",
    "position": "Defender",
@@ -2016,6 +2215,7 @@
    "tier": 2
   },
   {
+   "id": 3364,
    "name": "Benjamin Pavard",
    "team": "Inter",
    "position": "Defender",
@@ -2026,6 +2226,7 @@
    "tier": 2
   },
   {
+   "id": 11224,
    "name": "Carlos",
    "team": "Inter",
    "position": "Defender",
@@ -2036,16 +2237,18 @@
    "tier": 2
   },
   {
+   "id": 30821,
    "name": "Federico Dimarco",
    "team": "Inter",
    "position": "Midfielder",
-   "age": 28,
+   "age": 29,
    "number": 32,
    "nationality": "Italy",
    "photo": "https://media.api-sports.io/football/players/31010.png",
    "tier": 1
   },
   {
+   "id": 80775,
    "name": "Djed Spence",
    "team": "Inter",
    "position": "Midfielder",
@@ -2056,6 +2259,7 @@
    "tier": 2
   },
   {
+   "id": 1754,
    "name": "Hakan Çalhanoğlu",
    "team": "Inter",
    "position": "Midfielder",
@@ -2066,6 +2270,7 @@
    "tier": 2
   },
   {
+   "id": 1911,
    "name": "Nicolò Barella",
    "team": "Inter",
    "position": "Midfielder",
@@ -2076,6 +2281,7 @@
    "tier": 1
   },
   {
+   "id": 2097,
    "name": "Piotr Zieliński",
    "team": "Inter",
    "position": "Midfielder",
@@ -2086,6 +2292,7 @@
    "tier": 3
   },
   {
+   "id": 7795,
    "name": "Henrikh Mkhitaryan",
    "team": "Inter",
    "position": "Midfielder",
@@ -2096,6 +2303,7 @@
    "tier": 3
   },
   {
+   "id": 7873,
    "name": "Curtis Jones",
    "team": "Inter",
    "position": "Midfielder",
@@ -2106,6 +2314,7 @@
    "tier": 1
   },
   {
+   "id": 115074,
    "name": "Luis Henrique",
    "team": "Inter",
    "position": "Midfielder",
@@ -2116,6 +2325,7 @@
    "tier": 2
   },
   {
+   "id": 154013,
    "name": "Petar Sucic",
    "team": "Inter",
    "position": "Midfielder",
@@ -2126,6 +2336,7 @@
    "tier": 1
   },
   {
+   "id": 168656,
    "name": "Andy Diouf",
    "team": "Inter",
    "position": "Midfielder",
@@ -2136,6 +2347,7 @@
    "tier": 2
   },
   {
+   "id": 188920,
    "name": "Aleksandar Stankovic",
    "team": "Inter",
    "position": "Midfielder",
@@ -2146,6 +2358,7 @@
    "tier": 1
   },
   {
+   "id": 3220,
    "name": "Lautaro Martínez",
    "team": "Inter",
    "position": "Forward",
@@ -2156,6 +2369,7 @@
    "tier": 1
   },
   {
+   "id": 8685,
    "name": "Marcus Thuram-Ulien",
    "team": "Inter",
    "position": "Forward",
@@ -2166,6 +2380,7 @@
    "tier": 1
   },
   {
+   "id": 152738,
    "name": "Ange-Yoan Bonny",
    "team": "Inter",
    "position": "Forward",
@@ -2176,6 +2391,7 @@
    "tier": 1
   },
   {
+   "id": 215433,
    "name": "Francesco Esposito",
    "team": "Inter",
    "position": "Forward",
@@ -2186,6 +2402,7 @@
    "tier": 1
   },
   {
+   "id": 2023,
    "name": "Carlo Pinsoglio",
    "team": "Juventus",
    "position": "Goalkeeper",
@@ -2196,6 +2413,7 @@
    "tier": 3
   },
   {
+   "id": 3086,
    "name": "Guglielmo Vicario",
    "team": "Juventus",
    "position": "Goalkeeper",
@@ -2206,6 +2424,7 @@
    "tier": 2
   },
   {
+   "id": 92854,
    "name": "Kamil Grabara",
    "team": "Juventus",
    "position": "Goalkeeper",
@@ -2216,6 +2435,7 @@
    "tier": 2
   },
   {
+   "id": 1106,
    "name": "Bremer",
    "team": "Juventus",
    "position": "Defender",
@@ -2226,6 +2446,7 @@
    "tier": 1
   },
   {
+   "id": 2027,
    "name": "Daniele Rugani",
    "team": "Juventus",
    "position": "Defender",
@@ -2236,6 +2457,7 @@
    "tier": 3
   },
   {
+   "id": 4393,
    "name": "Lloyd Kelly",
    "team": "Juventus",
    "position": "Defender",
@@ -2246,6 +2468,7 @@
    "tier": 2
   },
   {
+   "id": 22113,
    "name": "Jhon Lucumí",
    "team": "Juventus",
    "position": "Defender",
@@ -2256,6 +2479,7 @@
    "tier": 2
   },
   {
+   "id": 29622,
    "name": "Zeki Çelik",
    "team": "Juventus",
    "position": "Defender",
@@ -2266,6 +2490,7 @@
    "tier": 2
   },
   {
+   "id": 121860,
    "name": "Juan Cabal",
    "team": "Juventus",
    "position": "Defender",
@@ -2276,6 +2501,7 @@
    "tier": 3
   },
   {
+   "id": 124865,
    "name": "Andrea Cambiaso",
    "team": "Juventus",
    "position": "Midfielder",
@@ -2286,6 +2512,7 @@
    "tier": 2
   },
   {
+   "id": 141295,
    "name": "Pierre Kalulu",
    "team": "Juventus",
    "position": "Midfielder",
@@ -2296,6 +2523,7 @@
    "tier": 1
   },
   {
+   "id": 153130,
    "name": "Federico Gatti",
    "team": "Juventus",
    "position": "Defender",
@@ -2306,6 +2534,7 @@
    "tier": 2
   },
   {
+   "id": 1751,
    "name": "Manuel Locatelli",
    "team": "Juventus",
    "position": "Midfielder",
@@ -2316,6 +2545,7 @@
    "tier": 2
   },
   {
+   "id": 6507,
    "name": "Weston McKennie",
    "team": "Juventus",
    "position": "Midfielder",
@@ -2326,6 +2556,7 @@
    "tier": 2
   },
   {
+   "id": 7693,
    "name": "Teun Koopmeiners",
    "team": "Juventus",
    "position": "Midfielder",
@@ -2336,6 +2567,7 @@
    "tier": 2
   },
   {
+   "id": 33525,
    "name": "Douglas Luiz",
    "team": "Juventus",
    "position": "Midfielder",
@@ -2346,6 +2578,7 @@
    "tier": 2
   },
   {
+   "id": 99251,
    "name": "Khéphren Thuram-Ulie",
    "team": "Juventus",
    "position": "Midfielder",
@@ -2356,6 +2589,7 @@
    "tier": 1
   },
   {
+   "id": 170391,
    "name": "Pape Sarr",
    "team": "Juventus",
    "position": "Midfielder",
@@ -2366,6 +2600,7 @@
    "tier": 1
   },
   {
+   "id": 2105,
    "name": "Arkadiusz Milik",
    "team": "Juventus",
    "position": "Forward",
@@ -2376,6 +2611,7 @@
    "tier": 3
   },
   {
+   "id": 4121,
    "name": "Jérémie Boga",
    "team": "Juventus",
    "position": "Forward",
@@ -2386,6 +2622,7 @@
    "tier": 3
   },
   {
+   "id": 8708,
    "name": "Randal Kolo Muani",
    "team": "Juventus",
    "position": "Midfielder",
@@ -2396,6 +2633,7 @@
    "tier": 2
   },
   {
+   "id": 8990,
    "name": "Edon Zhegrova",
    "team": "Juventus",
    "position": "Forward",
@@ -2406,6 +2644,7 @@
    "tier": 3
   },
   {
+   "id": 45680,
    "name": "Nicolás González",
    "team": "Juventus",
    "position": "Forward",
@@ -2416,6 +2655,7 @@
    "tier": 2
   },
   {
+   "id": 133547,
    "name": "Nick Woltemade",
    "team": "Juventus",
    "position": "Forward",
@@ -2426,6 +2666,7 @@
    "tier": 1
   },
   {
+   "id": 150791,
    "name": "Francisco Conceição",
    "team": "Juventus",
    "position": "Forward",
@@ -2436,6 +2677,7 @@
    "tier": 1
   },
   {
+   "id": 191712,
    "name": "Kenan Yıldız",
    "team": "Juventus",
    "position": "Forward",
@@ -2446,16 +2688,18 @@
    "tier": 1
   },
   {
+   "id": 263662,
    "name": "Jeff Ekhator",
    "team": "Juventus",
    "position": "Forward",
-   "age": 19,
+   "age": 20,
    "number": 18,
    "nationality": "Italy",
    "photo": "https://media.api-sports.io/football/players/451504.png",
    "tier": 2
   },
   {
+   "id": 272213,
    "name": "Kerim Alajbegović",
    "team": "Juventus",
    "position": "Midfielder",
@@ -2466,6 +2710,7 @@
    "tier": 2
   },
   {
+   "id": 43190,
    "name": "Christos Mandas",
    "team": "Lazio",
    "position": "Goalkeeper",
@@ -2476,6 +2721,7 @@
    "tier": 3
   },
   {
+   "id": 118438,
    "name": "Alessio Furlanetto",
    "team": "Lazio",
    "position": "Goalkeeper",
@@ -2486,6 +2732,7 @@
    "tier": 3
   },
   {
+   "id": 192109,
    "name": "Davide Renzetti",
    "team": "Lazio",
    "position": "Goalkeeper",
@@ -2496,6 +2743,7 @@
    "tier": 3
   },
   {
+   "id": 219746,
    "name": "Edoardo Motta",
    "team": "Lazio",
    "position": "Goalkeeper",
@@ -2506,6 +2754,7 @@
    "tier": 3
   },
   {
+   "id": 267,
    "name": "Alfonso Pedraza",
    "team": "Lazio",
    "position": "Defender",
@@ -2516,6 +2765,7 @@
    "tier": 3
   },
   {
+   "id": 1740,
    "name": "Alessio Romagnoli",
    "team": "Lazio",
    "position": "Defender",
@@ -2526,6 +2776,7 @@
    "tier": 3
   },
   {
+   "id": 1803,
    "name": "Luca Pellegrini",
    "team": "Lazio",
    "position": "Defender",
@@ -2536,6 +2787,7 @@
    "tier": 3
   },
   {
+   "id": 2065,
    "name": "Patric",
    "team": "Lazio",
    "position": "Defender",
@@ -2546,6 +2798,7 @@
    "tier": 3
   },
   {
+   "id": 2069,
    "name": "Adam Marušić",
    "team": "Lazio",
    "position": "Defender",
@@ -2556,6 +2809,7 @@
    "tier": 3
   },
   {
+   "id": 2168,
    "name": "Mohamed Salim Fares",
    "team": "Lazio",
    "position": "Defender",
@@ -2566,6 +2820,7 @@
    "tier": 3
   },
   {
+   "id": 2358,
    "name": "Manuel Lazzari",
    "team": "Lazio",
    "position": "Midfielder",
@@ -2576,6 +2831,7 @@
    "tier": 3
   },
   {
+   "id": 67886,
    "name": "Danilho Doekhi",
    "team": "Lazio",
    "position": "Defender",
@@ -2586,6 +2842,7 @@
    "tier": 2
   },
   {
+   "id": 80459,
    "name": "Nuno Tavares",
    "team": "Lazio",
    "position": "Defender",
@@ -2596,6 +2853,7 @@
    "tier": 2
   },
   {
+   "id": 134835,
    "name": "Josip Šutalo",
    "team": "Lazio",
    "position": "Defender",
@@ -2606,6 +2864,7 @@
    "tier": 2
   },
   {
+   "id": 175839,
    "name": "Romano Floriani",
    "team": "Lazio",
    "position": "Defender",
@@ -2616,6 +2875,7 @@
    "tier": 3
   },
   {
+   "id": 212456,
    "name": "Oliver Nielsen",
    "team": "Lazio",
    "position": "Defender",
@@ -2626,6 +2886,7 @@
    "tier": 2
   },
   {
+   "id": 272768,
    "name": "Filipe",
    "team": "Lazio",
    "position": "Defender",
@@ -2636,6 +2897,7 @@
    "tier": 3
   },
   {
+   "id": 2200,
    "name": "Davide Frattesi",
    "team": "Lazio",
    "position": "Midfielder",
@@ -2646,6 +2908,7 @@
    "tier": 2
   },
   {
+   "id": 2329,
    "name": "Danilo Cataldi",
    "team": "Lazio",
    "position": "Midfielder",
@@ -2656,6 +2919,7 @@
    "tier": 3
   },
   {
+   "id": 97537,
    "name": "Kenneth Taylor",
    "team": "Lazio",
    "position": "Midfielder",
@@ -2666,6 +2930,7 @@
    "tier": 2
   },
   {
+   "id": 111220,
    "name": "Nicolò Rovella",
    "team": "Lazio",
    "position": "Midfielder",
@@ -2676,6 +2941,7 @@
    "tier": 2
   },
   {
+   "id": 147781,
    "name": "Fisayo Dele-Bashiru",
    "team": "Lazio",
    "position": "Midfielder",
@@ -2686,6 +2952,7 @@
    "tier": 3
   },
   {
+   "id": 187476,
    "name": "Reda Belahyane",
    "team": "Lazio",
    "position": "Midfielder",
@@ -2696,6 +2963,7 @@
    "tier": 3
   },
   {
+   "id": 216566,
    "name": "Adrian Przyborek",
    "team": "Lazio",
    "position": "Midfielder",
@@ -2706,6 +2974,7 @@
    "tier": 3
   },
   {
+   "id": 286550,
    "name": "Valerio Farcomeni",
    "team": "Lazio",
    "position": "Midfielder",
@@ -2716,6 +2985,7 @@
    "tier": 3
   },
   {
+   "id": 295763,
    "name": "Bruno Galassi",
    "team": "Lazio",
    "position": "Midfielder",
@@ -2726,6 +2996,7 @@
    "tier": 3
   },
   {
+   "id": 2016,
    "name": "Andrea Pinamonti",
    "team": "Lazio",
    "position": "Forward",
@@ -2736,6 +3007,7 @@
    "tier": 2
   },
   {
+   "id": 2158,
    "name": "Mattia Zaccagni",
    "team": "Lazio",
    "position": "Forward",
@@ -2746,6 +3018,7 @@
    "tier": 3
   },
   {
+   "id": 3851,
    "name": "Albert Guðmundsson",
    "team": "Lazio",
    "position": "Forward",
@@ -2756,6 +3029,7 @@
    "tier": 2
   },
   {
+   "id": 128007,
    "name": "Gustav Isaksen",
    "team": "Lazio",
    "position": "Forward",
@@ -2766,6 +3040,7 @@
    "tier": 2
   },
   {
+   "id": 152787,
    "name": "Matteo Cancellieri",
    "team": "Lazio",
    "position": "Forward",
@@ -2776,6 +3051,7 @@
    "tier": 3
   },
   {
+   "id": 171448,
    "name": "Tijjani Noslin",
    "team": "Lazio",
    "position": "Forward",
@@ -2786,6 +3062,7 @@
    "tier": 3
   },
   {
+   "id": 274812,
    "name": "Federico Serra",
    "team": "Lazio",
    "position": "Forward",
@@ -2796,6 +3073,7 @@
    "tier": 3
   },
   {
+   "id": 82003,
    "name": "Simone Ghidotti",
    "team": "Parma",
    "position": "Goalkeeper",
@@ -2806,6 +3084,7 @@
    "tier": 3
   },
   {
+   "id": 136714,
    "name": "Edoardo Corvi",
    "team": "Parma",
    "position": "Goalkeeper",
@@ -2816,6 +3095,7 @@
    "tier": 3
   },
   {
+   "id": 191638,
    "name": "Giovanni Daffara",
    "team": "Parma",
    "position": "Goalkeeper",
@@ -2826,16 +3106,18 @@
    "tier": 3
   },
   {
+   "id": 1839,
    "name": "Enrico Del Prato",
    "team": "Parma",
    "position": "Defender",
-   "age": 26,
+   "age": 27,
    "number": 15,
    "nationality": "Italy",
    "photo": "https://media.api-sports.io/football/players/30420.png",
    "tier": 3
   },
   {
+   "id": 8698,
    "name": "Diego Carlos",
    "team": "Parma",
    "position": "Defender",
@@ -2846,6 +3128,7 @@
    "tier": 3
   },
   {
+   "id": 42613,
    "name": "Emanuele Valeri",
    "team": "Parma",
    "position": "Midfielder",
@@ -2856,6 +3139,7 @@
    "tier": 3
   },
   {
+   "id": 97151,
    "name": "Lautaro Valenti",
    "team": "Parma",
    "position": "Defender",
@@ -2866,6 +3150,7 @@
    "tier": 3
   },
   {
+   "id": 152734,
    "name": "Franco Carboni",
    "team": "Parma",
    "position": "Defender",
@@ -2876,6 +3161,7 @@
    "tier": 3
   },
   {
+   "id": 204310,
    "name": "Abdoulaye N'Diaye",
    "team": "Parma",
    "position": "Defender",
@@ -2886,6 +3172,7 @@
    "tier": 3
   },
   {
+   "id": 212729,
    "name": "Mariano Troilo",
    "team": "Parma",
    "position": "Defender",
@@ -2896,6 +3183,7 @@
    "tier": 3
   },
   {
+   "id": 272065,
    "name": "Ousmane Diallo",
    "team": "Parma",
    "position": "Forward",
@@ -2906,6 +3194,7 @@
    "tier": 3
   },
   {
+   "id": 272754,
    "name": "Sascha Britschgi",
    "team": "Parma",
    "position": "Midfielder",
@@ -2916,6 +3205,7 @@
    "tier": 3
   },
   {
+   "id": 290728,
    "name": "Dominik Drobnič",
    "team": "Parma",
    "position": "Defender",
@@ -2926,6 +3216,7 @@
    "tier": 3
   },
   {
+   "id": 92051,
    "name": "Adrián Bernabé",
    "team": "Parma",
    "position": "Midfielder",
@@ -2936,6 +3227,7 @@
    "tier": 2
   },
   {
+   "id": 97894,
    "name": "Hans Nicolussi Caviglia",
    "team": "Parma",
    "position": "Midfielder",
@@ -2946,6 +3238,7 @@
    "tier": 3
   },
   {
+   "id": 165900,
    "name": "Mandela Keita",
    "team": "Parma",
    "position": "Midfielder",
@@ -2956,6 +3249,7 @@
    "tier": 2
   },
   {
+   "id": 171123,
    "name": "Giovanni Fabbian",
    "team": "Parma",
    "position": "Midfielder",
@@ -2966,6 +3260,7 @@
    "tier": 3
   },
   {
+   "id": 191285,
    "name": "Christian Ordonez",
    "team": "Parma",
    "position": "Midfielder",
@@ -2976,6 +3271,7 @@
    "tier": 3
   },
   {
+   "id": 289179,
    "name": "Abdou-Salam Konate",
    "team": "Parma",
    "position": "Midfielder",
@@ -2986,6 +3282,7 @@
    "tier": 3
   },
   {
+   "id": 31881,
    "name": "Pontus Almqvist",
    "team": "Parma",
    "position": "Forward",
@@ -2996,6 +3293,7 @@
    "tier": 3
   },
   {
+   "id": 140773,
    "name": "El Bilal Touré",
    "team": "Parma",
    "position": "Forward",
@@ -3006,6 +3304,7 @@
    "tier": 2
   },
   {
+   "id": 165857,
    "name": "José Romero",
    "team": "Parma",
    "position": "Forward",
@@ -3016,6 +3315,7 @@
    "tier": 3
   },
   {
+   "id": 184455,
    "name": "Matija Frigan",
    "team": "Parma",
    "position": "Forward",
@@ -3026,6 +3326,7 @@
    "tier": 3
   },
   {
+   "id": 204288,
    "name": "Nesta Elphege",
    "team": "Parma",
    "position": "Forward",
@@ -3036,6 +3337,7 @@
    "tier": 3
   },
   {
+   "id": 282455,
    "name": "Thomas de Martis",
    "team": "Parma",
    "position": "Forward",
@@ -3046,6 +3348,7 @@
    "tier": 3
   },
   {
+   "id": 299423,
    "name": "Simone Lontani",
    "team": "Parma",
    "position": "Forward",
@@ -3056,6 +3359,7 @@
    "tier": 3
   },
   {
+   "id": 302118,
    "name": "Djibril Diallo",
    "team": "Parma",
    "position": "Defender",
@@ -3066,6 +3370,7 @@
    "tier": 3
   },
   {
+   "id": 2275,
    "name": "Vanja Milinković-Savić",
    "team": "Napoli",
    "position": "Goalkeeper",
@@ -3076,6 +3381,7 @@
    "tier": 2
   },
   {
+   "id": 2344,
    "name": "Alex Meret",
    "team": "Napoli",
    "position": "Goalkeeper",
@@ -3086,6 +3392,7 @@
    "tier": 3
   },
   {
+   "id": 74378,
    "name": "Nikita Contini Baranovsky",
    "team": "Napoli",
    "position": "Goalkeeper",
@@ -3096,6 +3403,7 @@
    "tier": 3
   },
   {
+   "id": 301044,
    "name": "Claudio Pugliese",
    "team": "Napoli",
    "position": "Goalkeeper",
@@ -3106,6 +3414,7 @@
    "tier": 3
   },
   {
+   "id": 1842,
    "name": "Leonardo Spinazzola",
    "team": "Napoli",
    "position": "Defender",
@@ -3116,6 +3425,7 @@
    "tier": 3
   },
   {
+   "id": 2280,
    "name": "Alessandro Buongiorno",
    "team": "Napoli",
    "position": "Defender",
@@ -3126,6 +3436,7 @@
    "tier": 1
   },
   {
+   "id": 2487,
    "name": "Giovanni Di Lorenzo",
    "team": "Napoli",
    "position": "Defender",
@@ -3136,6 +3447,7 @@
    "tier": 3
   },
   {
+   "id": 23127,
    "name": "Amir Rrahmani",
    "team": "Napoli",
    "position": "Defender",
@@ -3146,6 +3458,7 @@
    "tier": 3
   },
   {
+   "id": 32754,
    "name": "Mathías Olivera",
    "team": "Napoli",
    "position": "Defender",
@@ -3156,16 +3469,18 @@
    "tier": 2
   },
   {
+   "id": 53281,
    "name": "Sam Beukema",
    "team": "Napoli",
    "position": "Defender",
-   "age": 27,
+   "age": 28,
    "number": 31,
    "nationality": "Netherlands",
    "photo": "https://media.api-sports.io/football/players/37604.png",
    "tier": 2
   },
   {
+   "id": 170426,
    "name": "Benoît Badiashile",
    "team": "Napoli",
    "position": "Defender",
@@ -3176,6 +3491,7 @@
    "tier": 2
   },
   {
+   "id": 176758,
    "name": "Rafa Marin",
    "team": "Napoli",
    "position": "Defender",
@@ -3186,6 +3502,7 @@
    "tier": 2
   },
   {
+   "id": 188308,
    "name": "Costantino Favasuli",
    "team": "Napoli",
    "position": "Defender",
@@ -3196,6 +3513,7 @@
    "tier": 3
   },
   {
+   "id": 214546,
    "name": "Luca Marianucci",
    "team": "Napoli",
    "position": "Defender",
@@ -3206,6 +3524,7 @@
    "tier": 3
   },
   {
+   "id": 3654,
    "name": "Kevin De Bruyne",
    "team": "Napoli",
    "position": "Forward",
@@ -3216,6 +3535,7 @@
    "tier": 3
   },
   {
+   "id": 7905,
    "name": "Scott McTominay",
    "team": "Napoli",
    "position": "Midfielder",
@@ -3226,16 +3546,18 @@
    "tier": 1
   },
   {
+   "id": 8354,
    "name": "André Zambo Anguissa",
    "team": "Napoli",
    "position": "Midfielder",
-   "age": 30,
+   "age": 31,
    "number": 99,
    "nationality": "Cameroon",
    "photo": "https://media.api-sports.io/football/players/3406.png",
    "tier": 2
   },
   {
+   "id": 33628,
    "name": "Stanislav Lobotka",
    "team": "Napoli",
    "position": "Midfielder",
@@ -3246,6 +3568,7 @@
    "tier": 3
   },
   {
+   "id": 126289,
    "name": "Billy Gilmour",
    "team": "Napoli",
    "position": "Midfielder",
@@ -3256,6 +3579,7 @@
    "tier": 2
   },
   {
+   "id": 176944,
    "name": "Antonio Vergara",
    "team": "Napoli",
    "position": "Midfielder",
@@ -3266,6 +3590,7 @@
    "tier": 2
   },
   {
+   "id": 2193,
    "name": "Matteo Politano",
    "team": "Napoli",
    "position": "Midfielder",
@@ -3276,6 +3601,7 @@
    "tier": 3
   },
   {
+   "id": 7565,
    "name": "Noa Lang",
    "team": "Napoli",
    "position": "Forward",
@@ -3286,6 +3612,7 @@
    "tier": 2
   },
   {
+   "id": 7571,
    "name": "David Neres",
    "team": "Napoli",
    "position": "Forward",
@@ -3296,6 +3623,7 @@
    "tier": 2
   },
   {
+   "id": 40305,
    "name": "Lorenzo Lucca",
    "team": "Napoli",
    "position": "Forward",
@@ -3306,6 +3634,7 @@
    "tier": 2
   },
   {
+   "id": 152770,
    "name": "Rasmus Højlund",
    "team": "Napoli",
    "position": "Forward",
@@ -3316,6 +3645,7 @@
    "tier": 1
   },
   {
+   "id": 181795,
    "name": "Giovane Nascimento",
    "team": "Napoli",
    "position": "Forward",
@@ -3326,6 +3656,7 @@
    "tier": 2
   },
   {
+   "id": 220542,
    "name": "Alisson Santos",
    "team": "Napoli",
    "position": "Forward",
@@ -3336,6 +3667,7 @@
    "tier": 2
   },
   {
+   "id": 262653,
    "name": "Dinis Rodrigues",
    "team": "Napoli",
    "position": "Forward",
@@ -3346,6 +3678,7 @@
    "tier": 3
   },
   {
+   "id": 302855,
    "name": "Claudio Lieto",
    "team": "Napoli",
    "position": null,
@@ -3356,6 +3689,7 @@
    "tier": 3
   },
   {
+   "id": 302854,
    "name": "Nikita Melnyk",
    "team": "Napoli",
    "position": null,
@@ -3366,6 +3700,7 @@
    "tier": 3
   },
   {
+   "id": 302853,
    "name": "Andrea Chiummariello",
    "team": "Napoli",
    "position": "Midfielder",
@@ -3376,6 +3711,7 @@
    "tier": 3
   },
   {
+   "id": 1993,
    "name": "Daniele Padelli",
    "team": "Udinese",
    "position": "Goalkeeper",
@@ -3386,6 +3722,7 @@
    "tier": 3
   },
   {
+   "id": 65480,
    "name": "Maduka Okoye",
    "team": "Udinese",
    "position": "Goalkeeper",
@@ -3396,6 +3733,7 @@
    "tier": 3
   },
   {
+   "id": 84089,
    "name": "Bartosz Mrozek",
    "team": "Udinese",
    "position": "Goalkeeper",
@@ -3406,6 +3744,7 @@
    "tier": 3
   },
   {
+   "id": 167851,
    "name": "Edoardo Piana",
    "team": "Udinese",
    "position": "Goalkeeper",
@@ -3416,6 +3755,7 @@
    "tier": 3
   },
   {
+   "id": 777,
    "name": "Enzo Ebosse",
    "team": "Udinese",
    "position": "Defender",
@@ -3426,6 +3766,7 @@
    "tier": 3
   },
   {
+   "id": 822,
    "name": "Hassane Kamara",
    "team": "Udinese",
    "position": "Midfielder",
@@ -3436,6 +3777,7 @@
    "tier": 3
   },
   {
+   "id": 2996,
    "name": "Alessandro Zanoli",
    "team": "Udinese",
    "position": "Defender",
@@ -3446,6 +3788,7 @@
    "tier": 3
   },
   {
+   "id": 8111,
    "name": "Christian Kabasele",
    "team": "Udinese",
    "position": "Defender",
@@ -3456,6 +3799,7 @@
    "tier": 3
   },
   {
+   "id": 8462,
    "name": "Oumar Solet",
    "team": "Udinese",
    "position": "Defender",
@@ -3466,6 +3810,7 @@
    "tier": 2
   },
   {
+   "id": 9204,
    "name": "Mërgim Vojvoda",
    "team": "Udinese",
    "position": "Midfielder",
@@ -3476,6 +3821,7 @@
    "tier": 3
   },
   {
+   "id": 172425,
    "name": "Nicolo Bertola",
    "team": "Udinese",
    "position": "Defender",
@@ -3486,6 +3832,7 @@
    "tier": 3
   },
   {
+   "id": 187208,
    "name": "James Abankwah",
    "team": "Udinese",
    "position": "Defender",
@@ -3496,6 +3843,7 @@
    "tier": 3
   },
   {
+   "id": 252872,
    "name": "Matteo Palma",
    "team": "Udinese",
    "position": "Defender",
@@ -3506,6 +3854,7 @@
    "tier": 3
   },
   {
+   "id": 7567,
    "name": "Jurgen Ekkelenkamp",
    "team": "Udinese",
    "position": "Midfielder",
@@ -3516,6 +3865,7 @@
    "tier": 3
   },
   {
+   "id": 8917,
    "name": "Giorgi Chakvetadze",
    "team": "Udinese",
    "position": "Midfielder",
@@ -3526,6 +3876,7 @@
    "tier": 3
   },
   {
+   "id": 10887,
    "name": "Sandi Lovric",
    "team": "Udinese",
    "position": "Midfielder",
@@ -3536,6 +3887,7 @@
    "tier": 3
   },
   {
+   "id": 31065,
    "name": "Jesper Karlström",
    "team": "Udinese",
    "position": "Midfielder",
@@ -3546,6 +3898,7 @@
    "tier": 3
   },
   {
+   "id": 64243,
    "name": "Jakub Piotrowski",
    "team": "Udinese",
    "position": "Midfielder",
@@ -3556,6 +3909,7 @@
    "tier": 3
   },
   {
+   "id": 150522,
    "name": "Oier Zarraga",
    "team": "Udinese",
    "position": "Midfielder",
@@ -3566,6 +3920,7 @@
    "tier": 3
   },
   {
+   "id": 187404,
    "name": "Lennon Miller",
    "team": "Udinese",
    "position": "Midfielder",
@@ -3576,6 +3931,7 @@
    "tier": 3
   },
   {
+   "id": 202335,
    "name": "Unai Gomez",
    "team": "Udinese",
    "position": "Midfielder",
@@ -3586,6 +3942,7 @@
    "tier": 3
   },
   {
+   "id": 202427,
    "name": "Juan Arizala",
    "team": "Udinese",
    "position": "Midfielder",
@@ -3596,6 +3953,7 @@
    "tier": 3
   },
   {
+   "id": 215588,
    "name": "David Pejičić",
    "team": "Udinese",
    "position": "Midfielder",
@@ -3606,6 +3964,7 @@
    "tier": 3
   },
   {
+   "id": 2013,
    "name": "Nicolò Zaniolo",
    "team": "Udinese",
    "position": "Midfielder",
@@ -3616,6 +3975,7 @@
    "tier": 2
   },
   {
+   "id": 3896,
    "name": "Keinan Davis",
    "team": "Udinese",
    "position": "Forward",
@@ -3626,6 +3986,7 @@
    "tier": 3
   },
   {
+   "id": 84493,
    "name": "Vakoun Issouf Bayo",
    "team": "Udinese",
    "position": "Forward",
@@ -3636,6 +3997,7 @@
    "tier": 3
   },
   {
+   "id": 216841,
    "name": "Lazar Jovanovic",
    "team": "Udinese",
    "position": "Forward",
@@ -3646,6 +4008,7 @@
    "tier": 3
   },
   {
+   "id": 274050,
    "name": "Idrissa Guèye",
    "team": "Udinese",
    "position": "Forward",
@@ -3656,6 +4019,7 @@
    "tier": 3
   },
   {
+   "id": 285327,
    "name": "Giulio Vinciati",
    "team": "Udinese",
    "position": "Forward",
@@ -3666,6 +4030,7 @@
    "tier": 3
   },
   {
+   "id": 2789,
    "name": "Alessio Pozzi",
    "team": "Venezia",
    "position": "Goalkeeper",
@@ -3676,6 +4041,7 @@
    "tier": 3
   },
   {
+   "id": 2891,
    "name": "Lorenzo Montipò",
    "team": "Venezia",
    "position": "Goalkeeper",
@@ -3686,6 +4052,7 @@
    "tier": 3
   },
   {
+   "id": 42026,
    "name": "Matteo Grandi",
    "team": "Venezia",
    "position": "Goalkeeper",
@@ -3696,6 +4063,7 @@
    "tier": 3
   },
   {
+   "id": 140823,
    "name": "Filip Stankovic",
    "team": "Venezia",
    "position": "Goalkeeper",
@@ -3706,6 +4074,7 @@
    "tier": 3
   },
   {
+   "id": 2386,
    "name": "Pasquale Mazzocchi",
    "team": "Venezia",
    "position": "Midfielder",
@@ -3716,6 +4085,7 @@
    "tier": 3
   },
   {
+   "id": 6624,
    "name": "Marin Šverko",
    "team": "Venezia",
    "position": "Defender",
@@ -3726,6 +4096,7 @@
    "tier": 3
   },
   {
+   "id": 7466,
    "name": "Ridgeciano Haps",
    "team": "Venezia",
    "position": "Defender",
@@ -3736,6 +4107,7 @@
    "tier": 3
   },
   {
+   "id": 99811,
    "name": "Thierry Correia",
    "team": "Venezia",
    "position": "Defender",
@@ -3746,6 +4118,7 @@
    "tier": 3
   },
   {
+   "id": 111555,
    "name": "Armel Bella Kotchap",
    "team": "Venezia",
    "position": "Defender",
@@ -3756,6 +4129,7 @@
    "tier": 3
   },
   {
+   "id": 122265,
    "name": "Bartol Franjić",
    "team": "Venezia",
    "position": "Midfielder",
@@ -3766,6 +4140,7 @@
    "tier": 3
   },
   {
+   "id": 161310,
    "name": "Juan Jesus",
    "team": "Venezia",
    "position": "Defender",
@@ -3776,6 +4151,7 @@
    "tier": 3
   },
   {
+   "id": 172822,
    "name": "Redouane Halhal",
    "team": "Venezia",
    "position": "Defender",
@@ -3786,6 +4162,7 @@
    "tier": 3
   },
   {
+   "id": 187435,
    "name": "Richie Sagrado",
    "team": "Venezia",
    "position": "Defender",
@@ -3796,6 +4173,7 @@
    "tier": 3
   },
   {
+   "id": 188464,
    "name": "Antoine Hainaut",
    "team": "Venezia",
    "position": "Midfielder",
@@ -3806,6 +4184,7 @@
    "tier": 3
   },
   {
+   "id": 189534,
    "name": "Joel Schingtienne",
    "team": "Venezia",
    "position": "Defender",
@@ -3816,6 +4195,7 @@
    "tier": 3
   },
   {
+   "id": 191195,
    "name": "Calixte Ligue",
    "team": "Venezia",
    "position": "Defender",
@@ -3826,6 +4206,7 @@
    "tier": 3
   },
   {
+   "id": 210811,
    "name": "Matias Moreno",
    "team": "Venezia",
    "position": "Defender",
@@ -3836,6 +4217,7 @@
    "tier": 3
   },
   {
+   "id": 250630,
    "name": "Rufai Mohammed",
    "team": "Venezia",
    "position": "Defender",
@@ -3846,6 +4228,7 @@
    "tier": 3
   },
   {
+   "id": 288731,
    "name": "Ale Gomes",
    "team": "Venezia",
    "position": "Defender",
@@ -3856,6 +4239,7 @@
    "tier": 3
   },
   {
+   "id": 2194,
    "name": "Alfred Duncan",
    "team": "Venezia",
    "position": "Midfielder",
@@ -3866,6 +4250,7 @@
    "tier": 3
   },
   {
+   "id": 16794,
    "name": "Þórir Jóhann Helgason",
    "team": "Venezia",
    "position": "Midfielder",
@@ -3876,6 +4261,7 @@
    "tier": 3
   },
   {
+   "id": 23703,
    "name": "Toma Bašić",
    "team": "Venezia",
    "position": "Midfielder",
@@ -3886,6 +4272,7 @@
    "tier": 3
   },
   {
+   "id": 32115,
    "name": "Kike Pérez",
    "team": "Venezia",
    "position": "Midfielder",
@@ -3896,6 +4283,7 @@
    "tier": 3
   },
   {
+   "id": 77078,
    "name": "Gianluca Busio",
    "team": "Venezia",
    "position": "Midfielder",
@@ -3906,6 +4294,7 @@
    "tier": 3
   },
   {
+   "id": 98606,
    "name": "Simon Sohm",
    "team": "Venezia",
    "position": "Midfielder",
@@ -3916,6 +4305,7 @@
    "tier": 3
   },
   {
+   "id": 156554,
    "name": "Simone Panada",
    "team": "Venezia",
    "position": "Midfielder",
@@ -3926,6 +4316,7 @@
    "tier": 3
   },
   {
+   "id": 191518,
    "name": "Matteo Dagasso",
    "team": "Venezia",
    "position": "Midfielder",
@@ -3936,6 +4327,7 @@
    "tier": 3
   },
   {
+   "id": 193620,
    "name": "Lamine Dabo",
    "team": "Venezia",
    "position": "Midfielder",
@@ -3946,6 +4338,7 @@
    "tier": 3
   },
   {
+   "id": 261351,
    "name": "Saad El Haddad",
    "team": "Venezia",
    "position": "Midfielder",
@@ -3956,6 +4349,7 @@
    "tier": 3
   },
   {
+   "id": 270450,
    "name": "Toni Fernández",
    "team": "Venezia",
    "position": "Midfielder",
@@ -3966,6 +4360,7 @@
    "tier": 3
   },
   {
+   "id": 291141,
    "name": "Lorenzo Berardi",
    "team": "Venezia",
    "position": "Midfielder",
@@ -3976,6 +4371,7 @@
    "tier": 3
   },
   {
+   "id": 10519,
    "name": "Lion Lauberbach",
    "team": "Venezia",
    "position": "Forward",
@@ -3986,6 +4382,7 @@
    "tier": 3
   },
   {
+   "id": 82132,
    "name": "Akor Adams",
    "team": "Venezia",
    "position": "Forward",
@@ -3996,6 +4393,7 @@
    "tier": 2
   },
   {
+   "id": 98549,
    "name": "John Yeboah",
    "team": "Venezia",
    "position": "Forward",
@@ -4006,6 +4404,7 @@
    "tier": 3
   },
   {
+   "id": 111976,
    "name": "Andrea Adorante",
    "team": "Venezia",
    "position": "Forward",
@@ -4016,6 +4415,7 @@
    "tier": 3
   },
   {
+   "id": 182768,
    "name": "Albion Rrahmani",
    "team": "Venezia",
    "position": "Forward",
@@ -4026,6 +4426,7 @@
    "tier": 3
   },
   {
+   "id": 254708,
    "name": "Kornel Lisman",
    "team": "Venezia",
    "position": "Forward",
@@ -4036,6 +4437,7 @@
    "tier": 3
   },
   {
+   "id": 299424,
    "name": "Mohamed Malang Touré",
    "team": "Venezia",
    "position": "Forward",
@@ -4046,6 +4448,7 @@
    "tier": 3
   },
   {
+   "id": 40309,
    "name": "Matteo Pisseri",
    "team": "Frosinone",
    "position": "Goalkeeper",
@@ -4056,6 +4459,7 @@
    "tier": 3
   },
   {
+   "id": 171130,
    "name": "Sebastiano Desplanches",
    "team": "Frosinone",
    "position": "Goalkeeper",
@@ -4066,6 +4470,7 @@
    "tier": 3
   },
   {
+   "id": 172293,
    "name": "Lorenzo Palmisani",
    "team": "Frosinone",
    "position": "Goalkeeper",
@@ -4076,6 +4481,7 @@
    "tier": 3
   },
   {
+   "id": 177072,
    "name": "Eldin Lolic",
    "team": "Frosinone",
    "position": "Goalkeeper",
@@ -4086,6 +4492,7 @@
    "tier": 3
   },
   {
+   "id": 315,
    "name": "Kevin Akpoguma",
    "team": "Frosinone",
    "position": "Defender",
@@ -4096,6 +4503,7 @@
    "tier": 3
   },
   {
+   "id": 73064,
    "name": "Aleksa Terzić",
    "team": "Frosinone",
    "position": "Defender",
@@ -4106,6 +4514,7 @@
    "tier": 3
   },
   {
+   "id": 136640,
    "name": "Ilario Monterisi",
    "team": "Frosinone",
    "position": "Defender",
@@ -4116,6 +4525,7 @@
    "tier": 3
   },
   {
+   "id": 148672,
    "name": "Anthony Oyono",
    "team": "Frosinone",
    "position": "Defender",
@@ -4126,6 +4536,7 @@
    "tier": 3
   },
   {
+   "id": 167734,
    "name": "Wisdom Amey",
    "team": "Frosinone",
    "position": "Defender",
@@ -4136,6 +4547,7 @@
    "tier": 3
   },
   {
+   "id": 176891,
    "name": "Giorgio Cittadini",
    "team": "Frosinone",
    "position": "Defender",
@@ -4146,6 +4558,7 @@
    "tier": 3
   },
   {
+   "id": 177393,
    "name": "Enzo Tchato",
    "team": "Frosinone",
    "position": "Defender",
@@ -4156,6 +4569,7 @@
    "tier": 3
   },
   {
+   "id": 186575,
    "name": "Gabriele Bracaglia",
    "team": "Frosinone",
    "position": "Defender",
@@ -4166,6 +4580,7 @@
    "tier": 3
   },
   {
+   "id": 189227,
    "name": "Gabriele Calvani",
    "team": "Frosinone",
    "position": "Defender",
@@ -4176,6 +4591,7 @@
    "tier": 3
   },
   {
+   "id": 216483,
    "name": "Omar Fayed",
    "team": "Frosinone",
    "position": "Defender",
@@ -4186,6 +4602,7 @@
    "tier": 3
   },
   {
+   "id": 404,
    "name": "Florian Grillitsch",
    "team": "Frosinone",
    "position": "Midfielder",
@@ -4196,6 +4613,7 @@
    "tier": 3
   },
   {
+   "id": 2107,
    "name": "Alessio Zerbin",
    "team": "Frosinone",
    "position": "Forward",
@@ -4206,6 +4624,7 @@
    "tier": 3
   },
   {
+   "id": 2296,
    "name": "Ben Lhassine Kone",
    "team": "Frosinone",
    "position": "Midfielder",
@@ -4216,6 +4635,7 @@
    "tier": 3
   },
   {
+   "id": 16346,
    "name": "Romano Schmid",
    "team": "Frosinone",
    "position": "Midfielder",
@@ -4226,6 +4646,7 @@
    "tier": 2
   },
   {
+   "id": 40471,
    "name": "Francesco Gelli",
    "team": "Frosinone",
    "position": "Midfielder",
@@ -4236,6 +4657,7 @@
    "tier": 3
   },
   {
+   "id": 40786,
    "name": "Giacomo Calò",
    "team": "Frosinone",
    "position": "Midfielder",
@@ -4246,6 +4668,7 @@
    "tier": 3
   },
   {
+   "id": 150824,
    "name": "Ilias Koutsoupias",
    "team": "Frosinone",
    "position": "Midfielder",
@@ -4256,6 +4679,7 @@
    "tier": 3
   },
   {
+   "id": 153097,
    "name": "Patrizio Masini",
    "team": "Frosinone",
    "position": "Midfielder",
@@ -4266,6 +4690,7 @@
    "tier": 3
   },
   {
+   "id": 171274,
    "name": "Anouar El Azzouzi",
    "team": "Frosinone",
    "position": "Midfielder",
@@ -4276,6 +4701,7 @@
    "tier": 3
   },
   {
+   "id": 217676,
    "name": "Luis Hasa",
    "team": "Frosinone",
    "position": "Midfielder",
@@ -4286,6 +4712,7 @@
    "tier": 3
   },
   {
+   "id": 263933,
    "name": "Matteo Cichella",
    "team": "Frosinone",
    "position": "Midfielder",
@@ -4296,6 +4723,7 @@
    "tier": 3
   },
   {
+   "id": 120722,
    "name": "Tomáš Bobček",
    "team": "Frosinone",
    "position": "Forward",
@@ -4306,6 +4734,7 @@
    "tier": 3
   },
   {
+   "id": 129635,
    "name": "Daniel Birligea",
    "team": "Frosinone",
    "position": "Forward",
@@ -4316,6 +4745,7 @@
    "tier": 3
   },
   {
+   "id": 169216,
    "name": "Antonio Raimondo",
    "team": "Frosinone",
    "position": "Forward",
@@ -4326,6 +4756,7 @@
    "tier": 3
   },
   {
+   "id": 192114,
    "name": "Seydou Fini",
    "team": "Frosinone",
    "position": "Forward",
@@ -4336,6 +4767,7 @@
    "tier": 3
   },
   {
+   "id": 211564,
    "name": "Giorgi Kvernadze",
    "team": "Frosinone",
    "position": "Midfielder",
@@ -4346,6 +4778,7 @@
    "tier": 3
   },
   {
+   "id": 245324,
    "name": "Farés Ghedjemis",
    "team": "Frosinone",
    "position": "Midfielder",
@@ -4356,6 +4789,7 @@
    "tier": 3
   },
   {
+   "id": 263932,
    "name": "Alejandro Cichero",
    "team": "Frosinone",
    "position": "Forward",
@@ -4366,6 +4800,7 @@
    "tier": 3
   },
   {
+   "id": 2178,
    "name": "Giacomo Satalino",
    "team": "Sassuolo",
    "position": "Goalkeeper",
@@ -4376,6 +4811,7 @@
    "tier": 3
   },
   {
+   "id": 41384,
    "name": "Stefano Turati",
    "team": "Sassuolo",
    "position": "Goalkeeper",
@@ -4386,6 +4822,7 @@
    "tier": 3
   },
   {
+   "id": 81179,
    "name": "Arijanet Muric",
    "team": "Sassuolo",
    "position": "Goalkeeper",
@@ -4396,6 +4833,7 @@
    "tier": 3
   },
   {
+   "id": 288538,
    "name": "Lorenzo Nyarko",
    "team": "Sassuolo",
    "position": "Goalkeeper",
@@ -4406,6 +4844,7 @@
    "tier": 3
   },
   {
+   "id": 10206,
    "name": "Duje Ćaleta-Car",
    "team": "Sassuolo",
    "position": "Defender",
@@ -4416,6 +4855,7 @@
    "tier": 3
   },
   {
+   "id": 53403,
    "name": "Jay Idzes",
    "team": "Sassuolo",
    "position": "Defender",
@@ -4426,6 +4866,7 @@
    "tier": 2
   },
   {
+   "id": 105441,
    "name": "Sebastian Walukiewicz",
    "team": "Sassuolo",
    "position": "Defender",
@@ -4436,6 +4877,7 @@
    "tier": 3
   },
   {
+   "id": 117370,
    "name": "Fali Candé",
    "team": "Sassuolo",
    "position": "Defender",
@@ -4446,6 +4888,7 @@
    "tier": 3
   },
   {
+   "id": 122407,
    "name": "Josh Doig",
    "team": "Sassuolo",
    "position": "Defender",
@@ -4456,6 +4899,7 @@
    "tier": 3
   },
   {
+   "id": 125523,
    "name": "Cas Odenthal",
    "team": "Sassuolo",
    "position": "Defender",
@@ -4466,6 +4910,7 @@
    "tier": 3
   },
   {
+   "id": 126768,
    "name": "Ignace Van Der Brempt",
    "team": "Sassuolo",
    "position": "Defender",
@@ -4476,6 +4921,7 @@
    "tier": 3
   },
   {
+   "id": 128331,
    "name": "Fedde Leysen",
    "team": "Sassuolo",
    "position": "Defender",
@@ -4486,6 +4932,7 @@
    "tier": 3
   },
   {
+   "id": 177039,
    "name": "Edoardo Pieragnolo",
    "team": "Sassuolo",
    "position": "Defender",
@@ -4496,6 +4943,7 @@
    "tier": 3
   },
   {
+   "id": 179578,
    "name": "Yeferson Paz",
    "team": "Sassuolo",
    "position": "Defender",
@@ -4506,6 +4954,7 @@
    "tier": 3
   },
   {
+   "id": 265154,
    "name": "Rafa Obrador",
    "team": "Sassuolo",
    "position": "Defender",
@@ -4516,6 +4965,7 @@
    "tier": 3
   },
   {
+   "id": 295707,
    "name": "Giorgio Vezzosi",
    "team": "Sassuolo",
    "position": "Defender",
@@ -4526,6 +4976,7 @@
    "tier": 3
   },
   {
+   "id": 3438,
    "name": "Nemanja Matić",
    "team": "Sassuolo",
    "position": "Midfielder",
@@ -4536,6 +4987,7 @@
    "tier": 3
   },
   {
+   "id": 44033,
    "name": "Kristian Thorstvedt",
    "team": "Sassuolo",
    "position": "Midfielder",
@@ -4546,6 +4998,7 @@
    "tier": 2
   },
   {
+   "id": 119163,
    "name": "Andrea Ghion",
    "team": "Sassuolo",
    "position": "Midfielder",
@@ -4556,6 +5009,7 @@
    "tier": 3
   },
   {
+   "id": 147020,
    "name": "Daniel Boloca",
    "team": "Sassuolo",
    "position": "Midfielder",
@@ -4566,6 +5020,7 @@
    "tier": 3
   },
   {
+   "id": 177734,
    "name": "Ismaël Koné",
    "team": "Sassuolo",
    "position": "Midfielder",
@@ -4576,6 +5031,7 @@
    "tier": 2
   },
   {
+   "id": 183018,
    "name": "Vasilije Adzic",
    "team": "Sassuolo",
    "position": "Midfielder",
@@ -4586,6 +5042,7 @@
    "tier": 3
   },
   {
+   "id": 188791,
    "name": "Ibrahim Sulemana",
    "team": "Sassuolo",
    "position": "Midfielder",
@@ -4596,6 +5053,7 @@
    "tier": 3
   },
   {
+   "id": 189844,
    "name": "Luca Lipani",
    "team": "Sassuolo",
    "position": "Midfielder",
@@ -4606,6 +5064,7 @@
    "tier": 3
   },
   {
+   "id": 250948,
    "name": "Darryl Bakola",
    "team": "Sassuolo",
    "position": "Midfielder",
@@ -4616,6 +5075,7 @@
    "tier": 3
   },
   {
+   "id": 264821,
    "name": "Simone Cinquegrano",
    "team": "Sassuolo",
    "position": "Midfielder",
@@ -4626,6 +5086,7 @@
    "tier": 3
   },
   {
+   "id": 2202,
    "name": "Domenico Berardi",
    "team": "Sassuolo",
    "position": "Forward",
@@ -4636,6 +5097,7 @@
    "tier": 3
   },
   {
+   "id": 2203,
    "name": "Nicholas Pierini",
    "team": "Sassuolo",
    "position": "Forward",
@@ -4646,6 +5108,7 @@
    "tier": 3
   },
   {
+   "id": 8822,
    "name": "Armand Lauriente",
    "team": "Sassuolo",
    "position": "Forward",
@@ -4656,6 +5119,7 @@
    "tier": 2
   },
   {
+   "id": 105081,
    "name": "Kieron Bowie",
    "team": "Sassuolo",
    "position": "Forward",
@@ -4666,6 +5130,7 @@
    "tier": 3
   },
   {
+   "id": 114054,
    "name": "Sebastiano Esposito",
    "team": "Sassuolo",
    "position": "Forward",
@@ -4676,6 +5141,7 @@
    "tier": 2
   },
   {
+   "id": 191379,
    "name": "Benjamín Domínguez",
    "team": "Sassuolo",
    "position": "Forward",
@@ -4686,6 +5152,7 @@
    "tier": 3
   },
   {
+   "id": 245405,
    "name": "Laurs Skjellerup",
    "team": "Sassuolo",
    "position": "Forward",
@@ -4696,6 +5163,7 @@
    "tier": 3
   },
   {
+   "id": 1331,
    "name": "Lucas Perri",
    "team": "Torino",
    "position": "Goalkeeper",
@@ -4706,6 +5174,7 @@
    "tier": 2
   },
   {
+   "id": 2684,
    "name": "Alberto Paleari",
    "team": "Torino",
    "position": "Goalkeeper",
@@ -4716,6 +5185,7 @@
    "tier": 3
   },
   {
+   "id": 97893,
    "name": "Franco Israel",
    "team": "Torino",
    "position": "Goalkeeper",
@@ -4726,6 +5196,7 @@
    "tier": 3
   },
   {
+   "id": 217847,
    "name": "Lapo Siviero",
    "team": "Torino",
    "position": "Goalkeeper",
@@ -4736,6 +5207,7 @@
    "tier": 3
   },
   {
+   "id": 229851,
    "name": "Diego Mascardi",
    "team": "Torino",
    "position": "Goalkeeper",
@@ -4746,6 +5218,7 @@
    "tier": 3
   },
   {
+   "id": 1776,
    "name": "Cristiano Biraghi",
    "team": "Torino",
    "position": "Defender",
@@ -4756,6 +5229,7 @@
    "tier": 3
   },
   {
+   "id": 23287,
    "name": "Ardian Ismajli",
    "team": "Torino",
    "position": "Defender",
@@ -4766,6 +5240,7 @@
    "tier": 3
   },
   {
+   "id": 30823,
    "name": "Eray Cömert",
    "team": "Torino",
    "position": "Defender",
@@ -4776,6 +5251,7 @@
    "tier": 3
   },
   {
+   "id": 123689,
    "name": "Saúl Coco",
    "team": "Torino",
    "position": "Defender",
@@ -4786,6 +5262,7 @@
    "tier": 3
   },
   {
+   "id": 138174,
    "name": "Nathan Patterson",
    "team": "Torino",
    "position": "Defender",
@@ -4796,6 +5273,7 @@
    "tier": 2
   },
   {
+   "id": 160756,
    "name": "Rafik Belghali",
    "team": "Torino",
    "position": "Midfielder",
@@ -4806,6 +5284,7 @@
    "tier": 3
   },
   {
+   "id": 217391,
    "name": "Pietro Comuzzo",
    "team": "Torino",
    "position": "Defender",
@@ -4816,6 +5295,7 @@
    "tier": 2
   },
   {
+   "id": 251135,
    "name": "Niccolò Fortini",
    "team": "Torino",
    "position": "Defender",
@@ -4826,6 +5306,7 @@
    "tier": 2
   },
   {
+   "id": 2230,
    "name": "Rolando Mandragora",
    "team": "Torino",
    "position": "Midfielder",
@@ -4836,6 +5317,7 @@
    "tier": 3
   },
   {
+   "id": 7843,
    "name": "Nikola Vlašić",
    "team": "Torino",
    "position": "Midfielder",
@@ -4846,6 +5328,7 @@
    "tier": 2
   },
   {
+   "id": 102336,
    "name": "Daniel Bragança",
    "team": "Torino",
    "position": "Midfielder",
@@ -4856,6 +5339,7 @@
    "tier": 2
   },
   {
+   "id": 131119,
    "name": "Faustino Anjorin",
    "team": "Torino",
    "position": "Midfielder",
@@ -4866,6 +5350,7 @@
    "tier": 3
   },
   {
+   "id": 157120,
    "name": "Kian Fitz-Jim",
    "team": "Torino",
    "position": "Midfielder",
@@ -4876,6 +5361,7 @@
    "tier": 3
   },
   {
+   "id": 171586,
    "name": "Gaetano Oristanio",
    "team": "Torino",
    "position": "Midfielder",
@@ -4886,6 +5372,7 @@
    "tier": 3
   },
   {
+   "id": 172940,
    "name": "Emirhan Ilkhan",
    "team": "Torino",
    "position": "Midfielder",
@@ -4896,6 +5383,7 @@
    "tier": 3
   },
   {
+   "id": 179558,
    "name": "Cesare Casadei",
    "team": "Torino",
    "position": "Midfielder",
@@ -4906,6 +5394,7 @@
    "tier": 2
   },
   {
+   "id": 190831,
    "name": "Gvidas Gineitis",
    "team": "Torino",
    "position": "Midfielder",
@@ -4916,6 +5405,7 @@
    "tier": 3
   },
   {
+   "id": 278014,
    "name": "Alessio Cacciamani",
    "team": "Torino",
    "position": "Midfielder",
@@ -4926,6 +5416,7 @@
    "tier": 3
   },
   {
+   "id": 299182,
    "name": "Andrea Luongo",
    "team": "Torino",
    "position": "Midfielder",
@@ -4936,6 +5427,7 @@
    "tier": 3
   },
   {
+   "id": 1789,
    "name": "Giovanni Simeone",
    "team": "Torino",
    "position": "Forward",
@@ -4946,6 +5438,7 @@
    "tier": 3
   },
   {
+   "id": 2271,
    "name": "Duván Zapata",
    "team": "Torino",
    "position": "Forward",
@@ -4956,6 +5449,7 @@
    "tier": 3
   },
   {
+   "id": 4119,
    "name": "Che Adams",
    "team": "Torino",
    "position": "Forward",
@@ -4966,6 +5460,7 @@
    "tier": 3
   },
   {
+   "id": 8768,
    "name": "Pietro Pellegri",
    "team": "Torino",
    "position": "Forward",
@@ -4976,6 +5471,7 @@
    "tier": 3
   },
   {
+   "id": 59075,
    "name": "Sandro Kulenović",
    "team": "Torino",
    "position": "Forward",
@@ -4986,6 +5482,7 @@
    "tier": 3
   },
   {
+   "id": 81085,
    "name": "Zakaria Aboukhlal",
    "team": "Torino",
    "position": "Midfielder",
@@ -4996,6 +5493,7 @@
    "tier": 3
   },
   {
+   "id": 2751,
    "name": "Marco Bleve",
    "team": "Lecce",
    "position": "Goalkeeper",
@@ -5006,6 +5504,7 @@
    "tier": 3
   },
   {
+   "id": 56649,
    "name": "Wladimiro Falcone",
    "team": "Lecce",
    "position": "Goalkeeper",
@@ -5016,6 +5515,7 @@
    "tier": 3
   },
   {
+   "id": 157189,
    "name": "Alexandru Borbei",
    "team": "Lecce",
    "position": "Goalkeeper",
@@ -5026,6 +5526,7 @@
    "tier": 3
   },
   {
+   "id": 283194,
    "name": "Plamen Penev",
    "team": "Lecce",
    "position": "Goalkeeper",
@@ -5036,6 +5537,7 @@
    "tier": 3
   },
   {
+   "id": 77469,
    "name": "Antonino Gallo",
    "team": "Lecce",
    "position": "Defender",
@@ -5046,6 +5548,7 @@
    "tier": 3
   },
   {
+   "id": 113590,
    "name": "Gaby Jean",
    "team": "Lecce",
    "position": "Defender",
@@ -5056,6 +5559,7 @@
    "tier": 3
   },
   {
+   "id": 117369,
    "name": "Corrie Ndaba",
    "team": "Lecce",
    "position": "Defender",
@@ -5066,6 +5570,7 @@
    "tier": 3
   },
   {
+   "id": 150530,
    "name": "Jamil Siebert",
    "team": "Lecce",
    "position": "Defender",
@@ -5076,6 +5581,7 @@
    "tier": 3
   },
   {
+   "id": 185129,
    "name": "Danilo Veiga",
    "team": "Lecce",
    "position": "Defender",
@@ -5086,6 +5592,7 @@
    "tier": 3
   },
   {
+   "id": 190793,
    "name": "Ali Dembele",
    "team": "Lecce",
    "position": "Defender",
@@ -5096,6 +5603,7 @@
    "tier": 3
   },
   {
+   "id": 192420,
    "name": "Sebastian Esposito",
    "team": "Lecce",
    "position": "Defender",
@@ -5106,6 +5614,7 @@
    "tier": 3
   },
   {
+   "id": 213073,
    "name": "Kialonda Gaspar",
    "team": "Lecce",
    "position": "Defender",
@@ -5116,6 +5625,7 @@
    "tier": 3
   },
   {
+   "id": 246341,
    "name": "Tiago Gabriel",
    "team": "Lecce",
    "position": "Defender",
@@ -5126,6 +5636,7 @@
    "tier": 2
   },
   {
+   "id": 263220,
    "name": "Elijah Scott",
    "team": "Lecce",
    "position": "Defender",
@@ -5136,6 +5647,7 @@
    "tier": 3
   },
   {
+   "id": 264468,
    "name": "Vernon Addo",
    "team": "Lecce",
    "position": "Defender",
@@ -5146,6 +5658,7 @@
    "tier": 3
   },
   {
+   "id": 285079,
    "name": "Marlon Ubani",
    "team": "Lecce",
    "position": "Defender",
@@ -5156,6 +5669,7 @@
    "tier": 3
   },
   {
+   "id": 8658,
    "name": "Lassana Coulibaly",
    "team": "Lecce",
    "position": "Midfielder",
@@ -5166,6 +5680,7 @@
    "tier": 3
   },
   {
+   "id": 57805,
    "name": "Youssef Maleh",
    "team": "Lecce",
    "position": "Midfielder",
@@ -5176,6 +5691,7 @@
    "tier": 3
   },
   {
+   "id": 67697,
    "name": "Ivan Ilić",
    "team": "Lecce",
    "position": "Midfielder",
@@ -5186,6 +5702,7 @@
    "tier": 3
   },
   {
+   "id": 125069,
    "name": "Omri Gandelman",
    "team": "Lecce",
    "position": "Midfielder",
@@ -5196,6 +5713,7 @@
    "tier": 3
   },
   {
+   "id": 170915,
    "name": "Mohamed Kaba",
    "team": "Lecce",
    "position": "Midfielder",
@@ -5206,6 +5724,7 @@
    "tier": 3
   },
   {
+   "id": 176076,
    "name": "Sadik Fofana",
    "team": "Lecce",
    "position": "Midfielder",
@@ -5216,6 +5735,7 @@
    "tier": 3
   },
   {
+   "id": 177262,
    "name": "Oumar Ngom",
    "team": "Lecce",
    "position": "Midfielder",
@@ -5226,6 +5746,7 @@
    "tier": 3
   },
   {
+   "id": 188103,
    "name": "Medon Berisha",
    "team": "Lecce",
    "position": "Midfielder",
@@ -5236,6 +5757,7 @@
    "tier": 3
   },
   {
+   "id": 226967,
    "name": "Olaf Gorter",
    "team": "Lecce",
    "position": "Midfielder",
@@ -5246,6 +5768,7 @@
    "tier": 3
   },
   {
+   "id": 286314,
    "name": "Niko Kovač",
    "team": "Lecce",
    "position": "Midfielder",
@@ -5256,6 +5779,7 @@
    "tier": 3
   },
   {
+   "id": 8475,
    "name": "Willem Geubbels",
    "team": "Lecce",
    "position": "Forward",
@@ -5266,6 +5790,7 @@
    "tier": 3
   },
   {
+   "id": 116223,
    "name": "Santiago Pierotti",
    "team": "Lecce",
    "position": "Forward",
@@ -5276,6 +5801,7 @@
    "tier": 3
   },
   {
+   "id": 145690,
    "name": "Nikola Štulić",
    "team": "Lecce",
    "position": "Forward",
@@ -5286,6 +5812,7 @@
    "tier": 3
   },
   {
+   "id": 153292,
    "name": "Joel Monteiro",
    "team": "Lecce",
    "position": "Forward",
@@ -5296,6 +5823,7 @@
    "tier": 3
   },
   {
+   "id": 167394,
    "name": "Konan N'Dri",
    "team": "Lecce",
    "position": "Forward",
@@ -5306,6 +5834,7 @@
    "tier": 3
   },
   {
+   "id": 298168,
    "name": "Miloš Jović",
    "team": "Lecce",
    "position": "Forward",
@@ -5316,6 +5845,7 @@
    "tier": 3
   },
   {
+   "id": 299289,
    "name": "Hjalte Laerke",
    "team": "Lecce",
    "position": "Forward",
@@ -5326,6 +5856,7 @@
    "tier": 3
   },
   {
+   "id": 299291,
    "name": "Paco Esteban",
    "team": "Lecce",
    "position": "Forward",
@@ -5336,6 +5867,7 @@
    "tier": 3
   },
   {
+   "id": 56657,
    "name": "Demba Thiam",
    "team": "Monza",
    "position": "Goalkeeper",
@@ -5346,6 +5878,7 @@
    "tier": 3
   },
   {
+   "id": 146639,
    "name": "Noel Törnqvist",
    "team": "Monza",
    "position": "Goalkeeper",
@@ -5356,6 +5889,7 @@
    "tier": 3
   },
   {
+   "id": 252930,
    "name": "Aljaž Strajnar",
    "team": "Monza",
    "position": "Goalkeeper",
@@ -5366,16 +5900,18 @@
    "tier": 3
   },
   {
+   "id": 20842,
    "name": "Valentin Antov",
    "team": "Monza",
    "position": "Defender",
-   "age": 25,
+   "age": 26,
    "number": 6,
    "nationality": "Bulgaria",
    "photo": "https://media.api-sports.io/football/players/10997.png",
    "tier": 3
   },
   {
+   "id": 40611,
    "name": "Samuele Birindelli",
    "team": "Monza",
    "position": "Midfielder",
@@ -5386,6 +5922,7 @@
    "tier": 3
   },
   {
+   "id": 53190,
    "name": "Ricardo Mangas",
    "team": "Monza",
    "position": "Midfielder",
@@ -5396,6 +5933,7 @@
    "tier": 3
   },
   {
+   "id": 137506,
    "name": "Andrea Carboni",
    "team": "Monza",
    "position": "Defender",
@@ -5406,6 +5944,7 @@
    "tier": 3
   },
   {
+   "id": 215525,
    "name": "Saba Goglichidze",
    "team": "Monza",
    "position": "Defender",
@@ -5416,6 +5955,7 @@
    "tier": 3
   },
   {
+   "id": 216023,
    "name": "Jan Ziółkowski",
    "team": "Monza",
    "position": "Defender",
@@ -5426,6 +5966,7 @@
    "tier": 2
   },
   {
+   "id": 217553,
    "name": "Lorenzo Lucchesi",
    "team": "Monza",
    "position": "Defender",
@@ -5436,6 +5977,7 @@
    "tier": 3
   },
   {
+   "id": 267944,
    "name": "Eddy Kouadio",
    "team": "Monza",
    "position": "Defender",
@@ -5446,6 +5988,7 @@
    "tier": 3
   },
   {
+   "id": 270867,
    "name": "Adam Bakoune",
    "team": "Monza",
    "position": "Defender",
@@ -5456,6 +5999,7 @@
    "tier": 3
   },
   {
+   "id": 283944,
    "name": "Yvan Maye",
    "team": "Monza",
    "position": "Defender",
@@ -5466,6 +6010,7 @@
    "tier": 3
   },
   {
+   "id": 1852,
    "name": "Andrea Colpani",
    "team": "Monza",
    "position": "Midfielder",
@@ -5476,6 +6021,7 @@
    "tier": 3
   },
   {
+   "id": 2836,
    "name": "Matteo Pessina",
    "team": "Monza",
    "position": "Midfielder",
@@ -5486,6 +6032,7 @@
    "tier": 3
   },
   {
+   "id": 42347,
    "name": "Patrick Ciurria",
    "team": "Monza",
    "position": "Forward",
@@ -5496,6 +6043,7 @@
    "tier": 3
   },
   {
+   "id": 42760,
    "name": "Michael Folorunsho",
    "team": "Monza",
    "position": "Midfielder",
@@ -5506,6 +6054,7 @@
    "tier": 3
   },
   {
+   "id": 56853,
    "name": "Idrissa Touré",
    "team": "Monza",
    "position": "Midfielder",
@@ -5516,6 +6065,7 @@
    "tier": 3
   },
   {
+   "id": 189196,
    "name": "Leonardo Colombo",
    "team": "Monza",
    "position": "Midfielder",
@@ -5526,6 +6076,7 @@
    "tier": 3
   },
   {
+   "id": 206715,
    "name": "Ebenezer Akinsanmiro",
    "team": "Monza",
    "position": "Midfielder",
@@ -5536,6 +6087,7 @@
    "tier": 3
   },
   {
+   "id": 229280,
    "name": "Manga Foe Ondoa",
    "team": "Monza",
    "position": "Midfielder",
@@ -5546,6 +6098,7 @@
    "tier": 3
   },
   {
+   "id": 290137,
    "name": "Mathis Mout",
    "team": "Monza",
    "position": "Midfielder",
@@ -5556,6 +6109,7 @@
    "tier": 3
   },
   {
+   "id": 1757,
    "name": "Patrick Cutrone",
    "team": "Monza",
    "position": "Forward",
@@ -5566,6 +6120,7 @@
    "tier": 3
   },
   {
+   "id": 3040,
    "name": "Dany Mota Carvalho",
    "team": "Monza",
    "position": "Midfielder",
@@ -5576,6 +6131,7 @@
    "tier": 3
   },
   {
+   "id": 3637,
    "name": "Keïta Baldé",
    "team": "Monza",
    "position": "Forward",
@@ -5586,6 +6142,7 @@
    "tier": 3
   },
   {
+   "id": 99859,
    "name": "Cyril Ngonge",
    "team": "Monza",
    "position": "Forward",
@@ -5596,6 +6153,7 @@
    "tier": 3
   },
   {
+   "id": 153632,
    "name": "Exequiel Zeballos",
    "team": "Monza",
    "position": "Midfielder",
@@ -5606,6 +6164,7 @@
    "tier": 3
   },
   {
+   "id": 220574,
    "name": "Omari Forson",
    "team": "Monza",
    "position": "Forward",
@@ -5616,6 +6175,7 @@
    "tier": 3
   },
   {
+   "id": 252836,
    "name": "Gustavo Varela",
    "team": "Monza",
    "position": "Forward",
@@ -5626,6 +6186,7 @@
    "tier": 3
   },
   {
+   "id": 265567,
    "name": "Jay Robinson",
    "team": "Monza",
    "position": "Forward",
@@ -5636,6 +6197,7 @@
    "tier": 3
   },
   {
+   "id": 270690,
    "name": "Kevin Martins",
    "team": "Monza",
    "position": "Forward",
@@ -5646,6 +6208,7 @@
    "tier": 3
   },
   {
+   "id": 2715,
    "name": "Mauro Vigorito",
    "team": "Como",
    "position": "Goalkeeper",
@@ -5656,6 +6219,7 @@
    "tier": 3
   },
   {
+   "id": 9186,
    "name": "Jean Butez",
    "team": "Como",
    "position": "Goalkeeper",
@@ -5666,16 +6230,18 @@
    "tier": 3
   },
   {
+   "id": 135555,
    "name": "Robert Sánchez",
    "team": "Como",
    "position": "Goalkeeper",
-   "age": 28,
+   "age": 29,
    "number": 97,
    "nationality": "Spain",
    "photo": "https://media.api-sports.io/football/players/18959.png",
    "tier": 2
   },
   {
+   "id": 2187,
    "name": "Edoardo Goldaniga",
    "team": "Como",
    "position": "Defender",
@@ -5686,6 +6252,7 @@
    "tier": 3
   },
   {
+   "id": 7810,
    "name": "Trevoh Chalobah",
    "team": "Como",
    "position": "Defender",
@@ -5696,6 +6263,7 @@
    "tier": 1
   },
   {
+   "id": 9471,
    "name": "Marc-Oliver Kempf",
    "team": "Como",
    "position": "Defender",
@@ -5706,6 +6274,7 @@
    "tier": 3
   },
   {
+   "id": 40265,
    "name": "Alberto Dossena",
    "team": "Como",
    "position": "Defender",
@@ -5716,6 +6285,7 @@
    "tier": 3
   },
   {
+   "id": 114212,
    "name": "Ivan Smolčić",
    "team": "Como",
    "position": "Defender",
@@ -5726,6 +6296,7 @@
    "tier": 3
   },
   {
+   "id": 144283,
    "name": "Yan Couto",
    "team": "Como",
    "position": "Defender",
@@ -5736,6 +6307,7 @@
    "tier": 2
   },
   {
+   "id": 169670,
    "name": "Kaiki",
    "team": "Como",
    "position": "Defender",
@@ -5746,6 +6318,7 @@
    "tier": 3
   },
   {
+   "id": 189493,
    "name": "Alex Valle",
    "team": "Como",
    "position": "Defender",
@@ -5756,6 +6329,7 @@
    "tier": 2
   },
   {
+   "id": 244860,
    "name": "Willy Kambwala",
    "team": "Como",
    "position": "Defender",
@@ -5766,6 +6340,7 @@
    "tier": 3
   },
   {
+   "id": 247056,
    "name": "Jacobo Ramón",
    "team": "Como",
    "position": "Defender",
@@ -5776,16 +6351,18 @@
    "tier": 3
   },
   {
+   "id": 2196,
    "name": "Luca Mazzitelli",
    "team": "Como",
    "position": "Midfielder",
-   "age": 30,
+   "age": 31,
    "number": null,
    "nationality": "Italy",
    "photo": null,
    "tier": 3
   },
   {
+   "id": 32449,
    "name": "Luis Milla",
    "team": "Como",
    "position": "Midfielder",
@@ -5796,6 +6373,7 @@
    "tier": 3
   },
   {
+   "id": 101350,
    "name": "Maxence Caqueret",
    "team": "Como",
    "position": "Midfielder",
@@ -5806,6 +6384,7 @@
    "tier": 2
   },
   {
+   "id": 115245,
    "name": "Samuele Ricci",
    "team": "Como",
    "position": "Midfielder",
@@ -5816,6 +6395,7 @@
    "tier": 2
   },
   {
+   "id": 124620,
    "name": "Lucas Da Cunha",
    "team": "Como",
    "position": "Midfielder",
@@ -5826,6 +6406,7 @@
    "tier": 2
   },
   {
+   "id": 156912,
    "name": "Martin Baturina",
    "team": "Como",
    "position": "Midfielder",
@@ -5836,6 +6417,7 @@
    "tier": 1
   },
   {
+   "id": 179159,
    "name": "Maximo Perrone",
    "team": "Como",
    "position": "Midfielder",
@@ -5846,6 +6428,7 @@
    "tier": 1
   },
   {
+   "id": 203511,
    "name": "Nico Paz",
    "team": "Como",
    "position": "Midfielder",
@@ -5856,6 +6439,7 @@
    "tier": 1
   },
   {
+   "id": 250600,
    "name": "Adrian Lahdo",
    "team": "Como",
    "position": "Midfielder",
@@ -5866,6 +6450,7 @@
    "tier": 2
   },
   {
+   "id": 264826,
    "name": "Mattia Liberali",
    "team": "Como",
    "position": "Midfielder",
@@ -5876,6 +6461,7 @@
    "tier": 3
   },
   {
+   "id": 2171,
    "name": "Moise Kean",
    "team": "Como",
    "position": "Forward",
@@ -5886,6 +6472,7 @@
    "tier": 1
   },
   {
+   "id": 43285,
    "name": "Anastasios Douvikas",
    "team": "Como",
    "position": "Forward",
@@ -5896,6 +6483,7 @@
    "tier": 2
   },
   {
+   "id": 151271,
    "name": "Suliman Mustapha",
    "team": "Como",
    "position": "Forward",
@@ -5906,6 +6494,7 @@
    "tier": 3
   },
   {
+   "id": 178165,
    "name": "Jayden Addai",
    "team": "Como",
    "position": "Forward",
@@ -5916,6 +6505,7 @@
    "tier": 2
   },
   {
+   "id": 218474,
    "name": "Assane Diao",
    "team": "Como",
    "position": "Forward",
@@ -5926,6 +6516,7 @@
    "tier": 1
   },
   {
+   "id": 270254,
    "name": "Jesús Rodríguez",
    "team": "Como",
    "position": "Forward",
@@ -5936,6 +6527,7 @@
    "tier": 1
   },
   {
+   "id": 303007,
    "name": "Federico Grilli",
    "team": "Como",
    "position": null,
@@ -5946,6 +6538,7 @@
    "tier": 3
   },
   {
+   "id": 300833,
    "name": "Lorenzo Ginelli",
    "team": "Como",
    "position": "Goalkeeper",

@@ -2,7 +2,16 @@
 
 from datetime import date
 
-from scripts.build_season import age_on, assign_tiers, best_age, match_players, position, same_person, unique_names
+from scripts.build_season import (
+    age_on,
+    assign_tiers,
+    best_age,
+    match_players,
+    player_entry,
+    position,
+    same_person,
+    unique_names,
+)
 from scripts.download_api_football import is_first_team, match_team
 
 TODAY = date(2026, 11, 8)
@@ -95,3 +104,21 @@ def test_club_matching():
     assert match_team({"id": 1, "name": "Paris FC", "shortName": "Paris FC", "tla": "PFC"}, af)["id"] == 114
     assert match_team({"id": 2, "name": "Manchester City FC", "shortName": "Man City", "tla": "MCI"}, af)["id"] == 50
     assert match_team({"id": 3, "name": "Unknown Town", "shortName": "Unknown", "tla": "UNK"}, af) is None
+
+
+def test_each_player_keeps_the_football_data_id():
+    fd = {"id": 7, "name": "Eli Kroupi", "position": "Offence", "dateOfBirth": "2006-06-23", "nationality": "France"}
+    af = {"number": 22, "photo": "https://media.api-sports.io/football/players/368030.png", "age": 20}
+    entry = player_entry(fd, af, "Bournemouth", TODAY)
+    assert entry == {
+        "id": 7,
+        "name": "Eli Kroupi",
+        "team": "Bournemouth",
+        "position": "Forward",
+        "age": 20,
+        "number": 22,
+        "nationality": "France",
+        "photo": "https://media.api-sports.io/football/players/368030.png",
+    }
+    unmatched = player_entry(fd, {}, "Bournemouth", TODAY)
+    assert unmatched["id"] == 7 and unmatched["number"] is None and unmatched["photo"] is None

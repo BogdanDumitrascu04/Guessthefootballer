@@ -152,6 +152,20 @@ def market_value(player: dict, by_birth: dict, values: dict) -> int | None:
     return values.get(found[0]["player_id"]) if len(found) == 1 else None
 
 
+def player_entry(fd: dict, af: dict, team: str, today: date) -> dict:
+    """The football-data.org ID is kept because it never changes: shared links and saved rounds point to it."""
+    return {
+        "id": fd["id"],
+        "name": fd["name"],
+        "team": team,
+        "position": position(fd.get("position"), af.get("position")),
+        "age": best_age(age_on(fd.get("dateOfBirth"), today), af.get("age")),
+        "number": af.get("number"),
+        "nationality": fd.get("nationality"),
+        "photo": af.get("photo"),
+    }
+
+
 def build_league(code: str, today: date, team_map: dict, by_birth: dict, values: dict) -> dict:
     league_id, league_name = LEAGUES[code]
     fd = json.loads((RAW_DIR / f"{code}_{SEASON}.json").read_text(encoding="utf-8"))
@@ -166,18 +180,7 @@ def build_league(code: str, today: date, team_map: dict, by_birth: dict, values:
         matched = match_players(team["squad"], af_players, today)
         teams[af_team["name"]] = af_team["logo"]
         for p in team["squad"]:
-            af = matched.get(p["id"], {})
-            players.append(
-                {
-                    "name": p["name"],
-                    "team": af_team["name"],
-                    "position": position(p.get("position"), af.get("position")),
-                    "age": best_age(age_on(p.get("dateOfBirth"), today), af.get("age")),
-                    "number": af.get("number"),
-                    "nationality": p.get("nationality"),
-                    "photo": af.get("photo"),
-                }
-            )
+            players.append(player_entry(p, matched.get(p["id"], {}), af_team["name"], today))
             worth[len(players) - 1] = market_value(p, by_birth, values)
     tiers = assign_tiers(worth)
     for index, p in enumerate(players):

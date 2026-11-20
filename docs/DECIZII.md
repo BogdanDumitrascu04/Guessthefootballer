@@ -110,7 +110,19 @@ Punct de plecare: propunerile lui Gemini, verificate pe pagina reală, plus idei
 | Când se deblochează indiciile | Echipa după încercarea 2, vârsta după 4 (înainte 3 și 6) | Pragurile scad odată cu numărul de încercări. |
 | Ultima încercare | Mesaj separat („Mai ai o singură încercare”), nu „Mai ai 1 încercări” | Cu 6 încercări, mesajul apare des. |
 
+## 20 nov 2026 — fișa rundei
+
+| Decizie | Ce am ales | De ce |
+|---|---|---|
+| ID-ul jucătorului | ID-ul football-data.org, scris în JSON-ul sezonului (`id`) | Numele diferă între surse, iar ordinea din listă se schimbă la fiecare reconstruire. E același ID ca `players.id` din schemă, deci linkurile rămân valabile și după mutarea în Supabase. |
+| Ce salvăm (cerința lui Bogdan) | Liga, sezonul, dificultatea, jucătorul ascuns, încercările în ordine, indiciile folosite, data | Restul se calculează: numărul încercărilor, câștig/pierdere, punctele, culorile, săgețile. Indiciile lipseau din prima variantă; fără ele, punctele ies greșit. |
+| Date schimbate după rundă | Varianta b: fiecare jucător din fișă își poartă datele din momentul rundei (nume, poză, echipă, post, vârstă, număr, naționalitate) | Ca prețul copiat pe factură: un transfer în ianuarie sau o zi de naștere nu schimbă o rundă veche. Varianta c (versiuni ale sezonului) cerea păstrarea tuturor versiunilor loturilor, și în JSON, și în Supabase. Costul: linkul are câteva sute de caractere. |
+| Versiunea formatului | Fișa începe cu numărul versiunii formatului | Dacă schimbăm formatul, linkurile vechi se citesc în continuare. |
+| Interfața | Pagina de rezultat: sus rezumatul (încercări, puncte), iar „Vezi detalii” deschide grila completă. Două share-uri: după rundă, doar runda; din profil, tot istoricul (cu conturile, Etapa 7). | Cerința lui Bogdan. |
+
 ## De decis
+- **ID-uri pentru 2024-25**: JSON-ul scris de mână nu are ID-uri. Le potrivim cu loturile football-data din 2024-25 sau pagina de rezultat merge întâi doar pe 2026-27?
+- **ID-uri pentru SuperLiga**: football-data.org nu are România, deci jucătorii de acolo nu au ID-ul folosit în rest.
 - ~~**Tier-ul**~~ → decis pe 29 oct (mai sus).
 - ~~**SQLite sau direct Supabase**~~ → direct în Supabase, decis pe 29 oct (mai sus).
 - **Pauza Supabase** (de decis înainte ca jocul să citească din bază): pe 5 nov, Supabase a anunțat prin email că proiectul `guessthefootballer` va fi pus pe pauză, pentru că a stat peste 7 zile fără activitate; se poate reporni din dashboard timp de 90 de zile. Acum nu e o problemă: site-ul live rulează pe JSON, iar schema e locală în `sql/schema.sql`. Riscul apare când jocul citește din Supabase: fără trafic, proiectul se oprește, iar linkul din CV pică exact când îl deschide un recrutor. Fără upgrade la Pro. Variante, separat sau împreună: activitate reală, programată, gratuită (ex. un GitHub Action care face o interogare); o rezervă statică în JSON, verificată, pe care jocul o folosește când baza nu răspunde. De reținut: GitHub dezactivează acțiunile programate după 60 de zile fără activitate în repo, deci nici acțiunea nu e suficientă singură.

@@ -68,10 +68,11 @@ One parameterized engine replaces the old copy-per-league code. League and seaso
 │       ├── index.html             # League / season / difficulty picker
 │       ├── game.html              # game.html?league=…&season=…&difficulty=…
 │       ├── engine.js              # All game logic, one copy
+│       ├── round.js               # A finished round as a short code for links
 │       ├── i18n.js                # EN / ES / FR / RO dictionaries
 │       └── game.css               # Theming via a --league-bg CSS variable
 ├── scripts/                       # Python: download the sources, build a season's JSON
-├── tests/                         # pytest
+├── tests/                         # pytest (data scripts), node --test (round.js)
 ├── data/
 │   ├── manifest.json              # Available leagues and seasons
 │   └── seasons/2024-25/           # One JSON per league (players + tiers)

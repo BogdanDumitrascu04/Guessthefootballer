@@ -26,6 +26,7 @@
  },
  "players": [
   {
+   "id": 32570,
    "name": "Unai Simón",
    "team": "Athletic Club",
    "position": "Goalkeeper",
@@ -36,6 +37,7 @@
    "tier": 2
   },
   {
+   "id": 203459,
    "name": "Álex Padilla",
    "team": "Athletic Club",
    "position": "Goalkeeper",
@@ -46,6 +48,7 @@
    "tier": 3
   },
   {
+   "id": 7884,
    "name": "Aymeric Laporte",
    "team": "Athletic Club",
    "position": "Defender",
@@ -56,6 +59,7 @@
    "tier": 2
   },
   {
+   "id": 8479,
    "name": "Yuri Berchiche",
    "team": "Athletic Club",
    "position": "Defender",
@@ -66,6 +70,7 @@
    "tier": 3
   },
   {
+   "id": 32579,
    "name": "Yeray Álvarez",
    "team": "Athletic Club",
    "position": "Defender",
@@ -76,6 +81,7 @@
    "tier": 3
   },
   {
+   "id": 32618,
    "name": "Daniel Vivian",
    "team": "Athletic Club",
    "position": "Defender",
@@ -86,6 +92,7 @@
    "tier": 2
   },
   {
+   "id": 136000,
    "name": "Jesús Areso",
    "team": "Athletic Club",
    "position": "Defender",
@@ -96,6 +103,7 @@
    "tier": 3
   },
   {
+   "id": 151439,
    "name": "Aitor Paredes Casamichana",
    "team": "Athletic Club",
    "position": "Defender",
@@ -106,6 +114,7 @@
    "tier": 2
   },
   {
+   "id": 229042,
    "name": "Hugo Rincón",
    "team": "Athletic Club",
    "position": "Defender",
@@ -116,6 +125,7 @@
    "tier": 3
   },
   {
+   "id": 261644,
    "name": "Unai Egiluz",
    "team": "Athletic Club",
    "position": "Defender",
@@ -126,6 +136,7 @@
    "tier": 3
   },
   {
+   "id": 32481,
    "name": "Ruiz de Galarreta",
    "team": "Athletic Club",
    "position": "Midfielder",
@@ -136,6 +147,7 @@
    "tier": 3
   },
   {
+   "id": 126878,
    "name": "Oihan Sancet",
    "team": "Athletic Club",
    "position": "Midfielder",
@@ -146,6 +158,7 @@
    "tier": 2
   },
   {
+   "id": 168663,
    "name": "Benat Prados",
    "team": "Athletic Club",
    "position": "Midfielder",
@@ -156,16 +169,18 @@
    "tier": 2
   },
   {
+   "id": 244599,
    "name": "Mikel Jauregizar",
    "team": "Athletic Club",
    "position": "Midfielder",
-   "age": 22,
+   "age": 23,
    "number": 18,
    "nationality": "Spain",
    "photo": "https://media.api-sports.io/football/players/383780.png",
    "tier": 2
   },
   {
+   "id": 270747,
    "name": "Peio Canales",
    "team": "Athletic Club",
    "position": "Midfielder",
@@ -176,6 +191,7 @@
    "tier": 3
   },
   {
+   "id": 278297,
    "name": "Alejandro Rego",
    "team": "Athletic Club",
    "position": "Midfielder",
@@ -186,6 +202,7 @@
    "tier": 3
   },
   {
+   "id": 279951,
    "name": "Beñat Gerenabarrena",
    "team": "Athletic Club",
    "position": "Midfielder",
@@ -196,6 +213,7 @@
    "tier": 3
   },
   {
+   "id": 2294,
    "name": "Álex Berenguer",
    "team": "Athletic Club",
    "position": "Midfielder",
@@ -206,6 +224,7 @@
    "tier": 3
   },
   {
+   "id": 32629,
    "name": "Iñaki Williams",
    "team": "Athletic Club",
    "position": "Forward",
@@ -216,6 +235,7 @@
    "tier": 2
   },
   {
+   "id": 81565,
    "name": "Gorka Guruzeta",
    "team": "Athletic Club",
    "position": "Forward",
@@ -226,6 +246,7 @@
    "tier": 3
   },
   {
+   "id": 101870,
    "name": "Roberto Navarro",
    "team": "Athletic Club",
    "position": "Forward",
@@ -236,6 +257,7 @@
    "tier": 3
   },
   {
+   "id": 157135,
    "name": "Nico Williams",
    "team": "Athletic Club",
    "position": "Midfielder",
@@ -246,6 +268,7 @@
    "tier": 1
   },
   {
+   "id": 172027,
    "name": "Nico Serrano",
    "team": "Athletic Club",
    "position": "Forward",
@@ -256,6 +279,7 @@
    "tier": 3
   },
   {
+   "id": 185137,
    "name": "Álvaro Djaló",
    "team": "Athletic Club",
    "position": "Forward",
@@ -266,6 +290,7 @@
    "tier": 3
   },
   {
+   "id": 261580,
    "name": "Sannadi",
    "team": "Athletic Club",
    "position": "Forward",
@@ -276,6 +301,7 @@
    "tier": 3
   },
   {
+   "id": 302105,
    "name": "Christian Imga",
    "team": "Athletic Club",
    "position": null,
@@ -286,6 +312,7 @@
    "tier": 3
   },
   {
+   "id": 120,
    "name": "Jan Oblak",
    "team": "Atletico Madrid",
    "position": "Goalkeeper",
@@ -296,6 +323,7 @@
    "tier": 2
   },
   {
+   "id": 46554,
    "name": "Juan Musso",
    "team": "Atletico Madrid",
    "position": "Goalkeeper",
@@ -306,6 +334,7 @@
    "tier": 3
   },
   {
+   "id": 279062,
    "name": "Salvi Esquivel",
    "team": "Atletico Madrid",
    "position": "Goalkeeper",
@@ -316,6 +345,7 @@
    "tier": 3
   },
   {
+   "id": 70,
    "name": "Marcos Llorente",
    "team": "Atletico Madrid",
    "position": "Defender",
@@ -326,6 +356,7 @@
    "tier": 2
   },
   {
+   "id": 15542,
    "name": "Dávid Hancko",
    "team": "Atletico Madrid",
    "position": "Defender",
@@ -336,6 +367,7 @@
    "tier": 2
   },
   {
+   "id": 16739,
    "name": "Alejandro Grimaldo",
    "team": "Atletico Madrid",
    "position": "Defender",
@@ -346,6 +378,7 @@
    "tier": 2
   },
   {
+   "id": 45735,
    "name": "Christian Romero",
    "team": "Atletico Madrid",
    "position": "Defender",
@@ -356,16 +389,18 @@
    "tier": 1
   },
   {
+   "id": 99791,
    "name": "Robin Le Normand",
    "team": "Atletico Madrid",
    "position": "Defender",
-   "age": 29,
+   "age": 30,
    "number": 24,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/47301.png",
    "tier": 2
   },
   {
+   "id": 176745,
    "name": "Marc Pubill",
    "team": "Atletico Madrid",
    "position": "Defender",
@@ -376,6 +411,7 @@
    "tier": 2
   },
   {
+   "id": 289895,
    "name": "Daniel Martínez",
    "team": "Atletico Madrid",
    "position": "Defender",
@@ -386,6 +422,7 @@
    "tier": 3
   },
   {
+   "id": 295747,
    "name": "Jorge Domínguez",
    "team": "Atletico Madrid",
    "position": "Defender",
@@ -396,6 +433,7 @@
    "tier": 3
   },
   {
+   "id": 112,
    "name": "Koke",
    "team": "Atletico Madrid",
    "position": "Midfielder",
@@ -406,6 +444,7 @@
    "tier": 3
   },
   {
+   "id": 73998,
    "name": "Morten Hjulmand",
    "team": "Atletico Madrid",
    "position": "Midfielder",
@@ -416,6 +455,7 @@
    "tier": 1
   },
   {
+   "id": 123265,
    "name": "Johnny",
    "team": "Atletico Madrid",
    "position": "Midfielder",
@@ -426,6 +466,7 @@
    "tier": 2
   },
   {
+   "id": 170442,
    "name": "Obed Vargas",
    "team": "Atletico Madrid",
    "position": "Midfielder",
@@ -436,6 +477,7 @@
    "tier": 2
   },
   {
+   "id": 189617,
    "name": "Rodrigo Mendoza",
    "team": "Atletico Madrid",
    "position": "Midfielder",
@@ -446,6 +488,7 @@
    "tier": 2
   },
   {
+   "id": 213217,
    "name": "Kang-in Lee",
    "team": "Atletico Madrid",
    "position": "Midfielder",
@@ -456,6 +499,7 @@
    "tier": 2
   },
   {
+   "id": 8167,
    "name": "Alexander Sørloth",
    "team": "Atletico Madrid",
    "position": "Forward",
@@ -466,6 +510,7 @@
    "tier": 2
   },
   {
+   "id": 8924,
    "name": "Jonathan David",
    "team": "Atletico Madrid",
    "position": "Forward",
@@ -476,6 +521,7 @@
    "tier": 2
   },
   {
+   "id": 9554,
    "name": "Ademola Lookman",
    "team": "Atletico Madrid",
    "position": "Forward",
@@ -486,6 +532,7 @@
    "tier": 1
   },
   {
+   "id": 98571,
    "name": "Julián Álvarez",
    "team": "Atletico Madrid",
    "position": "Forward",
@@ -496,6 +543,7 @@
    "tier": 1
   },
   {
+   "id": 144576,
    "name": "Alejandro Baena",
    "team": "Atletico Madrid",
    "position": "Midfielder",
@@ -506,6 +554,7 @@
    "tier": 1
   },
   {
+   "id": 171964,
    "name": "Giuliano Simeone",
    "team": "Atletico Madrid",
    "position": "Midfielder",
@@ -516,6 +565,7 @@
    "tier": 1
   },
   {
+   "id": 172828,
    "name": "Arnau Ortiz",
    "team": "Atletico Madrid",
    "position": "Forward",
@@ -526,6 +576,7 @@
    "tier": 3
   },
   {
+   "id": 175937,
    "name": "Carlos Martin",
    "team": "Atletico Madrid",
    "position": "Forward",
@@ -536,6 +587,7 @@
    "tier": 3
   },
   {
+   "id": 31968,
    "name": "Sergio Herrera",
    "team": "Osasuna",
    "position": "Goalkeeper",
@@ -546,6 +598,7 @@
    "tier": 3
   },
   {
+   "id": 32391,
    "name": "Aitor Fernández",
    "team": "Osasuna",
    "position": "Goalkeeper",
@@ -556,6 +609,7 @@
    "tier": 3
   },
   {
+   "id": 277,
    "name": "Diego Rico",
    "team": "Osasuna",
    "position": "Defender",
@@ -566,6 +620,7 @@
    "tier": 3
   },
   {
+   "id": 8559,
    "name": "Valentin Rosier",
    "team": "Osasuna",
    "position": "Defender",
@@ -576,6 +631,7 @@
    "tier": 3
   },
   {
+   "id": 50890,
    "name": "Catena",
    "team": "Osasuna",
    "position": "Defender",
@@ -586,6 +642,7 @@
    "tier": 3
   },
   {
+   "id": 151019,
    "name": "Flavien Boyomo",
    "team": "Osasuna",
    "position": "Defender",
@@ -596,6 +653,7 @@
    "tier": 2
   },
   {
+   "id": 159409,
    "name": "Jorge Herrando",
    "team": "Osasuna",
    "position": "Defender",
@@ -606,6 +664,7 @@
    "tier": 3
   },
   {
+   "id": 186674,
    "name": "Abel Bretones",
    "team": "Osasuna",
    "position": "Defender",
@@ -616,6 +675,7 @@
    "tier": 3
   },
   {
+   "id": 246027,
    "name": "Rockson Yeboah",
    "team": "Osasuna",
    "position": "Defender",
@@ -626,6 +686,7 @@
    "tier": 3
   },
   {
+   "id": 248752,
    "name": "Iñigo Arguibide",
    "team": "Osasuna",
    "position": "Defender",
@@ -636,6 +697,7 @@
    "tier": 3
   },
   {
+   "id": 32002,
    "name": "Lucas Torró",
    "team": "Osasuna",
    "position": "Midfielder",
@@ -646,6 +708,7 @@
    "tier": 3
   },
   {
+   "id": 32217,
    "name": "Moi Gómez",
    "team": "Osasuna",
    "position": "Midfielder",
@@ -656,6 +719,7 @@
    "tier": 3
   },
   {
+   "id": 111674,
    "name": "Jon Moncayola",
    "team": "Osasuna",
    "position": "Midfielder",
@@ -666,6 +730,7 @@
    "tier": 2
   },
   {
+   "id": 119093,
    "name": "Aimar Oroz",
    "team": "Osasuna",
    "position": "Midfielder",
@@ -676,6 +741,7 @@
    "tier": 2
   },
   {
+   "id": 191925,
    "name": "Iker Munoz",
    "team": "Osasuna",
    "position": "Midfielder",
@@ -686,6 +752,7 @@
    "tier": 3
   },
   {
+   "id": 249577,
    "name": "Asier Osambela",
    "team": "Osasuna",
    "position": "Midfielder",
@@ -696,6 +763,7 @@
    "tier": 3
   },
   {
+   "id": 856,
    "name": "Romain Del Castillo",
    "team": "Osasuna",
    "position": "Forward",
@@ -706,6 +774,7 @@
    "tier": 2
   },
   {
+   "id": 2237,
    "name": "Ante Budimir",
    "team": "Osasuna",
    "position": "Forward",
@@ -716,6 +785,7 @@
    "tier": 3
   },
   {
+   "id": 32004,
    "name": "Kike Barja",
    "team": "Osasuna",
    "position": "Forward",
@@ -726,6 +796,7 @@
    "tier": 3
   },
   {
+   "id": 32212,
    "name": "Rubén García",
    "team": "Osasuna",
    "position": "Midfielder",
@@ -736,6 +807,7 @@
    "tier": 3
   },
   {
+   "id": 130324,
    "name": "Raúl (Osasuna)",
    "team": "Osasuna",
    "position": "Forward",
@@ -746,6 +818,7 @@
    "tier": 3
   },
   {
+   "id": 146128,
    "name": "Raúl Moro",
    "team": "Osasuna",
    "position": "Forward",
@@ -756,6 +829,7 @@
    "tier": 3
   },
   {
+   "id": 176600,
    "name": "Jonathan Dubasin",
    "team": "Osasuna",
    "position": "Forward",
@@ -766,6 +840,7 @@
    "tier": 3
   },
   {
+   "id": 302159,
    "name": "Mikel Bermejo",
    "team": "Osasuna",
    "position": "Goalkeeper",
@@ -776,6 +851,7 @@
    "tier": 3
   },
   {
+   "id": 3430,
    "name": "Marko Dmitrović",
    "team": "Espanyol",
    "position": "Goalkeeper",
@@ -786,6 +862,7 @@
    "tier": 3
   },
   {
+   "id": 150560,
    "name": "Ángel Fortuño Viñas",
    "team": "Espanyol",
    "position": "Goalkeeper",
@@ -796,6 +873,7 @@
    "tier": 3
   },
   {
+   "id": 11040,
    "name": "Leandro Cabrera",
    "team": "Espanyol",
    "position": "Defender",
@@ -806,6 +884,7 @@
    "tier": 3
   },
   {
+   "id": 32584,
    "name": "Unai Núñez",
    "team": "Espanyol",
    "position": "Defender",
@@ -816,6 +895,7 @@
    "tier": 3
   },
   {
+   "id": 33091,
    "name": "Andoni Gorosabel",
    "team": "Espanyol",
    "position": "Defender",
@@ -826,6 +906,7 @@
    "tier": 3
   },
   {
+   "id": 79899,
    "name": "Vanja Drkušič",
    "team": "Espanyol",
    "position": "Defender",
@@ -836,6 +917,7 @@
    "tier": 3
   },
   {
+   "id": 170833,
    "name": "Clemens Riedel",
    "team": "Espanyol",
    "position": "Defender",
@@ -846,16 +928,18 @@
    "tier": 3
   },
   {
+   "id": 187219,
    "name": "Quilindschy Hartman",
    "team": "Espanyol",
    "position": "Defender",
-   "age": 24,
+   "age": 25,
    "number": 3,
    "nationality": "Netherlands",
    "photo": "https://media.api-sports.io/football/players/375915.png",
    "tier": 2
   },
   {
+   "id": 276734,
    "name": "Roger Hinojo",
    "team": "Espanyol",
    "position": "Defender",
@@ -866,6 +950,7 @@
    "tier": 3
   },
   {
+   "id": 33652,
    "name": "Edu Expósito",
    "team": "Espanyol",
    "position": "Midfielder",
@@ -876,6 +961,7 @@
    "tier": 3
   },
   {
+   "id": 125210,
    "name": "Pol Lozano",
    "team": "Espanyol",
    "position": "Midfielder",
@@ -886,6 +972,7 @@
    "tier": 3
   },
   {
+   "id": 151031,
    "name": "Urko González",
    "team": "Espanyol",
    "position": "Midfielder",
@@ -896,6 +983,7 @@
    "tier": 2
   },
   {
+   "id": 210468,
    "name": "Moscardo",
    "team": "Espanyol",
    "position": "Midfielder",
@@ -906,6 +994,7 @@
    "tier": 2
   },
   {
+   "id": 220538,
    "name": "Álex Calatrava",
    "team": "Espanyol",
    "position": "Midfielder",
@@ -916,6 +1005,7 @@
    "tier": 3
   },
   {
+   "id": 32398,
    "name": "Pere Milla",
    "team": "Espanyol",
    "position": "Midfielder",
@@ -926,6 +1016,7 @@
    "tier": 3
   },
   {
+   "id": 33358,
    "name": "Kike García",
    "team": "Espanyol",
    "position": "Forward",
@@ -936,6 +1027,7 @@
    "tier": 3
   },
   {
+   "id": 81168,
    "name": "Javi Puado",
    "team": "Espanyol",
    "position": "Forward",
@@ -946,6 +1038,7 @@
    "tier": 2
   },
   {
+   "id": 149049,
    "name": "Tyrhys Dolan",
    "team": "Espanyol",
    "position": "Forward",
@@ -956,6 +1049,7 @@
    "tier": 2
   },
   {
+   "id": 150561,
    "name": "Jofre Carreras Pagès",
    "team": "Espanyol",
    "position": "Forward",
@@ -966,6 +1060,7 @@
    "tier": 3
   },
   {
+   "id": 180218,
    "name": "Roberto Fernández",
    "team": "Espanyol",
    "position": "Forward",
@@ -976,6 +1071,7 @@
    "tier": 2
   },
   {
+   "id": 278018,
    "name": "Marcos Fernández",
    "team": "Espanyol",
    "position": "Forward",
@@ -986,6 +1082,7 @@
    "tier": 3
   },
   {
+   "id": 303408,
    "name": "Muñeco",
    "team": "Espanyol",
    "position": null,
@@ -996,6 +1093,7 @@
    "tier": 3
   },
   {
+   "id": 301114,
    "name": "Víctor Mullerat",
    "team": "Espanyol",
    "position": "Forward",
@@ -1006,6 +1104,7 @@
    "tier": 3
   },
   {
+   "id": 2022,
    "name": "Wojciech Szczęsny",
    "team": "Barcelona",
    "position": "Goalkeeper",
@@ -1016,6 +1115,7 @@
    "tier": 3
   },
   {
+   "id": 3548,
    "name": "Dominik Livaković",
    "team": "Barcelona",
    "position": "Goalkeeper",
@@ -1026,6 +1126,7 @@
    "tier": 3
   },
   {
+   "id": 152506,
    "name": "Joan García",
    "team": "Barcelona",
    "position": "Goalkeeper",
@@ -1036,6 +1137,7 @@
    "tier": 1
   },
   {
+   "id": 2000,
    "name": "João Cancelo",
    "team": "Barcelona",
    "position": "Defender",
@@ -1046,6 +1148,7 @@
    "tier": 2
   },
   {
+   "id": 3455,
    "name": "Andreas Christensen",
    "team": "Barcelona",
    "position": "Defender",
@@ -1056,16 +1159,18 @@
    "tier": 2
   },
   {
+   "id": 8499,
    "name": "Jules Koundé",
    "team": "Barcelona",
    "position": "Defender",
-   "age": 27,
+   "age": 28,
    "number": 23,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/1257.png",
    "tier": 1
   },
   {
+   "id": 101345,
    "name": "Eric García",
    "team": "Barcelona",
    "position": "Defender",
@@ -1076,6 +1181,7 @@
    "tier": 1
   },
   {
+   "id": 172761,
    "name": "Álex Balde",
    "team": "Barcelona",
    "position": "Defender",
@@ -1086,6 +1192,7 @@
    "tier": 1
   },
   {
+   "id": 217540,
    "name": "Pau Cubarsí",
    "team": "Barcelona",
    "position": "Defender",
@@ -1096,6 +1203,7 @@
    "tier": 1
   },
   {
+   "id": 264320,
    "name": "Gerard Martín",
    "team": "Barcelona",
    "position": "Defender",
@@ -1106,6 +1214,7 @@
    "tier": 2
   },
   {
+   "id": 287848,
    "name": "Xavi Espart",
    "team": "Barcelona",
    "position": "Defender",
@@ -1116,6 +1225,7 @@
    "tier": 3
   },
   {
+   "id": 3199,
    "name": "Rodri",
    "team": "Barcelona",
    "position": "Midfielder",
@@ -1126,6 +1236,7 @@
    "tier": 1
   },
   {
+   "id": 7559,
    "name": "Frenkie de Jong",
    "team": "Barcelona",
    "position": "Midfielder",
@@ -1136,6 +1247,7 @@
    "tier": 2
   },
   {
+   "id": 23132,
    "name": "Dani Olmo",
    "team": "Barcelona",
    "position": "Midfielder",
@@ -1146,6 +1258,7 @@
    "tier": 1
   },
   {
+   "id": 133860,
    "name": "Pedri",
    "team": "Barcelona",
    "position": "Midfielder",
@@ -1156,6 +1269,7 @@
    "tier": 1
   },
   {
+   "id": 171992,
    "name": "Pablo Gavira",
    "team": "Barcelona",
    "position": "Midfielder",
@@ -1166,6 +1280,7 @@
    "tier": 3
   },
   {
+   "id": 214533,
    "name": "Fermín López",
    "team": "Barcelona",
    "position": "Midfielder",
@@ -1176,6 +1291,7 @@
    "tier": 1
   },
   {
+   "id": 264321,
    "name": "Marc Bernal",
    "team": "Barcelona",
    "position": "Midfielder",
@@ -1186,6 +1302,7 @@
    "tier": 2
   },
   {
+   "id": 298638,
    "name": "Brian Fariñas",
    "team": "Barcelona",
    "position": "Defender",
@@ -1196,6 +1313,7 @@
    "tier": 3
   },
   {
+   "id": 3236,
    "name": "Gabriel Jesus",
    "team": "Barcelona",
    "position": "Forward",
@@ -1206,6 +1324,7 @@
    "tier": 2
   },
   {
+   "id": 7848,
    "name": "Anthony Gordon",
    "team": "Barcelona",
    "position": "Midfielder",
@@ -1216,6 +1335,7 @@
    "tier": 1
   },
   {
+   "id": 37428,
    "name": "Raphinha",
    "team": "Barcelona",
    "position": "Forward",
@@ -1226,6 +1346,7 @@
    "tier": 1
   },
   {
+   "id": 82515,
    "name": "Karim Adeyemi",
    "team": "Barcelona",
    "position": "Forward",
@@ -1236,16 +1357,18 @@
    "tier": 1
   },
   {
+   "id": 184723,
    "name": "Roony Bardghji",
    "team": "Barcelona",
    "position": "Forward",
-   "age": 20,
+   "age": 21,
    "number": 19,
    "nationality": "Sweden",
    "photo": "https://media.api-sports.io/football/players/338958.png",
    "tier": 2
   },
   {
+   "id": 202283,
    "name": "Lamine Yamal",
    "team": "Barcelona",
    "position": "Midfielder",
@@ -1256,6 +1379,7 @@
    "tier": 1
   },
   {
+   "id": 274542,
    "name": "Hamza Abdelkarim",
    "team": "Barcelona",
    "position": "Forward",
@@ -1266,6 +1390,7 @@
    "tier": 3
   },
   {
+   "id": 298634,
    "name": "Jesse Bisiwu",
    "team": "Barcelona",
    "position": "Forward",
@@ -1276,6 +1401,7 @@
    "tier": 3
   },
   {
+   "id": 302801,
    "name": "Ebrima Tunkara",
    "team": "Barcelona",
    "position": "Midfielder",
@@ -1286,6 +1412,7 @@
    "tier": 3
   },
   {
+   "id": 302641,
    "name": "Orian Goren",
    "team": "Barcelona",
    "position": "Midfielder",
@@ -1296,6 +1423,7 @@
    "tier": 3
   },
   {
+   "id": 302538,
    "name": "Álex Campos",
    "team": "Barcelona",
    "position": "Defender",
@@ -1306,6 +1434,7 @@
    "tier": 3
   },
   {
+   "id": 301129,
    "name": "Iker Rodríguez",
    "team": "Barcelona",
    "position": "Goalkeeper",
@@ -1316,6 +1445,7 @@
    "tier": 3
   },
   {
+   "id": 78,
    "name": "David Soria",
    "team": "Getafe",
    "position": "Goalkeeper",
@@ -1326,6 +1456,7 @@
    "tier": 3
   },
   {
+   "id": 146888,
    "name": "Jiří Letáček",
    "team": "Getafe",
    "position": "Goalkeeper",
@@ -1336,6 +1467,7 @@
    "tier": 3
   },
   {
+   "id": 3125,
    "name": "Dakonam Djené",
    "team": "Getafe",
    "position": "Defender",
@@ -1346,6 +1478,7 @@
    "tier": 3
   },
   {
+   "id": 3724,
    "name": "Johan Mojica",
    "team": "Getafe",
    "position": "Defender",
@@ -1356,6 +1489,7 @@
    "tier": 3
   },
   {
+   "id": 8125,
    "name": "Femenía Far",
    "team": "Getafe",
    "position": "Defender",
@@ -1366,6 +1500,7 @@
    "tier": 3
   },
   {
+   "id": 81187,
    "name": "Abdelkabir Abqar",
    "team": "Getafe",
    "position": "Defender",
@@ -1376,6 +1511,7 @@
    "tier": 3
   },
   {
+   "id": 161083,
    "name": "Saba Sazonov",
    "team": "Getafe",
    "position": "Defender",
@@ -1386,6 +1522,7 @@
    "tier": 3
   },
   {
+   "id": 191367,
    "name": "Zaid Romero",
    "team": "Getafe",
    "position": "Defender",
@@ -1396,6 +1533,7 @@
    "tier": 3
   },
   {
+   "id": 203594,
    "name": "Andrés Garcia",
    "team": "Getafe",
    "position": "Midfielder",
@@ -1406,6 +1544,7 @@
    "tier": 3
   },
   {
+   "id": 220164,
    "name": "Sebastián Boselli",
    "team": "Getafe",
    "position": "Defender",
@@ -1416,6 +1555,7 @@
    "tier": 3
   },
   {
+   "id": 256157,
    "name": "Davinchi",
    "team": "Getafe",
    "position": "Defender",
@@ -1426,6 +1566,7 @@
    "tier": 3
   },
   {
+   "id": 272229,
    "name": "Valou",
    "team": "Getafe",
    "position": "Defender",
@@ -1436,6 +1577,7 @@
    "tier": 3
   },
   {
+   "id": 9398,
    "name": "Orel Mangala",
    "team": "Getafe",
    "position": "Midfielder",
@@ -1446,16 +1588,18 @@
    "tier": 2
   },
   {
+   "id": 21410,
    "name": "Nemanja Gudelj",
    "team": "Getafe",
    "position": "Midfielder",
-   "age": 34,
+   "age": 35,
    "number": 8,
    "nationality": "Serbia",
    "photo": "https://media.api-sports.io/football/players/1489.png",
    "tier": 3
   },
   {
+   "id": 102213,
    "name": "Yvan Neyou",
    "team": "Getafe",
    "position": "Midfielder",
@@ -1466,6 +1610,7 @@
    "tier": 3
   },
   {
+   "id": 151252,
    "name": "Francho Serrano",
    "team": "Getafe",
    "position": "Midfielder",
@@ -1476,6 +1621,7 @@
    "tier": 3
   },
   {
+   "id": 154000,
    "name": "RamónTerrats Espacio",
    "team": "Getafe",
    "position": "Midfielder",
@@ -1486,6 +1632,7 @@
    "tier": 3
   },
   {
+   "id": 191064,
    "name": "Mario Martin",
    "team": "Getafe",
    "position": "Midfielder",
@@ -1496,6 +1643,7 @@
    "tier": 2
   },
   {
+   "id": 2,
    "name": "Juanmi",
    "team": "Getafe",
    "position": "Forward",
@@ -1506,6 +1654,7 @@
    "tier": 3
   },
   {
+   "id": 69,
    "name": "Borja Mayoral",
    "team": "Getafe",
    "position": "Forward",
@@ -1516,6 +1665,7 @@
    "tier": 3
   },
   {
+   "id": 33132,
    "name": "Enes Ünal",
    "team": "Getafe",
    "position": "Forward",
@@ -1526,6 +1676,7 @@
    "tier": 2
   },
   {
+   "id": 152458,
    "name": "Martin Satriano",
    "team": "Getafe",
    "position": "Midfielder",
@@ -1536,6 +1687,7 @@
    "tier": 2
   },
   {
+   "id": 154360,
    "name": "Ivan Azón",
    "team": "Getafe",
    "position": "Forward",
@@ -1546,6 +1698,7 @@
    "tier": 3
   },
   {
+   "id": 260763,
    "name": "Chrisantus",
    "team": "Getafe",
    "position": "Forward",
@@ -1556,6 +1709,7 @@
    "tier": 3
   },
   {
+   "id": 302804,
    "name": "Ibra Danfakha",
    "team": "Getafe",
    "position": "Forward",
@@ -1566,6 +1720,7 @@
    "tier": 3
   },
   {
+   "id": 32591,
    "name": "Alfonso Herrero",
    "team": "Malaga",
    "position": "Goalkeeper",
@@ -1576,16 +1731,18 @@
    "tier": 3
   },
   {
+   "id": 203607,
    "name": "Lopez Nogueras",
    "team": "Malaga",
    "position": "Goalkeeper",
-   "age": 21,
+   "age": 22,
    "number": null,
    "nationality": "Spain",
    "photo": null,
    "tier": 3
   },
   {
+   "id": 32362,
    "name": "Fernando Calero",
    "team": "Malaga",
    "position": "Defender",
@@ -1596,6 +1753,7 @@
    "tier": 3
   },
   {
+   "id": 33073,
    "name": "Juan Berrocal",
    "team": "Malaga",
    "position": "Defender",
@@ -1606,6 +1764,7 @@
    "tier": 3
   },
   {
+   "id": 97815,
    "name": "Alex Pastor Carayol",
    "team": "Malaga",
    "position": "Defender",
@@ -1616,6 +1775,7 @@
    "tier": 3
   },
   {
+   "id": 151257,
    "name": "José Salinas",
    "team": "Malaga",
    "position": "Defender",
@@ -1626,6 +1786,7 @@
    "tier": 3
   },
   {
+   "id": 169393,
    "name": "Ángel Recio",
    "team": "Malaga",
    "position": "Defender",
@@ -1636,6 +1797,7 @@
    "tier": 3
   },
   {
+   "id": 188780,
    "name": "Diego Murillo",
    "team": "Malaga",
    "position": "Defender",
@@ -1646,6 +1808,7 @@
    "tier": 3
   },
   {
+   "id": 227677,
    "name": "Einar Galilea",
    "team": "Malaga",
    "position": "Defender",
@@ -1656,6 +1819,7 @@
    "tier": 3
   },
   {
+   "id": 244053,
    "name": "Rafa Garrido",
    "team": "Malaga",
    "position": "Defender",
@@ -1666,6 +1830,7 @@
    "tier": 3
   },
   {
+   "id": 246476,
    "name": "Adam Aznou",
    "team": "Malaga",
    "position": "Midfielder",
@@ -1676,6 +1841,7 @@
    "tier": 3
   },
   {
+   "id": 246498,
    "name": "Puga",
    "team": "Malaga",
    "position": "Defender",
@@ -1686,6 +1852,7 @@
    "tier": 3
   },
   {
+   "id": 31676,
    "name": "Jens Cajuste",
    "team": "Malaga",
    "position": "Midfielder",
@@ -1696,6 +1863,7 @@
    "tier": 2
   },
   {
+   "id": 32830,
    "name": "Pablo Martínez",
    "team": "Malaga",
    "position": "Midfielder",
@@ -1706,6 +1874,7 @@
    "tier": 3
   },
   {
+   "id": 126923,
    "name": "Ramón Enríquez Rodríguez",
    "team": "Malaga",
    "position": "Midfielder",
@@ -1716,6 +1885,7 @@
    "tier": 3
   },
   {
+   "id": 176605,
    "name": "Dani Lorenzo",
    "team": "Malaga",
    "position": "Midfielder",
@@ -1726,6 +1896,7 @@
    "tier": 3
   },
   {
+   "id": 189380,
    "name": "Carlos Dotor",
    "team": "Malaga",
    "position": "Midfielder",
@@ -1736,6 +1907,7 @@
    "tier": 3
   },
   {
+   "id": 191203,
    "name": "Rafa Rodriguez",
    "team": "Malaga",
    "position": "Midfielder",
@@ -1746,6 +1918,7 @@
    "tier": 3
   },
   {
+   "id": 243857,
    "name": "Izan Merino",
    "team": "Malaga",
    "position": "Midfielder",
@@ -1756,6 +1929,7 @@
    "tier": 3
   },
   {
+   "id": 244733,
    "name": "Aarón Ochoa",
    "team": "Malaga",
    "position": "Midfielder",
@@ -1766,6 +1940,7 @@
    "tier": 3
   },
   {
+   "id": 32691,
    "name": "Eneko Jauregi Escobar",
    "team": "Malaga",
    "position": "Forward",
@@ -1776,6 +1951,7 @@
    "tier": 3
   },
   {
+   "id": 32848,
    "name": "Juan Cruz",
    "team": "Malaga",
    "position": "Forward",
@@ -1786,6 +1962,7 @@
    "tier": 3
   },
   {
+   "id": 98690,
    "name": "Joaquín Muñoz",
    "team": "Malaga",
    "position": "Forward",
@@ -1796,6 +1973,7 @@
    "tier": 3
   },
   {
+   "id": 138177,
    "name": "Julen Lobete",
    "team": "Malaga",
    "position": "Forward",
@@ -1806,6 +1984,7 @@
    "tier": 3
   },
   {
+   "id": 145267,
    "name": "David Larrubia",
    "team": "Malaga",
    "position": "Midfielder",
@@ -1816,6 +1995,7 @@
    "tier": 3
   },
   {
+   "id": 157213,
    "name": "Haitam Abaida",
    "team": "Malaga",
    "position": "Forward",
@@ -1826,6 +2006,7 @@
    "tier": 3
   },
   {
+   "id": 261672,
    "name": "Adrián Niño",
    "team": "Malaga",
    "position": "Forward",
@@ -1836,6 +2017,7 @@
    "tier": 3
   },
   {
+   "id": 264254,
    "name": "Chupete",
    "team": "Malaga",
    "position": "Forward",
@@ -1846,6 +2028,7 @@
    "tier": 3
   },
   {
+   "id": 3641,
    "name": "Thibaut Courtois",
    "team": "Real Madrid",
    "position": "Goalkeeper",
@@ -1856,6 +2039,7 @@
    "tier": 2
   },
   {
+   "id": 28995,
    "name": "Andriy Lunin",
    "team": "Real Madrid",
    "position": "Goalkeeper",
@@ -1866,6 +2050,7 @@
    "tier": 2
   },
   {
+   "id": 1337,
    "name": "Éder Militão",
    "team": "Real Madrid",
    "position": "Defender",
@@ -1876,6 +2061,7 @@
    "tier": 2
   },
   {
+   "id": 3177,
    "name": "Antonio Rüdiger",
    "team": "Real Madrid",
    "position": "Defender",
@@ -1886,6 +2072,7 @@
    "tier": 3
   },
   {
+   "id": 7417,
    "name": "Denzel Dumfries",
    "team": "Real Madrid",
    "position": "Defender",
@@ -1896,6 +2083,7 @@
    "tier": 2
   },
   {
+   "id": 7867,
    "name": "Trent Alexander-Arnold",
    "team": "Real Madrid",
    "position": "Defender",
@@ -1906,6 +2094,7 @@
    "tier": 1
   },
   {
+   "id": 8458,
    "name": "Ferland Mendy",
    "team": "Real Madrid",
    "position": "Defender",
@@ -1916,6 +2105,7 @@
    "tier": 3
   },
   {
+   "id": 9542,
    "name": "Ibrahima Konaté",
    "team": "Real Madrid",
    "position": "Defender",
@@ -1926,6 +2116,7 @@
    "tier": 1
   },
   {
+   "id": 15863,
    "name": "Cucurella",
    "team": "Real Madrid",
    "position": "Defender",
@@ -1936,6 +2127,7 @@
    "tier": 1
   },
   {
+   "id": 182020,
    "name": "Álvaro Carreras",
    "team": "Real Madrid",
    "position": "Defender",
@@ -1946,6 +2138,7 @@
    "tier": 1
   },
   {
+   "id": 191727,
    "name": "Dean Huijsen",
    "team": "Real Madrid",
    "position": "Defender",
@@ -1956,6 +2149,7 @@
    "tier": 1
   },
   {
+   "id": 272712,
    "name": "Raúl (Real Madrid)",
    "team": "Real Madrid",
    "position": "Defender",
@@ -1966,6 +2160,7 @@
    "tier": 2
   },
   {
+   "id": 96,
    "name": "Federico Valverde",
    "team": "Real Madrid",
    "position": "Midfielder",
@@ -1976,6 +2171,7 @@
    "tier": 1
   },
   {
+   "id": 3254,
    "name": "Bernardo Silva",
    "team": "Real Madrid",
    "position": "Midfielder",
@@ -1986,6 +2182,7 @@
    "tier": 2
   },
   {
+   "id": 8514,
    "name": "Aurélien Tchouameni",
    "team": "Real Madrid",
    "position": "Midfielder",
@@ -1996,16 +2193,18 @@
    "tier": 1
   },
   {
+   "id": 102343,
    "name": "Eduardo Camavinga",
    "team": "Real Madrid",
    "position": "Midfielder",
-   "age": 23,
+   "age": 24,
    "number": 6,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/2207.png",
    "tier": 1
   },
   {
+   "id": 125010,
    "name": "Jude Bellingham",
    "team": "Real Madrid",
    "position": "Midfielder",
@@ -2016,6 +2215,7 @@
    "tier": 1
   },
   {
+   "id": 169162,
    "name": "Arda Guler",
    "team": "Real Madrid",
    "position": "Midfielder",
@@ -2026,6 +2226,7 @@
    "tier": 1
   },
   {
+   "id": 283110,
    "name": "Thiago Pitarch",
    "team": "Real Madrid",
    "position": "Midfielder",
@@ -2036,6 +2237,7 @@
    "tier": 2
   },
   {
+   "id": 289908,
    "name": "Jorge Cestero",
    "team": "Real Madrid",
    "position": "Midfielder",
@@ -2046,6 +2248,7 @@
    "tier": 2
   },
   {
+   "id": 1324,
    "name": "Rodrygo",
    "team": "Real Madrid",
    "position": "Forward",
@@ -2056,6 +2259,7 @@
    "tier": 1
   },
   {
+   "id": 1556,
    "name": "Vinicius Junior",
    "team": "Real Madrid",
    "position": "Midfielder",
@@ -2066,6 +2270,7 @@
    "tier": 1
   },
   {
+   "id": 3374,
    "name": "Kylian Mbappé",
    "team": "Real Madrid",
    "position": "Forward",
@@ -2076,6 +2281,7 @@
    "tier": 1
   },
   {
+   "id": 7887,
    "name": "Brahim Diaz",
    "team": "Real Madrid",
    "position": "Midfielder",
@@ -2086,6 +2292,7 @@
    "tier": 1
   },
   {
+   "id": 188487,
    "name": "Endrick",
    "team": "Real Madrid",
    "position": "Forward",
@@ -2096,6 +2303,7 @@
    "tier": 1
   },
   {
+   "id": 247061,
    "name": "Carlos Espí",
    "team": "Real Madrid",
    "position": "Forward",
@@ -2106,16 +2314,18 @@
    "tier": 2
   },
   {
+   "id": 277484,
    "name": "Yan Diomandé",
    "team": "Real Madrid",
    "position": "Midfielder",
-   "age": 19,
+   "age": 20,
    "number": 25,
    "nationality": "Ivory Coast",
    "photo": "https://media.api-sports.io/football/players/513776.png",
    "tier": 1
   },
   {
+   "id": 302640,
    "name": "Ilya Voloshyn",
    "team": "Real Madrid",
    "position": "Goalkeeper",
@@ -2126,6 +2336,7 @@
    "tier": 3
   },
   {
+   "id": 3087,
    "name": "Emil Audero",
    "team": "Rayo Vallecano",
    "position": "Goalkeeper",
@@ -2136,6 +2347,7 @@
    "tier": 3
   },
   {
+   "id": 46245,
    "name": "Augusto Batalla",
    "team": "Rayo Vallecano",
    "position": "Goalkeeper",
@@ -2146,6 +2358,7 @@
    "tier": 3
   },
   {
+   "id": 81425,
    "name": "Morro",
    "team": "Rayo Vallecano",
    "position": "Goalkeeper",
@@ -2156,6 +2369,7 @@
    "tier": 3
   },
   {
+   "id": 133288,
    "name": "Dani Cárdenas",
    "team": "Rayo Vallecano",
    "position": "Goalkeeper",
@@ -2166,6 +2380,7 @@
    "tier": 3
   },
   {
+   "id": 2071,
    "name": "Luiz Felipe",
    "team": "Rayo Vallecano",
    "position": "Defender",
@@ -2176,6 +2391,7 @@
    "tier": 3
   },
   {
+   "id": 2151,
    "name": "Marash Kumbulla",
    "team": "Rayo Vallecano",
    "position": "Defender",
@@ -2186,6 +2402,7 @@
    "tier": 3
   },
   {
+   "id": 7925,
    "name": "Florian Lejeune",
    "team": "Rayo Vallecano",
    "position": "Defender",
@@ -2196,6 +2413,7 @@
    "tier": 3
   },
   {
+   "id": 8716,
    "name": "Iván Balliu",
    "team": "Rayo Vallecano",
    "position": "Defender",
@@ -2206,6 +2424,7 @@
    "tier": 3
   },
   {
+   "id": 33650,
    "name": "Mujaid Sadick",
    "team": "Rayo Vallecano",
    "position": "Defender",
@@ -2216,6 +2435,7 @@
    "tier": 3
   },
   {
+   "id": 92048,
    "name": "Pedrosa",
    "team": "Rayo Vallecano",
    "position": "Defender",
@@ -2226,6 +2446,7 @@
    "tier": 3
   },
   {
+   "id": 114955,
    "name": "Andrei Rațiu",
    "team": "Rayo Vallecano",
    "position": "Defender",
@@ -2236,6 +2457,7 @@
    "tier": 2
   },
   {
+   "id": 168725,
    "name": "Jozhua Vertrouwd",
    "team": "Rayo Vallecano",
    "position": "Defender",
@@ -2246,6 +2468,7 @@
    "tier": 3
   },
   {
+   "id": 260906,
    "name": "Pelayo Fernández",
    "team": "Rayo Vallecano",
    "position": "Defender",
@@ -2256,6 +2479,7 @@
    "tier": 3
   },
   {
+   "id": 32109,
    "name": "Óscar Valentín",
    "team": "Rayo Vallecano",
    "position": "Midfielder",
@@ -2266,6 +2490,7 @@
    "tier": 3
   },
   {
+   "id": 32124,
    "name": "Unai López",
    "team": "Rayo Vallecano",
    "position": "Midfielder",
@@ -2276,6 +2501,7 @@
    "tier": 3
   },
   {
+   "id": 32228,
    "name": "Pedro Díaz",
    "team": "Rayo Vallecano",
    "position": "Midfielder",
@@ -2286,6 +2512,7 @@
    "tier": 3
   },
   {
+   "id": 37649,
    "name": "Pathé Ciss",
    "team": "Rayo Vallecano",
    "position": "Midfielder",
@@ -2296,6 +2523,7 @@
    "tier": 3
   },
   {
+   "id": 98032,
    "name": "Randy Ntekja",
    "team": "Rayo Vallecano",
    "position": "Midfielder",
@@ -2306,6 +2534,7 @@
    "tier": 3
   },
   {
+   "id": 300277,
    "name": "Gnangoro Bouare",
    "team": "Rayo Vallecano",
    "position": "Midfielder",
@@ -2316,6 +2545,7 @@
    "tier": 3
   },
   {
+   "id": 32127,
    "name": "Raúl de Tomás",
    "team": "Rayo Vallecano",
    "position": "Forward",
@@ -2326,6 +2556,7 @@
    "tier": 3
   },
   {
+   "id": 32312,
    "name": "Álvaro García",
    "team": "Rayo Vallecano",
    "position": "Forward",
@@ -2336,6 +2567,7 @@
    "tier": 3
   },
   {
+   "id": 33496,
    "name": "Isi Palazón",
    "team": "Rayo Vallecano",
    "position": "Midfielder",
@@ -2346,6 +2578,7 @@
    "tier": 3
   },
   {
+   "id": 106014,
    "name": "Alexandre Alemão",
    "team": "Rayo Vallecano",
    "position": "Forward",
@@ -2356,6 +2589,7 @@
    "tier": 3
   },
   {
+   "id": 115175,
    "name": "Sergio Camello",
    "team": "Rayo Vallecano",
    "position": "Forward",
@@ -2366,6 +2600,7 @@
    "tier": 3
   },
   {
+   "id": 133276,
    "name": "Jorge de Frutos",
    "team": "Rayo Vallecano",
    "position": "Forward",
@@ -2376,6 +2611,7 @@
    "tier": 2
   },
   {
+   "id": 187117,
    "name": "Fran Perez",
    "team": "Rayo Vallecano",
    "position": "Forward",
@@ -2386,16 +2622,18 @@
    "tier": 3
   },
   {
+   "id": 216372,
    "name": "Georgiy Tsitaishvili",
    "team": "Rayo Vallecano",
    "position": "Forward",
-   "age": 25,
+   "age": 26,
    "number": 14,
    "nationality": "Georgia",
    "photo": "https://media.api-sports.io/football/players/2181.png",
    "tier": 3
   },
   {
+   "id": 3403,
    "name": "Maty Ryan",
    "team": "Levante",
    "position": "Goalkeeper",
@@ -2406,6 +2644,7 @@
    "tier": 3
   },
   {
+   "id": 165167,
    "name": "Pablo Cuñat",
    "team": "Levante",
    "position": "Goalkeeper",
@@ -2416,6 +2655,7 @@
    "tier": 3
   },
   {
+   "id": 263381,
    "name": "Álex Primo",
    "team": "Levante",
    "position": "Goalkeeper",
@@ -2426,6 +2666,7 @@
    "tier": 3
   },
   {
+   "id": 19,
    "name": "Aïssa Mandi",
    "team": "Levante",
    "position": "Defender",
@@ -2436,6 +2677,7 @@
    "tier": 3
   },
   {
+   "id": 162,
    "name": "Jeremy Toljan",
    "team": "Levante",
    "position": "Defender",
@@ -2446,6 +2688,7 @@
    "tier": 3
   },
   {
+   "id": 98741,
    "name": "Adrián de la Fuente",
    "team": "Levante",
    "position": "Defender",
@@ -2456,6 +2699,7 @@
    "tier": 3
   },
   {
+   "id": 118715,
    "name": "Manuel Sánchez",
    "team": "Levante",
    "position": "Defender",
@@ -2466,6 +2710,7 @@
    "tier": 3
   },
   {
+   "id": 214177,
    "name": "Xavi Grande",
    "team": "Levante",
    "position": "Defender",
@@ -2476,6 +2721,7 @@
    "tier": 3
   },
   {
+   "id": 249065,
    "name": "Jorge Cabello",
    "team": "Levante",
    "position": "Defender",
@@ -2486,6 +2732,7 @@
    "tier": 3
   },
   {
+   "id": 272949,
    "name": "Axel Tape",
    "team": "Levante",
    "position": "Defender",
@@ -2496,6 +2743,7 @@
    "tier": 2
   },
   {
+   "id": 279739,
    "name": "Ifeanyi Ndukwe",
    "team": "Levante",
    "position": "Defender",
@@ -2506,6 +2754,7 @@
    "tier": 3
   },
   {
+   "id": 283442,
    "name": "Nacho Pérez",
    "team": "Levante",
    "position": "Defender",
@@ -2516,16 +2765,18 @@
    "tier": 3
   },
   {
+   "id": 299422,
    "name": "Marc Santos",
    "team": "Levante",
    "position": "Defender",
-   "age": 15,
+   "age": 16,
    "number": null,
    "nationality": "Spain",
    "photo": null,
    "tier": 3
   },
   {
+   "id": 4159,
    "name": "Oriol Rey",
    "team": "Levante",
    "position": "Midfielder",
@@ -2536,6 +2787,7 @@
    "tier": 3
   },
   {
+   "id": 156525,
    "name": "Carlos Álvarez",
    "team": "Levante",
    "position": "Midfielder",
@@ -2546,6 +2798,7 @@
    "tier": 2
   },
   {
+   "id": 161293,
    "name": "Jon Olasagasti",
    "team": "Levante",
    "position": "Midfielder",
@@ -2556,6 +2809,7 @@
    "tier": 3
   },
   {
+   "id": 168650,
    "name": "Hugo Sotelo",
    "team": "Levante",
    "position": "Midfielder",
@@ -2566,6 +2820,7 @@
    "tier": 3
   },
   {
+   "id": 177245,
    "name": "Enzo Bardeli",
    "team": "Levante",
    "position": "Midfielder",
@@ -2576,6 +2831,7 @@
    "tier": 3
   },
   {
+   "id": 206721,
    "name": "Dani Requena",
    "team": "Levante",
    "position": "Midfielder",
@@ -2586,6 +2842,7 @@
    "tier": 3
   },
   {
+   "id": 33819,
    "name": "Roger Brugué",
    "team": "Levante",
    "position": "Forward",
@@ -2596,6 +2853,7 @@
    "tier": 3
   },
   {
+   "id": 83333,
    "name": "Víctor García",
    "team": "Levante",
    "position": "Defender",
@@ -2606,6 +2864,7 @@
    "tier": 3
   },
   {
+   "id": 156746,
    "name": "Iván Romero",
    "team": "Levante",
    "position": "Midfielder",
@@ -2616,6 +2875,7 @@
    "tier": 2
   },
   {
+   "id": 193621,
    "name": "Thiago Fernandez",
    "team": "Levante",
    "position": "Midfielder",
@@ -2626,6 +2886,7 @@
    "tier": 3
   },
   {
+   "id": 203439,
    "name": "Karl Etta Eyong",
    "team": "Levante",
    "position": "Forward",
@@ -2636,6 +2897,7 @@
    "tier": 2
   },
   {
+   "id": 212769,
    "name": "Petar Ratkov",
    "team": "Levante",
    "position": "Forward",
@@ -2646,6 +2908,7 @@
    "tier": 2
   },
   {
+   "id": 253109,
    "name": "Paco Cortés",
    "team": "Levante",
    "position": "Forward",
@@ -2656,6 +2919,7 @@
    "tier": 3
   },
   {
+   "id": 270381,
    "name": "Yanis Musuayi",
    "team": "Levante",
    "position": "Forward",
@@ -2666,6 +2930,7 @@
    "tier": 3
   },
   {
+   "id": 100130,
    "name": "Álvaro Vallés Rosa",
    "team": "Real Betis",
    "position": "Goalkeeper",
@@ -2676,6 +2941,7 @@
    "tier": 2
   },
   {
+   "id": 150546,
    "name": "Diego Conde",
    "team": "Real Betis",
    "position": "Goalkeeper",
@@ -2686,6 +2952,7 @@
    "tier": 3
   },
   {
+   "id": 9,
    "name": "Diego Llorente",
    "team": "Real Betis",
    "position": "Defender",
@@ -2696,6 +2963,7 @@
    "tier": 3
   },
   {
+   "id": 7783,
    "name": "Héctor Bellerín",
    "team": "Real Betis",
    "position": "Defender",
@@ -2706,6 +2974,7 @@
    "tier": 3
   },
   {
+   "id": 33037,
    "name": "Júnior Firpo",
    "team": "Real Betis",
    "position": "Defender",
@@ -2716,6 +2985,7 @@
    "tier": 3
   },
   {
+   "id": 33038,
    "name": "Bartra",
    "team": "Real Betis",
    "position": "Defender",
@@ -2726,6 +2996,7 @@
    "tier": 3
   },
   {
+   "id": 99993,
    "name": "Francisco Garcia",
    "team": "Real Betis",
    "position": "Defender",
@@ -2736,6 +3007,7 @@
    "tier": 2
   },
   {
+   "id": 138031,
    "name": "Natan",
    "team": "Real Betis",
    "position": "Defender",
@@ -2746,6 +3018,7 @@
    "tier": 2
   },
   {
+   "id": 179155,
    "name": "Valentín Gómez",
    "team": "Real Betis",
    "position": "Defender",
@@ -2756,6 +3029,7 @@
    "tier": 2
   },
   {
+   "id": 272694,
    "name": "Ángel Ortiz",
    "team": "Real Betis",
    "position": "Defender",
@@ -2766,6 +3040,7 @@
    "tier": 3
   },
   {
+   "id": 66,
    "name": "Isco",
    "team": "Real Betis",
    "position": "Midfielder",
@@ -2776,6 +3051,7 @@
    "tier": 3
   },
   {
+   "id": 68,
    "name": "Dani Ceballos",
    "team": "Real Betis",
    "position": "Midfielder",
@@ -2786,6 +3062,7 @@
    "tier": 2
   },
   {
+   "id": 3216,
    "name": "Giovani Lo Celso",
    "team": "Real Betis",
    "position": "Midfielder",
@@ -2796,6 +3073,7 @@
    "tier": 2
   },
   {
+   "id": 32710,
    "name": "Marc Roca",
    "team": "Real Betis",
    "position": "Midfielder",
@@ -2806,6 +3084,7 @@
    "tier": 3
   },
   {
+   "id": 33117,
    "name": "Pablo Fornals",
    "team": "Real Betis",
    "position": "Midfielder",
@@ -2816,6 +3095,7 @@
    "tier": 2
   },
   {
+   "id": 99992,
    "name": "Álvaro Fidalgo",
    "team": "Real Betis",
    "position": "Midfielder",
@@ -2826,6 +3106,7 @@
    "tier": 3
   },
   {
+   "id": 126913,
    "name": "Iker Losada",
    "team": "Real Betis",
    "position": "Forward",
@@ -2836,6 +3117,7 @@
    "tier": 3
   },
   {
+   "id": 179141,
    "name": "Nelson Deossa",
    "team": "Real Betis",
    "position": "Midfielder",
@@ -2846,6 +3128,7 @@
    "tier": 2
   },
   {
+   "id": 245200,
    "name": "Facundo Bernal",
    "team": "Real Betis",
    "position": "Midfielder",
@@ -2856,6 +3139,7 @@
    "tier": 3
   },
   {
+   "id": 32415,
    "name": "Cucho Hernández",
    "team": "Real Betis",
    "position": "Forward",
@@ -2866,6 +3150,7 @@
    "tier": 2
   },
   {
+   "id": 33045,
    "name": "Aitor Ruibal",
    "team": "Real Betis",
    "position": "Forward",
@@ -2876,6 +3161,7 @@
    "tier": 3
   },
   {
+   "id": 97085,
    "name": "Antony",
    "team": "Real Betis",
    "position": "Midfielder",
@@ -2886,6 +3172,7 @@
    "tier": 1
   },
   {
+   "id": 128731,
    "name": "Rodrigo Riquelme",
    "team": "Real Betis",
    "position": "Midfielder",
@@ -2896,6 +3183,7 @@
    "tier": 3
   },
   {
+   "id": 131041,
    "name": "Troy Parrott",
    "team": "Real Betis",
    "position": "Forward",
@@ -2906,6 +3194,7 @@
    "tier": 2
   },
   {
+   "id": 175941,
    "name": "Abdessamad Ezzalzouli",
    "team": "Real Betis",
    "position": "Midfielder",
@@ -2916,6 +3205,7 @@
    "tier": 1
   },
   {
+   "id": 32413,
    "name": "Álex Remiro",
    "team": "Real Sociedad",
    "position": "Goalkeeper",
@@ -2926,6 +3216,7 @@
    "tier": 2
   },
   {
+   "id": 157040,
    "name": "Unai Marrero",
    "team": "Real Sociedad",
    "position": "Goalkeeper",
@@ -2936,6 +3227,7 @@
    "tier": 3
   },
   {
+   "id": 11,
    "name": "Álvaro Odriozola",
    "team": "Real Sociedad",
    "position": "Defender",
@@ -2946,6 +3238,7 @@
    "tier": 3
   },
   {
+   "id": 29,
    "name": "Igor Zubeldía",
    "team": "Real Sociedad",
    "position": "Defender",
@@ -2956,6 +3249,7 @@
    "tier": 3
   },
   {
+   "id": 164,
    "name": "Sergio Gómez",
    "team": "Real Sociedad",
    "position": "Defender",
@@ -2966,6 +3260,7 @@
    "tier": 2
   },
   {
+   "id": 100129,
    "name": "Aihen Muñoz",
    "team": "Real Sociedad",
    "position": "Defender",
@@ -2976,6 +3271,7 @@
    "tier": 3
   },
   {
+   "id": 141571,
    "name": "Jon Aramburu",
    "team": "Real Sociedad",
    "position": "Defender",
@@ -2986,6 +3282,7 @@
    "tier": 2
   },
   {
+   "id": 144615,
    "name": "Jon Pacheco",
    "team": "Real Sociedad",
    "position": "Defender",
@@ -2996,6 +3293,7 @@
    "tier": 3
   },
   {
+   "id": 190866,
    "name": "Mamadou Sarr",
    "team": "Real Sociedad",
    "position": "Defender",
@@ -3006,6 +3304,7 @@
    "tier": 2
   },
   {
+   "id": 227023,
    "name": "Héctor Fort",
    "team": "Real Sociedad",
    "position": "Defender",
@@ -3016,6 +3315,7 @@
    "tier": 2
   },
   {
+   "id": 245442,
    "name": "Jon Martín",
    "team": "Real Sociedad",
    "position": "Defender",
@@ -3026,6 +3326,7 @@
    "tier": 2
   },
   {
+   "id": 33148,
    "name": "Carlos Soler",
    "team": "Real Sociedad",
    "position": "Midfielder",
@@ -3036,6 +3337,7 @@
    "tier": 2
   },
   {
+   "id": 77734,
    "name": "Yangel Herrera",
    "team": "Real Sociedad",
    "position": "Midfielder",
@@ -3046,6 +3348,7 @@
    "tier": 3
   },
   {
+   "id": 82516,
    "name": "Luka Sučić",
    "team": "Real Sociedad",
    "position": "Midfielder",
@@ -3056,6 +3359,7 @@
    "tier": 2
   },
   {
+   "id": 156615,
    "name": "Beñat Turrientes",
    "team": "Real Sociedad",
    "position": "Midfielder",
@@ -3066,6 +3370,7 @@
    "tier": 2
   },
   {
+   "id": 170540,
    "name": "Arsen Zakharyan",
    "team": "Real Sociedad",
    "position": "Midfielder",
@@ -3076,6 +3381,7 @@
    "tier": 2
   },
   {
+   "id": 172786,
    "name": "Pablo Marin",
    "team": "Real Sociedad",
    "position": "Midfielder",
@@ -3086,6 +3392,7 @@
    "tier": 2
   },
   {
+   "id": 263820,
    "name": "Jon Gorrotxategi",
    "team": "Real Sociedad",
    "position": "Midfielder",
@@ -3096,6 +3403,7 @@
    "tier": 2
   },
   {
+   "id": 3259,
    "name": "Gonçalo Guedes",
    "team": "Real Sociedad",
    "position": "Midfielder",
@@ -3106,6 +3414,7 @@
    "tier": 3
   },
   {
+   "id": 48555,
    "name": "Takefusa Kubo",
    "team": "Real Sociedad",
    "position": "Forward",
@@ -3116,6 +3425,7 @@
    "tier": 2
   },
   {
+   "id": 101182,
    "name": "Ander Barrenetxea",
    "team": "Real Sociedad",
    "position": "Midfielder",
@@ -3126,6 +3436,7 @@
    "tier": 2
   },
   {
+   "id": 180137,
    "name": "Mikel Oyarzabal",
    "team": "Real Sociedad",
    "position": "Forward",
@@ -3136,6 +3447,7 @@
    "tier": 2
   },
   {
+   "id": 184729,
    "name": "Orri Steinn Óskarsson",
    "team": "Real Sociedad",
    "position": "Forward",
@@ -3146,6 +3458,7 @@
    "tier": 2
   },
   {
+   "id": 279958,
    "name": "Ochieng",
    "team": "Real Sociedad",
    "position": "Forward",
@@ -3156,6 +3469,7 @@
    "tier": 3
   },
   {
+   "id": 9533,
    "name": "Péter Gulácsi",
    "team": "Villarreal",
    "position": "Goalkeeper",
@@ -3166,6 +3480,7 @@
    "tier": 3
   },
   {
+   "id": 150899,
    "name": "Luiz Lúcio Reis Júnior",
    "team": "Villarreal",
    "position": "Goalkeeper",
@@ -3176,6 +3491,7 @@
    "tier": 3
   },
   {
+   "id": 188765,
    "name": "Ruben Gomez",
    "team": "Villarreal",
    "position": "Goalkeeper",
@@ -3186,6 +3502,7 @@
    "tier": 3
   },
   {
+   "id": 814,
    "name": "Logan Costa",
    "team": "Villarreal",
    "position": "Defender",
@@ -3196,6 +3513,7 @@
    "tier": 2
   },
   {
+   "id": 7996,
    "name": "Juan Foyth",
    "team": "Villarreal",
    "position": "Defender",
@@ -3206,6 +3524,7 @@
    "tier": 2
   },
   {
+   "id": 177823,
    "name": "Alex Freeman",
    "team": "Villarreal",
    "position": "Defender",
@@ -3216,6 +3535,7 @@
    "tier": 3
   },
   {
+   "id": 178769,
    "name": "Renato Veiga",
    "team": "Villarreal",
    "position": "Defender",
@@ -3226,6 +3546,7 @@
    "tier": 2
   },
   {
+   "id": 180289,
    "name": "Sergi Cardona",
    "team": "Villarreal",
    "position": "Defender",
@@ -3236,6 +3557,7 @@
    "tier": 2
   },
   {
+   "id": 186564,
    "name": "Carlos Romero",
    "team": "Villarreal",
    "position": "Defender",
@@ -3246,6 +3568,7 @@
    "tier": 2
   },
   {
+   "id": 212858,
    "name": "Santiago Mouriño",
    "team": "Villarreal",
    "position": "Defender",
@@ -3256,6 +3579,7 @@
    "tier": 2
   },
   {
+   "id": 217521,
    "name": "Pau Navarro",
    "team": "Villarreal",
    "position": "Defender",
@@ -3266,6 +3590,7 @@
    "tier": 2
   },
   {
+   "id": 633,
    "name": "Pape Gueye",
    "team": "Villarreal",
    "position": "Midfielder",
@@ -3276,6 +3601,7 @@
    "tier": 1
   },
   {
+   "id": 32114,
    "name": "Santiago Comesaña",
    "team": "Villarreal",
    "position": "Midfielder",
@@ -3286,6 +3612,7 @@
    "tier": 2
   },
   {
+   "id": 171216,
    "name": "Nathan-Dylan Saliba",
    "team": "Villarreal",
    "position": "Midfielder",
@@ -3296,6 +3623,7 @@
    "tier": 2
   },
   {
+   "id": 273016,
    "name": "Alassane Diatta",
    "team": "Villarreal",
    "position": "Midfielder",
@@ -3306,6 +3634,7 @@
    "tier": 3
   },
   {
+   "id": 289770,
    "name": "Carlos Macià",
    "team": "Villarreal",
    "position": "Midfielder",
@@ -3316,6 +3645,7 @@
    "tier": 3
   },
   {
+   "id": 7936,
    "name": "Ayoze Pérez",
    "team": "Villarreal",
    "position": "Forward",
@@ -3326,6 +3656,7 @@
    "tier": 3
   },
   {
+   "id": 8412,
    "name": "Nicolas Pépé",
    "team": "Villarreal",
    "position": "Midfielder",
@@ -3336,6 +3667,7 @@
    "tier": 3
   },
   {
+   "id": 32719,
    "name": "Gerard Moreno",
    "team": "Villarreal",
    "position": "Forward",
@@ -3346,6 +3678,7 @@
    "tier": 3
   },
   {
+   "id": 113175,
    "name": "Tajon Buchanan",
    "team": "Villarreal",
    "position": "Midfielder",
@@ -3356,6 +3689,7 @@
    "tier": 2
   },
   {
+   "id": 136646,
    "name": "Georges Mikautadze",
    "team": "Villarreal",
    "position": "Forward",
@@ -3366,6 +3700,7 @@
    "tier": 2
   },
   {
+   "id": 150533,
    "name": "Alberto Moleiro",
    "team": "Villarreal",
    "position": "Midfielder",
@@ -3376,6 +3711,7 @@
    "tier": 1
   },
   {
+   "id": 176202,
    "name": "Ilias Akhomach",
    "team": "Villarreal",
    "position": "Forward",
@@ -3386,6 +3722,7 @@
    "tier": 2
   },
   {
+   "id": 177826,
    "name": "Tani Oluwaseyi",
    "team": "Villarreal",
    "position": "Forward",
@@ -3396,6 +3733,7 @@
    "tier": 2
   },
   {
+   "id": 33137,
    "name": "Cristian",
    "team": "Valencia",
    "position": "Goalkeeper",
@@ -3406,6 +3744,7 @@
    "tier": 3
   },
   {
+   "id": 33781,
    "name": "Stole Dimitrievski",
    "team": "Valencia",
    "position": "Goalkeeper",
@@ -3416,6 +3755,7 @@
    "tier": 3
   },
   {
+   "id": 186557,
    "name": "Kayne van Oevelen",
    "team": "Valencia",
    "position": "Goalkeeper",
@@ -3426,6 +3766,7 @@
    "tier": 3
   },
   {
+   "id": 8456,
    "name": "Mouctar Diakhaby",
    "team": "Valencia",
    "position": "Defender",
@@ -3436,6 +3777,7 @@
    "tier": 3
   },
   {
+   "id": 8780,
    "name": "Dimitri Foulquier",
    "team": "Valencia",
    "position": "Defender",
@@ -3446,6 +3788,7 @@
    "tier": 3
   },
   {
+   "id": 33146,
    "name": "Gaya",
    "team": "Valencia",
    "position": "Defender",
@@ -3456,6 +3799,7 @@
    "tier": 3
   },
   {
+   "id": 33513,
    "name": "Pablo Maffeo",
    "team": "Valencia",
    "position": "Midfielder",
@@ -3466,6 +3810,7 @@
    "tier": 3
   },
   {
+   "id": 97367,
    "name": "Justin de Haas",
    "team": "Valencia",
    "position": "Defender",
@@ -3476,6 +3821,7 @@
    "tier": 2
   },
   {
+   "id": 151744,
    "name": "Arnau Martinez",
    "team": "Valencia",
    "position": "Defender",
@@ -3486,6 +3832,7 @@
    "tier": 2
   },
   {
+   "id": 157190,
    "name": "Jesus Vazquez Alcalde",
    "team": "Valencia",
    "position": "Defender",
@@ -3496,6 +3843,7 @@
    "tier": 3
   },
   {
+   "id": 172108,
    "name": "Copete",
    "team": "Valencia",
    "position": "Defender",
@@ -3506,6 +3854,7 @@
    "tier": 3
   },
   {
+   "id": 176041,
    "name": "Cesar Tarrega",
    "team": "Valencia",
    "position": "Defender",
@@ -3516,16 +3865,18 @@
    "tier": 2
   },
   {
+   "id": 265515,
    "name": "Iker Córdoba",
    "team": "Valencia",
    "position": "Defender",
-   "age": 20,
+   "age": 21,
    "number": 36,
    "nationality": "Spain",
    "photo": "https://media.api-sports.io/football/players/442188.png",
    "tier": 3
   },
   {
+   "id": 30802,
    "name": "Filip Ugrinic",
    "team": "Valencia",
    "position": "Midfielder",
@@ -3536,6 +3887,7 @@
    "tier": 2
   },
   {
+   "id": 33270,
    "name": "Pepelu",
    "team": "Valencia",
    "position": "Defender",
@@ -3546,6 +3898,7 @@
    "tier": 2
   },
   {
+   "id": 39104,
    "name": "Guido Rodríguez",
    "team": "Valencia",
    "position": "Midfielder",
@@ -3556,6 +3909,7 @@
    "tier": 3
   },
   {
+   "id": 124824,
    "name": "Harvey Elliott",
    "team": "Valencia",
    "position": "Midfielder",
@@ -3566,6 +3920,7 @@
    "tier": 2
   },
   {
+   "id": 177180,
    "name": "Javier Guerra",
    "team": "Valencia",
    "position": "Midfielder",
@@ -3576,6 +3931,7 @@
    "tier": 2
   },
   {
+   "id": 245521,
    "name": "Aliou Dieng",
    "team": "Valencia",
    "position": "Midfielder",
@@ -3586,6 +3942,7 @@
    "tier": 3
   },
   {
+   "id": 4442,
    "name": "Sergi Canós",
    "team": "Valencia",
    "position": "Forward",
@@ -3596,6 +3953,7 @@
    "tier": 3
   },
   {
+   "id": 7672,
    "name": "Umar Sadiq",
    "team": "Valencia",
    "position": "Forward",
@@ -3606,6 +3964,7 @@
    "tier": 3
   },
   {
+   "id": 9870,
    "name": "Arnaut Danjuma",
    "team": "Valencia",
    "position": "Forward",
@@ -3616,16 +3975,18 @@
    "tier": 3
   },
   {
+   "id": 32762,
    "name": "Hugo Duro",
    "team": "Valencia",
    "position": "Forward",
-   "age": 26,
+   "age": 27,
    "number": 9,
    "nationality": "Spain",
    "photo": "https://media.api-sports.io/football/players/47264.png",
    "tier": 2
   },
   {
+   "id": 33131,
    "name": "Dani Raba",
    "team": "Valencia",
    "position": "Forward",
@@ -3636,6 +3997,7 @@
    "tier": 3
   },
   {
+   "id": 50907,
    "name": "Luis Rioja",
    "team": "Valencia",
    "position": "Midfielder",
@@ -3646,6 +4008,7 @@
    "tier": 3
   },
   {
+   "id": 180061,
    "name": "Diego López",
    "team": "Valencia",
    "position": "Forward",
@@ -3656,6 +4019,7 @@
    "tier": 2
   },
   {
+   "id": 194040,
    "name": "Ryunosuke Sato",
    "team": "Valencia",
    "position": "Midfielder",
@@ -3666,6 +4030,7 @@
    "tier": 3
   },
   {
+   "id": 300718,
    "name": "Rodrigo Gamón",
    "team": "Valencia",
    "position": null,
@@ -3676,6 +4041,7 @@
    "tier": 3
   },
   {
+   "id": 283,
    "name": "Sivera",
    "team": "Alaves",
    "position": "Goalkeeper",
@@ -3686,6 +4052,7 @@
    "tier": 2
   },
   {
+   "id": 142453,
    "name": "Adrian Rodriguez",
    "team": "Alaves",
    "position": "Goalkeeper",
@@ -3696,6 +4063,7 @@
    "tier": 3
   },
   {
+   "id": 33622,
    "name": "Jonny Otto",
    "team": "Alaves",
    "position": "Defender",
@@ -3706,6 +4074,7 @@
    "tier": 3
   },
   {
+   "id": 45831,
    "name": "Facundo Garcés",
    "team": "Alaves",
    "position": "Defender",
@@ -3716,6 +4085,7 @@
    "tier": 3
   },
   {
+   "id": 46123,
    "name": "Nahuel Tenaglia",
    "team": "Alaves",
    "position": "Defender",
@@ -3726,6 +4096,7 @@
    "tier": 3
   },
   {
+   "id": 146969,
    "name": "Ville Koski",
    "team": "Alaves",
    "position": "Defender",
@@ -3736,6 +4107,7 @@
    "tier": 3
   },
   {
+   "id": 147357,
    "name": "Hugo Novoa",
    "team": "Alaves",
    "position": "Forward",
@@ -3746,6 +4118,7 @@
    "tier": 3
   },
   {
+   "id": 169089,
    "name": "Nicolas Valentini",
    "team": "Alaves",
    "position": "Defender",
@@ -3756,6 +4129,7 @@
    "tier": 3
   },
   {
+   "id": 273343,
    "name": "Yusi",
    "team": "Alaves",
    "position": "Defender",
@@ -3766,6 +4140,7 @@
    "tier": 3
   },
   {
+   "id": 15867,
    "name": "Aleñà",
    "team": "Alaves",
    "position": "Midfielder",
@@ -3776,6 +4151,7 @@
    "tier": 3
   },
   {
+   "id": 15868,
    "name": "Denís Suárez",
    "team": "Alaves",
    "position": "Midfielder",
@@ -3786,6 +4162,7 @@
    "tier": 3
   },
   {
+   "id": 28663,
    "name": "Carlos Benavidez",
    "team": "Alaves",
    "position": "Midfielder",
@@ -3796,6 +4173,7 @@
    "tier": 3
   },
   {
+   "id": 33093,
    "name": "Ander Guevara",
    "team": "Alaves",
    "position": "Midfielder",
@@ -3806,6 +4184,7 @@
    "tier": 3
   },
   {
+   "id": 157626,
    "name": "Antonio Blanco",
    "team": "Alaves",
    "position": "Midfielder",
@@ -3816,6 +4195,7 @@
    "tier": 2
   },
   {
+   "id": 173617,
    "name": "Pablo Ibáñez Tébar",
    "team": "Alaves",
    "position": "Midfielder",
@@ -3826,6 +4206,7 @@
    "tier": 3
   },
   {
+   "id": 176854,
    "name": "Tomas Mendes",
    "team": "Alaves",
    "position": "Midfielder",
@@ -3836,6 +4217,7 @@
    "tier": 3
   },
   {
+   "id": 215414,
    "name": "Selu Diallo",
    "team": "Alaves",
    "position": "Midfielder",
@@ -3846,6 +4228,7 @@
    "tier": 3
   },
   {
+   "id": 290184,
    "name": "Mikel Rodríguez",
    "team": "Alaves",
    "position": "Midfielder",
@@ -3856,6 +4239,7 @@
    "tier": 3
   },
   {
+   "id": 8474,
    "name": "Mariano Díaz",
    "team": "Alaves",
    "position": "Forward",
@@ -3866,6 +4250,7 @@
    "tier": 3
   },
   {
+   "id": 11113,
    "name": "Lucas Boyé",
    "team": "Alaves",
    "position": "Forward",
@@ -3876,6 +4261,7 @@
    "tier": 3
   },
   {
+   "id": 11733,
    "name": "Toni Martínez",
    "team": "Alaves",
    "position": "Forward",
@@ -3886,6 +4272,7 @@
    "tier": 2
   },
   {
+   "id": 150525,
    "name": "Miguel Rodríguez",
    "team": "Alaves",
    "position": "Forward",
@@ -3896,6 +4283,7 @@
    "tier": 3
   },
   {
+   "id": 184988,
    "name": "Abde Rebbach",
    "team": "Alaves",
    "position": "Midfielder",
@@ -3906,6 +4294,7 @@
    "tier": 3
   },
   {
+   "id": 246154,
    "name": "Aitor Mañas",
    "team": "Alaves",
    "position": "Forward",
@@ -3916,6 +4305,7 @@
    "tier": 3
   },
   {
+   "id": 298633,
    "name": "Ángel Pérez",
    "team": "Alaves",
    "position": "Midfielder",
@@ -3926,6 +4316,7 @@
    "tier": 3
   },
   {
+   "id": 23810,
    "name": "Matías Dituro",
    "team": "Elche",
    "position": "Goalkeeper",
@@ -3936,6 +4327,7 @@
    "tier": 3
   },
   {
+   "id": 175982,
    "name": "Alejandro Iturbe",
    "team": "Elche",
    "position": "Goalkeeper",
@@ -3946,6 +4338,7 @@
    "tier": 3
   },
   {
+   "id": 33318,
    "name": "Pedro Bigas",
    "team": "Elche",
    "position": "Defender",
@@ -3956,6 +4349,7 @@
    "tier": 3
   },
   {
+   "id": 33516,
    "name": "Bambo Diaby",
    "team": "Elche",
    "position": "Defender",
@@ -3966,6 +4360,7 @@
    "tier": 3
   },
   {
+   "id": 151557,
    "name": "Víctor Chust",
    "team": "Elche",
    "position": "Defender",
@@ -3976,6 +4371,7 @@
    "tier": 3
   },
   {
+   "id": 154556,
    "name": "Kevin Lomónaco",
    "team": "Elche",
    "position": "Defender",
@@ -3986,6 +4382,7 @@
    "tier": 2
   },
   {
+   "id": 184121,
    "name": "Roy Revivo",
    "team": "Elche",
    "position": "Defender",
@@ -3996,6 +4393,7 @@
    "tier": 3
   },
   {
+   "id": 244544,
    "name": "Buba",
    "team": "Elche",
    "position": "Defender",
@@ -4006,6 +4404,7 @@
    "tier": 3
   },
   {
+   "id": 264422,
    "name": "Matia Barzic",
    "team": "Elche",
    "position": "Defender",
@@ -4016,16 +4415,18 @@
    "tier": 3
   },
   {
+   "id": 3369,
    "name": "Thomas Lemar",
    "team": "Elche",
    "position": "Midfielder",
-   "age": 30,
+   "age": 31,
    "number": 18,
    "nationality": "Guadeloupe",
    "photo": "https://media.api-sports.io/football/players/45.png",
    "tier": 3
   },
   {
+   "id": 33150,
    "name": "Gonzalo Villar",
    "team": "Elche",
    "position": "Midfielder",
@@ -4036,6 +4437,7 @@
    "tier": 3
   },
   {
+   "id": 159647,
    "name": "Marc Aguado",
    "team": "Elche",
    "position": "Midfielder",
@@ -4046,6 +4448,7 @@
    "tier": 3
   },
   {
+   "id": 165143,
    "name": "Martim Neto",
    "team": "Elche",
    "position": "Midfielder",
@@ -4056,6 +4459,7 @@
    "tier": 3
   },
   {
+   "id": 170459,
    "name": "Federico Redondo",
    "team": "Elche",
    "position": "Defender",
@@ -4066,6 +4470,7 @@
    "tier": 3
   },
   {
+   "id": 184273,
    "name": "Facundo Buonanotte",
    "team": "Elche",
    "position": "Midfielder",
@@ -4076,6 +4481,7 @@
    "tier": 2
   },
   {
+   "id": 294508,
    "name": "Javi Morcillo",
    "team": "Elche",
    "position": "Midfielder",
@@ -4086,6 +4492,7 @@
    "tier": 3
   },
   {
+   "id": 8214,
    "name": "Grady Diangana",
    "team": "Elche",
    "position": "Forward",
@@ -4096,6 +4503,7 @@
    "tier": 3
   },
   {
+   "id": 8414,
    "name": "Ezequiel Ponce",
    "team": "Elche",
    "position": "Forward",
@@ -4106,6 +4514,7 @@
    "tier": 3
   },
   {
+   "id": 32281,
    "name": "Josán Fernández",
    "team": "Elche",
    "position": "Midfielder",
@@ -4116,6 +4525,7 @@
    "tier": 3
   },
   {
+   "id": 33843,
    "name": "Tete Morente",
    "team": "Elche",
    "position": "Forward",
@@ -4126,6 +4536,7 @@
    "tier": 3
   },
   {
+   "id": 137485,
    "name": "Germán Valera",
    "team": "Elche",
    "position": "Defender",
@@ -4136,6 +4547,7 @@
    "tier": 2
   },
   {
+   "id": 137997,
    "name": "Fernando Niño",
    "team": "Elche",
    "position": "Forward",
@@ -4146,6 +4558,7 @@
    "tier": 3
   },
   {
+   "id": 171148,
    "name": "Lucas Cepeda",
    "team": "Elche",
    "position": "Forward",
@@ -4156,6 +4569,7 @@
    "tier": 3
   },
   {
+   "id": 179011,
    "name": "Abiel Osorio",
    "team": "Elche",
    "position": "Forward",
@@ -4166,6 +4580,7 @@
    "tier": 3
   },
   {
+   "id": 206810,
    "name": "Yago Santiago",
    "team": "Elche",
    "position": "Forward",
@@ -4176,6 +4591,7 @@
    "tier": 3
   },
   {
+   "id": 229141,
    "name": "Ali Houary",
    "team": "Elche",
    "position": "Forward",
@@ -4186,6 +4602,7 @@
    "tier": 3
   },
   {
+   "id": 229143,
    "name": "Adam",
    "team": "Elche",
    "position": "Forward",
@@ -4196,6 +4613,7 @@
    "tier": 3
   },
   {
+   "id": 175763,
    "name": "Ruben Sanchez",
    "team": "Elche",
    "position": "Defender",
@@ -4206,6 +4624,7 @@
    "tier": 3
   },
   {
+   "id": 2788,
    "name": "Ionuț Radu",
    "team": "Celta Vigo",
    "position": "Goalkeeper",
@@ -4216,6 +4635,7 @@
    "tier": 2
   },
   {
+   "id": 29518,
    "name": "Altay Bayındır",
    "team": "Celta Vigo",
    "position": "Goalkeeper",
@@ -4226,6 +4646,7 @@
    "tier": 3
   },
   {
+   "id": 32918,
    "name": "Iván Villar",
    "team": "Celta Vigo",
    "position": "Goalkeeper",
@@ -4236,6 +4657,7 @@
    "tier": 3
   },
   {
+   "id": 3195,
    "name": "Marcos Alonso",
    "team": "Celta Vigo",
    "position": "Defender",
@@ -4246,6 +4668,7 @@
    "tier": 3
   },
   {
+   "id": 28326,
    "name": "Sebastían Cáceres",
    "team": "Celta Vigo",
    "position": "Defender",
@@ -4256,6 +4679,7 @@
    "tier": 3
   },
   {
+   "id": 31019,
    "name": "Carl Starfelt",
    "team": "Celta Vigo",
    "position": "Defender",
@@ -4266,16 +4690,18 @@
    "tier": 3
   },
   {
+   "id": 32336,
    "name": "Javier Galán",
    "team": "Celta Vigo",
    "position": "Defender",
-   "age": 31,
+   "age": 32,
    "number": null,
    "nationality": "Spain",
    "photo": null,
    "tier": 3
   },
   {
+   "id": 42751,
    "name": "Abdoulaye Fayé",
    "team": "Celta Vigo",
    "position": "Defender",
@@ -4286,6 +4712,7 @@
    "tier": 3
   },
   {
+   "id": 133570,
    "name": "Sergio Carreira",
    "team": "Celta Vigo",
    "position": "Midfielder",
@@ -4296,6 +4723,7 @@
    "tier": 2
   },
   {
+   "id": 211835,
    "name": "Álvaro Núñez",
    "team": "Celta Vigo",
    "position": "Defender",
@@ -4306,6 +4734,7 @@
    "tier": 3
   },
   {
+   "id": 229003,
    "name": "Javi Rodríguez",
    "team": "Celta Vigo",
    "position": "Defender",
@@ -4316,6 +4745,7 @@
    "tier": 3
   },
   {
+   "id": 252993,
    "name": "Yoel Lago",
    "team": "Celta Vigo",
    "position": "Defender",
@@ -4326,6 +4756,7 @@
    "tier": 3
   },
   {
+   "id": 253001,
    "name": "Javi Rueda",
    "team": "Celta Vigo",
    "position": "Midfielder",
@@ -4336,6 +4767,7 @@
    "tier": 2
   },
   {
+   "id": 32052,
    "name": "Aleix Febas",
    "team": "Celta Vigo",
    "position": "Midfielder",
@@ -4346,6 +4778,7 @@
    "tier": 3
   },
   {
+   "id": 157368,
    "name": "Ilaix Moriba",
    "team": "Celta Vigo",
    "position": "Midfielder",
@@ -4356,6 +4789,7 @@
    "tier": 2
   },
   {
+   "id": 272435,
    "name": "Miguel Román",
    "team": "Celta Vigo",
    "position": "Midfielder",
@@ -4366,6 +4800,7 @@
    "tier": 2
   },
   {
+   "id": 3201,
    "name": "Iago Aspas",
    "team": "Celta Vigo",
    "position": "Forward",
@@ -4376,6 +4811,7 @@
    "tier": 3
   },
   {
+   "id": 32056,
    "name": "Borja Iglesias",
    "team": "Celta Vigo",
    "position": "Forward",
@@ -4386,6 +4822,7 @@
    "tier": 3
   },
   {
+   "id": 83406,
    "name": "Ferran Jutglà",
    "team": "Celta Vigo",
    "position": "Forward",
@@ -4396,6 +4833,7 @@
    "tier": 2
   },
   {
+   "id": 150536,
    "name": "Couhaib Driouech",
    "team": "Celta Vigo",
    "position": "Forward",
@@ -4406,6 +4844,7 @@
    "tier": 2
   },
   {
+   "id": 170438,
    "name": "Williot Swedberg",
    "team": "Celta Vigo",
    "position": "Forward",
@@ -4416,6 +4855,7 @@
    "tier": 2
   },
   {
+   "id": 175869,
    "name": "Hugo Alvarez",
    "team": "Celta Vigo",
    "position": "Forward",
@@ -4426,6 +4866,7 @@
    "tier": 2
   },
   {
+   "id": 175892,
    "name": "Hugo Gonzalez",
    "team": "Celta Vigo",
    "position": "Forward",
@@ -4436,6 +4877,7 @@
    "tier": 3
   },
   {
+   "id": 180502,
    "name": "Jones El-Abdellaoui",
    "team": "Celta Vigo",
    "position": "Forward",
@@ -4446,6 +4888,7 @@
    "tier": 2
   },
   {
+   "id": 188859,
    "name": "Pablo Duran",
    "team": "Celta Vigo",
    "position": "Forward",
@@ -4456,6 +4899,7 @@
    "tier": 3
   },
   {
+   "id": 42871,
    "name": "Odisseas Vlachodimos",
    "team": "Sevilla",
    "position": "Goalkeeper",
@@ -4466,6 +4910,7 @@
    "tier": 3
   },
   {
+   "id": 206826,
    "name": "Fran Gonzalez",
    "team": "Sevilla",
    "position": "Goalkeeper",
@@ -4476,6 +4921,7 @@
    "tier": 3
   },
   {
+   "id": 21385,
    "name": "Gabriel Suazo",
    "team": "Sevilla",
    "position": "Defender",
@@ -4486,6 +4932,7 @@
    "tier": 2
   },
   {
+   "id": 34909,
    "name": "Fábio Cardoso",
    "team": "Sevilla",
    "position": "Defender",
@@ -4496,6 +4943,7 @@
    "tier": 3
   },
   {
+   "id": 45449,
    "name": "Marcão",
    "team": "Sevilla",
    "position": "Defender",
@@ -4506,6 +4954,7 @@
    "tier": 3
   },
   {
+   "id": 83351,
    "name": "Juan Iglesias",
    "team": "Sevilla",
    "position": "Defender",
@@ -4516,6 +4965,7 @@
    "tier": 3
   },
   {
+   "id": 157842,
    "name": "Arouna Sangante",
    "team": "Sevilla",
    "position": "Defender",
@@ -4526,6 +4976,7 @@
    "tier": 2
   },
   {
+   "id": 171984,
    "name": "Jose Angel Carmona",
    "team": "Sevilla",
    "position": "Defender",
@@ -4536,6 +4987,7 @@
    "tier": 2
   },
   {
+   "id": 178107,
    "name": "Kike Salas",
    "team": "Sevilla",
    "position": "Defender",
@@ -4546,6 +4998,7 @@
    "tier": 2
   },
   {
+   "id": 180165,
    "name": "Castrin",
    "team": "Sevilla",
    "position": "Defender",
@@ -4556,6 +5009,7 @@
    "tier": 2
   },
   {
+   "id": 291147,
    "name": "Julio Díaz",
    "team": "Sevilla",
    "position": "Defender",
@@ -4566,6 +5020,7 @@
    "tier": 3
   },
   {
+   "id": 33092,
    "name": "Jon Guridi",
    "team": "Sevilla",
    "position": "Midfielder",
@@ -4576,6 +5031,7 @@
    "tier": 3
   },
   {
+   "id": 81299,
    "name": "Youssouf Fofana",
    "team": "Sevilla",
    "position": "Midfielder",
@@ -4586,6 +5042,7 @@
    "tier": 2
   },
   {
+   "id": 98223,
    "name": "Lucien Agoume",
    "team": "Sevilla",
    "position": "Midfielder",
@@ -4596,6 +5053,7 @@
    "tier": 2
   },
   {
+   "id": 144628,
    "name": "Giorgi Kochorashvili",
    "team": "Sevilla",
    "position": "Midfielder",
@@ -4606,6 +5064,7 @@
    "tier": 3
   },
   {
+   "id": 190857,
    "name": "Manu Bueno",
    "team": "Sevilla",
    "position": "Midfielder",
@@ -4616,6 +5075,7 @@
    "tier": 3
   },
   {
+   "id": 295172,
    "name": "Nicolás Guillén",
    "team": "Sevilla",
    "position": "Midfielder",
@@ -4626,6 +5086,7 @@
    "tier": 3
   },
   {
+   "id": 31913,
    "name": "Ruben Vargas",
    "team": "Sevilla",
    "position": "Midfielder",
@@ -4636,6 +5097,7 @@
    "tier": 2
   },
   {
+   "id": 32324,
    "name": "Alfonso González",
    "team": "Sevilla",
    "position": "Forward",
@@ -4646,6 +5108,7 @@
    "tier": 3
   },
   {
+   "id": 38625,
    "name": "Chidera Ejuke",
    "team": "Sevilla",
    "position": "Midfielder",
@@ -4656,6 +5119,7 @@
    "tier": 3
   },
   {
+   "id": 127657,
    "name": "Félix Correia",
    "team": "Sevilla",
    "position": "Midfielder",
@@ -4666,6 +5130,7 @@
    "tier": 2
   },
   {
+   "id": 185105,
    "name": "Peque",
    "team": "Sevilla",
    "position": "Forward",
@@ -4676,6 +5141,7 @@
    "tier": 3
   },
   {
+   "id": 187311,
    "name": "Robbie Ure",
    "team": "Sevilla",
    "position": "Forward",
@@ -4686,6 +5152,7 @@
    "tier": 3
   },
   {
+   "id": 188897,
    "name": "Lucas Stassin",
    "team": "Sevilla",
    "position": "Forward",
@@ -4696,6 +5163,7 @@
    "tier": 2
   },
   {
+   "id": 213043,
    "name": "Isaac",
    "team": "Sevilla",
    "position": "Forward",
@@ -4706,6 +5174,7 @@
    "tier": 3
   },
   {
+   "id": 226950,
    "name": "Miguel Ángel Sierra",
    "team": "Sevilla",
    "position": "Forward",
@@ -4716,6 +5185,7 @@
    "tier": 3
   },
   {
+   "id": 302465,
    "name": "Jesús Morales",
    "team": "Sevilla",
    "position": null,
@@ -4726,6 +5196,7 @@
    "tier": 3
   },
   {
+   "id": 79533,
    "name": "Álvaro Fernández",
    "team": "Deportivo La Coruna",
    "position": "Goalkeeper",
@@ -4736,6 +5207,7 @@
    "tier": 3
   },
   {
+   "id": 171678,
    "name": "German Parreno",
    "team": "Deportivo La Coruna",
    "position": "Goalkeeper",
@@ -4746,6 +5218,7 @@
    "tier": 3
   },
   {
+   "id": 172628,
    "name": "Leo Román",
    "team": "Deportivo La Coruna",
    "position": "Goalkeeper",
@@ -4756,6 +5229,7 @@
    "tier": 2
   },
   {
+   "id": 3134,
    "name": "Ximo Navarro",
    "team": "Deportivo La Coruna",
    "position": "Defender",
@@ -4766,6 +5240,7 @@
    "tier": 3
   },
   {
+   "id": 7646,
    "name": "Angeliño",
    "team": "Deportivo La Coruna",
    "position": "Defender",
@@ -4776,6 +5251,7 @@
    "tier": 3
   },
   {
+   "id": 124711,
    "name": "Giacomo Quagliata",
    "team": "Deportivo La Coruna",
    "position": "Defender",
@@ -4786,6 +5262,7 @@
    "tier": 3
   },
   {
+   "id": 145500,
    "name": "Arnau Comas",
    "team": "Deportivo La Coruna",
    "position": "Defender",
@@ -4796,6 +5273,7 @@
    "tier": 3
   },
   {
+   "id": 177239,
    "name": "Lucas Noubi",
    "team": "Deportivo La Coruna",
    "position": "Defender",
@@ -4806,6 +5284,7 @@
    "tier": 3
   },
   {
+   "id": 185093,
    "name": "Adrià Altimira",
    "team": "Deportivo La Coruna",
    "position": "Defender",
@@ -4816,6 +5295,7 @@
    "tier": 3
   },
   {
+   "id": 186699,
    "name": "Miguel Loureiro",
    "team": "Deportivo La Coruna",
    "position": "Defender",
@@ -4826,6 +5306,7 @@
    "tier": 3
   },
   {
+   "id": 213277,
    "name": "José Giménez",
    "team": "Deportivo La Coruna",
    "position": "Defender",
@@ -4836,6 +5317,7 @@
    "tier": 2
   },
   {
+   "id": 226242,
    "name": "Dani Barcia",
    "team": "Deportivo La Coruna",
    "position": "Defender",
@@ -4846,6 +5328,7 @@
    "tier": 3
   },
   {
+   "id": 298636,
    "name": "Ede Bright",
    "team": "Deportivo La Coruna",
    "position": "Defender",
@@ -4856,6 +5339,7 @@
    "tier": 3
   },
   {
+   "id": 69837,
    "name": "Mario Soriano",
    "team": "Deportivo La Coruna",
    "position": "Midfielder",
@@ -4866,6 +5350,7 @@
    "tier": 3
   },
   {
+   "id": 98199,
    "name": "Riki Rodríguez",
    "team": "Deportivo La Coruna",
    "position": "Midfielder",
@@ -4876,6 +5361,7 @@
    "tier": 3
   },
   {
+   "id": 188817,
    "name": "Marc Casado",
    "team": "Deportivo La Coruna",
    "position": "Midfielder",
@@ -4886,6 +5372,7 @@
    "tier": 2
   },
   {
+   "id": 190825,
    "name": "Lorenzo Amatucci",
    "team": "Deportivo La Coruna",
    "position": "Midfielder",
@@ -4896,6 +5383,7 @@
    "tier": 3
   },
   {
+   "id": 226170,
    "name": "Diego Villares",
    "team": "Deportivo La Coruna",
    "position": "Midfielder",
@@ -4906,6 +5394,7 @@
    "tier": 3
   },
   {
+   "id": 245913,
    "name": "Teun Gijselhart",
    "team": "Deportivo La Coruna",
    "position": "Midfielder",
@@ -4916,6 +5405,7 @@
    "tier": 3
   },
   {
+   "id": 246474,
    "name": "Jonathan Asp-Jensen",
    "team": "Deportivo La Coruna",
    "position": "Midfielder",
@@ -4926,6 +5416,7 @@
    "tier": 3
   },
   {
+   "id": 289952,
    "name": "Noé Carrillo",
    "team": "Deportivo La Coruna",
    "position": "Midfielder",
@@ -4936,6 +5427,7 @@
    "tier": 3
   },
   {
+   "id": 4221,
    "name": "Adama Traoré",
    "team": "Deportivo La Coruna",
    "position": "Forward",
@@ -4946,6 +5438,7 @@
    "tier": 2
   },
   {
+   "id": 7801,
    "name": "Pierre-Emerick Aubameyang",
    "team": "Deportivo La Coruna",
    "position": "Forward",
@@ -4956,6 +5449,7 @@
    "tier": 3
   },
   {
+   "id": 114100,
    "name": "Zakaria Eddahchouri",
    "team": "Deportivo La Coruna",
    "position": "Forward",
@@ -4966,6 +5460,7 @@
    "tier": 3
   },
   {
+   "id": 176255,
    "name": "Luismi Cruz",
    "team": "Deportivo La Coruna",
    "position": "Forward",
@@ -4976,6 +5471,7 @@
    "tier": 3
   },
   {
+   "id": 225956,
    "name": "David Mella",
    "team": "Deportivo La Coruna",
    "position": "Midfielder",
@@ -4986,6 +5482,7 @@
    "tier": 3
   },
   {
+   "id": 227683,
    "name": "Peke",
    "team": "Deportivo La Coruna",
    "position": "Midfielder",
@@ -4996,6 +5493,7 @@
    "tier": 3
   },
   {
+   "id": 288836,
    "name": "Nsongo Tonfack",
    "team": "Deportivo La Coruna",
    "position": "Forward",
@@ -5006,6 +5504,7 @@
    "tier": 3
   },
   {
+   "id": 172017,
    "name": "Julen Agirrezabala",
    "team": "Racing Santander",
    "position": "Goalkeeper",
@@ -5016,6 +5515,7 @@
    "tier": 2
   },
   {
+   "id": 273800,
    "name": "Simon Eriksson",
    "team": "Racing Santander",
    "position": "Goalkeeper",
@@ -5026,6 +5526,7 @@
    "tier": 3
   },
   {
+   "id": 3874,
    "name": "José Manuel",
    "team": "Racing Santander",
    "position": "Defender",
@@ -5036,6 +5537,7 @@
    "tier": 3
   },
   {
+   "id": 32701,
    "name": "Aaron Martín",
    "team": "Racing Santander",
    "position": "Defender",
@@ -5046,6 +5548,7 @@
    "tier": 3
   },
   {
+   "id": 98747,
    "name": "Pablo Ramon",
    "team": "Racing Santander",
    "position": "Defender",
@@ -5056,6 +5559,7 @@
    "tier": 3
   },
   {
+   "id": 150539,
    "name": "Pablo García",
    "team": "Racing Santander",
    "position": "Forward",
@@ -5066,6 +5570,7 @@
    "tier": 3
   },
   {
+   "id": 159518,
    "name": "Álvaro Mantilla",
    "team": "Racing Santander",
    "position": "Defender",
@@ -5076,6 +5581,7 @@
    "tier": 3
   },
   {
+   "id": 177037,
    "name": "Jeanuel Belocian",
    "team": "Racing Santander",
    "position": "Defender",
@@ -5086,6 +5592,7 @@
    "tier": 2
   },
   {
+   "id": 214537,
    "name": "Facundo González",
    "team": "Racing Santander",
    "position": "Defender",
@@ -5096,6 +5603,7 @@
    "tier": 3
   },
   {
+   "id": 246656,
    "name": "Pedro Felipe",
    "team": "Racing Santander",
    "position": "Defender",
@@ -5106,6 +5614,7 @@
    "tier": 3
   },
   {
+   "id": 264402,
    "name": "Salinas",
    "team": "Racing Santander",
    "position": "Defender",
@@ -5116,6 +5625,7 @@
    "tier": 3
   },
   {
+   "id": 25,
    "name": "Canales",
    "team": "Racing Santander",
    "position": "Midfielder",
@@ -5126,6 +5636,7 @@
    "tier": 3
   },
   {
+   "id": 37539,
    "name": "André Almeida",
    "team": "Racing Santander",
    "position": "Midfielder",
@@ -5136,6 +5647,7 @@
    "tier": 2
   },
   {
+   "id": 102497,
    "name": "Iván Martín",
    "team": "Racing Santander",
    "position": "Midfielder",
@@ -5146,6 +5658,7 @@
    "tier": 3
   },
   {
+   "id": 146058,
    "name": "Íñigo Sainz Maza",
    "team": "Racing Santander",
    "position": "Midfielder",
@@ -5156,6 +5669,7 @@
    "tier": 3
   },
   {
+   "id": 166329,
    "name": "Matteo Prati",
    "team": "Racing Santander",
    "position": "Midfielder",
@@ -5166,6 +5680,7 @@
    "tier": 3
   },
   {
+   "id": 183154,
    "name": "Maguette Gueye",
    "team": "Racing Santander",
    "position": "Midfielder",
@@ -5176,6 +5691,7 @@
    "tier": 3
   },
   {
+   "id": 32679,
    "name": "Andrés Martín",
    "team": "Racing Santander",
    "position": "Forward",
@@ -5186,6 +5702,7 @@
    "tier": 3
   },
   {
+   "id": 33777,
    "name": "Asier Villalibre",
    "team": "Racing Santander",
    "position": "Forward",
@@ -5196,6 +5713,7 @@
    "tier": 3
   },
   {
+   "id": 102151,
    "name": "Iñigo Vicente",
    "team": "Racing Santander",
    "position": "Midfielder",
@@ -5206,6 +5724,7 @@
    "tier": 3
   },
   {
+   "id": 120324,
    "name": "Giorgi Guliashvili",
    "team": "Racing Santander",
    "position": "Forward",
@@ -5216,6 +5735,7 @@
    "tier": 3
   },
   {
+   "id": 180099,
    "name": "Arana",
    "team": "Racing Santander",
    "position": "Forward",
@@ -5226,6 +5746,7 @@
    "tier": 3
   },
   {
+   "id": 265516,
    "name": "Yassir Zabiri",
    "team": "Racing Santander",
    "position": "Forward",
@@ -5236,6 +5757,7 @@
    "tier": 2
   },
   {
+   "id": 290429,
    "name": "Iker Luque",
    "team": "Racing Santander",
    "position": "Midfielder",

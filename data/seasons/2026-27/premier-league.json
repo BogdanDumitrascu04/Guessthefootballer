@@ -26,6 +26,7 @@
  },
  "players": [
   {
+   "id": 3189,
    "name": "Kepa Arrizabalaga",
    "team": "Arsenal",
    "position": "Goalkeeper",
@@ -36,6 +37,7 @@
    "tier": 3
   },
   {
+   "id": 4832,
    "name": "David Raya",
    "team": "Arsenal",
    "position": "Goalkeeper",
@@ -46,6 +48,7 @@
    "tier": 2
   },
   {
+   "id": 74831,
    "name": "Illan Meslier",
    "team": "Arsenal",
    "position": "Goalkeeper",
@@ -56,6 +59,7 @@
    "tier": 3
   },
   {
+   "id": 6154,
    "name": "Ben White",
    "team": "Arsenal",
    "position": "Defender",
@@ -66,6 +70,7 @@
    "tier": 2
   },
   {
+   "id": 6317,
    "name": "Ezri Konsa",
    "team": "Arsenal",
    "position": "Defender",
@@ -76,6 +81,7 @@
    "tier": 2
   },
   {
+   "id": 23128,
    "name": "Gabriel Magalhães",
    "team": "Arsenal",
    "position": "Defender",
@@ -86,6 +92,7 @@
    "tier": 1
   },
   {
+   "id": 80171,
    "name": "William Saliba",
    "team": "Arsenal",
    "position": "Defender",
@@ -96,6 +103,7 @@
    "tier": 1
   },
   {
+   "id": 98816,
    "name": "Jurrien Timber",
    "team": "Arsenal",
    "position": "Defender",
@@ -106,6 +114,7 @@
    "tier": 1
   },
   {
+   "id": 125674,
    "name": "Piero Hincapié",
    "team": "Arsenal",
    "position": "Defender",
@@ -116,6 +125,7 @@
    "tier": 2
   },
   {
+   "id": 133512,
    "name": "Riccardo Calafiori",
    "team": "Arsenal",
    "position": "Defender",
@@ -126,6 +136,7 @@
    "tier": 2
   },
   {
+   "id": 172839,
    "name": "Cristhian Mosquera",
    "team": "Arsenal",
    "position": "Defender",
@@ -136,16 +147,18 @@
    "tier": 2
   },
   {
+   "id": 1684,
    "name": "Bruno Guimarães",
    "team": "Arsenal",
    "position": "Midfielder",
-   "age": 28,
+   "age": 29,
    "number": 39,
    "nationality": "Brazil",
    "photo": "https://media.api-sports.io/football/players/10135.png",
    "tier": 1
   },
   {
+   "id": 4032,
    "name": "Eberechi Eze",
    "team": "Arsenal",
    "position": "Midfielder",
@@ -156,6 +169,7 @@
    "tier": 1
   },
   {
+   "id": 7427,
    "name": "Martin Ødegaard",
    "team": "Arsenal",
    "position": "Midfielder",
@@ -166,6 +180,7 @@
    "tier": 1
   },
   {
+   "id": 7935,
    "name": "Mikel Merino",
    "team": "Arsenal",
    "position": "Midfielder",
@@ -176,6 +191,7 @@
    "tier": 3
   },
   {
+   "id": 8215,
    "name": "Declan Rice",
    "team": "Arsenal",
    "position": "Midfielder",
@@ -186,6 +202,7 @@
    "tier": 1
   },
   {
+   "id": 115035,
    "name": "Martín Zubimendi",
    "team": "Arsenal",
    "position": "Midfielder",
@@ -196,6 +213,7 @@
    "tier": 1
   },
   {
+   "id": 244120,
    "name": "Myles Lewis-Skelly",
    "team": "Arsenal",
    "position": "Defender",
@@ -206,6 +224,7 @@
    "tier": 2
   },
   {
+   "id": 171,
    "name": "Kai Havertz",
    "team": "Arsenal",
    "position": "Forward",
@@ -216,6 +235,7 @@
    "tier": 2
   },
   {
+   "id": 8279,
    "name": "Viktor Gyökeres",
    "team": "Arsenal",
    "position": "Forward",
@@ -226,6 +246,7 @@
    "tier": 1
   },
   {
+   "id": 99813,
    "name": "Bukayo Saka",
    "team": "Arsenal",
    "position": "Forward",
@@ -236,6 +257,7 @@
    "tier": 1
   },
   {
+   "id": 144434,
    "name": "Christos Tzolis",
    "team": "Arsenal",
    "position": "Forward",
@@ -246,6 +268,7 @@
    "tier": 2
   },
   {
+   "id": 167720,
    "name": "Noni Madueke",
    "team": "Arsenal",
    "position": "Midfielder",
@@ -256,6 +279,7 @@
    "tier": 2
   },
   {
+   "id": 285128,
    "name": "Max Dowman",
    "team": "Arsenal",
    "position": "Forward",
@@ -266,6 +290,7 @@
    "tier": 2
   },
   {
+   "id": 302255,
    "name": "Maalik Hashi",
    "team": "Arsenal",
    "position": "Midfielder",
@@ -276,6 +301,7 @@
    "tier": 3
   },
   {
+   "id": 7675,
    "name": "Marco Bizot",
    "team": "Aston Villa",
    "position": "Goalkeeper",
@@ -286,6 +312,7 @@
    "tier": 3
   },
   {
+   "id": 118920,
    "name": "Zion Suzuki",
    "team": "Aston Villa",
    "position": "Goalkeeper",
@@ -296,6 +323,7 @@
    "tier": 3
   },
   {
+   "id": 204460,
    "name": "James Wright",
    "team": "Aston Villa",
    "position": "Goalkeeper",
@@ -306,6 +334,7 @@
    "tier": 3
   },
   {
+   "id": 3492,
    "name": "Victor Nilsson-Lindelöf",
    "team": "Aston Villa",
    "position": "Defender",
@@ -316,6 +345,7 @@
    "tier": 3
   },
   {
+   "id": 8158,
    "name": "Aaron Wan-Bissaka",
    "team": "Aston Villa",
    "position": "Defender",
@@ -326,6 +356,7 @@
    "tier": 3
   },
   {
+   "id": 8235,
    "name": "Tyrone Mings",
    "team": "Aston Villa",
    "position": "Defender",
@@ -336,6 +367,7 @@
    "tier": 3
   },
   {
+   "id": 11644,
    "name": "Matty Cash",
    "team": "Aston Villa",
    "position": "Defender",
@@ -346,6 +378,7 @@
    "tier": 3
   },
   {
+   "id": 33109,
    "name": "Pau Torres",
    "team": "Aston Villa",
    "position": "Defender",
@@ -356,6 +389,7 @@
    "tier": 3
   },
   {
+   "id": 131035,
    "name": "Taylor Harwood-Bellis",
    "team": "Aston Villa",
    "position": "Defender",
@@ -366,6 +400,7 @@
    "tier": 3
   },
   {
+   "id": 131120,
    "name": "Ian Maatsen",
    "team": "Aston Villa",
    "position": "Defender",
@@ -376,6 +411,7 @@
    "tier": 2
   },
   {
+   "id": 151241,
    "name": "Matteo Ruggeri",
    "team": "Aston Villa",
    "position": "Defender",
@@ -386,6 +422,7 @@
    "tier": 2
   },
   {
+   "id": 276000,
    "name": "Modou Keba Cisse",
    "team": "Aston Villa",
    "position": "Defender",
@@ -396,6 +433,7 @@
    "tier": 3
   },
   {
+   "id": 3181,
    "name": "Leon Goretzka",
    "team": "Aston Villa",
    "position": "Midfielder",
@@ -406,6 +444,7 @@
    "tier": 3
   },
   {
+   "id": 7817,
    "name": "Ross Barkley",
    "team": "Aston Villa",
    "position": "Midfielder",
@@ -416,6 +455,7 @@
    "tier": 3
   },
   {
+   "id": 8346,
    "name": "Boubacar Kamara",
    "team": "Aston Villa",
    "position": "Midfielder",
@@ -426,6 +466,7 @@
    "tier": 2
   },
   {
+   "id": 31941,
    "name": "Emiliano Buendía",
    "team": "Aston Villa",
    "position": "Midfielder",
@@ -436,6 +477,7 @@
    "tier": 3
   },
   {
+   "id": 34646,
    "name": "John McGinn",
    "team": "Aston Villa",
    "position": "Midfielder",
@@ -446,6 +488,7 @@
    "tier": 3
   },
   {
+   "id": 114024,
    "name": "Amadou Onana",
    "team": "Aston Villa",
    "position": "Midfielder",
@@ -456,6 +499,7 @@
    "tier": 2
   },
   {
+   "id": 138034,
    "name": "João Gomes",
    "team": "Aston Villa",
    "position": "Midfielder",
@@ -466,6 +510,7 @@
    "tier": 2
   },
   {
+   "id": 172899,
    "name": "Lamare Bogarde",
    "team": "Aston Villa",
    "position": "Defender",
@@ -476,6 +521,7 @@
    "tier": 3
   },
   {
+   "id": 212309,
    "name": "Johan Manzambi",
    "team": "Aston Villa",
    "position": "Midfielder",
@@ -486,6 +532,7 @@
    "tier": 2
   },
   {
+   "id": 7985,
    "name": "Tammy Abraham",
    "team": "Aston Villa",
    "position": "Forward",
@@ -496,6 +543,7 @@
    "tier": 3
   },
   {
+   "id": 152515,
    "name": "Nicolas Jackson",
    "team": "Aston Villa",
    "position": "Forward",
@@ -506,6 +554,7 @@
    "tier": 2
   },
   {
+   "id": 181901,
    "name": "Alejandro Garnacho",
    "team": "Aston Villa",
    "position": "Forward",
@@ -516,6 +565,7 @@
    "tier": 2
   },
   {
+   "id": 260718,
    "name": "Alysson",
    "team": "Aston Villa",
    "position": "Forward",
@@ -526,6 +576,7 @@
    "tier": 3
   },
   {
+   "id": 265040,
    "name": "Ibrahim M'Baye",
    "team": "Aston Villa",
    "position": "Forward",
@@ -536,6 +587,7 @@
    "tier": 2
   },
   {
+   "id": 280446,
    "name": "Brian Madjo",
    "team": "Aston Villa",
    "position": "Forward",
@@ -546,6 +598,7 @@
    "tier": 3
   },
   {
+   "id": 289528,
    "name": "George Hemmings",
    "team": "Aston Villa",
    "position": "Forward",
@@ -556,6 +609,7 @@
    "tier": 3
   },
   {
+   "id": 3141,
    "name": "Emiliano Martínez",
    "team": "Chelsea",
    "position": "Goalkeeper",
@@ -566,6 +620,7 @@
    "tier": 3
   },
   {
+   "id": 137544,
    "name": "Gabriel Slonina",
    "team": "Chelsea",
    "position": "Goalkeeper",
@@ -576,6 +631,7 @@
    "tier": 3
   },
   {
+   "id": 175910,
    "name": "Teddy Sharman-Lowe",
    "team": "Chelsea",
    "position": "Goalkeeper",
@@ -586,6 +642,7 @@
    "tier": 3
   },
   {
+   "id": 191068,
    "name": "Mike Penders",
    "team": "Chelsea",
    "position": "Goalkeeper",
@@ -596,6 +653,7 @@
    "tier": 3
   },
   {
+   "id": 8545,
    "name": "Wesley Fofana",
    "team": "Chelsea",
    "position": "Defender",
@@ -606,6 +664,7 @@
    "tier": 2
   },
   {
+   "id": 56628,
    "name": "Reece James",
    "team": "Chelsea",
    "position": "Defender",
@@ -616,6 +675,7 @@
    "tier": 2
   },
   {
+   "id": 82351,
    "name": "Maxence Lacroix",
    "team": "Chelsea",
    "position": "Defender",
@@ -626,6 +686,7 @@
    "tier": 2
   },
   {
+   "id": 151251,
    "name": "Pep Chavarría",
    "team": "Chelsea",
    "position": "Defender",
@@ -636,6 +697,7 @@
    "tier": 3
   },
   {
+   "id": 152498,
    "name": "Malo Gusto",
    "team": "Chelsea",
    "position": "Defender",
@@ -646,6 +708,7 @@
    "tier": 2
   },
   {
+   "id": 170440,
    "name": "Levi Colwill",
    "team": "Chelsea",
    "position": "Defender",
@@ -656,6 +719,7 @@
    "tier": 2
   },
   {
+   "id": 189477,
    "name": "Jorrel Hato",
    "team": "Chelsea",
    "position": "Defender",
@@ -666,6 +730,7 @@
    "tier": 2
   },
   {
+   "id": 206136,
    "name": "Marco Palestra",
    "team": "Chelsea",
    "position": "Defender",
@@ -676,6 +741,7 @@
    "tier": 2
   },
   {
+   "id": 209148,
    "name": "Aaron Anselmino",
    "team": "Chelsea",
    "position": "Defender",
@@ -686,6 +752,7 @@
    "tier": 3
   },
   {
+   "id": 249320,
    "name": "Josh Acheampong",
    "team": "Chelsea",
    "position": "Defender",
@@ -696,6 +763,7 @@
    "tier": 3
   },
   {
+   "id": 3320,
    "name": "Jordan Henderson",
    "team": "Chelsea",
    "position": "Midfielder",
@@ -706,6 +774,7 @@
    "tier": 3
   },
   {
+   "id": 82140,
    "name": "Morgan Rogers",
    "team": "Chelsea",
    "position": "Midfielder",
@@ -716,6 +785,7 @@
    "tier": 1
   },
   {
+   "id": 121103,
    "name": "Moisés Caicedo",
    "team": "Chelsea",
    "position": "Midfielder",
@@ -726,6 +796,7 @@
    "tier": 1
   },
   {
+   "id": 144892,
    "name": "Cole Palmer",
    "team": "Chelsea",
    "position": "Midfielder",
@@ -736,6 +807,7 @@
    "tier": 1
   },
   {
+   "id": 170261,
    "name": "Valentin Barco",
    "team": "Chelsea",
    "position": "Midfielder",
@@ -746,6 +818,7 @@
    "tier": 2
   },
   {
+   "id": 172738,
    "name": "Romeo Lavia",
    "team": "Chelsea",
    "position": "Midfielder",
@@ -756,6 +829,7 @@
    "tier": 3
   },
   {
+   "id": 301113,
    "name": "Mahdi Nicoll-Jazuli",
    "team": "Chelsea",
    "position": "Midfielder",
@@ -766,6 +840,7 @@
    "tier": 3
   },
   {
+   "id": 2074,
    "name": "Pedro Neto",
    "team": "Chelsea",
    "position": "Forward",
@@ -776,6 +851,7 @@
    "tier": 2
   },
   {
+   "id": 3328,
    "name": "Danny Welbeck",
    "team": "Chelsea",
    "position": "Forward",
@@ -786,6 +862,7 @@
    "tier": 3
   },
   {
+   "id": 103125,
    "name": "João Pedro",
    "team": "Chelsea",
    "position": "Forward",
@@ -796,6 +873,7 @@
    "tier": 1
   },
   {
+   "id": 150599,
    "name": "Emanuel Emegha",
    "team": "Chelsea",
    "position": "Forward",
@@ -806,6 +884,7 @@
    "tier": 3
   },
   {
+   "id": 179460,
    "name": "Jamie Bynoe-Gittens",
    "team": "Chelsea",
    "position": "Forward",
@@ -816,6 +895,7 @@
    "tier": 2
   },
   {
+   "id": 229421,
    "name": "Geovany Quenda",
    "team": "Chelsea",
    "position": "Midfielder",
@@ -826,6 +906,7 @@
    "tier": 2
   },
   {
+   "id": 244778,
    "name": "Estevao",
    "team": "Chelsea",
    "position": "Midfielder",
@@ -836,6 +917,7 @@
    "tier": 1
   },
   {
+   "id": 3309,
    "name": "Jordan Pickford",
    "team": "Everton",
    "position": "Goalkeeper",
@@ -846,6 +928,7 @@
    "tier": 3
   },
   {
+   "id": 6180,
    "name": "Thomas King",
    "team": "Everton",
    "position": "Goalkeeper",
@@ -856,6 +939,7 @@
    "tier": 3
   },
   {
+   "id": 82135,
    "name": "Mark Travers",
    "team": "Everton",
    "position": "Goalkeeper",
@@ -866,16 +950,18 @@
    "tier": 3
   },
   {
+   "id": 3316,
    "name": "James Tarkowski",
    "team": "Everton",
    "position": "Defender",
-   "age": 33,
+   "age": 34,
    "number": 6,
    "nationality": "England",
    "photo": "https://media.api-sports.io/football/players/2936.png",
    "tier": 3
   },
   {
+   "id": 7792,
    "name": "Ainsley Maitland-Niles",
    "team": "Everton",
    "position": "Midfielder",
@@ -886,6 +972,7 @@
    "tier": 3
   },
   {
+   "id": 7829,
    "name": "Michael Keane",
    "team": "Everton",
    "position": "Defender",
@@ -896,6 +983,7 @@
    "tier": 3
   },
   {
+   "id": 16165,
    "name": "Vitalii Mykolenko",
    "team": "Everton",
    "position": "Defender",
@@ -906,6 +994,7 @@
    "tier": 3
   },
   {
+   "id": 114120,
    "name": "Jarrad Branthwaite",
    "team": "Everton",
    "position": "Defender",
@@ -916,6 +1005,7 @@
    "tier": 2
   },
   {
+   "id": 131569,
    "name": "Jake O'Brien",
    "team": "Everton",
    "position": "Defender",
@@ -926,6 +1016,7 @@
    "tier": 3
   },
   {
+   "id": 24102,
    "name": "Christian Nørgaard",
    "team": "Everton",
    "position": "Midfielder",
@@ -936,6 +1027,7 @@
    "tier": 3
   },
   {
+   "id": 101076,
    "name": "James Garner",
    "team": "Everton",
    "position": "Midfielder",
@@ -946,6 +1038,7 @@
    "tier": 2
   },
   {
+   "id": 136284,
    "name": "Hayden Hackney",
    "team": "Everton",
    "position": "Midfielder",
@@ -956,6 +1049,7 @@
    "tier": 3
   },
   {
+   "id": 140194,
    "name": "Kiernan Dewsbury Hall",
    "team": "Everton",
    "position": "Midfielder",
@@ -966,6 +1060,7 @@
    "tier": 2
   },
   {
+   "id": 140269,
    "name": "Carlos Alcaraz",
    "team": "Everton",
    "position": "Midfielder",
@@ -976,6 +1071,7 @@
    "tier": 3
   },
   {
+   "id": 156552,
    "name": "Merlin Röhl",
    "team": "Everton",
    "position": "Midfielder",
@@ -986,6 +1082,7 @@
    "tier": 3
   },
   {
+   "id": 264281,
    "name": "Harrison Armstrong",
    "team": "Everton",
    "position": "Midfielder",
@@ -996,6 +1093,7 @@
    "tier": 3
   },
   {
+   "id": 3895,
    "name": "Jack Grealish",
    "team": "Everton",
    "position": "Midfielder",
@@ -1006,6 +1104,7 @@
    "tier": 3
   },
   {
+   "id": 124694,
    "name": "Brennan Johnson",
    "team": "Everton",
    "position": "Forward",
@@ -1016,6 +1115,7 @@
    "tier": 2
   },
   {
+   "id": 171995,
    "name": "Thierno Barry",
    "team": "Everton",
    "position": "Forward",
@@ -1026,6 +1126,7 @@
    "tier": 3
   },
   {
+   "id": 218525,
    "name": "Tyler Dibling",
    "team": "Everton",
    "position": "Forward",
@@ -1036,6 +1137,7 @@
    "tier": 3
   },
   {
+   "id": 244747,
    "name": "Briaden Graham",
    "team": "Everton",
    "position": "Forward",
@@ -1046,6 +1148,7 @@
    "tier": 3
   },
   {
+   "id": 250436,
    "name": "Tyrique George",
    "team": "Everton",
    "position": "Midfielder",
@@ -1056,6 +1159,7 @@
    "tier": 3
   },
   {
+   "id": 3174,
    "name": "Bernd Leno",
    "team": "Fulham",
    "position": "Goalkeeper",
@@ -1066,6 +1170,7 @@
    "tier": 3
   },
   {
+   "id": 8366,
    "name": "Benjamin Lecomte",
    "team": "Fulham",
    "position": "Goalkeeper",
@@ -1076,6 +1181,7 @@
    "tier": 3
   },
   {
+   "id": 300279,
    "name": "Alex Borto",
    "team": "Fulham",
    "position": "Goalkeeper",
@@ -1086,6 +1192,7 @@
    "tier": 3
   },
   {
+   "id": 1836,
    "name": "Timothy Castagne",
    "team": "Fulham",
    "position": "Defender",
@@ -1096,6 +1203,7 @@
    "tier": 3
   },
   {
+   "id": 2253,
    "name": "Joachim Andersen",
    "team": "Fulham",
    "position": "Defender",
@@ -1106,6 +1214,7 @@
    "tier": 3
   },
   {
+   "id": 3927,
    "name": "Antonee Robinson",
    "team": "Fulham",
    "position": "Defender",
@@ -1116,6 +1225,7 @@
    "tier": 3
   },
   {
+   "id": 3959,
    "name": "Ryan Sessegnon",
    "team": "Fulham",
    "position": "Midfielder",
@@ -1126,6 +1236,7 @@
    "tier": 3
   },
   {
+   "id": 8460,
    "name": "Kenny Tete",
    "team": "Fulham",
    "position": "Defender",
@@ -1136,16 +1247,18 @@
    "tier": 3
   },
   {
+   "id": 98750,
    "name": "Jorge Cuenca",
    "team": "Fulham",
    "position": "Defender",
-   "age": 26,
+   "age": 27,
    "number": 4,
    "nationality": "Spain",
    "photo": "https://media.api-sports.io/football/players/131.png",
    "tier": 3
   },
   {
+   "id": 123212,
    "name": "David Affengruber",
    "team": "Fulham",
    "position": "Defender",
@@ -1156,6 +1269,7 @@
    "tier": 3
   },
   {
+   "id": 146154,
    "name": "Calvin Bassey",
    "team": "Fulham",
    "position": "Defender",
@@ -1166,6 +1280,7 @@
    "tier": 2
   },
   {
+   "id": 3392,
    "name": "Alex Iwobi",
    "team": "Fulham",
    "position": "Midfielder",
@@ -1176,6 +1291,7 @@
    "tier": 3
   },
   {
+   "id": 3965,
    "name": "Tom Cairney",
    "team": "Fulham",
    "position": "Midfielder",
@@ -1186,6 +1302,7 @@
    "tier": 3
   },
   {
+   "id": 3995,
    "name": "Harrison Reed",
    "team": "Fulham",
    "position": "Midfielder",
@@ -1196,6 +1313,7 @@
    "tier": 3
   },
   {
+   "id": 8973,
    "name": "Sander Berge",
    "team": "Fulham",
    "position": "Midfielder",
@@ -1206,6 +1324,7 @@
    "tier": 3
   },
   {
+   "id": 85570,
    "name": "Emile Smith Rowe",
    "team": "Fulham",
    "position": "Midfielder",
@@ -1216,6 +1335,7 @@
    "tier": 3
   },
   {
+   "id": 180563,
    "name": "Hugo Larsson",
    "team": "Fulham",
    "position": "Midfielder",
@@ -1226,6 +1346,7 @@
    "tier": 2
   },
   {
+   "id": 192108,
    "name": "Shea Charles",
    "team": "Fulham",
    "position": "Midfielder",
@@ -1236,6 +1357,7 @@
    "tier": 3
   },
   {
+   "id": 246418,
    "name": "Joshua King",
    "team": "Fulham",
    "position": "Midfielder",
@@ -1246,16 +1368,18 @@
    "tier": 3
   },
   {
+   "id": 290848,
    "name": "César Palacios",
    "team": "Fulham",
    "position": "Midfielder",
-   "age": 21,
+   "age": 22,
    "number": 8,
    "nationality": "Spain",
    "photo": "https://media.api-sports.io/football/players/386306.png",
    "tier": 3
   },
   {
+   "id": 291727,
    "name": "Manuel Angel",
    "team": "Fulham",
    "position": "Midfielder",
@@ -1266,6 +1390,7 @@
    "tier": 3
   },
   {
+   "id": 138036,
    "name": "Rodrigo Muniz",
    "team": "Fulham",
    "position": "Forward",
@@ -1276,6 +1401,7 @@
    "tier": 3
   },
   {
+   "id": 179122,
    "name": "Kevin Santos",
    "team": "Fulham",
    "position": "Forward",
@@ -1286,6 +1412,7 @@
    "tier": 3
   },
   {
+   "id": 179716,
    "name": "Oscar Bobb",
    "team": "Fulham",
    "position": "Midfielder",
@@ -1296,6 +1423,7 @@
    "tier": 2
   },
   {
+   "id": 217577,
    "name": "Jonah Kusi-Asare",
    "team": "Fulham",
    "position": "Forward",
@@ -1306,6 +1434,7 @@
    "tier": 3
   },
   {
+   "id": 217658,
    "name": "Gonzalo García",
    "team": "Fulham",
    "position": "Forward",
@@ -1316,6 +1445,7 @@
    "tier": 2
   },
   {
+   "id": 1795,
    "name": "Alisson Becker",
    "team": "Liverpool",
    "position": "Goalkeeper",
@@ -1326,6 +1456,7 @@
    "tier": 3
   },
   {
+   "id": 11629,
    "name": "Freddie Woodman",
    "team": "Liverpool",
    "position": "Goalkeeper",
@@ -1336,6 +1467,7 @@
    "tier": 3
   },
   {
+   "id": 84506,
    "name": "Giorgi Mamardashvili",
    "team": "Liverpool",
    "position": "Goalkeeper",
@@ -1346,6 +1478,7 @@
    "tier": 2
   },
   {
+   "id": 152579,
    "name": "Vítězslav Jaroš",
    "team": "Liverpool",
    "position": "Goalkeeper",
@@ -1356,6 +1489,7 @@
    "tier": 3
   },
   {
+   "id": 165154,
    "name": "Harvey Davies",
    "team": "Liverpool",
    "position": "Goalkeeper",
@@ -1366,6 +1500,7 @@
    "tier": 3
   },
   {
+   "id": 7383,
    "name": "Kostas Tsimikas",
    "team": "Liverpool",
    "position": "Defender",
@@ -1376,6 +1511,7 @@
    "tier": 3
   },
   {
+   "id": 7862,
    "name": "Joe Gomez",
    "team": "Liverpool",
    "position": "Defender",
@@ -1386,6 +1522,7 @@
    "tier": 3
   },
   {
+   "id": 7869,
    "name": "Virgil van Dijk",
    "team": "Liverpool",
    "position": "Defender",
@@ -1396,6 +1533,7 @@
    "tier": 3
   },
   {
+   "id": 28292,
    "name": "Ronald Araújo",
    "team": "Liverpool",
    "position": "Defender",
@@ -1406,6 +1544,7 @@
    "tier": 3
   },
   {
+   "id": 128954,
    "name": "Jeremie Frimpong",
    "team": "Liverpool",
    "position": "Midfielder",
@@ -1416,6 +1555,7 @@
    "tier": 2
   },
   {
+   "id": 171141,
    "name": "Milos Kerkez",
    "team": "Liverpool",
    "position": "Defender",
@@ -1426,6 +1566,7 @@
    "tier": 2
   },
   {
+   "id": 175865,
    "name": "Conor Bradley",
    "team": "Liverpool",
    "position": "Defender",
@@ -1436,6 +1577,7 @@
    "tier": 3
   },
   {
+   "id": 192563,
    "name": "Giovanni Leoni",
    "team": "Liverpool",
    "position": "Defender",
@@ -1446,6 +1588,7 @@
    "tier": 3
   },
   {
+   "id": 206127,
    "name": "Jeremy Jacquet",
    "team": "Liverpool",
    "position": "Defender",
@@ -1456,6 +1599,7 @@
    "tier": 2
   },
   {
+   "id": 3269,
    "name": "Wataru Endō",
    "team": "Liverpool",
    "position": "Midfielder",
@@ -1466,6 +1610,7 @@
    "tier": 3
   },
   {
+   "id": 16347,
    "name": "Dominik Szoboszlai",
    "team": "Liverpool",
    "position": "Midfielder",
@@ -1476,6 +1621,7 @@
    "tier": 1
   },
   {
+   "id": 19334,
    "name": "Florian Wirtz",
    "team": "Liverpool",
    "position": "Midfielder",
@@ -1486,6 +1632,7 @@
    "tier": 1
   },
   {
+   "id": 45681,
    "name": "Alexis Mac Allister",
    "team": "Liverpool",
    "position": "Midfielder",
@@ -1496,6 +1643,7 @@
    "tier": 1
   },
   {
+   "id": 81793,
    "name": "Ryan Gravenberch",
    "team": "Liverpool",
    "position": "Midfielder",
@@ -1506,6 +1654,7 @@
    "tier": 1
   },
   {
+   "id": 214502,
    "name": "James McConnell",
    "team": "Liverpool",
    "position": "Midfielder",
@@ -1516,6 +1665,7 @@
    "tier": 3
   },
   {
+   "id": 230517,
    "name": "Trey Nyoni",
    "team": "Liverpool",
    "position": "Midfielder",
@@ -1526,6 +1676,7 @@
    "tier": 3
   },
   {
+   "id": 1780,
    "name": "Federico Chiesa",
    "team": "Liverpool",
    "position": "Forward",
@@ -1536,6 +1687,7 @@
    "tier": 3
   },
   {
+   "id": 6486,
    "name": "Alexander Isak",
    "team": "Liverpool",
    "position": "Forward",
@@ -1546,6 +1698,7 @@
    "tier": 1
   },
   {
+   "id": 7459,
    "name": "Cody Gakpo",
    "team": "Liverpool",
    "position": "Forward",
@@ -1556,6 +1709,7 @@
    "tier": 2
   },
   {
+   "id": 152454,
    "name": "Hugo Ekitike",
    "team": "Liverpool",
    "position": "Forward",
@@ -1566,6 +1720,7 @@
    "tier": 1
   },
   {
+   "id": 172762,
    "name": "Bradley Barcola",
    "team": "Liverpool",
    "position": "Forward",
@@ -1576,6 +1731,7 @@
    "tier": 1
   },
   {
+   "id": 244989,
    "name": "Lewis Koumas",
    "team": "Liverpool",
    "position": "Forward",
@@ -1586,6 +1742,7 @@
    "tier": 3
   },
   {
+   "id": 273423,
    "name": "Víctor Muñoz",
    "team": "Liverpool",
    "position": "Midfielder",
@@ -1596,6 +1753,7 @@
    "tier": 2
   },
   {
+   "id": 273453,
    "name": "Rio Ngumoha",
    "team": "Liverpool",
    "position": "Midfielder",
@@ -1606,16 +1764,18 @@
    "tier": 2
   },
   {
+   "id": 302268,
    "name": "Joshua Sonni-Lambie",
    "team": "Liverpool",
    "position": "Forward",
-   "age": 18,
+   "age": 19,
    "number": 10,
    "nationality": "England",
    "photo": "https://media.api-sports.io/football/players/437561.png",
    "tier": 3
   },
   {
+   "id": 6,
    "name": "Géronimo Rulli",
    "team": "Manchester City",
    "position": "Goalkeeper",
@@ -1626,6 +1786,7 @@
    "tier": 3
   },
   {
+   "id": 1731,
    "name": "Gianluigi Donnarumma",
    "team": "Manchester City",
    "position": "Goalkeeper",
@@ -1636,6 +1797,7 @@
    "tier": 2
   },
   {
+   "id": 3953,
    "name": "Marcus Bettinelli",
    "team": "Manchester City",
    "position": "Goalkeeper",
@@ -1646,6 +1808,7 @@
    "tier": 3
   },
   {
+   "id": 8642,
    "name": "Rayan Aït Nouri",
    "team": "Manchester City",
    "position": "Defender",
@@ -1656,6 +1819,7 @@
    "tier": 2
   },
   {
+   "id": 10183,
    "name": "Rúben Dias",
    "team": "Manchester City",
    "position": "Defender",
@@ -1666,6 +1830,7 @@
    "tier": 2
   },
   {
+   "id": 91512,
    "name": "Matheus Nunes",
    "team": "Manchester City",
    "position": "Defender",
@@ -1676,6 +1841,7 @@
    "tier": 2
   },
   {
+   "id": 118489,
    "name": "Marc Guéhi",
    "team": "Manchester City",
    "position": "Defender",
@@ -1686,6 +1852,7 @@
    "tier": 1
   },
   {
+   "id": 122266,
    "name": "Joško Gvardiol",
    "team": "Manchester City",
    "position": "Defender",
@@ -1696,6 +1863,7 @@
    "tier": 1
   },
   {
+   "id": 187202,
    "name": "Rico Lewis",
    "team": "Manchester City",
    "position": "Defender",
@@ -1706,6 +1874,7 @@
    "tier": 2
   },
   {
+   "id": 206743,
    "name": "Nico O'Reilly",
    "team": "Manchester City",
    "position": "Defender",
@@ -1716,6 +1885,7 @@
    "tier": 1
   },
   {
+   "id": 212868,
    "name": "Abdukodir Khusanov",
    "team": "Manchester City",
    "position": "Defender",
@@ -1726,6 +1896,7 @@
    "tier": 2
   },
   {
+   "id": 249196,
    "name": "Vitor Reis",
    "team": "Manchester City",
    "position": "Defender",
@@ -1736,6 +1907,7 @@
    "tier": 2
   },
   {
+   "id": 65,
    "name": "Mateo Kovačić",
    "team": "Manchester City",
    "position": "Midfielder",
@@ -1746,6 +1918,7 @@
    "tier": 3
   },
   {
+   "id": 7888,
    "name": "Phil Foden",
    "team": "Manchester City",
    "position": "Midfielder",
@@ -1756,6 +1929,7 @@
    "tier": 1
   },
   {
+   "id": 102603,
    "name": "Enzo Fernández",
    "team": "Manchester City",
    "position": "Midfielder",
@@ -1766,6 +1940,7 @@
    "tier": 1
   },
   {
+   "id": 107330,
    "name": "Elliot Anderson",
    "team": "Manchester City",
    "position": "Midfielder",
@@ -1776,6 +1951,7 @@
    "tier": 1
   },
   {
+   "id": 133242,
    "name": "Rayan Cherki",
    "team": "Manchester City",
    "position": "Midfielder",
@@ -1786,6 +1962,7 @@
    "tier": 1
   },
   {
+   "id": 221819,
    "name": "Ayyoub Bouaddi",
    "team": "Manchester City",
    "position": "Midfielder",
@@ -1796,6 +1973,7 @@
    "tier": 2
   },
   {
+   "id": 4417,
    "name": "Antoine Semenyo",
    "team": "Manchester City",
    "position": "Forward",
@@ -1806,6 +1984,7 @@
    "tier": 1
   },
   {
+   "id": 38101,
    "name": "Erling Haaland",
    "team": "Manchester City",
    "position": "Forward",
@@ -1816,6 +1995,7 @@
    "tier": 1
   },
   {
+   "id": 94091,
    "name": "Iliman Ndiaye",
    "team": "Manchester City",
    "position": "Midfielder",
@@ -1826,6 +2006,7 @@
    "tier": 2
   },
   {
+   "id": 99775,
    "name": "Jeremy Doku",
    "team": "Manchester City",
    "position": "Forward",
@@ -1836,6 +2017,7 @@
    "tier": 1
   },
   {
+   "id": 274216,
    "name": "Allan",
    "team": "Manchester City",
    "position": "Forward",
@@ -1846,6 +2028,7 @@
    "tier": 3
   },
   {
+   "id": 286950,
    "name": "Ryan McAidoo",
    "team": "Manchester City",
    "position": "Forward",
@@ -1856,6 +2039,7 @@
    "tier": 3
   },
   {
+   "id": 7913,
    "name": "Karl Darlow",
    "team": "Manchester United",
    "position": "Goalkeeper",
@@ -1866,6 +2050,7 @@
    "tier": 3
   },
   {
+   "id": 8035,
    "name": "Tom Heaton",
    "team": "Manchester United",
    "position": "Goalkeeper",
@@ -1876,6 +2061,7 @@
    "tier": 3
   },
   {
+   "id": 129946,
    "name": "Senne Lammens",
    "team": "Manchester United",
    "position": "Goalkeeper",
@@ -1886,16 +2072,18 @@
    "tier": 2
   },
   {
+   "id": 210730,
    "name": "Dermot Mee",
    "team": "Manchester United",
    "position": "Goalkeeper",
-   "age": 23,
+   "age": 24,
    "number": 45,
    "nationality": "Northern Ireland",
    "photo": "https://media.api-sports.io/football/players/284382.png",
    "tier": 3
   },
   {
+   "id": 3326,
    "name": "Harry Maguire",
    "team": "Manchester United",
    "position": "Defender",
@@ -1906,6 +2094,7 @@
    "tier": 3
   },
   {
+   "id": 7549,
    "name": "Matthijs de Ligt",
    "team": "Manchester United",
    "position": "Defender",
@@ -1916,16 +2105,18 @@
    "tier": 2
   },
   {
+   "id": 7553,
    "name": "Noussair Mazraoui",
    "team": "Manchester United",
    "position": "Defender",
-   "age": 28,
+   "age": 29,
    "number": 3,
    "nationality": "Morocco",
    "photo": "https://media.api-sports.io/football/players/545.png",
    "tier": 3
   },
   {
+   "id": 7898,
    "name": "Luke Shaw",
    "team": "Manchester United",
    "position": "Defender",
@@ -1936,6 +2127,7 @@
    "tier": 3
   },
   {
+   "id": 15905,
    "name": "Diogo Dalot",
    "team": "Manchester United",
    "position": "Defender",
@@ -1946,6 +2138,7 @@
    "tier": 2
   },
   {
+   "id": 46451,
    "name": "Lisandro Martínez",
    "team": "Manchester United",
    "position": "Defender",
@@ -1956,16 +2149,18 @@
    "tier": 2
   },
   {
+   "id": 181933,
    "name": "Leny Yoro",
    "team": "Manchester United",
    "position": "Defender",
-   "age": 20,
+   "age": 21,
    "number": 15,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/342970.png",
    "tier": 2
   },
   {
+   "id": 210150,
    "name": "Harry Amass",
    "team": "Manchester United",
    "position": "Defender",
@@ -1976,6 +2171,7 @@
    "tier": 3
   },
   {
+   "id": 247644,
    "name": "Ayden Heaven",
    "team": "Manchester United",
    "position": "Defender",
@@ -1986,6 +2182,7 @@
    "tier": 2
   },
   {
+   "id": 3257,
    "name": "Bruno Fernandes",
    "team": "Manchester United",
    "position": "Midfielder",
@@ -1996,6 +2193,7 @@
    "tier": 2
   },
   {
+   "id": 3658,
    "name": "Youri Tielemans",
    "team": "Manchester United",
    "position": "Midfielder",
@@ -2006,6 +2204,7 @@
    "tier": 2
   },
   {
+   "id": 7599,
    "name": "Mason Mount",
    "team": "Manchester United",
    "position": "Midfielder",
@@ -2016,6 +2215,7 @@
    "tier": 3
   },
   {
+   "id": 28549,
    "name": "Manuel Ugarte",
    "team": "Manchester United",
    "position": "Midfielder",
@@ -2026,6 +2226,7 @@
    "tier": 3
   },
   {
+   "id": 166366,
    "name": "Andrey Santos",
    "team": "Manchester United",
    "position": "Midfielder",
@@ -2036,6 +2237,7 @@
    "tier": 2
   },
   {
+   "id": 178604,
    "name": "Carlos Baleba",
    "team": "Manchester United",
    "position": "Midfielder",
@@ -2046,6 +2248,7 @@
    "tier": 2
   },
   {
+   "id": 190797,
    "name": "Kobbie Mainoo",
    "team": "Manchester United",
    "position": "Midfielder",
@@ -2056,6 +2259,7 @@
    "tier": 1
   },
   {
+   "id": 290139,
    "name": "Tyler Fletcher",
    "team": "Manchester United",
    "position": "Midfielder",
@@ -2066,6 +2270,7 @@
    "tier": 3
   },
   {
+   "id": 3331,
    "name": "Marcus Rashford",
    "team": "Manchester United",
    "position": "Forward",
@@ -2076,6 +2281,7 @@
    "tier": 2
   },
   {
+   "id": 8626,
    "name": "Bryan Mbeumo",
    "team": "Manchester United",
    "position": "Forward",
@@ -2086,6 +2292,7 @@
    "tier": 1
   },
   {
+   "id": 30842,
    "name": "Matheus Cunha",
    "team": "Manchester United",
    "position": "Midfielder",
@@ -2096,6 +2303,7 @@
    "tier": 1
   },
   {
+   "id": 99731,
    "name": "Joshua Zirkzee",
    "team": "Manchester United",
    "position": "Forward",
@@ -2106,6 +2314,7 @@
    "tier": 3
   },
   {
+   "id": 124244,
    "name": "Benjamin Šeško",
    "team": "Manchester United",
    "position": "Forward",
@@ -2116,6 +2325,7 @@
    "tier": 1
   },
   {
+   "id": 133584,
    "name": "Amad Diallo",
    "team": "Manchester United",
    "position": "Midfielder",
@@ -2126,6 +2336,7 @@
    "tier": 2
   },
   {
+   "id": 211559,
    "name": "Patrick Dorgu",
    "team": "Manchester United",
    "position": "Defender",
@@ -2136,6 +2347,7 @@
    "tier": 2
   },
   {
+   "id": 289557,
    "name": "Shea Lacey",
    "team": "Manchester United",
    "position": "Forward",
@@ -2146,6 +2358,7 @@
    "tier": 3
   },
   {
+   "id": 302252,
    "name": "Daniel Armer",
    "team": "Manchester United",
    "position": "Defender",
@@ -2156,6 +2369,7 @@
    "tier": 3
   },
   {
+   "id": 3310,
    "name": "Nick Pope",
    "team": "Newcastle",
    "position": "Goalkeeper",
@@ -2166,6 +2380,7 @@
    "tier": 3
   },
   {
+   "id": 5048,
    "name": "Mark Gillespie",
    "team": "Newcastle",
    "position": "Goalkeeper",
@@ -2176,6 +2391,7 @@
    "tier": 3
   },
   {
+   "id": 146753,
    "name": "Lukáš Horníček",
    "team": "Newcastle",
    "position": "Goalkeeper",
@@ -2186,6 +2402,7 @@
    "tier": 3
   },
   {
+   "id": 191388,
    "name": "Ewen Jaouen",
    "team": "Newcastle",
    "position": "Goalkeeper",
@@ -2196,6 +2413,7 @@
    "tier": 3
   },
   {
+   "id": 88,
    "name": "Fabian Schär",
    "team": "Newcastle",
    "position": "Defender",
@@ -2206,6 +2424,7 @@
    "tier": 3
   },
   {
+   "id": 4870,
    "name": "Dan Burn",
    "team": "Newcastle",
    "position": "Defender",
@@ -2216,6 +2435,7 @@
    "tier": 3
   },
   {
+   "id": 81082,
    "name": "Sven Botman",
    "team": "Newcastle",
    "position": "Defender",
@@ -2226,6 +2446,7 @@
    "tier": 2
   },
   {
+   "id": 81816,
    "name": "Amar Dedić",
    "team": "Newcastle",
    "position": "Defender",
@@ -2236,6 +2457,7 @@
    "tier": 3
   },
   {
+   "id": 142732,
    "name": "Malick Thiaw",
    "team": "Newcastle",
    "position": "Defender",
@@ -2246,16 +2468,18 @@
    "tier": 2
   },
   {
+   "id": 168712,
    "name": "Valentino Livramento",
    "team": "Newcastle",
    "position": "Defender",
-   "age": 23,
+   "age": 24,
    "number": null,
    "nationality": "England",
    "photo": null,
    "tier": 2
   },
   {
+   "id": 191140,
    "name": "Lewis Hall",
    "team": "Newcastle",
    "position": "Defender",
@@ -2266,6 +2490,7 @@
    "tier": 2
   },
   {
+   "id": 7798,
    "name": "Joe Willock",
    "team": "Newcastle",
    "position": "Midfielder",
@@ -2276,6 +2501,7 @@
    "tier": 3
   },
   {
+   "id": 10653,
    "name": "Joelinton",
    "team": "Newcastle",
    "position": "Midfielder",
@@ -2286,6 +2512,7 @@
    "tier": 3
   },
   {
+   "id": 111437,
    "name": "Jacob Ramsey",
    "team": "Newcastle",
    "position": "Midfielder",
@@ -2296,6 +2523,7 @@
    "tier": 2
   },
   {
+   "id": 171986,
    "name": "Nico Gonzalez",
    "team": "Newcastle",
    "position": "Midfielder",
@@ -2306,6 +2534,7 @@
    "tier": 2
   },
   {
+   "id": 191939,
    "name": "Lewis Miley",
    "team": "Newcastle",
    "position": "Midfielder",
@@ -2316,6 +2545,7 @@
    "tier": 3
   },
   {
+   "id": 251265,
    "name": "Sean Steur",
    "team": "Newcastle",
    "position": "Midfielder",
@@ -2326,6 +2556,7 @@
    "tier": 3
   },
   {
+   "id": 272943,
    "name": "Aladji Bamba",
    "team": "Newcastle",
    "position": "Midfielder",
@@ -2336,6 +2567,7 @@
    "tier": 3
   },
   {
+   "id": 612,
    "name": "Yoane Wissa",
    "team": "Newcastle",
    "position": "Forward",
@@ -2346,6 +2578,7 @@
    "tier": 3
   },
   {
+   "id": 7934,
    "name": "Jacob Murphy",
    "team": "Newcastle",
    "position": "Midfielder",
@@ -2356,6 +2589,7 @@
    "tier": 3
   },
   {
+   "id": 8076,
    "name": "Harvey Barnes",
    "team": "Newcastle",
    "position": "Midfielder",
@@ -2366,6 +2600,7 @@
    "tier": 2
   },
   {
+   "id": 166376,
    "name": "Anthony Elanga",
    "team": "Newcastle",
    "position": "Midfielder",
@@ -2376,6 +2611,7 @@
    "tier": 2
   },
   {
+   "id": 169324,
    "name": "William Osula",
    "team": "Newcastle",
    "position": "Forward",
@@ -2386,6 +2622,7 @@
    "tier": 2
   },
   {
+   "id": 213511,
    "name": "Matias Fernandez-Pardo",
    "team": "Newcastle",
    "position": "Forward",
@@ -2396,6 +2633,7 @@
    "tier": 2
   },
   {
+   "id": 249312,
    "name": "Bazoumana Touré",
    "team": "Newcastle",
    "position": "Midfielder",
@@ -2406,6 +2644,7 @@
    "tier": 2
   },
   {
+   "id": 4292,
    "name": "Simon Moore",
    "team": "Sunderland",
    "position": "Goalkeeper",
@@ -2416,6 +2655,7 @@
    "tier": 3
   },
   {
+   "id": 137691,
    "name": "Robin Roefs",
    "team": "Sunderland",
    "position": "Goalkeeper",
@@ -2426,6 +2666,7 @@
    "tier": 2
   },
   {
+   "id": 150893,
    "name": "Melker Ellborg",
    "team": "Sunderland",
    "position": "Goalkeeper",
@@ -2436,6 +2677,7 @@
    "tier": 3
   },
   {
+   "id": 3650,
    "name": "Thomas Meunier",
    "team": "Sunderland",
    "position": "Defender",
@@ -2446,6 +2688,7 @@
    "tier": 3
   },
   {
+   "id": 6259,
    "name": "Luke O'Nien",
    "team": "Sunderland",
    "position": "Midfielder",
@@ -2456,6 +2699,7 @@
    "tier": 3
   },
   {
+   "id": 6655,
    "name": "Kevin Danso",
    "team": "Sunderland",
    "position": "Defender",
@@ -2466,6 +2710,7 @@
    "tier": 3
   },
   {
+   "id": 8371,
    "name": "Nordi Mukiele",
    "team": "Sunderland",
    "position": "Defender",
@@ -2476,6 +2721,7 @@
    "tier": 3
   },
   {
+   "id": 37094,
    "name": "Reinildo",
    "team": "Sunderland",
    "position": "Defender",
@@ -2486,6 +2732,7 @@
    "tier": 3
   },
   {
+   "id": 46491,
    "name": "Omar Alderete",
    "team": "Sunderland",
    "position": "Defender",
@@ -2496,6 +2743,7 @@
    "tier": 3
   },
   {
+   "id": 117687,
    "name": "Trai Hume",
    "team": "Sunderland",
    "position": "Defender",
@@ -2506,6 +2754,7 @@
    "tier": 3
   },
   {
+   "id": 121109,
    "name": "Daniel Ballard",
    "team": "Sunderland",
    "position": "Defender",
@@ -2516,6 +2765,7 @@
    "tier": 3
   },
   {
+   "id": 161270,
    "name": "Aji Alese",
    "team": "Sunderland",
    "position": "Defender",
@@ -2526,6 +2776,7 @@
    "tier": 3
   },
   {
+   "id": 264401,
    "name": "Dayann Methalie",
    "team": "Sunderland",
    "position": "Defender",
@@ -2536,6 +2787,7 @@
    "tier": 3
   },
   {
+   "id": 3477,
    "name": "Granit Xhaka",
    "team": "Sunderland",
    "position": "Midfielder",
@@ -2546,6 +2798,7 @@
    "tier": 3
   },
   {
+   "id": 11362,
    "name": "Alan Browne",
    "team": "Sunderland",
    "position": "Defender",
@@ -2556,6 +2809,7 @@
    "tier": 3
   },
   {
+   "id": 99664,
    "name": "Enzo Le Fée",
    "team": "Sunderland",
    "position": "Midfielder",
@@ -2566,6 +2820,7 @@
    "tier": 2
   },
   {
+   "id": 171876,
    "name": "Habib Diarra",
    "team": "Sunderland",
    "position": "Midfielder",
@@ -2576,6 +2831,7 @@
    "tier": 2
   },
   {
+   "id": 182273,
    "name": "Noah Sadiki",
    "team": "Sunderland",
    "position": "Midfielder",
@@ -2586,6 +2842,7 @@
    "tier": 2
   },
   {
+   "id": 190817,
    "name": "Chris Rigg",
    "team": "Sunderland",
    "position": "Midfielder",
@@ -2596,6 +2853,7 @@
    "tier": 3
   },
   {
+   "id": 286011,
    "name": "Jules Ahoka",
    "team": "Sunderland",
    "position": "Midfielder",
@@ -2606,6 +2864,7 @@
    "tier": 3
   },
   {
+   "id": 83599,
    "name": "Wilson Isidor",
    "team": "Sunderland",
    "position": "Forward",
@@ -2616,6 +2875,7 @@
    "tier": 3
   },
   {
+   "id": 97535,
    "name": "Brian Brobbey",
    "team": "Sunderland",
    "position": "Forward",
@@ -2626,6 +2886,7 @@
    "tier": 2
   },
   {
+   "id": 165311,
    "name": "Abdoullah Ba",
    "team": "Sunderland",
    "position": "Forward",
@@ -2636,6 +2897,7 @@
    "tier": 3
   },
   {
+   "id": 172275,
    "name": "Romaine Mundle",
    "team": "Sunderland",
    "position": "Forward",
@@ -2646,6 +2908,7 @@
    "tier": 3
   },
   {
+   "id": 187065,
    "name": "Malick Fofana",
    "team": "Sunderland",
    "position": "Midfielder",
@@ -2656,6 +2919,7 @@
    "tier": 2
   },
   {
+   "id": 187375,
    "name": "Nilson Angulo",
    "team": "Sunderland",
    "position": "Midfielder",
@@ -2666,6 +2930,7 @@
    "tier": 3
   },
   {
+   "id": 192313,
    "name": "Chemsdine Talbi",
    "team": "Sunderland",
    "position": "Forward",
@@ -2676,6 +2941,7 @@
    "tier": 3
   },
   {
+   "id": 290809,
    "name": "Jocelin Bi",
    "team": "Sunderland",
    "position": "Forward",
@@ -2686,6 +2952,7 @@
    "tier": 3
   },
   {
+   "id": 7914,
    "name": "Martin Dúbravka",
    "team": "Tottenham",
    "position": "Goalkeeper",
@@ -2696,6 +2963,7 @@
    "tier": 3
   },
   {
+   "id": 133229,
    "name": "Brandon Austin",
    "team": "Tottenham",
    "position": "Goalkeeper",
@@ -2706,6 +2974,7 @@
    "tier": 3
   },
   {
+   "id": 255239,
    "name": "Antonín Kinský",
    "team": "Tottenham",
    "position": "Goalkeeper",
@@ -2716,6 +2985,7 @@
    "tier": 3
   },
   {
+   "id": 7868,
    "name": "Andrew Robertson",
    "team": "Tottenham",
    "position": "Defender",
@@ -2726,6 +2996,7 @@
    "tier": 3
   },
   {
+   "id": 7880,
    "name": "Tosin Adarabioyo",
    "team": "Tottenham",
    "position": "Defender",
@@ -2736,6 +3007,7 @@
    "tier": 3
   },
   {
+   "id": 7994,
    "name": "Ben Davies",
    "team": "Tottenham",
    "position": "Defender",
@@ -2746,6 +3018,7 @@
    "tier": 3
   },
   {
+   "id": 46046,
    "name": "Marcos Senesi",
    "team": "Tottenham",
    "position": "Defender",
@@ -2756,6 +3029,7 @@
    "tier": 3
   },
   {
+   "id": 81037,
    "name": "Pedro Porro",
    "team": "Tottenham",
    "position": "Defender",
@@ -2766,6 +3040,7 @@
    "tier": 2
   },
   {
+   "id": 98566,
    "name": "Jan Paul van Hecke",
    "team": "Tottenham",
    "position": "Defender",
@@ -2776,6 +3051,7 @@
    "tier": 2
   },
   {
+   "id": 131177,
    "name": "Mickey van de Ven",
    "team": "Tottenham",
    "position": "Defender",
@@ -2786,6 +3062,7 @@
    "tier": 2
   },
   {
+   "id": 170378,
    "name": "Destiny Udogie",
    "team": "Tottenham",
    "position": "Defender",
@@ -2796,6 +3073,7 @@
    "tier": 2
   },
   {
+   "id": 177040,
    "name": "Archie Gray",
    "team": "Tottenham",
    "position": "Defender",
@@ -2806,6 +3084,7 @@
    "tier": 2
   },
   {
+   "id": 1859,
    "name": "Dejan Kulusevski",
    "team": "Tottenham",
    "position": "Midfielder",
@@ -2816,6 +3095,7 @@
    "tier": 3
   },
   {
+   "id": 2041,
    "name": "Rodrigo Bentancur",
    "team": "Tottenham",
    "position": "Midfielder",
@@ -2826,6 +3106,7 @@
    "tier": 3
   },
   {
+   "id": 2563,
    "name": "Sandro Tonali",
    "team": "Tottenham",
    "position": "Midfielder",
@@ -2836,6 +3117,7 @@
    "tier": 1
   },
   {
+   "id": 3992,
    "name": "James Maddison",
    "team": "Tottenham",
    "position": "Midfielder",
@@ -2846,6 +3128,7 @@
    "tier": 3
   },
   {
+   "id": 119265,
    "name": "Conor Gallagher",
    "team": "Tottenham",
    "position": "Midfielder",
@@ -2856,6 +3139,7 @@
    "tier": 2
   },
   {
+   "id": 148289,
    "name": "Xavi Simons",
    "team": "Tottenham",
    "position": "Midfielder",
@@ -2866,6 +3150,7 @@
    "tier": 2
   },
   {
+   "id": 187216,
    "name": "Mateus Fernandes",
    "team": "Tottenham",
    "position": "Midfielder",
@@ -2876,6 +3161,7 @@
    "tier": 2
   },
   {
+   "id": 193622,
    "name": "Lucas Bergvall",
    "team": "Tottenham",
    "position": "Midfielder",
@@ -2886,6 +3172,7 @@
    "tier": 2
   },
   {
+   "id": 7878,
    "name": "Dominic Solanke",
    "team": "Tottenham",
    "position": "Forward",
@@ -2896,6 +3183,7 @@
    "tier": 2
   },
   {
+   "id": 8133,
    "name": "Richarlison",
    "team": "Tottenham",
    "position": "Forward",
@@ -2906,6 +3194,7 @@
    "tier": 3
   },
   {
+   "id": 66896,
    "name": "Omar Marmoush",
    "team": "Tottenham",
    "position": "Midfielder",
@@ -2916,6 +3205,7 @@
    "tier": 2
   },
   {
+   "id": 77399,
    "name": "Mohammed Kudus",
    "team": "Tottenham",
    "position": "Midfielder",
@@ -2926,6 +3216,7 @@
    "tier": 2
   },
   {
+   "id": 98978,
    "name": "Mykhailo Mudryk",
    "team": "Tottenham",
    "position": "Forward",
@@ -2936,6 +3227,7 @@
    "tier": 3
   },
   {
+   "id": 146352,
    "name": "Sávio",
    "team": "Tottenham",
    "position": "Forward",
@@ -2946,6 +3238,7 @@
    "tier": 3
   },
   {
+   "id": 171977,
    "name": "Mathys Tel",
    "team": "Tottenham",
    "position": "Midfielder",
@@ -2956,6 +3249,7 @@
    "tier": 3
   },
   {
+   "id": 184999,
    "name": "Wilson Odobert",
    "team": "Tottenham",
    "position": "Forward",
@@ -2966,6 +3260,7 @@
    "tier": 3
   },
   {
+   "id": 3308,
    "name": "Jack Butland",
    "team": "Hull City",
    "position": "Goalkeeper",
@@ -2976,6 +3271,7 @@
    "tier": 3
   },
   {
+   "id": 6300,
    "name": "Dillon Phillips",
    "team": "Hull City",
    "position": "Goalkeeper",
@@ -2986,6 +3282,7 @@
    "tier": 3
   },
   {
+   "id": 170812,
    "name": "Konstantinos Tzolakis",
    "team": "Hull City",
    "position": "Goalkeeper",
@@ -2996,6 +3293,7 @@
    "tier": 3
   },
   {
+   "id": 3962,
    "name": "Matt Targett",
    "team": "Hull City",
    "position": "Defender",
@@ -3006,6 +3304,7 @@
    "tier": 3
   },
   {
+   "id": 4058,
    "name": "Paddy McNair",
    "team": "Hull City",
    "position": "Defender",
@@ -3016,6 +3315,7 @@
    "tier": 3
   },
   {
+   "id": 4425,
    "name": "John Egan",
    "team": "Hull City",
    "position": "Defender",
@@ -3026,6 +3326,7 @@
    "tier": 3
   },
   {
+   "id": 5322,
    "name": "Lewie Coyle",
    "team": "Hull City",
    "position": "Defender",
@@ -3036,16 +3337,18 @@
    "tier": 3
   },
   {
+   "id": 6451,
    "name": "Semi Ajayi",
    "team": "Hull City",
    "position": "Defender",
-   "age": 32,
+   "age": 33,
    "number": 6,
    "nationality": "Nigeria",
    "photo": "https://media.api-sports.io/football/players/2769.png",
    "tier": 3
   },
   {
+   "id": 82148,
    "name": "Ryan John Giles",
    "team": "Hull City",
    "position": "Defender",
@@ -3056,6 +3359,7 @@
    "tier": 3
   },
   {
+   "id": 177169,
    "name": "Brooke Norton-Cuffy",
    "team": "Hull City",
    "position": "Defender",
@@ -3066,6 +3370,7 @@
    "tier": 3
   },
   {
+   "id": 189278,
    "name": "Charlie Hughes",
    "team": "Hull City",
    "position": "Defender",
@@ -3076,6 +3381,7 @@
    "tier": 3
   },
   {
+   "id": 190558,
    "name": "Nobel Mendy",
    "team": "Hull City",
    "position": "Defender",
@@ -3086,6 +3392,7 @@
    "tier": 3
   },
   {
+   "id": 270733,
    "name": "Lucas Herrington",
    "team": "Hull City",
    "position": "Defender",
@@ -3096,6 +3403,7 @@
    "tier": 3
   },
   {
+   "id": 4309,
    "name": "Regan Slater",
    "team": "Hull City",
    "position": "Midfielder",
@@ -3106,6 +3414,7 @@
    "tier": 3
   },
   {
+   "id": 11306,
    "name": "Kieran Dowell",
    "team": "Hull City",
    "position": "Midfielder",
@@ -3116,6 +3425,7 @@
    "tier": 3
   },
   {
+   "id": 49092,
    "name": "Hidemasa Morita",
    "team": "Hull City",
    "position": "Midfielder",
@@ -3126,6 +3436,7 @@
    "tier": 3
   },
   {
+   "id": 147914,
    "name": "Eliot Matazo",
    "team": "Hull City",
    "position": "Midfielder",
@@ -3136,6 +3447,7 @@
    "tier": 3
   },
   {
+   "id": 169326,
    "name": "Tim Iroegbunam",
    "team": "Hull City",
    "position": "Midfielder",
@@ -3146,6 +3458,7 @@
    "tier": 3
   },
   {
+   "id": 179603,
    "name": "Lucas Gourna-Douath",
    "team": "Hull City",
    "position": "Midfielder",
@@ -3156,6 +3469,7 @@
    "tier": 3
   },
   {
+   "id": 184963,
    "name": "Darko Gyabi",
    "team": "Hull City",
    "position": "Midfielder",
@@ -3166,6 +3480,7 @@
    "tier": 3
   },
   {
+   "id": 193627,
    "name": "Jens Hjertö-Dahl",
    "team": "Hull City",
    "position": "Midfielder",
@@ -3176,6 +3491,7 @@
    "tier": 3
   },
   {
+   "id": 230388,
    "name": "Óscar Zambrano",
    "team": "Hull City",
    "position": "Midfielder",
@@ -3186,6 +3502,7 @@
    "tier": 3
   },
   {
+   "id": 264301,
    "name": "Christos Mouzakitis",
    "team": "Hull City",
    "position": "Midfielder",
@@ -3196,6 +3513,7 @@
    "tier": 3
   },
   {
+   "id": 4359,
    "name": "Oliver McBurnie",
    "team": "Hull City",
    "position": "Forward",
@@ -3206,6 +3524,7 @@
    "tier": 3
   },
   {
+   "id": 26444,
    "name": "Sorba Thomas",
    "team": "Hull City",
    "position": "Forward",
@@ -3216,6 +3535,7 @@
    "tier": 3
   },
   {
+   "id": 30298,
    "name": "Abdülkadir Ömür",
    "team": "Hull City",
    "position": "Midfielder",
@@ -3226,6 +3546,7 @@
    "tier": 3
   },
   {
+   "id": 80761,
    "name": "Joe Gelhardt",
    "team": "Hull City",
    "position": "Forward",
@@ -3236,6 +3557,7 @@
    "tier": 3
   },
   {
+   "id": 149129,
    "name": "Mohamed Ali Cho",
    "team": "Hull City",
    "position": "Forward",
@@ -3246,6 +3568,7 @@
    "tier": 3
   },
   {
+   "id": 192811,
    "name": "Elliot Stroud",
    "team": "Hull City",
    "position": "Midfielder",
@@ -3256,6 +3579,7 @@
    "tier": 3
   },
   {
+   "id": 211740,
    "name": "Ilyas Ansah",
    "team": "Hull City",
    "position": "Forward",
@@ -3266,6 +3590,7 @@
    "tier": 3
   },
   {
+   "id": 213033,
    "name": "Robinio Vaz",
    "team": "Hull City",
    "position": "Forward",
@@ -3276,6 +3601,7 @@
    "tier": 3
   },
   {
+   "id": 213072,
    "name": "Mohamed Belloumi",
    "team": "Hull City",
    "position": "Midfielder",
@@ -3286,6 +3612,7 @@
    "tier": 3
   },
   {
+   "id": 5315,
    "name": "Alex Cairns",
    "team": "Leeds",
    "position": "Goalkeeper",
@@ -3296,6 +3623,7 @@
    "tier": 3
   },
   {
+   "id": 9438,
    "name": "Michael Zetterer",
    "team": "Leeds",
    "position": "Goalkeeper",
@@ -3306,6 +3634,7 @@
    "tier": 3
   },
   {
+   "id": 153874,
    "name": "James Trafford",
    "team": "Leeds",
    "position": "Goalkeeper",
@@ -3316,6 +3645,7 @@
    "tier": 3
   },
   {
+   "id": 3475,
    "name": "Nico Elvedi",
    "team": "Leeds",
    "position": "Defender",
@@ -3326,6 +3656,7 @@
    "tier": 3
   },
   {
+   "id": 4184,
    "name": "Jayden Bogle",
    "team": "Leeds",
    "position": "Midfielder",
@@ -3336,6 +3667,7 @@
    "tier": 3
   },
   {
+   "id": 5613,
    "name": "James Justin",
    "team": "Leeds",
    "position": "Defender",
@@ -3346,6 +3678,7 @@
    "tier": 3
   },
   {
+   "id": 5714,
    "name": "Joe Rodon",
    "team": "Leeds",
    "position": "Defender",
@@ -3356,6 +3689,7 @@
    "tier": 3
   },
   {
+   "id": 31531,
    "name": "Gabriel Gudmundsson",
    "team": "Leeds",
    "position": "Midfielder",
@@ -3366,6 +3700,7 @@
    "tier": 3
   },
   {
+   "id": 74688,
    "name": "Jaka Bijol",
    "team": "Leeds",
    "position": "Defender",
@@ -3376,6 +3711,7 @@
    "tier": 3
   },
   {
+   "id": 136721,
    "name": "Melvin Bard",
    "team": "Leeds",
    "position": "Defender",
@@ -3386,6 +3722,7 @@
    "tier": 3
   },
   {
+   "id": 189153,
    "name": "Tarik Muharemović",
    "team": "Leeds",
    "position": "Defender",
@@ -3396,6 +3733,7 @@
    "tier": 3
   },
   {
+   "id": 4955,
    "name": "Sean Longstaff",
    "team": "Leeds",
    "position": "Midfielder",
@@ -3406,6 +3744,7 @@
    "tier": 3
   },
   {
+   "id": 7815,
    "name": "Ethan Ampadu",
    "team": "Leeds",
    "position": "Midfielder",
@@ -3416,6 +3755,7 @@
    "tier": 2
   },
   {
+   "id": 49105,
    "name": "Ao Tanaka",
    "team": "Leeds",
    "position": "Midfielder",
@@ -3426,16 +3766,18 @@
    "tier": 3
   },
   {
+   "id": 65843,
    "name": "Anton Stach",
    "team": "Leeds",
    "position": "Midfielder",
-   "age": 27,
+   "age": 28,
    "number": 18,
    "nationality": "Germany",
    "photo": "https://media.api-sports.io/football/players/177665.png",
    "tier": 2
   },
   {
+   "id": 75284,
    "name": "Ilia Gruev",
    "team": "Leeds",
    "position": "Midfielder",
@@ -3446,6 +3788,7 @@
    "tier": 3
   },
   {
+   "id": 113262,
    "name": "Brenden Aaronson",
    "team": "Leeds",
    "position": "Midfielder",
@@ -3456,6 +3799,7 @@
    "tier": 3
   },
   {
+   "id": 7839,
    "name": "Dominic Calvert-Lewin",
    "team": "Leeds",
    "position": "Forward",
@@ -3466,6 +3810,7 @@
    "tier": 3
   },
   {
+   "id": 7892,
    "name": "Lukas Nmecha",
    "team": "Leeds",
    "position": "Forward",
@@ -3476,16 +3821,18 @@
    "tier": 3
   },
   {
+   "id": 7974,
    "name": "Daniel James",
    "team": "Leeds",
    "position": "Midfielder",
-   "age": 28,
+   "age": 29,
    "number": 7,
    "nationality": "Wales",
    "photo": "https://media.api-sports.io/football/players/19329.png",
    "tier": 3
   },
   {
+   "id": 11777,
    "name": "Harry Wilson",
    "team": "Leeds",
    "position": "Midfielder",
@@ -3496,6 +3843,7 @@
    "tier": 3
   },
   {
+   "id": 16058,
    "name": "Noah Okafor",
    "team": "Leeds",
    "position": "Forward",
@@ -3506,6 +3854,7 @@
    "tier": 3
   },
   {
+   "id": 185178,
    "name": "Mateo Fernandez",
    "team": "Leeds",
    "position": "Forward",
@@ -3516,6 +3865,7 @@
    "tier": 3
   },
   {
+   "id": 185882,
    "name": "Jean Bahoya",
    "team": "Leeds",
    "position": "Forward",
@@ -3526,6 +3876,7 @@
    "tier": 3
   },
   {
+   "id": 3954,
    "name": "David Button",
    "team": "Ipswich",
    "position": "Goalkeeper",
@@ -3536,16 +3887,18 @@
    "tier": 3
   },
   {
+   "id": 4867,
    "name": "Christian Walton",
    "team": "Ipswich",
    "position": "Goalkeeper",
-   "age": 30,
+   "age": 31,
    "number": 28,
    "nationality": "England",
    "photo": "https://media.api-sports.io/football/players/19541.png",
    "tier": 3
   },
   {
+   "id": 8011,
    "name": "Alex Palmer",
    "team": "Ipswich",
    "position": "Goalkeeper",
@@ -3556,6 +3909,7 @@
    "tier": 3
   },
   {
+   "id": 9814,
    "name": "Kjell Scherpen",
    "team": "Ipswich",
    "position": "Goalkeeper",
@@ -3566,6 +3920,7 @@
    "tier": 3
   },
   {
+   "id": 4017,
    "name": "Darnell Furlong",
    "team": "Ipswich",
    "position": "Defender",
@@ -3576,6 +3931,7 @@
    "tier": 3
   },
   {
+   "id": 8296,
    "name": "Issa Diop",
    "team": "Ipswich",
    "position": "Defender",
@@ -3586,6 +3942,7 @@
    "tier": 3
   },
   {
+   "id": 25650,
    "name": "Dara O'Shea",
    "team": "Ipswich",
    "position": "Defender",
@@ -3596,6 +3953,7 @@
    "tier": 3
   },
   {
+   "id": 34871,
    "name": "Cédric Kipré",
    "team": "Ipswich",
    "position": "Defender",
@@ -3606,6 +3964,7 @@
    "tier": 3
   },
   {
+   "id": 99120,
    "name": "Leif Davis",
    "team": "Ipswich",
    "position": "Defender",
@@ -3616,6 +3975,7 @@
    "tier": 3
   },
   {
+   "id": 125651,
    "name": "Jacob Greaves",
    "team": "Ipswich",
    "position": "Defender",
@@ -3626,6 +3986,7 @@
    "tier": 3
   },
   {
+   "id": 270889,
    "name": "Abdoul Ouattara",
    "team": "Ipswich",
    "position": "Defender",
@@ -3636,6 +3997,7 @@
    "tier": 3
   },
   {
+   "id": 5999,
    "name": "Jack Taylor",
    "team": "Ipswich",
    "position": "Midfielder",
@@ -3646,6 +4008,7 @@
    "tier": 3
   },
   {
+   "id": 7566,
    "name": "Azor Matusiwa",
    "team": "Ipswich",
    "position": "Midfielder",
@@ -3656,6 +4019,7 @@
    "tier": 3
   },
   {
+   "id": 11720,
    "name": "Exequiel Palacios",
    "team": "Ipswich",
    "position": "Midfielder",
@@ -3666,6 +4030,7 @@
    "tier": 3
   },
   {
+   "id": 32938,
    "name": "Saša Lukić",
    "team": "Ipswich",
    "position": "Midfielder",
@@ -3676,6 +4041,7 @@
    "tier": 3
   },
   {
+   "id": 37560,
    "name": "Florentino",
    "team": "Ipswich",
    "position": "Midfielder",
@@ -3686,6 +4052,7 @@
    "tier": 3
   },
   {
+   "id": 140245,
    "name": "Marcelino Núñez",
    "team": "Ipswich",
    "position": "Midfielder",
@@ -3696,6 +4063,7 @@
    "tier": 3
   },
   {
+   "id": 152437,
    "name": "Anis Mehmeti",
    "team": "Ipswich",
    "position": "Forward",
@@ -3706,6 +4074,7 @@
    "tier": 3
   },
   {
+   "id": 168949,
    "name": "Julio Enciso",
    "team": "Ipswich",
    "position": "Midfielder",
@@ -3716,6 +4085,7 @@
    "tier": 3
   },
   {
+   "id": 4158,
    "name": "Jack Clarke",
    "team": "Ipswich",
    "position": "Forward",
@@ -3726,6 +4096,7 @@
    "tier": 3
   },
   {
+   "id": 9053,
    "name": "Chuba Akpom",
    "team": "Ipswich",
    "position": "Forward",
@@ -3736,6 +4107,7 @@
    "tier": 3
   },
   {
+   "id": 44017,
    "name": "Daizen Maeda",
    "team": "Ipswich",
    "position": "Forward",
@@ -3746,6 +4118,7 @@
    "tier": 3
   },
   {
+   "id": 67893,
    "name": "Zian Flemming",
    "team": "Ipswich",
    "position": "Forward",
@@ -3756,6 +4129,7 @@
    "tier": 3
   },
   {
+   "id": 172632,
    "name": "Jaden Philogene-Bidace",
    "team": "Ipswich",
    "position": "Midfielder",
@@ -3766,6 +4140,7 @@
    "tier": 3
   },
   {
+   "id": 176628,
    "name": "Emersonn",
    "team": "Ipswich",
    "position": "Forward",
@@ -3776,6 +4151,7 @@
    "tier": 3
   },
   {
+   "id": 176777,
    "name": "Kasey McAteer",
    "team": "Ipswich",
    "position": "Forward",
@@ -3786,6 +4162,7 @@
    "tier": 3
   },
   {
+   "id": 187162,
    "name": "Abdul Issahaku",
    "team": "Ipswich",
    "position": "Forward",
@@ -3796,6 +4173,7 @@
    "tier": 3
   },
   {
+   "id": 230057,
    "name": "Sindre Egeli",
    "team": "Ipswich",
    "position": "Forward",
@@ -3806,6 +4184,7 @@
    "tier": 3
   },
   {
+   "id": 1299,
    "name": "John",
    "team": "Nottingham Forest",
    "position": "Goalkeeper",
@@ -3816,6 +4195,7 @@
    "tier": 3
   },
   {
+   "id": 3643,
    "name": "Matz Sels",
    "team": "Nottingham Forest",
    "position": "Goalkeeper",
@@ -3826,6 +4206,7 @@
    "tier": 3
   },
   {
+   "id": 81055,
    "name": "Steven Benda",
    "team": "Nottingham Forest",
    "position": "Goalkeeper",
@@ -3836,6 +4217,7 @@
    "tier": 3
   },
   {
+   "id": 1775,
    "name": "Nikola Milenković",
    "team": "Nottingham Forest",
    "position": "Defender",
@@ -3846,6 +4228,7 @@
    "tier": 2
   },
   {
+   "id": 3386,
    "name": "Ola Aina",
    "team": "Nottingham Forest",
    "position": "Midfielder",
@@ -3856,6 +4239,7 @@
    "tier": 3
   },
   {
+   "id": 22010,
    "name": "Daniel Muñoz",
    "team": "Nottingham Forest",
    "position": "Defender",
@@ -3866,6 +4250,7 @@
    "tier": 3
   },
   {
+   "id": 133765,
    "name": "Neco Williams",
    "team": "Nottingham Forest",
    "position": "Midfielder",
@@ -3876,6 +4261,7 @@
    "tier": 2
   },
   {
+   "id": 144361,
    "name": "Luca Netz",
    "team": "Nottingham Forest",
    "position": "Defender",
@@ -3886,6 +4272,7 @@
    "tier": 3
   },
   {
+   "id": 179782,
    "name": "Jair Paula",
    "team": "Nottingham Forest",
    "position": "Defender",
@@ -3896,6 +4283,7 @@
    "tier": 3
   },
   {
+   "id": 191730,
    "name": "Nicolò Savona",
    "team": "Nottingham Forest",
    "position": "Defender",
@@ -3906,6 +4294,7 @@
    "tier": 3
   },
   {
+   "id": 192637,
    "name": "Murillo",
    "team": "Nottingham Forest",
    "position": "Defender",
@@ -3916,6 +4305,7 @@
    "tier": 2
   },
   {
+   "id": 4091,
    "name": "Morgan Gibbs-White",
    "team": "Nottingham Forest",
    "position": "Midfielder",
@@ -3926,6 +4316,7 @@
    "tier": 1
   },
   {
+   "id": 5435,
    "name": "Ryan Yates",
    "team": "Nottingham Forest",
    "position": "Midfielder",
@@ -3936,6 +4327,7 @@
    "tier": 3
   },
   {
+   "id": 8307,
    "name": "Ibrahim Sangaré",
    "team": "Nottingham Forest",
    "position": "Midfielder",
@@ -3946,6 +4338,7 @@
    "tier": 3
   },
   {
+   "id": 16344,
    "name": "Xaver Schlager",
    "team": "Nottingham Forest",
    "position": "Midfielder",
@@ -3956,6 +4349,7 @@
    "tier": 3
   },
   {
+   "id": 46346,
    "name": "Nicolás Domínguez",
    "team": "Nottingham Forest",
    "position": "Midfielder",
@@ -3966,6 +4360,7 @@
    "tier": 3
   },
   {
+   "id": 172956,
    "name": "James McAtee",
    "team": "Nottingham Forest",
    "position": "Midfielder",
@@ -3976,6 +4371,7 @@
    "tier": 3
   },
   {
+   "id": 7816,
    "name": "Callum Hudson-Odoi",
    "team": "Nottingham Forest",
    "position": "Forward",
@@ -3986,6 +4382,7 @@
    "tier": 2
   },
   {
+   "id": 8057,
    "name": "Chris Wood",
    "team": "Nottingham Forest",
    "position": "Forward",
@@ -3996,6 +4393,7 @@
    "tier": 3
   },
   {
+   "id": 77641,
    "name": "Dan Ndoye",
    "team": "Nottingham Forest",
    "position": "Midfielder",
@@ -4006,6 +4404,7 @@
    "tier": 2
   },
   {
+   "id": 130668,
    "name": "Arnaud Kalimuendo",
    "team": "Nottingham Forest",
    "position": "Forward",
@@ -4016,6 +4415,7 @@
    "tier": 3
   },
   {
+   "id": 151095,
    "name": "Liam Delap",
    "team": "Nottingham Forest",
    "position": "Forward",
@@ -4026,6 +4426,7 @@
    "tier": 2
   },
   {
+   "id": 256339,
    "name": "Igor Jesus",
    "team": "Nottingham Forest",
    "position": "Forward",
@@ -4036,6 +4437,7 @@
    "tier": 3
   },
   {
+   "id": 5457,
    "name": "Dean Henderson",
    "team": "Crystal Palace",
    "position": "Goalkeeper",
@@ -4046,6 +4448,7 @@
    "tier": 2
   },
   {
+   "id": 6413,
    "name": "Remi Matthews",
    "team": "Crystal Palace",
    "position": "Goalkeeper",
@@ -4056,6 +4459,7 @@
    "tier": 3
   },
   {
+   "id": 8420,
    "name": "Walter Benítez",
    "team": "Crystal Palace",
    "position": "Goalkeeper",
@@ -4066,6 +4470,7 @@
    "tier": 3
   },
   {
+   "id": 813,
    "name": "Axel Disasi",
    "team": "Crystal Palace",
    "position": "Defender",
@@ -4076,6 +4481,7 @@
    "tier": 3
   },
   {
+   "id": 8065,
    "name": "Ben Chilwell",
    "team": "Crystal Palace",
    "position": "Defender",
@@ -4086,6 +4492,7 @@
    "tier": 3
   },
   {
+   "id": 9034,
    "name": "Takehiro Tomiyasu",
    "team": "Crystal Palace",
    "position": "Defender",
@@ -4096,6 +4503,7 @@
    "tier": 3
   },
   {
+   "id": 99856,
    "name": "Chris Richards",
    "team": "Crystal Palace",
    "position": "Defender",
@@ -4106,6 +4514,7 @@
    "tier": 2
   },
   {
+   "id": 137068,
    "name": "Tyrick Mitchell",
    "team": "Crystal Palace",
    "position": "Midfielder",
@@ -4116,6 +4525,7 @@
    "tier": 3
   },
   {
+   "id": 146986,
    "name": "Óscar Mingueza",
    "team": "Crystal Palace",
    "position": "Defender",
@@ -4126,6 +4536,7 @@
    "tier": 3
   },
   {
+   "id": 150948,
    "name": "Chadi Riad",
    "team": "Crystal Palace",
    "position": "Defender",
@@ -4136,6 +4547,7 @@
    "tier": 3
   },
   {
+   "id": 213425,
    "name": "Anan Khalaili",
    "team": "Crystal Palace",
    "position": "Midfielder",
@@ -4146,6 +4558,7 @@
    "tier": 3
   },
   {
+   "id": 260271,
    "name": "Jaydee Canvot",
    "team": "Crystal Palace",
    "position": "Defender",
@@ -4156,6 +4569,7 @@
    "tier": 2
   },
   {
+   "id": 263661,
    "name": "Honest Ahanor",
    "team": "Crystal Palace",
    "position": "Defender",
@@ -4166,6 +4580,7 @@
    "tier": 2
   },
   {
+   "id": 3737,
    "name": "Jefferson Lerma",
    "team": "Crystal Palace",
    "position": "Midfielder",
@@ -4176,6 +4591,7 @@
    "tier": 3
   },
   {
+   "id": 6716,
    "name": "Daichi Kamada",
    "team": "Crystal Palace",
    "position": "Forward",
@@ -4186,6 +4602,7 @@
    "tier": 3
   },
   {
+   "id": 8124,
    "name": "Will Hughes",
    "team": "Crystal Palace",
    "position": "Midfielder",
@@ -4196,6 +4613,7 @@
    "tier": 3
   },
   {
+   "id": 74677,
    "name": "Cheick Doucouré",
    "team": "Crystal Palace",
    "position": "Midfielder",
@@ -4206,6 +4624,7 @@
    "tier": 3
   },
   {
+   "id": 97536,
    "name": "Quinten Timber",
    "team": "Crystal Palace",
    "position": "Midfielder",
@@ -4216,6 +4635,7 @@
    "tier": 3
   },
   {
+   "id": 191396,
    "name": "Adam Wharton",
    "team": "Crystal Palace",
    "position": "Midfielder",
@@ -4226,6 +4646,7 @@
    "tier": 3
   },
   {
+   "id": 303053,
    "name": "Nathanael Kalembo",
    "team": "Crystal Palace",
    "position": "Midfielder",
@@ -4236,6 +4657,7 @@
    "tier": 3
   },
   {
+   "id": 641,
    "name": "Jean-Philippe Mateta",
    "team": "Crystal Palace",
    "position": "Forward",
@@ -4246,6 +4668,7 @@
    "tier": 2
   },
   {
+   "id": 3638,
    "name": "Ismaïla Sarr",
    "team": "Crystal Palace",
    "position": "Forward",
@@ -4256,6 +4679,7 @@
    "tier": 2
   },
   {
+   "id": 7800,
    "name": "Eddie Nketiah",
    "team": "Crystal Palace",
    "position": "Forward",
@@ -4266,6 +4690,7 @@
    "tier": 3
   },
   {
+   "id": 11623,
    "name": "Dwight McNeil",
    "team": "Crystal Palace",
    "position": "Forward",
@@ -4276,6 +4701,7 @@
    "tier": 3
   },
   {
+   "id": 128710,
    "name": "Evann Guessand",
    "team": "Crystal Palace",
    "position": "Forward",
@@ -4286,6 +4712,7 @@
    "tier": 3
   },
   {
+   "id": 152505,
    "name": "Yeremi Pino",
    "team": "Crystal Palace",
    "position": "Forward",
@@ -4296,6 +4723,7 @@
    "tier": 2
   },
   {
+   "id": 179319,
    "name": "Darío Osorio",
    "team": "Crystal Palace",
    "position": "Midfielder",
@@ -4306,6 +4734,7 @@
    "tier": 3
   },
   {
+   "id": 213269,
    "name": "Jørgen Strand Larsen",
    "team": "Crystal Palace",
    "position": "Forward",
@@ -4316,6 +4745,7 @@
    "tier": 2
   },
   {
+   "id": 224618,
    "name": "Zavier Gozo",
    "team": "Crystal Palace",
    "position": "Forward",
@@ -4326,6 +4756,7 @@
    "tier": 3
   },
   {
+   "id": 4040,
    "name": "Jason Steele",
    "team": "Brighton",
    "position": "Goalkeeper",
@@ -4336,6 +4767,7 @@
    "tier": 3
   },
   {
+   "id": 126870,
    "name": "Bart Verbruggen",
    "team": "Brighton",
    "position": "Goalkeeper",
@@ -4346,6 +4778,7 @@
    "tier": 2
   },
   {
+   "id": 140203,
    "name": "Thomas McGill",
    "team": "Brighton",
    "position": "Goalkeeper",
@@ -4356,16 +4789,18 @@
    "tier": 3
   },
   {
+   "id": 846,
    "name": "Olivier Boscagli",
    "team": "Brighton",
    "position": "Defender",
-   "age": 28,
+   "age": 29,
    "number": 21,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/22160.png",
    "tier": 3
   },
   {
+   "id": 4146,
    "name": "Pascal Struijk",
    "team": "Brighton",
    "position": "Defender",
@@ -4376,6 +4811,7 @@
    "tier": 3
   },
   {
+   "id": 8259,
    "name": "Lewis Dunk",
    "team": "Brighton",
    "position": "Defender",
@@ -4386,6 +4822,7 @@
    "tier": 3
   },
   {
+   "id": 9869,
    "name": "Ferdi Kadıoğlu",
    "team": "Brighton",
    "position": "Defender",
@@ -4396,6 +4833,7 @@
    "tier": 2
   },
   {
+   "id": 61968,
    "name": "Michael Svoboda",
    "team": "Brighton",
    "position": "Defender",
@@ -4406,16 +4844,18 @@
    "tier": 3
   },
   {
+   "id": 97505,
    "name": "Mats Wieffer",
    "team": "Brighton",
    "position": "Midfielder",
-   "age": 26,
+   "age": 27,
    "number": 27,
    "nationality": "Netherlands",
    "photo": "https://media.api-sports.io/football/players/92993.png",
    "tier": 3
   },
   {
+   "id": 142075,
    "name": "Maxim De Cuyper",
    "team": "Brighton",
    "position": "Defender",
@@ -4426,6 +4866,7 @@
    "tier": 3
   },
   {
+   "id": 147891,
    "name": "Jaouen Hadjam",
    "team": "Brighton",
    "position": "Midfielder",
@@ -4436,6 +4877,7 @@
    "tier": 3
   },
   {
+   "id": 185116,
    "name": "Costinha",
    "team": "Brighton",
    "position": "Midfielder",
@@ -4446,6 +4888,7 @@
    "tier": 3
   },
   {
+   "id": 216835,
    "name": "Luka Vušković",
    "team": "Brighton",
    "position": "Defender",
@@ -4456,6 +4899,7 @@
    "tier": 2
   },
   {
+   "id": 3974,
    "name": "Matt O'Riley",
    "team": "Brighton",
    "position": "Midfielder",
@@ -4466,6 +4910,7 @@
    "tier": 3
   },
   {
+   "id": 8273,
    "name": "Pascal Groß",
    "team": "Brighton",
    "position": "Midfielder",
@@ -4476,6 +4921,7 @@
    "tier": 3
   },
   {
+   "id": 145613,
    "name": "Yasin Ayari",
    "team": "Brighton",
    "position": "Midfielder",
@@ -4486,6 +4932,7 @@
    "tier": 2
   },
   {
+   "id": 178951,
    "name": "Diego Gómez",
    "team": "Brighton",
    "position": "Midfielder",
@@ -4496,6 +4943,7 @@
    "tier": 3
   },
   {
+   "id": 190851,
    "name": "Jack Hinshelwood",
    "team": "Brighton",
    "position": "Forward",
@@ -4506,16 +4954,18 @@
    "tier": 2
   },
   {
+   "id": 246670,
    "name": "Malick Yalcouyé",
    "team": "Brighton",
    "position": "Forward",
-   "age": 20,
+   "age": 21,
    "number": 35,
    "nationality": "Mali",
    "photo": "https://media.api-sports.io/football/players/410125.png",
    "tier": 3
   },
   {
+   "id": 270273,
    "name": "Chema Andrés",
    "team": "Brighton",
    "position": "Midfielder",
@@ -4526,6 +4976,7 @@
    "tier": 3
   },
   {
+   "id": 29319,
    "name": "Femi Azeez",
    "team": "Brighton",
    "position": "Forward",
@@ -4536,6 +4987,7 @@
    "tier": 3
   },
   {
+   "id": 81189,
    "name": "Georginio Rutter",
    "team": "Brighton",
    "position": "Forward",
@@ -4546,6 +4998,7 @@
    "tier": 2
   },
   {
+   "id": 130809,
    "name": "Evan Ferguson",
    "team": "Brighton",
    "position": "Forward",
@@ -4556,6 +5009,7 @@
    "tier": 3
   },
   {
+   "id": 132707,
    "name": "Kaoru Mitoma",
    "team": "Brighton",
    "position": "Forward",
@@ -4566,6 +5020,7 @@
    "tier": 3
   },
   {
+   "id": 187482,
    "name": "Yankubah Minteh",
    "team": "Brighton",
    "position": "Forward",
@@ -4576,6 +5031,7 @@
    "tier": 2
   },
   {
+   "id": 205531,
    "name": "Ibrahim Osman",
    "team": "Brighton",
    "position": "Forward",
@@ -4586,6 +5042,7 @@
    "tier": 3
   },
   {
+   "id": 209504,
    "name": "Stefanos Tzimas",
    "team": "Brighton",
    "position": "Forward",
@@ -4596,6 +5053,7 @@
    "tier": 3
   },
   {
+   "id": 260992,
    "name": "Promise Akinpelu",
    "team": "Brighton",
    "position": "Forward",
@@ -4606,6 +5064,7 @@
    "tier": 3
   },
   {
+   "id": 264300,
    "name": "Charalampos Kostoulas",
    "team": "Brighton",
    "position": "Forward",
@@ -4616,6 +5075,7 @@
    "tier": 2
   },
   {
+   "id": 279784,
    "name": "Zadok Yohanna",
    "team": "Brighton",
    "position": "Forward",
@@ -4626,6 +5086,7 @@
    "tier": 3
   },
   {
+   "id": 4419,
    "name": "Ellery Balcombe",
    "team": "Brentford",
    "position": "Goalkeeper",
@@ -4636,6 +5097,7 @@
    "tier": 3
   },
   {
+   "id": 102046,
    "name": "Caoimhin Kelleher",
    "team": "Brentford",
    "position": "Goalkeeper",
@@ -4646,6 +5108,7 @@
    "tier": 2
   },
   {
+   "id": 144530,
    "name": "Hákon Rafn Valdimarsson",
    "team": "Brentford",
    "position": "Goalkeeper",
@@ -4656,6 +5119,7 @@
    "tier": 3
   },
   {
+   "id": 4426,
    "name": "Rico Henry",
    "team": "Brentford",
    "position": "Defender",
@@ -4666,6 +5130,7 @@
    "tier": 3
   },
   {
+   "id": 7720,
    "name": "Sepp van den Berg",
    "team": "Brentford",
    "position": "Defender",
@@ -4676,6 +5141,7 @@
    "tier": 2
   },
   {
+   "id": 16068,
    "name": "Kristoffer Ajer",
    "team": "Brentford",
    "position": "Defender",
@@ -4686,6 +5152,7 @@
    "tier": 3
   },
   {
+   "id": 101111,
    "name": "Aaron Hickey",
    "team": "Brentford",
    "position": "Defender",
@@ -4696,6 +5163,7 @@
    "tier": 3
   },
   {
+   "id": 101910,
    "name": "Keane Lewis-Potter",
    "team": "Brentford",
    "position": "Defender",
@@ -4706,6 +5174,7 @@
    "tier": 2
   },
   {
+   "id": 115642,
    "name": "Nathan Collins",
    "team": "Brentford",
    "position": "Defender",
@@ -4716,6 +5185,7 @@
    "tier": 2
   },
   {
+   "id": 193633,
    "name": "El Hadji Malick Diouf",
    "team": "Brentford",
    "position": "Defender",
@@ -4726,6 +5196,7 @@
    "tier": 3
   },
   {
+   "id": 204348,
    "name": "Michael Kayode",
    "team": "Brentford",
    "position": "Defender",
@@ -4736,6 +5207,7 @@
    "tier": 2
   },
   {
+   "id": 221783,
    "name": "Ji-soo Kim",
    "team": "Brentford",
    "position": "Defender",
@@ -4746,6 +5218,7 @@
    "tier": 3
   },
   {
+   "id": 227064,
    "name": "Jannik Schuster",
    "team": "Brentford",
    "position": "Defender",
@@ -4756,6 +5229,7 @@
    "tier": 3
   },
   {
+   "id": 245364,
    "name": "Benjamin Fredrick",
    "team": "Brentford",
    "position": "Defender",
@@ -4766,6 +5240,7 @@
    "tier": 3
   },
   {
+   "id": 7796,
    "name": "Josh Dasilva",
    "team": "Brentford",
    "position": "Midfielder",
@@ -4776,6 +5251,7 @@
    "tier": 3
   },
   {
+   "id": 10000,
    "name": "Vitaly Janelt",
    "team": "Brentford",
    "position": "Midfielder",
@@ -4786,6 +5262,7 @@
    "tier": 3
   },
   {
+   "id": 10194,
    "name": "Mathias Jensen",
    "team": "Brentford",
    "position": "Midfielder",
@@ -4796,6 +5273,7 @@
    "tier": 3
   },
   {
+   "id": 24238,
    "name": "Mikkel Damsgaard",
    "team": "Brentford",
    "position": "Midfielder",
@@ -4806,6 +5284,7 @@
    "tier": 2
   },
   {
+   "id": 150964,
    "name": "Mamadou Sangare",
    "team": "Brentford",
    "position": "Midfielder",
@@ -4816,6 +5295,7 @@
    "tier": 2
   },
   {
+   "id": 151119,
    "name": "Fabio Carvalho",
    "team": "Brentford",
    "position": "Midfielder",
@@ -4826,6 +5306,7 @@
    "tier": 3
   },
   {
+   "id": 171965,
    "name": "Antoni Milambo",
    "team": "Brentford",
    "position": "Midfielder",
@@ -4836,6 +5317,7 @@
    "tier": 3
   },
   {
+   "id": 204421,
    "name": "Yegor Yarmolyuk",
    "team": "Brentford",
    "position": "Midfielder",
@@ -4846,6 +5328,7 @@
    "tier": 2
   },
   {
+   "id": 8251,
    "name": "Callum Wilson",
    "team": "Brentford",
    "position": "Forward",
@@ -4856,6 +5339,7 @@
    "tier": 3
   },
   {
+   "id": 123286,
    "name": "Kevin Schade",
    "team": "Brentford",
    "position": "Forward",
@@ -4866,6 +5350,7 @@
    "tier": 2
   },
   {
+   "id": 138230,
    "name": "Thiago",
    "team": "Brentford",
    "position": "Forward",
@@ -4876,6 +5361,7 @@
    "tier": 1
   },
   {
+   "id": 150778,
    "name": "Jaidon Anthony",
    "team": "Brentford",
    "position": "Forward",
@@ -4886,6 +5372,7 @@
    "tier": 3
   },
   {
+   "id": 177305,
    "name": "Dango Ouattara",
    "team": "Brentford",
    "position": "Forward",
@@ -4896,16 +5383,18 @@
    "tier": 2
   },
   {
+   "id": 213296,
    "name": "Gustavo Gomes",
    "team": "Brentford",
    "position": "Forward",
-   "age": 20,
+   "age": 21,
    "number": 39,
    "nationality": "Brazil",
    "photo": "https://media.api-sports.io/football/players/427736.png",
    "tier": 3
   },
   {
+   "id": 213518,
    "name": "Kaye Furo",
    "team": "Brentford",
    "position": "Forward",
@@ -4916,6 +5405,7 @@
    "tier": 3
   },
   {
+   "id": 8079,
    "name": "Fraser Forster",
    "team": "Bournemouth",
    "position": "Goalkeeper",
@@ -4926,6 +5416,7 @@
    "tier": 3
   },
   {
+   "id": 41381,
    "name": "Michele Di Gregorio",
    "team": "Bournemouth",
    "position": "Goalkeeper",
@@ -4936,6 +5427,7 @@
    "tier": 3
   },
   {
+   "id": 121765,
    "name": "Đorđe Petrović",
    "team": "Bournemouth",
    "position": "Goalkeeper",
@@ -4946,6 +5438,7 @@
    "tier": 2
   },
   {
+   "id": 8231,
    "name": "Adam Smith",
    "team": "Bournemouth",
    "position": "Defender",
@@ -4956,6 +5449,7 @@
    "tier": 3
   },
   {
+   "id": 80765,
    "name": "Max Aarons",
    "team": "Bournemouth",
    "position": "Defender",
@@ -4966,6 +5460,7 @@
    "tier": 3
   },
   {
+   "id": 82145,
    "name": "James Hill",
    "team": "Bournemouth",
    "position": "Defender",
@@ -4976,6 +5471,7 @@
    "tier": 3
   },
   {
+   "id": 98745,
    "name": "Bafodé Diakité",
    "team": "Bournemouth",
    "position": "Defender",
@@ -4986,6 +5482,7 @@
    "tier": 2
   },
   {
+   "id": 113335,
    "name": "Julian Araujo",
    "team": "Bournemouth",
    "position": "Defender",
@@ -4996,16 +5493,18 @@
    "tier": 3
   },
   {
+   "id": 135482,
    "name": "Adrien Truffert",
    "team": "Bournemouth",
    "position": "Defender",
-   "age": 24,
+   "age": 25,
    "number": 3,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/162267.png",
    "tier": 2
   },
   {
+   "id": 180038,
    "name": "Juanlu",
    "team": "Bournemouth",
    "position": "Defender",
@@ -5016,6 +5515,7 @@
    "tier": 3
   },
   {
+   "id": 183583,
    "name": "Julio Soler",
    "team": "Bournemouth",
    "position": "Defender",
@@ -5026,6 +5526,7 @@
    "tier": 3
   },
   {
+   "id": 185610,
    "name": "Antonio Silva",
    "team": "Bournemouth",
    "position": "Defender",
@@ -5036,6 +5537,7 @@
    "tier": 3
   },
   {
+   "id": 227046,
    "name": "Veljko Milosavljević",
    "team": "Bournemouth",
    "position": "Defender",
@@ -5046,6 +5548,7 @@
    "tier": 3
   },
   {
+   "id": 3327,
    "name": "Lewis Cook",
    "team": "Bournemouth",
    "position": "Midfielder",
@@ -5056,6 +5559,7 @@
    "tier": 3
   },
   {
+   "id": 7561,
    "name": "Justin Kluivert",
    "team": "Bournemouth",
    "position": "Forward",
@@ -5066,6 +5570,7 @@
    "tier": 2
   },
   {
+   "id": 34495,
    "name": "Ryan Christie",
    "team": "Bournemouth",
    "position": "Midfielder",
@@ -5076,6 +5581,7 @@
    "tier": 3
   },
   {
+   "id": 77596,
    "name": "Tyler Adams",
    "team": "Bournemouth",
    "position": "Midfielder",
@@ -5086,6 +5592,7 @@
    "tier": 2
   },
   {
+   "id": 161088,
    "name": "Alex Scott",
    "team": "Bournemouth",
    "position": "Midfielder",
@@ -5096,6 +5603,7 @@
    "tier": 2
   },
   {
+   "id": 192316,
    "name": "Alex Toth",
    "team": "Bournemouth",
    "position": "Midfielder",
@@ -5106,6 +5614,7 @@
    "tier": 3
   },
   {
+   "id": 4321,
    "name": "David Brooks",
    "team": "Bournemouth",
    "position": "Midfielder",
@@ -5116,6 +5625,7 @@
    "tier": 3
   },
   {
+   "id": 6396,
    "name": "Marcus Tavernier",
    "team": "Bournemouth",
    "position": "Midfielder",
@@ -5126,6 +5636,7 @@
    "tier": 2
   },
   {
+   "id": 131260,
    "name": "Evanilson",
    "team": "Bournemouth",
    "position": "Forward",
@@ -5136,6 +5647,7 @@
    "tier": 2
   },
   {
+   "id": 137047,
    "name": "Amine Adli",
    "team": "Bournemouth",
    "position": "Midfielder",
@@ -5146,6 +5658,7 @@
    "tier": 3
   },
   {
+   "id": 169191,
    "name": "Daniel Jebbison",
    "team": "Bournemouth",
    "position": "Forward",
@@ -5156,16 +5669,18 @@
    "tier": 3
   },
   {
+   "id": 176789,
    "name": "Ben Doak",
    "team": "Bournemouth",
    "position": "Midfielder",
-   "age": 20,
+   "age": 21,
    "number": 11,
    "nationality": "Scotland",
    "photo": "https://media.api-sports.io/football/players/343576.png",
    "tier": 3
   },
   {
+   "id": 189369,
    "name": "Alvaro Rodriguez",
    "team": "Bournemouth",
    "position": "Forward",
@@ -5176,6 +5691,7 @@
    "tier": 3
   },
   {
+   "id": 203356,
    "name": "Rayan",
    "team": "Bournemouth",
    "position": "Forward",
@@ -5186,6 +5702,7 @@
    "tier": 2
   },
   {
+   "id": 204241,
    "name": "Eli Kroupi",
    "team": "Bournemouth",
    "position": "Forward",
@@ -5196,6 +5713,7 @@
    "tier": 1
   },
   {
+   "id": 4418,
    "name": "Daniel Bentley",
    "team": "Coventry",
    "position": "Goalkeeper",
@@ -5206,6 +5724,7 @@
    "tier": 3
   },
   {
+   "id": 5347,
    "name": "Ben Wilson",
    "team": "Coventry",
    "position": "Goalkeeper",
@@ -5216,6 +5735,7 @@
    "tier": 3
   },
   {
+   "id": 171498,
    "name": "Carl Rushworth",
    "team": "Coventry",
    "position": "Goalkeeper",
@@ -5226,6 +5746,7 @@
    "tier": 3
   },
   {
+   "id": 4015,
    "name": "Jake Bidwell",
    "team": "Coventry",
    "position": "Defender",
@@ -5236,6 +5757,7 @@
    "tier": 3
   },
   {
+   "id": 4235,
    "name": "Luke Woolfenden",
    "team": "Coventry",
    "position": "Defender",
@@ -5246,6 +5768,7 @@
    "tier": 3
   },
   {
+   "id": 4334,
    "name": "Ethan Pinnock",
    "team": "Coventry",
    "position": "Defender",
@@ -5256,6 +5779,7 @@
    "tier": 3
   },
   {
+   "id": 6308,
    "name": "Jay Dasilva",
    "team": "Coventry",
    "position": "Defender",
@@ -5266,6 +5790,7 @@
    "tier": 3
   },
   {
+   "id": 55048,
    "name": "Milan van Ewijk",
    "team": "Coventry",
    "position": "Defender",
@@ -5276,6 +5801,7 @@
    "tier": 3
   },
   {
+   "id": 130044,
    "name": "Joel Latibeaudiere",
    "team": "Coventry",
    "position": "Defender",
@@ -5286,6 +5812,7 @@
    "tier": 3
   },
   {
+   "id": 144782,
    "name": "Bobby Thomas",
    "team": "Coventry",
    "position": "Defender",
@@ -5296,6 +5823,7 @@
    "tier": 3
   },
   {
+   "id": 169297,
    "name": "Aurele Amenda",
    "team": "Coventry",
    "position": "Defender",
@@ -5306,6 +5834,7 @@
    "tier": 3
   },
   {
+   "id": 171509,
    "name": "Kaine Kesler",
    "team": "Coventry",
    "position": "Defender",
@@ -5316,6 +5845,7 @@
    "tier": 3
   },
   {
+   "id": 286320,
    "name": "Stephen Mfuni",
    "team": "Coventry",
    "position": "Defender",
@@ -5326,6 +5856,7 @@
    "tier": 3
   },
   {
+   "id": 6358,
    "name": "Matt Grimes",
    "team": "Coventry",
    "position": "Midfielder",
@@ -5336,6 +5867,7 @@
    "tier": 3
   },
   {
+   "id": 9623,
    "name": "Gustavo Hamer",
    "team": "Coventry",
    "position": "Midfielder",
@@ -5346,6 +5878,7 @@
    "tier": 3
   },
   {
+   "id": 24207,
    "name": "Victor Torp",
    "team": "Coventry",
    "position": "Midfielder",
@@ -5356,6 +5889,7 @@
    "tier": 3
   },
   {
+   "id": 24210,
    "name": "Frank Onyeka",
    "team": "Coventry",
    "position": "Midfielder",
@@ -5366,6 +5900,7 @@
    "tier": 3
   },
   {
+   "id": 83372,
    "name": "Josh Eccles",
    "team": "Coventry",
    "position": "Midfielder",
@@ -5376,6 +5911,7 @@
    "tier": 3
   },
   {
+   "id": 114123,
    "name": "Jack Rudoni",
    "team": "Coventry",
    "position": "Midfielder",
@@ -5386,6 +5922,7 @@
    "tier": 3
   },
   {
+   "id": 262187,
    "name": "Caleb Yirenkyi",
    "team": "Coventry",
    "position": "Midfielder",
@@ -5396,6 +5933,7 @@
    "tier": 3
   },
   {
+   "id": 6009,
    "name": "Ephron Mason-Clark",
    "team": "Coventry",
    "position": "Midfielder",
@@ -5406,6 +5944,7 @@
    "tier": 3
   },
   {
+   "id": 6389,
    "name": "Brandon Thomas-Asante",
    "team": "Coventry",
    "position": "Forward",
@@ -5416,6 +5955,7 @@
    "tier": 3
   },
   {
+   "id": 9218,
    "name": "Taiwo Awoniyi",
    "team": "Coventry",
    "position": "Forward",
@@ -5426,6 +5966,7 @@
    "tier": 3
   },
   {
+   "id": 10076,
    "name": "Haji Wright",
    "team": "Coventry",
    "position": "Forward",
@@ -5436,6 +5977,7 @@
    "tier": 3
   },
   {
+   "id": 80175,
    "name": "Yann Gboho",
    "team": "Coventry",
    "position": "Midfielder",
@@ -5446,6 +5988,7 @@
    "tier": 3
   },
   {
+   "id": 113632,
    "name": "Tatsuhiro Sakamoto",
    "team": "Coventry",
    "position": "Midfielder",
@@ -5456,6 +5999,7 @@
    "tier": 3
   },
   {
+   "id": 146122,
    "name": "Ellis Simms",
    "team": "Coventry",
    "position": "Forward",
@@ -5466,6 +6010,7 @@
    "tier": 3
   },
   {
+   "id": 170394,
    "name": "Loum Tchaouna",
    "team": "Coventry",
    "position": "Forward",
@@ -5476,6 +6021,7 @@
    "tier": 3
   },
   {
+   "id": 213712,
    "name": "Sidiki Cherif",
    "team": "Coventry",
    "position": "Forward",
