@@ -666,6 +666,38 @@ button {
     }
 }
 
+/* Opening clue */
+.clue-card {
+    margin-bottom: 14px;
+    padding: 10px 14px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: 10px;
+}
+
+.clue-title {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--accent);
+    text-transform: uppercase;
+}
+
+.clue-text {
+    margin: 4px 0 0;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.result-summary .clue-card {
+    width: 100%;
+    max-width: 560px;
+    margin: 12px 0 0;
+    text-align: left;
+}
+
 /* Result page */
 .result-summary {
     display: flex;

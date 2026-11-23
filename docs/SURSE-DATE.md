@@ -86,6 +86,22 @@ Tot setul: zip de 241 MB sau un fișier DuckDB de 211 MB.
 - Unele transferuri din vara lui 2026 există (1.242 cu data între 1 iulie și 29 oct: semnate înainte de 6 iulie).
 - Exemplu verificat: Mbappé → Monaco 2016 → PSG 2017 (împrumut, apoi 180 mil. €) → Real Madrid 2024.
 
+### Inventar (23 nov 2026) — `appearances.csv.gz`, pentru indiciul de start
+
+Descărcat cu acordul lui Bogdan: 45 MB, în `data/raw/transfermarkt/` (ignorat de git). Un rând = un jucător într-un meci: `game_id`, `player_id`, clubul, data, `competition_id`, cartonașe, goluri, pase decisive, minute.
+- 1.894.350 de rânduri; ultimul meci pe 28 iunie 2026. Deși fișierul are data de 5 septembrie 2026, nu conține niciun meci din 2026-27 → statisticile sunt pentru 2025-26 (1 iulie 2025 – 30 iunie 2026), toate competițiile din set.
+- Pe loturile 2026-27 (potrivire după data nașterii + nume, ca în `build_season.py`):
+
+| Liga | Jucători | Găsiți în Transfermarkt | Au jucat în 2025-26 | 5+ meciuri | Easy (tier 1), 5+ meciuri | Medium (tier 1–2), 5+ meciuri |
+|---|---|---|---|---|---|---|
+| Premier League | 546 | 94% | 83% | 77% | 100% | 100% |
+| La Liga | 522 | 88% | 75% | 71% | 100% | 97% |
+| Bundesliga | 521 | 85% | 70% | 62% | 100% | 97% |
+| Serie A | 593 | 91% | 73% | 67% | 100% | 99% |
+| Ligue 1 | 482 | 87% | 71% | 63% | 100% | 95% |
+
+Concluzie: statisticile acoperă practic toți jucătorii care pot fi ascunși pe Easy și Medium, adică exact dificultățile la care le folosim. Restul primesc faptul de rezervă.
+
 ## Verificat (29 oct 2026) — Wikidata (rezervă pentru cariere)
 
 Gratuit, CC0, fără cheie. Proprietatea `P54` („member of sports team”) are anii de început și de sfârșit.
@@ -99,6 +115,18 @@ Gratuit, CC0, fără cheie. Proprietatea `P54` („member of sports team”) are
 - Numele vin uneori codificate pentru web („O&apos;Reilly”) → se decodifică.
 - Potrivirea jucătorilor cu football-data.org: 2.419 legați; poză + număr pentru 95% (PL), 92% (SA), 89% (PD, BL1), 88% (FL1).
 - Planul gratuit nu are acces la sezonul 2026 pe `/teams?league=` sau `/fixtures` („try from 2022 to 2024”), dar `/players/squads` merge.
+
+## Verificat (23 nov 2026) — căutarea de jucători la API-Football
+
+Cerere: `GET /players/profiles?search=<nume>` (merge pe planul gratuit). O cerere = o pagină, cu cel mult 250 de rezultate.
+
+- Pe jucător: `id`, `name` („H. Ekitike”), `firstname`, `lastname`, `age`, **`birth.date`**, `nationality`, `number`, `position`, `photo`. Data nașterii permite potrivirea exactă cu football-data.org (Ekitike: 2002-06-20 în ambele).
+- `search` acceptă doar litere fără diacritice, cifre și spații, minimum **4 caractere** (eroarea apare în `errors`). Găsește și bucăți din nume („jaros” → „Jaroslav …” și „V. Jaroš”), ignoră accentele, dar nu și ø („hojlund” → 0 rezultate, „jlund” → „O. Højlund”).
+- `position` din profil poate fi greșit (Ekitike: Midfielder); `number` e cel de la clubul actual (poate fi un club din afara celor 5 ligi).
+- API-Football are și dubluri: Jorge Cestero apare cu două ID-uri (lotul Real Madrid: #6, fără dată de naștere; profilul: #14, cu dată).
+- Unele nume vin stricate („O. HÃ¸jlund”), iar unii jucători au altă dată a nașterii decât la football-data.org (Silas: 1999 la football-data, alta la API-Football).
+- `/status` nu consumă din limită; contorul lui se actualizează cu întârziere (notat și în proiectul de pariuri). Antetul `x-ratelimit-requests-remaining` arată cererile rămase pe zi.
+- 23 nov: din primele 56 de căutări salvate, 40 de jucători au fost legați după data exactă a nașterii (38 complet, 2 doar cu poza, pentru că apar în lotul altui club).
 
 ## Ce avem și ce lipsește
 

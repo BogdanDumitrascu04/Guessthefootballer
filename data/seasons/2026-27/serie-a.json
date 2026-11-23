@@ -757,9 +757,9 @@
    "team": "AS Roma",
    "position": "Defender",
    "age": 24,
-   "number": null,
+   "number": 5,
    "nationality": "Morocco",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/162451.png",
    "tier": 2
   },
   {

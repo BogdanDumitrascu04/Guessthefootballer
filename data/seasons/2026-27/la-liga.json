@@ -2242,9 +2242,9 @@
    "team": "Real Madrid",
    "position": "Midfielder",
    "age": 20,
-   "number": null,
+   "number": 14,
    "nationality": "Spain",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/445877.png",
    "tier": 2
   },
   {
@@ -2253,9 +2253,9 @@
    "team": "Real Madrid",
    "position": "Forward",
    "age": 25,
-   "number": null,
+   "number": 11,
    "nationality": "Brazil",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/10009.png",
    "tier": 1
   },
   {
@@ -2792,9 +2792,9 @@
    "team": "Levante",
    "position": "Midfielder",
    "age": 23,
-   "number": null,
+   "number": 8,
    "nationality": "Spain",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/182770.png",
    "tier": 2
   },
   {

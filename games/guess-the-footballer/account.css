@@ -195,7 +195,60 @@
 }
 
 .profile-who {
+    flex: 1;
     min-width: 0;
+}
+
+.profile-points {
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 1;
+}
+
+.profile-points-value {
+    font-family: var(--font-display);
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.profile-points-label {
+    margin-top: 4px;
+    font-size: 0.8125rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.profile-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* five in a row on a computer, three and two on a phone */
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.stat-card {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 12px 14px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.stat-value {
+    font-family: var(--font-display);
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.8125rem;
+    color: var(--muted);
 }
 
 .profile-name {
@@ -320,6 +373,62 @@ a.history-row:focus-visible {
     font-weight: 700;
     color: var(--accent);
     text-align: right;
+}
+
+/* Deleting the account: two steps, so one click can never do it. */
+.profile-danger {
+    padding-top: 6px;
+    margin-top: 28px;
+    border-top: 1px solid var(--border);
+}
+
+.danger-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.danger-question {
+    flex-basis: 100%;
+    color: var(--error);
+}
+
+.danger-outline-button,
+.danger-button {
+    padding: 9px 18px;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.danger-outline-button {
+    color: var(--error);
+    background: transparent;
+    border: 1px solid var(--error);
+}
+
+.danger-outline-button:hover {
+    background: rgb(255 154 154 / 0.1);
+}
+
+.danger-button {
+    color: #450a0a;
+    background: var(--error);
+    border: 1px solid var(--error);
+}
+
+.danger-button:disabled,
+.profile-danger .secondary-button:disabled {
+    cursor: wait;
+    opacity: 0.6;
+}
+
+.profile-danger > a {
+    font-size: 0.875rem;
+    color: var(--muted);
 }
 
 @media (max-width: 480px) {

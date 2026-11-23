@@ -105,7 +105,7 @@ test('a broken or unknown code gives null', () => {
     assert.equal(decodeRound(''), null);
     assert.equal(decodeRound('not a round'), null);
     assert.equal(decodeRound(code.slice(0, 20)), null);
-    const future = Buffer.from(JSON.stringify([2, 'premier-league'])).toString('base64url');
+    const future = Buffer.from(JSON.stringify([3, 'premier-league'])).toString('base64url');
     assert.equal(decodeRound(future), null);
     const outOfRange = Buffer.from(JSON.stringify([1, 'premier-league', '2026-27', 'easy', '2026-11-20', 6, [], [[1]], [3]])).toString('base64url');
     assert.equal(decodeRound(outOfRange), null);
@@ -113,4 +113,30 @@ test('a broken or unknown code gives null', () => {
     assert.equal(decodeRound(noLimit), null);
     const noName = Buffer.from(JSON.stringify([1, 'premier-league', '2026-27', 'easy', '2026-11-20', 6, [], [[1, null]], [0]])).toString('base64url');
     assert.equal(decodeRound(noName), null);
+});
+
+const scout = { type: 'transfer', window: 'summer', year: 2025, fee: [40, 70], league: 'Ligue 1' };
+
+test('the opening clue travels with the round', () => {
+    const played = createRound({ league: 'premier-league', season: '2026-27', difficulty: 'easy', date: '2026-11-23', max: 6, hints: [], target: kroupi, guesses: [kroupi], clue: scout });
+    const decoded = decodeRound(encodeRound(played));
+    assert.deepEqual(decoded.clue, scout);
+    assert.deepEqual(decoded, played);
+});
+
+test('links made before the clue existed still open, without a clue', () => {
+    const v1 = [1, 'premier-league', '2026-27', 'easy', '2026-11-20', 6, ['team'], [[7, 'Eli Kroupi', 'Bournemouth', 'Forward', 20, 22, 'France', 368030]], [0]];
+    const decoded = decodeRound(Buffer.from(JSON.stringify(v1)).toString('base64url'));
+    assert.equal(decoded.clue, null);
+    assert.equal(decoded.target.name, 'Eli Kroupi');
+    assert.equal(isWon(decoded), true);
+});
+
+test('an edited clue is dropped, the round still opens', () => {
+    const base = [2, 'premier-league', '2026-27', 'easy', '2026-11-23', 6, [], [[7, 'Eli Kroupi']], [0]];
+    for (const clue of [{ type: 'script', text: 'x' }, { type: 'caps', caps: { nested: 1 } }, ['transfer'], 'transfer']) {
+        const decoded = decodeRound(Buffer.from(JSON.stringify([...base, clue])).toString('base64url'));
+        assert.equal(decoded.clue, null);
+        assert.equal(decoded.target.name, 'Eli Kroupi');
+    }
 });

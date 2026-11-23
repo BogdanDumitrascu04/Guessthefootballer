@@ -1,4 +1,5 @@
-"""Tests for sql/game_results.sql: who may do what, the points, the rules (need SUPABASE_DB_URL in .env).
+"""Tests for sql/game_results.sql, sql/player_stats.sql and sql/delete_account.sql: who may do what, the points,
+the rules, the profile numbers, deleting an account (need SUPABASE_DB_URL in .env).
 
 A player is simulated the way Supabase does it: the `authenticated` role plus the user ID in the
 request claims, which is what auth.uid() reads. Everything happens in a temporary schema, inside a
@@ -8,6 +9,7 @@ transaction that is rolled back at the end, test users included.
 import json
 import os
 import re
+from datetime import UTC, datetime, timedelta
 from uuid import uuid4
 
 import psycopg
@@ -194,3 +196,102 @@ def test_deleting_an_account_deletes_its_rounds(db):
     as_owner(db)
     db.execute("delete from auth.users where id = %s", [BOGDAN])
     assert db.execute("select count(*) from game_results where user_id = %s", [BOGDAN]).fetchone() == (0,)
+
+
+# player_stats: the profile numbers.
+
+START = datetime(2026, 11, 23, 12, 0, tzinfo=UTC)
+STATS_COLUMNS = "total_points, rounds_played, rounds_won, win_percent, current_streak, best_streak"
+
+
+def add_rounds(db, user, outcomes, first_minute=0):
+    """Rounds one minute apart, written straight as the owner: W won at the 3rd guess (80 points on Medium),
+    L lost, A abandoned (started and never finished)."""
+    as_owner(db)
+    for minute, outcome in enumerate(outcomes, start=first_minute):
+        started = START + timedelta(minutes=minute)
+        if outcome == "A":
+            result = [None] * 5
+        else:
+            won = outcome == "W"
+            result = [started + timedelta(seconds=30), 3 if won else 6, 0, won, CODE]
+        db.execute(
+            "insert into game_results (user_id, league_id, season_id, difficulty, started_at,"
+            " finished_at, guesses, hints_used, won, round_code) values (%s, 'PL', '2026-27', 'medium', %s, %s, %s, %s, %s, %s)",
+            [user, started, *result],
+        )
+
+
+def stats(db, user):
+    as_player(db, user)
+    return db.execute(f"select {STATS_COLUMNS} from player_stats").fetchone()
+
+
+def test_stats_count_every_round_and_abandoned_ones_are_losses(db):
+    add_rounds(db, BOGDAN, "WLAW")
+    # 160 points, 4 played, 2 won, 50%, current streak 1, best 1
+    assert stats(db, BOGDAN) == (160, 4, 2, 50, 1, 1)
+
+
+@pytest.mark.parametrize(
+    "outcomes, current, best",
+    [
+        ("WWLWWWAWW", 2, 3),  # the example from the concept: three islands of wins, 2, 3 and 2
+        ("WWW", 3, 3),
+        ("WWL", 0, 2),  # the last round was lost, so there is no current streak
+        ("WWA", 0, 2),  # an abandoned round breaks it the same way
+        ("A", 0, 0),
+    ],
+)
+def test_streaks_are_islands_of_wins(db, outcomes, current, best):
+    add_rounds(db, BOGDAN, outcomes)
+    assert stats(db, BOGDAN)[4:] == (current, best)
+
+
+def test_streaks_follow_the_start_time_not_the_order_of_saving(db):
+    add_rounds(db, BOGDAN, "W", first_minute=2)  # saved first, played last
+    add_rounds(db, BOGDAN, "L", first_minute=1)
+    assert stats(db, BOGDAN)[4:] == (1, 1)
+
+
+@pytest.mark.parametrize("outcomes, percent", [("WLL", 33), ("WWL", 67), ("L", 0), ("W", 100)])
+def test_win_percent_is_rounded_not_cut_to_zero(db, outcomes, percent):
+    add_rounds(db, BOGDAN, outcomes)
+    assert stats(db, BOGDAN)[3] == percent
+
+
+def test_a_player_without_rounds_has_no_row(db):
+    add_rounds(db, BOGDAN, "W")
+    assert stats(db, ANDREI) is None  # the profile shows zeros
+
+
+def test_players_see_only_their_own_stats(db):
+    add_rounds(db, BOGDAN, "WWW")
+    add_rounds(db, ANDREI, "L")
+    as_player(db, ANDREI)
+    assert db.execute(f"select user_id, {STATS_COLUMNS} from player_stats").fetchall() == [(ANDREI, 0, 1, 0, 0, 0, 0)]
+
+
+def test_a_visitor_who_is_not_logged_in_cannot_read_stats(db):
+    add_rounds(db, BOGDAN, "W")
+    as_player(db, None)
+    refused(db, errors.InsufficientPrivilege, lambda: db.execute("select * from player_stats"))
+
+
+# delete_my_account: the "Delete account" button.
+
+
+def test_a_player_can_delete_their_own_account_and_rounds(db):
+    add_rounds(db, BOGDAN, "WLA")
+    add_rounds(db, ANDREI, "W")
+    as_player(db, BOGDAN)
+    db.execute("select delete_my_account()")
+    as_owner(db)
+    assert db.execute("select count(*) from auth.users where id = %s", [BOGDAN]).fetchone() == (0,)
+    rounds_left = db.execute("select user_id, count(*) from game_results group by user_id").fetchall()
+    assert rounds_left == [(ANDREI, 1)]  # Andrei's account and round are untouched
+
+
+def test_a_visitor_who_is_not_logged_in_cannot_delete_accounts(db):
+    as_player(db, None)
+    refused(db, errors.InsufficientPrivilege, lambda: db.execute("select delete_my_account()"))

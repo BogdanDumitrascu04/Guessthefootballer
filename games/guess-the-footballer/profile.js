@@ -1,9 +1,19 @@
-// The player's own page: who they are and the rounds they played, newest first.
+// The player's own page: who they are, their numbers (from the player_stats view) and their rounds, newest first.
 // A round that was started and left has no result: it is shown, and counted, as lost.
 const profileBox = document.getElementById('profile');
+const STAT_CARDS = [
+    ['rounds_played', 'statPlayed'],
+    ['rounds_won', 'statWon'],
+    ['win_percent', 'statWinRate', '%'],
+    ['current_streak', 'statStreak'],
+    ['best_streak', 'statBestStreak'],
+];
 let rounds = null; // kept, so a change of language redraws without asking the database again
+let stats = null; // null while loading, or if the numbers could not be read: the page then shows none
 let roundsFailed = false;
 let shownUser; // undefined until the first draw, so the first answer (even "nobody") is always shown
+let deleteStep = null; // null, 'confirm', 'working' or 'failed'
+let accountDeleted = false; // after deleting, the page says so instead of offering to sign in again
 
 function el(tag, className, text) {
     const node = document.createElement(tag);
@@ -12,13 +22,56 @@ function el(tag, className, text) {
     return node;
 }
 
+function button(className, text, onClick) {
+    const node = el('button', className, text);
+    node.type = 'button';
+    node.addEventListener('click', onClick);
+    return node;
+}
+
 function renderSignedOut() {
     const box = el('section', 'profile-empty');
-    const button = el('button', 'primary-button', t('signIn'));
-    button.type = 'button';
-    button.addEventListener('click', signIn);
-    box.append(el('p', '', t('profileSignedOut')), button);
+    if (accountDeleted) {
+        const home = el('a', 'primary-button', t('allGames'));
+        home.href = '../../index.html';
+        box.append(el('p', '', t('accountDeleted')), home);
+    } else {
+        box.append(el('p', '', t('profileSignedOut')), button('primary-button', t('signIn'), signIn));
+    }
     profileBox.replaceChildren(box);
+}
+
+async function deleteAccount() {
+    deleteStep = 'working';
+    renderProfile();
+    const { error } = await supabaseClient.rpc('delete_my_account');
+    if (error) {
+        console.warn('Account not deleted:', error.message);
+        deleteStep = 'failed';
+        return renderProfile();
+    }
+    accountDeleted = true;
+    // Local only: the account, and with it the session on the server, no longer exists.
+    await supabaseClient.auth.signOut({ scope: 'local' });
+}
+
+function renderAccountSection() {
+    const section = el('section', 'profile-section profile-danger');
+    const privacy = el('a', '', t('privacyLink'));
+    privacy.href = '../../privacy-policy.html';
+    section.append(el('h2', '', t('accountSection')), el('p', 'profile-note', t('deleteAccountInfo')));
+    const actions = el('div', 'danger-actions');
+    if (deleteStep === 'confirm' || deleteStep === 'working') {
+        const yes = button('danger-button', t('deleteConfirmYes'), deleteAccount);
+        const no = button('secondary-button', t('cancel'), () => { deleteStep = null; renderProfile(); });
+        yes.disabled = no.disabled = deleteStep === 'working';
+        actions.append(el('strong', 'danger-question', t('deleteConfirm')), yes, no);
+    } else {
+        actions.append(button('danger-outline-button', t('deleteAccount'), () => { deleteStep = 'confirm'; renderProfile(); }));
+        if (deleteStep === 'failed') actions.append(el('span', 'profile-note error', t('deleteFailed')));
+    }
+    section.append(actions, privacy);
+    return section;
 }
 
 function renderHead() {
@@ -28,7 +81,22 @@ function renderHead() {
     who.append(el('h1', 'profile-name', name));
     if (currentUser.email && currentUser.email !== name) who.append(el('p', 'profile-email', currentUser.email));
     head.append(el('span', 'account-head-avatar profile-avatar', initial(name)), who);
+    if (stats) {
+        const points = el('div', 'profile-points');
+        points.append(el('span', 'profile-points-value', `${stats.total_points}`), el('span', 'profile-points-label', t('totalPoints')));
+        head.append(points);
+    }
     return head;
+}
+
+function renderStats() {
+    const grid = el('section', 'profile-stats');
+    for (const [key, label, suffix = ''] of STAT_CARDS) {
+        const card = el('div', 'stat-card');
+        card.append(el('span', 'stat-value', `${stats[key]}${suffix}`), el('span', 'stat-label', t(label)));
+        grid.append(card);
+    }
+    return grid;
 }
 
 function outcome(round) {
@@ -83,20 +151,23 @@ function renderHistory() {
 function renderProfile() {
     if (!accountKnown && supabaseClient) return;
     if (!currentUser) return renderSignedOut();
-    profileBox.replaceChildren(renderHead(), renderHistory());
+    profileBox.replaceChildren(renderHead(), ...(stats ? [renderStats()] : []), renderHistory(), renderAccountSection());
 }
 
 async function showProfile() {
     rounds = null;
+    stats = null;
     roundsFailed = false;
     renderProfile();
     if (!currentUser) return;
-    try {
-        rounds = await loadRoundHistory();
-    } catch (error) {
-        console.warn('Rounds not loaded:', error.message);
+    const [history, numbers] = await Promise.allSettled([loadRoundHistory(), loadPlayerStats()]);
+    if (history.status === 'fulfilled') rounds = history.value;
+    else {
+        console.warn('Rounds not loaded:', history.reason.message);
         roundsFailed = true;
     }
+    if (numbers.status === 'fulfilled') stats = numbers.value;
+    else console.warn('Stats not loaded:', numbers.reason.message);
     renderProfile();
 }
 

@@ -1,7 +1,9 @@
 // A finished round as a short text that fits in a link. It keeps only what happened; whether the
 // round was won, the colours and the points are worked out from it. Each player carries what was
 // shown during the round, so a later transfer or birthday does not change an old round.
-const ROUND_VERSION = 1; // bump when the format changes, and keep reading the old versions
+const ROUND_VERSION = 2; // bump when the format changes, and keep reading the old versions
+const READABLE_VERSIONS = [1, 2]; // 2 added the opening clue
+const CLUE_TYPES = ['transfer', 'season', 'position', 'caps', 'peak', 'contract', 'body', 'born'];
 const PLAYER_FIELDS = ['id', 'name', 'team', 'position', 'age', 'number', 'nationality', 'photo'];
 const AF_PHOTO = /^https:\/\/media\.api-sports\.io\/football\/players\/(\d+)\.png$/; // most photos; storing the number halves the link
 const LOCAL_PHOTO = /^images\/(?!.*\.\.)[\w./ -]+$/;
@@ -10,7 +12,7 @@ function snapshot(player) {
     return Object.fromEntries(PLAYER_FIELDS.map(key => [key, player[key] ?? null]));
 }
 
-function createRound({ league, season, difficulty, date, max, hints, target, guesses }) {
+function createRound({ league, season, difficulty, date, max, hints, target, guesses, clue = null }) {
     const copy = snapshot(target);
     return {
         league,
@@ -19,6 +21,7 @@ function createRound({ league, season, difficulty, date, max, hints, target, gue
         date,
         max, // the attempt limit of that day: a later change of rules must not rewrite old rounds
         hints: [...hints],
+        clue: clue ? { ...clue } : null, // the opening clue the player saw, so a friend sees it too
         target: copy,
         // The winning guess is the target itself, so it is stored once and compared by identity.
         guesses: guesses.map(p => (p === target ? copy : snapshot(p))),
@@ -75,19 +78,29 @@ function encodeRound(round) {
     const order = round.guesses.map(p => players.indexOf(p));
     const packed = [
         ROUND_VERSION, round.league, round.season, round.difficulty, round.date, round.max, round.hints, players.map(packPlayer), order,
+        round.clue,
     ];
     return toBase64Url(JSON.stringify(packed));
+}
+
+// A clue from a link is shown as text only; anything that is not a known type with plain values is dropped.
+function cleanClue(clue) {
+    if (!clue || typeof clue !== 'object' || Array.isArray(clue) || !CLUE_TYPES.includes(clue.type)) return null;
+    const plain = value => value === null || ['string', 'number'].includes(typeof value);
+    const ok = Object.values(clue).every(v => plain(v) || (Array.isArray(v) && v.length === 2 && v.every(plain)));
+    return ok ? clue : null;
 }
 
 // Links are typed, cut and pasted by people, so anything unreadable gives null instead of an error.
 function decodeRound(code) {
     try {
-        const [version, league, season, difficulty, date, max, hints, players, order] = JSON.parse(fromBase64Url(code));
-        if (version !== ROUND_VERSION || !Array.isArray(players) || !players.length || !Array.isArray(order)) return null;
+        const [version, league, season, difficulty, date, max, hints, players, order, clue] = JSON.parse(fromBase64Url(code));
+        if (!READABLE_VERSIONS.includes(version) || !Array.isArray(players) || !players.length || !Array.isArray(order)) return null;
         if (!players.every(p => Array.isArray(p) && typeof p[1] === 'string' && p[1])) return null; // every player needs a name
         if (!Number.isInteger(max) || max < 1 || !Array.isArray(hints) || order.some(i => !Number.isInteger(i) || i < 0 || i >= players.length)) return null;
         const unpacked = players.map(unpackPlayer);
-        return { league, season, difficulty, date, max, hints, target: unpacked[0], guesses: order.map(i => unpacked[i]) };
+        const opening = version >= 2 ? cleanClue(clue) : null;
+        return { league, season, difficulty, date, max, hints, clue: opening, target: unpacked[0], guesses: order.map(i => unpacked[i]) };
     } catch {
         return null;
     }

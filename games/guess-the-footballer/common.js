@@ -130,3 +130,64 @@ function createTile(player, { key, numeric }, target, teams, hidden = false) {
     tile.append(label, body);
     return tile;
 }
+
+// The opening clue: the game and the result page write the same sentence from the same fact.
+const CLUE_WHEN = { summer: 'whenSummer', winter: 'whenWinter', year: 'whenYear' };
+
+function clueMoney([min, max]) {
+    if (!min) return t('moneyUnder', { max });
+    if (max == null) return t('moneyOver', { min });
+    return t('moneyRange', { min, max });
+}
+
+function clueCountry(code) {
+    if (String(code).startsWith('GB-')) return t(`nation_${code}`); // England, Scotland... are not countries to the browser
+    try {
+        return new Intl.DisplayNames([currentLanguage], { type: 'region' }).of(code);
+    } catch {
+        return code;
+    }
+}
+
+function clueHeight(cm) {
+    return `${(cm / 100).toLocaleString(currentLanguage, { minimumFractionDigits: 2 })} m`;
+}
+
+const CLUE_TEXT = {
+    transfer: c => t(c.league ? 'clueTransfer' : 'clueTransferNoLeague', {
+        when: t(CLUE_WHEN[c.window] || 'whenYear', { year: c.year }), league: c.league, fee: clueMoney(c.fee),
+    }),
+    season: c => t('clueSeason', c),
+    position: c => t('cluePosition', { detail: t(`pos_${c.detail}`) }),
+    caps: c => t('clueCaps', c),
+    peak: c => t('cluePeak', { value: clueMoney(c.value) }),
+    contract: c => t('clueContract', c),
+    body: c => [c.foot && t('clueFoot', { foot: t(`foot_${c.foot}`) }), c.height && t('clueHeight', { height: clueHeight(c.height) })]
+        .filter(Boolean).join(' · '),
+    born: c => t('clueBorn', { country: clueCountry(c.country) }),
+};
+
+function describeClue(clue) {
+    const text = clue && CLUE_TEXT[clue.type];
+    return text ? text(clue) : null;
+}
+
+// Stars are recognised by their careers, lesser-known players by curiosities (Bogdan's choice, 23 Nov 2026).
+function clueTitle(difficulty) {
+    return t(difficulty === 'hard' ? 'clueTrivia' : 'clueScout');
+}
+
+function createClueCard(clue, difficulty) {
+    const text = describeClue(clue);
+    if (!text) return null;
+    const card = document.createElement('section');
+    card.className = 'clue-card';
+    const title = document.createElement('span');
+    title.className = 'clue-title';
+    title.textContent = `💡 ${clueTitle(difficulty)}`;
+    const body = document.createElement('p');
+    body.className = 'clue-text';
+    body.textContent = text; // a clue can come from a link anyone can edit: text only, never HTML
+    card.append(title, body);
+    return card;
+}

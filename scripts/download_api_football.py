@@ -10,11 +10,13 @@ Run from the project folder:
     .venv\\Scripts\\python.exe scripts\\download_api_football.py --squads
 """
 
+import csv
 import json
 import os
 import sys
 import time
 import unicodedata
+from datetime import date
 from pathlib import Path
 
 import httpx
@@ -27,6 +29,9 @@ OUT_DIR = RAW_DIR / "api-football"
 SEASON = "2026-27"
 COUNTRIES = {"PL": "England", "PD": "Spain", "BL1": "Germany", "SA": "Italy", "FL1": "France"}
 PAUSE = 6.5  # the free plan allows 10 requests per minute
+PROFILES_DIR = OUT_DIR / "profiles"
+INCOMPLETE = RAW_DIR / "incomplete.txt"
+PROFILES_PER_DAY = 60  # leaves about 40 of the key's 100 daily requests to the other project
 
 # Words that say what kind of club it is, not which one.
 # fmt: off
@@ -141,13 +146,46 @@ def download_squads(client: httpx.Client, mapping: dict) -> None:
     print(f"\nDownloaded {done}, already saved {skipped}, still missing {left}.")
 
 
+def download_profiles(client: httpx.Client, limit: int) -> None:
+    """One name search per player still without a photo, most valuable first (incomplete.txt is sorted by tier).
+
+    Every answer is saved, empty ones too, so no search is repeated; files saved today count against the limit.
+    """
+    PROFILES_DIR.mkdir(exist_ok=True)
+    today = date.today()
+    used = sum(date.fromtimestamp(p.stat().st_mtime) == today for p in PROFILES_DIR.glob("*.json"))
+    with INCOMPLETE.open(encoding="utf-8", newline="") as f:
+        rows = csv.DictReader(f, delimiter="\t")
+        todo = [r for r in rows if r["search"] and not (PROFILES_DIR / f"{r['fd_id']}.json").exists()]
+    done = 0
+    for row in todo:
+        if used >= limit:
+            break
+        try:
+            data = get(client, "/players/profiles", {"search": row["search"]})
+        except RuntimeError as error:
+            print(f"Stopped at {row['name']}: {error}")
+            break
+        (PROFILES_DIR / f"{row['fd_id']}.json").write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+        used += 1
+        done += 1
+        print(f"{done:>3}. {row['name']} ({row['club']}): '{row['search']}' -> {data['results']} found")
+        time.sleep(PAUSE)
+    print(f"\nSearched {done} now, {used} today (limit {limit}); {len(todo) - done} left for the next runs.")
+
+
 def main() -> None:
     load_dotenv(PROJECT_DIR / ".env")
     key = os.getenv("API_FOOTBALL_KEY")
-    if not key or len(sys.argv) < 2 or sys.argv[1] not in ("--teams", "--squads"):
-        sys.exit("Usage: download_api_football.py --teams | --squads   (needs API_FOOTBALL_KEY in .env)")
+    if not key or len(sys.argv) < 2 or sys.argv[1] not in ("--teams", "--squads", "--profiles"):
+        sys.exit(
+            "Usage: download_api_football.py --teams | --squads | --profiles [limit]   (needs API_FOOTBALL_KEY in .env)"
+        )
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     with httpx.Client(base_url=BASE_URL, headers={"x-apisports-key": key}, timeout=30) as client:
+        if sys.argv[1] == "--profiles":
+            download_profiles(client, int(sys.argv[2]) if len(sys.argv) > 2 else PROFILES_PER_DAY)
+            return
         mapping = team_map(client)
         if sys.argv[1] == "--squads":
             download_squads(client, mapping)

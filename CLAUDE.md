@@ -50,7 +50,7 @@ Pentru jocul 1:
 - `data/` — JSON-ul vechi (2024-25, 1.186 de jucători, cu `tier` și număr curatoriate) — sursă pentru import, apoi iese din joc.
 - `data/raw/` (în `.gitignore`) — ce descarcă scripturile: loturile football-data.org, setul Transfermarkt (`data/raw/transfermarkt/`).
 - `sql/` — `schema.sql` (tabelele de date), `reference_data.sql` (ligile și sezoanele), `game_results.sql` (rundele jucătorilor logați: RLS, drepturi pe coloane, `finish_round()`); toate aplicate, în ordine, de `scripts/apply_schema.py`.
-- `scripts/` + `tests/` — scripturile de date (Python) și testele lor: `download_squads.py` (football-data.org), `download_api_football.py` (poze, numere), `build_season.py` (scrie `data/seasons/2026-27/` + manifestul).
+- `scripts/` + `tests/` — scripturile de date (Python) și testele lor: `download_squads.py` (football-data.org), `download_api_football.py` (poze, numere), `build_season.py` (scrie `data/seasons/2026-27/` + manifestul), `build_clues.py` (faptele pentru indiciul de start, în `data/seasons/2026-27/clues/`; se rulează cu `python -m scripts.build_clues`).
 - `.github/workflows/` — acțiunile GitHub: `keep-supabase-awake.yml` (interogare zilnică, cu secretul `SUPABASE_DB_URL` din setările repo-ului).
 - `images/` — siglele cluburilor și pozele vechi (14 MB).
 - `fonts/` — fontul titlurilor (Barlow Condensed), găzduit în repo, cu licența lui.

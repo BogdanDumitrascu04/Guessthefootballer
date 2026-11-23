@@ -87,6 +87,7 @@ Făcută pe 5 nov, înaintea Supabase, pe datele din JSON (2024-25). Testată lo
   - [x] ID-ul football-data la fiecare jucător din 2026-27 + fișa rundei (`round.js`, cerința lui Bogdan, varianta b) (`685a9f6`)
   - [x] pagina de rezultat: Share duce la `result.html?r=…`, rezumat + „Vezi detalii”, răspunsul după un buton de spoiler (`b6e7460`)
   - [x] punctele (tabelul confirmat de Bogdan) + rândul câștigător fără valori până la spoiler (`1ba642c`)
+- [x] prima pagină: Mbappé (Real Madrid) în locul lui Salah în rândul animat, cerut de Bogdan pe 23 nov (Salah nu mai e la Liverpool în 2026-27); pozele din `images/`, deci fără cereri externe
 - [ ] indiciul de start (Easy/Medium: transferuri din Transfermarkt; Hard: „Știai că?”), din date structurate + șabloane în `i18n.js`; ciclul de învățare la partea de date
 - [ ] **SuperLiga României** (decis 8 nov, de început pe 9 nov, când se resetează cererile API-Football):
   - [ ] lista celor 16 cluburi din 2026-27 (confirmată de Bogdan sau din Wikipedia)
@@ -98,6 +99,14 @@ Făcută pe 5 nov, înaintea Supabase, pe datele din JSON (2024-25). Testată lo
 - [ ] explicația lui Bogdan pentru `download_api_football.py` și pentru schema din `sql/` (regula de aur); fișierele au intrat deja în commitul `095b969`, din greșeală
 - [ ] la următoarea fereastră de transferuri: `download_squads.py`, apoi `download_api_football.py --squads` (după ce se șterg loturile vechi din `data/raw/api-football/`), apoi `build_season.py`
 - [ ] hub-ul: cifrele luate din bază (după Etapa 2)
+- [ ] **niciun jucător din 2026-27 fără poză sau număr** (cerut de Bogdan pe 23 nov, după Ekitike cu „HE” și „—”; decizii în `DECIZII.md`)
+  - [x] inventarul (23 nov): 245 fără poză și 248 fără număr, din 2.664. Motivele: 54 cu numele scris altfel, 184 absenți din loturile API-Football, 7 la alt club, 3 fără număr la API-Football
+  - [x] a doua potrivire (Transfermarkt / numele de familie): conceptul, cerința lui Bogdan, codul + 8 teste, rularea și explicația lui; 54 de jucători legați, fără cereri. A intrat în commitul `46dd8f7`, fără review
+  - [x] căutările API-Football (`download_api_football.py --profiles`), a treia potrivire (data exactă a nașterii), `data/manual_links.csv`, raportul `data/raw/incomplete.txt`; 5 teste noi (40 de teste Python pentru date, verzi), ruff curat (Claude, 23 nov)
+  - [x] ziua 1 (23 nov): 60 de cereri (inclusiv 5 de probă) → 151 fără poză, 157 fără număr. Testat local: Ekitike și Xavi Simons apar cu poză și număr, fără erori în consolă
+  - [ ] commit (Bogdan): `scripts/build_season.py`, `scripts/download_api_football.py`, `tests/test_build_season.py`, `data/seasons/2026-27/`, `data/manual_links.csv`, `docs/`
+  - [ ] zilele 2–3: `download_api_football.py --profiles`, apoi `build_season.py` (134 de căutări rămase; 6 nume comune au mai mult de o pagină de rezultate)
+  - [ ] ce rămâne: corectat de Bogdan în `data/manual_links.csv` (după `data/raw/incomplete.txt`) sau listat cu motivul
 
 ## Etapa 4 — Jocul 2: higher or lower (până la CV)
 - [ ] interogarea: doi jucători la întâmplare din același sezon, cu valorile lor (`market_values` JOIN `players`)
@@ -121,6 +130,14 @@ Făcută pe 5 nov, înaintea Supabase, pe datele din JSON (2024-25). Testată lo
   - [x] **Bogdan:** commit + push (`dd12760`); rulările programate din 21 și 22 nov, verzi. Au pornit pe la 14:45 UTC, nu la 06:17: GitHub întârzie rulările programate, de aceea rulăm zilnic
 - [x] **Bogdan:** client OAuth în Google Cloud Console, aplicația publicată („In production”); Google activat în Supabase, cu adresele de întoarcere salvate; cheile n-au trecut prin chat (22 nov)
 - [ ] politica de confidențialitate actualizată + butonul „Șterge contul”, înainte de lansarea conturilor
+  - [x] `sql/delete_account.sql` (Claude, 23 nov): funcția `delete_my_account()`, `security definer`, fără parametri; șterge jucătorul din `auth.users`, iar rundele pleacă prin `on delete cascade`; doar `authenticated` o poate chema. 2 teste noi (contul și rundele lui Bogdan dispar, ale lui Andrei rămân; un vizitator e refuzat); 67 de teste pe bază verzi
+  - [x] în profil, secțiunea „Contul tău” (Claude, 23 nov): „Șterge contul” în doi pași (confirmare + Renunță), mesaj după ștergere, link spre politică; 4 limbi. Testat local cu baza simulată: confirmarea, renunțarea, eroarea, ștergerea reușită (sesiunea dispare din browser)
+  - [x] `privacy-policy.html` rescrisă (Claude, 23 nov, în engleză, ca până acum): fără cont / cu cont Google; ce primește Supabase de la Google; ce se păstrează pentru fiecare rundă; tokenul din browser și jurnalul de conectări; serverele din Londra (decizia de adecvare UE pentru Regatul Unit, reînnoită până în 2031); de ce și cine vede; cât timp și cum se șterge; drepturile GDPR și ANSPDCP
+  - [x] **Bogdan:** `apply_schema.py` (adaugă `delete_my_account`); providerul **Email** dezactivat în Supabase (verificat de Claude, 23 nov)
+  - [x] testul real (Bogdan, 23 nov): un cont șters din profil. Verificat în bază: contul și toate cele 3 runde ale lui au dispărut, fără runde rămase fără cont; celălalt cont a rămas neatins. S-a șters contul cu 3 runde (cel din capturile de profil), nu cel cu o rundă
+  - [x] explicația lui Bogdan (23 nov): fără parametri, identitatea vine din sesiune (`auth.uid()`), nu din browser; cu `delete_my_account(user_id)` și `security definer`, oricine ar putea șterge contul altcuiva trimițând alt ID; regula e structurală, nu un `if` care se poate uita. Corect
+  - [ ] commit + push (Bogdan), ca politica și butonul să ajungă live
+- [ ] verificarea finală, pe site-ul live: login cu Google, 2 runde, profilul cu punctele corecte; al doilea cont nu vede rundele primului
 - [ ] înregistrare / login (Supabase Auth, Google)
   - [x] commit `game_results` (Bogdan, 23 nov, `4071ff8`; în titlu a intrat din greșeală și „Apoi Commit to master → Push”)
   - [x] butonul de cont în header, pe toate cele 4 pagini, în 4 limbi; `auth.js` + `account.css`; biblioteca `vendor/supabase-js-2.119.0.js` (Claude, 23 nov). Testat local, cu o cheie de probă și o sesiune falsă: desktop și 375 px, fără scroll orizontal, meniul (Escape, click în afară), deconectarea, numele afișat ca text, nu ca HTML. Supabase trimite corect spre Google
@@ -148,7 +165,27 @@ Făcută pe 5 nov, înaintea Supabase, pe datele din JSON (2024-25). Testată lo
   - [ ] statisticile: decis de Bogdan să fie în **SQL**, pe ciclul de învățare (un view cu funcții fereastră pentru streak): conceptul → cerința lui → SQL + teste → explicația lui → review → commit
   - [x] testul lui Bogdan pentru pagina de profil (23 nov): merge, inclusiv runda abandonată. Cerere: punctele totale lângă nume → intră în view-ul de statistici
   - [x] conceptul pentru statistici (Claude, 23 nov): view, agregări cu `filter`, procentul (împărțirea întreagă), streak-ul ca „gaps and islands” (suma cumulată a înfrângerilor cu `sum() over (order by ...)`), `security_invoker` ca RLS să se aplice și prin view
-  - [ ] cerința lui Bogdan pentru statistici + ce lipsea
+  - [x] cerința lui Bogdan pentru statistici (23 nov): un rând pe jucător (ID, puncte, jucate, câștigate, procent, streak curent și cel mai bun); `count(*)`, `count(*) filter (where won)`, `sum(points)`; orice rundă pierdută sau abandonată rupe streak-ul; `security_invoker`; un cont nou are zero, o rundă în alt tab contează ca jucată. Lipsea: **contradicția** dintre „un rând doar pentru cine are runde” și „un cont nou are statistici zero” (un view peste `game_results` nu poate avea rând pentru cine n-are runde → pagina arată zero); capcana împărțirii întregi (`1 / 3 = 0`) și rotunjirea procentului; ordinea rundelor (după `started_at`, cu `id` la egalitate); drepturile pe view (`revoke` / `grant`, ca la tabel); consecința rundei din alt tab (streak-ul curent scade la 0 cât se joacă)
+  - [x] SQL-ul + testele (Claude, 23 nov): `sql/player_stats.sql` (în `apply_schema.py`; `table_names()` numără doar tabelele, nu și view-urile); 14 teste noi în `tests/test_game_results.py`, inclusiv exemplul din concept (`WWLWWWAWW` → 2 și 3) și procentul rotunjit (33 / 67). 65 de teste pe bază verzi, ruff curat. Verificat și invers: fără `security_invoker`, Andrei vedea 2 rânduri, deci testul prinde scurgerea
+  - [x] rularea (Bogdan, 23 nov): 49 de teste verzi; `apply_schema.py` (acum afișează și view-urile) → `player_stats` în baza reală. Verificat de Claude: `security_invoker=true`, doar `authenticated` are `select`, un vizitator primește „permission denied for view”; contul lui Bogdan: 20 de puncte, 2 jucate, 1 câștigată, 50%, streak curent 0, cel mai bun 1
+  - [x] explicația lui Bogdan + 2 întrebări de verificare (23 nov): `streak_group` pentru ✅ ❌ ✅ ✅ A ✅ = 0, 1, 1, 1, 2, 2 → serie curentă 1, cea mai bună 2 (corect, inclusiv faptul că înfrângerea deschide grupul nou); fără `security_invoker`, view-ul citește cu drepturile proprietarului, care trece peste RLS, deci Andrei ar vedea statisticile tuturor (corect). Răspunsurile acoperă cele două părți grele, deci regula de aur e îndeplinită
+  - [x] testul lui Bogdan pentru profilul cu cifre: „arată bine” (23 nov)
+  - [x] review cu alt AI pe `sql/player_stats.sql` (23 nov): 5 observații, verificate de Claude pe baza reală; niciuna nu cere o schimbare. Egalitatea pe `started_at`: teoretică (0 cazuri reale; fiecare rundă pornește în cererea ei, cu `now()` la microsecundă; `id` dă o ordine fixă). Rotunjirea procentului: alegere asumată. Securitatea: fără breșă; RLS pornit și politica de citire există (verificat). Performanța: indexul `(user_id, started_at)` și `(select auth.uid())` existau deja în `game_results.sql`, pe care review-ul nu l-a văzut. Zero pentru contul fără runde: deja tratat în pagină
+  - [ ] commit (Bogdan)
+- ⚠️ commitul `46dd8f7` („login account”, 23 nov 13:50) a ajuns pe GitHub cu push, deci login-ul, salvarea rundelor și profilul sunt **live** înaintea politicii de confidențialitate și a butonului „Șterge contul”
+  - [x] cifrele în profil (Claude, 23 nov, cerute de Bogdan): punctele totale în dreapta numelui și 5 carduri (jucate, câștigate, procent, serie curentă, cea mai bună serie), din `player_stats`; un cont fără runde arată 0. Testat local cu cifre simulate, desktop și 375 px (3 + 2 carduri pe telefon); citit prin RLS din baza reală: fiecare cont își vede doar rândul lui
+  - [x] alegerea contului Google la fiecare conectare (`prompt: select_account`), după întrebarea lui Bogdan despre reconectarea fără cont (23 nov)
+
+## Etapa 8 — Indiciul de start (cerut de Bogdan pe 20 și 23 nov)
+- [x] conceptul (Claude, 23 nov): faptul, nu fraza; fișier separat pe ligă; un fapt pe rundă; indiciul restrânge, nu dezvăluie
+- [x] cerința lui Bogdan (23 nov): transfer + statistici pe Easy/Medium, restul pe Hard; nimic din căsuțe, niciun nume de club; fapt de rezervă; alt fapt la fiecare rundă. Lipsea: rezerva la portari, sumele exacte, indiciul în fișă → confirmate (`DECIZII.md`)
+- [x] `appearances.csv.gz` descărcat cu acordul lui (45 MB, 2025-26 complet) + inventarul în `SURSE-DATE.md`
+- [x] `scripts/build_clues.py` + 13 teste (Claude, 23 nov) → `data/seasons/2026-27/clues/`; Easy 100%, Medium 95–100% cu transfer sau statistici; Hard 85–93% cu cel puțin un fapt
+- [x] fișa rundei versiunea 2 (cu indiciul) + 3 teste; indiciul în joc (deasupra căutării) și pe pagina de rezultat, 4 limbi; testat local, desktop și telefon
+- [x] cei 10 jucători aleși de Bogdan (Saka, Gyökeres, Mbappé, Kane, Pedri, Barella, Wirtz, Dembélé, Rice, Lamine Yamal): faptele afișate; Pedri n-avea transfer → reparat (împrumutul dus-întors, liga din meciurile de atunci)
+- [ ] Bogdan verifică faptele celor 10 pe transfermarkt.com
+- [ ] explicația lui Bogdan pentru `build_clues.py` (regula de aur) + 1–2 întrebări → review cu alt AI → commit (fără push până la politica de confidențialitate din Etapa 7)
+- [ ] după sesiunea cu pozele: jucătorii fără niciun fapt (7–15% pe Hard), din profilurile API-Football
 
 ## După
 - provocarea zilnică (același jucător pentru toți), clasament, „joacă același jucător” din pagina de rezultat, share-ul întregului istoric din profil, modul Icons

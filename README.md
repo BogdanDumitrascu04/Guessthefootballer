@@ -52,6 +52,7 @@ Transfermarkt market values. **2024/25** is the original hand-curated season.
 - **Season selection** — the current season (2026/27) or 2024/25; a new season is one script run, zero code changes
 - **Autocomplete search** with player photos and club badges, keyboard navigation (Enter picks the highlighted name), and no need for accents ("odegaard" finds "Ødegaard")
 - **Responsive layout** for phones and desktops
+- **An opening clue** for every round, built from data: a scout report on Easy and Medium (last transfer, last season's numbers), a "Did you know?" on Hard (exact position, caps, peak value, foot and height...)
 - **Hints that unlock** after 2 and 4 guesses (club, then age), so the game stays about deduction
 - **Points** for every win: 60 / 120 / 240 at the first guess on Easy / Medium / Hard, one step less for each extra guess or hint
 - **Share your result** as a spoiler-free emoji grid with a link to a result page (summary, every guess on request, the answer behind a spoiler button) (🟩⬜…): the share sheet on phones, the clipboard on desktop

@@ -29,9 +29,9 @@
    "team": "1. FC Köln",
    "position": "Goalkeeper",
    "age": 29,
-   "number": null,
+   "number": 44,
    "nationality": "Germany",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/24892.png",
    "tier": 3
   },
   {
@@ -73,9 +73,9 @@
    "team": "1. FC Köln",
    "position": "Defender",
    "age": 30,
-   "number": null,
+   "number": 4,
    "nationality": "Germany",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/90641.png",
    "tier": 3
   },
   {
@@ -161,9 +161,9 @@
    "team": "1. FC Köln",
    "position": "Defender",
    "age": 22,
-   "number": null,
+   "number": 38,
    "nationality": "Germany",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/344283.png",
    "tier": 3
   },
   {
@@ -172,9 +172,9 @@
    "team": "1. FC Köln",
    "position": "Defender",
    "age": 21,
-   "number": null,
+   "number": 4,
    "nationality": "Germany",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/392761.png",
    "tier": 3
   },
   {
@@ -469,9 +469,9 @@
    "team": "1899 Hoffenheim",
    "position": "Defender",
    "age": 25,
-   "number": null,
+   "number": 3,
    "nationality": "Brazil",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/304686.png",
    "tier": 3
   },
   {
@@ -854,9 +854,9 @@
    "team": "Bayer Leverkusen",
    "position": "Midfielder",
    "age": 17,
-   "number": null,
+   "number": 23,
    "nationality": "Germany",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/503467.png",
    "tier": 3
   },
   {
@@ -865,9 +865,9 @@
    "team": "Bayer Leverkusen",
    "position": "Midfielder",
    "age": 19,
-   "number": null,
+   "number": 45,
    "nationality": "Germany",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/445675.png",
    "tier": 3
   },
   {
@@ -1239,9 +1239,9 @@
    "team": "Borussia Dortmund",
    "position": "Midfielder",
    "age": 18,
-   "number": null,
+   "number": 40,
    "nationality": "Germany",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/479116.png",
    "tier": 3
   },
   {
@@ -1987,9 +1987,9 @@
    "team": "Hamburger SV",
    "position": "Defender",
    "age": 29,
-   "number": null,
+   "number": 27,
    "nationality": "Libya",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/324019.png",
    "tier": 3
   },
   {
@@ -2009,9 +2009,9 @@
    "team": "Hamburger SV",
    "position": "Defender",
    "age": 21,
-   "number": null,
+   "number": 3,
    "nationality": "Germany",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/380937.png",
    "tier": 3
   },
   {
@@ -2504,9 +2504,9 @@
    "team": "VfB Stuttgart",
    "position": "Forward",
    "age": 21,
-   "number": null,
+   "number": 26,
    "nationality": "Algeria",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/334879.png",
    "tier": 2
   },
   {
@@ -3032,9 +3032,9 @@
    "team": "FSV Mainz 05",
    "position": "Midfielder",
    "age": 28,
-   "number": null,
+   "number": 5,
    "nationality": "Germany",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/25307.png",
    "tier": 3
   },
   {
@@ -3098,9 +3098,9 @@
    "team": "FSV Mainz 05",
    "position": "Midfielder",
    "age": 27,
-   "number": null,
+   "number": 20,
    "nationality": "South Korea",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/26519.png",
    "tier": 3
   },
   {
@@ -3210,7 +3210,7 @@
    "age": 19,
    "number": null,
    "nationality": "Germany",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/467926.png",
    "tier": 3
   },
   {
@@ -3318,9 +3318,9 @@
    "team": "FC Augsburg",
    "position": "Midfielder",
    "age": 29,
-   "number": null,
+   "number": 18,
    "nationality": "Croatia",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/14395.png",
    "tier": 3
   },
   {
@@ -3439,9 +3439,9 @@
    "team": "FC Augsburg",
    "position": "Forward",
    "age": 32,
-   "number": null,
+   "number": 9,
    "nationality": "Benin",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/3395.png",
    "tier": 3
   },
   {
@@ -3450,9 +3450,9 @@
    "team": "FC Augsburg",
    "position": "Forward",
    "age": 24,
-   "number": null,
+   "number": 7,
    "nationality": "Congo DR",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/129670.png",
    "tier": 3
   },
   {
@@ -3725,9 +3725,9 @@
    "team": "SC Freiburg",
    "position": "Forward",
    "age": 28,
-   "number": null,
+   "number": 24,
    "nationality": "Kosovo",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/25383.png",
    "tier": 3
   },
   {
@@ -4088,9 +4088,9 @@
    "team": "Borussia Mönchengladbach",
    "position": "Forward",
    "age": 26,
-   "number": null,
+   "number": 70,
    "nationality": "Czech Republic",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/80434.png",
    "tier": 3
   },
   {
@@ -4319,9 +4319,9 @@
    "team": "Eintracht Frankfurt",
    "position": "Midfielder",
    "age": 21,
-   "number": null,
+   "number": 6,
    "nationality": "Denmark",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/339874.png",
    "tier": 2
   },
   {
@@ -4363,9 +4363,9 @@
    "team": "Eintracht Frankfurt",
    "position": "Forward",
    "age": 26,
-   "number": null,
+   "number": 24,
    "nationality": "Germany",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/162771.png",
    "tier": 3
   },
   {
@@ -4847,9 +4847,9 @@
    "team": "SC Paderborn 07",
    "position": "Defender",
    "age": 23,
-   "number": null,
+   "number": 25,
    "nationality": "Germany",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/327987.png",
    "tier": 3
   },
   {
@@ -4869,9 +4869,9 @@
    "team": "SC Paderborn 07",
    "position": "Defender",
    "age": 26,
-   "number": null,
+   "number": 23,
    "nationality": "Germany",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/373443.png",
    "tier": 3
   },
   {
@@ -4924,9 +4924,9 @@
    "team": "SC Paderborn 07",
    "position": "Midfielder",
    "age": 28,
-   "number": null,
+   "number": 30,
    "nationality": "Germany",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/108640.png",
    "tier": 3
   },
   {
@@ -5606,9 +5606,9 @@
    "team": "RB Leipzig",
    "position": "Midfielder",
    "age": 21,
-   "number": null,
+   "number": 48,
    "nationality": "Belgium",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/340154.png",
    "tier": 2
   },
   {
@@ -5650,9 +5650,9 @@
    "team": "RB Leipzig",
    "position": "Midfielder",
    "age": 19,
-   "number": null,
+   "number": 47,
    "nationality": "Germany",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/469695.png",
    "tier": 3
   },
   {

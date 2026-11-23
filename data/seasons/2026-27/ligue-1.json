@@ -207,7 +207,7 @@
    "age": 25,
    "number": null,
    "nationality": "France",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/84128.png",
    "tier": 2
   },
   {
@@ -1459,9 +1459,9 @@
    "team": "Lille",
    "position": "Forward",
    "age": 24,
-   "number": null,
+   "number": 7,
    "nationality": "Morocco",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/306979.png",
    "tier": 2
   },
   {
@@ -2748,7 +2748,7 @@
    "age": 26,
    "number": null,
    "nationality": "Ghana",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/196187.png",
    "tier": 2
   },
   {
@@ -4484,9 +4484,9 @@
    "team": "Monaco",
    "position": "Defender",
    "age": 30,
-   "number": null,
+   "number": 6,
    "nationality": "Germany",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/261.png",
    "tier": 2
   },
   {
@@ -4539,9 +4539,9 @@
    "team": "Monaco",
    "position": "Defender",
    "age": 21,
-   "number": null,
+   "number": 13,
    "nationality": "France",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/371916.png",
    "tier": 2
   },
   {
@@ -4759,9 +4759,9 @@
    "team": "Strasbourg",
    "position": "Defender",
    "age": 24,
-   "number": null,
+   "number": 12,
    "nationality": "Ireland",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/147835.png",
    "tier": 2
   },
   {
@@ -4957,9 +4957,9 @@
    "team": "Strasbourg",
    "position": "Forward",
    "age": 24,
-   "number": null,
+   "number": 9,
    "nationality": "Argentina",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/390742.png",
    "tier": 1
   },
   {

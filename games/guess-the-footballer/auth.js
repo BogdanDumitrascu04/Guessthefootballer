@@ -21,7 +21,11 @@ const ICONS = {
 function signIn() {
     const back = new URL(location.href);
     back.hash = '';
-    supabaseClient.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: back.href } });
+    // Google asks which account to use every time: without it, a player could never switch to another Google account.
+    supabaseClient.auth.signInWithOAuth({
+        provider: 'google',
+        options: { redirectTo: back.href, queryParams: { prompt: 'select_account' } },
+    });
 }
 
 function displayName(user) {

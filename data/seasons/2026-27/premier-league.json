@@ -1483,9 +1483,9 @@
    "team": "Liverpool",
    "position": "Goalkeeper",
    "age": 25,
-   "number": null,
+   "number": 1,
    "nationality": "Czech Republic",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/162687.png",
    "tier": 3
   },
   {
@@ -1714,9 +1714,9 @@
    "team": "Liverpool",
    "position": "Forward",
    "age": 24,
-   "number": null,
+   "number": 22,
    "nationality": "France",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/174565.png",
    "tier": 1
   },
   {
@@ -3144,9 +3144,9 @@
    "team": "Tottenham",
    "position": "Midfielder",
    "age": 23,
-   "number": null,
+   "number": 7,
    "nationality": "Netherlands",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/162016.png",
    "tier": 2
   },
   {

@@ -2,18 +2,22 @@
 
 - squads, full names, nationality, date of birth: football-data.org;
 - photo and shirt number: API-Football, linked to each player by club, name and age; a second pass
-  links the rest by club, age and either the Transfermarkt name or the surname;
+  links the rest by club, age and either the Transfermarkt name or the surname; a third pass uses the
+  API-Football name searches (download_api_football.py --profiles) and the exact birth date;
+  data/manual_links.csv, filled by hand, has the last word;
 - tier: suggested from the latest Transfermarkt market value, ranked within the league.
 
 Run from the project folder (after download_squads.py and download_api_football.py):
     .venv\\Scripts\\python.exe scripts\\build_season.py
-The pairs found by the second pass are listed in data/raw/second_pass.txt, for checking by hand.
+The links found after the first pass are listed in data/raw/second_pass.txt, for checking by hand;
+the players still without photo or number in data/raw/incomplete.txt.
 """
 
 import csv
 import gzip
 import html
 import json
+import re
 import unicodedata
 from collections import Counter, defaultdict
 from datetime import date
@@ -27,6 +31,10 @@ SEASON = "2026-27"
 OUT_DIR = PROJECT_DIR / "data" / "seasons" / SEASON
 MANIFEST = PROJECT_DIR / "data" / "manifest.json"
 SECOND_PASS_REPORT = RAW_DIR / "second_pass.txt"
+INCOMPLETE_REPORT = RAW_DIR / "incomplete.txt"
+PROFILES_DIR = AF_DIR / "profiles"
+MANUAL_LINKS = PROJECT_DIR / "data" / "manual_links.csv"
+AF_PHOTO = "https://media.api-sports.io/football/players/{}.png"
 
 LEAGUES = {
     "PL": ("premier-league", "Premier League"),
@@ -143,6 +151,92 @@ def match_leftovers(
     }
 
 
+def search_term(name: str) -> str | None:
+    """The last run of at least 4 plain letters, usually the surname: what the API-Football search accepts.
+
+    The API ignores accents ("jaros" finds Jaroš) but not letters like ø, so the term stops at them ("jlund").
+    """
+    plain = "".join(c for c in unicodedata.normalize("NFKD", name) if not unicodedata.combining(c))
+    runs = [r for r in re.findall(r"[A-Za-z0-9]+", plain) if len(r) >= 4]
+    return runs[-1].lower() if runs else None
+
+
+def load_profiles() -> dict[int, list[dict]]:
+    """football-data.org ID -> the players API-Football found for his search term (one file per player)."""
+    found = {}
+    for path in PROFILES_DIR.glob("*.json"):
+        if path.stem.isdigit():
+            response = json.loads(path.read_text(encoding="utf-8"))["response"]
+            found[int(path.stem)] = [item["player"] for item in response]
+    return found
+
+
+def match_profiles(
+    fd_squad: list[dict], matched: dict, profiles: dict, af_players: list[dict], af_club_of: dict, club_id: int
+) -> dict[int, tuple[dict, str]]:
+    """Third pass for one club, from the saved searches: the exact birth date and the name rule of the first pass.
+
+    The full name rule, not just the surname, because twins share both (Oscar and Emil Højlund).
+    A player listed in another club's squad keeps only the photo, because his number there is not his number here.
+    """
+    taken = {af["id"] for af in matched.values()}
+    in_squad = {af["id"]: af for af in af_players}
+    links = {}
+    for p in fd_squad:
+        born = (p.get("dateOfBirth") or "")[:10]
+        if p["id"] in matched or not born:
+            continue
+        found = []
+        for pr in profiles.get(p["id"], []):
+            full_name = " ".join(filter(None, (pr.get("firstname"), pr.get("lastname"))))
+            same_name = any(same_person(p["name"], n) for n in (pr.get("name"), full_name) if n)
+            if (pr.get("birth") or {}).get("date") == born and same_name:
+                found.append(pr)
+        if len(found) != 1 or found[0]["id"] in taken:
+            continue
+        pr = found[0]
+        if pr["id"] in in_squad:
+            links[p["id"]] = (in_squad[pr["id"]], "birth date")
+        elif af_club_of.get(pr["id"], club_id) != club_id:
+            links[p["id"]] = ({k: pr.get(k) for k in ("id", "name", "age", "photo")}, "birth date, other club")
+        else:
+            links[p["id"]] = ({k: pr.get(k) for k in ("id", "name", "age", "number", "photo")}, "birth date")
+    used = Counter(af["id"] for af, _ in links.values())
+    return {fd_id: link for fd_id, link in links.items() if used[link[0]["id"]] == 1}
+
+
+def load_manual_links() -> dict[int, dict]:
+    """football-data.org ID -> {api_football_id, number}, from the CSV filled by hand (Excel, ";")."""
+    if not MANUAL_LINKS.exists():
+        return {}
+    with MANUAL_LINKS.open(encoding="utf-8-sig", newline="") as f:
+        rows = list(csv.DictReader(f, delimiter=";"))
+    links = {}
+    for line, row in enumerate(rows, 2):
+        af_id, number = (row.get(k, "").strip() for k in ("api_football_id", "number"))
+        if not row["fd_id"].strip().isdigit() or (af_id and not af_id.isdigit()) or (number and not number.isdigit()):
+            raise ValueError(f"{MANUAL_LINKS.name}, line {line}: IDs and numbers must be whole numbers")
+        if number and not 1 <= int(number) <= 99:
+            raise ValueError(f"{MANUAL_LINKS.name}, line {line}: the number must be 1-99")
+        links[int(row["fd_id"])] = {
+            "api_football_id": int(af_id) if af_id else None,
+            "number": int(number) if number else None,
+        }
+    return links
+
+
+def manual_entry(row: dict, af: dict, af_players: list[dict]) -> dict:
+    """The hand-filled row wins; an empty cell keeps what the matching found."""
+    entry = dict(af)
+    if row["api_football_id"]:
+        in_squad = next((a for a in af_players if a["id"] == row["api_football_id"]), None)
+        entry = dict(in_squad) if in_squad else {"id": row["api_football_id"]}
+        entry.setdefault("photo", AF_PHOTO.format(row["api_football_id"]))
+    if row["number"]:
+        entry["number"] = row["number"]
+    return entry
+
+
 def assign_tiers(values: dict[str, int | None]) -> dict[str, int]:
     """Player key -> tier, by market value rank. No known value: tier 3."""
     ranked = sorted((v, k) for k, v in values.items() if v)
@@ -212,36 +306,59 @@ def player_entry(fd: dict, af: dict, team: str, today: date) -> dict:
     }
 
 
-def build_league(code: str, today: date, team_map: dict, by_birth: dict, values: dict) -> tuple[dict, list[dict]]:
-    """(the league file, the pairs found by the second pass)."""
+def squad_players(af_team_id: int) -> list[dict]:
+    squad_file = AF_DIR / f"squad_{af_team_id}.json"
+    if not squad_file.exists():
+        return []
+    response = json.loads(squad_file.read_text(encoding="utf-8"))["response"]
+    return response[0]["players"] if response else []
+
+
+def build_league(code: str, today: date, team_map: dict, sources: dict) -> tuple[dict, list[dict], list[dict]]:
+    """(the league file, the links found after the first pass, the players still without photo or number).
+
+    sources: by_birth and values (Transfermarkt), profiles, af_club_of (API-Football player ID -> club ID), manual.
+    """
     league_id, league_name = LEAGUES[code]
     fd = json.loads((RAW_DIR / f"{code}_{SEASON}.json").read_text(encoding="utf-8"))
-    teams, players, worth, second_pass = {}, [], {}, []
+    teams, players, worth, extra_links, incomplete = {}, [], {}, [], []
     for team in fd["teams"]:
         af_team = team_map[str(team["id"])]
-        squad_file = AF_DIR / f"squad_{af_team['id']}.json"
-        af_players = []
-        if squad_file.exists():
-            response = json.loads(squad_file.read_text(encoding="utf-8"))["response"]
-            af_players = response[0]["players"] if response else []
+        af_players = squad_players(af_team["id"])
         matched = match_players(team["squad"], af_players, today)
-        leftovers = match_leftovers(team["squad"], af_players, matched, by_birth, today)
-        matched |= {fd_id: af for fd_id, (af, _) in leftovers.items()}
+        extra = match_leftovers(team["squad"], af_players, matched, sources["by_birth"], today)
+        matched |= {fd_id: af for fd_id, (af, _) in extra.items()}
+        found = match_profiles(
+            team["squad"], matched, sources["profiles"], af_players, sources["af_club_of"], af_team["id"]
+        )
+        extra |= found
+        matched |= {fd_id: af for fd_id, (af, _) in found.items()}
         teams[af_team["name"]] = af_team["logo"]
         for p in team["squad"]:
-            players.append(player_entry(p, matched.get(p["id"], {}), af_team["name"], today))
-            worth[len(players) - 1] = market_value(p, by_birth, values)
-            if p["id"] in leftovers:
-                af, method = leftovers[p["id"]]
-                second_pass.append(
-                    {"league": league_name, "club": af_team["name"], "method": method, "fd": p, "af": af}
+            af = matched.get(p["id"], {})
+            if p["id"] in sources["manual"]:
+                af = manual_entry(sources["manual"][p["id"]], af, af_players)
+                extra[p["id"]] = (af, "manual")
+            entry = player_entry(p, af, af_team["name"], today)
+            players.append(entry)
+            worth[len(players) - 1] = market_value(p, sources["by_birth"], sources["values"])
+            if p["id"] in extra:
+                link, method = extra[p["id"]]
+                extra_links.append(
+                    {"league": league_name, "club": af_team["name"], "method": method, "fd": p, "af": link}
                 )
+            missing = [k for k in ("photo", "number") if entry[k] is None]
+            if missing:
+                incomplete.append({"league": code, "club": af_team["name"], "fd": p, "missing": missing})
     tiers = assign_tiers(worth)
     for index, p in enumerate(players):
         p["tier"] = tiers[index]
+    tier_of = {p["id"]: p["tier"] for p in players}
+    for row in incomplete:
+        row["tier"] = tier_of[row["fd"]["id"]]
     unique_names(players)
     league = {"id": league_id, "name": league_name, "season": SEASON, "teams": teams, "players": players}
-    return league, second_pass
+    return league, extra_links, incomplete
 
 
 def write_second_pass(pairs: list[dict], today: date) -> None:
@@ -251,9 +368,23 @@ def write_second_pass(pairs: list[dict], today: date) -> None:
         fd, af = pair["fd"], pair["af"]
         lines.append(
             f"{pair['league']}\t{pair['club']}\t{pair['method']}\t{fd['name']}\t{age_on(fd.get('dateOfBirth'), today)}"
-            f"\t{html.unescape(af['name'])}\t{af.get('age')}\t{af.get('number') or ''}"
+            f"\t{html.unescape(af.get('name') or '')}\t{af.get('age') or ''}\t{af.get('number') or ''}"
         )
     SECOND_PASS_REPORT.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+def write_incomplete(rows: list[dict]) -> None:
+    """Who is still missing a photo or a number; download_api_football.py --profiles searches the "search" column."""
+    lines = ["league\tclub\tfd_id\tname\tborn\ttier\tmissing\tsearched\tsearch"]
+    for row in sorted(rows, key=lambda r: (r["tier"], r["league"], r["club"])):
+        fd = row["fd"]
+        searched = "yes" if (PROFILES_DIR / f"{fd['id']}.json").exists() else ""
+        term = search_term(fd["name"]) if "photo" in row["missing"] else ""
+        lines.append(
+            f"{row['league']}\t{row['club']}\t{fd['id']}\t{fd['name']}\t{(fd.get('dateOfBirth') or '')[:10]}"
+            f"\t{row['tier']}\t{' + '.join(row['missing'])}\t{searched}\t{term or ''}"
+        )
+    INCOMPLETE_REPORT.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def update_manifest() -> None:
@@ -271,11 +402,20 @@ def main() -> None:
     today = date.today()
     team_map = json.loads((AF_DIR / "team_map.json").read_text(encoding="utf-8"))
     by_birth, values = load_market_values(today)
+    af_club_of = {af["id"]: team["id"] for team in team_map.values() for af in squad_players(team["id"])}
+    sources = {
+        "by_birth": by_birth,
+        "values": values,
+        "profiles": load_profiles(),
+        "af_club_of": af_club_of,
+        "manual": load_manual_links(),
+    }
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    all_pairs = []
+    all_pairs, all_incomplete = [], []
     for code in LEAGUES:
-        data, pairs = build_league(code, today, team_map, by_birth, values)
+        data, pairs, incomplete = build_league(code, today, team_map, sources)
         all_pairs += pairs
+        all_incomplete += incomplete
         path = OUT_DIR / f"{data['id']}.json"
         path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
         players = data["players"]
@@ -285,14 +425,24 @@ def main() -> None:
             f"{data['name']:<15} {len(players):>4} players, {complete:>4} with photo + number "
             f"({100 * complete / len(players):.0f}%), tiers 1/2/3: {tiers}"
         )
-    print(f"\nSecond pass (list in {SECOND_PASS_REPORT.relative_to(PROJECT_DIR)}):")
+    print(f"\nLinked after the first pass (list in {SECOND_PASS_REPORT.relative_to(PROJECT_DIR)}):")
     for _, name in LEAGUES.values():
         methods = Counter(p["method"] for p in all_pairs if p["league"] == name)
         print(
-            f"{name:<15} {methods.total():>3} linked: {methods['transfermarkt']} by Transfermarkt name, "
-            f"{methods['surname']} by surname"
+            f"{name:<15} {methods.total():>3}: {methods['transfermarkt']} Transfermarkt name, "
+            f"{methods['surname']} surname, {methods['birth date']} birth date, "
+            f"{methods['birth date, other club']} birth date at another club (photo only), {methods['manual']} manual"
         )
+    unknown = set(sources["manual"]) - {p["fd"]["id"] for p in all_pairs if p["method"] == "manual"}
+    if unknown:
+        print(f"Not in any 2026-27 squad, check {MANUAL_LINKS.name}: {sorted(unknown)}")
     write_second_pass(all_pairs, today)
+    write_incomplete(all_incomplete)
+    missing_photo = sum("photo" in r["missing"] for r in all_incomplete)
+    print(
+        f"\nStill without photo: {missing_photo}, without number: {sum('number' in r['missing'] for r in all_incomplete)}"
+        f" (list in {INCOMPLETE_REPORT.relative_to(PROJECT_DIR)})"
+    )
     update_manifest()
     print(f"\nWritten to {OUT_DIR}; manifest default season: {SEASON}")
 

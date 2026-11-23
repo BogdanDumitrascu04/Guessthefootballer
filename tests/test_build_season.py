@@ -2,17 +2,24 @@
 
 from datetime import date
 
+import pytest
+
+from scripts import build_season
 from scripts.build_season import (
     age_on,
     assign_tiers,
     best_age,
+    load_manual_links,
+    manual_entry,
     market_value,
     match_leftovers,
     match_players,
+    match_profiles,
     player_entry,
     position,
     same_person,
     same_surname,
+    search_term,
     tm_player,
     unique_names,
 )
@@ -203,3 +210,69 @@ def test_second_pass_links_only_unique_pairs():
         {"id": 2, "name": "Tobi Azeez", "dateOfBirth": "2001-09-01"},
     ]
     assert second_pass(one_candidate_wanted_twice, [{"id": 10, "name": "O. Azeez", "age": 25}]) == {}
+
+
+def test_search_terms_are_plain_letters():
+    assert search_term("Vítězslav Jaroš") == "jaros"
+    assert search_term("Oscar Højlund") == "jlund"
+    assert search_term("Anass Salah-Eddine") == "eddine"
+    assert search_term("Juma Bah") == "juma"  # the API needs 4 letters at least
+    assert search_term("Ji-soo Kim") is None
+
+
+def profile(af_id, name, born, number=None):
+    first, last = name.split(" ", 1)
+    return {
+        "id": af_id,
+        "name": f"{first[0]}. {last}",
+        "firstname": first,
+        "lastname": last,
+        "age": 24,
+        "birth": {"date": born},
+        "number": number,
+        "photo": f"https://media.api-sports.io/football/players/{af_id}.png",
+    }
+
+
+EKITIKE = {"id": 1, "name": "Hugo Ekitike", "dateOfBirth": "2002-06-20"}
+
+
+def test_third_pass_needs_the_exact_birth_date():
+    found = {1: [profile(174565, "Hugo Ekitike", "2002-06-20", 22), profile(9, "Hugo Ekitike", "1980-01-01", 9)]}
+    link, method = match_profiles([EKITIKE], {}, found, [], {}, 40)[1]
+    assert (link["number"], link["photo"], method) == (22, found[1][0]["photo"], "birth date")
+    wrong_day = {1: [profile(174565, "Hugo Ekitike", "2002-06-21", 22)]}
+    assert match_profiles([EKITIKE], {}, wrong_day, [], {}, 40) == {}
+    twins = {1: [profile(5, "Hugo Ekitike", "2002-06-20"), profile(6, "Hugo Ekitike", "2002-06-20")]}
+    assert match_profiles([EKITIKE], {}, twins, [], {}, 40) == {}
+
+
+def test_twins_share_the_birth_date_and_surname_but_not_the_first_name():
+    emil = {"id": 2, "name": "Emil Højlund", "dateOfBirth": "2005-01-04"}
+    found = {2: [profile(339874, "Oscar Højlund", "2005-01-04", 6)]}
+    assert match_profiles([emil], {}, found, [], {339874: 50}, 40) == {}
+
+
+def test_third_pass_prefers_the_squad_and_distrusts_another_club():
+    squad = [{"id": 174565, "name": "H. Ekitike", "age": 24, "number": 22, "position": "Attacker"}]
+    found = {1: [profile(174565, "Hugo Ekitike", "2002-06-20", 9)]}
+    assert match_profiles([EKITIKE], {}, found, squad, {174565: 40}, 40)[1] == (squad[0], "birth date")
+    link, method = match_profiles([EKITIKE], {}, found, [], {174565: 50}, 40)[1]
+    assert method == "birth date, other club" and "number" not in link and link["photo"]
+    assert match_profiles([EKITIKE], {2: {"id": 174565}}, found, [], {}, 40) == {}  # taken by another player
+
+
+def test_manual_links_win(tmp_path, monkeypatch):
+    csv_file = tmp_path / "manual_links.csv"
+    header = "fd_id;name;api_football_id;number;note\n"
+    csv_file.write_text(header + "7;A;284300;;\n8;B;;19;youth\n", encoding="utf-8-sig")
+    monkeypatch.setattr(build_season, "MANUAL_LINKS", csv_file)
+    links = load_manual_links()
+    assert links == {7: {"api_football_id": 284300, "number": None}, 8: {"api_football_id": None, "number": 19}}
+    squad = [{"id": 284300, "name": "Álvaro Fernández", "number": 18, "photo": "x.png"}]
+    assert manual_entry(links[7], {}, squad) == squad[0]
+    assert manual_entry(links[7], {}, [])["photo"] == "https://media.api-sports.io/football/players/284300.png"
+    assert manual_entry(links[8], {"photo": "y.png", "number": None}, []) == {"photo": "y.png", "number": 19}
+    csv_file.write_text(header + "8;B;;123;\n", encoding="utf-8-sig")
+    with pytest.raises(ValueError):
+        load_manual_links()

@@ -39,6 +39,19 @@ async function saveRoundEnd(roundId, round) {
     return points;
 }
 
+const NO_STATS = { total_points: 0, rounds_played: 0, rounds_won: 0, win_percent: 0, current_streak: 0, best_streak: 0 };
+
+// The player_stats view (sql/player_stats.sql) has no row for a player who has not played yet: that is all zeros.
+async function loadPlayerStats() {
+    const { data, error } = await supabaseClient
+        .from('player_stats')
+        .select(Object.keys(NO_STATS).join(', '))
+        .eq('user_id', currentUser.id)
+        .maybeSingle();
+    if (error) throw error;
+    return data ?? NO_STATS;
+}
+
 // Newest first. The policies already keep other players' rounds out; the filter lets the index do the work.
 async function loadRoundHistory(limit = 100) {
     const { data, error } = await supabaseClient

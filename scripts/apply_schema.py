@@ -15,7 +15,10 @@ import psycopg
 from dotenv import load_dotenv
 
 PROJECT_DIR = Path(__file__).resolve().parent.parent
-SQL_FILES = [PROJECT_DIR / "sql" / name for name in ("schema.sql", "reference_data.sql", "game_results.sql")]
+SQL_FILES = [
+    PROJECT_DIR / "sql" / name
+    for name in ("schema.sql", "reference_data.sql", "game_results.sql", "player_stats.sql", "delete_account.sql")
+]
 
 
 def apply_schema(conn: psycopg.Connection) -> None:
@@ -25,8 +28,10 @@ def apply_schema(conn: psycopg.Connection) -> None:
 
 
 def table_names(conn: psycopg.Connection) -> list[str]:
+    """Tables only: views such as player_stats store nothing."""
     rows = conn.execute(
-        "select table_name from information_schema.tables where table_schema = current_schema() order by table_name"
+        "select table_name from information_schema.tables"
+        " where table_schema = current_schema() and table_type = 'BASE TABLE' order by table_name"
     ).fetchall()
     return [name for (name,) in rows]
 
@@ -42,7 +47,11 @@ def main() -> None:
         conn.execute("set local search_path to public, pg_temp")
         apply_schema(conn)
         names = table_names(conn)
+        views = [
+            v for (v,) in conn.execute("select table_name from information_schema.views where table_schema = 'public'")
+        ]
     print(f"Schema aplicată. Tabele în bază ({len(names)}): {', '.join(names)}")
+    print(f"View-uri ({len(views)}): {', '.join(views)}")
 
 
 if __name__ == "__main__":

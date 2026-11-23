@@ -80,6 +80,7 @@ function renderSummary() {
         el('p', 'result-outcome', won ? t('resultWon', { n: tries, max: round.max }) : t('resultLost', { max: round.max })),
         el('p', 'result-points', t('pointsLine', { n: roundPoints(round) })),
         el('p', 'result-hints', hintNames.length ? t('resultHints', { list: hintNames.join(', ') }) : t('resultNoHints')),
+        ...[createClueCard(round.clue, round.difficulty)].filter(Boolean),
         createMiniGrid(),
     );
 }

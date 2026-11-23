@@ -8,6 +8,12 @@ const HINTS = [
     { key: 'team', after: 2 },
     { key: 'age', after: 4 },
 ];
+// Facts for the opening clue, by difficulty; "body" (foot and height) is the fallback, since almost everyone has it.
+const CLUES_BY_DIFFICULTY = {
+    easy: ['transfer', 'season'],
+    medium: ['transfer', 'season'],
+    hard: ['position', 'caps', 'peak', 'contract', 'body', 'born'],
+};
 // Letters that Unicode normalization does not reduce to a plain one.
 const SPECIAL_LETTERS = { ø: 'o', æ: 'ae', œ: 'oe', ß: 'ss', ł: 'l', đ: 'd', ð: 'd', þ: 'th', ı: 'i' };
 
@@ -17,6 +23,8 @@ const requestedSeason = params.get('season');
 const difficulty = TARGET_TIERS[params.get('difficulty')] ? params.get('difficulty') : 'medium';
 
 let league, players, targetPool, targetPlayer;
+let clues = {}; // player ID -> facts; seasons without a clues file simply have none
+let currentClue = null;
 let lastRound = null; // what the result page and the account receive
 let roundStart = null; // the promise of this round's row in the account
 let saveState = null; // 'saving', 'saved', 'failed' or 'signedOut', shown under the points
@@ -40,6 +48,9 @@ async function loadLeague() {
     const info = manifest.leagues.find(l => l.id === requestedLeague) || manifest.leagues[0];
     const season = info.seasons.includes(requestedSeason) ? requestedSeason : manifest.defaultSeason;
     league = await getJson(`data/seasons/${season}/${info.id}.json`);
+    clues = (manifest.clueSeasons || []).includes(season)
+        ? await getJson(`data/seasons/${season}/clues/${info.id}.json`).then(data => data.players, () => ({}))
+        : {};
     league.info = info;
     league.seasonUsed = season;
     players = league.players;
@@ -87,6 +98,7 @@ function startRound() {
     message = null;
     saveState = null;
     targetPlayer = targetPool[Math.floor(Math.random() * targetPool.length)];
+    currentClue = pickClue(targetPlayer);
     // Saved as soon as it starts, so leaving the page counts as a loss instead of erasing it.
     roundStart = saveRoundStart({ league: league.info.id, season: league.seasonUsed, difficulty });
     roundStart.catch(() => {}); // a failure is reported when the round ends; an abandoned round has nobody to tell
@@ -96,6 +108,14 @@ function startRound() {
     closeSuggestions();
     render();
     focusInput();
+}
+
+// A different fact each round, so the same player does not always open the same way.
+function pickClue(player) {
+    const facts = clues[player.id] || [];
+    const suited = facts.filter(f => CLUES_BY_DIFFICULTY[difficulty].includes(f.type));
+    const pool = suited.length ? suited : facts.filter(f => f.type === 'body');
+    return pool.length ? pool[Math.floor(Math.random() * pool.length)] : null;
 }
 
 function focusInput() {
@@ -244,6 +264,7 @@ function endRound() {
         hints: [...revealedHints],
         target: targetPlayer,
         guesses,
+        clue: currentClue,
     });
     saveRound(roundStart, lastRound);
     inputBox.disabled = true;
@@ -312,9 +333,15 @@ async function shareResult(button) {
 function render() {
     document.getElementById('difficultyChip').textContent = t(difficulty);
     attemptCounter.textContent = `${t('guesses')}: ${guesses.length}/${MAX_ATTEMPTS}`;
+    renderClue();
     renderMessage();
     renderHints();
     renderAttempts();
+}
+
+function renderClue() {
+    const card = createClueCard(currentClue, difficulty);
+    document.getElementById('clue').replaceChildren(...(card ? [card] : []));
 }
 
 function renderMessage() {
