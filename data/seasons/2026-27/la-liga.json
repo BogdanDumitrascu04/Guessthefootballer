@@ -86,9 +86,9 @@
    "team": "Athletic Club",
    "position": "Defender",
    "age": 27,
-   "number": null,
+   "number": 3,
    "nationality": "Spain",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/47278.png",
    "tier": 2
   },
   {
@@ -249,11 +249,11 @@
    "id": 101870,
    "name": "Roberto Navarro",
    "team": "Athletic Club",
-   "position": "Forward",
+   "position": "Midfielder",
    "age": 24,
-   "number": null,
+   "number": 23,
    "nationality": "Spain",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/84086.png",
    "tier": 3
   },
   {
@@ -348,11 +348,11 @@
    "id": 70,
    "name": "Marcos Llorente",
    "team": "Atletico Madrid",
-   "position": "Defender",
+   "position": "Midfielder",
    "age": 31,
-   "number": null,
+   "number": 14,
    "nationality": "Spain",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/753.png",
    "tier": 2
   },
   {
@@ -383,9 +383,9 @@
    "team": "Atletico Madrid",
    "position": "Defender",
    "age": 28,
-   "number": null,
+   "number": 21,
    "nationality": "Argentina",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/30776.png",
    "tier": 1
   },
   {
@@ -1186,9 +1186,9 @@
    "team": "Barcelona",
    "position": "Defender",
    "age": 23,
-   "number": null,
+   "number": 3,
    "nationality": "Spain",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/161928.png",
    "tier": 1
   },
   {
@@ -1494,9 +1494,9 @@
    "team": "Getafe",
    "position": "Defender",
    "age": 35,
-   "number": null,
+   "number": 17,
    "nationality": "Spain",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/18794.png",
    "tier": 3
   },
   {
@@ -1571,9 +1571,9 @@
    "team": "Getafe",
    "position": "Defender",
    "age": 20,
-   "number": null,
+   "number": 26,
    "nationality": "Ivory Coast",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/484474.png",
    "tier": 3
   },
   {
@@ -2528,9 +2528,9 @@
    "team": "Rayo Vallecano",
    "position": "Midfielder",
    "age": 28,
-   "number": null,
+   "number": 11,
    "nationality": "Angola",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/122657.png",
    "tier": 3
   },
   {
@@ -2693,9 +2693,9 @@
    "team": "Levante",
    "position": "Defender",
    "age": 27,
-   "number": null,
+   "number": 4,
    "nationality": "Spain",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/734.png",
    "tier": 3
   },
   {
@@ -2704,9 +2704,9 @@
    "team": "Levante",
    "position": "Defender",
    "age": 26,
-   "number": null,
+   "number": 23,
    "nationality": "Spain",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/64309.png",
    "tier": 3
   },
   {
@@ -3001,9 +3001,9 @@
    "team": "Real Betis",
    "position": "Defender",
    "age": 27,
-   "number": null,
+   "number": 11,
    "nationality": "Spain",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/736.png",
    "tier": 2
   },
   {
@@ -3463,9 +3463,9 @@
    "team": "Real Sociedad",
    "position": "Forward",
    "age": 23,
-   "number": null,
+   "number": 12,
    "nationality": "Kenya",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/387139.png",
    "tier": 3
   },
   {
@@ -3606,9 +3606,9 @@
    "team": "Villarreal",
    "position": "Midfielder",
    "age": 30,
-   "number": null,
+   "number": 14,
    "nationality": "Spain",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/47541.png",
    "tier": 2
   },
   {
@@ -3923,11 +3923,11 @@
    "id": 177180,
    "name": "Javier Guerra",
    "team": "Valencia",
-   "position": "Midfielder",
+   "position": "Forward",
    "age": 23,
-   "number": null,
+   "number": 8,
    "nationality": "Spain",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/315699.png",
    "tier": 2
   },
   {
@@ -4210,7 +4210,7 @@
    "name": "Tomas Mendes",
    "team": "Alaves",
    "position": "Midfielder",
-   "age": 21,
+   "age": 22,
    "number": null,
    "nationality": "Spain",
    "photo": null,
@@ -4552,9 +4552,9 @@
    "team": "Elche",
    "position": "Forward",
    "age": 26,
-   "number": null,
+   "number": 14,
    "nationality": "Spain",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/184277.png",
    "tier": 3
   },
   {
@@ -4695,9 +4695,9 @@
    "team": "Celta Vigo",
    "position": "Defender",
    "age": 32,
-   "number": null,
+   "number": 22,
    "nationality": "Spain",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/47566.png",
    "tier": 3
   },
   {
@@ -5102,9 +5102,9 @@
    "team": "Sevilla",
    "position": "Forward",
    "age": 27,
-   "number": null,
+   "number": 7,
    "nationality": "Spain",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/119213.png",
    "tier": 3
   },
   {
@@ -5299,7 +5299,7 @@
    "name": "Miguel Loureiro",
    "team": "Deportivo La Coruna",
    "position": "Defender",
-   "age": 29,
+   "age": 30,
    "number": 15,
    "nationality": "Spain",
    "photo": "https://media.api-sports.io/football/players/47190.png",
@@ -5333,9 +5333,9 @@
    "team": "Deportivo La Coruna",
    "position": "Defender",
    "age": 19,
-   "number": null,
+   "number": 22,
    "nationality": "Poland",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/497393.png",
    "tier": 3
   },
   {
@@ -5498,9 +5498,9 @@
    "team": "Deportivo La Coruna",
    "position": "Forward",
    "age": 22,
-   "number": null,
+   "number": 32,
    "nationality": "Cameroon",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/574733.png",
    "tier": 3
   },
   {
@@ -5751,9 +5751,9 @@
    "team": "Racing Santander",
    "position": "Forward",
    "age": 21,
-   "number": null,
+   "number": 21,
    "nationality": "Morocco",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/457101.png",
    "tier": 2
   },
   {

@@ -1,0 +1,342 @@
+/* The account button in the header, shared by the home page and the game pages (both define these colours). */
+/* Not positioned: the menu is placed against the header's right edge, like the ☰ panel, so it never leaves the screen. */
+.account {
+    display: flex;
+}
+
+.account-signin {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 38px;
+    padding: 0 12px;
+    font: inherit;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--accent);
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+}
+
+.account-signin:hover {
+    color: var(--on-accent);
+    background: var(--accent);
+}
+
+.account svg {
+    flex: none;
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.account-avatar {
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--on-accent);
+    cursor: pointer;
+    background: var(--accent);
+    border: none;
+    border-radius: 50%;
+}
+
+.account-avatar:hover {
+    background: var(--accent-hover);
+}
+
+.account-menu {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 16px;
+    z-index: 40;
+    display: flex;
+    flex-direction: column;
+    width: min(280px, calc(100vw - 32px));
+    padding: 6px;
+    background: var(--surface-raised);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 12px 32px rgb(0 0 0 / 0.45);
+}
+
+.account-menu[hidden] {
+    display: none;
+}
+
+.account-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+}
+
+.account-head-avatar {
+    display: grid;
+    flex: none;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--on-accent);
+    background: var(--accent);
+    border-radius: 50%;
+}
+
+.account-who {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.account-name,
+.account-email {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.account-name {
+    font-weight: 600;
+    color: var(--text);
+}
+
+.account-email {
+    font-size: 0.8125rem;
+    color: var(--muted);
+}
+
+.account-divider {
+    width: 100%;
+    margin: 6px 0;
+    border: none;
+    border-top: 1px solid var(--border);
+}
+
+.account-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 9px 10px;
+    font: inherit;
+    font-size: 0.9375rem;
+    color: var(--text);
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+}
+
+.account-item:hover,
+.account-item:focus-visible {
+    background: var(--surface);
+}
+
+.account-item svg {
+    color: var(--muted);
+}
+
+/* Under the points at the end of a round: whether it reached the account. */
+.save-status {
+    margin-top: 4px;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--muted);
+}
+
+.save-saved {
+    color: var(--success);
+}
+
+.save-failed {
+    color: var(--error);
+}
+
+.link-button {
+    padding: 0;
+    font: inherit;
+    font-weight: 600;
+    color: var(--accent);
+    text-decoration: underline;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+/* Profile page */
+.profile-head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+}
+
+.profile-avatar {
+    width: 56px;
+    height: 56px;
+    font-size: 1.6rem;
+}
+
+.profile-who {
+    min-width: 0;
+}
+
+.profile-name {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+}
+
+.profile-email {
+    margin: 2px 0 0;
+    color: var(--muted);
+    overflow-wrap: anywhere;
+}
+
+.profile-section h2 {
+    margin: 22px 0 10px;
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+}
+
+.profile-note {
+    margin: 0 0 14px;
+    color: var(--muted);
+}
+
+.profile-note.error {
+    color: var(--error);
+}
+
+.profile-section .primary-button,
+.profile-empty .primary-button {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.profile-empty {
+    padding: 28px 16px;
+    text-align: center;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+}
+
+.profile-empty p {
+    margin: 0 0 14px;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.history-row {
+    display: grid;
+    grid-template-columns: 1fr auto 3.5em;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 14px;
+    color: var(--text);
+    text-decoration: none;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+a.history-row:hover,
+a.history-row:focus-visible {
+    background: var(--surface-raised);
+}
+
+.history-main {
+    min-width: 0;
+}
+
+.history-league {
+    display: block;
+    font-weight: 600;
+}
+
+.history-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 10px;
+    align-items: center;
+    margin-top: 5px;
+    font-size: 0.875rem;
+    color: var(--muted);
+}
+
+.history-meta .difficulty-chip {
+    padding: 1px 9px;
+    font-size: 0.75rem;
+}
+
+.history-outcome {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.history-outcome.won {
+    color: var(--success);
+}
+
+.history-outcome.lost {
+    color: var(--error);
+}
+
+.history-outcome.abandoned {
+    font-family: inherit;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--muted);
+}
+
+.history-points {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-align: right;
+}
+
+@media (max-width: 480px) {
+    .account-signin {
+        justify-content: center;
+        width: 34px;
+        height: 34px;
+        padding: 0;
+    }
+
+    .account-signin-text {
+        display: none;
+    }
+
+    .account-avatar {
+        width: 34px;
+        height: 34px;
+        font-size: 1rem;
+    }
+}

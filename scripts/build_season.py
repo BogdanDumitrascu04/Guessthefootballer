@@ -1,11 +1,13 @@
 """Builds data/seasons/2026-27/<league>.json for the game from the downloaded sources.
 
 - squads, full names, nationality, date of birth: football-data.org;
-- photo and shirt number: API-Football, linked to each player by club, name and age;
+- photo and shirt number: API-Football, linked to each player by club, name and age; a second pass
+  links the rest by club, age and either the Transfermarkt name or the surname;
 - tier: suggested from the latest Transfermarkt market value, ranked within the league.
 
 Run from the project folder (after download_squads.py and download_api_football.py):
     .venv\\Scripts\\python.exe scripts\\build_season.py
+The pairs found by the second pass are listed in data/raw/second_pass.txt, for checking by hand.
 """
 
 import csv
@@ -13,7 +15,7 @@ import gzip
 import html
 import json
 import unicodedata
-from collections import defaultdict
+from collections import Counter, defaultdict
 from datetime import date
 from pathlib import Path
 
@@ -24,6 +26,7 @@ TM_DIR = RAW_DIR / "transfermarkt"
 SEASON = "2026-27"
 OUT_DIR = PROJECT_DIR / "data" / "seasons" / SEASON
 MANIFEST = PROJECT_DIR / "data" / "manifest.json"
+SECOND_PASS_REPORT = RAW_DIR / "second_pass.txt"
 
 LEAGUES = {
     "PL": ("premier-league", "Premier League"),
@@ -102,6 +105,44 @@ def match_players(fd_squad: list[dict], af_players: list[dict], today: date) -> 
     return matches
 
 
+def same_surname(fd_name: str, af_name: str) -> bool:
+    """Like same_person without the initial: nicknames break it ("Femi Azeez" is "O. Azeez")."""
+    af_words = [t for t in normalize(html.unescape(af_name)).split() if len(t) > 1]
+    return bool(af_words) and all(w in normalize(fd_name).split() for w in af_words)
+
+
+def match_leftovers(
+    fd_squad: list[dict], af_players: list[dict], matched: dict, by_birth: dict, today: date
+) -> dict[int, tuple[dict, str]]:
+    """Second pass for one club: football-data.org ID -> (API-Football player, "transfermarkt" or "surname").
+
+    Only players left on both sides by match_players. The weaker name evidence is why the age is required
+    here, and why a pair counts only if neither side has another candidate.
+    """
+    taken = {af["id"] for af in matched.values()}
+    left_af = [af for af in af_players if af["id"] not in taken]
+    candidates = {}
+    for p in fd_squad:
+        if p["id"] in matched:
+            continue
+        age = age_on(p.get("dateOfBirth"), today)
+        tm = tm_player(p, by_birth)
+        found = []
+        for af in left_af:
+            if age is None or af.get("age") is None or abs(age - af["age"]) > 1:
+                continue
+            # Transfermarkt usually has the name in use ("Tino Livramento"), found by the exact birth date
+            if tm and same_person(tm["name"], af["name"]):
+                found.append((af, "transfermarkt"))
+            elif same_surname(p["name"], af["name"]):
+                found.append((af, "surname"))
+        candidates[p["id"]] = found
+    wanted = Counter(af["id"] for found in candidates.values() for af, _ in found)
+    return {
+        fd_id: found[0] for fd_id, found in candidates.items() if len(found) == 1 and wanted[found[0][0]["id"]] == 1
+    }
+
+
 def assign_tiers(values: dict[str, int | None]) -> dict[str, int]:
     """Player key -> tier, by market value rank. No known value: tier 3."""
     ranked = sorted((v, k) for k, v in values.items() if v)
@@ -140,7 +181,7 @@ def load_market_values(today: date) -> tuple[dict, dict]:
     return by_birth, {k: v for k, (_, v) in latest.items()}
 
 
-def market_value(player: dict, by_birth: dict, values: dict) -> int | None:
+def tm_player(player: dict, by_birth: dict) -> dict | None:
     """Same birth date and the same name, or one name word in common if only one player fits."""
     born = (player.get("dateOfBirth") or "")[:10]
     wanted = normalize(player["name"])
@@ -149,7 +190,12 @@ def market_value(player: dict, by_birth: dict, values: dict) -> int | None:
     if not found:
         words = set(wanted.split())
         found = [r for r in same_day if words & set(normalize(r["name"]).split())]
-    return values.get(found[0]["player_id"]) if len(found) == 1 else None
+    return found[0] if len(found) == 1 else None
+
+
+def market_value(player: dict, by_birth: dict, values: dict) -> int | None:
+    tm = tm_player(player, by_birth)
+    return values.get(tm["player_id"]) if tm else None
 
 
 def player_entry(fd: dict, af: dict, team: str, today: date) -> dict:
@@ -166,10 +212,11 @@ def player_entry(fd: dict, af: dict, team: str, today: date) -> dict:
     }
 
 
-def build_league(code: str, today: date, team_map: dict, by_birth: dict, values: dict) -> dict:
+def build_league(code: str, today: date, team_map: dict, by_birth: dict, values: dict) -> tuple[dict, list[dict]]:
+    """(the league file, the pairs found by the second pass)."""
     league_id, league_name = LEAGUES[code]
     fd = json.loads((RAW_DIR / f"{code}_{SEASON}.json").read_text(encoding="utf-8"))
-    teams, players, worth = {}, [], {}
+    teams, players, worth, second_pass = {}, [], {}, []
     for team in fd["teams"]:
         af_team = team_map[str(team["id"])]
         squad_file = AF_DIR / f"squad_{af_team['id']}.json"
@@ -178,15 +225,35 @@ def build_league(code: str, today: date, team_map: dict, by_birth: dict, values:
             response = json.loads(squad_file.read_text(encoding="utf-8"))["response"]
             af_players = response[0]["players"] if response else []
         matched = match_players(team["squad"], af_players, today)
+        leftovers = match_leftovers(team["squad"], af_players, matched, by_birth, today)
+        matched |= {fd_id: af for fd_id, (af, _) in leftovers.items()}
         teams[af_team["name"]] = af_team["logo"]
         for p in team["squad"]:
             players.append(player_entry(p, matched.get(p["id"], {}), af_team["name"], today))
             worth[len(players) - 1] = market_value(p, by_birth, values)
+            if p["id"] in leftovers:
+                af, method = leftovers[p["id"]]
+                second_pass.append(
+                    {"league": league_name, "club": af_team["name"], "method": method, "fd": p, "af": af}
+                )
     tiers = assign_tiers(worth)
     for index, p in enumerate(players):
         p["tier"] = tiers[index]
     unique_names(players)
-    return {"id": league_id, "name": league_name, "season": SEASON, "teams": teams, "players": players}
+    league = {"id": league_id, "name": league_name, "season": SEASON, "teams": teams, "players": players}
+    return league, second_pass
+
+
+def write_second_pass(pairs: list[dict], today: date) -> None:
+    """Tab-separated, so it also opens as a table in Excel."""
+    lines = ["league\tclub\tmethod\tfootball-data\tage\tAPI-Football\tage\tnumber"]
+    for pair in pairs:
+        fd, af = pair["fd"], pair["af"]
+        lines.append(
+            f"{pair['league']}\t{pair['club']}\t{pair['method']}\t{fd['name']}\t{age_on(fd.get('dateOfBirth'), today)}"
+            f"\t{html.unescape(af['name'])}\t{af.get('age')}\t{af.get('number') or ''}"
+        )
+    SECOND_PASS_REPORT.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def update_manifest() -> None:
@@ -205,8 +272,10 @@ def main() -> None:
     team_map = json.loads((AF_DIR / "team_map.json").read_text(encoding="utf-8"))
     by_birth, values = load_market_values(today)
     OUT_DIR.mkdir(parents=True, exist_ok=True)
+    all_pairs = []
     for code in LEAGUES:
-        data = build_league(code, today, team_map, by_birth, values)
+        data, pairs = build_league(code, today, team_map, by_birth, values)
+        all_pairs += pairs
         path = OUT_DIR / f"{data['id']}.json"
         path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
         players = data["players"]
@@ -216,8 +285,16 @@ def main() -> None:
             f"{data['name']:<15} {len(players):>4} players, {complete:>4} with photo + number "
             f"({100 * complete / len(players):.0f}%), tiers 1/2/3: {tiers}"
         )
+    print(f"\nSecond pass (list in {SECOND_PASS_REPORT.relative_to(PROJECT_DIR)}):")
+    for _, name in LEAGUES.values():
+        methods = Counter(p["method"] for p in all_pairs if p["league"] == name)
+        print(
+            f"{name:<15} {methods.total():>3} linked: {methods['transfermarkt']} by Transfermarkt name, "
+            f"{methods['surname']} by surname"
+        )
+    write_second_pass(all_pairs, today)
     update_manifest()
-    print(f"Written to {OUT_DIR}; manifest default season: {SEASON}")
+    print(f"\nWritten to {OUT_DIR}; manifest default season: {SEASON}")
 
 
 if __name__ == "__main__":

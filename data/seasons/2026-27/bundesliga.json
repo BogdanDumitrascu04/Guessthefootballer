@@ -260,9 +260,9 @@
    "team": "1. FC Köln",
    "position": "Forward",
    "age": 30,
-   "number": null,
+   "number": 7,
    "nationality": "Germany",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/26260.png",
    "tier": 3
   },
   {
@@ -832,9 +832,9 @@
    "team": "Bayer Leverkusen",
    "position": "Midfielder",
    "age": 24,
-   "number": null,
+   "number": 6,
    "nationality": "Argentina",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/237087.png",
    "tier": 2
   },
   {
@@ -1766,10 +1766,10 @@
    "name": "Dina Ebimbe",
    "team": "FC Schalke 04",
    "position": "Midfielder",
-   "age": 25,
-   "number": null,
+   "age": 26,
+   "number": 29,
    "nationality": "Cameroon",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/90594.png",
    "tier": 3
   },
   {
@@ -1844,9 +1844,9 @@
    "team": "FC Schalke 04",
    "position": "Forward",
    "age": 30,
-   "number": null,
+   "number": 7,
    "nationality": "South Korea",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/24888.png",
    "tier": 3
   },
   {
@@ -1864,11 +1864,11 @@
    "id": 60395,
    "name": "Chikwubuike Adamu",
    "team": "FC Schalke 04",
-   "position": "Forward",
+   "position": "Midfielder",
    "age": 25,
-   "number": null,
+   "number": 20,
    "nationality": "Nigeria",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/125173.png",
    "tier": 3
   },
   {
@@ -1996,11 +1996,11 @@
    "id": 205467,
    "name": "David Wolfe",
    "team": "Hamburger SV",
-   "position": "Defender",
+   "position": "Midfielder",
    "age": 24,
-   "number": null,
+   "number": 3,
    "nationality": "Norway",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/265782.png",
    "tier": 2
   },
   {
@@ -3021,9 +3021,9 @@
    "team": "FSV Mainz 05",
    "position": "Midfielder",
    "age": 34,
-   "number": null,
+   "number": 7,
    "nationality": "Korea, South",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/2906.png",
    "tier": 3
   },
   {
@@ -3406,9 +3406,9 @@
    "team": "FC Augsburg",
    "position": "Midfielder",
    "age": 21,
-   "number": null,
+   "number": 8,
    "nationality": "Germany",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/343159.png",
    "tier": 3
   },
   {
@@ -4307,7 +4307,7 @@
    "name": "Noel Aseko Nkili",
    "team": "Eintracht Frankfurt",
    "position": "Midfielder",
-   "age": 20,
+   "age": 21,
    "number": 15,
    "nationality": "Germany",
    "photo": "https://media.api-sports.io/football/players/342171.png",
@@ -4484,9 +4484,9 @@
    "team": "Union Berlin",
    "position": "Defender",
    "age": 29,
-   "number": null,
+   "number": 2,
    "nationality": "Germany",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/25406.png",
    "tier": 3
   },
   {
@@ -4638,9 +4638,9 @@
    "team": "Union Berlin",
    "position": "Midfielder",
    "age": 27,
-   "number": null,
+   "number": 11,
    "nationality": "South Korea",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/512.png",
    "tier": 3
   },
   {
@@ -5221,9 +5221,9 @@
    "team": "SV Elversberg",
    "position": "Defender",
    "age": 27,
-   "number": null,
+   "number": 2,
    "nationality": "Thailand",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/39331.png",
    "tier": 3
   },
   {
@@ -5649,7 +5649,7 @@
    "name": "Viggo Gebel",
    "team": "RB Leipzig",
    "position": "Midfielder",
-   "age": 18,
+   "age": 19,
    "number": null,
    "nationality": "Germany",
    "photo": null,

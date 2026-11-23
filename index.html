@@ -15,6 +15,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="games/guess-the-footballer/account.css">
     <link rel="icon" href="images/Header/fotbal.png">
 </head>
 <body>
@@ -23,15 +24,18 @@
             <img src="images/Header/fotbal.png" alt="" id="logo">
             <span id="mainHeader">Bogdy's Games</span>
         </a>
-        <label class="language-selector">
-            <span class="visually-hidden">Language</span>
-            <select id="language">
-                <option value="en">English</option>
-                <option value="es">Español</option>
-                <option value="fr">Français</option>
-                <option value="ro">Română</option>
-            </select>
-        </label>
+        <div class="header-tools">
+            <div id="account" class="account"></div>
+            <label class="language-selector">
+                <span class="visually-hidden">Language</span>
+                <select id="language">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                    <option value="ro">Română</option>
+                </select>
+            </label>
+        </div>
     </header>
 
     <main class="hub">
@@ -133,5 +137,7 @@
     </footer>
 
     <script defer src="games/guess-the-footballer/i18n.js"></script>
+    <script defer src="vendor/supabase-js-2.119.0.js"></script>
+    <script defer src="games/guess-the-footballer/auth.js"></script>
 </body>
 </html>

@@ -6,10 +6,14 @@ from scripts.build_season import (
     age_on,
     assign_tiers,
     best_age,
+    market_value,
+    match_leftovers,
     match_players,
     player_entry,
     position,
     same_person,
+    same_surname,
+    tm_player,
     unique_names,
 )
 from scripts.download_api_football import is_first_team, match_team
@@ -122,3 +126,80 @@ def test_each_player_keeps_the_football_data_id():
     }
     unmatched = player_entry(fd, {}, "Bournemouth", TODAY)
     assert unmatched["id"] == 7 and unmatched["number"] is None and unmatched["photo"] is None
+
+
+def tm(player_id, name, born):
+    return {"player_id": player_id, "name": name, "date_of_birth": born}
+
+
+def second_pass(squad, af, by_birth=None, matched=None):
+    """match_leftovers after match_players, as build_league runs them."""
+    matched = match_players(squad, af, TODAY) if matched is None else matched
+    return match_leftovers(squad, af, matched, by_birth or {}, TODAY)
+
+
+def test_transfermarkt_player_needs_the_birth_date_and_a_single_fit():
+    by_birth = {"2001-07-03": [tm("1", "Promise David", "2001-07-03")]}
+    assert tm_player({"name": "Promise Akinpelu", "dateOfBirth": "2001-07-03"}, by_birth)["player_id"] == "1"
+    assert tm_player({"name": "Promise Akinpelu", "dateOfBirth": "2001-07-04"}, by_birth) is None
+    two = {"2001-07-03": [tm("1", "Promise David", "2001-07-03"), tm("2", "Promise Okafor", "2001-07-03")]}
+    assert tm_player({"name": "Promise Akinpelu", "dateOfBirth": "2001-07-03"}, two) is None
+    assert (
+        market_value({"name": "Promise Akinpelu", "dateOfBirth": "2001-07-03"}, by_birth, {"1": 5_000_000}) == 5_000_000
+    )
+
+
+def test_surname_without_the_initial():
+    assert same_surname("Femi Azeez", "O. Azeez")
+    assert same_surname("Mamadou Usman Simbakoli", "U. Simbakoli")
+    assert not same_surname("Álvaro Carreras", "Álvaro Fernández")  # a first name alone is not enough
+    assert not same_surname("Femi Azeez", "O.")
+
+
+def test_second_pass_uses_the_transfermarkt_name():
+    squad = [{"id": 1, "name": "Promise Akinpelu", "dateOfBirth": "2001-07-03"}]
+    af = [{"id": 10, "name": "P. David", "age": 25, "number": 12}]
+    assert match_players(squad, af, TODAY) == {}
+    by_birth = {"2001-07-03": [tm("1", "Promise David", "2001-07-03")]}
+    assert second_pass(squad, af, by_birth) == {1: (af[0], "transfermarkt")}
+
+
+def test_second_pass_uses_the_surname():
+    squad = [{"id": 1, "name": "Femi Azeez", "dateOfBirth": "2001-06-05"}]
+    af = [{"id": 10, "name": "O. Azeez", "age": 25, "number": 11}]
+    assert match_players(squad, af, TODAY) == {}
+    assert second_pass(squad, af) == {1: (af[0], "surname")}
+
+
+def test_second_pass_needs_a_known_and_close_age():
+    af = [{"id": 10, "name": "O. Azeez", "age": 25}]
+    assert second_pass([{"id": 1, "name": "Femi Azeez", "dateOfBirth": "1998-06-05"}], af) == {}  # 28 vs 25
+    assert second_pass([{"id": 1, "name": "Femi Azeez", "dateOfBirth": None}], af) == {}
+    assert second_pass([{"id": 1, "name": "Femi Azeez", "dateOfBirth": "2001-06-05"}], [af[0] | {"age": None}]) == {}
+
+
+def test_the_age_picks_the_right_llorente():
+    squad = [{"id": 1, "name": "Marcos Llorente", "dateOfBirth": "1995-01-30"}]
+    af = [{"id": 10, "name": "M. Llorente", "age": 17}, {"id": 11, "name": "Marcos Llorente", "age": 31}]
+    assert match_players(squad, af, TODAY) == {}  # both pass the name rule, so the first pass links neither
+    assert second_pass(squad, af) == {1: (af[1], "surname")}
+
+
+def test_second_pass_keeps_the_first_pass_links():
+    squad = [
+        {"id": 1, "name": "Harvey Davies", "dateOfBirth": "2003-09-03"},
+        {"id": 2, "name": "Hugo Davies", "dateOfBirth": "2003-05-01"},
+    ]
+    af = [{"id": 10, "name": "H. Davies", "age": 23}]
+    first = {1: af[0]}  # taken already, so Hugo Davies cannot have it too
+    assert second_pass(squad, af, matched=first) == {}
+
+
+def test_second_pass_links_only_unique_pairs():
+    two_candidates = [{"id": 10, "name": "O. Azeez", "age": 25}, {"id": 11, "name": "F. Azeez", "age": 24}]
+    assert second_pass([{"id": 1, "name": "Femi Azeez", "dateOfBirth": "2001-06-05"}], two_candidates) == {}
+    one_candidate_wanted_twice = [
+        {"id": 1, "name": "Femi Azeez", "dateOfBirth": "2001-06-05"},
+        {"id": 2, "name": "Tobi Azeez", "dateOfBirth": "2001-09-01"},
+    ]
+    assert second_pass(one_candidate_wanted_twice, [{"id": 10, "name": "O. Azeez", "age": 25}]) == {}

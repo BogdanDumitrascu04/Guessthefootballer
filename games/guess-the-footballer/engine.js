@@ -17,7 +17,9 @@ const requestedSeason = params.get('season');
 const difficulty = TARGET_TIERS[params.get('difficulty')] ? params.get('difficulty') : 'medium';
 
 let league, players, targetPool, targetPlayer;
-let lastRound = null; // what the result page and, later, the profile receive
+let lastRound = null; // what the result page and the account receive
+let roundStart = null; // the promise of this round's row in the account
+let saveState = null; // 'saving', 'saved', 'failed' or 'signedOut', shown under the points
 let guesses = [];
 const revealedHints = new Set();
 let roundOver = false;
@@ -83,7 +85,11 @@ function startRound() {
     revealedHints.clear();
     roundOver = false;
     message = null;
+    saveState = null;
     targetPlayer = targetPool[Math.floor(Math.random() * targetPool.length)];
+    // Saved as soon as it starts, so leaving the page counts as a loss instead of erasing it.
+    roundStart = saveRoundStart({ league: league.info.id, season: league.seasonUsed, difficulty });
+    roundStart.catch(() => {}); // a failure is reported when the round ends; an abandoned round has nobody to tell
     inputBox.disabled = false;
     inputBox.value = '';
     restartContainer.innerHTML = '';
@@ -239,6 +245,7 @@ function endRound() {
         target: targetPlayer,
         guesses,
     });
+    saveRound(roundStart, lastRound);
     inputBox.disabled = true;
     const restartButton = document.createElement('button');
     restartButton.className = 'primary-button';
@@ -251,6 +258,24 @@ function endRound() {
     shareButton.textContent = t('share');
     shareButton.addEventListener('click', () => shareResult(shareButton));
     restartContainer.append(restartButton, shareButton);
+}
+
+async function saveRound(start, round) {
+    const setState = state => {
+        if (start !== roundStart) return; // "Restart" was pressed meanwhile: this message belongs to the old round
+        saveState = state;
+        renderMessage();
+    };
+    try {
+        const roundId = await start;
+        if (!roundId) return setState(currentUser ? null : 'signedOut');
+        setState('saving');
+        await saveRoundEnd(roundId, round);
+        setState('saved');
+    } catch (error) {
+        console.warn('Round not saved:', error.message);
+        setState('failed');
+    }
 }
 
 // Colours only, never names, so the text does not spoil the answer; the link opens the full round.
@@ -303,7 +328,27 @@ function renderMessage() {
     const points = document.createElement('div');
     points.className = 'points-earned';
     points.textContent = t('pointsLine', { n: roundPoints(lastRound) });
-    feedback.append(points, createReveal(targetPlayer, league.teams));
+    feedback.append(points);
+    if (saveState) feedback.append(createSaveStatus());
+    feedback.append(createReveal(targetPlayer, league.teams));
+}
+
+const SAVE_TEXT = { saving: 'roundSaving', saved: 'roundSaved', failed: 'roundNotSaved', signedOut: 'signInToSave' };
+
+function createSaveStatus() {
+    const status = document.createElement('div');
+    status.className = `save-status save-${saveState}`;
+    if (saveState !== 'signedOut') {
+        status.textContent = t(SAVE_TEXT[saveState]);
+        return status;
+    }
+    const link = document.createElement('button');
+    link.type = 'button';
+    link.className = 'link-button';
+    link.textContent = t('signIn');
+    link.addEventListener('click', signIn);
+    status.append(`${t(SAVE_TEXT.signedOut)} `, link);
+    return status;
 }
 
 function renderHints() {

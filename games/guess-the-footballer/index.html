@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../fonts/fonts.css">
     <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="account.css">
     <link rel="icon" href="../../images/Header/fotbal.png">
     <title>Guess the Footballer</title>
 </head>
@@ -15,6 +16,7 @@
             <span id="mainHeader" data-translate="guessTheFootballer">Guess the footballer</span>
         </a>
         <div class="header-tools">
+            <div id="account" class="account"></div>
             <label class="language-selector">
                 <span class="visually-hidden">Language</span>
                 <select id="language">
@@ -57,6 +59,8 @@
     </main>
 
     <script defer src="i18n.js"></script>
+    <script defer src="../../vendor/supabase-js-2.119.0.js"></script>
+    <script defer src="auth.js"></script>
     <script defer src="picker.js"></script>
     <script defer src="ui.js"></script>
 </body>

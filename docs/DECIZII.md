@@ -166,6 +166,23 @@ Punct de plecare: propunerile lui Gemini, verificate pe pagina reală, plus idei
 | Ștergerea contului | `on delete cascade`: rundele dispar odată cu contul | Pregătește butonul „Șterge contul”. |
 | Limita cunoscută | Baza nu poate dovedi că o rundă a fost jucată cinstit | Jucătorul ascuns e ales în browser. Ar trebui ca serverul să-l aleagă și să judece fiecare încercare; fără clasament public nu merită. |
 
+## 23 nov 2026 — login-ul în pagină
+
+| Decizie | Ce am ales | De ce |
+|---|---|---|
+| Biblioteca Supabase | `supabase-js` 2.119.0, găzduită în repo (`vendor/`, cu licența MIT); aleasă de Bogdan | Ca fontul: vizitatorii nu ajung la un CDN terț, iar site-ul nu depinde de el. 215 KB (~55 KB comprimat). Versiune veche de cel puțin două săptămâni, descărcată de pe npm. |
+| Fluxul de login | PKCE: Google trimite înapoi un cod de unică folosință, pe care doar browserul care a pornit login-ul îl poate schimba pe o sesiune; biblioteca șterge apoi codul din adresă | Recomandat pentru site-uri fără server: tokenurile nu apar niciodată în link. |
+| Cheia din browser | Cheia publică (publishable) stă în `auth.js`, în repo | E făcută pentru browser; ce poate atinge decid politicile RLS și drepturile din `sql/`. Parola bazei rămâne doar în `.env` și în secretul GitHub. |
+| Butonul din header | Deconectat: „Conectare” (pe telefon doar iconița); conectat: inițiala numelui, cu un meniu (numele, „Deconectare”). Fără poza din contul Google | Poza ar face fiecare pagină să ceară o imagine de la Google. Numele vine din contul Google, deci se afișează doar ca text, niciodată ca HTML. |
+| Lansarea | Login-ul nu ajunge live (push) până nu sunt gata politica de confidențialitate și butonul „Șterge contul” | Cerința etapei: politica se actualizează înaintea conturilor. |
+| Meniul contului (după testul lui Bogdan) | Antet cu inițiala, numele și emailul; dedesubt, rânduri cu iconițe (acum doar „Deconectare”, apoi și „Profil”); se deschide lângă marginea din dreapta a header-ului, ca meniul ☰ | Primul meniu, cu un buton mare de formular, nu i-a plăcut lui Bogdan; aliniat la buton, ieșea din ecran pe telefon. |
+| Încercările | Se salvează **la final**, toate odată, în fișa rundei (decis de Bogdan) | Varianta „fiecare încercare pe loc” ar fi păstrat și încercările rundelor abandonate și reluarea după refresh, dar cerea încă o funcție în bază. |
+| Ce rundă se salvează | Doar una începută cu jucătorul deja logat; rândul se scrie la începutul rundei | O rundă începută înainte de login n-are un început cinstit în bază. |
+| Mesajul de sub puncte | „Se salvează…”, „✓ Salvată în contul tău”, „Runda nu s-a putut salva”; deconectat: „Rundele se salvează doar cu un cont” + butonul Conectare | Jucătorul vede că runda a ajuns în cont, iar cine n-are cont află de ce i-ar folosi unul. |
+| Codurile ligilor | Jocul își păstrează numele (`premier-league`); `saved-rounds.js` le traduce în codurile din bază (`PL`) | Cheia străină din `game_results` arată spre codurile football-data. |
+| Contul în pagină | „Profilul meu” în meniul contului duce la `profile.html`: numele, emailul și istoricul rundelor; fiecare rundă terminată se deschide în pagina de rezultat | Cerut de Bogdan după primul test („unde e contul?”). |
+| Statisticile din profil | Calculate în **SQL** (un view cu funcții fereastră pentru streak), pe ciclul de învățare; decis de Bogdan | Problema streak-ului („gaps and islands”) e o întrebare clasică la interviu și la testul SQL de la SAP. Varianta în JavaScript era mai rapidă, dar fără SQL de explicat, iar mutarea ulterioară ar fi dublat munca. |
+
 ## De decis
 - **ID-uri pentru 2024-25**: JSON-ul scris de mână nu are ID-uri. Le potrivim cu loturile football-data din 2024-25 sau pagina de rezultat merge întâi doar pe 2026-27?
 - **ID-uri pentru SuperLiga**: football-data.org nu are România, deci jucătorii de acolo nu au ID-ul folosit în rest.
