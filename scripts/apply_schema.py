@@ -1,7 +1,7 @@
-"""Creates the tables from sql/schema.sql in the Supabase database.
+"""Creates the tables from sql/ in the Supabase database: the schema, the leagues and seasons, the game results.
 
-The whole file runs in one transaction: either every table is created or none is.
-Existing tables are left alone, so the script can be run again.
+Everything runs in one transaction: either all of it is applied or nothing is.
+Existing tables and rows are left alone, so the script can be run again.
 
 Run from the project folder:
     .venv\\Scripts\\python.exe scripts\\apply_schema.py
@@ -15,12 +15,13 @@ import psycopg
 from dotenv import load_dotenv
 
 PROJECT_DIR = Path(__file__).resolve().parent.parent
-SCHEMA_FILE = PROJECT_DIR / "sql" / "schema.sql"
+SQL_FILES = [PROJECT_DIR / "sql" / name for name in ("schema.sql", "reference_data.sql", "game_results.sql")]
 
 
 def apply_schema(conn: psycopg.Connection) -> None:
-    """Runs the schema in the connection's current schema: public, or a test one."""
-    conn.execute(SCHEMA_FILE.read_text(encoding="utf-8"))
+    """Runs the SQL files, in order, in the connection's current schema: public, or a test one."""
+    for path in SQL_FILES:
+        conn.execute(path.read_text(encoding="utf-8"))
 
 
 def table_names(conn: psycopg.Connection) -> list[str]:
@@ -37,6 +38,8 @@ def main() -> None:
         sys.exit("Lipsește SUPABASE_DB_URL în .env")
 
     with psycopg.connect(url) as conn:  # commits on success, rolls back on error
+        # finish_round() keeps this search path; pg_temp last, so a temporary table cannot stand in for a real one.
+        conn.execute("set local search_path to public, pg_temp")
         apply_schema(conn)
         names = table_names(conn)
     print(f"Schema aplicată. Tabele în bază ({len(names)}): {', '.join(names)}")

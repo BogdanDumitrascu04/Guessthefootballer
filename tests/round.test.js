@@ -66,10 +66,10 @@ test('a link cannot bring in pictures from other sites', () => {
 });
 
 // n guesses, the last one right unless lost; the table agreed on 20 Nov 2026.
-function played(n, difficulty, hints = [], won = true) {
+function played(n, difficulty, hints = [], won = true, max = 6) {
     const misses = Array.from({ length: won ? n - 1 : n }, (_, i) => ({ ...diakite, id: 100 + i }));
     const guesses = won ? [...misses, kroupi] : misses;
-    return createRound({ league: 'premier-league', season: '2026-27', difficulty, date: '2026-11-20', max: 6, hints, target: kroupi, guesses });
+    return createRound({ league: 'premier-league', season: '2026-27', difficulty, date: '2026-11-20', max, hints, target: kroupi, guesses });
 }
 
 test('points follow the table: difficulty times the steps left', () => {
@@ -90,6 +90,14 @@ test('a lost round or an unknown difficulty gives nothing', () => {
     assert.equal(roundPoints(played(6, 'hard', [], false)), 0);
     assert.equal(roundPoints(played(1, 'impossible')), 0);
     assert.equal(roundPoints(decodeRound(encodeRound(played(3, 'medium')))), 80);
+});
+
+// The database computes points too (sql/game_results.sql); tests/test_game_results.py checks it against the same table.
+test('points match the table shared with the database', () => {
+    for (const c of require('./points_cases.json')) {
+        const round = played(c.guesses, c.difficulty, ['team', 'age'].slice(0, c.hints), c.won, c.max);
+        assert.equal(roundPoints(round), c.points, JSON.stringify(c));
+    }
 });
 
 test('a broken or unknown code gives null', () => {

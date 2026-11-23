@@ -1,0 +1,13 @@
+[
+    { "difficulty": "easy", "max": 6, "guesses": 1, "hints": 0, "won": true, "points": 60 },
+    { "difficulty": "easy", "max": 6, "guesses": 6, "hints": 0, "won": true, "points": 10 },
+    { "difficulty": "medium", "max": 6, "guesses": 4, "hints": 0, "won": true, "points": 60 },
+    { "difficulty": "medium", "max": 6, "guesses": 3, "hints": 0, "won": true, "points": 80 },
+    { "difficulty": "hard", "max": 6, "guesses": 1, "hints": 0, "won": true, "points": 240 },
+    { "difficulty": "hard", "max": 6, "guesses": 4, "hints": 0, "won": true, "points": 120 },
+    { "difficulty": "easy", "max": 6, "guesses": 2, "hints": 1, "won": true, "points": 40 },
+    { "difficulty": "hard", "max": 6, "guesses": 4, "hints": 2, "won": true, "points": 40 },
+    { "difficulty": "hard", "max": 6, "guesses": 6, "hints": 2, "won": true, "points": 40 },
+    { "difficulty": "hard", "max": 6, "guesses": 6, "hints": 0, "won": false, "points": 0 },
+    { "difficulty": "easy", "max": 6, "guesses": 6, "hints": 2, "won": false, "points": 0 }
+]

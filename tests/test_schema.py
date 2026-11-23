@@ -29,9 +29,7 @@ def conn():
         schema = f"test_{uuid4().hex[:8]}"
         c.execute(sql.SQL("create schema {}").format(sql.Identifier(schema)))
         c.execute(sql.SQL("set local search_path to {}").format(sql.Identifier(schema)))
-        apply_schema(c)
-        c.execute("insert into leagues (id, name, tm_code) values ('PD', 'La Liga', 'ES1')")
-        c.execute("insert into seasons values ('2026-27', '2026-07-01', '2027-06-30')")
+        apply_schema(c)  # also adds the leagues and seasons, La Liga and 2026-27 among them
         c.execute("insert into clubs (id, name) values (86, 'Real Madrid CF'), (524, 'Paris Saint-Germain FC')")
         c.execute(
             "insert into players (id, name, date_of_birth, tm_id) values (1, 'Kylian Mbappé', '1998-12-20', 342229)"
@@ -62,7 +60,15 @@ def refused(db, error, action):
 
 
 def test_all_tables_are_created(db):
-    assert table_names(db) == ["clubs", "leagues", "market_values", "players", "seasons", "squad_entries"]
+    assert table_names(db) == [
+        "clubs",
+        "game_results",
+        "leagues",
+        "market_values",
+        "players",
+        "seasons",
+        "squad_entries",
+    ]
 
 
 def test_schema_can_run_twice(db):
