@@ -107,6 +107,8 @@ Făcută pe 5 nov, înaintea Supabase, pe datele din JSON (2024-25). Testată lo
   - [ ] commit (Bogdan): `scripts/build_season.py`, `scripts/download_api_football.py`, `tests/test_build_season.py`, `data/seasons/2026-27/`, `data/manual_links.csv`, `docs/`
   - [ ] zilele 2–3: `download_api_football.py --profiles`, apoi `build_season.py` (134 de căutări rămase; 6 nume comune au mai mult de o pagină de rezultate)
   - [ ] ce rămâne: corectat de Bogdan în `data/manual_links.csv` (după `data/raw/incomplete.txt`) sau listat cu motivul
+  - [x] decizia lui Bogdan (23 nov): jucătorii cunoscuți rămân, restul ies din joc. Regula din `build_season.py`: fără poză sau fără număr și sub 1 mil. € → scos automat. 78 de jucători scoși, 2.586 rămași în 2026-27; 11 corecturi manuale (Carreras, Gavi, Cestero…); căutările ordonate după valoare, cu pagina a doua la numele comune; 42 de teste verzi, ruff curat (Claude)
+  - [ ] ziua 2: aproximativ 59 de cereri acoperă toți cei 69 de cunoscuți care se pot căuta; ce rămâne (Gboho și Seidu fără număr, Ji-soo Kim fără termen de căutare, cei negăsiți) decide Bogdan: corectură manuală sau scos din joc
 
 ## Etapa 4 — Jocul 2: higher or lower (până la CV)
 - [ ] interogarea: doi jucători la întâmplare din același sezon, cu valorile lor (`market_values` JOIN `players`)
@@ -136,7 +138,7 @@ Făcută pe 5 nov, înaintea Supabase, pe datele din JSON (2024-25). Testată lo
   - [x] **Bogdan:** `apply_schema.py` (adaugă `delete_my_account`); providerul **Email** dezactivat în Supabase (verificat de Claude, 23 nov)
   - [x] testul real (Bogdan, 23 nov): un cont șters din profil. Verificat în bază: contul și toate cele 3 runde ale lui au dispărut, fără runde rămase fără cont; celălalt cont a rămas neatins. S-a șters contul cu 3 runde (cel din capturile de profil), nu cel cu o rundă
   - [x] explicația lui Bogdan (23 nov): fără parametri, identitatea vine din sesiune (`auth.uid()`), nu din browser; cu `delete_my_account(user_id)` și `security definer`, oricine ar putea șterge contul altcuiva trimițând alt ID; regula e structurală, nu un `if` care se poate uita. Corect
-  - [ ] commit + push (Bogdan), ca politica și butonul să ajungă live
+  - [x] commit + push (Bogdan, 23 nov, `c968774`). Verificat de Claude: GitHub Pages a publicat commitul; pe site-ul live apar politica din 23 nov, butonul de ștergere din profil și Mbappé; toate testele trec pe ce s-a publicat (120 Python + 14 JS)
 - [ ] verificarea finală, pe site-ul live: login cu Google, 2 runde, profilul cu punctele corecte; al doilea cont nu vede rundele primului
 - [ ] înregistrare / login (Supabase Auth, Google)
   - [x] commit `game_results` (Bogdan, 23 nov, `4071ff8`; în titlu a intrat din greșeală și „Apoi Commit to master → Push”)

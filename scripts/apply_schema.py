@@ -17,7 +17,14 @@ from dotenv import load_dotenv
 PROJECT_DIR = Path(__file__).resolve().parent.parent
 SQL_FILES = [
     PROJECT_DIR / "sql" / name
-    for name in ("schema.sql", "reference_data.sql", "game_results.sql", "player_stats.sql", "delete_account.sql")
+    for name in (
+        "schema.sql",
+        "reference_data.sql",
+        "game_results.sql",
+        "player_stats.sql",
+        "user_cards.sql",
+        "delete_account.sql",
+    )
 ]
 
 

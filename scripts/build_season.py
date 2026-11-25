@@ -44,6 +44,7 @@ LEAGUES = {
     "FL1": ("ligue-1", "Ligue 1"),
 }
 STARS, REGULARS = 40, 180  # value rank within the league: 1-40 tier 1, 41-180 tier 2, the rest tier 3
+KNOWN_VALUE = 1_000_000  # Bogdan's line: a player still without photo or number is left out below this value
 
 AF_POSITIONS = {"Goalkeeper": "Goalkeeper", "Defender": "Defender", "Midfielder": "Midfielder", "Attacker": "Forward"}
 FD_POSITIONS = [  # football-data.org mixes 4 groups with detailed positions
@@ -162,13 +163,19 @@ def search_term(name: str) -> str | None:
 
 
 def load_profiles() -> dict[int, list[dict]]:
-    """football-data.org ID -> the players API-Football found for his search term (one file per player)."""
+    """football-data.org ID -> the players API-Football found for his search term (<id>.json, then <id>_p2.json...)."""
     found = {}
     for path in PROFILES_DIR.glob("*.json"):
-        if path.stem.isdigit():
+        fd_id = path.stem.split("_p")[0]
+        if fd_id.isdigit():
             response = json.loads(path.read_text(encoding="utf-8"))["response"]
-            found[int(path.stem)] = [item["player"] for item in response]
+            found.setdefault(int(fd_id), []).extend(item["player"] for item in response)
     return found
+
+
+def left_out(missing: list[str], value: int | None) -> bool:
+    """Unknown players without photo or number leave the game; known ones stay and get fixed."""
+    return bool(missing) and (value or 0) < KNOWN_VALUE
 
 
 def match_profiles(
@@ -349,13 +356,19 @@ def build_league(code: str, today: date, team_map: dict, sources: dict) -> tuple
                 )
             missing = [k for k in ("photo", "number") if entry[k] is None]
             if missing:
-                incomplete.append({"league": code, "club": af_team["name"], "fd": p, "missing": missing})
+                value = worth[len(players) - 1]
+                incomplete.append(
+                    {"league": code, "club": af_team["name"], "fd": p, "missing": missing, "value": value}
+                )
     tiers = assign_tiers(worth)
     for index, p in enumerate(players):
         p["tier"] = tiers[index]
     tier_of = {p["id"]: p["tier"] for p in players}
     for row in incomplete:
         row["tier"] = tier_of[row["fd"]["id"]]
+        row["in_game"] = not left_out(row["missing"], row["value"])
+    dropped = {row["fd"]["id"] for row in incomplete if not row["in_game"]}
+    players = [p for p in players if p["id"] not in dropped]
     unique_names(players)
     league = {"id": league_id, "name": league_name, "season": SEASON, "teams": teams, "players": players}
     return league, extra_links, incomplete
@@ -374,15 +387,19 @@ def write_second_pass(pairs: list[dict], today: date) -> None:
 
 
 def write_incomplete(rows: list[dict]) -> None:
-    """Who is still missing a photo or a number; download_api_football.py --profiles searches the "search" column."""
-    lines = ["league\tclub\tfd_id\tname\tborn\ttier\tmissing\tsearched\tsearch"]
-    for row in sorted(rows, key=lambda r: (r["tier"], r["league"], r["club"])):
+    """Who is still missing a photo or a number, most valuable first.
+
+    download_api_football.py --profiles searches the "search" column, filled only for players kept in the game.
+    """
+    lines = ["league\tclub\tfd_id\tname\tborn\tvalue_m\ttier\tmissing\tin_game\tpages_searched\tsearch"]
+    for row in sorted(rows, key=lambda r: -(r["value"] or 0)):
         fd = row["fd"]
-        searched = "yes" if (PROFILES_DIR / f"{fd['id']}.json").exists() else ""
-        term = search_term(fd["name"]) if "photo" in row["missing"] else ""
+        pages = len(list(PROFILES_DIR.glob(f"{fd['id']}.json")) + list(PROFILES_DIR.glob(f"{fd['id']}_p*.json")))
+        term = search_term(fd["name"]) if row["in_game"] and "photo" in row["missing"] else None
         lines.append(
             f"{row['league']}\t{row['club']}\t{fd['id']}\t{fd['name']}\t{(fd.get('dateOfBirth') or '')[:10]}"
-            f"\t{row['tier']}\t{' + '.join(row['missing'])}\t{searched}\t{term or ''}"
+            f"\t{(row['value'] or 0) / 1e6:g}\t{row['tier']}\t{' + '.join(row['missing'])}"
+            f"\t{'yes' if row['in_game'] else 'no'}\t{pages or ''}\t{term or ''}"
         )
     INCOMPLETE_REPORT.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
@@ -438,9 +455,10 @@ def main() -> None:
         print(f"Not in any 2026-27 squad, check {MANUAL_LINKS.name}: {sorted(unknown)}")
     write_second_pass(all_pairs, today)
     write_incomplete(all_incomplete)
-    missing_photo = sum("photo" in r["missing"] for r in all_incomplete)
+    kept = [r for r in all_incomplete if r["in_game"]]
     print(
-        f"\nStill without photo: {missing_photo}, without number: {sum('number' in r['missing'] for r in all_incomplete)}"
+        f"\nWithout photo or number: {len(all_incomplete)}; left out of the game (under "
+        f"{KNOWN_VALUE / 1e6:g}M euros): {len(all_incomplete) - len(kept)}; kept, still to fix: {len(kept)}"
         f" (list in {INCOMPLETE_REPORT.relative_to(PROJECT_DIR)})"
     )
     update_manifest()

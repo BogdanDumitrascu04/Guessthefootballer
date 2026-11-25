@@ -147,17 +147,6 @@
    "tier": 2
   },
   {
-   "id": 264215,
-   "name": "Sankhoun Diawara",
-   "team": "AC Milan",
-   "position": "Defender",
-   "age": 20,
-   "number": null,
-   "nationality": "France",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 43,
    "name": "Luka Modrić",
    "team": "AC Milan",
@@ -323,17 +312,6 @@
    "tier": 2
   },
   {
-   "id": 302645,
-   "name": "Lorenzo Ossola",
-   "team": "AC Milan",
-   "position": null,
-   "age": 19,
-   "number": null,
-   "nationality": "Italy",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 302644,
    "name": "El Hadji Cissé",
    "team": "AC Milan",
@@ -488,17 +466,6 @@
    "tier": 2
   },
   {
-   "id": 276963,
-   "name": "Víctor Valdepeñas",
-   "team": "Fiorentina",
-   "position": "Defender",
-   "age": 20,
-   "number": null,
-   "nationality": "Spain",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 2129,
    "name": "Antonín Barák",
    "team": "Fiorentina",
@@ -559,9 +526,9 @@
    "team": "Fiorentina",
    "position": "Midfielder",
    "age": 20,
-   "number": null,
+   "number": 42,
    "nationality": "Ivory Coast",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/474591.png",
    "tier": 2
   },
   {
@@ -926,17 +893,6 @@
    "nationality": "Argentina",
    "photo": "https://media.api-sports.io/football/players/323936.png",
    "tier": 1
-  },
-  {
-   "id": 302405,
-   "name": "Alessandro Di Nunzio",
-   "team": "AS Roma",
-   "position": null,
-   "age": 19,
-   "number": null,
-   "nationality": "Italy",
-   "photo": null,
-   "tier": 3
   },
   {
    "id": 1767,
@@ -2102,17 +2058,6 @@
    "number": 29,
    "nationality": "Italy",
    "photo": "https://media.api-sports.io/football/players/263481.png",
-   "tier": 3
-  },
-  {
-   "id": 156819,
-   "name": "Vitor Oliveira",
-   "team": "Genoa",
-   "position": "Forward",
-   "age": 26,
-   "number": null,
-   "nationality": "Portugal",
-   "photo": null,
    "tier": 3
   },
   {
@@ -3667,39 +3612,6 @@
    "tier": 2
   },
   {
-   "id": 262653,
-   "name": "Dinis Rodrigues",
-   "team": "Napoli",
-   "position": "Forward",
-   "age": 21,
-   "number": null,
-   "nationality": "Portugal",
-   "photo": null,
-   "tier": 3
-  },
-  {
-   "id": 302855,
-   "name": "Claudio Lieto",
-   "team": "Napoli",
-   "position": null,
-   "age": 18,
-   "number": null,
-   "nationality": "Italy",
-   "photo": null,
-   "tier": 3
-  },
-  {
-   "id": 302854,
-   "name": "Nikita Melnyk",
-   "team": "Napoli",
-   "position": null,
-   "age": 18,
-   "number": null,
-   "nationality": "Ukraine",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 302853,
    "name": "Andrea Chiummariello",
    "team": "Napoli",
@@ -3741,17 +3653,6 @@
    "number": 41,
    "nationality": "Poland",
    "photo": "https://media.api-sports.io/football/players/126896.png",
-   "tier": 3
-  },
-  {
-   "id": 167851,
-   "name": "Edoardo Piana",
-   "team": "Udinese",
-   "position": "Goalkeeper",
-   "age": 23,
-   "number": null,
-   "nationality": "Italy",
-   "photo": null,
    "tier": 3
   },
   {
@@ -4085,17 +3986,6 @@
    "tier": 3
   },
   {
-   "id": 6624,
-   "name": "Marin Šverko",
-   "team": "Venezia",
-   "position": "Defender",
-   "age": 28,
-   "number": null,
-   "nationality": "Croatia",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 7466,
    "name": "Ridgeciano Haps",
    "team": "Venezia",
@@ -4192,17 +4082,6 @@
    "number": 3,
    "nationality": "Belgium",
    "photo": "https://media.api-sports.io/football/players/373825.png",
-   "tier": 3
-  },
-  {
-   "id": 191195,
-   "name": "Calixte Ligue",
-   "team": "Venezia",
-   "position": "Defender",
-   "age": 21,
-   "number": null,
-   "nationality": "Switzerland",
-   "photo": null,
    "tier": 3
   },
   {
@@ -4338,17 +4217,6 @@
    "tier": 3
   },
   {
-   "id": 261351,
-   "name": "Saad El Haddad",
-   "team": "Venezia",
-   "position": "Midfielder",
-   "age": 21,
-   "number": null,
-   "nationality": "Morocco",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 270450,
    "name": "Toni Fernández",
    "team": "Venezia",
@@ -4404,17 +4272,6 @@
    "tier": 3
   },
   {
-   "id": 111976,
-   "name": "Andrea Adorante",
-   "team": "Venezia",
-   "position": "Forward",
-   "age": 26,
-   "number": null,
-   "nationality": "Italy",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 182768,
    "name": "Albion Rrahmani",
    "team": "Venezia",
@@ -4434,17 +4291,6 @@
    "number": 56,
    "nationality": "Poland",
    "photo": "https://media.api-sports.io/football/players/425255.png",
-   "tier": 3
-  },
-  {
-   "id": 299424,
-   "name": "Mohamed Malang Touré",
-   "team": "Venezia",
-   "position": "Forward",
-   "age": 19,
-   "number": null,
-   "nationality": "Senegal",
-   "photo": null,
    "tier": 3
   },
   {
@@ -4668,17 +4514,6 @@
    "tier": 3
   },
   {
-   "id": 150824,
-   "name": "Ilias Koutsoupias",
-   "team": "Frosinone",
-   "position": "Midfielder",
-   "age": 25,
-   "number": null,
-   "nationality": "Greece",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 153097,
    "name": "Patrizio Masini",
    "team": "Frosinone",
@@ -4786,17 +4621,6 @@
    "number": 7,
    "nationality": "Algeria",
    "photo": "https://media.api-sports.io/football/players/334915.png",
-   "tier": 3
-  },
-  {
-   "id": 263932,
-   "name": "Alejandro Cichero",
-   "team": "Frosinone",
-   "position": "Forward",
-   "age": 20,
-   "number": null,
-   "nationality": "Venezuela",
-   "photo": null,
    "tier": 3
   },
   {
@@ -4940,17 +4764,6 @@
    "number": 70,
    "nationality": "Italy",
    "photo": "https://media.api-sports.io/football/players/342055.png",
-   "tier": 3
-  },
-  {
-   "id": 179578,
-   "name": "Yeferson Paz",
-   "team": "Sassuolo",
-   "position": "Defender",
-   "age": 24,
-   "number": null,
-   "nationality": "Colombia",
-   "photo": null,
    "tier": 3
   },
   {
@@ -5603,17 +5416,6 @@
    "tier": 3
   },
   {
-   "id": 192420,
-   "name": "Sebastian Esposito",
-   "team": "Lecce",
-   "position": "Defender",
-   "age": 23,
-   "number": null,
-   "nationality": "Australia",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 213073,
    "name": "Kialonda Gaspar",
    "team": "Lecce",
@@ -5644,17 +5446,6 @@
    "number": 31,
    "nationality": "Germany",
    "photo": "https://media.api-sports.io/football/players/434081.png",
-   "tier": 3
-  },
-  {
-   "id": 264468,
-   "name": "Vernon Addo",
-   "team": "Lecce",
-   "position": "Defender",
-   "age": 21,
-   "number": null,
-   "nationality": "Netherlands",
-   "photo": null,
    "tier": 3
   },
   {
@@ -5831,17 +5622,6 @@
    "number": 11,
    "nationality": "Ivory Coast",
    "photo": "https://media.api-sports.io/football/players/8643.png",
-   "tier": 3
-  },
-  {
-   "id": 298168,
-   "name": "Miloš Jović",
-   "team": "Lecce",
-   "position": "Forward",
-   "age": 20,
-   "number": null,
-   "nationality": "Serbia",
-   "photo": null,
    "tier": 3
   },
   {
@@ -6197,17 +5977,6 @@
    "tier": 3
   },
   {
-   "id": 270690,
-   "name": "Kevin Martins",
-   "team": "Monza",
-   "position": "Forward",
-   "age": 21,
-   "number": null,
-   "nationality": "Italy",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 2715,
    "name": "Mauro Vigorito",
    "team": "Como",
@@ -6483,17 +6252,6 @@
    "tier": 2
   },
   {
-   "id": 151271,
-   "name": "Suliman Mustapha",
-   "team": "Como",
-   "position": "Forward",
-   "age": 25,
-   "number": null,
-   "nationality": "Austria",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 178165,
    "name": "Jayden Addai",
    "team": "Como",
@@ -6525,17 +6283,6 @@
    "nationality": "Spain",
    "photo": "https://media.api-sports.io/football/players/443162.png",
    "tier": 1
-  },
-  {
-   "id": 303007,
-   "name": "Federico Grilli",
-   "team": "Como",
-   "position": null,
-   "age": 19,
-   "number": null,
-   "nationality": "Italy",
-   "photo": null,
-   "tier": 3
   },
   {
    "id": 300833,

@@ -453,17 +453,6 @@
    "tier": 2
   },
   {
-   "id": 187527,
-   "name": "Axel Camblan",
-   "team": "Stade Brestois 29",
-   "position": "Midfielder",
-   "age": 23,
-   "number": null,
-   "nationality": "France",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 261666,
    "name": "Joseph Nonge",
    "team": "Stade Brestois 29",
@@ -1069,17 +1058,6 @@
    "tier": 2
   },
   {
-   "id": 83162,
-   "name": "Eros Maddy",
-   "team": "Auxerre",
-   "position": "Forward",
-   "age": 25,
-   "number": null,
-   "nationality": "Netherlands",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 128242,
    "name": "Cameron Archer",
    "team": "Auxerre",
@@ -1098,17 +1076,6 @@
    "age": 25,
    "number": null,
    "nationality": "Haiti",
-   "photo": null,
-   "tier": 3
-  },
-  {
-   "id": 170396,
-   "name": "Lasso Coulibaly",
-   "team": "Auxerre",
-   "position": "Forward",
-   "age": 24,
-   "number": null,
-   "nationality": "Ivory Coast",
    "photo": null,
    "tier": 3
   },
@@ -1154,17 +1121,6 @@
    "number": 49,
    "nationality": "China PR",
    "photo": "https://media.api-sports.io/football/players/511151.png",
-   "tier": 3
-  },
-  {
-   "id": 286557,
-   "name": "Ryan Rodin",
-   "team": "Auxerre",
-   "position": "Forward",
-   "age": 20,
-   "number": null,
-   "nationality": "France",
-   "photo": null,
    "tier": 3
   },
   {
@@ -1355,17 +1311,6 @@
    "tier": 2
   },
   {
-   "id": 728,
-   "name": "Mohamed Bayo",
-   "team": "Lille",
-   "position": "Forward",
-   "age": 33,
-   "number": null,
-   "nationality": "Guinea",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 914,
    "name": "Gaëtan Perrin",
    "team": "Lille",
@@ -1473,17 +1418,6 @@
    "number": 35,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/487381.png",
-   "tier": 3
-  },
-  {
-   "id": 303004,
-   "name": "Yéli Traoré",
-   "team": "Lille",
-   "position": null,
-   "age": 19,
-   "number": null,
-   "nationality": "France",
-   "photo": null,
    "tier": 3
   },
   {
@@ -1597,17 +1531,6 @@
    "tier": 3
   },
   {
-   "id": 288893,
-   "name": "Brad Mantsounga",
-   "team": "Nice",
-   "position": "Defender",
-   "age": 19,
-   "number": null,
-   "nationality": "Congo",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 566,
    "name": "Laurent Abergel",
    "team": "Nice",
@@ -1638,17 +1561,6 @@
    "number": 8,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/1914.png",
-   "tier": 3
-  },
-  {
-   "id": 119630,
-   "name": "Everton",
-   "team": "Nice",
-   "position": "Midfielder",
-   "age": 31,
-   "number": null,
-   "nationality": "Brazil",
-   "photo": null,
    "tier": 3
   },
   {
@@ -1693,17 +1605,6 @@
    "number": 39,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/504157.png",
-   "tier": 3
-  },
-  {
-   "id": 300521,
-   "name": "Nassim Laarej",
-   "team": "Nice",
-   "position": "Midfielder",
-   "age": 17,
-   "number": null,
-   "nationality": "France",
-   "photo": "https://media.api-sports.io/football/players/668718.png",
    "tier": 3
   },
   {
@@ -1784,17 +1685,6 @@
    "tier": 3
   },
   {
-   "id": 264399,
-   "name": "Victor Orakpo",
-   "team": "Nice",
-   "position": "Forward",
-   "age": 20,
-   "number": null,
-   "nationality": "Nigeria",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 733,
    "name": "Rémy Descamps",
    "team": "Lyon",
@@ -1825,17 +1715,6 @@
    "number": 25,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/270814.png",
-   "tier": 3
-  },
-  {
-   "id": 261256,
-   "name": "Lassine Diarra",
-   "team": "Lyon",
-   "position": "Goalkeeper",
-   "age": 24,
-   "number": null,
-   "nationality": "Mali",
-   "photo": null,
    "tier": 3
   },
   {
@@ -2378,28 +2257,6 @@
    "tier": 2
   },
   {
-   "id": 303550,
-   "name": "Younes Idder",
-   "team": "Paris Saint Germain",
-   "position": null,
-   "age": 18,
-   "number": null,
-   "nationality": "Morocco",
-   "photo": null,
-   "tier": 3
-  },
-  {
-   "id": 303005,
-   "name": "Arthur Bar",
-   "team": "Paris Saint Germain",
-   "position": null,
-   "age": 16,
-   "number": null,
-   "nationality": "France",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 302269,
    "name": "Adam Mouak",
    "team": "Paris Saint Germain",
@@ -2917,17 +2774,6 @@
    "tier": 2
   },
   {
-   "id": 98763,
-   "name": "Musa Al Taamari",
-   "team": "Rennes",
-   "position": "Forward",
-   "age": 29,
-   "number": null,
-   "nationality": "Jordan",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 149850,
    "name": "Esteban Lepaul",
    "team": "Rennes",
@@ -3057,17 +2903,6 @@
    "number": 44,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/395810.png",
-   "tier": 3
-  },
-  {
-   "id": 264216,
-   "name": "Tom Akpakoun",
-   "team": "Estac Troyes",
-   "position": "Defender",
-   "age": 21,
-   "number": null,
-   "nationality": "France",
-   "photo": null,
    "tier": 3
   },
   {
@@ -3225,28 +3060,6 @@
    "tier": 3
   },
   {
-   "id": 280496,
-   "name": "Amadou Diakite",
-   "team": "Estac Troyes",
-   "position": "Forward",
-   "age": 21,
-   "number": null,
-   "nationality": "France",
-   "photo": null,
-   "tier": 3
-  },
-  {
-   "id": 284226,
-   "name": "Elijah Olaniyi Odede",
-   "team": "Estac Troyes",
-   "position": "Forward",
-   "age": 19,
-   "number": null,
-   "nationality": "Nigeria",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 301036,
    "name": "Lassana Simakha",
    "team": "Estac Troyes",
@@ -3255,17 +3068,6 @@
    "number": 34,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/681732.png",
-   "tier": 3
-  },
-  {
-   "id": 300714,
-   "name": "Enisio Carneiro",
-   "team": "Estac Troyes",
-   "position": null,
-   "age": 19,
-   "number": null,
-   "nationality": "France",
-   "photo": null,
    "tier": 3
   },
   {
@@ -3533,17 +3335,6 @@
    "tier": 3
   },
   {
-   "id": 248779,
-   "name": "Paul Argney",
-   "team": "Le Havre",
-   "position": "Goalkeeper",
-   "age": 20,
-   "number": null,
-   "nationality": "France",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 8872,
    "name": "Ahmed Touba",
    "team": "Le Havre",
@@ -3739,17 +3530,6 @@
    "number": 10,
    "nationality": "Switzerland",
    "photo": "https://media.api-sports.io/football/players/961.png",
-   "tier": 3
-  },
-  {
-   "id": 204322,
-   "name": "Andy Logbo",
-   "team": "Le Havre",
-   "position": "Forward",
-   "age": 22,
-   "number": null,
-   "nationality": "France",
-   "photo": null,
    "tier": 3
   },
   {
@@ -3970,17 +3750,6 @@
    "number": 10,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/162706.png",
-   "tier": 3
-  },
-  {
-   "id": 260282,
-   "name": "Milan Robin",
-   "team": "Le Mans",
-   "position": "Midfielder",
-   "age": 26,
-   "number": null,
-   "nationality": "France",
-   "photo": null,
    "tier": 3
   },
   {
@@ -4454,17 +4223,6 @@
    "number": 16,
    "nationality": "Switzerland",
    "photo": "https://media.api-sports.io/football/players/7313.png",
-   "tier": 3
-  },
-  {
-   "id": 172431,
-   "name": "Yann Lienard",
-   "team": "Monaco",
-   "position": "Goalkeeper",
-   "age": 23,
-   "number": null,
-   "nationality": "France",
-   "photo": null,
    "tier": 3
   },
   {
@@ -5312,17 +5070,6 @@
    "number": 18,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/417550.png",
-   "tier": 3
-  },
-  {
-   "id": 302619,
-   "name": "Ibrahim Meïté",
-   "team": "Paris FC",
-   "position": null,
-   "age": 22,
-   "number": null,
-   "nationality": "France",
-   "photo": null,
    "tier": 3
   }
  ]

@@ -1,5 +1,5 @@
-"""Tests for sql/game_results.sql, sql/player_stats.sql and sql/delete_account.sql: who may do what, the points,
-the rules, the profile numbers, deleting an account (need SUPABASE_DB_URL in .env).
+"""Tests for sql/game_results.sql, sql/player_stats.sql, sql/user_cards.sql and sql/delete_account.sql: who may do
+what, the points, the rules, the profile numbers, the album, deleting an account (need SUPABASE_DB_URL in .env).
 
 A player is simulated the way Supabase does it: the `authenticated` role plus the user ID in the
 request claims, which is what auth.uid() reads. Everything happens in a temporary schema, inside a
@@ -276,6 +276,125 @@ def test_a_visitor_who_is_not_logged_in_cannot_read_stats(db):
     add_rounds(db, BOGDAN, "W")
     as_player(db, None)
     refused(db, errors.InsufficientPrivilege, lambda: db.execute("select * from player_stats"))
+
+
+# user_cards: the album.
+
+SAKA, RICE, GYOKERES = 99813, 8215, 8279  # football-data.org IDs
+CARD_COLUMNS = "player_id, guesses, guessed_at, first_unlocked_at, wins_count"
+
+
+def november(day):
+    return datetime(2026, 11, day, 21, 30, tzinfo=UTC)
+
+
+def add_round(db, user, player, day, guesses=3, won=True):
+    """A round finished on a day of November, written straight as the owner, who can choose the time."""
+    as_owner(db)
+    db.execute(
+        "insert into game_results (user_id, league_id, season_id, difficulty, started_at, finished_at, guesses,"
+        " hints_used, won, target_player_id, round_code) values (%s, 'PL', '2026-27', 'medium', %s, %s, %s, 0, %s, %s, %s)",
+        [user, november(day) - timedelta(minutes=2), november(day), guesses, won, player, CODE],
+    )
+
+
+def cards(db, user):
+    as_player(db, user)
+    return db.execute(f"select {CARD_COLUMNS} from user_cards order by player_id").fetchall()
+
+
+def test_a_guessed_player_is_one_card_with_that_rounds_guesses_and_time(db):
+    add_round(db, BOGDAN, SAKA, day=10, guesses=5)
+    add_round(db, BOGDAN, RICE, day=12, guesses=1)
+    assert cards(db, BOGDAN) == [
+        (RICE, 1, november(12), november(12), 1),
+        (SAKA, 5, november(10), november(10), 1),
+    ]
+
+
+def test_a_better_round_improves_the_card_and_brings_its_own_date(db):
+    add_round(db, BOGDAN, SAKA, day=10, guesses=5)
+    add_round(db, BOGDAN, SAKA, day=25, guesses=2)
+    # "Guessed in 2 on 10 Nov" never happened: the stamp is one round, not the best of each column.
+    assert cards(db, BOGDAN) == [(SAKA, 2, november(25), november(10), 2)]
+
+
+def test_a_worse_round_later_does_not_spoil_the_card(db):
+    add_round(db, BOGDAN, SAKA, day=10, guesses=2)
+    add_round(db, BOGDAN, SAKA, day=25, guesses=5)
+    assert cards(db, BOGDAN) == [(SAKA, 2, november(10), november(10), 2)]
+
+
+def test_an_equal_round_later_keeps_the_first_date(db):
+    # Saved first, played last: the date decides, not the order of saving.
+    add_round(db, BOGDAN, SAKA, day=25, guesses=2)
+    add_round(db, BOGDAN, SAKA, day=10, guesses=2)
+    assert cards(db, BOGDAN) == [(SAKA, 2, november(10), november(10), 2)]
+
+
+def test_two_equal_wins_at_the_same_moment_are_still_one_card(db):
+    add_round(db, BOGDAN, SAKA, day=10, guesses=2)
+    add_round(db, BOGDAN, SAKA, day=10, guesses=2)
+    assert cards(db, BOGDAN) == [(SAKA, 2, november(10), november(10), 2)]
+
+
+def test_a_round_played_through_the_game_gives_its_card(db):
+    as_player(db, BOGDAN)
+    finish(db, start(db), guesses=3, hints=1, target=SAKA)
+    [(player, guesses, _, _, wins)] = cards(db, BOGDAN)
+    assert (player, guesses, wins) == (SAKA, 3, 1)
+
+
+def test_lost_abandoned_and_unidentified_rounds_give_no_card(db):
+    add_round(db, BOGDAN, SAKA, day=10, guesses=6, won=False)
+    add_round(db, BOGDAN, None, day=11)  # 2024-25: the player has no ID
+    as_player(db, BOGDAN)
+    start(db)  # never finished
+    assert cards(db, BOGDAN) == []
+
+
+def test_lost_rounds_do_not_touch_a_card_already_won(db):
+    add_round(db, BOGDAN, GYOKERES, day=8, guesses=6, won=False)
+    add_round(db, BOGDAN, GYOKERES, day=9, guesses=6)
+    add_round(db, BOGDAN, GYOKERES, day=20, guesses=6, won=False)
+    assert cards(db, BOGDAN) == [(GYOKERES, 6, november(9), november(9), 1)]
+
+
+def test_two_users_who_guess_the_same_player_have_a_card_each(db):
+    add_round(db, BOGDAN, SAKA, day=10, guesses=5)
+    add_round(db, ANDREI, SAKA, day=11, guesses=2)
+    as_owner(db)  # the owner is above the policies, so here only the view itself keeps the two apart
+    rows = db.execute("select user_id, player_id, guesses from user_cards order by guesses").fetchall()
+    assert rows == [(ANDREI, SAKA, 2), (BOGDAN, SAKA, 5)]
+
+
+def test_users_see_only_their_own_cards(db):
+    add_round(db, BOGDAN, SAKA, day=10)
+    add_round(db, ANDREI, RICE, day=11)
+    as_player(db, ANDREI)
+    assert db.execute("select user_id, player_id from user_cards").fetchall() == [(ANDREI, RICE)]
+
+
+def test_a_visitor_who_is_not_logged_in_cannot_read_cards(db):
+    add_round(db, BOGDAN, SAKA, day=10)
+    as_player(db, None)
+    refused(db, errors.InsufficientPrivilege, lambda: db.execute("select * from user_cards"))
+
+
+@pytest.mark.parametrize(
+    "action",
+    [
+        "insert into user_cards (user_id, player_id, guesses) values (auth.uid(), 1, 1)",
+        "update user_cards set guesses = 1",
+        "delete from user_cards",
+    ],
+    ids=["insert", "update", "delete"],
+)
+def test_a_card_cannot_be_written_only_won(db, action):
+    add_round(db, BOGDAN, SAKA, day=10)
+    as_player(db, BOGDAN)
+    # Not a question of rights: a view worked out from several rounds has no row to write to.
+    refused(db, errors.ObjectNotInPrerequisiteState, lambda: db.execute(action))
 
 
 # delete_my_account: the "Delete account" button.

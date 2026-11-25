@@ -130,9 +130,9 @@
    "team": "Athletic Club",
    "position": "Defender",
    "age": 24,
-   "number": null,
+   "number": 13,
    "nationality": "Spain",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/332305.png",
    "tier": 3
   },
   {
@@ -301,17 +301,6 @@
    "tier": 3
   },
   {
-   "id": 302105,
-   "name": "Christian Imga",
-   "team": "Athletic Club",
-   "position": null,
-   "age": 17,
-   "number": null,
-   "nationality": "Spain",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 120,
    "name": "Jan Oblak",
    "team": "Atletico Madrid",
@@ -339,9 +328,9 @@
    "team": "Atletico Madrid",
    "position": "Goalkeeper",
    "age": 21,
-   "number": null,
+   "number": 25,
    "nationality": "Spain",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/393198.png",
    "tier": 3
   },
   {
@@ -419,17 +408,6 @@
    "number": 30,
    "nationality": "Spain",
    "photo": "https://media.api-sports.io/football/players/386869.png",
-   "tier": 3
-  },
-  {
-   "id": 295747,
-   "name": "Jorge Domínguez",
-   "team": "Atletico Madrid",
-   "position": "Defender",
-   "age": 16,
-   "number": null,
-   "nationality": "Spain",
-   "photo": null,
    "tier": 3
   },
   {
@@ -1082,17 +1060,6 @@
    "tier": 3
   },
   {
-   "id": 303408,
-   "name": "Muñeco",
-   "team": "Espanyol",
-   "position": null,
-   "age": 19,
-   "number": null,
-   "nationality": "Spain",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 301114,
    "name": "Víctor Mullerat",
    "team": "Espanyol",
@@ -1274,9 +1241,9 @@
    "team": "Barcelona",
    "position": "Midfielder",
    "age": 22,
-   "number": null,
+   "number": 6,
    "nationality": "Spain",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/296667.png",
    "tier": 3
   },
   {
@@ -1626,9 +1593,9 @@
    "team": "Getafe",
    "position": "Midfielder",
    "age": 26,
-   "number": null,
+   "number": 11,
    "nationality": "Spain",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/187987.png",
    "tier": 3
   },
   {
@@ -1698,17 +1665,6 @@
    "tier": 3
   },
   {
-   "id": 260763,
-   "name": "Chrisantus",
-   "team": "Getafe",
-   "position": "Forward",
-   "age": 23,
-   "number": null,
-   "nationality": "Nigeria",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 302804,
    "name": "Ibra Danfakha",
    "team": "Getafe",
@@ -1736,9 +1692,9 @@
    "team": "Malaga",
    "position": "Goalkeeper",
    "age": 22,
-   "number": null,
+   "number": 13,
    "nationality": "Spain",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/344746.png",
    "tier": 3
   },
   {
@@ -1816,17 +1772,6 @@
    "number": 4,
    "nationality": "Spain",
    "photo": "https://media.api-sports.io/football/players/14470.png",
-   "tier": 3
-  },
-  {
-   "id": 244053,
-   "name": "Rafa Garrido",
-   "team": "Malaga",
-   "position": "Defender",
-   "age": 22,
-   "number": null,
-   "nationality": "Spain",
-   "photo": null,
    "tier": 3
   },
   {
@@ -2022,9 +1967,9 @@
    "team": "Malaga",
    "position": "Forward",
    "age": 22,
-   "number": null,
+   "number": 9,
    "nationality": "Spain",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/376401.png",
    "tier": 3
   },
   {
@@ -2132,9 +2077,9 @@
    "team": "Real Madrid",
    "position": "Defender",
    "age": 23,
-   "number": null,
+   "number": 18,
    "nationality": "Spain",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/284300.png",
    "tier": 1
   },
   {
@@ -2242,9 +2187,9 @@
    "team": "Real Madrid",
    "position": "Midfielder",
    "age": 20,
-   "number": 14,
+   "number": 6,
    "nationality": "Spain",
-   "photo": "https://media.api-sports.io/football/players/445877.png",
+   "photo": "https://media.api-sports.io/football/players/560905.png",
    "tier": 2
   },
   {
@@ -2355,17 +2300,6 @@
    "number": 13,
    "nationality": "Argentina",
    "photo": "https://media.api-sports.io/football/players/11379.png",
-   "tier": 3
-  },
-  {
-   "id": 81425,
-   "name": "Morro",
-   "team": "Rayo Vallecano",
-   "position": "Goalkeeper",
-   "age": 26,
-   "number": null,
-   "nationality": "Spain",
-   "photo": null,
    "tier": 3
   },
   {
@@ -2545,17 +2479,6 @@
    "tier": 3
   },
   {
-   "id": 32127,
-   "name": "Raúl de Tomás",
-   "team": "Rayo Vallecano",
-   "position": "Forward",
-   "age": 32,
-   "number": null,
-   "nationality": "Spain",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 32312,
    "name": "Álvaro García",
    "team": "Rayo Vallecano",
@@ -2710,17 +2633,6 @@
    "tier": 3
   },
   {
-   "id": 214177,
-   "name": "Xavi Grande",
-   "team": "Levante",
-   "position": "Defender",
-   "age": 21,
-   "number": null,
-   "nationality": "Spain",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 249065,
    "name": "Jorge Cabello",
    "team": "Levante",
@@ -2762,17 +2674,6 @@
    "number": 29,
    "nationality": "Spain",
    "photo": "https://media.api-sports.io/football/players/504605.png",
-   "tier": 3
-  },
-  {
-   "id": 299422,
-   "name": "Marc Santos",
-   "team": "Levante",
-   "position": "Defender",
-   "age": 16,
-   "number": null,
-   "nationality": "Spain",
-   "photo": null,
    "tier": 3
   },
   {
@@ -2836,9 +2737,9 @@
    "team": "Levante",
    "position": "Midfielder",
    "age": 22,
-   "number": null,
+   "number": 6,
    "nationality": "Spain",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/391131.png",
    "tier": 3
   },
   {
@@ -3224,17 +3125,6 @@
    "number": 13,
    "nationality": "Spain",
    "photo": "https://media.api-sports.io/football/players/189832.png",
-   "tier": 3
-  },
-  {
-   "id": 11,
-   "name": "Álvaro Odriozola",
-   "team": "Real Sociedad",
-   "position": "Defender",
-   "age": 30,
-   "number": null,
-   "nationality": "Spain",
-   "photo": null,
    "tier": 3
   },
   {
@@ -3777,17 +3667,6 @@
    "tier": 3
   },
   {
-   "id": 8780,
-   "name": "Dimitri Foulquier",
-   "team": "Valencia",
-   "position": "Defender",
-   "age": 33,
-   "number": null,
-   "nationality": "Guadeloupe",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 33146,
    "name": "Gaya",
    "team": "Valencia",
@@ -4030,17 +3909,6 @@
    "tier": 3
   },
   {
-   "id": 300718,
-   "name": "Rodrigo Gamón",
-   "team": "Valencia",
-   "position": null,
-   "age": 18,
-   "number": null,
-   "nationality": "Spain",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 283,
    "name": "Sivera",
    "team": "Alaves",
@@ -4050,17 +3918,6 @@
    "nationality": "Spain",
    "photo": "https://media.api-sports.io/football/players/47353.png",
    "tier": 2
-  },
-  {
-   "id": 142453,
-   "name": "Adrian Rodriguez",
-   "team": "Alaves",
-   "position": "Goalkeeper",
-   "age": 25,
-   "number": null,
-   "nationality": "Argentina",
-   "photo": null,
-   "tier": 3
   },
   {
    "id": 33622,
@@ -4203,17 +4060,6 @@
    "number": 19,
    "nationality": "Spain",
    "photo": "https://media.api-sports.io/football/players/139001.png",
-   "tier": 3
-  },
-  {
-   "id": 176854,
-   "name": "Tomas Mendes",
-   "team": "Alaves",
-   "position": "Midfielder",
-   "age": 22,
-   "number": null,
-   "nationality": "Spain",
-   "photo": null,
    "tier": 3
   },
   {
@@ -5185,17 +5031,6 @@
    "tier": 3
   },
   {
-   "id": 302465,
-   "name": "Jesús Morales",
-   "team": "Sevilla",
-   "position": null,
-   "age": 19,
-   "number": null,
-   "nationality": "Spain",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 79533,
    "name": "Álvaro Fernández",
    "team": "Deportivo La Coruna",
@@ -5394,17 +5229,6 @@
    "tier": 3
   },
   {
-   "id": 245913,
-   "name": "Teun Gijselhart",
-   "team": "Deportivo La Coruna",
-   "position": "Midfielder",
-   "age": 21,
-   "number": null,
-   "nationality": "Netherlands",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 246474,
    "name": "Jonathan Asp-Jensen",
    "team": "Deportivo La Coruna",
@@ -5523,17 +5347,6 @@
    "number": 1,
    "nationality": "Sweden",
    "photo": "https://media.api-sports.io/football/players/408875.png",
-   "tier": 3
-  },
-  {
-   "id": 3874,
-   "name": "José Manuel",
-   "team": "Racing Santander",
-   "position": "Defender",
-   "age": 28,
-   "number": null,
-   "nationality": "Spain",
-   "photo": null,
    "tier": 3
   },
   {

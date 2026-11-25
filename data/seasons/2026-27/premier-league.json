@@ -1181,17 +1181,6 @@
    "tier": 3
   },
   {
-   "id": 300279,
-   "name": "Alex Borto",
-   "team": "Fulham",
-   "position": "Goalkeeper",
-   "age": 23,
-   "number": null,
-   "nationality": "United States",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 1836,
    "name": "Timothy Castagne",
    "team": "Fulham",
@@ -4643,17 +4632,6 @@
    "number": 20,
    "nationality": "England",
    "photo": "https://media.api-sports.io/football/players/288102.png",
-   "tier": 3
-  },
-  {
-   "id": 303053,
-   "name": "Nathanael Kalembo",
-   "team": "Crystal Palace",
-   "position": "Midfielder",
-   "age": 16,
-   "number": null,
-   "nationality": "England",
-   "photo": null,
    "tier": 3
   },
   {

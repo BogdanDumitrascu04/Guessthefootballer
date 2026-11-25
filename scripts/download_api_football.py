@@ -32,6 +32,7 @@ PAUSE = 6.5  # the free plan allows 10 requests per minute
 PROFILES_DIR = OUT_DIR / "profiles"
 INCOMPLETE = RAW_DIR / "incomplete.txt"
 PROFILES_PER_DAY = 60  # leaves about 40 of the key's 100 daily requests to the other project
+MAX_PAGES = 3  # 250 players a page; past 750 the name is too common to be worth more requests
 
 # Words that say what kind of club it is, not which one.
 # fmt: off
@@ -146,30 +147,41 @@ def download_squads(client: httpx.Client, mapping: dict) -> None:
     print(f"\nDownloaded {done}, already saved {skipped}, still missing {left}.")
 
 
-def download_profiles(client: httpx.Client, limit: int) -> None:
-    """One name search per player still without a photo, most valuable first (incomplete.txt is sorted by tier).
+def next_page(fd_id: str) -> int | None:
+    """1 for a new search, then the next page while the saved answers say there are more (common names)."""
+    first = PROFILES_DIR / f"{fd_id}.json"
+    if not first.exists():
+        return 1
+    saved = 1 + len(list(PROFILES_DIR.glob(f"{fd_id}_p*.json")))
+    total = json.loads(first.read_text(encoding="utf-8"))["paging"]["total"]
+    return saved + 1 if saved < min(total, MAX_PAGES) else None
 
-    Every answer is saved, empty ones too, so no search is repeated; files saved today count against the limit.
+
+def download_profiles(client: httpx.Client, limit: int) -> None:
+    """One name search per player still to fix, most valuable first (incomplete.txt is sorted by value).
+
+    Every answer is saved, empty ones too, so no page is asked for twice; files saved today count against the limit.
     """
     PROFILES_DIR.mkdir(exist_ok=True)
     today = date.today()
     used = sum(date.fromtimestamp(p.stat().st_mtime) == today for p in PROFILES_DIR.glob("*.json"))
     with INCOMPLETE.open(encoding="utf-8", newline="") as f:
         rows = csv.DictReader(f, delimiter="\t")
-        todo = [r for r in rows if r["search"] and not (PROFILES_DIR / f"{r['fd_id']}.json").exists()]
+        todo = [(r, page) for r in rows if r["search"] and (page := next_page(r["fd_id"]))]
     done = 0
-    for row in todo:
+    for row, page in todo:
         if used >= limit:
             break
         try:
-            data = get(client, "/players/profiles", {"search": row["search"]})
+            data = get(client, "/players/profiles", {"search": row["search"], "page": page})
         except RuntimeError as error:
             print(f"Stopped at {row['name']}: {error}")
             break
-        (PROFILES_DIR / f"{row['fd_id']}.json").write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+        name = f"{row['fd_id']}.json" if page == 1 else f"{row['fd_id']}_p{page}.json"
+        (PROFILES_DIR / name).write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
         used += 1
         done += 1
-        print(f"{done:>3}. {row['name']} ({row['club']}): '{row['search']}' -> {data['results']} found")
+        print(f"{done:>3}. {row['name']} ({row['club']}): '{row['search']}' page {page} -> {data['results']} found")
         time.sleep(PAUSE)
     print(f"\nSearched {done} now, {used} today (limit {limit}); {len(todo) - done} left for the next runs.")
 

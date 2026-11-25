@@ -1,15 +1,18 @@
 """Tests for scripts/build_season.py and the club matching in scripts/download_api_football.py. No internet."""
 
+import json
 from datetime import date
 
 import pytest
 
-from scripts import build_season
+from scripts import build_season, download_api_football
 from scripts.build_season import (
     age_on,
     assign_tiers,
     best_age,
+    left_out,
     load_manual_links,
+    load_profiles,
     manual_entry,
     market_value,
     match_leftovers,
@@ -23,7 +26,7 @@ from scripts.build_season import (
     tm_player,
     unique_names,
 )
-from scripts.download_api_football import is_first_team, match_team
+from scripts.download_api_football import is_first_team, match_team, next_page
 
 TODAY = date(2026, 11, 8)
 
@@ -276,3 +279,23 @@ def test_manual_links_win(tmp_path, monkeypatch):
     csv_file.write_text(header + "8;B;;123;\n", encoding="utf-8-sig")
     with pytest.raises(ValueError):
         load_manual_links()
+
+
+def test_unknown_incomplete_players_leave_the_game():
+    assert left_out(["photo", "number"], 300_000)
+    assert left_out(["number"], None)  # no known value counts as unknown
+    assert not left_out(["photo"], 25_000_000)  # known: kept and fixed by hand
+    assert not left_out([], 0)  # complete players always stay
+
+
+def test_search_pages_are_merged_and_continued(tmp_path, monkeypatch):
+    monkeypatch.setattr(build_season, "PROFILES_DIR", tmp_path)
+    monkeypatch.setattr(download_api_football, "PROFILES_DIR", tmp_path)
+    assert next_page("7") == 1
+    page = {"paging": {"current": 1, "total": 5}, "response": [{"player": {"id": 1}}]}
+    (tmp_path / "7.json").write_text(json.dumps(page), encoding="utf-8")
+    assert next_page("7") == 2
+    (tmp_path / "7_p2.json").write_text(json.dumps(page | {"response": [{"player": {"id": 2}}]}), encoding="utf-8")
+    (tmp_path / "7_p3.json").write_text(json.dumps(page | {"response": []}), encoding="utf-8")
+    assert next_page("7") is None  # three pages at most
+    assert sorted(p["id"] for p in load_profiles()[7]) == [1, 2]

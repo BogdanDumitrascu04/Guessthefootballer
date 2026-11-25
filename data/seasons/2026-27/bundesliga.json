@@ -57,17 +57,6 @@
    "tier": 3
   },
   {
-   "id": 289578,
-   "name": "Martin James",
-   "team": "1. FC Köln",
-   "position": "Goalkeeper",
-   "age": 18,
-   "number": null,
-   "nationality": "France",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 309,
    "name": "Timo Hübers",
    "team": "1. FC Köln",
@@ -970,17 +959,6 @@
    "tier": 2
   },
   {
-   "id": 296856,
-   "name": "Ndjicoura Bomba",
-   "team": "Bayer Leverkusen",
-   "position": "Forward",
-   "age": 18,
-   "number": null,
-   "nationality": "Mali",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 302787,
    "name": "Dustin Buck",
    "team": "Bayer Leverkusen",
@@ -1242,17 +1220,6 @@
    "number": 40,
    "nationality": "Germany",
    "photo": "https://media.api-sports.io/football/players/479116.png",
-   "tier": 3
-  },
-  {
-   "id": 299456,
-   "name": "Enzo dos Santos",
-   "team": "Borussia Dortmund",
-   "position": "Midfielder",
-   "age": 17,
-   "number": null,
-   "nationality": "Luxembourg",
-   "photo": null,
    "tier": 3
   },
   {
@@ -1872,17 +1839,6 @@
    "tier": 3
   },
   {
-   "id": 205506,
-   "name": "Emil Højlund",
-   "team": "FC Schalke 04",
-   "position": "Forward",
-   "age": 21,
-   "number": null,
-   "nationality": "Denmark",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 10078,
    "name": "Daniel Fernandes",
    "team": "Hamburger SV",
@@ -2419,17 +2375,6 @@
    "number": 43,
    "nationality": "Germany",
    "photo": "https://media.api-sports.io/football/players/394665.png",
-   "tier": 3
-  },
-  {
-   "id": 296854,
-   "name": "Ertugrul Yigit",
-   "team": "VfB Stuttgart",
-   "position": "Midfielder",
-   "age": 17,
-   "number": null,
-   "nationality": "Germany",
-   "photo": null,
    "tier": 3
   },
   {
@@ -3137,17 +3082,6 @@
    "tier": 3
   },
   {
-   "id": 82354,
-   "name": "Silas Wamangituka",
-   "team": "FSV Mainz 05",
-   "position": "Forward",
-   "age": 27,
-   "number": null,
-   "nationality": "DR Congo",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 137302,
    "name": "Ransford Königsdörffer",
    "team": "FSV Mainz 05",
@@ -3170,17 +3104,6 @@
    "tier": 2
   },
   {
-   "id": 297913,
-   "name": "Alynho Haidara",
-   "team": "FSV Mainz 05",
-   "position": "Forward",
-   "age": 18,
-   "number": null,
-   "nationality": "Ivory Coast",
-   "photo": "https://media.api-sports.io/football/players/606691.png",
-   "tier": 3
-  },
-  {
    "id": 6617,
    "name": "Finn Dahmen",
    "team": "FC Augsburg",
@@ -3200,17 +3123,6 @@
    "number": 22,
    "nationality": "Croatia",
    "photo": "https://media.api-sports.io/football/players/14553.png",
-   "tier": 3
-  },
-  {
-   "id": 295064,
-   "name": "Tom Wisbereit",
-   "team": "FC Augsburg",
-   "position": "Goalkeeper",
-   "age": 19,
-   "number": null,
-   "nationality": "Germany",
-   "photo": "https://media.api-sports.io/football/players/467926.png",
    "tier": 3
   },
   {
@@ -3296,9 +3208,9 @@
    "team": "FC Augsburg",
    "position": "Defender",
    "age": 20,
-   "number": null,
+   "number": 35,
    "nationality": "Sierra Leone",
-   "photo": null,
+   "photo": "https://media.api-sports.io/football/players/449509.png",
    "tier": 2
   },
   {
@@ -5095,17 +5007,6 @@
    "tier": 3
   },
   {
-   "id": 292360,
-   "name": "Lasse Eickel",
-   "team": "SC Paderborn 07",
-   "position": "Forward",
-   "age": 18,
-   "number": null,
-   "nationality": "Germany",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 58262,
    "name": "Tim Boss",
    "team": "SV Elversberg",
@@ -5117,17 +5018,6 @@
    "tier": 3
   },
   {
-   "id": 65597,
-   "name": "Frank Lehmann",
-   "team": "SV Elversberg",
-   "position": "Goalkeeper",
-   "age": 37,
-   "number": null,
-   "nationality": "Germany",
-   "photo": null,
-   "tier": 3
-  },
-  {
    "id": 122627,
    "name": "Nicolas Kristof",
    "team": "SV Elversberg",
@@ -5136,17 +5026,6 @@
    "number": 20,
    "nationality": "Austria",
    "photo": "https://media.api-sports.io/football/players/178194.png",
-   "tier": 3
-  },
-  {
-   "id": 289386,
-   "name": "Elias Etringer",
-   "team": "SV Elversberg",
-   "position": "Goalkeeper",
-   "age": 18,
-   "number": null,
-   "nationality": "Germany",
-   "photo": "https://media.api-sports.io/football/players/667663.png",
    "tier": 3
   },
   {
@@ -5224,17 +5103,6 @@
    "number": 2,
    "nationality": "Thailand",
    "photo": "https://media.api-sports.io/football/players/39331.png",
-   "tier": 3
-  },
-  {
-   "id": 209671,
-   "name": "Luis Seifert",
-   "team": "SV Elversberg",
-   "position": "Defender",
-   "age": 22,
-   "number": null,
-   "nationality": "Germany",
-   "photo": null,
    "tier": 3
   },
   {
@@ -5345,17 +5213,6 @@
    "number": 25,
    "nationality": "Bulgaria",
    "photo": "https://media.api-sports.io/football/players/177452.png",
-   "tier": 3
-  },
-  {
-   "id": 121181,
-   "name": "Jason Ceka",
-   "team": "SV Elversberg",
-   "position": "Forward",
-   "age": 27,
-   "number": null,
-   "nationality": "Germany",
-   "photo": null,
    "tier": 3
   },
   {
