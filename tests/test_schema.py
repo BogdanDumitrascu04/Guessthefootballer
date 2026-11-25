@@ -62,6 +62,7 @@ def refused(db, error, action):
 def test_all_tables_are_created(db):
     assert table_names(db) == [
         "clubs",
+        "daily_players",
         "game_results",
         "leagues",
         "market_values",

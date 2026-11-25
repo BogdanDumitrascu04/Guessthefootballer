@@ -11,7 +11,7 @@ const diakite = {
     id: 8, name: 'Bafodé Diakité', team: 'Bournemouth', position: 'Defender', age: 25, number: 18,
     nationality: 'France', photo: 'https://media.api-sports.io/football/players/162016.png', tier: 2,
 };
-const odegaard = { name: 'Martin Ødegaard', team: 'Arsenal', position: 'Midfielder', age: 26, number: 8, nationality: 'Norway', photo: 'images/ode.png' };
+const odegaard = { name: 'Martin Ødegaard', team: 'Arsenal', position: 'Midfielder', age: 26, number: 8, nationality: 'Norway', photo: 'images/portraits/57/odegaard.webp' };
 
 function round(guesses, target = kroupi, hints = []) {
     return createRound({ league: 'premier-league', season: '2026-27', difficulty: 'easy', date: '2026-11-20', max: 6, hints, target, guesses });
@@ -44,10 +44,10 @@ test('only the shown fields are kept, as they were during the round', () => {
     assert.equal('searchName' in saved.target, false);
 });
 
-test('players without an ID and local photos survive the trip', () => {
+test('players without an ID and our own portraits survive the trip', () => {
     const decoded = decodeRound(encodeRound(round([odegaard], odegaard)));
     assert.equal(decoded.target.id, null);
-    assert.equal(decoded.target.photo, 'images/ode.png');
+    assert.equal(decoded.target.photo, 'images/portraits/57/odegaard.webp');
     assert.equal(decoded.target.name, 'Martin Ødegaard');
 });
 
@@ -58,11 +58,18 @@ test('the code is safe in a link and stays short', () => {
     assert.ok(code.length < 1000, `${code.length} characters`);
 });
 
-test('a link cannot bring in pictures from other sites', () => {
-    const edited = round([diakite], { ...kroupi, photo: 'https://example.com/anything.png' });
-    assert.equal(decodeRound(encodeRound(edited)).target.photo, null);
-    const climbing = round([diakite], { ...kroupi, photo: 'images/../../secret.png' });
-    assert.equal(decodeRound(encodeRound(climbing)).target.photo, null);
+test('a link cannot bring in any picture but our own portraits', () => {
+    const others = ['https://example.com/anything.png', kroupi.photo, 368030, 'images/leagues/LaLiga/Mbappe.png', 'images/portraits/../../secret.png'];
+    for (const photo of others) {
+        const packed = [2, 'premier-league', '2026-27', 'easy', '2026-11-25', 6, [], [[7, 'Eli Kroupi', 'Bournemouth', 'Forward', 20, 22, 'France', photo]], [0], null];
+        assert.equal(decodeRound(Buffer.from(JSON.stringify(packed)).toString('base64url')).target.photo, null, String(photo));
+    }
+});
+
+test('a round saved now carries no picture from another site', () => {
+    const saved = round([diakite, kroupi]);
+    assert.equal(saved.target.photo, null);
+    assert.equal(saved.guesses[0].photo, null);
 });
 
 // n guesses, the last one right unless lost; the table agreed on 20 Nov 2026.
@@ -130,6 +137,19 @@ test('links made before the clue existed still open, without a clue', () => {
     assert.equal(decoded.clue, null);
     assert.equal(decoded.target.name, 'Eli Kroupi');
     assert.equal(isWon(decoded), true);
+});
+
+// Made on 25 Nov 2026 by the code of commit 1a06fc3, while the game still had 2024-25 and its photos.
+const LINK_2024_25 = 'WzIsInByZW1pZXItbGVhZ3VlIiwiMjAyNC0yNSIsImVhc3kiLCIyMDI2LTExLTIwIiw2LFsidGVhbSJdLFtbbnVsbCwiTWFydGluIE9kZWdhYXJkIiwiQXJzZW5hbCIsIk1pZGZpZWxkZXIiLDI1LDgsIk5vcndheSIsImltYWdlcy9sZWFndWVzL1ByZW1pZXJMZWFndWUvQXJzZW5hbC9PZGVnYWFyZC5wbmciXSxbbnVsbCwiTW9oYW1lZCBTYWxhaCIsIkxpdmVycG9vbCIsIkZvcndhcmQiLDMyLDExLCJFZ3lwdCIsImltYWdlcy9sZWFndWVzL1ByZW1pZXJMZWFndWUvTGl2ZXJwb29sL1NhbGFoLnBuZyJdLFtudWxsLCJEb21pbmlrIFN6b2Jvc3psYWkiLCJMaXZlcnBvb2wiLCJNaWRmaWVsZGVyIiwyMyw4LCJIdW5nYXJ5IiwiaW1hZ2VzL2xlYWd1ZXMvUHJlbWllckxlYWd1ZS9MaXZlcnBvb2wvU3pvYm9zemxhaS5wbmciXV0sWzEsMiwwXSxudWxsXQ';
+
+test('a link to a 2024-25 round still opens, without its photos', () => {
+    const decoded = decodeRound(LINK_2024_25);
+    assert.equal(decoded.season, '2024-25');
+    assert.equal(decoded.target.name, 'Martin Odegaard');
+    assert.equal(decoded.target.id, null); // that season never had IDs
+    assert.deepEqual(decoded.guesses.map(p => p.photo), [null, null, null]);
+    assert.equal(isWon(decoded), true);
+    assert.equal(roundPoints(decoded), 30);
 });
 
 test('an edited clue is dropped, the round still opens', () => {

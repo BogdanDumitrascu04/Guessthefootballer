@@ -2,7 +2,8 @@
 :root {
     color-scheme: dark;
     --font-display: "Barlow Condensed", "Arial Narrow", system-ui, sans-serif;
-    --league-bg: url('../../images/leagues/PremierLeague/Logo/1.jpg');
+    --league-glow: transparent;
+    --league-tifo: none;
     --bg: #0b1220;
     --surface: #141d2e;
     --surface-raised: #1d2840;
@@ -49,132 +50,6 @@ button {
     cursor: pointer;
 }
 
-/* Header */
-.header {
-    position: sticky;
-    top: 0;
-    z-index: 30;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-    padding: 8px 16px;
-    background: var(--surface);
-    border-bottom: 1px solid var(--border);
-}
-
-.brand {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    min-width: 0;
-    color: var(--text);
-    text-decoration: none;
-}
-
-#logo {
-    flex: none;
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-}
-
-#mainHeader {
-    font-family: var(--font-display);
-    font-size: 1.45rem;
-    font-weight: 700;
-    line-height: 1.2;
-}
-
-.header-tools {
-    display: flex;
-    flex: none;
-    align-items: center;
-    gap: 4px;
-}
-
-#language {
-    padding: 7px 8px;
-    font: inherit;
-    font-size: 0.875rem;
-    color: var(--text);
-    cursor: pointer;
-    background: var(--surface-raised);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-}
-
-.icon-button {
-    width: 38px;
-    height: 38px;
-    padding: 0;
-    font-size: 1.25rem;
-    line-height: 1;
-    color: var(--text);
-    background: transparent;
-    border: none;
-    border-radius: 8px;
-}
-
-.icon-button:hover {
-    background: var(--surface-raised);
-}
-
-/* Burger menu and "how to play" panels */
-.navbar,
-#infoContent {
-    position: absolute;
-    top: calc(100% + 6px);
-    right: 16px;
-    width: min(320px, calc(100vw - 32px));
-    background: var(--surface-raised);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
-}
-
-.navbar.show,
-#infoContent.show {
-    display: block;
-}
-
-#menuContent a {
-    display: block;
-    padding: 11px 16px;
-    color: var(--text);
-    text-decoration: none;
-    border-bottom: 1px solid var(--border);
-}
-
-#menuContent a:last-child {
-    border-bottom: none;
-}
-
-#menuContent a:hover {
-    background: var(--border);
-}
-
-#infoContent {
-    padding: 14px 18px;
-}
-
-#infoContent h2 {
-    margin: 0 0 8px;
-    font-family: var(--font-display);
-    font-size: 1.4rem;
-}
-
-#infoContent p {
-    margin: 6px 0;
-    color: var(--muted);
-}
-
-#closeButton {
-    position: absolute;
-    top: 6px;
-    right: 6px;
-}
-
 /* Page layout */
 .content {
     width: 100%;
@@ -183,44 +58,87 @@ button {
     padding: 20px 16px 48px;
 }
 
-/* Game: head and input */
+/* Game: the head is a ticket lying flat, with the league's pass on its stub */
 .game-head {
-    display: flex;
-    flex-wrap: wrap;
+    --stub: 78px;
+    --notch: 7px;
+    position: relative;
+    display: grid;
+    grid-template-columns: var(--stub) 1fr auto;
+    gap: 4px 18px;
     align-items: center;
-    gap: 10px 14px;
-    padding: 14px 16px;
+    min-height: 92px;
+    padding: 12px 16px 12px 0;
     margin-bottom: 14px;
+    overflow: hidden;
+    isolation: isolate;
     background:
-        linear-gradient(rgba(11, 18, 32, 0.74), rgba(11, 18, 32, 0.88)),
-        var(--league-bg) center / cover var(--surface);
+        radial-gradient(circle, rgb(255 255 255 / 0.4) 1.1px, transparent 1.6px) calc(var(--stub) - 4px) 1px / 8px 7px repeat-y,
+        linear-gradient(90deg, color-mix(in oklab, var(--league-glow) 72%, var(--surface)), color-mix(in oklab, var(--league-glow) 22%, #0a101c) 60%, color-mix(in oklab, var(--league-glow) 12%, #070b14));
     border: 1px solid var(--border);
     border-radius: 14px;
+    -webkit-mask:
+        radial-gradient(circle var(--notch) at var(--stub) 0, #0000 97%, #000) top / 100% 51% no-repeat,
+        radial-gradient(circle var(--notch) at var(--stub) 100%, #0000 97%, #000) bottom / 100% 51% no-repeat;
+    mask:
+        radial-gradient(circle var(--notch) at var(--stub) 0, #0000 97%, #000) top / 100% 51% no-repeat,
+        radial-gradient(circle var(--notch) at var(--stub) 100%, #0000 97%, #000) bottom / 100% 51% no-repeat;
+}
+
+/* The stand opposite: the crowd holds up the country's flag, card by card. */
+.game-head::before,
+.game-head::after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+}
+
+.game-head::before {
+    inset: 0 0 0 34%;
+    background: var(--league-tifo);
+    opacity: 0.62;
+    -webkit-mask:
+        radial-gradient(circle, #000 1.5px, #0000 1.9px) 0 0 / 5px 5px,
+        linear-gradient(90deg, #0000 4%, #000 62%);
+    -webkit-mask-composite: source-in;
+    mask:
+        radial-gradient(circle, #000 1.5px, #0000 1.9px) 0 0 / 5px 5px,
+        linear-gradient(90deg, #0000 4%, #000 62%);
+    mask-composite: intersect;
+}
+
+/* Two floodlights above it. */
+.game-head::after {
+    inset: 0;
+    background:
+        radial-gradient(150px 95px at 66% -14px, rgb(255 255 255 / 0.34), transparent 70%),
+        radial-gradient(150px 95px at 97% -14px, rgb(255 255 255 / 0.34), transparent 70%),
+        linear-gradient(transparent 55%, rgb(5 8 15 / 0.5));
 }
 
 .game-head h1 {
-    flex: 1 1 auto;
+    min-width: 0;
+    text-shadow: 0 1px 8px rgb(0 0 0 / 0.75);
     margin: 0;
     font-family: var(--font-display);
     font-size: 1.7rem;
     line-height: 1.25;
 }
 
-.logo-chip {
+.league-mark {
+    display: block;
     flex: none;
-    object-fit: contain;
-    background: #fff;
-    border-radius: 6px;
+    aspect-ratio: 48 / 60;
 }
 
-#leagueLogo {
-    width: 44px;
-    height: 44px;
-    padding: 3px;
+#leagueMark {
+    display: grid;
+    place-items: center;
+    min-height: 56px; /* the mark's place, so the page does not jump when it arrives */
 }
 
-#leagueLogo:not([src]) {
-    visibility: hidden;
+#leagueMark .league-mark {
+    height: 56px;
 }
 
 .game-meta {
@@ -242,9 +160,205 @@ button {
     border: 1px solid var(--border);
 }
 
+.game-meta > * {
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.45);
+}
+
 .difficulty-easy { color: #052e16; background: #4ade80; }
 .difficulty-medium { color: var(--on-accent); background: var(--accent); }
 .difficulty-hard { color: #450a0a; background: #fca5a5; }
+
+/* Before the round: the hidden player's ticket, face down */
+.kickoff {
+    display: grid;
+    grid-template-columns: 224px 1fr;
+    gap: 34px;
+    align-items: center;
+    padding: 30px 34px;
+    background:
+        radial-gradient(60% 90% at 14% 40%, color-mix(in oklab, var(--league-glow) 34%, transparent), transparent 75%),
+        rgb(20 29 46 / 0.92);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+}
+
+.kickoff[hidden] {
+    display: none;
+}
+
+.kickoff-card {
+    position: relative;
+    overflow: hidden;
+    animation: float 4.5s ease-in-out infinite;
+}
+
+.kickoff-card::after {
+    position: absolute;
+    inset: 0;
+    content: "";
+    background: linear-gradient(115deg, transparent 42%, rgb(255 255 255 / 0.22) 50%, transparent 58%) 130% 0 / 260% 100% no-repeat;
+    animation: sheen 4.5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(-2deg);
+    }
+    50% {
+        transform: translateY(-7px) rotate(1deg);
+    }
+}
+
+@keyframes sheen {
+    0%, 55% {
+        background-position: 130% 0;
+    }
+    90%, 100% {
+        background-position: -30% 0;
+    }
+}
+
+.kickoff-text h2 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    line-height: 1.05;
+    text-transform: uppercase;
+    text-wrap: balance;
+}
+
+.kickoff-intro {
+    margin: 8px 0 18px;
+    color: var(--muted);
+}
+
+.difficulty-options {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+}
+
+.difficulty-option {
+    padding: 11px 6px 10px;
+    color: var(--text);
+    background: var(--surface);
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    transition: border-color 0.15s ease, background-color 0.15s ease, transform 0.15s ease;
+}
+
+.difficulty-option strong,
+.difficulty-option small {
+    display: block;
+}
+
+.difficulty-option strong {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    line-height: 1.1;
+}
+
+.difficulty-option small {
+    margin-top: 2px;
+    font-size: 0.78rem;
+    line-height: 1.25;
+    color: var(--muted);
+}
+
+.option-easy { --level: #4ade80; }
+.option-medium { --level: var(--accent); }
+.option-hard { --level: #fca5a5; }
+
+.difficulty-option strong::before {
+    display: inline-block;
+    width: 0.5em;
+    height: 0.5em;
+    margin-right: 0.35em;
+    vertical-align: 0.08em;
+    content: "";
+    background: var(--level);
+    border-radius: 50%;
+}
+
+.difficulty-option:hover {
+    border-color: var(--level);
+    transform: translateY(-2px);
+}
+
+.difficulty-option[aria-pressed="true"] {
+    background: color-mix(in oklab, var(--level) 15%, var(--surface));
+    border-color: var(--level);
+}
+
+.kickoff-level {
+    margin: 10px 0 18px;
+    font-size: 0.9375rem;
+    color: var(--muted);
+}
+
+.start-button {
+    display: block;
+    width: 100%;
+    max-width: 340px;
+    padding: 14px 28px;
+    font-family: var(--font-display);
+    font-size: 1.55rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--on-accent);
+    text-transform: uppercase;
+    background: var(--accent);
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 22px rgb(245 179 1 / 0.28);
+    transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.start-button:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+}
+
+.kickoff-note {
+    min-height: 1.5em; /* the sentence arrives once the account is known */
+    margin: 14px 0 0;
+    font-size: 0.875rem;
+    color: var(--muted);
+}
+
+:where(.start-button, .difficulty-option, .league-card):focus-visible {
+    outline: 3px solid var(--text);
+    outline-offset: 2px;
+}
+
+#round:not([hidden]) {
+    animation: round-in 0.35s ease-out;
+}
+
+@keyframes round-in {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .kickoff-card,
+    .kickoff-card::after,
+    #round:not([hidden]) {
+        animation: none;
+    }
+
+    .difficulty-option,
+    .start-button {
+        transition: none;
+    }
+
+    .difficulty-option:hover,
+    .start-button:hover {
+        transform: none;
+    }
+}
 
 .Guess {
     position: relative;
@@ -357,6 +471,16 @@ button {
     object-position: top;
     background: var(--border);
     border-radius: 50%;
+}
+
+.avatar.in-club-colours {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    line-height: 1;
+    color: var(--ink);
+    background: linear-gradient(rgb(255 255 255 / 0.14), transparent 50%, rgb(0 0 0 / 0.16)) var(--field);
+    border: 2px solid var(--trim);
+    box-shadow: 0 0 0 1px rgb(255 255 255 / 0.22);
 }
 
 /* Hints: locked until enough guesses, then one click shows them */
@@ -483,24 +607,50 @@ button {
 .feedback-success { color: var(--success); }
 .feedback-error { color: var(--error); }
 
-.reveal {
-    display: flex;
-    flex-direction: column;
+/* The end of a round: the words and the buttons, with the hidden player's ticket beside them */
+.outcome.over {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px 28px;
     align-items: center;
-    gap: 6px;
-    padding: 16px;
-    margin-top: 12px;
-    color: var(--text);
+    padding: 22px 24px;
+    margin-top: 14px;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 14px;
 }
 
-.reveal-photo {
-    width: 104px;
-    height: 104px;
-    object-fit: contain;
-    border-radius: 14px;
+.outcome.over #feedback {
+    margin-top: 0;
+}
+
+.outcome.over .outcome-text {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#reveal:empty {
+    display: none;
+}
+
+.reveal {
+    width: 224px;
+    margin: 0 auto;
+    color: var(--text);
+}
+
+/* The ticket's place: kept while its code arrives, and face down until the viewer asks for the answer */
+.reveal:empty,
+.reveal-unknown {
+    aspect-ratio: 5 / 8;
+}
+
+.reveal-plain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
 }
 
 .reveal-badge {
@@ -523,6 +673,13 @@ button {
     gap: 10px;
     justify-content: center;
     margin-top: 14px;
+}
+
+#restartContainer .link-button {
+    flex-basis: 100%;
+    margin-top: 4px;
+    font-weight: 400;
+    color: var(--muted);
 }
 
 #restartContainer:empty {
@@ -803,60 +960,87 @@ button {
 }
 
 .reveal-unknown {
+    --notch: 8px;
+    --tear: 76.25%;
     display: grid;
     place-items: center;
-    width: 104px;
-    height: 104px;
+    width: 100%;
+    padding-bottom: 38%; /* the question mark sits in the seal, above the tear line */
     font-family: var(--font-display);
-    font-size: 3rem;
+    font-size: 5.6rem;
     font-weight: 700;
-    color: var(--muted);
-    background: var(--surface-raised);
-    border: 1px dashed var(--border);
-    border-radius: 14px;
+    line-height: 1;
+    color: var(--accent);
+    background:
+        radial-gradient(circle, rgb(245 179 1 / 0.6) 1.1px, transparent 1.6px) 1px calc(var(--tear) + 3px) / 7px 8px repeat-x,
+        radial-gradient(circle at 50% 38%, #1c2945 0 26%, rgb(245 179 1 / 0.9) 26.3% 27%, transparent 27.4%),
+        repeating-radial-gradient(circle at 50% 38%, rgb(245 179 1 / 0.16) 0 1px, transparent 1.6px 9px),
+        radial-gradient(90% 60% at 50% 38%, #2b3c61, #111a2b);
+    border-radius: 8px;
+    box-shadow: inset 0 0 0 1px rgb(245 179 1 / 0.35);
+    -webkit-mask:
+        radial-gradient(circle var(--notch) at 0 var(--tear), #0000 97%, #000) left / 51% 100% no-repeat,
+        radial-gradient(circle var(--notch) at 100% var(--tear), #0000 97%, #000) right / 51% 100% no-repeat;
+    mask:
+        radial-gradient(circle var(--notch) at 0 var(--tear), #0000 97%, #000) left / 51% 100% no-repeat,
+        radial-gradient(circle var(--notch) at 100% var(--tear), #0000 97%, #000) right / 51% 100% no-repeat;
+}
+
+.result-details .reveal {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    margin: 18px auto 4px;
+}
+
+.result-details .reveal:empty {
+    display: block;
+}
+
+.result-details .ticket {
+    margin-bottom: 8px;
 }
 
 /* Picker */
-.picker-section {
-    margin-bottom: 26px;
+.picker {
+    max-width: 980px;
     text-align: center;
 }
 
-.picker-section h2 {
-    margin: 0 0 12px;
+.picker-title {
+    margin: 18px 0 0;
     font-family: var(--font-display);
-    font-size: 1.5rem;
+    font-size: clamp(2.3rem, 7vw, 3.4rem);
+    line-height: 1.05;
     text-transform: uppercase;
 }
 
-.option-row {
+.picker-text {
+    margin: 8px 0 26px;
+    font-size: 1.0625rem;
+    color: var(--muted);
+}
+
+.picker-seasons {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px;
     justify-content: center;
+    margin: -10px 0 24px;
+}
+
+.picker-seasons[hidden] {
+    display: none;
 }
 
 .option-button {
-    flex: 1 1 200px;
-    max-width: 260px;
-    padding: 11px 14px;
+    padding: 8px 18px;
     font-weight: 700;
     color: var(--text);
     background: var(--surface);
     border: 2px solid var(--border);
-    border-radius: 10px;
-}
-
-.option-button small {
-    display: block;
-    margin-top: 2px;
-    font-size: 0.8rem;
-    font-weight: 400;
-    color: var(--muted);
-}
-
-.option-button:hover {
-    border-color: var(--muted);
+    border-radius: 999px;
 }
 
 .option-button.selected {
@@ -866,41 +1050,334 @@ button {
 
 .league-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    gap: 12px;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 14px;
 }
 
 .league-card {
+    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 10px;
     align-items: center;
-    padding: 16px 10px;
-    font-weight: 700;
+    padding: 24px 8px 18px;
+    overflow: hidden;
+    isolation: isolate;
     color: var(--text);
-    background: var(--surface);
+    text-decoration: none;
+    background: linear-gradient(color-mix(in oklab, var(--league-glow) 58%, var(--surface)), var(--surface) 72%);
     border: 2px solid var(--border);
-    border-radius: 12px;
-    transition: transform 0.2s ease, border-color 0.2s ease;
+    border-radius: 16px;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.league-card::before {
+    position: absolute;
+    inset: 0 0 auto;
+    z-index: -1;
+    height: 118px;
+    content: "";
+    background: var(--league-tifo);
+    opacity: 0.5;
+    -webkit-mask:
+        radial-gradient(circle, #000 1.5px, #0000 1.9px) 0 0 / 5px 5px,
+        linear-gradient(#000 20%, #0000);
+    -webkit-mask-composite: source-in;
+    mask:
+        radial-gradient(circle, #000 1.5px, #0000 1.9px) 0 0 / 5px 5px,
+        linear-gradient(#000 20%, #0000);
+    mask-composite: intersect;
 }
 
 .league-card:hover,
 .league-card:focus-visible {
     border-color: var(--accent);
-    transform: translateY(-3px);
+    box-shadow: 0 14px 30px rgb(0 0 0 / 0.45);
+    transform: translateY(-5px);
 }
 
-.league-card img {
-    width: 84px;
-    height: 84px;
-    padding: 6px;
-    object-fit: contain;
-    background: #fff;
+.league-card .league-mark {
+    height: 116px;
+    filter: drop-shadow(0 8px 14px rgb(0 0 0 / 0.55));
+    transition: rotate 0.25s ease;
+}
+
+.league-card:hover .league-mark {
+    rotate: -4deg;
+}
+
+.league-name {
+    margin-top: 14px;
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.league-country {
+    font-size: 0.875rem;
+    color: var(--muted);
+}
+
+/* How to play, shown instead of told */
+.steps-title {
+    margin: 42px 0 14px;
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.steps li {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+    padding: 20px 18px;
+    background: rgb(20 29 46 / 0.85);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+}
+
+.steps p {
+    margin: 0;
+    line-height: 1.4;
+    text-wrap: balance;
+}
+
+.step-picture {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+}
+
+.step-picture .league-mark {
+    height: 62px;
+    filter: drop-shadow(0 4px 6px rgb(0 0 0 / 0.45));
+}
+
+.step-picture .league-mark:first-child {
+    margin-right: -16px;
+    rotate: -10deg;
+}
+
+.step-picture .league-mark:last-child {
+    margin-left: -16px;
+    rotate: 10deg;
+}
+
+.step-tile {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background: var(--surface-raised);
+    border: 1px solid var(--border);
     border-radius: 10px;
+}
+
+.step-tile.match {
+    background: var(--match);
+    border-color: var(--match-border);
+}
+
+.step-card {
+    width: 42px;
+    height: 66px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 0.45);
+}
+
+.step-card:nth-child(1) {
+    margin-right: -14px;
+    background: linear-gradient(160deg, #d9dee5, #98a3b3);
+    rotate: -11deg;
+}
+
+.step-card:nth-child(2) {
+    background: linear-gradient(120deg, #c8982f, #fff0bd 45%, #cfa03a 70%, #f6dd91);
+}
+
+.step-card:nth-child(3) {
+    margin-left: -14px;
+    background: linear-gradient(120deg, #f7c3dd, #fbf0b4 28%, #b4f0d4 48%, #a6dcff 68%, #d8bffc);
+    rotate: 11deg;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .league-card,
+    .league-card .league-mark {
+        transition: none;
+    }
+
+    .league-card:hover,
+    .league-card:focus-visible {
+        transform: none;
+    }
+
+    .league-card:hover .league-mark {
+        rotate: none;
+    }
 }
 
 /* Phones */
 @media (max-width: 640px) {
+    .game-head {
+        --stub: 66px;
+        grid-template-columns: var(--stub) 1fr;
+        column-gap: 14px;
+    }
+
+    .game-head h1 {
+        font-size: 1.45rem;
+    }
+
+    /* Here the title reaches the stand, so the flag stays behind it. */
+    .game-head::before {
+        inset: 0 0 0 42%;
+        opacity: 0.34;
+    }
+
+    #leagueMark {
+        grid-row: 1 / 3;
+    }
+
+    .game-meta {
+        grid-column: 2;
+    }
+
+    .kickoff {
+        grid-template-columns: 84px 1fr;
+        gap: 16px;
+        padding: 18px 14px;
+    }
+
+    .kickoff-card {
+        align-self: start;
+        font-size: 2.2rem;
+    }
+
+    /* The sentences sit beside the card; the choices and the button take the whole width. */
+    .kickoff-text {
+        display: contents;
+    }
+
+    .kickoff-text h2 {
+        grid-column: 2;
+        align-self: end;
+        font-size: 1.5rem;
+    }
+
+    .kickoff-intro {
+        grid-column: 2;
+        align-self: start;
+        margin: -10px 0 0;
+        font-size: 0.875rem;
+        line-height: 1.35;
+    }
+
+    .kickoff-card {
+        grid-row: 1 / 3;
+    }
+
+    .difficulty-options,
+    .kickoff-level,
+    .start-button,
+    .kickoff-note {
+        grid-column: 1 / -1;
+    }
+
+    .kickoff-level {
+        margin: -8px 0 0;
+        font-size: 0.875rem;
+        text-align: center;
+    }
+
+    .start-button {
+        max-width: none;
+    }
+
+    .kickoff-note {
+        margin: -4px 0 0;
+        font-size: 0.8125rem;
+        text-align: center;
+    }
+
+    .league-grid {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    /* Two big cards, then three: five equal ones would leave a hole. */
+    .league-card {
+        grid-column: span 2;
+        padding: 16px 4px 12px;
+    }
+
+    .league-card:nth-child(-n + 2) {
+        grid-column: span 3;
+    }
+
+    .league-card .league-mark {
+        height: 84px;
+    }
+
+    .league-card:nth-child(-n + 2) .league-mark {
+        height: 104px;
+    }
+
+    .league-name {
+        margin-top: 10px;
+        font-size: 1.15rem;
+    }
+
+    .league-country {
+        font-size: 0.8125rem;
+    }
+
+    .picker-text {
+        margin-bottom: 18px;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .steps li {
+        flex-direction: row;
+        gap: 16px;
+        padding: 12px 14px;
+        text-align: left;
+    }
+
+    .step-picture {
+        flex: none;
+        width: 108px;
+        height: 58px;
+        scale: 0.78;
+    }
+
+    .outcome.over {
+        grid-template-columns: 1fr;
+        padding: 18px 14px;
+    }
+
+    .outcome.over .outcome-text {
+        grid-column: 1;
+    }
+
     /* Team and nationality have long names, so they share the first row. */
     .attempt {
         grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -944,23 +1421,5 @@ button {
 
     .tile-value {
         font-size: 0.82rem;
-    }
-
-    #mainHeader {
-        font-size: 1.15rem;
-    }
-
-    #logo {
-        width: 34px;
-        height: 34px;
-    }
-
-    .header {
-        padding: 6px 10px;
-    }
-
-    .icon-button {
-        width: 34px;
-        height: 34px;
     }
 }

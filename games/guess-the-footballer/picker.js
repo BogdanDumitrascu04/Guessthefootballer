@@ -1,81 +1,78 @@
-// Clicking a league card starts the game with the selected season and difficulty.
+// The league is chosen here; the difficulty and the start wait on the game page.
 const ROOT = '../../';
-const DIFFICULTIES = ['easy', 'medium', 'hard'];
-
+let manifest;
 let selectedSeason;
-let selectedDifficulty = localStorage.getItem('gtf-difficulty') || 'medium';
-if (!DIFFICULTIES.includes(selectedDifficulty)) selectedDifficulty = 'medium';
 
-async function initPicker() {
-    const manifest = await (await fetch(`${ROOT}data/manifest.json`, { cache: 'no-cache' })).json();
-    selectedSeason = manifest.defaultSeason;
+function gameUrl(league) {
+    return `game.html?league=${league.id}&season=${selectedSeason}`;
+}
 
-    const seasonRow = document.getElementById('seasonRow');
-    for (const season of manifest.seasons) {
-        const btn = document.createElement('button');
-        btn.className = 'option-button';
-        btn.dataset.season = season;
-        btn.dataset.current = season === manifest.defaultSeason;
-        btn.classList.toggle('selected', season === selectedSeason);
-        btn.addEventListener('click', () => {
-            selectedSeason = season;
-            seasonRow.querySelectorAll('.option-button').forEach(b => b.classList.remove('selected'));
-            btn.classList.add('selected');
-        });
-        seasonRow.appendChild(btn);
-    }
-
-    const difficultyRow = document.getElementById('difficultyRow');
-    for (const diff of DIFFICULTIES) {
-        const btn = document.createElement('button');
-        btn.className = 'option-button';
-        btn.dataset.difficulty = diff;
-        btn.classList.toggle('selected', diff === selectedDifficulty);
-        btn.addEventListener('click', () => {
-            selectedDifficulty = diff;
-            localStorage.setItem('gtf-difficulty', diff);
-            difficultyRow.querySelectorAll('.option-button').forEach(b => b.classList.remove('selected'));
-            btn.classList.add('selected');
-        });
-        difficultyRow.appendChild(btn);
-    }
-    renderLabels();
-
-    const leagueGrid = document.getElementById('leagueGrid');
-    for (const league of manifest.leagues) {
-        const card = document.createElement('button');
+function renderLeagues() {
+    document.getElementById('leagueGrid').replaceChildren(...manifest.leagues.map(league => {
+        const card = document.createElement('a');
         card.className = 'league-card';
-        card.innerHTML = `<img src="${ROOT}${league.logo}" alt="${league.name}"><span>${league.name}</span>`;
-        card.addEventListener('click', () => {
-            location.href = `game.html?league=${league.id}&season=${selectedSeason}&difficulty=${selectedDifficulty}`;
-        });
-        leagueGrid.appendChild(card);
-    }
+        card.href = gameUrl(league);
+        leagueMarks.paint(card, league.id);
+        const name = document.createElement('span');
+        name.className = 'league-name';
+        name.textContent = league.name;
+        const country = document.createElement('span');
+        country.className = 'league-country';
+        country.textContent = leagueMarks.country(league.id);
+        card.append(leagueMarks.create(league.id) ?? '', name, country);
+        return card;
+    }));
+}
 
+function renderSeasons() {
+    const row = document.getElementById('seasonRow');
+    const oneSeason = manifest.seasons.length < 2; // nothing to choose: the season becomes a note
+    row.hidden = oneSeason;
+    document.getElementById('seasonNote').textContent = oneSeason ? `${t('season')} ${selectedSeason}.` : '';
+    row.replaceChildren(...manifest.seasons.map(season => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = season === selectedSeason ? 'option-button selected' : 'option-button';
+        button.textContent = season === manifest.defaultSeason ? `${season} · ${t('currentSeason')}` : season;
+        button.addEventListener('click', () => {
+            selectedSeason = season;
+            render();
+        });
+        return button;
+    }));
+}
+
+function render() {
+    renderSeasons();
+    renderLeagues();
+}
+
+function buildMenu() {
     const menu = document.getElementById('menuContent');
     for (const league of manifest.leagues) {
-        const a = document.createElement('a');
-        a.href = `game.html?league=${league.id}&season=${manifest.defaultSeason}&difficulty=${selectedDifficulty}`;
-        a.textContent = league.name;
-        menu.appendChild(a);
+        const link = document.createElement('a');
+        link.href = gameUrl(league);
+        link.textContent = league.name;
+        menu.append(link);
     }
-    const hub = document.createElement('a');
-    hub.href = '../../index.html';
-    hub.setAttribute('data-translate', 'allGames');
-    hub.textContent = t('allGames');
-    menu.appendChild(hub);
+    const home = document.createElement('a');
+    home.href = '../../index.html';
+    home.setAttribute('data-translate', 'allGames');
+    home.textContent = t('allGames');
+    menu.append(home);
 }
 
-function renderLabels() {
-    document.querySelectorAll('#seasonRow .option-button').forEach(btn => {
-        const note = btn.dataset.current === 'true' ? `<small>${t('currentSeason')}</small>` : '';
-        btn.innerHTML = `${btn.dataset.season}${note}`;
-    });
-    document.querySelectorAll('#difficultyRow .option-button').forEach(btn => {
-        const diff = btn.dataset.difficulty;
-        btn.innerHTML = `${t(diff)}<small>${t(diff + 'Desc')}</small>`;
-    });
+async function initPicker() {
+    manifest = await (await fetch(`${ROOT}data/manifest.json`, { cache: 'no-cache' })).json();
+    selectedSeason = manifest.defaultSeason;
+    const [first, second, third] = manifest.leagues.map(league => leagueMarks.create(league.id));
+    document.getElementById('stepLeagues').append(first, third, second);
+    buildMenu();
+    render();
 }
-document.addEventListener('languagechange', renderLabels);
+
+document.addEventListener('languagechange', () => {
+    if (manifest) render();
+});
 
 document.addEventListener('DOMContentLoaded', initPicker);

@@ -243,3 +243,27 @@ Punct de plecare: propunerile lui Gemini, verificate pe pagina reală, plus idei
 | Cardurile câștigate | View (`user_cards`), nu tabel | Reies din runde; nimic scris de două ori |
 | Locul gol | Arată postul și raritatea, nu numele | Numele ar da răspunsul unei runde |
 | Insignele | Cotor de bilet din cod + culori (`tla`, `clubColors`) | Formă proprie, nimic din emblema reală |
+
+## 25 nov 2026 — fără poze și sigle, PWA (Etapa 10)
+
+| Decizie | Ce am ales | De ce |
+|---|---|---|
+| Poze și sigle | Nu mai apar nicăieri: nici pozele jucătorilor, nici siglele cluburilor și ale ligilor | Pozele cer acordul jucătorului și al clubului; siglele sunt mărci înregistrate. **Înlocuiește decizia din 21 oct** (poze API-Football). |
+| Comutatorul | `PORTRAIT_CLUBS` în `common.js`: lista cluburilor care au acceptat în scris; acum goală. O poză apare doar dacă e și în `images/portraits/` | Un singur loc de schimbat. Golind sau completând lista, pozele API-Football nu se pot întoarce din greșeală, nici dintr-un link vechi sau modificat. |
+| Inițialele | În culorile clubului (câmp, margine, text), din aceeași paletă ca insignele | Fără poze, inițialele gri arătau toate la fel. |
+| Dezvăluirea | Cardul-bilet din album, cu ștampila rundei; până la spoiler, cardul e întors. Dacă jucătorul n-are card (sezon vechi, mutat la alt club), insigna clubului + numele | Același obiect peste tot: runda, rezultatul, albumul. |
+| Câștig cu cont | Biletul din pagină apare după fereastra cu cardul (sau după 3 secunde) | Altfel ar strica momentul în care se întoarce cardul. |
+| Semnele ligilor | „Abonament de sezon”: codul ligii și steagul țării pe cotor, în `league-marks.js` | Același limbaj ca insignele (bilet), formă proprie. Steagul se recunoaște fără sigla ligii. |
+| Sezonul 2024-25 | Scos (decizia lui Bogdan) | Avea pozele și siglele, n-avea ID-uri (deci nici carduri). Alegerea sezonului reapare singură când `manifest.json` are cel puțin două. Numele vechi de cluburi rămân în `badges.json`, pentru linkurile vechi. **Înlocuiește** „2026-27 și 2024-25” din 8 nov. |
+| Cache-ul PWA | Întâi rețeaua, pentru toate fișierele (nu doar pentru date); copia locală doar fără internet | Fișierele vechi au mai stricat jocul, iar un JS vechi cu date noi e la fel de rău. Costul: câte o întrebare „s-a schimbat?” pe fișier. |
+| Regula de 10 minute a GitHub Pages | `sw.js` cere mereu versiunea nouă și îi spune și paginii să întrebe de fiecare dată | Găsit la test: un tab deschis refolosea JS-ul vechi, deși pagina și datele erau noi. |
+| Ce nu se păstrează | Paginile se salvează fără ce urmează după „?” | Un link de rundă sau codul de login nu rămân pe telefon. |
+| Copia pentru offline | O listă scrisă de mână în `sw.js`, verificată de `tests/site.test.js` | Fără pas de build; testul pică dacă un fișier lipsește din listă. |
+| Sigla | Bilet auriu cu „?” peste tot: aplicație, tab, antet; vulturul iese (cerut de Bogdan) | Vulturul nu se citea la dimensiunea unei iconițe. |
+| Numele | „Guess the Footballer” pe toate paginile, netradus; „Bogdy's Games” iese | Prima pagină spunea una, jocul alta (observat de Bogdan). `tests/site.test.js` ține un singur nume. |
+| Antetul | Sigla și numele în mijloc; ☰ și ⓘ la stânga, contul și limba la dreapta; pe telefon limba e un cod („RO”). Un singur fișier, `shell.css` | Cerut de Bogdan. Aceleași stiluri erau scrise de două ori. |
+| Ecranul de start | Runda începe doar la „Începe runda” (`kickoff.js`); dificultatea se alege acolo, cu punctele maxime. Rândul din `game_results` se scrie atunci, nu la deschiderea paginii | Cerut de Bogdan. Din 43 de runde salvate, 28 erau neterminate: simpla deschidere a paginii pornea o rundă, deci o pierdea. |
+| De ce nu la prima încercare | Respins: rândul scris la prima încercare | Indiciul de start s-ar vedea gratis: ai reîncărca pagina până îți convine jucătorul. |
+| Părăsirea rundei | Browserul întreabă doar dacă runda începută e salvată într-un cont | O pagină închisă din greșeală ar costa o înfrângere și seria. Fără cont nu se pierde nimic. |
+| Pagina de alegere | Doar liga (carduri cu țara) și „Cum să joci” în trei pași desenați | Cerut de Bogdan („mai friendly”). Dificultatea stă lângă butonul de start, unde contează. |
+| Bara din joc | Un „tifo” pe ligă: steagul țării din puncte, ca o tribună cu cartoane colorate, sub două reflectoare; doar CSS | Cerut de Bogdan: fundal propriu pe fiecare ligă, fără imagini. |

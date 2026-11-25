@@ -41,6 +41,13 @@ create table if not exists game_results (
 -- Applied on every run: changing it here changes new rounds only; old ones keep the limit they were played with.
 alter table game_results alter column max_guesses set default 6;
 
+-- The day, for a round of the day (daily_players.sql); null for every other round.
+alter table game_results add column if not exists daily_on date references daily_players (day);
+
+-- One round of the day per player, whatever the page does. Other rounds are not limited: their day is null,
+-- and two nulls never count as equal.
+create unique index if not exists game_results_one_round_a_day on game_results (user_id, daily_on);
+
 create index if not exists game_results_user_started on game_results (user_id, started_at); -- the profile reads one player's rounds in order
 
 -- The only way to change a round: once, by its own player, while it is still in progress.
@@ -61,11 +68,15 @@ begin
            guesses          = p_guesses,
            hints_used       = p_hints_used,
            won              = p_won,
-           target_player_id = p_target_player_id,
+           -- For a round of the day the calendar says who the player was, not the browser.
+           target_player_id = coalesce(
+               (select d.player_id from daily_players d where d.day = game_results.daily_on), p_target_player_id
+           ),
            round_code       = p_round_code
      where id = p_round_id
        and user_id = auth.uid()
        and finished_at is null
+       and (daily_on is null or daily_round_open(daily_on))
     returning points into earned;
 
     if not found then

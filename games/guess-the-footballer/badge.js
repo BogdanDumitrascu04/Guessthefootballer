@@ -88,5 +88,9 @@ const clubBadges = (() => {
         return Object.hasOwn(clubs, team) ? drawBadge(clubs[team]) : null;
     }
 
-    return { ready, create, theme, palette: PALETTE };
+    function themeOf(team) {
+        return Object.hasOwn(clubs, team) ? theme(clubs[team].colors) : null;
+    }
+
+    return { ready, create, theme, themeOf, palette: PALETTE };
 })();

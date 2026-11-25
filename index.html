@@ -3,31 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bogdy's Games</title>
+    <title>Guess the Footballer</title>
     <meta name="description" content="Wordle-style football games built on real squads from Europe's top 5 leagues. Free, in your browser.">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Bogdy's Games: how well do you know football?">
+    <meta property="og:title" content="Guess the Footballer: how well do you know football?">
     <meta property="og:description" content="Wordle-style football games built on real squads from Europe's top 5 leagues. Free, in your browser.">
     <meta property="og:url" content="https://bogdandumitrascu04.github.io/Guessthefootballer/">
-    <meta property="og:image" content="https://bogdandumitrascu04.github.io/Guessthefootballer/images/og-image.jpg">
+    <meta property="og:image" content="https://bogdandumitrascu04.github.io/Guessthefootballer/images/share.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="games/guess-the-footballer/shell.css">
     <link rel="stylesheet" href="games/guess-the-footballer/account.css">
-    <link rel="icon" href="images/Header/fotbal.png">
+    <link rel="icon" href="images/icons/icon.svg" type="image/svg+xml" sizes="any">
+    <link rel="icon" href="images/icons/icon-192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#141d2e">
 </head>
 <body>
     <header class="header">
+        <div class="header-side"></div>
         <a class="brand" href="index.html">
-            <img src="images/Header/fotbal.png" alt="" id="logo">
-            <span id="mainHeader">Bogdy's Games</span>
+            <img class="brand-logo" src="images/logo.svg" alt="" width="76" height="60">
+            <span class="brand-name"><span>Guess the</span> <strong>Footballer</strong></span>
         </a>
-        <div class="header-tools">
+        <div class="header-side header-tools">
             <div id="account" class="account"></div>
             <label class="language-selector">
                 <span class="visually-hidden">Language</span>
+                <span class="language-code" aria-hidden="true">EN</span>
                 <select id="language">
                     <option value="en">English</option>
                     <option value="es">Español</option>
@@ -45,13 +52,22 @@
 
             <div class="demo" aria-hidden="true">
                 <div class="demo-player">
-                    <img src="images/leagues/LaLiga/RealMadrid/Mbappe.png" alt="">
+                    <span class="avatar">KM</span>
                     <span>Kylian Mbappé</span>
                 </div>
                 <!-- Mbappé's 2026-27 row against a younger Real Madrid forward who wears a higher number -->
                 <div class="tile match" style="--i: 0">
                     <span class="tile-label" data-translate="team">Team</span>
-                    <img class="tile-logo" src="images/leagues/LaLiga/RealMadrid/Logo/RealMadrid.png" alt="">
+                    <!-- the badge badge.js draws for Real Madrid, written out so the home page needs no game data -->
+                    <svg class="tile-logo" viewBox="0 0 64 42">
+                        <clipPath id="demo-stub"><path d="M6,1H46.5a4.2,4.2 0 0 0 8.4,0H58a5,5 0 0 1 5,5V36a5,5 0 0 1 -5,5H54.9a4.2,4.2 0 0 0 -8.4,0H6a5,5 0 0 1 -5,-5V6a5,5 0 0 1 5,-5Z"/></clipPath>
+                        <g clip-path="url(#demo-stub)">
+                            <path d="M0,0H64V42H0Z" fill="#f3f5f9"/>
+                            <path d="M50.7,0H64V42H50.7Z" fill="#6a31a4"/>
+                            <path d="M50.7,7.4V35.6" stroke="rgb(8 12 20 / 0.6)" stroke-width="1.5" stroke-dasharray="1.7 2" stroke-linecap="round"/>
+                        </g>
+                        <text x="25.6" y="30.1" fill="#6a31a4" text-anchor="middle">RMA</text>
+                    </svg>
                     <span class="tile-value">Real Madrid ✓</span>
                 </div>
                 <div class="tile match" style="--i: 1">
@@ -81,26 +97,33 @@
                     <path d="M10.2 12a1.8 1.8 0 1 1 2.7 1.56c-.6.35-.9.75-.9 1.44M12 17.5v.01"/>
                 </svg>
                 <div class="featured-text">
-                    <h2 data-translate="guessTheFootballer">Guess the Footballer</h2>
-                    <p data-translate="hubGameDesc">Pick a league, a season and a difficulty, then find the hidden player in 6 guesses using attribute clues.</p>
+                    <h2>Guess the Footballer</h2>
+                    <p data-translate="hubGameDesc">Pick a league and a difficulty, then find the hidden player in 6 guesses using attribute clues.</p>
                 </div>
                 <a class="play-button" href="games/guess-the-footballer/index.html" data-translate="play">Play</a>
             </div>
 
-            <ul class="stats">
-                <li><strong>5</strong> <span data-translate="statLeagues">leagues</span></li>
-                <li><strong>2</strong> <span data-translate="statSeasons">seasons</span></li>
-                <li><strong>2664</strong> <span data-translate="statPlayers">players</span></li>
-                <li><strong>4</strong> <span data-translate="statLanguages">languages</span></li>
-            </ul>
+            <div class="featured-bar">
+                <ul class="stats">
+                    <li><strong>5</strong> <span data-translate="statLeagues">leagues</span></li>
+                    <li><strong>96</strong> <span data-translate="statClubs">clubs</span></li>
+                    <li><strong>2586</strong> <span data-translate="statPlayers">players</span></li>
+                    <li><strong>4</strong> <span data-translate="statLanguages">languages</span></li>
+                </ul>
+                <button id="installButton" class="install-button" type="button" hidden>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7.5 11 12 15.5 16.5 11M5 20h14"/></svg>
+                    <span data-translate="installApp">Install the app</span>
+                </button>
+                <p id="installHint" class="install-hint" data-translate="installIos" hidden>On iPhone: Share, then Add to Home Screen.</p>
+            </div>
 
             <p class="leagues-label" data-translate="jumpToLeague">Or jump straight into a league</p>
             <nav class="league-links">
-                <a href="games/guess-the-footballer/game.html?league=premier-league" title="Premier League"><img src="images/leagues/PremierLeague/Logo/Premier%20League.png.png" alt="Premier League"></a>
-                <a href="games/guess-the-footballer/game.html?league=la-liga" title="La Liga"><img src="images/leagues/LaLiga/Logo/LaLiga.jpg" alt="La Liga"></a>
-                <a href="games/guess-the-footballer/game.html?league=bundesliga" title="Bundesliga"><img src="images/leagues/Bundesliga/Logo/bundesliga.jpg" alt="Bundesliga"></a>
-                <a href="games/guess-the-footballer/game.html?league=serie-a" title="Serie A"><img src="images/leagues/SerieA/Logo/SerieA.png" alt="Serie A"></a>
-                <a href="games/guess-the-footballer/game.html?league=ligue-1" title="Ligue 1"><img src="images/leagues/Ligue1/Logo/Ligue1.png" alt="Ligue 1"></a>
+                <a href="games/guess-the-footballer/game.html?league=premier-league" data-league="premier-league"><span>Premier League</span></a>
+                <a href="games/guess-the-footballer/game.html?league=la-liga" data-league="la-liga"><span>La Liga</span></a>
+                <a href="games/guess-the-footballer/game.html?league=bundesliga" data-league="bundesliga"><span>Bundesliga</span></a>
+                <a href="games/guess-the-footballer/game.html?league=serie-a" data-league="serie-a"><span>Serie A</span></a>
+                <a href="games/guess-the-footballer/game.html?league=ligue-1" data-league="ligue-1"><span>Ligue 1</span></a>
             </nav>
         </section>
 
@@ -140,5 +163,7 @@
     <script defer src="games/guess-the-footballer/i18n.js"></script>
     <script defer src="vendor/supabase-js-2.119.0.js"></script>
     <script defer src="games/guess-the-footballer/auth.js"></script>
+    <script defer src="games/guess-the-footballer/league-marks.js"></script>
+    <script defer src="pwa.js"></script>
 </body>
 </html>

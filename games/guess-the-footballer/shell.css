@@ -1,0 +1,264 @@
+/* The header and the backdrop, shared by the home page and the game pages (both define these colours). */
+
+/* A fixed layer of its own: background-attachment: fixed misbehaves on phones. */
+body::before {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    content: "";
+    background:
+        radial-gradient(ellipse 80% 55% at 50% 0%, rgb(34 197 94 / 0.16), transparent 70%),
+        url('../../images/Header/pitch-lines.svg') center / cover no-repeat;
+}
+
+/* Equal sides keep the name in the middle, however wide the buttons are. */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 8px;
+    align-items: center;
+    padding: 8px 16px;
+    background:
+        radial-gradient(ellipse 340px 90px at 50% 0, rgb(245 179 1 / 0.13), transparent 75%),
+        rgb(17 25 41 / 0.96);
+    border-bottom: 1px solid var(--border);
+}
+
+/* The header is torn off like a ticket. */
+.header::after {
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    left: 0;
+    height: 2px;
+    content: "";
+    background: radial-gradient(circle, rgb(245 179 1 / 0.75) 1px, transparent 1.4px) center / 9px 2px repeat-x;
+}
+
+.header-side {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    min-width: 0;
+}
+
+.header-tools {
+    justify-content: flex-end;
+}
+
+.brand {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.brand-logo {
+    flex: none;
+    width: 54px;
+    height: auto;
+    filter: drop-shadow(0 3px 6px rgb(0 0 0 / 0.5));
+    transition: rotate 0.25s ease;
+}
+
+.brand:hover .brand-logo {
+    rotate: 8deg;
+}
+
+/* The name is the same in every language. */
+.brand-name {
+    display: grid;
+    font-family: var(--font-display);
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.brand-name span {
+    font-size: 0.84rem;
+    letter-spacing: 0.2em;
+}
+
+.brand-name strong {
+    font-size: 1.75rem;
+    line-height: 0.95;
+    color: var(--accent);
+    letter-spacing: 0.01em;
+}
+
+.icon-button {
+    display: grid;
+    flex: none;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: 1.25rem;
+    line-height: 1;
+    color: var(--text);
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+}
+
+.icon-button:hover {
+    background: var(--surface-raised);
+}
+
+.language-selector {
+    position: relative;
+    display: block;
+}
+
+.language-code {
+    display: none;
+}
+
+#language {
+    padding: 7px 8px;
+    font: inherit;
+    font-size: 0.875rem;
+    color: var(--text);
+    cursor: pointer;
+    background: var(--surface-raised);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+/* Burger menu and "how to play" panels */
+.navbar,
+#infoContent {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 16px;
+    width: min(320px, calc(100vw - 32px));
+    background: var(--surface-raised);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 12px 28px rgb(0 0 0 / 0.45);
+}
+
+.navbar.show,
+#infoContent.show {
+    display: block;
+}
+
+#menuContent a {
+    display: block;
+    padding: 11px 16px;
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+}
+
+#menuContent a:last-child {
+    border-bottom: none;
+}
+
+#menuContent a:hover {
+    background: var(--border);
+}
+
+#infoContent {
+    padding: 14px 18px;
+}
+
+#infoContent h2 {
+    margin: 0 0 8px;
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+}
+
+#infoContent p {
+    margin: 6px 0;
+    color: var(--muted);
+}
+
+#closeButton {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+}
+
+@media (max-width: 640px) {
+    .header {
+        gap: 4px;
+        padding: 7px 10px;
+    }
+
+    .header-side {
+        gap: 2px;
+    }
+
+    .brand {
+        gap: 7px;
+    }
+
+    .brand-logo {
+        width: 40px;
+    }
+
+    .brand-name span {
+        font-size: 0.62rem;
+    }
+
+    .brand-name strong {
+        font-size: 1.24rem;
+    }
+
+    .icon-button {
+        width: 34px;
+        height: 34px;
+    }
+
+    /* Two letters instead of the language's name; the list itself still opens from them. */
+    .language-code {
+        display: grid;
+        place-items: center;
+        width: 36px;
+        height: 34px;
+        font-size: 0.8125rem;
+        font-weight: 700;
+        background: var(--surface-raised);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+    }
+
+    #language {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        opacity: 0;
+    }
+
+    .language-selector:focus-within .language-code {
+        outline: 2px solid var(--accent);
+        outline-offset: 1px;
+    }
+}
+
+@media (max-width: 350px) {
+    .brand-logo {
+        width: 32px;
+    }
+
+    .brand-name strong {
+        font-size: 1.02rem;
+    }
+
+    .brand-name span {
+        font-size: 0.52rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .brand-logo {
+        transition: none;
+    }
+}

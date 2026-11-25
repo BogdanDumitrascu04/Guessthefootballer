@@ -1,85 +1,23 @@
 """Tests for sql/game_results.sql, sql/player_stats.sql, sql/user_cards.sql and sql/delete_account.sql: who may do
 what, the points, the rules, the profile numbers, the album, deleting an account (need SUPABASE_DB_URL in .env).
-
-A player is simulated the way Supabase does it: the `authenticated` role plus the user ID in the
-request claims, which is what auth.uid() reads. Everything happens in a temporary schema, inside a
-transaction that is rolled back at the end, test users included.
 """
 
 import json
-import os
 import re
 from datetime import UTC, datetime, timedelta
-from uuid import uuid4
 
-import psycopg
 import pytest
-from dotenv import load_dotenv
 from psycopg import errors, sql
 
-from scripts.apply_schema import PROJECT_DIR, apply_schema
+from scripts.apply_schema import PROJECT_DIR
+from tests.accounts import ANDREI, BOGDAN, CODE, as_owner, as_player, finish, needs_database, refused, start
 
-load_dotenv(PROJECT_DIR / ".env")
-URL = os.environ.get("SUPABASE_DB_URL")
-
-pytestmark = pytest.mark.skipif(not URL, reason="lipsește SUPABASE_DB_URL în .env")
+pytestmark = needs_database
 
 # The same table is checked against roundPoints() in tests/round.test.js.
 POINTS_CASES = json.loads((PROJECT_DIR / "tests" / "points_cases.json").read_text(encoding="utf-8"))
 ENGINE = (PROJECT_DIR / "games" / "guess-the-footballer" / "engine.js").read_text(encoding="utf-8")
 GAME_MAX = int(re.search(r"const MAX_ATTEMPTS = (\d+);", ENGINE).group(1))
-BOGDAN, ANDREI = uuid4(), uuid4()
-CODE = "WzEsInByZW1pZXItbGVhZ3VlIl0"  # the database stores the code, it never reads it
-
-
-@pytest.fixture(scope="module")
-def conn():
-    with psycopg.connect(URL, autocommit=True) as c, c.transaction(force_rollback=True):
-        schema = sql.Identifier(f"test_{uuid4().hex[:8]}")
-        c.execute(sql.SQL("create schema {}").format(schema))
-        c.execute(sql.SQL("set local search_path to {}, pg_temp").format(schema))
-        apply_schema(c)
-        c.execute(sql.SQL("grant usage on schema {} to anon, authenticated").format(schema))  # public has it already
-        for user in (BOGDAN, ANDREI):
-            c.execute("insert into auth.users (id, email) values (%s, %s)", [user, f"{user}@example.test"])
-        yield c
-
-
-@pytest.fixture
-def db(conn):
-    """Each test runs in a savepoint rolled back at the end, role and claims included."""
-    with conn.transaction(force_rollback=True):
-        yield conn
-
-
-def as_player(db, user):
-    """From here on the connection acts like the browser of `user`; None is a visitor who is not logged in."""
-    claims = json.dumps({"sub": str(user), "role": "authenticated"}) if user else ""
-    db.execute("set local role authenticated" if user else "set local role anon")
-    db.execute("select set_config('request.jwt.claims', %s, true)", [claims])
-
-
-def as_owner(db):
-    db.execute("reset role")
-
-
-def start(db, league="PL", season="2026-27", difficulty="medium"):
-    return db.execute(
-        "insert into game_results (league_id, season_id, difficulty) values (%s, %s, %s) returning id",
-        [league, season, difficulty],
-    ).fetchone()[0]
-
-
-def finish(db, round_id, guesses=3, hints=0, won=True, target=7, code=CODE):
-    return db.execute(
-        "select finish_round(%s, %s, %s, %s, %s, %s)", [round_id, guesses, hints, won, target, code]
-    ).fetchone()[0]
-
-
-def refused(db, error, action):
-    """The action must be refused by the database with the given error."""
-    with pytest.raises(error), db.transaction():
-        action()
 
 
 def test_a_started_round_belongs_to_the_player_and_counts_as_lost(db):

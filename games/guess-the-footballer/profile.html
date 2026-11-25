@@ -6,20 +6,30 @@
     <meta name="robots" content="noindex">
     <link rel="stylesheet" href="../../fonts/fonts.css">
     <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="shell.css">
     <link rel="stylesheet" href="account.css">
-    <link rel="icon" href="../../images/Header/fotbal.png">
+    <link rel="icon" href="../../images/icons/icon.svg" type="image/svg+xml" sizes="any">
+    <link rel="icon" href="../../images/icons/icon-192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="../../images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="../../manifest.webmanifest">
+    <meta name="theme-color" content="#141d2e">
     <title>Profile — Guess the Footballer</title>
 </head>
 <body>
     <header class="header">
-        <a class="brand" href="index.html">
-            <img src="../../images/Header/fotbal.png" alt="" id="logo">
-            <span id="mainHeader" data-translate="guessTheFootballer">Guess the footballer</span>
+        <div class="header-side">
+            <button id="menuButton" class="icon-button" aria-label="Menu">&#9776;</button>
+            <button id="infoButton" class="icon-button" aria-label="How to play">ⓘ</button>
+        </div>
+        <a class="brand" href="../../index.html">
+            <img class="brand-logo" src="../../images/logo.svg" alt="" width="76" height="60">
+            <span class="brand-name"><span>Guess the</span> <strong>Footballer</strong></span>
         </a>
-        <div class="header-tools">
+        <div class="header-side header-tools">
             <div id="account" class="account"></div>
             <label class="language-selector">
                 <span class="visually-hidden">Language</span>
+                <span class="language-code" aria-hidden="true">EN</span>
                 <select id="language">
                     <option value="en">English</option>
                     <option value="es">Español</option>
@@ -27,13 +37,11 @@
                     <option value="ro">Română</option>
                 </select>
             </label>
-            <button id="infoButton" class="icon-button" aria-label="How to play">ⓘ</button>
-            <button id="menuButton" class="icon-button" aria-label="Menu">&#9776;</button>
         </div>
         <div id="infoContent" class="hidden">
             <button id="closeButton" class="icon-button" aria-label="Close">&times;</button>
             <h2 data-translate="howToPlay">How to Play</h2>
-            <p data-translate="selectLeague">1. Select a league, a season and a difficulty.</p>
+            <p data-translate="selectLeague">1. Select a league and a difficulty.</p>
             <p data-translate="guessFootballer">2. Guess the footballer based on the clues provided.</p>
             <p data-translate="legend">Green ✓ = same as the hidden player · ↑ ↓ = the hidden player's age or number is higher / lower</p>
             <p data-translate="hintRule">Hints: the club unlocks after 2 guesses, the age after 4.</p>
@@ -57,5 +65,6 @@
     <script defer src="saved-rounds.js"></script>
     <script defer src="profile.js"></script>
     <script defer src="ui.js"></script>
+    <script defer src="../../pwa.js"></script>
 </body>
 </html>

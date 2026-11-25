@@ -5,11 +5,17 @@ const ROUND_VERSION = 2; // bump when the format changes, and keep reading the o
 const READABLE_VERSIONS = [1, 2]; // 2 added the opening clue
 const CLUE_TYPES = ['transfer', 'season', 'position', 'caps', 'peak', 'contract', 'body', 'born'];
 const PLAYER_FIELDS = ['id', 'name', 'team', 'position', 'age', 'number', 'nationality', 'photo'];
-const AF_PHOTO = /^https:\/\/media\.api-sports\.io\/football\/players\/(\d+)\.png$/; // most photos; storing the number halves the link
-const LOCAL_PHOTO = /^images\/(?!.*\.\.)[\w./ -]+$/;
+const OWN_PORTRAIT = /^images\/portraits\/(?!.*\.\.)[\w./ -]+$/;
+
+// Old links carry pictures from other sites or folders, and anyone can edit a link: only our own portraits are kept.
+function isOwnPortrait(photo) {
+    return typeof photo === 'string' && OWN_PORTRAIT.test(photo);
+}
 
 function snapshot(player) {
-    return Object.fromEntries(PLAYER_FIELDS.map(key => [key, player[key] ?? null]));
+    const copy = Object.fromEntries(PLAYER_FIELDS.map(key => [key, player[key] ?? null]));
+    if (!isOwnPortrait(copy.photo)) copy.photo = null;
+    return copy;
 }
 
 function createRound({ league, season, difficulty, date, max, hints, target, guesses, clue = null }) {
@@ -45,18 +51,11 @@ function roundPoints(round) {
 }
 
 function packPlayer(player) {
-    return PLAYER_FIELDS.map(key => {
-        const photo = key === 'photo' && player.photo ? player.photo.match(AF_PHOTO) : null;
-        return photo ? Number(photo[1]) : player[key];
-    });
+    return PLAYER_FIELDS.map(key => player[key]);
 }
 
 function unpackPlayer(values) {
-    const player = Object.fromEntries(PLAYER_FIELDS.map((key, i) => [key, values[i] ?? null]));
-    // Anyone can edit a link, so only our own images and API-Football portraits are shown.
-    if (Number.isInteger(player.photo)) player.photo = `https://media.api-sports.io/football/players/${player.photo}.png`;
-    else if (!LOCAL_PHOTO.test(player.photo ?? '')) player.photo = null;
-    return player;
+    return snapshot(Object.fromEntries(PLAYER_FIELDS.map((key, i) => [key, values[i]])));
 }
 
 // Base64url: links break on "+", "/" and "=".

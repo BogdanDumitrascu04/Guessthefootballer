@@ -5,20 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../fonts/fonts.css">
     <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="shell.css">
     <link rel="stylesheet" href="account.css">
-    <link rel="icon" href="../../images/Header/fotbal.png">
+    <link rel="icon" href="../../images/icons/icon.svg" type="image/svg+xml" sizes="any">
+    <link rel="icon" href="../../images/icons/icon-192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="../../images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="../../manifest.webmanifest">
+    <meta name="theme-color" content="#141d2e">
     <title>Guess the Footballer</title>
 </head>
 <body>
     <header class="header">
+        <div class="header-side">
+            <button id="menuButton" class="icon-button" aria-label="Menu">&#9776;</button>
+            <button id="infoButton" class="icon-button" aria-label="How to play">ⓘ</button>
+        </div>
         <a class="brand" href="../../index.html">
-            <img src="../../images/Header/fotbal.png" alt="" id="logo">
-            <span id="mainHeader" data-translate="guessTheFootballer">Guess the footballer</span>
+            <img class="brand-logo" src="../../images/logo.svg" alt="" width="76" height="60">
+            <span class="brand-name"><span>Guess the</span> <strong>Footballer</strong></span>
         </a>
-        <div class="header-tools">
+        <div class="header-side header-tools">
             <div id="account" class="account"></div>
             <label class="language-selector">
                 <span class="visually-hidden">Language</span>
+                <span class="language-code" aria-hidden="true">EN</span>
                 <select id="language">
                     <option value="en">English</option>
                     <option value="es">Español</option>
@@ -26,16 +36,14 @@
                     <option value="ro">Română</option>
                 </select>
             </label>
-            <button id="infoButton" class="icon-button" aria-label="How to play">ⓘ</button>
-            <button id="menuButton" class="icon-button" aria-label="Menu">&#9776;</button>
         </div>
         <div id="infoContent" class="hidden">
             <button id="closeButton" class="icon-button" aria-label="Close">&times;</button>
             <h2 data-translate="howToPlay">How to Play</h2>
-            <p data-translate="selectLeague">1. Select a league, a season and a difficulty.</p>
+            <p data-translate="selectLeague">1. Select a league and a difficulty.</p>
             <p data-translate="guessFootballer">2. Guess the footballer based on the clues provided.</p>
             <p data-translate="legend">Green ✓ = same as the hidden player · ↑ ↓ = the hidden player's age or number is higher / lower</p>
-            <p data-translate="hintRule">Hints: the club unlocks after 3 guesses, the age after 6.</p>
+            <p data-translate="hintRule">Hints: the club unlocks after 2 guesses, the age after 4.</p>
             <p data-translate="enjoyGame">3. Enjoy the game!</p>
         </div>
         <div class="navbar hidden" id="navbar">
@@ -45,25 +53,35 @@
         </div>
     </header>
 
-    <main class="content">
-        <section class="picker-section">
-            <h2 data-translate="season">Season</h2>
-            <div class="option-row" id="seasonRow"></div>
-        </section>
-        <section class="picker-section">
-            <h2 data-translate="difficulty">Difficulty</h2>
-            <div class="option-row" id="difficultyRow"></div>
-        </section>
-        <section class="picker-section">
-            <h2 data-translate="chooseLeague">Choose a league</h2>
-            <div class="league-grid" id="leagueGrid"></div>
-        </section>
+    <main class="content picker">
+        <h1 class="picker-title" data-translate="chooseLeague">Choose a league</h1>
+        <p class="picker-text"><span data-translate="pickerText">Six guesses to find the hidden footballer.</span> <span id="seasonNote"></span></p>
+        <div class="picker-seasons" id="seasonRow" hidden></div>
+        <nav class="league-grid" id="leagueGrid"></nav>
+
+        <h2 class="steps-title" data-translate="howToPlay">How to Play</h2>
+        <ol class="steps">
+            <li>
+                <span class="step-picture" id="stepLeagues" aria-hidden="true"></span>
+                <p data-translate="stepChoose">Pick a league and a difficulty, then start when you are ready.</p>
+            </li>
+            <li>
+                <span class="step-picture" aria-hidden="true"><span class="step-tile match">✓</span><span class="step-tile">↑</span><span class="step-tile">↓</span></span>
+                <p data-translate="stepGuess">Every guess shows what matches and how close you are.</p>
+            </li>
+            <li>
+                <span class="step-picture" aria-hidden="true"><span class="step-card"></span><span class="step-card"></span><span class="step-card"></span></span>
+                <p data-translate="stepKeep">Find him and keep his card in your album.</p>
+            </li>
+        </ol>
     </main>
 
     <script defer src="i18n.js"></script>
     <script defer src="../../vendor/supabase-js-2.119.0.js"></script>
     <script defer src="auth.js"></script>
+    <script defer src="league-marks.js"></script>
     <script defer src="picker.js"></script>
     <script defer src="ui.js"></script>
+    <script defer src="../../pwa.js"></script>
 </body>
 </html>

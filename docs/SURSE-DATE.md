@@ -134,11 +134,11 @@ Cerere: `GET /players/profiles?search=<nume>` (merge pe planul gratuit). O cerer
 |---|---|---|
 | Lotul pe sezon (3 sezoane) | football-data.org | ✅ |
 | Naționalitate, data nașterii, post | football-data.org | ✅ |
-| Poza jucătorului | API-Football | ✅ (lotul curent; jucătorii plecați din top 5 păstrează poza veche dacă o avem) |
+| Poza jucătorului | API-Football | nu se mai afișează (25 nov, `DECIZII.md`) |
 | Număr pe tricou 2026-27 | API-Football | ✅ |
-| Număr pe tricou 2024-25 | JSON-ul vechi din `data/` | ✅ parțial (1.186 de jucători) |
+| Număr pe tricou 2024-25 | JSON-ul vechi: istoricul git (`1a06fc3`) și local, `data/raw/2024-25/` | ✅ parțial (1.186 de jucători) |
 | Număr pe tricou 2025-26 | `game_lineups` din setul Transfermarkt | ⚠️ de verificat |
 | Tier (vedetă / titular / lot) | Excelul lui Bogdan, precompletat din valoare + minute | ⚠️ după descărcare |
 | Valoarea de piață pe sezon | setul Transfermarkt (`player_valuations`) | ✅ până în iul 2026 |
 | Cariera (cluburi + ani) | setul Transfermarkt (`transfers`) + clubul din 2026-27 (football-data.org); rezervă: Wikidata | ✅ până în iul 2026 |
-| Siglele cluburilor | football-data.org (`crest`) sau `images/` | ✅ |
+| Insignele cluburilor | proprii, din codul și culorile clubului (football-data.org: `tla`, `clubColors`) | ✅ |

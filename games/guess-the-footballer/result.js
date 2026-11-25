@@ -1,9 +1,8 @@
 // The result page: draws a shared round from the code in its link (result.html?r=...).
-// The round carries its own players, so the league file is only needed for club badges and the header.
+// The round carries its own players; the files only add the league's name, the badges and the ticket.
 const code = new URLSearchParams(location.search).get('r');
 const round = code ? decodeRound(code) : null;
 const DIFFICULTIES = ['easy', 'medium', 'hard'];
-let teams = {};
 let leagueInfo = null;
 let leagueLoaded = false; // until then the header keeps "Result" rather than flashing a raw league id
 let detailsOpen = false;
@@ -21,27 +20,22 @@ async function loadLeague() {
         await clubBadges.ready;
         const manifest = await getJson('data/manifest.json');
         leagueInfo = manifest.leagues.find(l => l.id === round.league) || null;
-        if (leagueInfo && leagueInfo.seasons.includes(round.season)) {
-            teams = (await getJson(`data/seasons/${round.season}/${leagueInfo.id}.json`)).teams;
-        }
     } catch (error) {
         console.error('Could not load the league data:', error); // the round still shows, without badges
     }
     leagueLoaded = true;
 }
 
-function formatDate(isoDay) {
-    const [year, month, day] = String(isoDay).split('-').map(Number);
+// Null for a date that someone has edited in the link.
+function roundDay() {
+    const [year, month, day] = String(round.date).split('-').map(Number);
     const when = new Date(year, month - 1, day);
-    return Number.isNaN(when.getTime()) ? null : when.toLocaleDateString(currentLanguage, { day: 'numeric', month: 'short', year: 'numeric' });
+    return Number.isNaN(when.getTime()) ? null : when;
 }
 
 function renderHead() {
     const name = leagueInfo ? leagueInfo.name : round.league;
-    if (leagueInfo) {
-        document.getElementById('leagueLogo').src = asset(leagueInfo.logo);
-        document.documentElement.style.setProperty('--league-bg', `url('${asset(leagueInfo.background)}')`);
-    }
+    showLeagueMark(round.league);
     if (leagueLoaded) {
         const title = document.getElementById('resultTitle');
         title.removeAttribute('data-translate'); // otherwise a language change writes "Result" back over the league
@@ -54,10 +48,10 @@ function renderHead() {
         chip.className = `difficulty-chip difficulty-${round.difficulty}`;
         chip.textContent = t(round.difficulty);
     }
-    const date = formatDate(round.date);
+    const date = roundDay();
     const dateChip = document.getElementById('dateChip');
     dateChip.classList.toggle('hidden', !date);
-    dateChip.textContent = date || '';
+    dateChip.textContent = date ? date.toLocaleDateString(currentLanguage, { day: 'numeric', month: 'short', year: 'numeric' }) : '';
 }
 
 function createMiniGrid() {
@@ -102,7 +96,10 @@ function renderActions() {
 }
 
 function createHiddenCard() {
-    if (revealed) return createReveal(round.target, teams);
+    if (revealed) {
+        const date = roundDay();
+        return createReveal(round.target, { season: round.season, win: isWon(round) && date ? { guesses: round.guesses.length, date } : null });
+    }
     const card = el('div', 'reveal');
     const show = el('button', 'secondary-button', t('resultReveal'));
     show.type = 'button';
@@ -120,7 +117,7 @@ function renderDetails() {
     document.getElementById('hiddenPlayer').replaceChildren(createHiddenCard());
     // Oldest first: the page tells the story of the round, unlike the game, where the newest guess matters most.
     const rows = round.guesses.map((player, i) =>
-        createAttempt(player, i + 1, { target: round.target, teams, hidden: !revealed && player === round.target })
+        createAttempt(player, i + 1, { target: round.target, hidden: !revealed && player === round.target })
     );
     document.getElementById('playerInfo').replaceChildren(...rows);
 }

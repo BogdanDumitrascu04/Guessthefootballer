@@ -7,7 +7,7 @@ Proiect de portofoliu al lui Bogdan (repo public pe contul `BogdanDumitrascu04`,
 - `docs/DECIZII.md` — deciziile luate. Orice decizie nouă se notează aici.
 - `docs/SURSE-DATE.md` — ce date primim din fiecare sursă, verificat.
 
-**Status (20 nov 2026):** site-ul rulează pe JSON: sezonul 2026-27 (implicit, generat de `scripts/build_season.py`, fiecare jucător cu ID-ul football-data) și 2024-25 (scris de mână). Jocul are 6 încercări, puncte pe rundă și o pagină de rezultat pentru share (`result.html`, din fișa rundei din `round.js`). Urmează conturile (Etapa 7). Baza Supabase a fost repornită pe 20 nov și va fi ținută trează de un ping zilnic (`.github/workflows/keep-supabase-awake.yml`, pornește după secret + push); schema e pe GitHub, dar Bogdan încă n-a explicat-o.
+**Status (25 nov 2026):** site-ul rulează pe JSON, doar sezonul 2026-27 (2.586 de jucători, generat de `scripts/build_season.py`, fiecare cu ID-ul football-data). Live: 6 încercări, puncte, indiciul de start, pagina de rezultat, conturi Google cu runde salvate, profil și album (Etapele 7–9). Etapa 10 (fără poze și sigle, fără 2024-25, PWA) e construită și testată local; așteaptă testul și push-ul lui Bogdan. Urmează „Jucătorul zilei”, apoi runda verificată pe server și clasamentul. Baza Supabase e ținută trează de un ping zilnic; schema e pe GitHub, dar Bogdan încă n-a explicat-o.
 
 **Termene:** CV-ul pleacă pe 5 nov, cu linkul live · noiembrie: baza + jocul 1 pe sezoane + jocul 2 (date de reconfirmat) · decembrie: jocul 3 + conturi · ianuarie: cod înghețat, înaintea interviului tehnic.
 
@@ -37,6 +37,8 @@ Pentru jocul 1:
 
 ## Reguli
 - **Poza aparține jucătorului, nu sezonului** (o singură poză pe jucător, în `players`). Ce se schimbă de la un sezon la altul (club, număr, post, tier) stă în `squad_entries`.
+- **Fără poze de jucători și fără sigle pe site** (25 nov): inițiale, insigne proprii (`badge.js`, `league-marks.js`), cardul-bilet. Pozele revin doar pentru cluburile din `PORTRAIT_CLUBS` (`common.js`), cu acord scris. `tests/site.test.js` verifică.
+- Un fișier nou al site-ului (pagină, script, stil) se adaugă și în lista din `sw.js`; altfel pică `tests/site.test.js`.
 - Jucătorii se leagă **după ID-ul sursei**, niciodată doar după nume (numele diferă între surse: „H. Davies" vs „Harvey Davies").
 - Date doar din surse care permit folosirea lor. **Nu facem noi scraping** (Transfermarkt, Sofascore etc.). Singura excepție, decisă pe 29 oct: setul public `transfermarkt-datasets` (Kaggle `davidcariboo/player-scores`, CC0), pentru valori de piață, transferuri și minute, cu sursa citată în README. Pozele nu se iau de acolo.
 - **Tier-ul îl alege Bogdan** într-un Excel (o coloană cu listă: vedetă / titular / lot), precompletat cu o sugestie; importul validează fiecare rând și păstrează alegerile la actualizări.
@@ -45,14 +47,15 @@ Pentru jocul 1:
 - Limita API-Football (100 de cereri pe zi) e **comună cu alt proiect local al lui Bogdan** care folosește aceeași cheie.
 
 ## Structura
-- `index.html` — prima pagină (hub-ul „Bogdy's Games”); textele vin tot din `i18n.js`, din folderul jocului.
-- `games/guess-the-footballer/` — picker (`index.html`) + jocul (`game.html`, `engine.js`, `i18n.js`, `game.css`); `round.js` = fișa rundei (codul din linkul de share), testată cu `node --test tests/`; `common.js` = rândurile și căsuțele grilei, comune jocului și paginii de rezultat (`result.html` + `result.js`).
-- `data/` — JSON-ul vechi (2024-25, 1.186 de jucători, cu `tier` și număr curatoriate) — sursă pentru import, apoi iese din joc.
+- `index.html` — prima pagină; textele vin tot din `i18n.js`, din folderul jocului.
+- `games/guess-the-footballer/` — picker (`index.html`) + jocul (`game.html`, `engine.js`, `i18n.js`, `game.css`); `round.js` = fișa rundei (codul din linkul de share), testată cu `node --test tests/` (la fel și fișierele site-ului, în `site.test.js`); `common.js` = rândurile și căsuțele grilei, comune jocului și paginii de rezultat (`result.html` + `result.js`); `kickoff.js` = ecranul dinaintea rundei (runda se salvează abia la „Începe runda”); `shell.css` = antetul și fundalul tuturor paginilor.
+- `sw.js`, `pwa.js`, `manifest.webmanifest` — aplicația instalabilă: întâi rețeaua, copia locală doar fără internet.
+- `data/seasons/2026-27/` — loturile din joc; `data/album/` — cardurile; `data/badges.json` — insignele. JSON-ul vechi 2024-25 (scris de mână, sursă pentru import) e în istoricul git și în `data/raw/2024-25/`.
 - `data/raw/` (în `.gitignore`) — ce descarcă scripturile: loturile football-data.org, setul Transfermarkt (`data/raw/transfermarkt/`).
 - `sql/` — `schema.sql` (tabelele de date), `reference_data.sql` (ligile și sezoanele), `game_results.sql` (rundele jucătorilor logați: RLS, drepturi pe coloane, `finish_round()`); toate aplicate, în ordine, de `scripts/apply_schema.py`.
 - `scripts/` + `tests/` — scripturile de date (Python) și testele lor: `download_squads.py` (football-data.org), `download_api_football.py` (poze, numere), `build_season.py` (scrie `data/seasons/2026-27/` + manifestul), `build_clues.py` (faptele pentru indiciul de start, în `data/seasons/2026-27/clues/`; se rulează cu `python -m scripts.build_clues`).
 - `.github/workflows/` — acțiunile GitHub: `keep-supabase-awake.yml` (interogare zilnică, cu secretul `SUPABASE_DB_URL` din setările repo-ului).
-- `images/` — siglele cluburilor și pozele vechi (14 MB).
+- `images/` — iconițele aplicației, imaginea de share, sigla și fundalul.
 - `fonts/` — fontul titlurilor (Barlow Condensed), găzduit în repo, cu licența lui.
 
 ## Mediu

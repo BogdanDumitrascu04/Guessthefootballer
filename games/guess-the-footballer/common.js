@@ -15,28 +15,42 @@ async function getJson(path) {
     return response.json();
 }
 
-// Older seasons use local images, newer ones full URLs.
-function asset(path) {
-    return /^https?:/.test(path) ? path : `${ROOT}${path}`;
+function showLeagueMark(leagueId) {
+    const mark = leagueMarks.create(leagueId);
+    document.getElementById('leagueMark').replaceChildren(...(mark ? [mark] : []));
+    leagueMarks.paint(document.documentElement, leagueId);
 }
 
-// Older seasons repeat the club badge as "photo" for players without a portrait.
-function hasPortrait(player, teams) {
-    return Boolean(player.photo) && player.photo !== teams[player.team];
+// The only switch for portraits: the clubs that agreed in writing to show their players. Empty: initials everywhere.
+const PORTRAIT_CLUBS = [];
+
+function hasPortrait(player) {
+    return PORTRAIT_CLUBS.includes(player.team) && isOwnPortrait(player.photo);
 }
 
-function createAvatar(player, teams, hidden = false) {
-    if (!hidden && hasPortrait(player, teams)) {
+// Namesakes in one league carry their club: "Raúl (Osasuna)".
+function initialsOf(name) {
+    const letters = name.replace(/\(.*\)/, '').split(' ').filter(Boolean).map(word => word[0]);
+    return (letters.length > 1 ? letters[0] + letters.at(-1) : letters[0] ?? '?').toUpperCase();
+}
+
+function createAvatar(player, hidden = false) {
+    if (!hidden && hasPortrait(player)) {
         const img = document.createElement('img');
         img.className = 'avatar';
-        img.src = asset(player.photo);
+        img.src = `${ROOT}${player.photo}`;
         img.alt = '';
         return img;
     }
     const initials = document.createElement('span');
     initials.className = 'avatar';
-    const words = player.name.split(' ');
-    initials.textContent = hidden ? '?' : (words[0][0] + (words.length > 1 ? words[words.length - 1][0] : '')).toUpperCase();
+    initials.setAttribute('aria-hidden', 'true'); // the name is read out right after
+    initials.textContent = hidden ? '?' : initialsOf(player.name);
+    const colors = hidden ? null : clubBadges.themeOf(player.team);
+    if (colors) {
+        initials.classList.add('in-club-colours');
+        for (const name of ['field', 'trim', 'ink']) initials.style.setProperty(`--${name}`, colors[name]);
+    }
     return initials;
 }
 
@@ -47,30 +61,30 @@ function createTeamLogo(team, className) {
     return badge;
 }
 
-function createReveal(player, teams) {
-    const card = document.createElement('div');
-    card.className = 'reveal';
-    if (hasPortrait(player, teams)) {
-        const photo = document.createElement('img');
-        photo.className = 'reveal-photo';
-        photo.src = asset(player.photo);
-        photo.alt = player.name;
-        card.appendChild(photo);
-    } else {
-        card.appendChild(createTeamLogo(player.team, 'reveal-badge'));
-    }
+function fillPlainReveal(card, player) {
+    card.classList.add('reveal-plain');
     const name = document.createElement('div');
     name.className = 'reveal-name';
     name.textContent = player.name;
     const details = document.createElement('div');
     details.className = 'reveal-details';
     details.textContent = [player.team, player.position, player.number != null ? `#${player.number}` : null].filter(Boolean).join(' · ');
-    card.append(name, details);
+    card.replaceChildren(createTeamLogo(player.team, 'reveal-badge'), name, details);
+}
+
+// The hidden player as his ticket from the album. Old seasons and players who have moved have none: there, the club's badge.
+function createReveal(player, { season, win }) {
+    const card = document.createElement('div');
+    card.className = 'reveal';
+    import('./album/reveal.js')
+        .then(album => album.createRevealTicket(player, season, win))
+        .catch(error => console.warn('Ticket not shown:', error.message))
+        .then(ticket => (ticket ? card.replaceChildren(ticket) : fillPlainReveal(card, player)));
     return card;
 }
 
 // hidden: the result page keeps the answer's name back until the viewer asks for it.
-function createAttempt(player, number, { target, teams, fresh = false, hidden = false }) {
+function createAttempt(player, number, { target, fresh = false, hidden = false }) {
     const row = document.createElement('div');
     row.className = fresh ? 'attempt fresh' : 'attempt';
 
@@ -81,11 +95,11 @@ function createAttempt(player, number, { target, teams, fresh = false, hidden = 
     position.textContent = `${number}.`;
     const name = document.createElement('span');
     name.textContent = hidden ? '???' : player.name;
-    who.append(position, createAvatar(player, teams, hidden), name);
+    who.append(position, createAvatar(player, hidden), name);
     row.appendChild(who);
 
     ATTRIBUTES.forEach((attribute, i) => {
-        const tile = createTile(player, attribute, target, teams, hidden);
+        const tile = createTile(player, attribute, target, hidden);
         tile.style.setProperty('--i', i);
         row.appendChild(tile);
     });
@@ -97,7 +111,7 @@ function isMatch(player, target, key) {
 }
 
 // hidden: the winning row's values (club, age, number...) would give the name away, so only the ticks show.
-function createTile(player, { key, numeric }, target, teams, hidden = false) {
+function createTile(player, { key, numeric }, target, hidden = false) {
     const tile = document.createElement('div');
     tile.className = `tile tile-${key}`;
     const label = document.createElement('span');

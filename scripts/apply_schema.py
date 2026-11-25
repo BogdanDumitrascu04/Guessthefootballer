@@ -20,7 +20,9 @@ SQL_FILES = [
     for name in (
         "schema.sql",
         "reference_data.sql",
+        "daily_players.sql",
         "game_results.sql",
+        "daily_rounds.sql",
         "player_stats.sql",
         "user_cards.sql",
         "delete_account.sql",

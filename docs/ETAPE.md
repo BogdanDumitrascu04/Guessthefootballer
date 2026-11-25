@@ -144,7 +144,7 @@ Făcută pe 5 nov, înaintea Supabase, pe datele din JSON (2024-25). Testată lo
   - [x] commit `game_results` (Bogdan, 23 nov, `4071ff8`; în titlu a intrat din greșeală și „Apoi Commit to master → Push”)
   - [x] butonul de cont în header, pe toate cele 4 pagini, în 4 limbi; `auth.js` + `account.css`; biblioteca `vendor/supabase-js-2.119.0.js` (Claude, 23 nov). Testat local, cu o cheie de probă și o sesiune falsă: desktop și 375 px, fără scroll orizontal, meniul (Escape, click în afară), deconectarea, numele afișat ca text, nu ca HTML. Supabase trimite corect spre Google
   - [x] cheia publică (publishable) în `auth.js` (23 nov). Verificat prin API-ul real, cu cheia: Google e activ; un vizitator nelogat primește „permission denied” și la tabel, și la `finish_round`; butonul construiește corect cererea spre Google (PKCE)
-  - [ ] **Bogdan:** în Supabase, adresele de întoarcere `http://localhost:8765/**` și `https://bogdandumitrascu04.github.io/Guessthefootballer/**`; providerul **Email** dezactivat (e încă pornit, deci cineva și-ar putea face cont cu email prin API, ocolind decizia „doar Google”)
+  - [x] **Bogdan:** în Supabase, adresele de întoarcere `http://localhost:8765/**` și `https://bogdandumitrascu04.github.io/Guessthefootballer/**`; providerul **Email** dezactivat (verificat din nou prin API pe 25 nov: Email oprit, Google pornit; login-ul merge live)
   - [x] testul lui Bogdan: login real cu Google, local, și deconectarea merg (23 nov). **Fără push** până la politica de confidențialitate + „Șterge contul”
   - [x] meniul contului refăcut după feedbackul lui Bogdan (23 nov): antet cu inițiala, numele și emailul, apoi rânduri cu iconițe; aliniat la marginea header-ului (înainte ieșea din ecran pe telefon). Testat pe desktop și la 375 px
   - [ ] testul lui Bogdan pentru meniul nou
@@ -193,7 +193,24 @@ Făcută pe 5 nov, înaintea Supabase, pe datele din JSON (2024-25). Testată lo
 - [x] direcția aleasă de Bogdan dintr-un prototip local: cardul-bilet, fără fețe și fără sigle; insigne proprii în tot jocul (`badge.js`, `data/badges.json`)
 - [x] `sql/user_cards.sql`: conceptul (Claude), cerința (Bogdan: un rând = user + jucător, cea mai bună rundă, la egalitate prima), SQL + 14 teste, rulat pe baza reală, explicat de Bogdan, review cu alt AI, commit
 - [x] pagina Album (`album.html`, `album/`), cardul la finalul rundei câștigate, 4 limbi (Claude)
-- [ ] testul lui Bogdan → commit
+- [x] testul lui Bogdan → commit (`1a06fc3`)
+
+## Etapa 10 — Site-ul pregătit de promovare (25 nov)
+**Scop:** site-ul arată bine fără poze de jucători și fără sigle, se instalează pe telefon și se actualizează singur. Interfața o face Claude; Bogdan testează, apoi commit + push.
+
+- [x] sezonul 2024-25 scos din joc (decizia lui Bogdan, 25 nov): JSON-urile rămân în istoricul git și local, în `data/raw/2024-25/`, pentru importul din Etapa 1. Linkurile vechi se deschid în continuare (4 mostre făcute cu codul vechi, una păstrată ca test); în bază nu era nicio rundă din 2024-25
+- [x] fără poze și fără sigle, nicăieri: inițiale în culorile clubului, insignele proprii, cardul-bilet la dezvăluire (joc și pagina de rezultat), abonamente proprii pentru ligi (`league-marks.js`). Comutatorul: `PORTRAIT_CLUBS` din `common.js`. `images/leagues/` ștears (12 MB), cu tot cu `images/1.jpg`
+- [x] prima pagină (Mbappé cu inițiale și insigna RMA, 96 de cluburi, 2.586 de jucători), imaginea de share (`images/share.jpg`, nume nou, ca rețelele sociale să n-o mai arate pe cea veche), capturile din README
+- [x] PWA: `manifest.webmanifest`, iconițe proprii, `sw.js` (întâi rețeaua, copia doar fără internet), `pwa.js`, butonul „Instalează aplicația” pe prima pagină
+- [x] politica de confidențialitate (nu se mai cere nimic de la API-Football; copia locală pentru offline), README, `build_badges.py`
+- [x] testat local de Claude, în Chrome: 270 de verificări pe forma finală (calculator și 375 px în 4 limbi, 320 px în franceză, toate paginile), fără erori în consolă, fără scroll lateral, cereri doar către site; finalul rundei cu un cont simulat (card nou, card mai vechi, salvare eșuată sau blocată); instalarea (0 probleme raportate de Chrome), actualizarea imediată și jocul fără internet, pe o copie servită la `/Guessthefootballer/` cu regulile de cache ale GitHub Pages. 25 de teste JS și 136 Python, verzi
+- [x] primul test al lui Bogdan (25 nov) și cererile lui: siglă nouă și antet centrat, un singur nume, fundal propriu pe ligă, pagina de alegere refăcută, ecranul de start înaintea rundei. Testat: deschiderea sau reîncărcarea nu salvează nicio rundă; întrebarea la părăsire apare doar la o rundă începută cu cont
+- [ ] al doilea test al lui Bogdan + commit + push
+- [ ] pe telefon, după push (Claude nu poate verifica): instalarea pe Android și pe iPhone, login-ul cu Google din aplicația instalată
+- [ ] contorul de trafic fără cookie-uri: Bogdan alege varianta; apoi codul și politica de confidențialitate
+- [ ] după pozele scoase, pe ciclul de învățare: `build_season.py` fără `photo` și fără siglele cluburilor în JSON (nu le mai citește nimeni, 28% din fișiere), iar regula `left_out()` doar după număr. Căutările API-Football din Etapa 3 mai au rost doar pentru numere
+
+**Urmează:** „Jucătorul zilei” (același pentru toți; alegerea zilnică în SQL, pe ciclul de învățare), apoi runda verificată pe server și clasamentul, ca punctele să aibă valoare.
 
 ## După
-- provocarea zilnică (același jucător pentru toți), clasament, „joacă același jucător” din pagina de rezultat, share-ul întregului istoric din profil, modul Icons
+- „joacă același jucător” din pagina de rezultat, share-ul întregului istoric din profil, modul Icons

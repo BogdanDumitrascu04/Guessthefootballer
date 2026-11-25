@@ -20,13 +20,15 @@ const SPECIAL_LETTERS = { ø: 'o', æ: 'ae', œ: 'oe', ß: 'ss', ł: 'l', đ: 'd
 const params = new URLSearchParams(location.search);
 const requestedLeague = params.get('league') || 'premier-league';
 const requestedSeason = params.get('season');
-const difficulty = TARGET_TIERS[params.get('difficulty')] ? params.get('difficulty') : 'medium';
+let difficulty = [params.get('difficulty'), localStorage.getItem('gtf-difficulty')].find(d => TARGET_TIERS[d]) ?? 'medium';
 
-let league, players, targetPool, targetPlayer;
+let league, players, targetPlayer;
 let clues = {}; // player ID -> facts; seasons without a clues file simply have none
 let currentClue = null;
 let lastRound = null; // what the result page and the account receive
 let roundStart = null; // the promise of this round's row in the account
+let rowId = null; // that row, once it exists: leaving now would count as a loss
+let started = false; // false: the screen before the round is shown
 let saveState = null; // 'saving', 'saved', 'failed' or 'signedOut', shown under the points
 let guesses = [];
 const revealedHints = new Set();
@@ -35,12 +37,16 @@ let message = null; // kept as a key, so it can be redrawn when the language cha
 let highlighted = -1;
 let animateLast = false; // only a new guess flips; redrawing for another language must not
 
+const kickoffBox = document.getElementById('kickoff');
+const roundBox = document.getElementById('round');
 const inputBox = document.getElementById('guessInput');
 const resultsBox = document.querySelector('.result-box');
 const feedback = document.getElementById('feedback');
 const playerInfo = document.getElementById('playerInfo');
 const hintsBox = document.getElementById('hints');
 const restartContainer = document.getElementById('restartContainer');
+const outcomeBox = document.getElementById('outcome');
+const revealBox = document.getElementById('reveal');
 const attemptCounter = document.getElementById('attemptCounter');
 
 async function loadLeague() {
@@ -56,18 +62,13 @@ async function loadLeague() {
     league.seasonUsed = season;
     players = league.players;
     for (const p of players) p.searchName = normalize(p.name);
-    // The hidden player needs every clue; some players have no known number or age.
-    const complete = players.filter(p => p.number != null && p.age != null);
-    targetPool = complete.filter(p => TARGET_TIERS[difficulty].includes(p.tier));
-    if (!targetPool.length) targetPool = complete;
 
     document.title = `${info.name} ${season} — Guess the Footballer`;
-    document.documentElement.style.setProperty('--league-bg', `url('${ROOT}${info.background}')`);
     document.getElementById('gameSubtitle').textContent = `${info.name} · ${season}`;
-    document.getElementById('leagueLogo').src = `${ROOT}${info.logo}`;
-    document.getElementById('difficultyChip').className = `difficulty-chip difficulty-${difficulty}`;
+    showLeagueMark(info.id);
     buildNavbar(manifest);
-    startRound();
+    showKickoff();
+    import('./album/reveal.js').then(album => album.preload(), () => {}); // the ticket is then ready when the round ends
 }
 
 function buildNavbar(manifest) {
@@ -75,7 +76,7 @@ function buildNavbar(manifest) {
     menu.innerHTML = '';
     for (const l of manifest.leagues) {
         const a = document.createElement('a');
-        a.href = `game.html?league=${l.id}&season=${league.seasonUsed}&difficulty=${difficulty}`;
+        a.href = `game.html?league=${l.id}&season=${league.seasonUsed}`;
         a.textContent = l.name;
         menu.appendChild(a);
     }
@@ -96,21 +97,47 @@ function buildNavbar(manifest) {
     menu.appendChild(hub);
 }
 
+function showKickoff() {
+    started = false;
+    render();
+}
+
+function setDifficulty(level) {
+    difficulty = level;
+    localStorage.setItem('gtf-difficulty', level);
+    render();
+    kickoffBox.querySelector('[aria-pressed="true"]').focus(); // drawing the screen again lost it
+}
+
+// The hidden player needs every clue; some players have no known number or age.
+function pickTarget() {
+    const complete = players.filter(p => p.number != null && p.age != null);
+    const suited = complete.filter(p => TARGET_TIERS[difficulty].includes(p.tier));
+    const pool = suited.length ? suited : complete;
+    return pool[Math.floor(Math.random() * pool.length)];
+}
+
 function startRound() {
+    started = true;
     guesses = [];
     lastRound = null;
     revealedHints.clear();
     roundOver = false;
     message = null;
     saveState = null;
-    targetPlayer = targetPool[Math.floor(Math.random() * targetPool.length)];
+    rowId = null;
+    targetPlayer = pickTarget();
     currentClue = pickClue(targetPlayer);
     // Saved as soon as it starts, so leaving the page counts as a loss instead of erasing it.
-    roundStart = saveRoundStart({ league: league.info.id, season: league.seasonUsed, difficulty });
-    roundStart.catch(() => {}); // a failure is reported when the round ends; an abandoned round has nobody to tell
+    const start = saveRoundStart({ league: league.info.id, season: league.seasonUsed, difficulty });
+    roundStart = start;
+    start.then(id => {
+        if (start === roundStart) rowId = id;
+    }, () => {}); // a failure is reported when the round ends; an abandoned round has nobody to tell
     inputBox.disabled = false;
     inputBox.value = '';
     restartContainer.innerHTML = '';
+    revealBox.replaceChildren();
     closeSuggestions();
     render();
     focusInput();
@@ -178,7 +205,7 @@ function showSuggestions() {
         const team = document.createElement('small');
         team.textContent = p.team;
         name.appendChild(team);
-        li.append(createAvatar(p, league.teams), name, createTeamLogo(p.team, 'team-logo-small'));
+        li.append(createAvatar(p), name, createTeamLogo(p.team, 'team-logo-small'));
         list.appendChild(li);
     }
     resultsBox.appendChild(list);
@@ -272,7 +299,7 @@ function endRound() {
         guesses,
         clue: currentClue,
     });
-    saveRound(roundStart, lastRound);
+    revealAfter(saveRound(roundStart, lastRound), lastRound);
     inputBox.disabled = true;
     const restartButton = document.createElement('button');
     restartButton.className = 'primary-button';
@@ -284,7 +311,33 @@ function endRound() {
     shareButton.setAttribute('data-translate', 'share');
     shareButton.textContent = t('share');
     shareButton.addEventListener('click', () => shareResult(shareButton));
-    restartContainer.append(restartButton, shareButton);
+    const changeButton = document.createElement('button');
+    changeButton.className = 'link-button';
+    changeButton.setAttribute('data-translate', 'changeDifficulty');
+    changeButton.textContent = t('changeDifficulty');
+    changeButton.addEventListener('click', () => {
+        showKickoff();
+        kickoffBox.querySelector('.start-button').focus(); // the button just pressed is gone
+        scrollTo(0, 0);
+    });
+    restartContainer.append(restartButton, shareButton, changeButton);
+}
+
+const CARD_WAIT = 3000; // ms; a slow connection must not hold the answer back for longer
+
+// A saved win turns its card over in a window of its own; the same ticket in the page would spoil that moment.
+function revealAfter(saved, round) {
+    const show = () => {
+        if (lastRound === round && !revealBox.hasChildNodes()) showReveal();
+    };
+    if (!isWon(round)) return show();
+    saved.then(show);
+    setTimeout(show, CARD_WAIT);
+}
+
+function showReveal() {
+    const win = isWon(lastRound) ? { guesses: guesses.length, date: new Date() } : null;
+    revealBox.replaceChildren(createReveal(targetPlayer, { season: league.seasonUsed, win }));
 }
 
 async function saveRound(start, round) {
@@ -301,8 +354,8 @@ async function saveRound(start, round) {
         setState('saved');
         if (isWon(round) && round.target.id) {
             // The round is saved either way; without its card the result still shows as before.
-            import('./album/round-win.js')
-                .then(album => album.showRoundCard(round.target, round.target.team, roundId, () => lastRound === round))
+            await import('./album/round-win.js')
+                .then(album => album.showRoundCard(round, roundId, () => lastRound === round))
                 .catch(error => console.warn('Card not shown:', error.message));
         }
     } catch (error) {
@@ -343,7 +396,16 @@ async function shareResult(button) {
 
 // Rendering
 function render() {
-    document.getElementById('difficultyChip').textContent = t(difficulty);
+    const chip = document.getElementById('difficultyChip');
+    chip.className = `difficulty-chip difficulty-${difficulty}`;
+    chip.textContent = t(difficulty);
+    kickoffBox.hidden = started;
+    roundBox.hidden = attemptCounter.hidden = !started;
+    if (!started) {
+        kickoffBox.replaceChildren(...kickoff.create({ difficulty, attempts: MAX_ATTEMPTS, onDifficulty: setDifficulty, onStart: startRound }));
+        return;
+    }
+    outcomeBox.classList.toggle('over', roundOver);
     attemptCounter.textContent = `${t('guesses')}: ${guesses.length}/${MAX_ATTEMPTS}`;
     renderClue();
     renderMessage();
@@ -369,7 +431,6 @@ function renderMessage() {
     points.textContent = t('pointsLine', { n: roundPoints(lastRound) });
     feedback.append(points);
     if (saveState) feedback.append(createSaveStatus());
-    feedback.append(createReveal(targetPlayer, league.teams));
 }
 
 const SAVE_TEXT = { saving: 'roundSaving', saved: 'roundSaved', failed: 'roundNotSaved', signedOut: 'signInToSave' };
@@ -433,18 +494,30 @@ function renderAttempts() {
     playerInfo.innerHTML = '';
     for (let i = guesses.length - 1; i >= 0; i--) {
         const isNew = fresh && i === guesses.length - 1;
-        playerInfo.appendChild(createAttempt(guesses[i], i + 1, { target: targetPlayer, teams: league.teams, fresh: isNew }));
+        playerInfo.appendChild(createAttempt(guesses[i], i + 1, { target: targetPlayer, fresh: isNew }));
     }
 }
 
 document.addEventListener('languagechange', () => {
-    if (league) render();
+    if (!league) return;
+    render();
+    if (started && revealBox.hasChildNodes()) showReveal();
+});
+
+document.addEventListener('accountchange', () => {
+    if (league && !started) render();
+});
+
+// A page closed by mistake would cost a player with an account the round, so the browser asks first.
+addEventListener('beforeunload', event => {
+    if (started && !roundOver && rowId) event.preventDefault();
 });
 
 document.addEventListener('DOMContentLoaded', () => {
     loadLeague().catch(error => {
         console.error('Could not load the league data:', error);
         inputBox.disabled = true;
+        roundBox.hidden = false;
         message = { kind: 'error', key: 'loadError' };
         renderMessage();
     });
