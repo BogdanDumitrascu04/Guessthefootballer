@@ -15,6 +15,13 @@
     { "src": "images/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
     { "src": "images/icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }
   ],
+  "shortcuts": [
+    {
+      "name": "Player of the day",
+      "url": "games/guess-the-footballer/game.html?daily",
+      "icons": [{ "src": "images/icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    }
+  ],
   "screenshots": [
     { "src": "screenshots/phone-start.jpg", "sizes": "780x1688", "type": "image/jpeg", "form_factor": "narrow" },
     { "src": "screenshots/phone-game.jpg", "sizes": "780x1688", "type": "image/jpeg", "form_factor": "narrow" },

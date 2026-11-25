@@ -267,3 +267,24 @@ Punct de plecare: propunerile lui Gemini, verificate pe pagina reală, plus idei
 | Părăsirea rundei | Browserul întreabă doar dacă runda începută e salvată într-un cont | O pagină închisă din greșeală ar costa o înfrângere și seria. Fără cont nu se pierde nimic. |
 | Pagina de alegere | Doar liga (carduri cu țara) și „Cum să joci” în trei pași desenați | Cerut de Bogdan („mai friendly”). Dificultatea stă lângă butonul de start, unde contează. |
 | Bara din joc | Un „tifo” pe ligă: steagul țării din puncte, ca o tribună cu cartoane colorate, sub două reflectoare; doar CSS | Cerut de Bogdan: fundal propriu pe fiecare ligă, fără imagini. |
+
+## 25 nov 2026 — jucătorul zilei (Etapa 11)
+
+| Decizie | Ce am ales | De ce |
+|---|---|---|
+| Ziua | După ora României (`daily_date()`), același moment pentru toată lumea; o spune baza | Baza e pe UTC: la 00:30 în România ar fi încă ieri. Ceasul telefonului se poate muta cu o zi înainte. |
+| Alegerea | Calendar (`daily_players`): un rând pe zi, scris dinainte. Respinsă: o formulă din dată | Repo-ul e public, deci formula ar spune și jucătorul de mâine. S-ar repeta (cu 200 de jucători, prima dublură vine în medie după ~18 zile) și s-ar schimba la fiecare transfer. |
+| Umplerea | `scripts/plan_daily.py` ia vedetele din JSON; amestecarea o face baza (`plan_daily_players()`): la fiecare 5 zile trec toate cele 5 ligi. O nouă rulare schimbă doar zilele viitoare | `players` e gol. Ordinea rămâne doar în tabel și nu se afișează, deci nimeni nu știe jucătorul de mâine. |
+| Fără repetări | Unic pe sezon și jucător | Unic pe tot calendarul ar fi scos vedetele pentru totdeauna, și din 2027-28. |
+| Cine vede ce | RLS: `day <= daily_date()`, pentru vizitatori și conturi; scrie doar scriptul | Rândul de mâine nu există pentru browser. |
+| Limita cunoscută | Pe cel de azi îl poate afla cine deschide uneltele browserului | Încercările se compară în pagină. La runda verificată pe server, `<=` devine `<`. |
+| Liga, dificultatea, punctele (acceptate de Bogdan) | O ligă pe zi, doar vedete (tier 1), regulile și punctele de la Ușor (10–60), în totalul din profil; cardul intră în album | Jucătorul trebuie să fie cunoscut de toți; regulile rămân cele pe care le știu. |
+| Seria (acceptată) | Zile la rând ghicite (`daily_stats`); o zi pierdută, sărită sau neterminată o rupe, iar ziua de azi nejucată încă nu | Separată de seria rundelor normale, care rămâne cum era. |
+| O rundă pe zi | `game_results.daily_on` + index unic (cont, zi), `null` la rundele normale. Ziua o pune `start_daily_round()`, fără parametri; al doilea apel întoarce aceeași rundă | Un buton ascuns nu oprește al doilea tab. Cu o zi aleasă de browser s-ar putea repara seria. |
+| Miezul nopții (acceptat) | Runda ține de ziua în care a început; se poate termina până la 01:00 (`daily_round_open()`) | Cine începe la 23:58 nu pierde ziua; fără termen, a doua zi s-ar putea termina o rundă cu răspunsul știut. |
+| Finalul | La runda zilei, jucătorul ascuns îl scrie baza, din calendar | Browserul nu poate primi cardul altui jucător. |
+| Refresh (acceptat) | Încercările stau în browser și runda continuă pe același dispozitiv; pe altul, pagina spune că e începută în altă parte. O salvare eșuată se reia la următoarea deschidere | Un refresh n-ar trebui să coste ziua, iar un al doilea dispozitiv ar da încă 6 încercări. |
+| Fără cont | Se joacă o dată pe browser, nimic în bază; o rundă începută fără cont nu intră mai târziu în cont | Aceeași regulă ca la rundele normale: fără un început cinstit în bază nu se salvează. |
+| Indiciul de start | Același pentru toți, ales după zi | La rundele normale e la întâmplare; aici toți primesc aceeași rundă. |
+| Share | Pătrățele și link spre joc, nu spre pagina de rezultat | Linkul de rezultat conține răspunsul, iar azi toți au același jucător. |
+| Cererile spre bază | Doar pagina zilei întreabă baza; prima pagină și alegerea ligii, nu | Un vizitator trimite ceva spre Supabase doar dacă deschide jucătorul zilei; scris în politica de confidențialitate. |

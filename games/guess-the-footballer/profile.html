@@ -46,10 +46,12 @@
             <p data-translate="legend">Green ✓ = same as the hidden player · ↑ ↓ = the hidden player's age or number is higher / lower</p>
             <p data-translate="hintRule">Hints: the club unlocks after 2 guesses, the age after 4.</p>
             <p data-translate="pointsRule">Points: a win at the 1st guess gives 60 on Easy, 120 on Medium, 240 on Hard; each extra guess or hint costs one step (10 / 20 / 40).</p>
+            <p data-translate="dailyRule">Player of the day: one round a day, the same player for everyone. A new one at midnight, Romanian time.</p>
             <p data-translate="enjoyGame">3. Enjoy the game!</p>
         </div>
         <div class="navbar hidden" id="navbar">
             <nav id="menuContent">
+                <a href="game.html?daily" data-translate="daily">Player of the day</a>
                 <a href="album.html" data-translate="album">Album</a>
                 <a href="index.html" data-translate="changeSettings">Change league / difficulty</a>
                 <a href="../../index.html" data-translate="allGames">All games</a>
@@ -63,6 +65,7 @@
     <script defer src="../../vendor/supabase-js-2.119.0.js"></script>
     <script defer src="auth.js"></script>
     <script defer src="saved-rounds.js"></script>
+    <script defer src="daily.js"></script>
     <script defer src="profile.js"></script>
     <script defer src="ui.js"></script>
     <script defer src="../../pwa.js"></script>

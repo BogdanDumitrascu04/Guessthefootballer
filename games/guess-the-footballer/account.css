@@ -346,6 +346,15 @@ a.history-row:focus-visible {
     font-size: 0.75rem;
 }
 
+.history-meta .daily-chip {
+    padding: 0 9px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--accent);
+    border: 1px solid rgb(245 179 1 / 0.6);
+    border-radius: 999px;
+}
+
 .history-outcome {
     font-family: var(--font-display);
     font-size: 1.3rem;

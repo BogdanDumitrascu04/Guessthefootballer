@@ -52,11 +52,24 @@ async function loadPlayerStats() {
     return data ?? NO_STATS;
 }
 
+const NO_DAILY_STATS = { days_played: 0, days_won: 0, current_streak: 0, best_streak: 0 };
+
+// The daily_stats view (sql/daily_rounds.sql) has no row for a player who has never played the round of the day.
+async function loadDailyStats() {
+    const { data, error } = await supabaseClient
+        .from('daily_stats')
+        .select(Object.keys(NO_DAILY_STATS).join(', '))
+        .eq('user_id', currentUser.id)
+        .maybeSingle();
+    if (error) throw error;
+    return data ?? NO_DAILY_STATS;
+}
+
 // Newest first. The policies already keep other players' rounds out; the filter lets the index do the work.
 async function loadRoundHistory(limit = 100) {
     const { data, error } = await supabaseClient
         .from('game_results')
-        .select('id, league_id, season_id, difficulty, max_guesses, started_at, finished_at, guesses, won, points, round_code')
+        .select('id, league_id, season_id, difficulty, max_guesses, started_at, finished_at, guesses, won, points, round_code, daily_on')
         .eq('user_id', currentUser.id)
         .order('started_at', { ascending: false })
         .limit(limit);

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="games/guess-the-footballer/shell.css">
     <link rel="stylesheet" href="games/guess-the-footballer/account.css">
+    <link rel="stylesheet" href="games/guess-the-footballer/daily.css">
     <link rel="icon" href="images/icons/icon.svg" type="image/svg+xml" sizes="any">
     <link rel="icon" href="images/icons/icon-192.png" sizes="192x192">
     <link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png">
@@ -89,6 +90,15 @@
             </div>
             <p class="demo-caption" data-translate="demoCaption">Every guess tells you how close you are.</p>
         </section>
+
+        <a class="daily-card" href="games/guess-the-footballer/game.html?daily">
+            <span class="daily-date" aria-hidden="true"><strong class="daily-day"></strong><span class="daily-month"></span></span>
+            <span class="daily-text">
+                <strong class="daily-title" data-translate="daily">Player of the day</strong>
+                <span class="daily-line"></span>
+            </span>
+            <span class="daily-go"></span>
+        </a>
 
         <section class="featured">
             <div class="featured-head">
@@ -164,6 +174,7 @@
     <script defer src="vendor/supabase-js-2.119.0.js"></script>
     <script defer src="games/guess-the-footballer/auth.js"></script>
     <script defer src="games/guess-the-footballer/league-marks.js"></script>
+    <script defer src="games/guess-the-footballer/daily.js"></script>
     <script defer src="pwa.js"></script>
 </body>
 </html>

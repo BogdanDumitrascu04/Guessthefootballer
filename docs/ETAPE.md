@@ -205,12 +205,27 @@ Făcută pe 5 nov, înaintea Supabase, pe datele din JSON (2024-25). Testată lo
 - [x] politica de confidențialitate (nu se mai cere nimic de la API-Football; copia locală pentru offline), README, `build_badges.py`
 - [x] testat local de Claude, în Chrome: 270 de verificări pe forma finală (calculator și 375 px în 4 limbi, 320 px în franceză, toate paginile), fără erori în consolă, fără scroll lateral, cereri doar către site; finalul rundei cu un cont simulat (card nou, card mai vechi, salvare eșuată sau blocată); instalarea (0 probleme raportate de Chrome), actualizarea imediată și jocul fără internet, pe o copie servită la `/Guessthefootballer/` cu regulile de cache ale GitHub Pages. 25 de teste JS și 136 Python, verzi
 - [x] primul test al lui Bogdan (25 nov) și cererile lui: siglă nouă și antet centrat, un singur nume, fundal propriu pe ligă, pagina de alegere refăcută, ecranul de start înaintea rundei. Testat: deschiderea sau reîncărcarea nu salvează nicio rundă; întrebarea la părăsire apare doar la o rundă începută cu cont
-- [ ] al doilea test al lui Bogdan + commit + push
+- [x] al doilea test al lui Bogdan + commit + push (25 nov, `81ce002`). Verificat live de Claude: toate cele 81 de fișiere ale site-ului sunt identice cu commitul; 180 de verificări (calculator în RO și EN, 375 px în 4 limbi), fără erori, cereri doar către site; instalarea, copia și o rundă fără internet merg; pozele și siglele vechi nu mai răspund
 - [ ] pe telefon, după push (Claude nu poate verifica): instalarea pe Android și pe iPhone, login-ul cu Google din aplicația instalată
 - [ ] contorul de trafic fără cookie-uri: Bogdan alege varianta; apoi codul și politica de confidențialitate
 - [ ] după pozele scoase, pe ciclul de învățare: `build_season.py` fără `photo` și fără siglele cluburilor în JSON (nu le mai citește nimeni, 28% din fișiere), iar regula `left_out()` doar după număr. Căutările API-Football din Etapa 3 mai au rost doar pentru numere
 
-**Urmează:** „Jucătorul zilei” (același pentru toți; alegerea zilnică în SQL, pe ciclul de învățare), apoi runda verificată pe server și clasamentul, ca punctele să aibă valoare.
+## Etapa 11 — Jucătorul zilei (25 nov)
+**Scop:** același jucător ascuns pentru toți, o rundă pe zi, cu o serie proprie. SQL-ul merge pe ciclul de învățare; interfața o face Claude, Bogdan testează.
+
+- [x] conceptul (Claude): ziua o spune baza, după ora României; calendar, nu formulă; RLS pe timp („ziua a venit”); o rundă pe cont și pe zi, prin index unic cu `null` la rundele normale
+- [x] cerința lui Bogdan: un rând = ziua, jucătorul, liga; nu se repetă nici ziua, nici jucătorul; vizitatorul și jucătorul logat văd doar până azi, scrie doar scriptul; ziua o pune baza, altfel s-ar putea juca de mai multe ori sau repara seria; perechea cont + zi oprește al doilea start. Lipsea: sezonul din rând (unic pe sezon, altfel o vedetă n-ar mai putea reveni); al doilea start întoarce aceeași rundă, ca refresh-ul să continue; finalul (jucătorul ascuns îl scrie baza, termenul de 01:00)
+- [x] SQL-ul + testele (Claude): `sql/daily_players.sql`, `sql/daily_rounds.sql`, schimbările din `game_results.sql`, `scripts/plan_daily.py`; 64 de teste noi în `tests/test_daily.py` (ajutoarele comune, mutate în `tests/accounts.py` și `tests/conftest.py`). Verificat invers: 15 reguli stricate pe rând, toate prinse
+- [x] rularea (Bogdan: `apply_schema.py`; `plan_daily` i-a fost întrerupt de VS Code și l-a reluat Claude): calendar de 200 de zile, 25.11.2026 – 12.06.2027, câte 40 pe ligă. Verificat prin API-ul public: un vizitator vede doar ziua de azi și nu poate scrie nimic
+- [x] commit SQL (a intrat în `81ce002`, odată cu Etapa 10)
+- [x] interfața (Claude): runda zilei în joc (`game.html?daily`), biletul cu data pe prima pagină și la alegerea ligii, meniurile, seria în profil, rundele marcate în istoric, share fără spoiler, scurtătură în aplicația instalată, 4 limbi
+- [x] testat local de Claude, în Chrome, cu baza simulată: 31 de situații (cu și fără cont, refresh, alt dispozitiv, al doilea tab, alt cont, miezul nopții și 01:00, bază oprită, salvare eșuată și reluată, rundele normale neschimbate), 72 de verificări de aspect (375, 320 și 1200 px, 4 limbi) și pornirea fără internet, fără erori în consolă; cu baza reală, doar citire, ca vizitator. 36 de teste JS și 200 Python, verzi
+- [x] politica de confidențialitate și README
+- [ ] testul lui Bogdan cu contul Google (start, refresh, final, profil), apoi commit + push
+- [ ] explicația lui Bogdan pentru SQL (regula de aur) și review cu alt AI
+- [ ] `plan_daily` din nou după fiecare reconstruire a sezonului (transferurile din ianuarie) și înainte de 12 iunie 2027, când se termină calendarul
+
+**Urmează:** runda verificată pe server și clasamentul, ca punctele să aibă valoare.
 
 ## După
 - „joacă același jucător” din pagina de rezultat, share-ul întregului istoric din profil, modul Icons

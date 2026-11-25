@@ -8,11 +8,20 @@
     <link rel="stylesheet" href="shell.css">
     <link rel="stylesheet" href="account.css">
     <link rel="stylesheet" href="album/album.css">
+    <link rel="stylesheet" href="daily.css">
     <link rel="icon" href="../../images/icons/icon.svg" type="image/svg+xml" sizes="any">
     <link rel="icon" href="../../images/icons/icon-192.png" sizes="192x192">
     <link rel="apple-touch-icon" href="../../images/icons/apple-touch-icon.png">
     <link rel="manifest" href="../../manifest.webmanifest">
     <meta name="theme-color" content="#141d2e">
+    <meta name="description" content="Find the hidden footballer in 6 guesses: real squads from Europe's top 5 leagues.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Guess the Footballer: who is the hidden player?">
+    <meta property="og:description" content="Find the hidden footballer in 6 guesses: real squads from Europe's top 5 leagues.">
+    <meta property="og:image" content="https://bogdandumitrascu04.github.io/Guessthefootballer/images/share.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
     <title>Guess the Footballer</title>
 </head>
 <body>
@@ -46,6 +55,7 @@
             <p data-translate="legend">Green ✓ = same as the hidden player · ↑ ↓ = the hidden player's age or number is higher / lower</p>
             <p data-translate="hintRule">Hints: the club unlocks after 2 guesses, the age after 4.</p>
             <p data-translate="pointsRule">Points: a win at the 1st guess gives 60 on Easy, 120 on Medium, 240 on Hard; each extra guess or hint costs one step (10 / 20 / 40).</p>
+            <p data-translate="dailyRule">Player of the day: one round a day, the same player for everyone. A new one at midnight, Romanian time.</p>
             <p data-translate="enjoyGame">3. Enjoy the game!</p>
         </div>
         <div class="navbar hidden" id="navbar">
@@ -59,6 +69,7 @@
                 <span id="leagueMark"></span>
                 <h1 id="gameSubtitle"></h1>
                 <div class="game-meta">
+                    <span id="dayChip" class="counter-chip" hidden></span>
                     <span id="difficultyChip" class="difficulty-chip"></span>
                     <span id="attemptCounter" class="counter-chip"></span>
                 </div>
@@ -85,6 +96,7 @@
                     <div class="outcome-text">
                         <div id="feedback" role="status" aria-live="polite"></div>
                         <div id="restartContainer"></div>
+                        <div id="dailyNext"></div>
                     </div>
                     <div id="reveal"></div>
                 </div>
@@ -102,6 +114,7 @@
     <script defer src="common.js"></script>
     <script defer src="badge.js"></script>
     <script defer src="saved-rounds.js"></script>
+    <script defer src="daily.js"></script>
     <script defer src="kickoff.js"></script>
     <script defer src="engine.js"></script>
     <script defer src="ui.js"></script>

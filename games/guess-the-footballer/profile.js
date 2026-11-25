@@ -1,4 +1,5 @@
-// The player's own page: who they are, their numbers (from the player_stats view) and their rounds, newest first.
+// The player's own page: who they are, their numbers (from the player_stats and daily_stats views) and their rounds,
+// newest first.
 // A round that was started and left has no result: it is shown, and counted, as lost.
 const profileBox = document.getElementById('profile');
 const STAT_CARDS = [
@@ -8,8 +9,14 @@ const STAT_CARDS = [
     ['current_streak', 'statStreak'],
     ['best_streak', 'statBestStreak'],
 ];
+const DAILY_CARDS = [
+    ['current_streak', 'statStreak'],
+    ['best_streak', 'statBestStreak'],
+    ['days_won', 'statDaysWon'],
+];
 let rounds = null; // kept, so a change of language redraws without asking the database again
 let stats = null; // null while loading, or if the numbers could not be read: the page then shows none
+let dailyStats = null;
 let roundsFailed = false;
 let shownUser; // undefined until the first draw, so the first answer (even "nobody") is always shown
 let deleteStep = null; // null, 'confirm', 'working' or 'failed'
@@ -89,17 +96,29 @@ function renderHead() {
     return head;
 }
 
-function renderStats() {
+function renderStats(cards, values) {
     const grid = el('section', 'profile-stats');
-    for (const [key, label, suffix = ''] of STAT_CARDS) {
+    for (const [key, label, suffix = ''] of cards) {
         const card = el('div', 'stat-card');
-        card.append(el('span', 'stat-value', `${stats[key]}${suffix}`), el('span', 'stat-label', t(label)));
+        card.append(el('span', 'stat-value', `${values[key]}${suffix}`), el('span', 'stat-label', t(label)));
         grid.append(card);
     }
     return grid;
 }
 
+function renderDaily() {
+    const section = el('section', 'profile-section');
+    section.append(el('h2', '', t('daily')), renderStats(DAILY_CARDS, dailyStats));
+    return section;
+}
+
+// Unlike any other round, the round of the day can still be continued until its day is over.
+function isOpenToday(round) {
+    return !round.finished_at && round.daily_on === daily.romanianDay();
+}
+
 function outcome(round) {
+    if (isOpenToday(round)) return el('span', 'history-outcome abandoned', t('roundInProgress'));
     if (!round.finished_at) return el('span', 'history-outcome abandoned', t('roundAbandoned'));
     const score = round.won ? `${round.guesses}/${round.max_guesses}` : `X/${round.max_guesses}`;
     return el('span', `history-outcome ${round.won ? 'won' : 'lost'}`, score);
@@ -114,11 +133,15 @@ function historyRow(round, dateFormat) {
         link.searchParams.set('r', round.round_code);
         row = el('a', 'history-row');
         row.href = link.href;
+    } else if (isOpenToday(round)) {
+        row = el('a', 'history-row');
+        row.href = 'game.html?daily';
     } else {
         row = el('div', 'history-row');
     }
     const main = el('div', 'history-main');
     const meta = el('div', 'history-meta');
+    if (round.daily_on) meta.append(el('span', 'daily-chip', t('daily')));
     meta.append(
         el('span', `difficulty-chip difficulty-${round.difficulty}`, t(round.difficulty)),
         el('span', '', dateFormat.format(new Date(round.started_at))),
@@ -151,16 +174,23 @@ function renderHistory() {
 function renderProfile() {
     if (!accountKnown && supabaseClient) return;
     if (!currentUser) return renderSignedOut();
-    profileBox.replaceChildren(renderHead(), ...(stats ? [renderStats()] : []), renderHistory(), renderAccountSection());
+    profileBox.replaceChildren(
+        renderHead(),
+        ...(stats ? [renderStats(STAT_CARDS, stats)] : []),
+        ...(dailyStats ? [renderDaily()] : []),
+        renderHistory(),
+        renderAccountSection(),
+    );
 }
 
 async function showProfile() {
     rounds = null;
     stats = null;
+    dailyStats = null;
     roundsFailed = false;
     renderProfile();
     if (!currentUser) return;
-    const [history, numbers] = await Promise.allSettled([loadRoundHistory(), loadPlayerStats()]);
+    const [history, numbers, dailyNumbers] = await Promise.allSettled([loadRoundHistory(), loadPlayerStats(), loadDailyStats()]);
     if (history.status === 'fulfilled') rounds = history.value;
     else {
         console.warn('Rounds not loaded:', history.reason.message);
@@ -168,6 +198,8 @@ async function showProfile() {
     }
     if (numbers.status === 'fulfilled') stats = numbers.value;
     else console.warn('Stats not loaded:', numbers.reason.message);
+    if (dailyNumbers.status === 'fulfilled') dailyStats = dailyNumbers.value;
+    else console.warn('Daily stats not loaded:', dailyNumbers.reason.message);
     renderProfile();
 }
 

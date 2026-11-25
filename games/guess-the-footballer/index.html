@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="game.css">
     <link rel="stylesheet" href="shell.css">
     <link rel="stylesheet" href="account.css">
+    <link rel="stylesheet" href="daily.css">
     <link rel="icon" href="../../images/icons/icon.svg" type="image/svg+xml" sizes="any">
     <link rel="icon" href="../../images/icons/icon-192.png" sizes="192x192">
     <link rel="apple-touch-icon" href="../../images/icons/apple-touch-icon.png">
@@ -44,10 +45,12 @@
             <p data-translate="guessFootballer">2. Guess the footballer based on the clues provided.</p>
             <p data-translate="legend">Green ✓ = same as the hidden player · ↑ ↓ = the hidden player's age or number is higher / lower</p>
             <p data-translate="hintRule">Hints: the club unlocks after 2 guesses, the age after 4.</p>
+            <p data-translate="dailyRule">Player of the day: one round a day, the same player for everyone. A new one at midnight, Romanian time.</p>
             <p data-translate="enjoyGame">3. Enjoy the game!</p>
         </div>
         <div class="navbar hidden" id="navbar">
             <nav id="menuContent">
+                <a href="game.html?daily" data-translate="daily">Player of the day</a>
                 <a href="album.html" data-translate="album">Album</a>
             </nav>
         </div>
@@ -58,6 +61,15 @@
         <p class="picker-text"><span data-translate="pickerText">Six guesses to find the hidden footballer.</span> <span id="seasonNote"></span></p>
         <div class="picker-seasons" id="seasonRow" hidden></div>
         <nav class="league-grid" id="leagueGrid"></nav>
+
+        <a class="daily-card" href="game.html?daily">
+            <span class="daily-date" aria-hidden="true"><strong class="daily-day"></strong><span class="daily-month"></span></span>
+            <span class="daily-text">
+                <strong class="daily-title" data-translate="daily">Player of the day</strong>
+                <span class="daily-line"></span>
+            </span>
+            <span class="daily-go"></span>
+        </a>
 
         <h2 class="steps-title" data-translate="howToPlay">How to Play</h2>
         <ol class="steps">
@@ -80,6 +92,7 @@
     <script defer src="../../vendor/supabase-js-2.119.0.js"></script>
     <script defer src="auth.js"></script>
     <script defer src="league-marks.js"></script>
+    <script defer src="daily.js"></script>
     <script defer src="picker.js"></script>
     <script defer src="ui.js"></script>
     <script defer src="../../pwa.js"></script>

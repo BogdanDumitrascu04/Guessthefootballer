@@ -20,7 +20,8 @@ const SPECIAL_LETTERS = { ø: 'o', æ: 'ae', œ: 'oe', ß: 'ss', ł: 'l', đ: 'd
 const params = new URLSearchParams(location.search);
 const requestedLeague = params.get('league') || 'premier-league';
 const requestedSeason = params.get('season');
-let difficulty = [params.get('difficulty'), localStorage.getItem('gtf-difficulty')].find(d => TARGET_TIERS[d]) ?? 'medium';
+const dailyMode = params.has('daily'); // the league and the player then come from daily.js, and the round is an Easy one
+let difficulty = dailyMode ? 'easy' : [params.get('difficulty'), localStorage.getItem('gtf-difficulty')].find(d => TARGET_TIERS[d]) ?? 'medium';
 
 let league, players, targetPlayer;
 let clues = {}; // player ID -> facts; seasons without a clues file simply have none
@@ -36,6 +37,11 @@ let roundOver = false;
 let message = null; // kept as a key, so it can be redrawn when the language changes
 let highlighted = -1;
 let animateLast = false; // only a new guess flips; redrawing for another language must not
+let today = null; // the round of the day, as daily.js found it; null in every other round
+let dailyState = 'loading'; // why the round of the day can or cannot be started, see kickoff.js
+let startFailed = false;
+let streak = 0; // days guessed in a row, known only with an account
+let yesterday = null; // the player of the day before
 
 const kickoffBox = document.getElementById('kickoff');
 const roundBox = document.getElementById('round');
@@ -48,11 +54,15 @@ const restartContainer = document.getElementById('restartContainer');
 const outcomeBox = document.getElementById('outcome');
 const revealBox = document.getElementById('reveal');
 const attemptCounter = document.getElementById('attemptCounter');
+const dayChip = document.getElementById('dayChip');
+const nextBox = document.getElementById('dailyNext');
 
 async function loadLeague() {
     const manifest = await getJson('data/manifest.json');
-    const info = manifest.leagues.find(l => l.id === requestedLeague) || manifest.leagues[0];
-    const season = info.seasons.includes(requestedSeason) ? requestedSeason : manifest.defaultSeason;
+    if (dailyMode && !(await loadToday())) return buildNavbar(manifest, manifest.defaultSeason);
+    const info = manifest.leagues.find(l => l.id === (today?.league ?? requestedLeague)) || manifest.leagues[0];
+    const askedSeason = today?.season ?? requestedSeason;
+    const season = info.seasons.includes(askedSeason) ? askedSeason : manifest.defaultSeason;
     league = await getJson(`data/seasons/${season}/${info.id}.json`);
     clues = (manifest.clueSeasons || []).includes(season)
         ? await getJson(`data/seasons/${season}/clues/${info.id}.json`).then(data => data.players, () => ({}))
@@ -63,20 +73,49 @@ async function loadLeague() {
     players = league.players;
     for (const p of players) p.searchName = normalize(p.name);
 
-    document.title = `${info.name} ${season} — Guess the Footballer`;
-    document.getElementById('gameSubtitle').textContent = `${info.name} · ${season}`;
     showLeagueMark(info.id);
-    buildNavbar(manifest);
-    showKickoff();
+    buildNavbar(manifest, season);
+    if (today) openDaily();
+    else showKickoff();
     import('./album/reveal.js').then(album => album.preload(), () => {}); // the ticket is then ready when the round ends
 }
 
-function buildNavbar(manifest) {
+// False when there is nobody to guess today: the database does not answer, or the calendar has no player.
+async function loadToday() {
+    render();
+    try {
+        today = await daily.load();
+    } catch (error) {
+        console.warn('Player of the day not loaded:', error.message);
+    }
+    if (!today) {
+        dailyState = 'unavailable';
+        render();
+    }
+    return Boolean(today);
+}
+
+function openDaily() {
+    const target = players.find(p => p.id === today.playerId);
+    const finished = today.code ? decodeRound(today.code) : null;
+    dailyState = target && (finished || !today.code) ? today.state : 'unavailable';
+    if (dailyState === 'open') return resumeDaily(target);
+    if (finished && dailyState !== 'unavailable') showFinished(finished);
+    else render();
+    loadDailyFacts();
+}
+
+function buildNavbar(manifest, season) {
     const menu = document.getElementById('menuContent');
     menu.innerHTML = '';
+    const day = document.createElement('a');
+    day.href = 'game.html?daily';
+    day.setAttribute('data-translate', 'daily');
+    day.textContent = t('daily');
+    menu.appendChild(day);
     for (const l of manifest.leagues) {
         const a = document.createElement('a');
-        a.href = `game.html?league=${l.id}&season=${league.seasonUsed}`;
+        a.href = `game.html?league=${l.id}&season=${season}`;
         a.textContent = l.name;
         menu.appendChild(a);
     }
@@ -118,18 +157,45 @@ function pickTarget() {
 }
 
 function startRound() {
+    const target = pickTarget();
+    // Saved as soon as it starts, so leaving the page counts as a loss instead of erasing it.
+    const start = saveRoundStart({ league: league.info.id, season: league.seasonUsed, difficulty });
+    beginRound({ target, clue: pickClue(target), start });
+}
+
+// The round of the day waits for the database, which fixes the day and allows only one.
+async function startDaily() {
+    kickoffBox.querySelector('.start-button').disabled = true;
+    try {
+        const { roundId, moved } = await daily.start(today);
+        if (moved) return location.reload();
+        resumeDaily(players.find(p => p.id === today.playerId), roundId);
+    } catch (error) {
+        console.warn('Round of the day not started:', error.message);
+        startFailed = true;
+        render();
+    }
+}
+
+// From the start, or from where a reload has interrupted it.
+function resumeDaily(target, roundId = today.roundId) {
+    const made = (today.guesses ?? []).map(id => players.find(p => p.id === id)).filter(Boolean);
+    const clue = daily.pickOfDay(suitedClues(target), today.day);
+    beginRound({ target, clue, start: Promise.resolve(roundId), made, hints: today.hints ?? [] });
+}
+
+function beginRound({ target, clue, start, made = [], hints = [] }) {
     started = true;
-    guesses = [];
+    guesses = [...made];
     lastRound = null;
     revealedHints.clear();
+    for (const key of hints) revealedHints.add(key);
     roundOver = false;
     message = null;
     saveState = null;
     rowId = null;
-    targetPlayer = pickTarget();
-    currentClue = pickClue(targetPlayer);
-    // Saved as soon as it starts, so leaving the page counts as a loss instead of erasing it.
-    const start = saveRoundStart({ league: league.info.id, season: league.seasonUsed, difficulty });
+    targetPlayer = target;
+    currentClue = clue;
     roundStart = start;
     start.then(id => {
         if (start === roundStart) rowId = id;
@@ -143,12 +209,21 @@ function startRound() {
     focusInput();
 }
 
-// A different fact each round, so the same player does not always open the same way.
-function pickClue(player) {
+function suitedClues(player) {
     const facts = clues[player.id] || [];
     const suited = facts.filter(f => CLUES_BY_DIFFICULTY[difficulty].includes(f.type));
-    const pool = suited.length ? suited : facts.filter(f => f.type === 'body');
+    return suited.length ? suited : facts.filter(f => f.type === 'body');
+}
+
+// A different fact each round, so the same player does not always open the same way.
+function pickClue(player) {
+    const pool = suitedClues(player);
     return pool.length ? pool[Math.floor(Math.random() * pool.length)] : null;
+}
+
+// After a reload, the round of the day goes on from here.
+function keepProgress() {
+    if (today) daily.keep(today.day, guesses, [...revealedHints]);
 }
 
 function focusInput() {
@@ -266,11 +341,8 @@ function checkGuess() {
     guesses.push(guessedPlayer);
     animateLast = true;
     inputBox.value = '';
-    if (guessedPlayer === targetPlayer) {
-        message = { kind: 'success', key: 'congrats' };
-        endRound();
-    } else if (guesses.length >= MAX_ATTEMPTS) {
-        message = { kind: 'error', key: 'gameOver', params: { name: targetPlayer.name } };
+    keepProgress();
+    if (guessedPlayer === targetPlayer || guesses.length >= MAX_ATTEMPTS) {
         endRound();
     } else {
         const left = MAX_ATTEMPTS - guesses.length;
@@ -292,25 +364,61 @@ function endRound() {
         league: league.info.id,
         season: league.seasonUsed,
         difficulty,
-        date: localDate(),
+        date: today?.day ?? localDate(),
         max: MAX_ATTEMPTS,
         hints: [...revealedHints],
         target: targetPlayer,
         guesses,
         clue: currentClue,
     });
+    if (today) daily.finish(lastRound);
     revealAfter(saveRound(roundStart, lastRound), lastRound);
+    showEnd();
+}
+
+// A round of the day that is already over: drawn again from its code, as on the result page.
+function showFinished(round) {
+    started = roundOver = true;
+    lastRound = round;
+    targetPlayer = round.target;
+    guesses = round.guesses;
+    currentClue = round.clue;
+    if (dailyState === 'unsaved') { // the connection was lost at the end of the round
+        roundStart = Promise.resolve(today.roundId);
+        revealAfter(saveRound(roundStart, round), round);
+    } else {
+        if (today.guest) saveState = currentUser ? 'guest' : 'signedOut';
+        else if (currentUser) saveState = 'saved';
+        showReveal();
+    }
+    showEnd();
+    render();
+}
+
+function showEnd() {
+    message = isWon(lastRound)
+        ? { kind: 'success', key: 'congrats' }
+        : { kind: 'error', key: 'gameOver', params: { name: targetPlayer.name } };
     inputBox.disabled = true;
+    const shareButton = document.createElement('button');
+    shareButton.className = today ? 'primary-button' : 'secondary-button';
+    shareButton.setAttribute('data-translate', 'share');
+    shareButton.textContent = t('share');
+    shareButton.addEventListener('click', () => shareResult(shareButton));
+    if (today) {
+        const play = document.createElement('a');
+        play.className = 'secondary-button';
+        play.href = 'index.html';
+        play.setAttribute('data-translate', 'resultPlay');
+        play.textContent = t('resultPlay');
+        restartContainer.replaceChildren(shareButton, play);
+        return;
+    }
     const restartButton = document.createElement('button');
     restartButton.className = 'primary-button';
     restartButton.setAttribute('data-translate', 'restart');
     restartButton.textContent = t('restart');
     restartButton.addEventListener('click', startRound);
-    const shareButton = document.createElement('button');
-    shareButton.className = 'secondary-button';
-    shareButton.setAttribute('data-translate', 'share');
-    shareButton.textContent = t('share');
-    shareButton.addEventListener('click', () => shareResult(shareButton));
     const changeButton = document.createElement('button');
     changeButton.className = 'link-button';
     changeButton.setAttribute('data-translate', 'changeDifficulty');
@@ -336,7 +444,7 @@ function revealAfter(saved, round) {
 }
 
 function showReveal() {
-    const win = isWon(lastRound) ? { guesses: guesses.length, date: new Date() } : null;
+    const win = isWon(lastRound) ? { guesses: guesses.length, date: today ? daily.dateOf(today.day) : new Date() } : null;
     revealBox.replaceChildren(createReveal(targetPlayer, { season: league.seasonUsed, win }));
 }
 
@@ -348,10 +456,12 @@ async function saveRound(start, round) {
     };
     try {
         const roundId = await start;
-        if (!roundId) return setState(currentUser ? null : 'signedOut');
+        if (!roundId && currentUser) return setState(today ? 'guest' : null);
+        if (!roundId) return setState('signedOut');
         setState('saving');
         await saveRoundEnd(roundId, round);
         setState('saved');
+        if (today) loadDailyFacts();
         if (isWon(round) && round.target.id) {
             // The round is saved either way; without its card the result still shows as before.
             await import('./album/round-win.js')
@@ -369,11 +479,22 @@ function shareText() {
     const won = isWon(lastRound);
     const rows = guesses.map(p => ATTRIBUTES.map(({ key }) => (isMatch(p, targetPlayer, key) ? '🟩' : '⬜')).join(''));
     const hints = lastRound.hints.length ? ` · 💡${lastRound.hints.length}` : '';
+    const score = `${won ? guesses.length : 'X'}/${MAX_ATTEMPTS}${hints}`;
+    // Everyone guesses the same player today, so this link leads to the round, not to a page with the answer in it.
+    if (today) {
+        const day = daily.dateOf(today.day).toLocaleDateString(currentLanguage, { day: 'numeric', month: 'short', year: 'numeric' });
+        return [
+            `Guess the Footballer · ${t('daily')} · ${day}`,
+            `${league.info.name} · ${score}${streak > 1 ? ` · 🔥${streak}` : ''}`,
+            ...rows,
+            new URL('game.html?daily', location.href).href,
+        ].join('\n');
+    }
     const link = new URL('result.html', location.href);
     link.searchParams.set('r', encodeRound(lastRound));
     return [
         `Guess the Footballer · ${league.info.name} ${league.seasonUsed} · ${t(difficulty)}`,
-        `${won ? guesses.length : 'X'}/${MAX_ATTEMPTS}${hints} · ${t('pointsLine', { n: roundPoints(lastRound) })}`,
+        `${score} · ${t('pointsLine', { n: roundPoints(lastRound) })}`,
         ...rows,
         link.href,
     ].join('\n');
@@ -395,17 +516,56 @@ async function shareResult(button) {
 }
 
 // Rendering
-function render() {
+function renderHead() {
     const chip = document.getElementById('difficultyChip');
     chip.className = `difficulty-chip difficulty-${difficulty}`;
     chip.textContent = t(difficulty);
+    chip.hidden = dailyMode && !today;
+    const titles = (dailyMode ? [t('daily'), league?.info?.name] : [league.info.name, league.seasonUsed]).filter(Boolean);
+    document.getElementById('gameSubtitle').textContent = titles.join(' · ');
+    document.title = `${titles.join(' ')} — Guess the Footballer`;
+    dayChip.hidden = !today;
+    if (today) dayChip.textContent = daily.dateOf(today.day).toLocaleDateString(currentLanguage, { day: 'numeric', month: 'short' });
+}
+
+function dailyFacts() {
+    return { streak, yesterday, countdown: daily.createCountdown(today.endsAt) };
+}
+
+function createKickoff() {
+    if (!dailyMode) return kickoff.create({ difficulty, attempts: MAX_ATTEMPTS, onDifficulty: setDifficulty, onStart: startRound });
+    return kickoff.createDaily({
+        state: dailyState,
+        league: today && league?.info?.name,
+        attempts: MAX_ATTEMPTS,
+        failed: startFailed,
+        facts: today && dailyFacts(),
+        onStart: startDaily,
+    });
+}
+
+// The streak and yesterday's player are extras: the page is shown without waiting for them.
+async function loadDailyFacts() {
+    const [stats, before] = await Promise.allSettled([
+        currentUser ? loadDailyStats() : null,
+        started || yesterday ? yesterday : daily.yesterday(today.day),
+    ]);
+    streak = stats.value?.current_streak ?? 0;
+    yesterday = before.value ?? null;
+    if (roundOver) renderMessage();
+    else kickoffBox.querySelector('.daily-facts')?.replaceWith(kickoff.createFacts(dailyFacts()));
+}
+
+function render() {
+    renderHead();
     kickoffBox.hidden = started;
     roundBox.hidden = attemptCounter.hidden = !started;
     if (!started) {
-        kickoffBox.replaceChildren(...kickoff.create({ difficulty, attempts: MAX_ATTEMPTS, onDifficulty: setDifficulty, onStart: startRound }));
+        kickoffBox.replaceChildren(...createKickoff());
         return;
     }
     outcomeBox.classList.toggle('over', roundOver);
+    nextBox.replaceChildren(...(today && roundOver ? [daily.createCountdown(today.endsAt)] : []));
     attemptCounter.textContent = `${t('guesses')}: ${guesses.length}/${MAX_ATTEMPTS}`;
     renderClue();
     renderMessage();
@@ -423,17 +583,31 @@ function renderMessage() {
     if (!message) return;
     feedback.className = `feedback-${message.kind}`;
     const text = document.createElement('strong');
-    text.innerHTML = t(message.key, message.params); // the dictionaries contain <br>
+    text.innerHTML = t(message.key); // the dictionaries contain <br>
+    fillText(text, message.params); // a name is only ever text: a finished round of the day is read back from its code
     feedback.appendChild(text);
     if (!roundOver) return;
     const points = document.createElement('div');
     points.className = 'points-earned';
     points.textContent = t('pointsLine', { n: roundPoints(lastRound) });
     feedback.append(points);
+    if (today && streak) {
+        const days = document.createElement('div');
+        days.className = 'daily-streak';
+        days.textContent = t('dailyStreak', { n: streak });
+        feedback.append(days);
+    }
     if (saveState) feedback.append(createSaveStatus());
 }
 
-const SAVE_TEXT = { saving: 'roundSaving', saved: 'roundSaved', failed: 'roundNotSaved', signedOut: 'signInToSave' };
+function fillText(node, values = {}) {
+    for (const part of node.childNodes) {
+        if (part.nodeType !== Node.TEXT_NODE) continue;
+        for (const [key, value] of Object.entries(values)) part.data = part.data.replaceAll(`{${key}}`, () => value);
+    }
+}
+
+const SAVE_TEXT = { saving: 'roundSaving', saved: 'roundSaved', failed: 'roundNotSaved', signedOut: 'signInToSave', guest: 'dailyGuestRound' };
 
 function createSaveStatus() {
     const status = document.createElement('div');
@@ -476,6 +650,7 @@ function createHint(key, after) {
         value.textContent = t('hintShow');
         chip.addEventListener('click', () => {
             revealedHints.add(key);
+            keepProgress();
             renderHints();
         });
     } else {
@@ -499,24 +674,28 @@ function renderAttempts() {
 }
 
 document.addEventListener('languagechange', () => {
-    if (!league) return;
+    if (!players && !dailyMode) return;
     render();
     if (started && revealBox.hasChildNodes()) showReveal();
 });
 
 document.addEventListener('accountchange', () => {
-    if (league && !started) render();
+    // Another account has another round of the day, or none.
+    if (today && today.userId !== (currentUser?.id ?? null)) location.reload();
+    else if (players && !started) render();
 });
 
 // A page closed by mistake would cost a player with an account the round, so the browser asks first.
+// The round of the day goes on where it was left.
 addEventListener('beforeunload', event => {
-    if (started && !roundOver && rowId) event.preventDefault();
+    if (started && !roundOver && rowId && !today) event.preventDefault();
 });
 
 document.addEventListener('DOMContentLoaded', () => {
     loadLeague().catch(error => {
         console.error('Could not load the league data:', error);
         inputBox.disabled = true;
+        kickoffBox.hidden = true;
         roundBox.hidden = false;
         message = { kind: 'error', key: 'loadError' };
         renderMessage();

@@ -61,6 +61,7 @@ API-Football (linked by club, name and age), and difficulty tiers suggested by T
 - **Points** for every win: 60 / 120 / 240 at the first guess on Easy / Medium / Hard, one step less for each extra guess or hint
 - **Share your result** as a spoiler-free emoji grid with a link to a result page (summary, every guess on request, the answer behind a spoiler button) (🟩⬜…): the share sheet on phones, the clipboard on desktop
 - **4 languages** — English, Spanish, French and Romanian, switchable live; choice persists between visits
+- **Player of the day**: the same hidden player for everyone, one round a day, with a streak of its own and a share text without spoilers. The calendar lives in PostgreSQL: row-level security hides the days that have not begun, and a unique index allows one round per player and day
 - **Accounts (optional)**: Google sign-in through Supabase Auth; rounds, statistics and streaks in PostgreSQL, protected by row-level security
 - **No build step** — one game engine + JSON data, runs on any static file server
 
@@ -82,6 +83,7 @@ One parameterized engine replaces the old copy-per-league code. League and seaso
 │       ├── badge.js, league-marks.js # The clubs' and the leagues' own badges, drawn in SVG
 │       ├── album/                 # The match tickets and the album (ES modules)
 │       ├── result.html / result.js # result.html?r=…: a shared round
+│       ├── daily.js, daily.css    # The player of the day (game.html?daily)
 │       ├── auth.js, saved-rounds.js, profile.* # Accounts
 │       ├── i18n.js                # EN / ES / FR / RO dictionaries
 │       └── game.css
@@ -115,7 +117,7 @@ Then open <http://localhost:8765> in your browser. Unlike `python -m http.server
 - **Higher or Lower**: which player has the higher market value?
 - **Career Path**: guess the player from their clubs and years
 - **Icons mode** — guess legendary players, possibly from their silhouette
-- **Daily challenge** — the same hidden player for everyone, with streaks
+- **Rounds checked on the server**, then a leaderboard
 - Per-league statistics and more games on the platform
 
 ## Credits
