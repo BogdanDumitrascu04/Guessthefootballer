@@ -18,6 +18,7 @@ function el(tag, className, text) {
 
 async function loadLeague() {
     try {
+        await clubBadges.ready;
         const manifest = await getJson('data/manifest.json');
         leagueInfo = manifest.leagues.find(l => l.id === round.league) || null;
         if (leagueInfo && leagueInfo.seasons.includes(round.season)) {

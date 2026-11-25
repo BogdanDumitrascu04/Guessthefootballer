@@ -51,6 +51,7 @@ async function loadLeague() {
     clues = (manifest.clueSeasons || []).includes(season)
         ? await getJson(`data/seasons/${season}/clues/${info.id}.json`).then(data => data.players, () => ({}))
         : {};
+    await clubBadges.ready;
     league.info = info;
     league.seasonUsed = season;
     players = league.players;
@@ -172,7 +173,7 @@ function showSuggestions() {
         const team = document.createElement('small');
         team.textContent = p.team;
         name.appendChild(team);
-        li.append(createAvatar(p, league.teams), name, createTeamLogo(p.team, league.teams, 'team-logo-small'));
+        li.append(createAvatar(p, league.teams), name, createTeamLogo(p.team, 'team-logo-small'));
         list.appendChild(li);
     }
     resultsBox.appendChild(list);
@@ -395,7 +396,7 @@ function createHint(key, after) {
         chip.className = 'hint-chip revealed';
         chip.disabled = true;
         label.textContent = t(key);
-        if (key === 'team') value.appendChild(createTeamLogo(targetPlayer.team, league.teams, 'hint-logo'));
+        if (key === 'team') value.appendChild(createTeamLogo(targetPlayer.team, 'hint-logo'));
         value.append(String(targetPlayer[key]));
     } else if (guesses.length >= after) {
         chip.className = 'hint-chip ready';

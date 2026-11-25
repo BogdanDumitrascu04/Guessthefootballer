@@ -40,26 +40,24 @@ function createAvatar(player, teams, hidden = false) {
     return initials;
 }
 
-// A result link can outlive a club's place in the league file, so a missing badge is left out.
-function createTeamLogo(team, teams, className) {
-    if (!teams[team]) return document.createTextNode('');
-    const img = document.createElement('img');
-    img.className = `logo-chip ${className}`;
-    img.src = asset(teams[team]);
-    img.alt = '';
-    return img;
+function createTeamLogo(team, className) {
+    const badge = clubBadges.create(team);
+    if (!badge) return document.createTextNode('');
+    badge.classList.add(className);
+    return badge;
 }
 
 function createReveal(player, teams) {
     const card = document.createElement('div');
     card.className = 'reveal';
-    const portrait = hasPortrait(player, teams);
-    if (portrait || teams[player.team]) {
+    if (hasPortrait(player, teams)) {
         const photo = document.createElement('img');
-        photo.className = portrait ? 'reveal-photo' : 'reveal-photo logo-chip';
-        photo.src = asset(portrait ? player.photo : teams[player.team]);
+        photo.className = 'reveal-photo';
+        photo.src = asset(player.photo);
         photo.alt = player.name;
         card.appendChild(photo);
+    } else {
+        card.appendChild(createTeamLogo(player.team, 'reveal-badge'));
     }
     const name = document.createElement('div');
     name.className = 'reveal-name';
@@ -107,7 +105,7 @@ function createTile(player, { key, numeric }, target, teams, hidden = false) {
     label.textContent = t(key);
     const body = document.createElement('span');
     body.className = 'tile-body';
-    if (key === 'team' && !hidden) body.appendChild(createTeamLogo(player.team, teams, 'tile-logo'));
+    if (key === 'team' && !hidden) body.appendChild(createTeamLogo(player.team, 'tile-logo'));
 
     const value = document.createElement('span');
     value.className = 'tile-value';

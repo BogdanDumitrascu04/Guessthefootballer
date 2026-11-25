@@ -326,10 +326,20 @@ button {
     color: var(--muted);
 }
 
+.badge {
+    flex: none;
+    height: auto;
+    aspect-ratio: 64 / 42;
+}
+
+.badge-code {
+    font-family: var(--font-display);
+    font-size: 25.5px;
+    font-weight: 700;
+}
+
 .team-logo-small {
-    width: 28px;
-    height: 28px;
-    padding: 2px;
+    width: 42px;
 }
 
 .avatar {
@@ -419,9 +429,7 @@ button {
 }
 
 .hint-logo {
-    width: 20px;
-    height: 20px;
-    padding: 1px;
+    width: 38px;
 }
 
 .legend {
@@ -495,9 +503,8 @@ button {
     border-radius: 14px;
 }
 
-.reveal-photo.logo-chip {
-    padding: 8px;
-    border-radius: 14px;
+.reveal-badge {
+    width: 132px;
 }
 
 .reveal-name {
@@ -626,9 +633,7 @@ button {
 }
 
 .tile-logo {
-    width: 24px;
-    height: 24px;
-    padding: 2px;
+    width: 38px;
 }
 
 .tile.match {
@@ -930,9 +935,7 @@ button {
     }
 
     .tile-logo {
-        flex: none;
-        width: 22px;
-        height: 22px;
+        width: 34px;
     }
 
     .tile-label {
