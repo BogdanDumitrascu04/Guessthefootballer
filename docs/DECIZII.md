@@ -233,3 +233,13 @@ Punct de plecare: propunerile lui Gemini, verificate pe pagina reală, plus idei
 - **Numărul pe tricou** pentru 2025-26: nicio sursă gratuită nu îl dă pe sezoane trecute. De verificat în setul Transfermarkt (`game_lineups` pare să aibă numărul la fiecare meci); altfel indiciul lipsește la sezonul respectiv sau îl înlocuim.
 - ~~**Login**~~ → doar Google, decis pe 20 nov (mai sus).
 - **Clubul în sezoanele trecute**: football-data.org dă clubul de la finalul sezonului (Trent = Real Madrid în 2024-25). Îl acceptăm ca regulă a jocului sau îl corectăm cu JSON-ul vechi pentru 2024-25?
+
+## 25 nov 2026 — albumul
+
+| Decizie | Ce am ales | De ce |
+|---|---|---|
+| Cardul | Bilet de meci: postul luminat, ștampila „Ghicit în N · data”, raritatea prin material | Arată complet fără poze și sigle |
+| Ștampila | Cea mai bună rundă câștigată; la egalitate, prima | Un card se poate îmbunătăți |
+| Cardurile câștigate | View (`user_cards`), nu tabel | Reies din runde; nimic scris de două ori |
+| Locul gol | Arată postul și raritatea, nu numele | Numele ar da răspunsul unei runde |
+| Insignele | Cotor de bilet din cod + culori (`tla`, `clubColors`) | Formă proprie, nimic din emblema reală |

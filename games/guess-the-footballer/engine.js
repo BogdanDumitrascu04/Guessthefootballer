@@ -79,6 +79,11 @@ function buildNavbar(manifest) {
         a.textContent = l.name;
         menu.appendChild(a);
     }
+    const album = document.createElement('a');
+    album.href = 'album.html';
+    album.setAttribute('data-translate', 'album');
+    album.textContent = t('album');
+    menu.appendChild(album);
     const settings = document.createElement('a');
     settings.href = 'index.html';
     settings.setAttribute('data-translate', 'changeSettings');
@@ -294,6 +299,12 @@ async function saveRound(start, round) {
         setState('saving');
         await saveRoundEnd(roundId, round);
         setState('saved');
+        if (isWon(round) && round.target.id) {
+            // The round is saved either way; without its card the result still shows as before.
+            import('./album/round-win.js')
+                .then(album => album.showRoundCard(round.target, round.target.team, roundId, () => lastRound === round))
+                .catch(error => console.warn('Card not shown:', error.message));
+        }
     } catch (error) {
         console.warn('Round not saved:', error.message);
         setState('failed');

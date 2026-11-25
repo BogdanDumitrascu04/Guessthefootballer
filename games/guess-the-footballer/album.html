@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="../../fonts/fonts.css">
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="account.css">
+    <link rel="stylesheet" href="album/album.css">
+    <link rel="icon" href="../../images/Header/fotbal.png">
+    <title>Album — Guess the Footballer</title>
+</head>
+<body>
+    <header class="header">
+        <a class="brand" href="index.html">
+            <img src="../../images/Header/fotbal.png" alt="" id="logo">
+            <span id="mainHeader" data-translate="guessTheFootballer">Guess the footballer</span>
+        </a>
+        <div class="header-tools">
+            <div id="account" class="account"></div>
+            <label class="language-selector">
+                <span class="visually-hidden">Language</span>
+                <select id="language">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                    <option value="ro">Română</option>
+                </select>
+            </label>
+            <button id="infoButton" class="icon-button" aria-label="How to play">ⓘ</button>
+            <button id="menuButton" class="icon-button" aria-label="Menu">&#9776;</button>
+        </div>
+        <div id="infoContent" class="hidden">
+            <button id="closeButton" class="icon-button" aria-label="Close">&times;</button>
+            <h2 data-translate="howToPlay">How to Play</h2>
+            <p data-translate="selectLeague">1. Select a league, a season and a difficulty.</p>
+            <p data-translate="guessFootballer">2. Guess the footballer based on the clues provided.</p>
+            <p data-translate="legend">Green ✓ = same as the hidden player · ↑ ↓ = the hidden player's age or number is higher / lower</p>
+            <p data-translate="hintRule">Hints: the club unlocks after 2 guesses, the age after 4.</p>
+            <p data-translate="pointsRule">Points: a win at the 1st guess gives 60 on Easy, 120 on Medium, 240 on Hard; each extra guess or hint costs one step (10 / 20 / 40).</p>
+            <p data-translate="enjoyGame">3. Enjoy the game!</p>
+        </div>
+        <div class="navbar hidden" id="navbar">
+            <nav id="menuContent">
+                <a href="index.html" data-translate="changeSettings">Change league / difficulty</a>
+                <a href="../../index.html" data-translate="allGames">All games</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="album" class="content album-page"></main>
+
+    <script defer src="i18n.js"></script>
+    <script defer src="../../vendor/supabase-js-2.119.0.js"></script>
+    <script defer src="auth.js"></script>
+    <script defer src="common.js"></script>
+    <script defer src="badge.js"></script>
+    <script defer src="ui.js"></script>
+    <script type="module" src="album/main.js"></script>
+</body>
+</html>

@@ -53,9 +53,13 @@ const clubBadges = (() => {
     const TEAR = 50.7;
     let badges = 0;
 
+    function theme(names) {
+        const [field, trim, accent = trim] = names.map(name => PALETTE[name]);
+        return { field, trim, accent, ink: readableOn(field, [trim, accent, PAPER, INK]) };
+    }
+
     function drawBadge(club) {
-        const [field, trim, accent = trim] = club.colors.map(name => PALETTE[name]);
-        const ink = readableOn(field, [trim, accent, PAPER, INK]);
+        const { field, trim, accent, ink } = theme(club.colors);
         const id = `badge-${++badges}`;
         const dark = contrast(field, '#0b1220') < 2 || contrast(trim, '#0b1220') < 2;
         return svg('svg', { class: 'badge', viewBox: '0 0 64 42', 'aria-hidden': 'true' },
@@ -84,5 +88,5 @@ const clubBadges = (() => {
         return Object.hasOwn(clubs, team) ? drawBadge(clubs[team]) : null;
     }
 
-    return { ready, create };
+    return { ready, create, theme, palette: PALETTE };
 })();

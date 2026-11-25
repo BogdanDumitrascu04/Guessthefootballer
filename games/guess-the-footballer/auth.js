@@ -12,8 +12,10 @@ let markAccountKnown;
 const accountReady = supabaseClient ? new Promise(resolve => { markAccountKnown = resolve; }) : Promise.resolve();
 // Next to this script, so the link works from the home page and from the game pages alike.
 const PROFILE_URL = new URL('profile.html', document.currentScript.src).href;
+const ALBUM_URL = new URL('album.html', document.currentScript.src).href;
 
 const ICONS = {
+    album: '<path d="M4 5a2 2 0 0 1 2-2h14v18H6a2 2 0 0 1-2-2z"/><path d="M8 3v18"/>',
     person: '<circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/>',
     signOut: '<path d="M15 4h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-3"/><path d="M10 17l-5-5 5-5"/><path d="M5 12h11"/>',
 };
@@ -87,6 +89,10 @@ function renderAccountMenu(box) {
     profile.href = PROFILE_URL;
     profile.append(icon('person'), element('span', '', t('myProfile')));
 
+    const album = element('a', 'account-item');
+    album.href = ALBUM_URL;
+    album.append(icon('album'), element('span', '', t('album')));
+
     const signOut = element('button', 'account-item');
     signOut.type = 'button';
     signOut.append(icon('signOut'), element('span', '', t('signOut')));
@@ -94,7 +100,7 @@ function renderAccountMenu(box) {
 
     const menu = element('div', 'account-menu');
     menu.hidden = true;
-    menu.append(head, element('hr', 'account-divider'), profile, signOut);
+    menu.append(head, element('hr', 'account-divider'), profile, album, signOut);
 
     avatar.addEventListener('click', event => {
         event.stopPropagation();

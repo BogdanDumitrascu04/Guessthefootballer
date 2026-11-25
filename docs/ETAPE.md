@@ -189,5 +189,11 @@ Făcută pe 5 nov, înaintea Supabase, pe datele din JSON (2024-25). Testată lo
 - [ ] explicația lui Bogdan pentru `build_clues.py` (regula de aur) + 1–2 întrebări → review cu alt AI → commit (fără push până la politica de confidențialitate din Etapa 7)
 - [ ] după sesiunea cu pozele: jucătorii fără niciun fapt (7–15% pe Hard), din profilurile API-Football
 
+## Etapa 9 — Albumul (25 nov)
+- [x] direcția aleasă de Bogdan dintr-un prototip local: cardul-bilet, fără fețe și fără sigle; insigne proprii în tot jocul (`badge.js`, `data/badges.json`)
+- [x] `sql/user_cards.sql`: conceptul (Claude), cerința (Bogdan: un rând = user + jucător, cea mai bună rundă, la egalitate prima), SQL + 14 teste, rulat pe baza reală, explicat de Bogdan, review cu alt AI, commit
+- [x] pagina Album (`album.html`, `album/`), cardul la finalul rundei câștigate, 4 limbi (Claude)
+- [ ] testul lui Bogdan → commit
+
 ## După
 - provocarea zilnică (același jucător pentru toți), clasament, „joacă același jucător” din pagina de rezultat, share-ul întregului istoric din profil, modul Icons
