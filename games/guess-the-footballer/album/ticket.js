@@ -10,7 +10,16 @@ root.style.setProperty('--pitch-lines', pitchMask(1.5, true));
 root.style.setProperty('--pitch-lines-compact', pitchMask(3.2, false));
 root.style.setProperty('--guilloche', guillocheMask(320, 242));
 
-export function splitName(name) {
+// Names the first space would split badly, by player ID.
+const PRINTED_NAMES = {
+    193: ['Yann Aurel', 'Bisseck'],
+    1556: ['', 'Vinícius Jr'],
+    101074: ['Felix Kalu', 'Nmecha'],
+    117908: ['Hákon Arnar', 'Haraldsson'],
+};
+
+function splitName({ id, name }) {
+    if (PRINTED_NAMES[id]) return PRINTED_NAMES[id];
     const space = name.indexOf(' ');
     return space < 0 ? ['', name] : [name.slice(0, space), name.slice(space + 1)];
 }
@@ -57,11 +66,11 @@ function createStage(card, club, compact) {
         createLight(card, compact));
 }
 
-export function createTicket(card, club, { league, season, win, compact = false }) {
-    const [first, last] = splitName(card.name);
+export function createTicket(card, club, { league, season, win, lost = false, compact = false }) {
+    const [first, last] = splitName(card);
     const lines = compact ? compactLines(last) : [last];
     const ticket = el('article', {
-        class: compact ? 'ticket compact' : 'ticket',
+        class: ['ticket', compact && 'compact', lost && 'lost'].filter(Boolean).join(' '),
         'data-tier': card.tier,
         'aria-label': cardLabel(card, club, league, win),
         style: { ...themeStyle(club), '--len': Math.max(...lines.map(line => line.length), 4), '--facts': positionName(card.spot).length + countryName(card.country).length + 2, '--stamp-angle': `${stampAngle(card.id)}deg` },

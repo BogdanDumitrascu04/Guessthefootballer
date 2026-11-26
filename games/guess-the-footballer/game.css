@@ -828,6 +828,65 @@ button {
     }
 }
 
+/* Phones only, while the keyboard is open */
+.last-guess,
+.clue-more {
+    display: none;
+}
+
+/* The end of a round: nothing left to type, so the result comes first and the clue last */
+.round-over :is(.Guess, .legend) {
+    display: none;
+}
+
+.round-over #round {
+    display: flex;
+    flex-direction: column;
+}
+
+.round-over #clue {
+    order: 1;
+    margin-top: 18px;
+}
+
+.round-over .outcome.over {
+    margin-top: 0;
+}
+
+.round-over #feedback {
+    color: var(--text);
+}
+
+.end-title {
+    font-family: var(--font-display);
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 1.05;
+    text-transform: uppercase;
+}
+
+.feedback-success .end-title { color: var(--success); }
+.feedback-error .end-title { color: var(--error); }
+
+.end-name {
+    margin-top: 4px;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.end-sum {
+    font-size: 0.875rem;
+    color: var(--muted);
+}
+
+.end-album {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    font-weight: 600;
+    color: var(--accent);
+}
+
 /* Opening clue */
 .clue-card {
     margin-bottom: 14px;
@@ -1370,12 +1429,189 @@ button {
     }
 
     .outcome.over {
-        grid-template-columns: 1fr;
-        padding: 18px 14px;
+        grid-template-columns: min(136px, 36vw) minmax(0, 1fr);
+        gap: 16px;
+        align-items: start;
+        padding: 14px;
     }
 
-    .outcome.over .outcome-text {
-        grid-column: 1;
+    .outcome.over .reveal {
+        width: auto;
+    }
+
+    .outcome.over #feedback,
+    .outcome.over #dailyNext {
+        text-align: left;
+    }
+
+    .end-title {
+        font-size: clamp(1.5rem, 7.6vw, 1.9rem);
+    }
+
+    .round-over .content {
+        padding-bottom: calc(150px + env(safe-area-inset-bottom));
+    }
+
+    .round-over #restartContainer {
+        position: fixed;
+        inset: auto 0 0;
+        z-index: 25;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        padding: 10px 16px calc(6px + env(safe-area-inset-bottom));
+        margin: 0;
+        background: #111929;
+        border-top: 1px solid var(--border);
+    }
+
+    .round-over #restartContainer > * {
+        display: grid;
+        place-items: center;
+        min-height: 48px;
+        padding: 6px;
+        text-decoration: none;
+    }
+
+    .round-over #restartContainer .link-button {
+        grid-column: 1 / -1;
+        min-height: 44px;
+        margin: 0;
+    }
+
+    /* The round: the last guess should be in sight; the legend is in the help panel too. */
+    .game-head {
+        min-height: 0;
+        padding-block: 9px;
+    }
+
+    #leagueMark {
+        min-height: 46px;
+    }
+
+    #leagueMark .league-mark {
+        height: 46px;
+    }
+
+    #round .legend {
+        display: none;
+    }
+
+    #feedback {
+        margin-top: 8px;
+    }
+
+    #playerInfo {
+        margin-top: 12px;
+    }
+
+    .typing .header,
+    .typing #leagueMark,
+    .typing #hints,
+    .typing #playerInfo,
+    .typing .clue-title {
+        display: none;
+    }
+
+    .typing .content {
+        padding-top: 6px;
+    }
+
+    .typing .game-head {
+        display: flex;
+        gap: 10px;
+        padding: 5px 12px;
+        margin-bottom: 6px;
+        -webkit-mask: none;
+        mask: none;
+        background: var(--surface);
+    }
+
+    .typing .game-head h1 {
+        flex: 1;
+        overflow: hidden;
+        font-size: 1rem;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .typing .game-meta {
+        flex-wrap: nowrap;
+    }
+
+    .typing .clue-card {
+        display: flex;
+        margin-bottom: 6px;
+        padding: 5px 10px;
+    }
+
+    .typing .clue-text {
+        flex: 1;
+        display: -webkit-box;
+        margin: 0;
+        overflow: hidden;
+        font-size: 0.875rem;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+
+    .typing .whole .clue-text {
+        display: block;
+    }
+
+    .typing .clue-more {
+        display: block;
+        flex: none;
+        width: 44px;
+        margin: -5px -10px -5px 0;
+        color: var(--accent);
+        background: none;
+        border: none;
+    }
+
+    /* The counter already says how many are left; a name that was not found still needs its words. */
+    .typing #feedback.attempts-left {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+    }
+
+    .typing .last-guess {
+        display: block;
+        margin-bottom: 6px;
+    }
+
+    .typing .result-box {
+        max-height: var(--room, 160px);
+    }
+
+    .last-guess .attempt {
+        grid-template-columns: 0.95fr 0.85fr 0.85fr 0.85fr 1.6fr;
+        gap: 3px;
+    }
+
+    .last-guess .attempt-player {
+        padding: 0 4px;
+        font-size: 0.875rem;
+        background: none;
+        border: none;
+    }
+
+    .last-guess .tile {
+        grid-column: auto;
+        order: 0;
+        min-height: 42px;
+        padding: 2px;
+    }
+
+    .last-guess .tile-value {
+        font-size: 0.78rem;
+    }
+
+    .last-guess :is(.avatar, .tile-label, .tile-team .tile-value) {
+        display: none;
     }
 
     /* Team and nationality have long names, so they share the first row. */

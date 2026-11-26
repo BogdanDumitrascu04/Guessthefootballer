@@ -1,7 +1,7 @@
 // Tests for games/guess-the-footballer/round.js. Run: node --test tests/
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { createRound, isWon, roundPoints, encodeRound, decodeRound } = require('../games/guess-the-footballer/round.js');
+const { createRound, isWon, roundPoints, pointsSum, encodeRound, decodeRound } = require('../games/guess-the-footballer/round.js');
 
 const kroupi = {
     id: 7, name: 'Eli Kroupi', team: 'Bournemouth', position: 'Forward', age: 20, number: 22,
@@ -159,4 +159,13 @@ test('an edited clue is dropped, the round still opens', () => {
         assert.equal(decoded.clue, null);
         assert.equal(decoded.target.name, 'Eli Kroupi');
     }
+});
+
+test('the sum under the points agrees with them', () => {
+    assert.equal(pointsSum(round([diakite, kroupi], kroupi, ['team'])), '60 − 2 × 10');
+    assert.equal(roundPoints(round([diakite, kroupi], kroupi, ['team'])), 40);
+    assert.equal(pointsSum(round([kroupi])), null);
+    assert.equal(pointsSum(round([diakite])), null);
+    const others = [diakite, odegaard, { ...diakite, id: 9 }, { ...diakite, id: 10 }, { ...diakite, id: 11 }];
+    assert.equal(pointsSum(round([...others, kroupi], kroupi, ['team'])), null); // the minimum applied
 });

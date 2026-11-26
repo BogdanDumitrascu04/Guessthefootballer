@@ -50,6 +50,15 @@ function roundPoints(round) {
     return POINT_STEP * multiplier * steps;
 }
 
+// "60 − 3 × 10", so the points explain themselves; nothing when none were lost or the minimum applied.
+function pointsSum(round) {
+    const multiplier = DIFFICULTY_MULTIPLIER[round.difficulty];
+    const lost = round.guesses.length - 1 + round.hints.length;
+    if (!isWon(round) || !multiplier || !lost || lost >= round.max) return null;
+    const step = POINT_STEP * multiplier;
+    return `${step * round.max} − ${lost} × ${step}`;
+}
+
 function packPlayer(player) {
     return PLAYER_FIELDS.map(key => player[key]);
 }
@@ -105,4 +114,4 @@ function decodeRound(code) {
     }
 }
 
-if (typeof module !== 'undefined') module.exports = { createRound, isWon, roundPoints, encodeRound, decodeRound };
+if (typeof module !== 'undefined') module.exports = { createRound, isWon, roundPoints, pointsSum, encodeRound, decodeRound };

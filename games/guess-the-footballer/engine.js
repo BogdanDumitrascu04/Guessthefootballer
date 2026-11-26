@@ -41,12 +41,16 @@ let today = null; // the round of the day, as daily.js found it; null in every o
 let dailyState = 'loading'; // why the round of the day can or cannot be started, see kickoff.js
 let startFailed = false;
 let streak = 0; // days guessed in a row, known only with an account
+let cardNote = null; // where the player's card stands after a saved round: { albumUrl } or { missing: true }
 let yesterday = null; // the player of the day before
 
 const kickoffBox = document.getElementById('kickoff');
 const roundBox = document.getElementById('round');
 const inputBox = document.getElementById('guessInput');
 const resultsBox = document.querySelector('.result-box');
+const lastGuessBox = document.getElementById('lastGuess');
+const phone = matchMedia('(max-width: 640px)');
+const touch = matchMedia('(pointer: coarse)');
 const feedback = document.getElementById('feedback');
 const playerInfo = document.getElementById('playerInfo');
 const hintsBox = document.getElementById('hints');
@@ -193,6 +197,7 @@ function beginRound({ target, clue, start, made = [], hints = [] }) {
     roundOver = false;
     message = null;
     saveState = null;
+    cardNote = null;
     rowId = null;
     targetPlayer = target;
     currentClue = clue;
@@ -284,6 +289,7 @@ function showSuggestions() {
         list.appendChild(li);
     }
     resultsBox.appendChild(list);
+    fitSuggestions();
     highlight(0, false); // Enter picks the highlighted name
 }
 
@@ -295,6 +301,30 @@ function highlight(index, scroll = true) {
 }
 
 inputBox.addEventListener('input', showSuggestions);
+
+// With the keyboard open a phone keeps only what a guess needs: the clue, the last guess, the field and the names.
+function setTyping(on) {
+    document.body.classList.toggle('typing', on);
+    renderClue();
+    fitSuggestions();
+}
+
+function fitSuggestions() {
+    if (!document.body.classList.contains('typing')) return;
+    const room = (window.visualViewport?.height ?? innerHeight) - inputBox.getBoundingClientRect().bottom - 12;
+    resultsBox.style.setProperty('--room', `${Math.max(104, Math.min(300, room))}px`);
+}
+
+inputBox.addEventListener('focus', () => {
+    if (!phone.matches || !touch.matches || !started || roundOver) return;
+    setTyping(true);
+    requestAnimationFrame(() => scrollTo(0, 0));
+});
+inputBox.addEventListener('blur', () => setTyping(false));
+window.visualViewport?.addEventListener('resize', fitSuggestions);
+
+// A tap on a name must not close the keyboard.
+resultsBox.addEventListener('mousedown', event => event.preventDefault());
 
 resultsBox.addEventListener('click', event => {
     const li = event.target.closest('li[data-name]');
@@ -388,7 +418,10 @@ function showFinished(round) {
         revealAfter(saveRound(roundStart, round), round);
     } else {
         if (today.guest) saveState = currentUser ? 'guest' : 'signedOut';
-        else if (currentUser) saveState = 'saved';
+        else if (currentUser) {
+            saveState = 'saved';
+            loadCardNote(round);
+        }
         showReveal();
     }
     showEnd();
@@ -396,14 +429,14 @@ function showFinished(round) {
 }
 
 function showEnd() {
-    message = isWon(lastRound)
-        ? { kind: 'success', key: 'congrats' }
-        : { kind: 'error', key: 'gameOver', params: { name: targetPlayer.name } };
+    message = { kind: isWon(lastRound) ? 'success' : 'error' };
+    inputBox.blur();
     inputBox.disabled = true;
+    if (phone.matches) scrollTo(0, 0);
     const shareButton = document.createElement('button');
     shareButton.className = today ? 'primary-button' : 'secondary-button';
-    shareButton.setAttribute('data-translate', 'share');
-    shareButton.textContent = t('share');
+    shareButton.setAttribute('data-translate', 'shareShort');
+    shareButton.textContent = t('shareShort');
     shareButton.addEventListener('click', () => shareResult(shareButton));
     if (today) {
         const play = document.createElement('a');
@@ -445,7 +478,7 @@ function revealAfter(saved, round) {
 
 function showReveal() {
     const win = isWon(lastRound) ? { guesses: guesses.length, date: today ? daily.dateOf(today.day) : new Date() } : null;
-    revealBox.replaceChildren(createReveal(targetPlayer, { season: league.seasonUsed, win }));
+    revealBox.replaceChildren(createReveal(targetPlayer, { season: league.seasonUsed, win, lost: !win, compact: phone.matches }));
 }
 
 async function saveRound(start, round) {
@@ -462,6 +495,7 @@ async function saveRound(start, round) {
         await saveRoundEnd(roundId, round);
         setState('saved');
         if (today) loadDailyFacts();
+        loadCardNote(round);
         if (isWon(round) && round.target.id) {
             // The round is saved either way; without its card the result still shows as before.
             await import('./album/round-win.js')
@@ -471,6 +505,22 @@ async function saveRound(start, round) {
     } catch (error) {
         console.warn('Round not saved:', error.message);
         setState('failed');
+    }
+}
+
+// An extra under the result: without it the round is still whole.
+async function loadCardNote(round) {
+    try {
+        if (!round.target.id) return;
+        const won = isWon(round);
+        if (!won && (await hasCard(round.target.id))) return;
+        const { findCard } = await import('./album/data.js');
+        const found = await findCard(round.target, round.season);
+        if (!found || lastRound !== round) return;
+        cardNote = won ? { albumUrl: `album.html#/${found.league.id}/${found.clubId}` } : { missing: true };
+        renderMessage();
+    } catch (error) {
+        console.warn('Card note not shown:', error.message);
     }
 }
 
@@ -565,6 +615,7 @@ function render() {
         return;
     }
     outcomeBox.classList.toggle('over', roundOver);
+    document.body.classList.toggle('round-over', roundOver);
     nextBox.replaceChildren(...(today && roundOver ? [daily.createCountdown(today.endsAt)] : []));
     attemptCounter.textContent = `${t('guesses')}: ${guesses.length}/${MAX_ATTEMPTS}`;
     renderClue();
@@ -576,21 +627,41 @@ function render() {
 function renderClue() {
     const card = createClueCard(currentClue, difficulty);
     document.getElementById('clue').replaceChildren(...(card ? [card] : []));
+    const text = card?.querySelector('.clue-text');
+    if (!text || !document.body.classList.contains('typing') || text.scrollHeight <= text.clientHeight + 2) return;
+    const more = document.createElement('button');
+    more.type = 'button';
+    more.className = 'clue-more';
+    more.textContent = '▾';
+    more.setAttribute('aria-label', t('moreText'));
+    more.addEventListener('mousedown', event => event.preventDefault()); // the keyboard stays open
+    more.addEventListener('click', () => {
+        card.classList.add('whole');
+        more.remove();
+        fitSuggestions();
+    });
+    card.append(more);
 }
 
 function renderMessage() {
     feedback.innerHTML = '';
     if (!message) return;
     feedback.className = `feedback-${message.kind}`;
-    const text = document.createElement('strong');
-    text.innerHTML = t(message.key); // the dictionaries contain <br>
-    fillText(text, message.params); // a name is only ever text: a finished round of the day is read back from its code
-    feedback.appendChild(text);
-    if (!roundOver) return;
-    const points = document.createElement('div');
-    points.className = 'points-earned';
-    points.textContent = t('pointsLine', { n: roundPoints(lastRound) });
-    feedback.append(points);
+    feedback.classList.toggle('attempts-left', ['incorrect', 'incorrectLast'].includes(message.key));
+    if (!roundOver) {
+        const text = document.createElement('strong');
+        text.textContent = t(message.key, message.params);
+        feedback.append(text);
+        return;
+    }
+    const won = isWon(lastRound);
+    addLine('end-title', won ? t('foundIn', { n: guesses.length }) : t('notFoundTitle'));
+    addLine('end-name', targetPlayer.name);
+    if (won) {
+        addLine('points-earned', t('pointsLine', { n: roundPoints(lastRound) }));
+        const sum = pointsSum(lastRound);
+        if (sum) addLine('end-sum', sum);
+    }
     if (today && streak) {
         const days = document.createElement('div');
         days.className = 'daily-streak';
@@ -598,13 +669,21 @@ function renderMessage() {
         feedback.append(days);
     }
     if (saveState) feedback.append(createSaveStatus());
+    if (cardNote?.missing) addLine('end-sum', t('noNewCard'));
+    if (cardNote?.albumUrl) {
+        const link = document.createElement('a');
+        link.className = 'end-album';
+        link.href = cardNote.albumUrl;
+        link.textContent = `${t('seeInAlbum')} ›`;
+        feedback.append(link);
+    }
 }
 
-function fillText(node, values = {}) {
-    for (const part of node.childNodes) {
-        if (part.nodeType !== Node.TEXT_NODE) continue;
-        for (const [key, value] of Object.entries(values)) part.data = part.data.replaceAll(`{${key}}`, () => value);
-    }
+function addLine(className, text) {
+    const line = document.createElement('div');
+    line.className = className;
+    line.textContent = text;
+    feedback.append(line);
 }
 
 const SAVE_TEXT = { saving: 'roundSaving', saved: 'roundSaved', failed: 'roundNotSaved', signedOut: 'signInToSave', guest: 'dailyGuestRound' };
@@ -664,6 +743,8 @@ function createHint(key, after) {
 }
 
 function renderAttempts() {
+    const last = guesses.at(-1);
+    lastGuessBox.replaceChildren(...(last && !roundOver ? [createAttempt(last, guesses.length, { target: targetPlayer, short: true })] : []));
     const fresh = animateLast;
     animateLast = false;
     playerInfo.innerHTML = '';

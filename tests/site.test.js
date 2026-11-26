@@ -69,6 +69,16 @@ test('the four languages have the same texts', () => {
     for (const language of ['es', 'fr', 'ro']) assert.deepEqual(Object.keys(translations[language]).sort(), keys, language);
 });
 
+test('every country in the data has a code, and one country with two names is still a match', () => {
+    const { COUNTRY_CODES } = require(path.join(ROOT, GAME, 'countries.js'));
+    for (const file of list('data/seasons/2026-27', '.json')) {
+        for (const { name, nationality } of JSON.parse(read(file)).players) assert.ok(COUNTRY_CODES[nationality], `${name}: ${nationality}`);
+    }
+    const isMatch = vm.runInNewContext(`${read(`${GAME}/countries.js`)};${read(`${GAME}/common.js`)};isMatch`);
+    assert.equal(isMatch({ nationality: 'Congo DR' }, { nationality: 'DR Congo' }, 'nationality'), true);
+    assert.equal(isMatch({ nationality: 'Congo' }, { nationality: 'DR Congo' }, 'nationality'), false);
+});
+
 test('the numbers on the home page are those of the data', () => {
     const { leagues, defaultSeason } = JSON.parse(read('data/manifest.json'));
     const data = leagues.map(league => JSON.parse(read(`data/seasons/${defaultSeason}/${league.id}.json`)));

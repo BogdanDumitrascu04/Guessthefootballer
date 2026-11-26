@@ -98,7 +98,11 @@ function renderActions() {
 function createHiddenCard() {
     if (revealed) {
         const date = roundDay();
-        return createReveal(round.target, { season: round.season, win: isWon(round) && date ? { guesses: round.guesses.length, date } : null });
+        return createReveal(round.target, {
+            season: round.season,
+            win: isWon(round) && date ? { guesses: round.guesses.length, date } : null,
+            lost: !isWon(round),
+        });
     }
     const card = el('div', 'reveal');
     const show = el('button', 'secondary-button', t('resultReveal'));

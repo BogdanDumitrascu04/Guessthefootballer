@@ -68,23 +68,23 @@ function fillPlainReveal(card, player) {
     name.textContent = player.name;
     const details = document.createElement('div');
     details.className = 'reveal-details';
-    details.textContent = [player.team, player.position, player.number != null ? `#${player.number}` : null].filter(Boolean).join(' · ');
+    details.textContent = [player.team, shownValue('position', player.position), player.number != null ? `#${player.number}` : null].filter(Boolean).join(' · ');
     card.replaceChildren(createTeamLogo(player.team, 'reveal-badge'), name, details);
 }
 
 // The hidden player as his ticket from the album. Old seasons and players who have moved have none: there, the club's badge.
-function createReveal(player, { season, win }) {
+function createReveal(player, { season, win, lost = false, compact = false }) {
     const card = document.createElement('div');
     card.className = 'reveal';
     import('./album/reveal.js')
-        .then(album => album.createRevealTicket(player, season, win))
+        .then(album => album.createRevealTicket(player, season, { win, lost, compact }))
         .catch(error => console.warn('Ticket not shown:', error.message))
         .then(ticket => (ticket ? card.replaceChildren(ticket) : fillPlainReveal(card, player)));
     return card;
 }
 
 // hidden: the result page keeps the answer's name back until the viewer asks for it.
-function createAttempt(player, number, { target, fresh = false, hidden = false }) {
+function createAttempt(player, number, { target, fresh = false, hidden = false, short = false }) {
     const row = document.createElement('div');
     row.className = fresh ? 'attempt fresh' : 'attempt';
 
@@ -99,19 +99,36 @@ function createAttempt(player, number, { target, fresh = false, hidden = false }
     row.appendChild(who);
 
     ATTRIBUTES.forEach((attribute, i) => {
-        const tile = createTile(player, attribute, target, hidden);
+        const tile = createTile(player, attribute, target, { hidden, short });
         tile.style.setProperty('--i', i);
         row.appendChild(tile);
     });
     return row;
 }
 
+// Countries are compared by code, because the same one can have two names in the data ("Congo DR", "DR Congo").
+function compared(player, key) {
+    return key === 'nationality' ? COUNTRY_CODES[player[key]] ?? player[key] : player[key];
+}
+
 function isMatch(player, target, key) {
-    return player[key] != null && player[key] === target[key];
+    return player[key] != null && compared(player, key) === compared(target, key);
+}
+
+const POSITIONS = ['goalkeeper', 'defender', 'midfielder', 'forward'];
+
+// A value the dictionaries do not know (an edited link) is shown as it came.
+function shownValue(key, value, short) {
+    if (key === 'nationality' && Object.hasOwn(COUNTRY_CODES, value)) return clueCountry(COUNTRY_CODES[value]);
+    const position = key === 'position' && String(value).toLowerCase();
+    if (!POSITIONS.includes(position)) return value;
+    if (short) return t(`posShort_${position}`);
+    const text = t(`pos_${position}`);
+    return text[0].toUpperCase() + text.slice(1);
 }
 
 // hidden: the winning row's values (club, age, number...) would give the name away, so only the ticks show.
-function createTile(player, { key, numeric }, target, hidden = false) {
+function createTile(player, { key, numeric }, target, { hidden, short }) {
     const tile = document.createElement('div');
     tile.className = `tile tile-${key}`;
     const label = document.createElement('span');
@@ -132,11 +149,11 @@ function createTile(player, { key, numeric }, target, hidden = false) {
         value.textContent = '✓';
     } else if (isMatch(player, target, key)) {
         tile.classList.add('match');
-        value.textContent = `${guessed} ✓`;
+        value.textContent = `${shownValue(key, guessed, short)} ✓`;
     } else if (numeric && wanted != null) {
         value.textContent = `${guessed} ${guessed < wanted ? '↑' : '↓'}`;
     } else {
-        value.textContent = guessed;
+        value.textContent = shownValue(key, guessed, short);
     }
     body.appendChild(value);
     tile.append(label, body);
@@ -153,7 +170,8 @@ function clueMoney([min, max]) {
 }
 
 function clueCountry(code) {
-    if (String(code).startsWith('GB-')) return t(`nation_${code}`); // England, Scotland... are not countries to the browser
+    const own = t(`nation_${code}`); // England, Scotland... are not countries to the browser, and some names are too long
+    if (own !== `nation_${code}`) return own;
     try {
         return new Intl.DisplayNames([currentLanguage], { type: 'region' }).of(code);
     } catch {

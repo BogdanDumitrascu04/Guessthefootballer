@@ -288,3 +288,18 @@ Punct de plecare: propunerile lui Gemini, verificate pe pagina reală, plus idei
 | Indiciul de start | Același pentru toți, ales după zi | La rundele normale e la întâmplare; aici toți primesc aceeași rundă. |
 | Share | Pătrățele și link spre joc, nu spre pagina de rezultat | Linkul de rezultat conține răspunsul, iar azi toți au același jucător. |
 | Cererile spre bază | Doar pagina zilei întreabă baza; prima pagină și alegerea ligii, nu | Un vizitator trimite ceva spre Supabase doar dacă deschide jucătorul zilei; scris în politica de confidențialitate. |
+
+## 25 nov 2026 — interfața pe telefon (Etapa 12)
+
+| Decizie | Ce am ales | De ce |
+|---|---|---|
+| Ordinea (Bogdan) | Finalul și traducerea → runda → accesibilitatea → prima pagină și ligile → albumul unei ligi | Finalul și runda se văd la fiecare joc. |
+| Finalul rundei | Câmpul și legenda dispar; biletul mic lângă scor (se mărește la atingere); pe telefon, butoanele lipite jos | Biletul era la 678–726 px, sub scroll. |
+| Înfrângerea | Biletul e gri, și mărit, și pe pagina de rezultat. „Cardul lui rămâne de câștigat” apare doar cu cont și doar dacă nu e deja în album | Arăta ca la câștig. |
+| Țările | Se compară după cod (`countries.js`), nu după nume; numele îl traduce browserul, cu câteva excepții în `i18n.js` | Datele au „Congo DR” și „DR Congo”: doi congolezi ieșeau diferiți. Merge și la linkurile vechi. |
+| Numele de pe bilet | Patru corectate de mână, după ID (`PRINTED_NAMES`) | „JUNIOR” și „AUREL BISSECK” nu spuneau cine e. |
+| Tastatura | Cât scrii: indiciul pe două rânduri, ultima încercare pe un rând, sugestiile cât spațiu rămâne | Ultima încercare era acoperită. |
+| Legenda | Pe telefon doar în ⓘ. **Înlocuiește** rândul de sub indicii din 8 nov (pe calculator rămâne) | Ocupa loc în fiecare rundă. |
+| Încercarea pe două rânduri | Propunere, nefăcută (neîncercată) | La 320 px, numele și cluburile lungi ar sta pe ~90 px; varianta compactă apare doar cât scrii. |
+| Respinse (Gemini) | Limba în ☰, ligile pe verticală, banda „RATAT”, fără ecran de start, statistici nelegate de cont | Limba nu s-ar mai găsi; ecranul de start oprește rundele pierdute din greșeală. |
+| „Posibil” în sugestii | Nu acum | Arată candidații, deci schimbă dificultatea. |

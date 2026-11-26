@@ -474,6 +474,27 @@
     font-size: 56px;
 }
 
+/* The card of a round that was lost: grey, so it is not taken for a won one */
+.ticket.lost {
+    filter: grayscale(1) brightness(0.74);
+}
+
+.reveal-button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    color: inherit;
+    text-align: inherit;
+    background: none;
+    border: none;
+    border-radius: 8px;
+}
+
+.reveal-button:focus-visible {
+    outline: 3px solid var(--text);
+    outline-offset: 3px;
+}
+
 /* Small ticket for the album: the same object, with only what can be read at 100 px */
 .ticket.compact {
     --tear: 118cqw;

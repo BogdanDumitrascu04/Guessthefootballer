@@ -25,7 +25,7 @@ const SHELL = [
     ...[
         'index.html', 'game.html', 'result.html', 'profile.html', 'album.html',
         'game.css', 'shell.css', 'account.css', 'daily.css', 'album/album.css',
-        'i18n.js', 'auth.js', 'ui.js', 'picker.js', 'round.js', 'common.js', 'badge.js', 'league-marks.js',
+        'i18n.js', 'auth.js', 'ui.js', 'picker.js', 'round.js', 'countries.js', 'common.js', 'badge.js', 'league-marks.js',
         'saved-rounds.js', 'daily.js', 'kickoff.js', 'engine.js', 'result.js', 'profile.js',
         ...[
             'cards', 'colors', 'data', 'dom', 'guilloche', 'main', 'motion', 'pitch', 'progress', 'random', 'reveal',

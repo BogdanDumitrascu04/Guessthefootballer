@@ -48,7 +48,7 @@ Pentru jocul 1:
 
 ## Structura
 - `index.html` — prima pagină; textele vin tot din `i18n.js`, din folderul jocului.
-- `games/guess-the-footballer/` — picker (`index.html`) + jocul (`game.html`, `engine.js`, `i18n.js`, `game.css`); `round.js` = fișa rundei (codul din linkul de share), testată cu `node --test tests/` (la fel și fișierele site-ului, în `site.test.js`); `common.js` = rândurile și căsuțele grilei, comune jocului și paginii de rezultat (`result.html` + `result.js`); `kickoff.js` = ecranul dinaintea rundei (runda se salvează abia la „Începe runda”); `shell.css` = antetul și fundalul tuturor paginilor.
+- `games/guess-the-footballer/` — picker (`index.html`) + jocul (`game.html`, `engine.js`, `i18n.js`, `game.css`); `round.js` = fișa rundei (codul din linkul de share), testată cu `node --test tests/` (la fel și fișierele site-ului, în `site.test.js`); `common.js` = rândurile și căsuțele grilei, comune jocului și paginii de rezultat (`result.html` + `result.js`); `countries.js` = codul fiecărei țări din date (comparația și traducerea); `kickoff.js` = ecranul dinaintea rundei (runda se salvează abia la „Începe runda”); `shell.css` = antetul și fundalul tuturor paginilor.
 - `games/guess-the-footballer/daily.js` + `daily.css` — jucătorul zilei (`game.html?daily`); ce s-a jucat azi stă în browser (`gtf-daily`), ca un refresh să continue runda. Testat în `tests/daily.test.js`.
 - `sw.js`, `pwa.js`, `manifest.webmanifest` — aplicația instalabilă: întâi rețeaua, copia locală doar fără internet.
 - `data/seasons/2026-27/` — loturile din joc; `data/album/` — cardurile; `data/badges.json` — insignele. JSON-ul vechi 2024-25 (scris de mână, sursă pentru import) e în istoricul git și în `data/raw/2024-25/`.
