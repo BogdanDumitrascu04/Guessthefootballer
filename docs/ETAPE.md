@@ -238,5 +238,27 @@ Făcută pe 5 nov, înaintea Supabase, pe datele din JSON (2024-25). Testată lo
 - [ ] pasul 4: prima pagină („Continuă”) și alegerea ligii fără salt
 - [ ] pasul 5: albumul unei ligi (total, „Continuă”, cluburile începute primele)
 
+## Etapa 13 — Cine e ascuns pe Ușor, Mediu, Greu (26 nov)
+**Scop:** pe Ușor doar jucători cu adevărat cunoscuți. Date: ciclul de învățare (explicația lui Bogdan la final, în conversația mare).
+
+- [x] scorul de notorietate + lista pe ligi, corectată de Bogdan (`data/fame.csv`, `scripts/build_fame.py`)
+- [x] legăturile Transfermarkt reparate (`data/manual_tm.csv`)
+- [x] câmpul `level` în sezon; `engine.js` și `plan_daily.py` îl folosesc; `tests/test_fame.py` (Modrić, De Bruyne, Van Dijk, Neuer pe Ușor; El Mourabet nu)
+- [ ] Bogdan explică scriptul în 2–3 propoziții, review cu alt AI, commit + push
+- [ ] calendarul jucătorului zilei replanificat pe baza reală (`python -m scripts.plan_daily`)
+- [ ] `build_clues.py` să folosească și `manual_tm.csv` (conversația despre indicii)
+
+## Etapa 14 — Viteza (26 nov)
+**Scop:** paginile să se deschidă fără lag, mai ales cu cont. Construiește Claude, Bogdan testează. Regulile jocului nu se schimbă.
+
+- [x] `sw.js` „întâi copia”, o versiune întreagă, verificată fișier cu fișier după `version.json` (`scripts/build_version.py`); testul pică dacă versiunea e uitată
+- [x] ieșirea pentru mutarea pe un domeniu propriu (`pwa.js`), testată local cu un server care redirecționează
+- [x] fără lumina cardurilor la scroll pe telefon (`album/motion.js`)
+- [x] albumul și profilul din copia locală, reîmprospătate în spate; contul din sesiunea salvată; copiile se șterg la deconectare; politica de confidențialitate completată
+- [x] măsurat (telefon simulat: 100 ms, CPU 4×, cont logat): jocul 1,13 → 0,63 s, profilul 1,05 → 0,40 s, albumul 1,76 → 0,72 s; pe PC jocul 0,71 → 0,12 s; cu sesiunea expirată, butonul contului 1,06 → 0,36 s
+- [ ] lotul și indiciile cerute în paralel în `engine.js` (după commit-ul Etapei 13, care schimbă același fișier)
+- [ ] testul lui Bogdan pe iPhone: prima deschidere, o reîncărcare, fără internet, login, o rundă salvată, albumul
+- [ ] commit + push (cu `build_version.py` rulat chiar înainte)
+
 ## După
 - „joacă același jucător” din pagina de rezultat, share-ul întregului istoric din profil, modul Icons

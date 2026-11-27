@@ -183,23 +183,41 @@ function renderProfile() {
     );
 }
 
+const KEPT = 'gtf-profile'; // removed at sign-out (auth.js)
+
+function keptProfile(userId) {
+    try {
+        const copy = JSON.parse(localStorage.getItem(KEPT));
+        return copy?.userId === userId ? copy : null;
+    } catch {
+        return null;
+    }
+}
+
+// The copy kept in this browser is drawn at once; the database's answer replaces it.
 async function showProfile() {
-    rounds = null;
-    stats = null;
-    dailyStats = null;
+    const userId = currentUser?.id;
+    const copy = userId ? keptProfile(userId) : null;
+    rounds = copy?.rounds ?? null;
+    stats = copy?.stats ?? null;
+    dailyStats = copy?.dailyStats ?? null;
     roundsFailed = false;
     renderProfile();
-    if (!currentUser) return;
+    if (!userId) return;
     const [history, numbers, dailyNumbers] = await Promise.allSettled([loadRoundHistory(), loadPlayerStats(), loadDailyStats()]);
+    if (currentUser?.id !== userId) return; // another account signed in meanwhile
     if (history.status === 'fulfilled') rounds = history.value;
     else {
         console.warn('Rounds not loaded:', history.reason.message);
-        roundsFailed = true;
+        roundsFailed = !rounds;
     }
     if (numbers.status === 'fulfilled') stats = numbers.value;
     else console.warn('Stats not loaded:', numbers.reason.message);
     if (dailyNumbers.status === 'fulfilled') dailyStats = dailyNumbers.value;
     else console.warn('Daily stats not loaded:', dailyNumbers.reason.message);
+    if ([history, numbers, dailyNumbers].every(answer => answer.status === 'fulfilled')) {
+        localStorage.setItem(KEPT, JSON.stringify({ userId, rounds, stats, dailyStats }));
+    }
     renderProfile();
 }
 

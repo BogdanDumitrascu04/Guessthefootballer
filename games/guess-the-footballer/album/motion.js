@@ -59,22 +59,11 @@ function onOrientation({ beta, gamma }) {
     });
 }
 
-// A touch screen without a motion sensor still sees the metal move, as the card scrolls past.
-function onScroll() {
-    if (phoneMoves || !motionAllowed()) return;
-    eachVisible((element, box) => {
-        const progress = clamp((box.top + box.height / 2) / innerHeight);
-        point(element, progress, progress);
-    });
-}
-
 const touchScreen = matchMedia('(hover: none)').matches;
 const sensor = typeof DeviceOrientationEvent === 'undefined' ? null : DeviceOrientationEvent;
 
-if (touchScreen) {
-    if (sensor) addEventListener('deviceorientation', onOrientation);
-    addEventListener('scroll', onScroll, { passive: true });
-}
+// No effect on scroll: repainting every visible card on each scrolled frame made phones stutter (measured 25 nov).
+if (touchScreen && sensor) addEventListener('deviceorientation', onOrientation);
 
 // Safari on iPhone sends nothing until the person agrees, and it may only be asked after a tap.
 export function askPhone() {

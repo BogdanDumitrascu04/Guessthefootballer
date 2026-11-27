@@ -1,4 +1,4 @@
-"""Fills the calendar of the player of the day (sql/daily_players.sql) with the stars of the current season.
+"""Fills the calendar of the player of the day (sql/daily_players.sql) with the Easy players of the current season.
 
 Run from the project folder, after apply_schema.py and again after every rebuild of the season's files:
     .venv\\Scripts\\python.exe -m scripts.plan_daily
@@ -15,16 +15,16 @@ from dotenv import load_dotenv
 
 from scripts.build_season import LEAGUES, MANIFEST, PROJECT_DIR
 
-STARS = 1  # the tier of the Easy rounds (TARGET_TIERS in engine.js)
+EASY = "easy"  # the level of the round of the day, as in engine.js
 
 
 def candidates(season: str) -> list[dict]:
-    """The stars the game can hide: like in a round, a player needs a number and an age to be guessed."""
+    """The players an Easy round can hide: like in a round, a player needs a number and an age to be guessed."""
     found = []
     for code, (league_id, _) in LEAGUES.items():
         path = PROJECT_DIR / "data" / "seasons" / season / f"{league_id}.json"
         for p in json.loads(path.read_text(encoding="utf-8"))["players"]:
-            if p["tier"] == STARS and p["number"] is not None and p["age"] is not None:
+            if p["level"] == EASY and p["number"] is not None and p["age"] is not None:
                 found.append({"league_id": code, "player_id": p["id"]})
     return found
 

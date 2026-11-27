@@ -102,6 +102,13 @@ Descărcat cu acordul lui Bogdan: 45 MB, în `data/raw/transfermarkt/` (ignorat 
 
 Concluzie: statisticile acoperă practic toți jucătorii care pot fi ascunși pe Easy și Medium, adică exact dificultățile la care le folosim. Restul primesc faptul de rezervă.
 
+## Folosit (26 nov 2026) — Wikidata și Wikipedia pentru notorietate
+
+`scripts/build_fame.py`, fără cheie, licențe deschise: Wikidata (CC0) dă, prin ID-ul Transfermarkt (`P2446`), elementul jucătorului, numărul de limbi și titlul articolului englez; API-ul Wikipedia (`prop=pageviews`, date Wikimedia CC0) dă vizualizările pe 60 de zile.
+- Limite: 50 de titluri pe cerere, cu pauze; mai repede, Wikipedia răspunde 429. User-Agent generic, fără date personale.
+- Acoperire (26 nov): 2.517 jucători care pot fi ascunși; 100 fără articol englez (`exclus`), aproape toți juniori.
+- Capcane: știrile de moment urcă necunoscuți (Godts, Trafford); legătura trece prin Transfermarkt, deci o dată de naștere greșită la football-data o rupe (209 reparate în `data/manual_tm.csv`). De aceea Bogdan verifică lista de mână.
+
 ## Verificat (29 oct 2026) — Wikidata (rezervă pentru cariere)
 
 Gratuit, CC0, fără cheie. Proprietatea `P54` („member of sports team”) are anii de început și de sfârșit.
@@ -139,6 +146,7 @@ Cerere: `GET /players/profiles?search=<nume>` (merge pe planul gratuit). O cerer
 | Număr pe tricou 2024-25 | JSON-ul vechi: istoricul git (`1a06fc3`) și local, `data/raw/2024-25/` | ✅ parțial (1.186 de jucători) |
 | Număr pe tricou 2025-26 | `game_lineups` din setul Transfermarkt | ⚠️ de verificat |
 | Tier (vedetă / titular / lot) | Excelul lui Bogdan, precompletat din valoare + minute | ⚠️ după descărcare |
+| Nivelul (cine e ascuns pe Ușor / Mediu / Greu) | `data/fame.csv`: Wikipedia + Wikidata + Transfermarkt, corectat de Bogdan | ✅ 26 nov |
 | Valoarea de piață pe sezon | setul Transfermarkt (`player_valuations`) | ✅ până în iul 2026 |
 | Cariera (cluburi + ani) | setul Transfermarkt (`transfers`) + clubul din 2026-27 (football-data.org); rezervă: Wikidata | ✅ până în iul 2026 |
 | Insignele cluburilor | proprii, din codul și culorile clubului (football-data.org: `tla`, `clubColors`) | ✅ |

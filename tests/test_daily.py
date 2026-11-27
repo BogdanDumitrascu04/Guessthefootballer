@@ -9,7 +9,7 @@ import pytest
 from psycopg import errors
 
 from scripts.apply_schema import PROJECT_DIR
-from scripts.plan_daily import STARS, candidates, plan
+from scripts.plan_daily import EASY, candidates, plan
 from tests.accounts import ANDREI, BOGDAN, CODE, as_owner, as_player, finish, needs_database, refused, start
 
 pytestmark = needs_database
@@ -188,7 +188,8 @@ def test_the_stars_of_the_season_fill_the_calendar(db):
 
 def test_the_calendar_takes_the_players_of_the_easy_rounds():
     engine = (PROJECT_DIR / "games" / "guess-the-footballer" / "engine.js").read_text(encoding="utf-8")
-    assert re.search(r"TARGET_TIERS = \{ easy: \[(.*?)\]", engine).group(1) == str(STARS)
+    assert re.search(r"dailyMode \? '(\w+)'", engine).group(1) == EASY
+    assert "p.level === difficulty" in engine
 
 
 # The round of the day.

@@ -303,3 +303,31 @@ Punct de plecare: propunerile lui Gemini, verificate pe pagina reală, plus idei
 | Încercarea pe două rânduri | Propunere, nefăcută (neîncercată) | La 320 px, numele și cluburile lungi ar sta pe ~90 px; varianta compactă apare doar cât scrii. |
 | Respinse (Gemini) | Limba în ☰, ligile pe verticală, banda „RATAT”, fără ecran de start, statistici nelegate de cont | Limba nu s-ar mai găsi; ecranul de start oprește rundele pierdute din greșeală. |
 | „Posibil” în sugestii | Nu acum | Arată candidații, deci schimbă dificultatea. |
+
+## 26 nov 2026 — cine e ascuns pe Ușor, Mediu și Greu
+
+| Decizie | Ce am ales | De ce |
+|---|---|---|
+| Două câmpuri | `level` (cine poate fi ascuns) separat de `tier` (cardul) | Valoarea de piață arată cât costă un jucător, nu cât e de cunoscut: doar 99 din cei 200 de pe Ușor erau printre cei mai cunoscuți 40 din ligă; El Mourabet (Strasbourg) era pe Ușor, iar Modrić, De Bruyne, Van Dijk și Neuer nu erau. `tier` rămâne la carduri până la conversația despre ele. |
+| Scorul de notorietate | vizualizări Wikipedia EN pe 60 de zile 40%, limbi Wikipedia 25%, valoarea maximă 15%, selecții 10%, meciuri UCL 10% (log, standardizat) | Fiecare măsură singură greșește (știrile urcă necunoscuți, valoarea scade cu vârsta); împreună dau o ordine, iar Bogdan o corectează. |
+| Câți pe Ușor | diferit pe ligă, nu 40 peste tot (Bogdan: „în Premier League poate sunt 40, dar în La Liga nu”) | După corecturile lui: PL 38, La Liga 42, Bundesliga 24, Serie A 23, Ligue 1 26. |
+| Grupele | separate: Mediu nu îi mai conține pe cei de pe Ușor, Greu e restul | Cererea lui Bogdan: pe Mediu „urmatorii care nu sunt inclusi in usor”. |
+| Veteranii celebri | pe Ușor | Decis de Bogdan. |
+| Verificarea | `data/fame.csv`, coloana `correction` (usor / mediu / greu / exclus); corectura câștigă și se păstrează la fiecare rulare | Ca `manual_links.csv`. Bogdan a corectat 26 nov toate cele cinci ligi (în conversație; Claude a scris coloana). |
+| Fără articol pe Wikipedia EN | `exclus`: nu e ascuns niciodată, dar se poate ghici | De obicei juniori; nu putem spune cât sunt de cunoscuți. |
+| Legătura cu Transfermarkt | `data/manual_tm.csv` (209 jucători), pentru datele de naștere care diferă între surse | Wharton, Gavi, Éderson, Sávio nu aveau valoare de piață, deci nici tier corect. Reconstruirea a schimbat tier-ul a 38 de jucători; albumul (`build_album.py`) nu e încă reconstruit. |
+| Jucătorul zilei | doar din Ușor (`plan_daily.py`) | Calendarul se replanifică pe baza reală (de rulat de Bogdan). |
+
+## 26 nov 2026 — viteza (Etapa 14)
+
+| Decizie | Ce am ales | De ce |
+|---|---|---|
+| Cache-ul PWA | **Înlocuiește** „întâi rețeaua” din 25 nov: întâi copia locală, o versiune întreagă (`gtf-<versiune>`) | Întrebarea „s-a schimbat?” pe fiecare fișier era lagul (jocul 40 de cereri, albumul 58). |
+| Fără amestec de fișiere | O versiune nouă se descarcă întreagă în spate; fiecare fișier e comparat cu amprenta git din `version.json`; dacă unul nu se potrivește (GitHub încă publică, o copie veche din drum), versiunea nu se folosește și se reîncearcă la următoarea vizită | Problema veche (JS vechi cu date noi) apărea când fișierele veneau pe rând din versiuni diferite; acum nu se schimbă nimic până nu e totul verificat. |
+| Când intră versiunea nouă | Fără mesaj, la următoarea deschidere a unei pagini, dacă e singurul tab; cu alt tab deschis în spate, așteaptă | Ales de Bogdan. Pagina se reîncarcă o dată, scurt, ca să nu amestece. |
+| Versiunea | `scripts/build_version.py` înainte de fiecare commit; testul din `site.test.js` pică dacă e uitat | Fără pas de build pe GitHub; lista de mână din `sw.js` dispare. |
+| Domeniu propriu | `pwa.js` verifică la fiecare pagină dacă adresa veche redirecționează; dacă da, șterge copia și redeschide pagina | Un service worker nu se poate actualiza printr-o redirecționare: fără asta, telefoanele ar rămâne pe copia veche de pe `github.io`. |
+| Lumina la scroll | Scoasă pe telefon (și pe Android); înclinarea telefonului rămâne | 19 din 79 de cadre sacadate la scroll. Ales de Bogdan. |
+| Copia contului | Cardurile, cifrele și ultimele runde stau în browser (`gtf-cards`, `gtf-profile`) și se reîmprospătează în spate; se șterg la deconectare | Albumul și profilul așteptau baza la fiecare deschidere. Trecut în politica de confidențialitate. |
+| Albumul: un fișier pe ligă | Nu | Cu copia locală, cele 20 de fișiere de club se citesc de pe telefon în câțiva ms. |
+| Serverul local | `serve.py` trimite fișierele cu sfârșit de rând LF, ca GitHub | Altfel verificarea din `sw.js` respinge fișierele salvate pe Windows. |

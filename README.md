@@ -44,7 +44,9 @@ Every player has a **tier**, suggested by his market value within the league: 1 
 | Ligue 1 | 459 |
 
 The squads are built by a Python script from three sources: full squads from football-data.org, shirt numbers from
-API-Football (linked by club, name and age), and difficulty tiers suggested by Transfermarkt market values.
+API-Football (linked by club, name and age), and card tiers suggested by Transfermarkt market values.
+Who can be hidden on Easy, Medium and Hard comes from a fame score (Wikipedia views and languages, highest market
+value, caps, Champions League games), cut separately in each league and checked by hand (`data/fame.csv`).
 
 ## Features
 
@@ -124,7 +126,8 @@ Then open <http://localhost:8765> in your browser. Unlike `python -m http.server
 
 Data: [football-data.org](https://www.football-data.org/) (squads), [API-Football](https://www.api-football.com/)
 (shirt numbers), [transfermarkt-datasets](https://github.com/dcaribou/transfermarkt-datasets)
-(market values, CC0). Non-commercial project.
+(market values, CC0), [Wikidata](https://www.wikidata.org/) (Wikipedia languages, CC0) and
+[Wikimedia pageviews](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews) (article views, CC0). Non-commercial project.
 
 Headline font: [Barlow Condensed](https://github.com/jpt/barlow), SIL Open Font License (`fonts/OFL-LICENSE.txt`).
 

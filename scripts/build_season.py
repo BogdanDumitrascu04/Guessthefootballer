@@ -5,7 +5,9 @@
   links the rest by club, age and either the Transfermarkt name or the surname; a third pass uses the
   API-Football name searches (download_api_football.py --profiles) and the exact birth date;
   data/manual_links.csv, filled by hand, has the last word;
-- tier: suggested from the latest Transfermarkt market value, ranked within the league.
+- tier: suggested from the latest Transfermarkt market value, ranked within the league (it decides the card);
+- level: who can be hidden on Easy, Medium or Hard, from data/fame.csv (scripts/build_fame.py + Bogdan's corrections).
+The Transfermarkt player is found by birth date and name; data/manual_tm.csv fixes the birth dates that differ.
 
 Run from the project folder (after download_squads.py and download_api_football.py):
     .venv\\Scripts\\python.exe scripts\\build_season.py
@@ -34,6 +36,9 @@ SECOND_PASS_REPORT = RAW_DIR / "second_pass.txt"
 INCOMPLETE_REPORT = RAW_DIR / "incomplete.txt"
 PROFILES_DIR = AF_DIR / "profiles"
 MANUAL_LINKS = PROJECT_DIR / "data" / "manual_links.csv"
+MANUAL_TM = PROJECT_DIR / "data" / "manual_tm.csv"
+FAME_CSV = PROJECT_DIR / "data" / "fame.csv"
+LEVELS = {"usor": "easy", "ușor": "easy", "mediu": "medium", "greu": "hard", "exclus": None}
 AF_PHOTO = "https://media.api-sports.io/football/players/{}.png"
 
 LEAGUES = {
@@ -232,6 +237,51 @@ def load_manual_links() -> dict[int, dict]:
     return links
 
 
+def load_manual_tm() -> dict[int, str]:
+    """football-data.org ID -> Transfermarkt ID, for players whose birth date differs between the two sources."""
+    if not MANUAL_TM.exists():
+        return {}
+    with MANUAL_TM.open(encoding="utf-8-sig", newline="") as f:
+        rows = list(csv.DictReader(f, delimiter=";"))
+    for line, row in enumerate(rows, 2):
+        if not (row["fd_id"].strip().isdigit() and row["tm_id"].strip().isdigit()):
+            raise ValueError(f"{MANUAL_TM.name}, line {line}: both IDs must be whole numbers")
+    return {int(row["fd_id"]): row["tm_id"].strip() for row in rows}
+
+
+def level_of(row: dict) -> str | None:
+    """Bogdan's correction, else the suggestion. None: the player is never hidden."""
+    word = (row.get("correction") or "").strip().lower() or row["suggestion"]
+    if word not in LEVELS:
+        raise ValueError(f"{FAME_CSV.name}, {row['name']}: '{word}' is not one of {', '.join(LEVELS)}")
+    return LEVELS[word]
+
+
+def load_fame() -> dict[int, dict]:
+    if not FAME_CSV.exists():
+        return {}
+    with FAME_CSV.open(encoding="utf-8-sig", newline="") as f:
+        return {int(r["fd_id"]): r for r in csv.DictReader(f, delimiter=";")}
+
+
+def assign_levels(players: list[dict], fame: dict[int, dict]) -> list[str]:
+    """Sets p["level"]; a player missing from data/fame.csv is new and unknown, so Hard until build_fame.py runs.
+
+    Without a number or an age a player cannot be hidden (pickTarget in engine.js), so he gets no level.
+    """
+    new = []
+    for p in players:
+        row = fame.get(p["id"])
+        if p["number"] is None or p["age"] is None:
+            p["level"] = None
+        elif row:
+            p["level"] = level_of(row)
+        else:
+            p["level"] = "hard"
+            new.append(p["name"])
+    return new
+
+
 def manual_entry(row: dict, af: dict, af_players: list[dict]) -> dict:
     """The hand-filled row wins; an empty cell keeps what the matching found."""
     entry = dict(af)
@@ -269,21 +319,24 @@ def tm_rows(name: str):
         yield from csv.DictReader(f)
 
 
-def load_market_values(today: date) -> tuple[dict, dict]:
-    """(date of birth -> Transfermarkt players born that day, Transfermarkt ID -> latest value)."""
-    by_birth = defaultdict(list)
+def load_market_values(today: date) -> tuple[dict, dict, dict]:
+    """(date of birth -> Transfermarkt players born that day, Transfermarkt ID -> player, Transfermarkt ID -> latest value)."""
+    by_birth, by_id = defaultdict(list), {}
     for row in tm_rows("players"):
+        by_id[row["player_id"]] = row
         if row["date_of_birth"]:
             by_birth[row["date_of_birth"][:10]].append(row)
     latest = {}
     for row in tm_rows("player_valuations"):
         if row["date"] <= today.isoformat() and row["date"] >= latest.get(row["player_id"], ("",))[0]:
             latest[row["player_id"]] = (row["date"], int(row["market_value_in_eur"]))
-    return by_birth, {k: v for k, (_, v) in latest.items()}
+    return by_birth, by_id, {k: v for k, (_, v) in latest.items()}
 
 
-def tm_player(player: dict, by_birth: dict) -> dict | None:
+def tm_player(player: dict, by_birth: dict, by_id: dict | None = None, manual: dict | None = None) -> dict | None:
     """Same birth date and the same name, or one name word in common if only one player fits."""
+    if manual and player.get("id") in manual:
+        return (by_id or {}).get(manual[player["id"]])
     born = (player.get("dateOfBirth") or "")[:10]
     wanted = normalize(player["name"])
     same_day = by_birth.get(born, [])
@@ -294,8 +347,8 @@ def tm_player(player: dict, by_birth: dict) -> dict | None:
     return found[0] if len(found) == 1 else None
 
 
-def market_value(player: dict, by_birth: dict, values: dict) -> int | None:
-    tm = tm_player(player, by_birth)
+def market_value(player: dict, by_birth: dict, values: dict, by_id: dict | None = None, manual: dict | None = None) -> int | None:
+    tm = tm_player(player, by_birth, by_id, manual)
     return values.get(tm["player_id"]) if tm else None
 
 
@@ -348,7 +401,7 @@ def build_league(code: str, today: date, team_map: dict, sources: dict) -> tuple
                 extra[p["id"]] = (af, "manual")
             entry = player_entry(p, af, af_team["name"], today)
             players.append(entry)
-            worth[len(players) - 1] = market_value(p, sources["by_birth"], sources["values"])
+            worth[len(players) - 1] = market_value(p, sources["by_birth"], sources["values"], sources["by_id"], sources["manual_tm"])
             if p["id"] in extra:
                 link, method = extra[p["id"]]
                 extra_links.append(
@@ -369,6 +422,7 @@ def build_league(code: str, today: date, team_map: dict, sources: dict) -> tuple
         row["in_game"] = not left_out(row["missing"], row["value"])
     dropped = {row["fd"]["id"] for row in incomplete if not row["in_game"]}
     players = [p for p in players if p["id"] not in dropped]
+    sources["new"] += assign_levels(players, sources["fame"])
     unique_names(players)
     league = {"id": league_id, "name": league_name, "season": SEASON, "teams": teams, "players": players}
     return league, extra_links, incomplete
@@ -418,7 +472,7 @@ def update_manifest() -> None:
 def main() -> None:
     today = date.today()
     team_map = json.loads((AF_DIR / "team_map.json").read_text(encoding="utf-8"))
-    by_birth, values = load_market_values(today)
+    by_birth, by_id, values = load_market_values(today)
     af_club_of = {af["id"]: team["id"] for team in team_map.values() for af in squad_players(team["id"])}
     sources = {
         "by_birth": by_birth,
@@ -426,6 +480,10 @@ def main() -> None:
         "profiles": load_profiles(),
         "af_club_of": af_club_of,
         "manual": load_manual_links(),
+        "by_id": by_id,
+        "manual_tm": load_manual_tm(),
+        "fame": load_fame(),
+        "new": [],
     }
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     all_pairs, all_incomplete = [], []
@@ -438,10 +496,13 @@ def main() -> None:
         players = data["players"]
         complete = sum(p["photo"] is not None and p["number"] is not None for p in players)
         tiers = [sum(p["tier"] == t for p in players) for t in (1, 2, 3)]
+        levels = [sum(p["level"] == v for p in players) for v in ("easy", "medium", "hard", None)]
         print(
             f"{data['name']:<15} {len(players):>4} players, {complete:>4} with photo + number "
-            f"({100 * complete / len(players):.0f}%), tiers 1/2/3: {tiers}"
+            f"({100 * complete / len(players):.0f}%), tiers 1/2/3: {tiers}, easy/medium/hard/never: {levels}"
         )
+    if sources["new"]:
+        print(f"\nNot in {FAME_CSV.name}, Hard for now (run build_fame.py): {len(sources['new'])} players")
     print(f"\nLinked after the first pass (list in {SECOND_PASS_REPORT.relative_to(PROJECT_DIR)}):")
     for _, name in LEAGUES.values():
         methods = Counter(p["method"] for p in all_pairs if p["league"] == name)

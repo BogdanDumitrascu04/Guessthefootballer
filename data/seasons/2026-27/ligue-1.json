@@ -32,7 +32,8 @@
    "number": 16,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/325346.png",
-   "tier": 2
+   "tier": 2,
+   "level": "medium"
   },
   {
    "id": 274174,
@@ -43,7 +44,8 @@
    "number": 60,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/551204.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 24190,
@@ -54,7 +56,8 @@
    "number": 2,
    "nationality": "Denmark",
    "photo": "https://media.api-sports.io/football/players/15793.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 77803,
@@ -65,7 +68,8 @@
    "number": 3,
    "nationality": "USA",
    "photo": "https://media.api-sports.io/football/players/50735.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 202533,
@@ -76,7 +80,8 @@
    "number": 19,
    "nationality": "Germany",
    "photo": "https://media.api-sports.io/football/players/394740.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 250994,
@@ -87,7 +92,8 @@
    "number": 22,
    "nationality": "Algeria",
    "photo": "https://media.api-sports.io/football/players/334952.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 283252,
@@ -98,7 +104,8 @@
    "number": 5,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/489905.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 9455,
@@ -109,7 +116,8 @@
    "number": 31,
    "nationality": "Germany",
    "photo": "https://media.api-sports.io/football/players/25533.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 81229,
@@ -120,7 +128,8 @@
    "number": 23,
    "nationality": "Venezuela",
    "photo": "https://media.api-sports.io/football/players/50956.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 121896,
@@ -131,7 +140,8 @@
    "number": 17,
    "nationality": "Ghana",
    "photo": "https://media.api-sports.io/football/players/118345.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 192688,
@@ -142,7 +152,8 @@
    "number": 15,
    "nationality": "Norway",
    "photo": "https://media.api-sports.io/football/players/39115.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 215679,
@@ -153,7 +164,8 @@
    "number": 8,
    "nationality": "Denmark",
    "photo": "https://media.api-sports.io/football/players/386277.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 216809,
@@ -164,7 +176,8 @@
    "number": 14,
    "nationality": "Canada",
    "photo": "https://media.api-sports.io/football/players/416901.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 244750,
@@ -175,7 +188,8 @@
    "number": 18,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/395762.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 283443,
@@ -186,7 +200,8 @@
    "number": 6,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/514464.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 300209,
@@ -197,7 +212,8 @@
    "number": 49,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/570583.png",
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 80175,
@@ -208,7 +224,8 @@
    "number": null,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/84128.png",
-   "tier": 2
+   "tier": 2,
+   "level": null
   },
   {
    "id": 129381,
@@ -219,7 +236,8 @@
    "number": 20,
    "nationality": "Denmark",
    "photo": "https://media.api-sports.io/football/players/162703.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 182406,
@@ -230,7 +248,8 @@
    "number": 13,
    "nationality": "Canada",
    "photo": "https://media.api-sports.io/football/players/203428.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 191371,
@@ -241,7 +260,8 @@
    "number": 9,
    "nationality": "Argentina",
    "photo": "https://media.api-sports.io/football/players/362741.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 274822,
@@ -252,7 +272,8 @@
    "number": 11,
    "nationality": "Sweden",
    "photo": "https://media.api-sports.io/football/players/508069.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 278193,
@@ -263,7 +284,8 @@
    "number": 37,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/489903.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 285243,
@@ -274,7 +296,8 @@
    "number": 7,
    "nationality": "Argentina",
    "photo": "https://media.api-sports.io/football/players/457025.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 301013,
@@ -285,7 +308,8 @@
    "number": 1,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/674690.png",
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 44441,
@@ -296,7 +320,8 @@
    "number": 1,
    "nationality": "Norway",
    "photo": "https://media.api-sports.io/football/players/39082.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 147457,
@@ -307,7 +332,8 @@
    "number": 49,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/158587.png",
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 214577,
@@ -318,7 +344,8 @@
    "number": 30,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/198389.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 441,
@@ -329,7 +356,8 @@
    "number": 5,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/20546.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 1004,
@@ -340,7 +368,8 @@
    "number": 4,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/64255.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 8778,
@@ -351,7 +380,8 @@
    "number": 70,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/22247.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 171659,
@@ -362,7 +392,8 @@
    "number": 2,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/274267.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 227982,
@@ -373,7 +404,8 @@
    "number": 12,
    "nationality": "Ivory Coast",
    "photo": "https://media.api-sports.io/football/players/422595.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 273433,
@@ -384,7 +416,8 @@
    "number": 71,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/498791.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 274570,
@@ -395,7 +428,8 @@
    "number": 18,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/369556.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 8465,
@@ -406,7 +440,8 @@
    "number": 29,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/664.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 76145,
@@ -417,7 +452,8 @@
    "number": 8,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/20558.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 125677,
@@ -428,7 +464,8 @@
    "number": 13,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/128287.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 160898,
@@ -439,7 +476,8 @@
    "number": 6,
    "nationality": "Mali",
    "photo": "https://media.api-sports.io/football/players/302915.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 175942,
@@ -450,7 +488,8 @@
    "number": 23,
    "nationality": "Mali",
    "photo": "https://media.api-sports.io/football/players/326068.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 261666,
@@ -461,7 +500,8 @@
    "number": null,
    "nationality": "Belgium",
    "photo": null,
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 276983,
@@ -472,7 +512,8 @@
    "number": null,
    "nationality": "Mali",
    "photo": null,
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 723,
@@ -483,7 +524,8 @@
    "number": 19,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/22264.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 43707,
@@ -494,7 +536,8 @@
    "number": 17,
    "nationality": "Guinea-Bissau",
    "photo": "https://media.api-sports.io/football/players/41323.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 212975,
@@ -505,7 +548,8 @@
    "number": 11,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/430816.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 218249,
@@ -516,7 +560,8 @@
    "number": 9,
    "nationality": "Senegal",
    "photo": "https://media.api-sports.io/football/players/375990.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 301047,
@@ -527,7 +572,8 @@
    "number": 33,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/653463.png",
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 67880,
@@ -538,7 +584,8 @@
    "number": 12,
    "nationality": "Netherlands",
    "photo": "https://media.api-sports.io/football/players/36827.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 130271,
@@ -549,7 +596,8 @@
    "number": 92,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/129672.png",
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 178114,
@@ -560,7 +608,8 @@
    "number": 40,
    "nationality": "Belgium",
    "photo": "https://media.api-sports.io/football/players/336654.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 238,
@@ -571,7 +620,8 @@
    "number": 25,
    "nationality": "Switzerland",
    "photo": "https://media.api-sports.io/football/players/943.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 7809,
@@ -582,7 +632,8 @@
    "number": 33,
    "nationality": "Italy",
    "photo": "https://media.api-sports.io/football/players/2284.png",
-   "tier": 2
+   "tier": 2,
+   "level": "medium"
   },
   {
    "id": 8492,
@@ -593,7 +644,8 @@
    "number": 22,
    "nationality": "USA",
    "photo": "https://media.api-sports.io/football/players/1138.png",
-   "tier": 2
+   "tier": 2,
+   "level": "medium"
   },
   {
    "id": 81191,
@@ -604,18 +656,20 @@
    "number": 21,
    "nationality": "Morocco",
    "photo": "https://media.api-sports.io/football/players/21694.png",
-   "tier": 2
+   "tier": 2,
+   "level": "medium"
   },
   {
    "id": 113228,
    "name": "Derek Cornelius",
    "team": "Marseille",
    "position": "Defender",
-   "age": 28,
+   "age": 29,
    "number": 13,
    "nationality": "Canada",
    "photo": "https://media.api-sports.io/football/players/51295.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 179596,
@@ -626,7 +680,8 @@
    "number": 18,
    "nationality": "Ivory Coast",
    "photo": "https://media.api-sports.io/football/players/193501.png",
-   "tier": 3
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 179721,
@@ -637,7 +692,8 @@
    "number": 4,
    "nationality": "England",
    "photo": "https://media.api-sports.io/football/players/181827.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 7910,
@@ -648,7 +704,8 @@
    "number": 7,
    "nationality": "England",
    "photo": "https://media.api-sports.io/football/players/896.png",
-   "tier": 2
+   "tier": 2,
+   "level": "medium"
   },
   {
    "id": 8093,
@@ -659,7 +716,8 @@
    "number": 23,
    "nationality": "Denmark",
    "photo": "https://media.api-sports.io/football/players/2735.png",
-   "tier": 2
+   "tier": 2,
+   "level": "medium"
   },
   {
    "id": 33149,
@@ -670,7 +728,8 @@
    "number": 19,
    "nationality": "Central African Republic",
    "photo": "https://media.api-sports.io/football/players/926.png",
-   "tier": 3
+   "tier": 3,
+   "level": "medium"
   },
   {
    "id": 80754,
@@ -681,7 +740,8 @@
    "number": 8,
    "nationality": "Algeria",
    "photo": "https://media.api-sports.io/football/players/20692.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 183544,
@@ -692,7 +752,8 @@
    "number": 6,
    "nationality": "Nigeria",
    "photo": "https://media.api-sports.io/football/players/354298.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 3714,
@@ -703,7 +764,8 @@
    "number": 77,
    "nationality": "Morocco",
    "photo": "https://media.api-sports.io/football/players/412.png",
-   "tier": 3
+   "tier": 3,
+   "level": "medium"
   },
   {
    "id": 4443,
@@ -714,7 +776,8 @@
    "number": 11,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/19364.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 8476,
@@ -725,7 +788,8 @@
    "number": 9,
    "nationality": "Algeria",
    "photo": "https://media.api-sports.io/football/players/85041.png",
-   "tier": 1
+   "tier": 1,
+   "level": "easy"
   },
   {
    "id": 119703,
@@ -736,7 +800,8 @@
    "number": 14,
    "nationality": "Brazil",
    "photo": "https://media.api-sports.io/football/players/9363.png",
-   "tier": 1
+   "tier": 1,
+   "level": "hard"
   },
   {
    "id": 144651,
@@ -747,7 +812,8 @@
    "number": 29,
    "nationality": "Cameroon",
    "photo": "https://media.api-sports.io/football/players/102447.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 250795,
@@ -758,7 +824,8 @@
    "number": 48,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/449158.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 288624,
@@ -769,7 +836,8 @@
    "number": 43,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/511641.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 302585,
@@ -780,7 +848,8 @@
    "number": 41,
    "nationality": "Morocco",
    "photo": "https://media.api-sports.io/football/players/565705.png",
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 16925,
@@ -791,7 +860,8 @@
    "number": 1,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/8657.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 131150,
@@ -802,7 +872,8 @@
    "number": 23,
    "nationality": "Mauritania",
    "photo": "https://media.api-sports.io/football/players/134264.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 255520,
@@ -813,7 +884,8 @@
    "number": 37,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/614174.png",
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 2402,
@@ -824,7 +896,8 @@
    "number": null,
    "nationality": "Chile",
    "photo": null,
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 3894,
@@ -835,7 +908,8 @@
    "number": 4,
    "nationality": "Congo DR",
    "photo": "https://media.api-sports.io/football/players/19182.png",
-   "tier": 3
+   "tier": 3,
+   "level": "medium"
   },
   {
    "id": 124243,
@@ -846,7 +920,8 @@
    "number": 24,
    "nationality": "Switzerland",
    "photo": "https://media.api-sports.io/football/players/115588.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 141637,
@@ -857,7 +932,8 @@
    "number": 20,
    "nationality": "Ivory Coast",
    "photo": "https://media.api-sports.io/football/players/162466.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 153924,
@@ -868,7 +944,8 @@
    "number": 29,
    "nationality": "Ghana",
    "photo": "https://media.api-sports.io/football/players/191240.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 154108,
@@ -879,7 +956,8 @@
    "number": 22,
    "nationality": "Norway",
    "photo": "https://media.api-sports.io/football/players/215827.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 177412,
@@ -890,18 +968,20 @@
    "number": 27,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/193953.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 185194,
    "name": "Clement Akpa",
    "team": "Auxerre",
    "position": "Defender",
-   "age": 24,
+   "age": 25,
    "number": 92,
    "nationality": "Ivory Coast",
    "photo": "https://media.api-sports.io/football/players/191189.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 206881,
@@ -912,7 +992,8 @@
    "number": 15,
    "nationality": "Congo",
    "photo": "https://media.api-sports.io/football/players/412926.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 254867,
@@ -923,7 +1004,8 @@
    "number": 93,
    "nationality": "Ivory Coast",
    "photo": "https://media.api-sports.io/football/players/193505.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 277960,
@@ -934,7 +1016,8 @@
    "number": 13,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/402542.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 281100,
@@ -945,7 +1028,8 @@
    "number": 35,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/496787.png",
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 286281,
@@ -956,7 +1040,8 @@
    "number": 38,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/422689.png",
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 3631,
@@ -967,7 +1052,8 @@
    "number": 18,
    "nationality": "Senegal",
    "photo": "https://media.api-sports.io/football/players/30748.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 8762,
@@ -978,7 +1064,8 @@
    "number": 21,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/84082.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 131752,
@@ -989,7 +1076,8 @@
    "number": 8,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/152418.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 175724,
@@ -1000,7 +1088,8 @@
    "number": 5,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/323625.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 176984,
@@ -1011,7 +1100,8 @@
    "number": 17,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/278232.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 191991,
@@ -1022,7 +1112,8 @@
    "number": 46,
    "nationality": "Belgium",
    "photo": "https://media.api-sports.io/football/players/371950.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 281104,
@@ -1033,7 +1124,8 @@
    "number": 36,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/468459.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 290119,
@@ -1044,7 +1136,8 @@
    "number": 34,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/629378.png",
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 4289,
@@ -1055,7 +1148,8 @@
    "number": 10,
    "nationality": "Cameroon",
    "photo": "https://media.api-sports.io/football/players/19625.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 128242,
@@ -1066,7 +1160,8 @@
    "number": 9,
    "nationality": "England",
    "photo": "https://media.api-sports.io/football/players/137302.png",
-   "tier": 3
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 152737,
@@ -1077,7 +1172,8 @@
    "number": null,
    "nationality": "Haiti",
    "photo": null,
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 204240,
@@ -1088,7 +1184,8 @@
    "number": 3,
    "nationality": "Guadeloupe",
    "photo": "https://media.api-sports.io/football/players/326073.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 245451,
@@ -1099,7 +1196,8 @@
    "number": 32,
    "nationality": "Cameroon",
    "photo": "https://media.api-sports.io/football/players/435514.png",
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 270290,
@@ -1110,7 +1208,8 @@
    "number": 77,
    "nationality": "Ivory Coast",
    "photo": "https://media.api-sports.io/football/players/490095.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 275829,
@@ -1121,7 +1220,8 @@
    "number": 49,
    "nationality": "China PR",
    "photo": "https://media.api-sports.io/football/players/511151.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 302158,
@@ -1132,7 +1232,8 @@
    "number": 47,
    "nationality": "Morocco",
    "photo": "https://media.api-sports.io/football/players/670610.png",
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 9222,
@@ -1143,7 +1244,8 @@
    "number": null,
    "nationality": "Belgium",
    "photo": null,
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 29890,
@@ -1154,7 +1256,8 @@
    "number": 1,
    "nationality": "Turkey",
    "photo": "https://media.api-sports.io/football/players/1337.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 270728,
@@ -1165,7 +1268,8 @@
    "number": 12,
    "nationality": "Paraguay",
    "photo": "https://media.api-sports.io/football/players/70852.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 8435,
@@ -1176,7 +1280,8 @@
    "number": 15,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/20600.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 9861,
@@ -1187,7 +1292,8 @@
    "number": 24,
    "nationality": "Indonesia",
    "photo": "https://media.api-sports.io/football/players/37151.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 127127,
@@ -1198,7 +1304,8 @@
    "number": 23,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/133110.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 185196,
@@ -1209,7 +1316,8 @@
    "number": 4,
    "nationality": "Brazil",
    "photo": "https://media.api-sports.io/football/players/142691.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 188087,
@@ -1220,7 +1328,8 @@
    "number": 22,
    "nationality": "Portugal",
    "photo": "https://media.api-sports.io/football/players/379329.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 192677,
@@ -1231,7 +1340,8 @@
    "number": 3,
    "nationality": "Belgium",
    "photo": "https://media.api-sports.io/football/players/312964.png",
-   "tier": 1
+   "tier": 1,
+   "level": "medium"
   },
   {
    "id": 261543,
@@ -1242,7 +1352,8 @@
    "number": 2,
    "nationality": "Switzerland",
    "photo": "https://media.api-sports.io/football/players/394211.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 270793,
@@ -1253,18 +1364,20 @@
    "number": 26,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/486136.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 6503,
    "name": "Nabil Bentaleb",
    "team": "Lille",
    "position": "Midfielder",
-   "age": 31,
+   "age": 32,
    "number": 6,
    "nationality": "Algeria",
    "photo": "https://media.api-sports.io/football/players/409.png",
-   "tier": 3
+   "tier": 3,
+   "level": "medium"
   },
   {
    "id": 8811,
@@ -1275,7 +1388,8 @@
    "number": 21,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/2204.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 117908,
@@ -1286,7 +1400,8 @@
    "number": 10,
    "nationality": "Iceland",
    "photo": "https://media.api-sports.io/football/players/67889.png",
-   "tier": 1
+   "tier": 1,
+   "level": "medium"
   },
   {
    "id": 124723,
@@ -1297,7 +1412,8 @@
    "number": 14,
    "nationality": "Denmark",
    "photo": "https://media.api-sports.io/football/players/115587.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 192666,
@@ -1308,7 +1424,8 @@
    "number": 17,
    "nationality": "Congo DR",
    "photo": "https://media.api-sports.io/football/players/375598.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 914,
@@ -1319,7 +1436,8 @@
    "number": 28,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/20732.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 3371,
@@ -1330,7 +1448,8 @@
    "number": 9,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/2295.png",
-   "tier": 3
+   "tier": 3,
+   "level": "easy"
   },
   {
    "id": 99722,
@@ -1341,7 +1460,8 @@
    "number": 11,
    "nationality": "Morocco",
    "photo": "https://media.api-sports.io/football/players/99576.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 119460,
@@ -1352,7 +1472,8 @@
    "number": 18,
    "nationality": "Japan",
    "photo": "https://media.api-sports.io/football/players/72155.png",
-   "tier": 2
+   "tier": 2,
+   "level": "medium"
   },
   {
    "id": 150925,
@@ -1363,7 +1484,8 @@
    "number": null,
    "nationality": "Portugal",
    "photo": null,
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 151295,
@@ -1374,7 +1496,8 @@
    "number": 7,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/129695.png",
-   "tier": 1
+   "tier": 1,
+   "level": "hard"
   },
   {
    "id": 178127,
@@ -1385,7 +1508,8 @@
    "number": 19,
    "nationality": "Turkey",
    "photo": "https://media.api-sports.io/football/players/360032.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 218468,
@@ -1396,7 +1520,8 @@
    "number": 8,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/386287.png",
-   "tier": 2
+   "tier": 2,
+   "level": "medium"
   },
   {
    "id": 260879,
@@ -1407,7 +1532,8 @@
    "number": 7,
    "nationality": "Morocco",
    "photo": "https://media.api-sports.io/football/players/306979.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 275537,
@@ -1418,7 +1544,8 @@
    "number": 35,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/487381.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 8608,
@@ -1429,7 +1556,8 @@
    "number": 23,
    "nationality": "Senegal",
    "photo": "https://media.api-sports.io/football/players/20566.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 147975,
@@ -1440,7 +1568,8 @@
    "number": 77,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/175171.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 1023,
@@ -1451,7 +1580,8 @@
    "number": 92,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/25008.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 99394,
@@ -1462,7 +1592,8 @@
    "number": 2,
    "nationality": "Tunisia",
    "photo": "https://media.api-sports.io/football/players/49583.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 133292,
@@ -1473,7 +1604,8 @@
    "number": 27,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/156490.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 168667,
@@ -1484,7 +1616,8 @@
    "number": 33,
    "nationality": "Senegal",
    "photo": "https://media.api-sports.io/football/players/313937.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 172057,
@@ -1495,7 +1628,8 @@
    "number": 55,
    "nationality": "Burundi",
    "photo": "https://media.api-sports.io/football/players/3099.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 192153,
@@ -1506,7 +1640,8 @@
    "number": null,
    "nationality": "Canada",
    "photo": null,
-   "tier": 2
+   "tier": 2,
+   "level": null
   },
   {
    "id": 245563,
@@ -1517,7 +1652,8 @@
    "number": 5,
    "nationality": "Egypt",
    "photo": "https://media.api-sports.io/football/players/196343.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 282317,
@@ -1528,7 +1664,8 @@
    "number": 84,
    "nationality": "Morocco",
    "photo": "https://media.api-sports.io/football/players/417914.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 566,
@@ -1539,7 +1676,8 @@
    "number": 6,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/20917.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 3656,
@@ -1550,7 +1688,8 @@
    "number": 28,
    "nationality": "Belgium",
    "photo": "https://media.api-sports.io/football/players/20.png",
-   "tier": 3
+   "tier": 3,
+   "level": "medium"
   },
   {
    "id": 8355,
@@ -1561,7 +1700,8 @@
    "number": 8,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/1914.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 123206,
@@ -1572,7 +1712,8 @@
    "number": 99,
    "nationality": "Ghana",
    "photo": "https://media.api-sports.io/football/players/128987.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 123508,
@@ -1583,7 +1724,8 @@
    "number": 6,
    "nationality": "Algeria",
    "photo": "https://media.api-sports.io/football/players/4399.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 245461,
@@ -1594,7 +1736,8 @@
    "number": 22,
    "nationality": "Guinea",
    "photo": "https://media.api-sports.io/football/players/444561.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 273766,
@@ -1605,7 +1748,8 @@
    "number": 39,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/504157.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 752,
@@ -1616,7 +1760,8 @@
    "number": 7,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/20529.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 76723,
@@ -1627,7 +1772,8 @@
    "number": 10,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/107.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 98601,
@@ -1638,7 +1784,8 @@
    "number": 21,
    "nationality": "Sweden",
    "photo": "https://media.api-sports.io/football/players/105154.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 98746,
@@ -1649,7 +1796,8 @@
    "number": 29,
    "nationality": "Cameroon",
    "photo": "https://media.api-sports.io/football/players/22148.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 156808,
@@ -1660,7 +1808,8 @@
    "number": 11,
    "nationality": "Ivory Coast",
    "photo": "https://media.api-sports.io/football/players/162707.png",
-   "tier": 2
+   "tier": 2,
+   "level": "medium"
   },
   {
    "id": 180827,
@@ -1671,7 +1820,8 @@
    "number": 9,
    "nationality": "Algeria",
    "photo": "https://media.api-sports.io/football/players/200139.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 249675,
@@ -1682,7 +1832,8 @@
    "number": 44,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/362470.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 733,
@@ -1693,7 +1844,8 @@
    "number": 40,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/20762.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 79776,
@@ -1704,7 +1856,8 @@
    "number": 1,
    "nationality": "Slovakia",
    "photo": "https://media.api-sports.io/football/players/61142.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 244704,
@@ -1715,7 +1868,8 @@
    "number": 25,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/270814.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 3208,
@@ -1726,7 +1880,8 @@
    "number": 3,
    "nationality": "Argentina",
    "photo": "https://media.api-sports.io/football/players/529.png",
-   "tier": 3
+   "tier": 3,
+   "level": "medium"
   },
   {
    "id": 8723,
@@ -1737,7 +1892,8 @@
    "number": 19,
    "nationality": "Senegal",
    "photo": "https://media.api-sports.io/football/players/25916.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 8977,
@@ -1748,7 +1904,8 @@
    "number": 22,
    "nationality": "Angola",
    "photo": "https://media.api-sports.io/football/players/68.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 75196,
@@ -1759,7 +1916,8 @@
    "number": 20,
    "nationality": "Austria",
    "photo": "https://media.api-sports.io/football/players/7147.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 103142,
@@ -1770,7 +1928,8 @@
    "number": 16,
    "nationality": "Brazil",
    "photo": "https://media.api-sports.io/football/players/9700.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 137655,
@@ -1781,7 +1940,8 @@
    "number": 21,
    "nationality": "Netherlands",
    "photo": "https://media.api-sports.io/football/players/193293.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 213754,
@@ -1792,7 +1952,8 @@
    "number": 76,
    "nationality": "Burkina Faso",
    "photo": "https://media.api-sports.io/football/players/412049.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 256424,
@@ -1803,7 +1964,8 @@
    "number": 13,
    "nationality": "Switzerland",
    "photo": "https://media.api-sports.io/football/players/396380.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 277933,
@@ -1814,7 +1976,8 @@
    "number": 85,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/493026.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 366,
@@ -1825,7 +1988,8 @@
    "number": 8,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/519.png",
-   "tier": 2
+   "tier": 2,
+   "level": "easy"
   },
   {
    "id": 81737,
@@ -1836,7 +2000,8 @@
    "number": null,
    "nationality": "Ivory Coast",
    "photo": null,
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 121312,
@@ -1847,7 +2012,8 @@
    "number": 10,
    "nationality": "Czech Republic",
    "photo": "https://media.api-sports.io/football/players/66387.png",
-   "tier": 2
+   "tier": 2,
+   "level": "medium"
   },
   {
    "id": 142456,
@@ -1858,7 +2024,8 @@
    "number": 6,
    "nationality": "USA",
    "photo": "https://media.api-sports.io/football/players/80752.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 160816,
@@ -1869,7 +2036,8 @@
    "number": 2,
    "nationality": "Denmark",
    "photo": "https://media.api-sports.io/football/players/162189.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 175845,
@@ -1880,7 +2048,8 @@
    "number": 23,
    "nationality": "England",
    "photo": "https://media.api-sports.io/football/players/162590.png",
-   "tier": 1
+   "tier": 1,
+   "level": "medium"
   },
   {
    "id": 215864,
@@ -1891,7 +2060,8 @@
    "number": 99,
    "nationality": "Denmark",
    "photo": "https://media.api-sports.io/football/players/361352.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 277733,
@@ -1902,7 +2072,8 @@
    "number": null,
    "nationality": "Portugal",
    "photo": null,
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 281451,
@@ -1913,7 +2084,8 @@
    "number": 18,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/519664.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 73215,
@@ -1924,7 +2096,8 @@
    "number": 17,
    "nationality": "Belgium",
    "photo": "https://media.api-sports.io/football/players/86.png",
-   "tier": 1
+   "tier": 1,
+   "level": "easy"
   },
   {
    "id": 182280,
@@ -1935,7 +2108,8 @@
    "number": 24,
    "nationality": "Belgium",
    "photo": "https://media.api-sports.io/football/players/368230.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 184726,
@@ -1946,7 +2120,8 @@
    "number": 7,
    "nationality": "Ghana",
    "photo": "https://media.api-sports.io/football/players/350856.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 245455,
@@ -1957,7 +2132,8 @@
    "number": 26,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/405237.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 267821,
@@ -1968,7 +2144,8 @@
    "number": 32,
    "nationality": "England",
    "photo": "https://media.api-sports.io/football/players/409794.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 281450,
@@ -1979,7 +2156,8 @@
    "number": 45,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/497617.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 302825,
@@ -1990,7 +2168,8 @@
    "number": 33,
    "nationality": "DR Congo",
    "photo": "https://media.api-sports.io/football/players/691283.png",
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 302584,
@@ -2001,7 +2180,8 @@
    "number": 38,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/689330.png",
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 49244,
@@ -2012,7 +2192,8 @@
    "number": 39,
    "nationality": "Russia",
    "photo": "https://media.api-sports.io/football/players/2068.png",
-   "tier": 1
+   "tier": 1,
+   "level": "easy"
   },
   {
    "id": 147896,
@@ -2023,7 +2204,8 @@
    "number": 30,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/162453.png",
-   "tier": 1
+   "tier": 1,
+   "level": "easy"
   },
   {
    "id": 53,
@@ -2034,7 +2216,8 @@
    "number": 2,
    "nationality": "Morocco",
    "photo": "https://media.api-sports.io/football/players/9.png",
-   "tier": 1
+   "tier": 1,
+   "level": "easy"
   },
   {
    "id": 3225,
@@ -2045,7 +2228,8 @@
    "number": 5,
    "nationality": "Brazil",
    "photo": "https://media.api-sports.io/football/players/257.png",
-   "tier": 1
+   "tier": 1,
+   "level": "easy"
   },
   {
    "id": 3359,
@@ -2056,7 +2240,8 @@
    "number": 12,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/2724.png",
-   "tier": 2
+   "tier": 2,
+   "level": "easy"
   },
   {
    "id": 3365,
@@ -2067,7 +2252,8 @@
    "number": 21,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/33.png",
-   "tier": 2
+   "tier": 2,
+   "level": "easy"
   },
   {
    "id": 114102,
@@ -2078,7 +2264,8 @@
    "number": 51,
    "nationality": "Ecuador",
    "photo": "https://media.api-sports.io/football/players/16367.png",
-   "tier": 1
+   "tier": 1,
+   "level": "easy"
   },
   {
    "id": 143573,
@@ -2089,7 +2276,8 @@
    "number": 6,
    "nationality": "Ukraine",
    "photo": "https://media.api-sports.io/football/players/161671.png",
-   "tier": 1
+   "tier": 1,
+   "level": "medium"
   },
   {
    "id": 144570,
@@ -2100,18 +2288,20 @@
    "number": 25,
    "nationality": "Portugal",
    "photo": "https://media.api-sports.io/football/players/263482.png",
-   "tier": 1
+   "tier": 1,
+   "level": "easy"
   },
   {
    "id": 169204,
    "name": "Lucas Beraldo",
    "team": "Paris Saint Germain",
    "position": "Defender",
-   "age": 22,
+   "age": 23,
    "number": 4,
    "nationality": "Brazil",
    "photo": "https://media.api-sports.io/football/players/307835.png",
-   "tier": 1
+   "tier": 1,
+   "level": "easy"
   },
   {
    "id": 22,
@@ -2122,7 +2312,8 @@
    "number": 8,
    "nationality": "Spain",
    "photo": "https://media.api-sports.io/football/players/328.png",
-   "tier": 1
+   "tier": 1,
+   "level": "easy"
   },
   {
    "id": 178722,
@@ -2133,7 +2324,8 @@
    "number": 17,
    "nationality": "Portugal",
    "photo": "https://media.api-sports.io/football/players/128384.png",
-   "tier": 1
+   "tier": 1,
+   "level": "easy"
   },
   {
    "id": 186089,
@@ -2144,7 +2336,8 @@
    "number": 33,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/336657.png",
-   "tier": 1
+   "tier": 1,
+   "level": "easy"
   },
   {
    "id": 190877,
@@ -2155,7 +2348,8 @@
    "number": 87,
    "nationality": "Portugal",
    "photo": "https://media.api-sports.io/football/players/335051.png",
-   "tier": 1
+   "tier": 1,
+   "level": "easy"
   },
   {
    "id": 246066,
@@ -2166,7 +2360,8 @@
    "number": 24,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/409216.png",
-   "tier": 1
+   "tier": 1,
+   "level": "easy"
   },
   {
    "id": 283413,
@@ -2177,7 +2372,8 @@
    "number": 27,
    "nationality": "Spain",
    "photo": "https://media.api-sports.io/football/players/491087.png",
-   "tier": 2
+   "tier": 2,
+   "level": "medium"
   },
   {
    "id": 3373,
@@ -2188,7 +2384,8 @@
    "number": 10,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/153.png",
-   "tier": 1
+   "tier": 1,
+   "level": "easy"
   },
   {
    "id": 33154,
@@ -2199,7 +2396,8 @@
    "number": 9,
    "nationality": "Spain",
    "photo": "https://media.api-sports.io/football/players/931.png",
-   "tier": 1
+   "tier": 1,
+   "level": "easy"
   },
   {
    "id": 113285,
@@ -2210,7 +2408,8 @@
    "number": 7,
    "nationality": "Georgia",
    "photo": "https://media.api-sports.io/football/players/483.png",
-   "tier": 1
+   "tier": 1,
+   "level": "easy"
   },
   {
    "id": 175701,
@@ -2221,7 +2420,8 @@
    "number": 11,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/274300.png",
-   "tier": 1
+   "tier": 1,
+   "level": "easy"
   },
   {
    "id": 177522,
@@ -2232,7 +2432,8 @@
    "number": 14,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/343027.png",
-   "tier": 1
+   "tier": 1,
+   "level": "easy"
   },
   {
    "id": 189574,
@@ -2243,7 +2444,8 @@
    "number": 22,
    "nationality": "Belgium",
    "photo": "https://media.api-sports.io/football/players/340153.png",
-   "tier": 1
+   "tier": 1,
+   "level": "easy"
   },
   {
    "id": 278406,
@@ -2254,7 +2456,8 @@
    "number": 47,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/471107.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 302269,
@@ -2265,7 +2468,8 @@
    "number": 80,
    "nationality": "Morocco",
    "photo": "https://media.api-sports.io/football/players/689071.png",
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 8554,
@@ -2276,7 +2480,8 @@
    "number": 1,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/20936.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 8771,
@@ -2287,7 +2492,8 @@
    "number": 21,
    "nationality": "Senegal",
    "photo": "https://media.api-sports.io/football/players/22241.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 9534,
@@ -2298,7 +2504,8 @@
    "number": 38,
    "nationality": "Switzerland",
    "photo": "https://media.api-sports.io/football/players/1142.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 57099,
@@ -2309,7 +2516,8 @@
    "number": 2,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/85773.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 149069,
@@ -2320,7 +2528,8 @@
    "number": 95,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/195893.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 156630,
@@ -2331,7 +2540,8 @@
    "number": 27,
    "nationality": "Senegal",
    "photo": "https://media.api-sports.io/football/players/162236.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 177695,
@@ -2342,7 +2552,8 @@
    "number": 3,
    "nationality": "Tunisia",
    "photo": "https://media.api-sports.io/football/players/50030.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 187420,
@@ -2353,7 +2564,8 @@
    "number": 20,
    "nationality": "Guinea",
    "photo": "https://media.api-sports.io/football/players/193507.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 187473,
@@ -2364,7 +2576,8 @@
    "number": 32,
    "nationality": "Ghana",
    "photo": "https://media.api-sports.io/football/players/214310.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 212536,
@@ -2375,7 +2588,8 @@
    "number": 30,
    "nationality": "Slovenia",
    "photo": "https://media.api-sports.io/football/players/278556.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 212862,
@@ -2386,7 +2600,8 @@
    "number": 55,
    "nationality": "Italy",
    "photo": "https://media.api-sports.io/football/players/336688.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 244087,
@@ -2397,7 +2612,8 @@
    "number": 43,
    "nationality": "Burkina Faso",
    "photo": "https://media.api-sports.io/football/players/402386.png",
-   "tier": 3
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 8437,
@@ -2408,7 +2624,8 @@
    "number": 17,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/22171.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 106791,
@@ -2419,7 +2636,8 @@
    "number": 8,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/23363.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 150424,
@@ -2430,7 +2648,8 @@
    "number": 7,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/162018.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 157596,
@@ -2441,7 +2660,8 @@
    "number": 72,
    "nationality": "Belgium",
    "photo": "https://media.api-sports.io/football/players/298006.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 172520,
@@ -2452,7 +2672,8 @@
    "number": 11,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/174703.png",
-   "tier": 2
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 188658,
@@ -2463,7 +2684,8 @@
    "number": 77,
    "nationality": "Greece",
    "photo": "https://media.api-sports.io/football/players/384112.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 263322,
@@ -2474,7 +2696,8 @@
    "number": 62,
    "nationality": "Cameroon",
    "photo": "https://media.api-sports.io/football/players/402265.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 279671,
@@ -2485,7 +2708,8 @@
    "number": 33,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/483118.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 72551,
@@ -2496,7 +2720,8 @@
    "number": 15,
    "nationality": "Benin",
    "photo": "https://media.api-sports.io/football/players/72457.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 153974,
@@ -2507,7 +2732,8 @@
    "number": 10,
    "nationality": "Denmark",
    "photo": "https://media.api-sports.io/football/players/289670.png",
-   "tier": 2
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 170398,
@@ -2518,7 +2744,8 @@
    "number": 18,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/274278.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 213749,
@@ -2529,7 +2756,8 @@
    "number": 9,
    "nationality": "Ivory Coast",
    "photo": "https://media.api-sports.io/football/players/200873.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 283132,
@@ -2540,7 +2768,8 @@
    "number": 19,
    "nationality": "Senegal",
    "photo": "https://media.api-sports.io/football/players/353771.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 802,
@@ -2551,7 +2780,8 @@
    "number": 16,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/21995.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 8316,
@@ -2562,7 +2792,8 @@
    "number": 30,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/21628.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 288619,
@@ -2573,7 +2804,8 @@
    "number": 60,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/601332.png",
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 3540,
@@ -2584,7 +2816,8 @@
    "number": 95,
    "nationality": "Poland",
    "photo": "https://media.api-sports.io/football/players/3007.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 83868,
@@ -2595,7 +2828,8 @@
    "number": 14,
    "nationality": "USA",
    "photo": "https://media.api-sports.io/football/players/51144.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 147893,
@@ -2606,7 +2840,8 @@
    "number": null,
    "nationality": "Ghana",
    "photo": "https://media.api-sports.io/football/players/196187.png",
-   "tier": 2
+   "tier": 2,
+   "level": null
   },
   {
    "id": 150751,
@@ -2617,7 +2852,8 @@
    "number": 24,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/129681.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 150797,
@@ -2628,7 +2864,8 @@
    "number": 4,
    "nationality": "England",
    "photo": "https://media.api-sports.io/football/players/278392.png",
-   "tier": 1
+   "tier": 1,
+   "level": "hard"
   },
   {
    "id": 160410,
@@ -2639,7 +2876,8 @@
    "number": 26,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/272460.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 227004,
@@ -2650,7 +2888,8 @@
    "number": 18,
    "nationality": "Cameroon",
    "photo": "https://media.api-sports.io/football/players/438281.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 262856,
@@ -2661,7 +2900,8 @@
    "number": 5,
    "nationality": "Portugal",
    "photo": "https://media.api-sports.io/football/players/400525.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 272594,
@@ -2672,7 +2912,8 @@
    "number": 48,
    "nationality": "Morocco",
    "photo": "https://media.api-sports.io/football/players/417830.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 8542,
@@ -2683,7 +2924,8 @@
    "number": 45,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/24147.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 8695,
@@ -2694,7 +2936,8 @@
    "number": 21,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/21102.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 8706,
@@ -2705,7 +2948,8 @@
    "number": 28,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/22261.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 10201,
@@ -2716,7 +2960,8 @@
    "number": 17,
    "nationality": "Poland",
    "photo": "https://media.api-sports.io/football/players/40403.png",
-   "tier": 2
+   "tier": 2,
+   "level": "medium"
   },
   {
    "id": 96869,
@@ -2727,7 +2972,8 @@
    "number": 10,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/21497.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 212872,
@@ -2738,7 +2984,8 @@
    "number": null,
    "nationality": "Belgium",
    "photo": null,
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 246322,
@@ -2749,7 +2996,8 @@
    "number": 6,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/343792.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 575,
@@ -2760,7 +3008,8 @@
    "number": 70,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/22097.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 98299,
@@ -2771,7 +3020,8 @@
    "number": 22,
    "nationality": "Senegal",
    "photo": "https://media.api-sports.io/football/players/22015.png",
-   "tier": 2
+   "tier": 3,
+   "level": "medium"
   },
   {
    "id": 149850,
@@ -2782,7 +3032,8 @@
    "number": 9,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/163004.png",
-   "tier": 1
+   "tier": 1,
+   "level": "hard"
   },
   {
    "id": 178644,
@@ -2793,7 +3044,8 @@
    "number": 12,
    "nationality": "Spain",
    "photo": "https://media.api-sports.io/football/players/349799.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 289597,
@@ -2804,7 +3056,8 @@
    "number": 35,
    "nationality": "Ecuador",
    "photo": "https://media.api-sports.io/football/players/625629.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 522,
@@ -2815,7 +3068,8 @@
    "number": 1,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/21135.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 74515,
@@ -2826,7 +3080,8 @@
    "number": 40,
    "nationality": "Burkina Faso",
    "photo": "https://media.api-sports.io/football/players/20873.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 177427,
@@ -2837,7 +3092,8 @@
    "number": 33,
    "nationality": "Australia",
    "photo": "https://media.api-sports.io/football/players/353883.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 906,
@@ -2848,7 +3104,8 @@
    "number": 6,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/20715.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 99282,
@@ -2859,7 +3116,8 @@
    "number": 5,
    "nationality": "Italy",
    "photo": "https://media.api-sports.io/football/players/859.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 147927,
@@ -2870,7 +3128,8 @@
    "number": 14,
    "nationality": "Comoros",
    "photo": "https://media.api-sports.io/football/players/174596.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 178696,
@@ -2881,7 +3140,8 @@
    "number": 2,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/174766.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 187530,
@@ -2892,7 +3152,8 @@
    "number": 4,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/365742.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 218406,
@@ -2903,7 +3164,8 @@
    "number": 44,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/395810.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 282710,
@@ -2914,7 +3176,8 @@
    "number": 3,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/442933.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 99815,
@@ -2925,7 +3188,8 @@
    "number": 26,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/1913.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 114136,
@@ -2936,7 +3200,8 @@
    "number": 11,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/21386.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 134600,
@@ -2947,7 +3212,8 @@
    "number": 17,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/174806.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 182169,
@@ -2958,7 +3224,8 @@
    "number": 29,
    "nationality": "Togo",
    "photo": "https://media.api-sports.io/football/players/322865.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 187038,
@@ -2969,7 +3236,8 @@
    "number": 8,
    "nationality": "Senegal",
    "photo": "https://media.api-sports.io/football/players/335162.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 188895,
@@ -2980,7 +3248,8 @@
    "number": 22,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/338201.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 282714,
@@ -2991,7 +3260,8 @@
    "number": 35,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/456882.png",
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 851,
@@ -3002,7 +3272,8 @@
    "number": 20,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/21451.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 115639,
@@ -3013,7 +3284,8 @@
    "number": 23,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/2217.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 133695,
@@ -3024,7 +3296,8 @@
    "number": 7,
    "nationality": "Guinea",
    "photo": "https://media.api-sports.io/football/players/158516.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 134582,
@@ -3035,7 +3308,8 @@
    "number": 9,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/85772.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 251325,
@@ -3046,7 +3320,8 @@
    "number": 34,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/421863.png",
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 260298,
@@ -3057,7 +3332,8 @@
    "number": 10,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/275478.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 301036,
@@ -3068,7 +3344,8 @@
    "number": 34,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/681732.png",
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 3240,
@@ -3079,7 +3356,8 @@
    "number": 1,
    "nationality": "Portugal",
    "photo": "https://media.api-sports.io/football/players/647.png",
-   "tier": 3
+   "tier": 3,
+   "level": "medium"
   },
   {
    "id": 186084,
@@ -3090,7 +3368,8 @@
    "number": 16,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/174973.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 244934,
@@ -3101,7 +3380,8 @@
    "number": 40,
    "nationality": "Mali",
    "photo": "https://media.api-sports.io/football/players/396308.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 532,
@@ -3112,7 +3392,8 @@
    "number": 2,
    "nationality": "Haiti",
    "photo": "https://media.api-sports.io/football/players/20850.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 1020,
@@ -3123,7 +3404,8 @@
    "number": 21,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/21381.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 147895,
@@ -3134,7 +3416,8 @@
    "number": 4,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/271540.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 190546,
@@ -3145,7 +3428,8 @@
    "number": 24,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/385569.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 191002,
@@ -3156,7 +3440,8 @@
    "number": 27,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/174660.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 264211,
@@ -3167,7 +3452,8 @@
    "number": 17,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/409558.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 271979,
@@ -3178,7 +3464,8 @@
    "number": 20,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/456831.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 746,
@@ -3189,7 +3476,8 @@
    "number": 93,
    "nationality": "Algeria",
    "photo": "https://media.api-sports.io/football/players/20554.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 53397,
@@ -3200,7 +3488,8 @@
    "number": 8,
    "nationality": "Netherlands",
    "photo": "https://media.api-sports.io/football/players/37652.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 177021,
@@ -3211,7 +3500,8 @@
    "number": 6,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/289555.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 178075,
@@ -3222,7 +3512,8 @@
    "number": 14,
    "nationality": "Morocco",
    "photo": "https://media.api-sports.io/football/players/174708.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 294511,
@@ -3233,7 +3524,8 @@
    "number": 36,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/655113.png",
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 101297,
@@ -3244,7 +3536,8 @@
    "number": 18,
    "nationality": "Gabon",
    "photo": "https://media.api-sports.io/football/players/21618.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 137515,
@@ -3255,7 +3548,8 @@
    "number": 19,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/193188.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 170416,
@@ -3266,7 +3560,8 @@
    "number": 7,
    "nationality": "Central African Republic",
    "photo": "https://media.api-sports.io/football/players/275385.png",
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 185033,
@@ -3277,7 +3572,8 @@
    "number": 10,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/191289.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 246160,
@@ -3288,7 +3584,8 @@
    "number": 26,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/402066.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 278087,
@@ -3299,7 +3596,8 @@
    "number": 9,
    "nationality": "Nigeria",
    "photo": "https://media.api-sports.io/football/players/457541.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 287857,
@@ -3310,7 +3608,8 @@
    "number": 11,
    "nationality": "Cameroon",
    "photo": "https://media.api-sports.io/football/players/579375.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 899,
@@ -3321,7 +3620,8 @@
    "number": 93,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/20706.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 106838,
@@ -3332,7 +3632,8 @@
    "number": 77,
    "nationality": "Congo DR",
    "photo": "https://media.api-sports.io/football/players/24012.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 8872,
@@ -3343,7 +3644,8 @@
    "number": 5,
    "nationality": "Algeria",
    "photo": "https://media.api-sports.io/football/players/8777.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 45300,
@@ -3354,7 +3656,8 @@
    "number": 23,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/41238.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 113230,
@@ -3365,7 +3668,8 @@
    "number": 15,
    "nationality": "Japan",
    "photo": "https://media.api-sports.io/football/players/33165.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 148288,
@@ -3376,7 +3680,8 @@
    "number": 32,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/162067.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 175762,
@@ -3387,7 +3692,8 @@
    "number": 12,
    "nationality": "Denmark",
    "photo": "https://media.api-sports.io/football/players/341234.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 276981,
@@ -3398,7 +3704,8 @@
    "number": null,
    "nationality": "France",
    "photo": null,
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 281102,
@@ -3409,7 +3716,8 @@
    "number": null,
    "nationality": "France",
    "photo": null,
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 150018,
@@ -3420,7 +3728,8 @@
    "number": 17,
    "nationality": "Japan",
    "photo": "https://media.api-sports.io/football/players/273142.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 169152,
@@ -3431,7 +3740,8 @@
    "number": 7,
    "nationality": "Morocco",
    "photo": "https://media.api-sports.io/football/players/314231.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 178663,
@@ -3442,7 +3752,8 @@
    "number": 14,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/128342.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 182091,
@@ -3453,7 +3764,8 @@
    "number": 6,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/282549.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 204279,
@@ -3464,7 +3776,8 @@
    "number": 26,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/364093.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 244823,
@@ -3475,7 +3788,8 @@
    "number": 44,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/395765.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 263479,
@@ -3486,7 +3800,8 @@
    "number": 78,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/460805.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 263480,
@@ -3497,7 +3812,8 @@
    "number": 24,
    "nationality": "Ivory Coast",
    "photo": "https://media.api-sports.io/football/players/451961.png",
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 4072,
@@ -3508,7 +3824,8 @@
    "number": 9,
    "nationality": "Nigeria",
    "photo": "https://media.api-sports.io/football/players/1279.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 8982,
@@ -3519,7 +3836,8 @@
    "number": 25,
    "nationality": "Tanzania",
    "photo": "https://media.api-sports.io/football/players/1945.png",
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 111230,
@@ -3530,7 +3848,8 @@
    "number": 10,
    "nationality": "Switzerland",
    "photo": "https://media.api-sports.io/football/players/961.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 273060,
@@ -3541,7 +3860,8 @@
    "number": 19,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/419584.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 275182,
@@ -3552,7 +3872,8 @@
    "number": 30,
    "nationality": "Japan",
    "photo": "https://media.api-sports.io/football/players/508070.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 276430,
@@ -3563,7 +3884,8 @@
    "number": 38,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/443579.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 301012,
@@ -3574,7 +3896,8 @@
    "number": 33,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/673858.png",
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 464,
@@ -3585,7 +3908,8 @@
    "number": 98,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/24189.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 254368,
@@ -3596,7 +3920,8 @@
    "number": 1,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/179480.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 255027,
@@ -3607,7 +3932,8 @@
    "number": 55,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/633362.png",
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 867,
@@ -3618,7 +3944,8 @@
    "number": 18,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/21448.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 934,
@@ -3629,7 +3956,8 @@
    "number": 17,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/20602.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 3362,
@@ -3640,7 +3968,8 @@
    "number": 19,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/102.png",
-   "tier": 3
+   "tier": 3,
+   "level": "medium"
   },
   {
    "id": 133766,
@@ -3651,7 +3980,8 @@
    "number": 76,
    "nationality": "Algeria",
    "photo": "https://media.api-sports.io/football/players/138828.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 154076,
@@ -3662,7 +3992,8 @@
    "number": 16,
    "nationality": "Spain",
    "photo": "https://media.api-sports.io/football/players/290215.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 158230,
@@ -3673,7 +4004,8 @@
    "number": 5,
    "nationality": "Martinique",
    "photo": "https://media.api-sports.io/football/players/174605.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 176335,
@@ -3684,7 +4016,8 @@
    "number": 22,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/179414.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 250296,
@@ -3695,7 +4028,8 @@
    "number": 26,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/363226.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 256284,
@@ -3706,7 +4040,8 @@
    "number": 21,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/270515.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 279674,
@@ -3717,7 +4052,8 @@
    "number": 15,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/483116.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 74608,
@@ -3728,7 +4064,8 @@
    "number": 6,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/24259.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 116275,
@@ -3739,7 +4076,8 @@
    "number": 8,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/1258.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 157984,
@@ -3750,7 +4088,8 @@
    "number": 10,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/162706.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 279676,
@@ -3761,7 +4100,8 @@
    "number": 27,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/349631.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 279719,
@@ -3772,7 +4112,8 @@
    "number": 29,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/274254.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 292172,
@@ -3783,7 +4124,8 @@
    "number": 11,
    "nationality": "Algeria",
    "photo": "https://media.api-sports.io/football/players/608142.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 456,
@@ -3794,7 +4136,8 @@
    "number": 13,
    "nationality": "Senegal",
    "photo": "https://media.api-sports.io/football/players/20535.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 74648,
@@ -3805,7 +4148,8 @@
    "number": 9,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/21048.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 82197,
@@ -3816,7 +4160,8 @@
    "number": 25,
    "nationality": "Senegal",
    "photo": "https://media.api-sports.io/football/players/4743.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 124178,
@@ -3827,7 +4172,8 @@
    "number": 14,
    "nationality": "Central African Republic",
    "photo": "https://media.api-sports.io/football/players/85558.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 138969,
@@ -3838,7 +4184,8 @@
    "number": 28,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/174939.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 181927,
@@ -3849,7 +4196,8 @@
    "number": 7,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/19250.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 276213,
@@ -3860,7 +4208,8 @@
    "number": 99,
    "nationality": "Brazil",
    "photo": "https://media.api-sports.io/football/players/504965.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 281688,
@@ -3871,7 +4220,8 @@
    "number": 20,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/381116.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 302639,
@@ -3882,7 +4232,8 @@
    "number": 36,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/669862.png",
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 8449,
@@ -3893,7 +4244,8 @@
    "number": 16,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/646.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 8579,
@@ -3904,7 +4256,8 @@
    "number": 1,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/21378.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 188389,
@@ -3915,7 +4268,8 @@
    "number": 40,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/347211.png",
-   "tier": 1
+   "tier": 1,
+   "level": "hard"
   },
   {
    "id": 278383,
@@ -3926,18 +4280,20 @@
    "number": 1,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/497661.png",
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 735,
    "name": "Jonathan Gradit",
    "team": "Lens",
    "position": "Defender",
-   "age": 33,
+   "age": 34,
    "number": 24,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/21635.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 8372,
@@ -3948,7 +4304,8 @@
    "number": 2,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/21568.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 8717,
@@ -3959,7 +4316,8 @@
    "number": 14,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/20525.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 79903,
@@ -3970,7 +4328,8 @@
    "number": 20,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/138.png",
-   "tier": 1
+   "tier": 1,
+   "level": "medium"
   },
   {
    "id": 124469,
@@ -3981,7 +4340,8 @@
    "number": 3,
    "nationality": "Poland",
    "photo": "https://media.api-sports.io/football/players/178708.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 129098,
@@ -3992,7 +4352,8 @@
    "number": 23,
    "nationality": "Saudi Arabia",
    "photo": "https://media.api-sports.io/football/players/44594.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 169041,
@@ -4003,7 +4364,8 @@
    "number": null,
    "nationality": "Ecuador",
    "photo": null,
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 188148,
@@ -4014,7 +4376,8 @@
    "number": 6,
    "nationality": "Austria",
    "photo": "https://media.api-sports.io/football/players/322984.png",
-   "tier": 1
+   "tier": 1,
+   "level": "hard"
   },
   {
    "id": 188468,
@@ -4025,7 +4388,8 @@
    "number": 25,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/369500.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 216398,
@@ -4036,7 +4400,8 @@
    "number": null,
    "nationality": "Bosnia-Herzegovina",
    "photo": null,
-   "tier": 2
+   "tier": 2,
+   "level": null
   },
   {
    "id": 270890,
@@ -4047,7 +4412,8 @@
    "number": 32,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/441264.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 276665,
@@ -4058,7 +4424,8 @@
    "number": 31,
    "nationality": "Mali",
    "photo": "https://media.api-sports.io/football/players/437139.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 3655,
@@ -4069,7 +4436,8 @@
    "number": 9,
    "nationality": "Belgium",
    "photo": "https://media.api-sports.io/football/players/2929.png",
-   "tier": 3
+   "tier": 3,
+   "level": "medium"
   },
   {
    "id": 6688,
@@ -4080,7 +4448,8 @@
    "number": 27,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/25634.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 15704,
@@ -4091,7 +4460,8 @@
    "number": 21,
    "nationality": "Mali",
    "photo": "https://media.api-sports.io/football/players/1153.png",
-   "tier": 2
+   "tier": 2,
+   "level": "medium"
   },
   {
    "id": 261523,
@@ -4102,7 +4472,8 @@
    "number": 8,
    "nationality": "Algeria",
    "photo": "https://media.api-sports.io/football/players/327599.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 268900,
@@ -4113,7 +4484,8 @@
    "number": 5,
    "nationality": "Montenegro",
    "photo": "https://media.api-sports.io/football/players/394950.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 295255,
@@ -4124,7 +4496,8 @@
    "number": 38,
    "nationality": "Portugal",
    "photo": "https://media.api-sports.io/football/players/660571.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 3370,
@@ -4135,7 +4508,8 @@
    "number": 10,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/1922.png",
-   "tier": 2
+   "tier": 2,
+   "level": "medium"
   },
   {
    "id": 16077,
@@ -4146,7 +4520,8 @@
    "number": 11,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/1135.png",
-   "tier": 2
+   "tier": 2,
+   "level": "medium"
   },
   {
    "id": 64837,
@@ -4157,7 +4532,8 @@
    "number": 7,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/20761.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 99985,
@@ -4168,7 +4544,8 @@
    "number": 22,
    "nationality": "Poland",
    "photo": "https://media.api-sports.io/football/players/40809.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 135484,
@@ -4179,7 +4556,8 @@
    "number": 28,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/161620.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 151264,
@@ -4190,7 +4568,8 @@
    "number": 19,
    "nationality": "Senegal",
    "photo": "https://media.api-sports.io/football/players/277191.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 183643,
@@ -4201,18 +4580,20 @@
    "number": 29,
    "nationality": "Austria",
    "photo": "https://media.api-sports.io/football/players/202951.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 6696,
    "name": "Lukáš Hrádecký",
    "team": "Monaco",
    "position": "Goalkeeper",
-   "age": 36,
+   "age": 37,
    "number": 1,
    "nationality": "Finland",
    "photo": "https://media.api-sports.io/football/players/963.png",
-   "tier": 3
+   "tier": 3,
+   "level": "medium"
   },
   {
    "id": 9535,
@@ -4223,7 +4604,8 @@
    "number": 16,
    "nationality": "Switzerland",
    "photo": "https://media.api-sports.io/football/players/7313.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 3314,
@@ -4234,7 +4616,8 @@
    "number": 15,
    "nationality": "England",
    "photo": "https://media.api-sports.io/football/players/175.png",
-   "tier": 3
+   "tier": 3,
+   "level": "medium"
   },
   {
    "id": 6493,
@@ -4245,7 +4628,8 @@
    "number": 6,
    "nationality": "Germany",
    "photo": "https://media.api-sports.io/football/players/261.png",
-   "tier": 2
+   "tier": 2,
+   "level": "medium"
   },
   {
    "id": 67965,
@@ -4256,7 +4640,8 @@
    "number": 4,
    "nationality": "Netherlands",
    "photo": "https://media.api-sports.io/football/players/231.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 81039,
@@ -4267,7 +4652,8 @@
    "number": 22,
    "nationality": "Ghana",
    "photo": "https://media.api-sports.io/football/players/47480.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 154607,
@@ -4278,7 +4664,8 @@
    "number": 2,
    "nationality": "Brazil",
    "photo": "https://media.api-sports.io/football/players/291649.png",
-   "tier": 2
+   "tier": 2,
+   "level": "medium"
   },
   {
    "id": 165315,
@@ -4289,7 +4676,8 @@
    "number": 20,
    "nationality": "Portugal",
    "photo": "https://media.api-sports.io/football/players/294722.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 188481,
@@ -4300,7 +4688,8 @@
    "number": 13,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/371916.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 212866,
@@ -4311,7 +4700,8 @@
    "number": 72,
    "nationality": "Senegal",
    "photo": "https://media.api-sports.io/football/players/428084.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 272502,
@@ -4322,7 +4712,8 @@
    "number": 44,
    "nationality": "Belgium",
    "photo": "https://media.api-sports.io/football/players/449676.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 3683,
@@ -4333,7 +4724,8 @@
    "number": 10,
    "nationality": "Russia",
    "photo": "https://media.api-sports.io/football/players/109.png",
-   "tier": 2
+   "tier": 2,
+   "level": "medium"
   },
   {
    "id": 6687,
@@ -4344,7 +4736,8 @@
    "number": 6,
    "nationality": "Switzerland",
    "photo": "https://media.api-sports.io/football/players/2810.png",
-   "tier": 1
+   "tier": 1,
+   "level": "medium"
   },
   {
    "id": 204238,
@@ -4355,7 +4748,8 @@
    "number": 37,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/374361.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 204269,
@@ -4366,7 +4760,8 @@
    "number": 8,
    "nationality": "Senegal",
    "photo": "https://media.api-sports.io/football/players/374058.png",
-   "tier": 1
+   "tier": 1,
+   "level": "easy"
   },
   {
    "id": 221295,
@@ -4377,7 +4772,8 @@
    "number": 17,
    "nationality": "Belgium",
    "photo": "https://media.api-sports.io/football/players/340152.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 244898,
@@ -4388,7 +4784,8 @@
    "number": 28,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/419035.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 286934,
@@ -4399,7 +4796,8 @@
    "number": 19,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/543470.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 15100,
@@ -4410,7 +4808,8 @@
    "number": 18,
    "nationality": "Japan",
    "photo": "https://media.api-sports.io/football/players/1101.png",
-   "tier": 2
+   "tier": 2,
+   "level": "medium"
   },
   {
    "id": 128040,
@@ -4421,7 +4820,8 @@
    "number": 31,
    "nationality": "Spain",
    "photo": "https://media.api-sports.io/football/players/135775.png",
-   "tier": 2
+   "tier": 2,
+   "level": "easy"
   },
   {
    "id": 131040,
@@ -4432,7 +4832,8 @@
    "number": 9,
    "nationality": "USA",
    "photo": "https://media.api-sports.io/football/players/138835.png",
-   "tier": 1
+   "tier": 1,
+   "level": "medium"
   },
   {
    "id": 170412,
@@ -4443,7 +4844,8 @@
    "number": 11,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/161622.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 177260,
@@ -4454,7 +4856,8 @@
    "number": 14,
    "nationality": "Denmark",
    "photo": "https://media.api-sports.io/football/players/283026.png",
-   "tier": 2
+   "tier": 2,
+   "level": "medium"
   },
   {
    "id": 244696,
@@ -4465,7 +4868,8 @@
    "number": 29,
    "nationality": "Germany",
    "photo": "https://media.api-sports.io/football/players/386276.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 274298,
@@ -4476,7 +4880,8 @@
    "number": 7,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/462278.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 153828,
@@ -4487,7 +4892,8 @@
    "number": 1,
    "nationality": "Denmark",
    "photo": "https://media.api-sports.io/football/players/286616.png",
-   "tier": 2
+   "tier": 2,
+   "level": "medium"
   },
   {
    "id": 261900,
@@ -4498,7 +4904,8 @@
    "number": 12,
    "nationality": "Poland",
    "photo": "https://media.api-sports.io/football/players/374727.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 147878,
@@ -4509,7 +4916,8 @@
    "number": 6,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/271542.png",
-   "tier": 1
+   "tier": 1,
+   "level": "hard"
   },
   {
    "id": 149920,
@@ -4520,7 +4928,8 @@
    "number": 12,
    "nationality": "Ireland",
    "photo": "https://media.api-sports.io/football/players/147835.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 182297,
@@ -4531,7 +4940,8 @@
    "number": null,
    "nationality": "Ivory Coast",
    "photo": null,
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 183532,
@@ -4542,7 +4952,8 @@
    "number": 15,
    "nationality": "Argentina",
    "photo": "https://media.api-sports.io/football/players/355256.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 205551,
@@ -4553,7 +4964,8 @@
    "number": 24,
    "nationality": "Denmark",
    "photo": "https://media.api-sports.io/football/players/396193.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 253514,
@@ -4564,7 +4976,8 @@
    "number": 4,
    "nationality": "Costa Rica",
    "photo": "https://media.api-sports.io/football/players/297583.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 276411,
@@ -4575,7 +4988,8 @@
    "number": 31,
    "nationality": "Germany",
    "photo": "https://media.api-sports.io/football/players/440147.png",
-   "tier": 1
+   "tier": 1,
+   "level": "hard"
   },
   {
    "id": 276714,
@@ -4586,7 +5000,8 @@
    "number": 16,
    "nationality": "England",
    "photo": "https://media.api-sports.io/football/players/398000.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 136733,
@@ -4597,7 +5012,8 @@
    "number": 10,
    "nationality": "USA",
    "photo": "https://media.api-sports.io/football/players/161921.png",
-   "tier": 3
+   "tier": 3,
+   "level": "medium"
   },
   {
    "id": 165314,
@@ -4608,7 +5024,8 @@
    "number": 14,
    "nationality": "Portugal",
    "photo": "https://media.api-sports.io/football/players/308678.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 192686,
@@ -4619,7 +5036,8 @@
    "number": 21,
    "nationality": "Senegal",
    "photo": "https://media.api-sports.io/football/players/339417.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 210644,
@@ -4630,7 +5048,8 @@
    "number": 8,
    "nationality": "Poland",
    "photo": "https://media.api-sports.io/football/players/303016.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 244929,
@@ -4641,7 +5060,8 @@
    "number": 29,
    "nationality": "Morocco",
    "photo": "https://media.api-sports.io/football/players/415431.png",
-   "tier": 1
+   "tier": 1,
+   "level": "hard"
   },
   {
    "id": 247065,
@@ -4652,7 +5072,8 @@
    "number": 45,
    "nationality": "Sweden",
    "photo": "https://media.api-sports.io/football/players/456862.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 261660,
@@ -4663,7 +5084,8 @@
    "number": 26,
    "nationality": "England",
    "photo": "https://media.api-sports.io/football/players/329347.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 262361,
@@ -4674,7 +5096,8 @@
    "number": 23,
    "nationality": "Portugal",
    "photo": "https://media.api-sports.io/football/players/400510.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 144643,
@@ -4685,7 +5108,8 @@
    "number": 11,
    "nationality": "Sweden",
    "photo": "https://media.api-sports.io/football/players/226803.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 151552,
@@ -4696,7 +5120,8 @@
    "number": 14,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/190686.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 203375,
@@ -4707,7 +5132,8 @@
    "number": 42,
    "nationality": "Brazil",
    "photo": "https://media.api-sports.io/football/players/415001.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 203561,
@@ -4718,7 +5144,8 @@
    "number": 9,
    "nationality": "Argentina",
    "photo": "https://media.api-sports.io/football/players/390742.png",
-   "tier": 1
+   "tier": 1,
+   "level": "hard"
   },
   {
    "id": 204426,
@@ -4729,7 +5156,8 @@
    "number": 20,
    "nationality": "England",
    "photo": "https://media.api-sports.io/football/players/359386.png",
-   "tier": 1
+   "tier": 1,
+   "level": "hard"
   },
   {
    "id": 206744,
@@ -4740,7 +5168,8 @@
    "number": 40,
    "nationality": "Denmark",
    "photo": "https://media.api-sports.io/football/players/419916.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 206809,
@@ -4751,7 +5180,8 @@
    "number": 7,
    "nationality": "England",
    "photo": "https://media.api-sports.io/football/players/334035.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 220468,
@@ -4762,7 +5192,8 @@
    "number": 19,
    "nationality": "Germany",
    "photo": "https://media.api-sports.io/football/players/380939.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 244751,
@@ -4773,7 +5204,8 @@
    "number": 36,
    "nationality": "Spain",
    "photo": "https://media.api-sports.io/football/players/341453.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 245336,
@@ -4784,7 +5216,8 @@
    "number": 80,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/369544.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 295113,
@@ -4795,7 +5228,8 @@
    "number": 34,
    "nationality": "Senegal",
    "photo": "https://media.api-sports.io/football/players/659107.png",
-   "tier": 3
+   "tier": 3,
+   "level": null
   },
   {
    "id": 295761,
@@ -4806,7 +5240,8 @@
    "number": 30,
    "nationality": "Spain",
    "photo": "https://media.api-sports.io/football/players/561010.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 3175,
@@ -4817,7 +5252,8 @@
    "number": 1,
    "nationality": "Germany",
    "photo": "https://media.api-sports.io/football/players/1800.png",
-   "tier": 3
+   "tier": 3,
+   "level": "medium"
   },
   {
    "id": 138022,
@@ -4828,7 +5264,8 @@
    "number": 16,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/194981.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 8808,
@@ -4839,7 +5276,8 @@
    "number": 14,
    "nationality": "Mali",
    "photo": "https://media.api-sports.io/football/players/2202.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 8900,
@@ -4850,7 +5288,8 @@
    "number": 28,
    "nationality": "Belgium",
    "photo": "https://media.api-sports.io/football/players/8474.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 116150,
@@ -4861,7 +5300,8 @@
    "number": 31,
    "nationality": "Algeria",
    "photo": "https://media.api-sports.io/football/players/20869.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 151363,
@@ -4872,7 +5312,8 @@
    "number": 6,
    "nationality": "Brazil",
    "photo": "https://media.api-sports.io/football/players/266013.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 169339,
@@ -4883,7 +5324,8 @@
    "number": 5,
    "nationality": "Senegal",
    "photo": "https://media.api-sports.io/football/players/174881.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 171012,
@@ -4894,7 +5336,8 @@
    "number": 25,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/324900.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 176720,
@@ -4905,7 +5348,8 @@
    "number": 42,
    "nationality": "Italy",
    "photo": "https://media.api-sports.io/football/players/342063.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 245430,
@@ -4916,7 +5360,8 @@
    "number": 19,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/389322.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 565,
@@ -4927,7 +5372,8 @@
    "number": 4,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/20925.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 8352,
@@ -4938,7 +5384,8 @@
    "number": 20,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/1910.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 8439,
@@ -4949,7 +5396,8 @@
    "number": 33,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/22170.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 129221,
@@ -4960,7 +5408,8 @@
    "number": 17,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/84218.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 274112,
@@ -4971,7 +5420,8 @@
    "number": 8,
    "nationality": "Ivory Coast",
    "photo": "https://media.api-sports.io/football/players/505518.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 277673,
@@ -4982,7 +5432,8 @@
    "number": 23,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/496896.png",
-   "tier": 1
+   "tier": 1,
+   "level": "hard"
   },
   {
    "id": 552,
@@ -4993,7 +5444,8 @@
    "number": 9,
    "nationality": "Mali",
    "photo": "https://media.api-sports.io/football/players/90617.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 3398,
@@ -5004,7 +5456,8 @@
    "number": 27,
    "nationality": "Nigeria",
    "photo": "https://media.api-sports.io/football/players/2781.png",
-   "tier": 2
+   "tier": 2,
+   "level": "medium"
   },
   {
    "id": 8381,
@@ -5015,7 +5468,8 @@
    "number": 93,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/22229.png",
-   "tier": 3
+   "tier": 3,
+   "level": "medium"
   },
   {
    "id": 106896,
@@ -5026,7 +5480,8 @@
    "number": 11,
    "nationality": "Ivory Coast",
    "photo": "https://media.api-sports.io/football/players/22842.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   },
   {
    "id": 108520,
@@ -5037,7 +5492,8 @@
    "number": 10,
    "nationality": "Algeria",
    "photo": "https://media.api-sports.io/football/players/83831.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 177248,
@@ -5048,7 +5504,8 @@
    "number": 7,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/276662.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 182267,
@@ -5059,7 +5516,8 @@
    "number": 15,
    "nationality": "Italy",
    "photo": "https://media.api-sports.io/football/players/359603.png",
-   "tier": 2
+   "tier": 2,
+   "level": "hard"
   },
   {
    "id": 219655,
@@ -5070,7 +5528,8 @@
    "number": 18,
    "nationality": "France",
    "photo": "https://media.api-sports.io/football/players/417550.png",
-   "tier": 3
+   "tier": 3,
+   "level": "hard"
   }
  ]
 }

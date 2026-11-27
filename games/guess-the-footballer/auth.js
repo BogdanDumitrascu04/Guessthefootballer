@@ -119,8 +119,30 @@ function renderAccount() {
     else renderSignInButton(box);
 }
 
+// Copies this site keeps of the player's data, so pages draw at once: removed when the player signs out.
+const KEPT_COPIES = ['gtf-cards', 'gtf-profile'];
+
+// supabase-js answers only after renewing an expired session (up to 1.5 s on a phone). The session saved in this
+// browser already names the player, so the header and the pages are drawn at once; the answer corrects them if needed.
+function savedUser() {
+    try {
+        const saved = JSON.parse(localStorage.getItem(`sb-${new URL(SUPABASE_URL).hostname.split('.')[0]}-auth-token`));
+        return saved?.refresh_token && saved.user?.id ? saved.user : null;
+    } catch {
+        return null;
+    }
+}
+
 if (supabaseClient) {
+    currentUser = savedUser();
+    if (currentUser) {
+        accountKnown = true;
+        markAccountKnown();
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', renderAccount);
+        else renderAccount();
+    }
     supabaseClient.auth.onAuthStateChange((event, session) => {
+        if (event === 'SIGNED_OUT') KEPT_COPIES.forEach(key => localStorage.removeItem(key));
         currentUser = session?.user ?? null;
         accountKnown = true;
         markAccountKnown();

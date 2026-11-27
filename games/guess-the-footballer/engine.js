@@ -1,8 +1,7 @@
 // One engine for every league and season: the URL decides which JSON file to load.
 const MAX_ATTEMPTS = 6;
 const MAX_SUGGESTIONS = 30;
-// Tiers the hidden player may come from: 1 star, 2 regular, 3 deep squad.
-const TARGET_TIERS = { easy: [1], medium: [1, 2], hard: [2, 3] };
+const DIFFICULTIES = ['easy', 'medium', 'hard']; // each hides only players of its own level (data/fame.csv)
 // Each hint unlocks after this many guesses, so the game stays a deduction game.
 const HINTS = [
     { key: 'team', after: 2 },
@@ -21,7 +20,7 @@ const params = new URLSearchParams(location.search);
 const requestedLeague = params.get('league') || 'premier-league';
 const requestedSeason = params.get('season');
 const dailyMode = params.has('daily'); // the league and the player then come from daily.js, and the round is an Easy one
-let difficulty = dailyMode ? 'easy' : [params.get('difficulty'), localStorage.getItem('gtf-difficulty')].find(d => TARGET_TIERS[d]) ?? 'medium';
+let difficulty = dailyMode ? 'easy' : [params.get('difficulty'), localStorage.getItem('gtf-difficulty')].find(d => DIFFICULTIES.includes(d)) ?? 'medium';
 
 let league, players, targetPlayer;
 let clues = {}; // player ID -> facts; seasons without a clues file simply have none
@@ -155,7 +154,7 @@ function setDifficulty(level) {
 // The hidden player needs every clue; some players have no known number or age.
 function pickTarget() {
     const complete = players.filter(p => p.number != null && p.age != null);
-    const suited = complete.filter(p => TARGET_TIERS[difficulty].includes(p.tier));
+    const suited = complete.filter(p => p.level === difficulty);
     const pool = suited.length ? suited : complete;
     return pool[Math.floor(Math.random() * pool.length)];
 }

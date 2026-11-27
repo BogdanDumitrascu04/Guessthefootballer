@@ -103,20 +103,22 @@ async function clubView(index, clubId, arrivingId) {
 }
 
 // Only the open view is in the page, and only the clubs it needs have been downloaded.
-async function show() {
+// quiet: newer cards from the server, drawn in place, without moving the page or closing an open card.
+async function show({ quiet = false } = {}) {
     const mine = ++turn;
     try {
-        const [index] = await Promise.all([loadIndex(), loadCards(), clubBadges.ready]);
-        account = currentUser?.id ?? null;
         const [leagueId, clubId, cardId] = location.hash.replace(/^#\//, '').split('/');
+        const cards = loadCards({ onNewer: () => mine === turn && show({ quiet: true }), waitForServer: Boolean(cardId) });
+        const [index] = await Promise.all([loadIndex(), cards, clubBadges.ready]);
+        account = currentUser?.id ?? null;
         const league = index.leagues.find(l => l.id === leagueId) ?? index.leagues[0];
         const view = Object.hasOwn(index.clubs, clubId ?? '')
             ? await clubView(index, clubId, Number(cardId))
             : { content: await leagueView(index, league) };
         if (mine !== turn) return;
-        document.querySelectorAll('dialog').forEach(dialog => dialog.close());
+        if (!quiet) document.querySelectorAll('dialog').forEach(dialog => dialog.close());
         page.replaceChildren(...view.content.filter(Boolean));
-        scrollTo(0, 0);
+        if (!quiet) scrollTo(0, 0);
         if (view.after) {
             history.replaceState(null, '', `#/${leagueId}/${clubId}`); // a reload must not play the arrival again
             await view.after();
@@ -127,8 +129,8 @@ async function show() {
     }
 }
 
-addEventListener('hashchange', show);
-document.addEventListener('languagechange', show);
+addEventListener('hashchange', () => show());
+document.addEventListener('languagechange', () => show());
 // Supabase repeats this event when the tab regains focus; only another account changes the page.
 document.addEventListener('accountchange', () => {
     if (account !== undefined && (currentUser?.id ?? null) !== account) show();

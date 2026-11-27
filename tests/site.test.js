@@ -13,7 +13,12 @@ const list = (folder, extension) => fs.readdirSync(path.join(ROOT, folder)).filt
 const GAME = 'games/guess-the-footballer';
 const PAGES = [...list('.', '.html'), ...list(GAME, '.html')];
 const CODE = [...PAGES, ...list('.', '.css'), ...list('.', '.js'), ...list(GAME, '.css'), ...list(GAME, '.js'), ...list(`${GAME}/album`, '.css'), ...list(`${GAME}/album`, '.js')];
-const SHELL = vm.runInNewContext(`${read('sw.js')};SHELL`, { self: { addEventListener() {} } });
+const { execFileSync } = require('node:child_process');
+const crypto = require('node:crypto');
+const WORKER = vm.createContext({ self: { addEventListener() {}, registration: { scope: 'https://example.test/' } }, crypto: globalThis.crypto, TextEncoder, URL });
+vm.runInContext(read('sw.js'), WORKER);
+const LIST = JSON.parse(read('version.json'));
+const listed = Object.keys(LIST.files);
 
 // Local files named in a page, as paths from the root of the site.
 function filesOf(page) {
@@ -33,11 +38,30 @@ test('portraits are off until a club agrees to them in writing', () => {
     assert.match(read(`${GAME}/common.js`), /const PORTRAIT_CLUBS = \[\];/);
 });
 
-test('the offline copy has every page, with its scripts and styles', () => {
-    for (const file of SHELL) assert.ok(file === './' || exists(file), file);
+test('the offline copy has every page, with its scripts, styles and data', () => {
     const needed = PAGES.flatMap(page => [page, ...filesOf(page).filter(file => /\.(css|js)$/.test(file))]);
-    const modules = list(`${GAME}/album`, '.js');
-    for (const file of [...needed, ...modules]) assert.ok(SHELL.includes(file), `${file} is missing from SHELL in sw.js`);
+    const data = ['data/manifest.json', 'data/badges.json', 'data/album/index.json'];
+    for (const file of [...needed, ...list(`${GAME}/album`, '.js'), ...data]) {
+        assert.ok(listed.includes(file), `${file} is missing from version.json: run scripts/build_version.py`);
+    }
+});
+
+// Fails when a file changed after scripts/build_version.py ran: players would keep the old version.
+test('version.json and sw.js match the files of this commit', () => {
+    const hashes = execFileSync('git', ['hash-object', '--stdin-paths'], { cwd: ROOT, input: listed.join('\n'), encoding: 'utf8' }).split(/\s+/).filter(Boolean);
+    listed.forEach((file, i) => assert.equal(LIST.files[file], hashes[i], `${file} changed: run scripts/build_version.py`));
+    // json.dumps(files, sort_keys=True) in Python, then sw.js without its VERSION line
+    const files = `{${Object.entries(LIST.files).sort(([a], [b]) => (a < b ? -1 : 1)).map(([k, v]) => `"${k}": "${v}"`).join(', ')}}`;
+    const text = files + read('sw.js').replace(/\r\n/g, '\n').replace(/const VERSION = '[^']*';/, '');
+    assert.equal(LIST.version, crypto.createHash('sha1').update(text).digest('hex').slice(0, 12), 'run scripts/build_version.py');
+    assert.equal(vm.runInContext('VERSION', WORKER), LIST.version, 'sw.js has another version: run scripts/build_version.py');
+});
+
+test('the browser checks a file the same way git does', async () => {
+    const file = `${GAME}/engine.js`;
+    const bytes = fs.readFileSync(path.join(ROOT, file));
+    const expected = execFileSync('git', ['hash-object', '--no-filters', file], { cwd: ROOT, encoding: 'utf8' }).trim();
+    assert.equal(await WORKER.fingerprint(bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.length)), expected);
 });
 
 test('the site has one name, the same on every page', () => {
