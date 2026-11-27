@@ -1,5 +1,5 @@
 {
- "version": "9a393de15c15",
+ "version": "fc39136134e4",
  "files": {
   "data/album/clubs/1.json": "839bd45bae6ceb263b8d63f8f9dcdf33700b4d5f",
   "data/album/clubs/10.json": "3f43c829af76bb9d43367eb83f3ad5f0237de2d2",
@@ -115,7 +115,7 @@
   "fonts/fonts.css": "7c811e2c0e3445330d59ff7d264882e1fd10ba5b",
   "games/guess-the-footballer/account.css": "72d18abe1d5fca750dfd3dd70a831a28f293cd12",
   "games/guess-the-footballer/album.html": "e7a9d8d7f17c1cf9a8525246f3abad8e3e562c51",
-  "games/guess-the-footballer/album/album.css": "6fc1503c09f2b45b486ce7765ef065e09507385a",
+  "games/guess-the-footballer/album/album.css": "2bdde78c92889f51189f633fa44474503acccdad",
   "games/guess-the-footballer/album/cards.js": "5047a1c3c8041f9bbcb4202e47aa68eb1fd23159",
   "games/guess-the-footballer/album/colors.js": "473e89499d893eb3d2333c673589c9a3124e8b8f",
   "games/guess-the-footballer/album/data.js": "a072e457a6fbacf7e27abdcf26cb94c699c1a2b4",

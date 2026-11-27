@@ -173,6 +173,19 @@
     transition: --lift 0.25s ease-out;
 }
 
+/* A card held in a window turns under the finger, and the page behind it stays still. */
+dialog .tilt {
+    touch-action: none;
+}
+
+html:has(dialog[open]) {
+    overflow: hidden;
+}
+
+dialog {
+    overscroll-behavior: contain;
+}
+
 .ticket.compact {
     transition: --px 0.5s ease-out, --py 0.5s ease-out;
 }

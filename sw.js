@@ -1,7 +1,7 @@
 // Copy first: every page opens from the copy kept in the browser, and that copy is always one whole version of the site.
 // A new version is downloaded in the background, every file checked against version.json, and it is taken over only
 // as a page opens, so a page never mixes files from two pushes. The scope is the folder of this file, the whole site.
-const VERSION = '9a393de15c15';
+const VERSION = 'fc39136134e4';
 const CACHE = `gtf-${VERSION}`;
 const OLD_CACHE = 'guess-the-footballer'; // the network-first copy, before 26 nov
 const LIST = 'version.json';
