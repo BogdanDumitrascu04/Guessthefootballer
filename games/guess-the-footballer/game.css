@@ -365,6 +365,8 @@ button {
 }
 
 .Guess input {
+    -webkit-appearance: none;
+    appearance: none;
     width: 100%;
     padding: 13px 14px;
     font: inherit;
@@ -373,6 +375,11 @@ button {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 10px;
+}
+
+/* The field is a search box so phones offer no contacts; its clear button is left out. */
+.Guess input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
 }
 
 .Guess input::placeholder {
@@ -829,7 +836,6 @@ button {
 }
 
 /* Phones only, while the keyboard is open */
-.last-guess,
 .clue-more {
     display: none;
 }
@@ -1508,7 +1514,6 @@ button {
     .typing .header,
     .typing #leagueMark,
     .typing #hints,
-    .typing #playerInfo,
     .typing .clue-title {
         display: none;
     }
@@ -1578,40 +1583,8 @@ button {
         clip-path: inset(50%);
     }
 
-    .typing .last-guess {
-        display: block;
-        margin-bottom: 6px;
-    }
-
     .typing .result-box {
         max-height: var(--room, 160px);
-    }
-
-    .last-guess .attempt {
-        grid-template-columns: 0.95fr 0.85fr 0.85fr 0.85fr 1.6fr;
-        gap: 3px;
-    }
-
-    .last-guess .attempt-player {
-        padding: 0 4px;
-        font-size: 0.875rem;
-        background: none;
-        border: none;
-    }
-
-    .last-guess .tile {
-        grid-column: auto;
-        order: 0;
-        min-height: 42px;
-        padding: 2px;
-    }
-
-    .last-guess .tile-value {
-        font-size: 0.78rem;
-    }
-
-    .last-guess :is(.avatar, .tile-label, .tile-team .tile-value) {
-        display: none;
     }
 
     /* Team and nationality have long names, so they share the first row. */

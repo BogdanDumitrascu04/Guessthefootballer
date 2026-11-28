@@ -84,7 +84,7 @@ function createReveal(player, { season, win, lost = false, compact = false }) {
 }
 
 // hidden: the result page keeps the answer's name back until the viewer asks for it.
-function createAttempt(player, number, { target, fresh = false, hidden = false, short = false }) {
+function createAttempt(player, number, { target, fresh = false, hidden = false }) {
     const row = document.createElement('div');
     row.className = fresh ? 'attempt fresh' : 'attempt';
 
@@ -99,7 +99,7 @@ function createAttempt(player, number, { target, fresh = false, hidden = false, 
     row.appendChild(who);
 
     ATTRIBUTES.forEach((attribute, i) => {
-        const tile = createTile(player, attribute, target, { hidden, short });
+        const tile = createTile(player, attribute, target, hidden);
         tile.style.setProperty('--i', i);
         row.appendChild(tile);
     });
@@ -118,17 +118,16 @@ function isMatch(player, target, key) {
 const POSITIONS = ['goalkeeper', 'defender', 'midfielder', 'forward'];
 
 // A value the dictionaries do not know (an edited link) is shown as it came.
-function shownValue(key, value, short) {
+function shownValue(key, value) {
     if (key === 'nationality' && Object.hasOwn(COUNTRY_CODES, value)) return clueCountry(COUNTRY_CODES[value]);
     const position = key === 'position' && String(value).toLowerCase();
     if (!POSITIONS.includes(position)) return value;
-    if (short) return t(`posShort_${position}`);
     const text = t(`pos_${position}`);
     return text[0].toUpperCase() + text.slice(1);
 }
 
 // hidden: the winning row's values (club, age, number...) would give the name away, so only the ticks show.
-function createTile(player, { key, numeric }, target, { hidden, short }) {
+function createTile(player, { key, numeric }, target, hidden = false) {
     const tile = document.createElement('div');
     tile.className = `tile tile-${key}`;
     const label = document.createElement('span');
@@ -149,11 +148,11 @@ function createTile(player, { key, numeric }, target, { hidden, short }) {
         value.textContent = '✓';
     } else if (isMatch(player, target, key)) {
         tile.classList.add('match');
-        value.textContent = `${shownValue(key, guessed, short)} ✓`;
+        value.textContent = `${shownValue(key, guessed)} ✓`;
     } else if (numeric && wanted != null) {
         value.textContent = `${guessed} ${guessed < wanted ? '↑' : '↓'}`;
     } else {
-        value.textContent = shownValue(key, guessed, short);
+        value.textContent = shownValue(key, guessed);
     }
     body.appendChild(value);
     tile.append(label, body);

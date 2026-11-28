@@ -47,7 +47,6 @@ const kickoffBox = document.getElementById('kickoff');
 const roundBox = document.getElementById('round');
 const inputBox = document.getElementById('guessInput');
 const resultsBox = document.querySelector('.result-box');
-const lastGuessBox = document.getElementById('lastGuess');
 const phone = matchMedia('(max-width: 640px)');
 const touch = matchMedia('(pointer: coarse)');
 const feedback = document.getElementById('feedback');
@@ -304,7 +303,7 @@ function highlight(index, scroll = true) {
 
 inputBox.addEventListener('input', showSuggestions);
 
-// With the keyboard open a phone keeps only what a guess needs: the clue, the last guess, the field and the names.
+// With the keyboard open a phone hides the header, the hints and the legend, so the field and the guesses stay in sight.
 function setTyping(on) {
     document.body.classList.toggle('typing', on);
     renderClue();
@@ -745,8 +744,6 @@ function createHint(key, after) {
 }
 
 function renderAttempts() {
-    const last = guesses.at(-1);
-    lastGuessBox.replaceChildren(...(last && !roundOver ? [createAttempt(last, guesses.length, { target: targetPlayer, short: true })] : []));
     const fresh = animateLast;
     animateLast = false;
     playerInfo.innerHTML = '';

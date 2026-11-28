@@ -233,7 +233,9 @@ Făcută pe 5 nov, înaintea Supabase, pe datele din JSON (2024-25). Testată lo
 - [x] pasul 1: finalul rundei (biletul lângă scor, butoanele lipite jos, bilet gri la înfrângere, „Vezi în album”), pozițiile și țările traduse, „Congo DR” = „DR Congo”, numele de pe patru bilete
 - [x] pasul 2: runda pe telefon (la scris rămân indiciul, ultima încercare, câmpul și numele; legenda doar în ⓘ)
 - [x] testat local de Claude: 72 de situații (320, 375 și 1366 px, 4 limbi, cu și fără cont simulat), fără scroll lateral, text ieșit din căsuțe sau erori în consolă; 38 de teste JS, verzi
-- [ ] testul lui Bogdan pe iPhone (mai ales tastatura), apoi commit + push
+- [x] testul lui Bogdan pe iPhone (28 nov): la scris, ultima încercare era trunchiată („PSG |”, „DEF”), apărea fără animație, istoricul era ascuns, iar Safari propunea un contact
+- [x] reparat: la scris se ascund doar antetul, indiciile și legenda; încercările rămân întregi sub câmp; câmpul e de căutare
+- [ ] testul lui Bogdan pe iPhone, din nou, apoi commit + push
 - [ ] pasul 3: accesibilitatea (atingere 44 px, rezultat și sugestii anunțate, focus, contururi, litere mai mari)
 - [ ] pasul 4: prima pagină („Continuă”) și alegerea ligii fără salt
 - [ ] pasul 5: albumul unei ligi (total, „Continuă”, cluburile începute primele)
