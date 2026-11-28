@@ -1,5 +1,5 @@
 {
- "version": "fc39136134e4",
+ "version": "6af13e0f02e6",
  "files": {
   "data/album/clubs/1.json": "839bd45bae6ceb263b8d63f8f9dcdf33700b4d5f",
   "data/album/clubs/10.json": "3f43c829af76bb9d43367eb83f3ad5f0237de2d2",
@@ -141,7 +141,7 @@
   "games/guess-the-footballer/countries.js": "445c8852bb124f1d9565956827b62edb546658b1",
   "games/guess-the-footballer/daily.css": "5d4672d38c584e9bd0cba23a73bcbf5f69fba714",
   "games/guess-the-footballer/daily.js": "09aad7d905de6a3ad2fa14b67fd6f13d2807981f",
-  "games/guess-the-footballer/engine.js": "59cf7b5255a583d3cf3b4712179aae5bf65bf333",
+  "games/guess-the-footballer/engine.js": "4ddecb7bf87f5aa978e679e7b379271505a105f6",
   "games/guess-the-footballer/game.css": "d2b1a5c6d8e6c81381bfc4b0039db4eaa8cd0edc",
   "games/guess-the-footballer/game.html": "907f35f8046cac436a2084920df895e369bbb0a7",
   "games/guess-the-footballer/i18n.js": "e8dd53126d48ec723e694ff0c24bcf93ceeb2598",

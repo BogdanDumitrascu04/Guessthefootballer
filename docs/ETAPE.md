@@ -256,9 +256,9 @@ Făcută pe 5 nov, înaintea Supabase, pe datele din JSON (2024-25). Testată lo
 - [x] fără lumina cardurilor la scroll pe telefon (`album/motion.js`)
 - [x] albumul și profilul din copia locală, reîmprospătate în spate; contul din sesiunea salvată; copiile se șterg la deconectare; politica de confidențialitate completată
 - [x] măsurat (telefon simulat: 100 ms, CPU 4×, cont logat): jocul 1,13 → 0,63 s, profilul 1,05 → 0,40 s, albumul 1,76 → 0,72 s; pe PC jocul 0,71 → 0,12 s; cu sesiunea expirată, butonul contului 1,06 → 0,36 s
-- [ ] lotul și indiciile cerute în paralel în `engine.js` (după commit-ul Etapei 13, care schimbă același fișier)
-- [ ] testul lui Bogdan pe iPhone: prima deschidere, o reîncărcare, fără internet, login, o rundă salvată, albumul
-- [ ] commit + push (cu `build_version.py` rulat chiar înainte)
+- [x] lotul și indiciile cerute în paralel în `engine.js` (fără câștig măsurabil: jocul 0,63–0,69 s pe telefonul simulat, între rulări; restul e timpul procesorului)
+- [x] testul lui Bogdan pe iPhone (27 nov): „merge bine”; cardul din fereastra de câștig nu mai trage pagina după el
+- [x] commit + push (`cf6dc85`, `4578acc`)
 
 ## După
 - „joacă același jucător” din pagina de rezultat, share-ul întregului istoric din profil, modul Icons

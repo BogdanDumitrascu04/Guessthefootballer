@@ -66,11 +66,14 @@ async function loadLeague() {
     const info = manifest.leagues.find(l => l.id === (today?.league ?? requestedLeague)) || manifest.leagues[0];
     const askedSeason = today?.season ?? requestedSeason;
     const season = info.seasons.includes(askedSeason) ? askedSeason : manifest.defaultSeason;
-    league = await getJson(`data/seasons/${season}/${info.id}.json`);
-    clues = (manifest.clueSeasons || []).includes(season)
-        ? await getJson(`data/seasons/${season}/clues/${info.id}.json`).then(data => data.players, () => ({}))
-        : {};
-    await clubBadges.ready;
+    // Asked together: one after the other, the phone waited for each in turn.
+    [league, clues] = await Promise.all([
+        getJson(`data/seasons/${season}/${info.id}.json`),
+        (manifest.clueSeasons || []).includes(season)
+            ? getJson(`data/seasons/${season}/clues/${info.id}.json`).then(data => data.players, () => ({}))
+            : {},
+        clubBadges.ready,
+    ]);
     league.info = info;
     league.seasonUsed = season;
     players = league.players;
